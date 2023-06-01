@@ -1,0 +1,3 @@
+package, url
+base, https://rdocumentation.org/packages/base/versions/3.6.2
+utils, https://rdocumentation.org/packages/utils/versions/3.6.2

@@ -1,6 +1,15 @@
+#### Script for collecting R help function text.
+# Not needed for web app functionality, but left in case.
+
 library(rvest)
-text <- capture.output(help(topic = "mean", help_type = "text"))
-text <- (help(topic = "mean", help_type = "text"))
-str(text)
-names(text)
-unlist(text)
+pkglist <- read.table(file = "packagelist.txt", sep = ",", header = TRUE)   
+fnclist <- getNamespaceExports(pkglist$package[i])
+
+("dplyr")
+
+i<-1; j <-117
+
+path <- paste0(pkglist$url[i], "/topics/",fnclist[j])
+
+rvest()
+??base
