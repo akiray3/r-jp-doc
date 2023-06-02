@@ -1,15 +1,31 @@
 #### Script for collecting R help function text.
 # Not needed for web app functionality, but left in case.
 
-library(rvest)
-pkglist <- read.table(file = "packagelist.txt", sep = ",", header = TRUE)   
-fnclist <- getNamespaceExports(pkglist$package[i])
+library(package = "tidyverse")
+library(package = "jsonlite")
 
-("dplyr")
+sessionInfo() 
+pkgs <- c("base", "stats", "graphics")
 
-i<-1; j <-117
+out <- tibble::tibble(
+        pack = NULL, func = NULL,
+        var = NULL, val = NULL
+    )
 
-path <- paste0(pkglist$url[i], "/topics/",fnclist[j])
-
-rvest()
-??base
+for (pkg in pkgs) {
+    fncs <- ls(paste0("package:", pkg))
+    addrows <- tibble::tibble(
+            pack = pkg, func = fncs,
+            var = "all_txt_tmp", val = NA
+        )
+    for (i in 1:length(fncs)) {
+        help_txt <- try({
+                utils:::.getHelpFile(help(topic = fncs[i])) %>%
+                paste0(x, collapse = "")
+        }, silent = TRUE)
+        addrows$val[i] <- help_txt
+    }
+    out <- out %>%
+        dplyr::bind_rows(.,  addrows)
+}
+write_json(out , "help_db_raw.json")
