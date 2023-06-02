@@ -21,7 +21,9 @@ for (pkg in pkgs) {
     for (i in 1:length(fncs)) {
         help_txt <- try({
                 utils:::.getHelpFile(help(topic = fncs[i])) %>%
-                paste0(x, collapse = "")
+                tools:::Rd2HTML(.) %>%
+                capture.output(.) %>%
+                paste0(., collapse = "")
         }, silent = TRUE)
         addrows$val[i] <- help_txt
     }
@@ -29,3 +31,8 @@ for (pkg in pkgs) {
         dplyr::bind_rows(.,  addrows)
 }
 write_json(out , "help_db_raw.json")
+
+# x <- utils:::.getHelpFile(help(topic = "mean"))
+# htmlx <- capture.output(tools:::Rd2HTML(x)) %>%
+#     paste0(collapse = "")
+# htmlx
