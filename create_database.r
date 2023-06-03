@@ -32,7 +32,17 @@ for (pkg in pkgs) {
 }
 write_json(out , "help_db_raw.json")
 
-# x <- utils:::.getHelpFile(help(topic = "mean"))
-# htmlx <- capture.output(tools:::Rd2HTML(x)) %>%
-#     paste0(collapse = "")
-# htmlx
+x <- utils:::.getHelpFile(help(topic = "mean"))
+htmlx <- capture.output(tools:::Rd2HTML(x)) %>%
+    paste0(collapse = "")
+
+library(rvest)
+test  <- read_html(x = htmlx)
+rvest::html_children(test)
+rvest::html_text(test, trim = FALSE)
+rvest::html_node(test, css = "body") %>%
+    rvest::html_text()
+rvest::html_node(test, css = "h3")
+
+html_element(test, css="#main h1") %>%
+　　　　html_text()
