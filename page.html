@@ -1,99 +1,73 @@
 <!DOCTYPE html>
 <head>
+  <meta charset="UTF-8" />
   <title>home</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="slick-1.8.1/slick/slick-theme.css"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" type="text/css" />
 </head>
 <body>
   <form action="search.html" method="get">
     <input type="text" name="keyword" placeholder="キーワードを入力" />
     <button id="reserch"></button>
   </form>
-  <div>
-    <section>
-      <div
-        class="sec_inner"
-        style="
-          display: flex;
-          flex-direction: row-reverse;
-          width: 100%;
-          height: 250px;
-          border-radius: 9.194px;
-          stroke: rgb(36, 61, 37);
-          stroke-miterlimit: 10;
-          stroke-width: 1;
-          border: 2px solid rgb(0, 0, 0);
-          transform: translate(21.529px, 57.832px);
-        "
-      >
-        <div style="flex: 0 0 auto; margin-right: 20px">
-          <h1 style="font-size: 50px">base</h1>
-          <nav style="flex: 0 0 auto; margin-right: 10px">
-            <a href="/infopage/base.html" style="padding: 15px">一覧を見る</a>
-          </nav>
-        </div>
 
-        <div
-          class="sec_slide"
-          style="position: relative; display: block; box-sizing: border-box"
-        >
-          <div class="lineitem">
-            <a href="/detail/base/apply.html">
-              <img
-                src="www/square.svg"
-                alt=""
-                style="height: 200px; width: 200px"
-              />
-            </a>
-            <text>apply</text>
-          </div>
-          <div
-            class="lineitem"
-            style="
-              position: relative;
-              display: block;
-              overflow: hidden;
-              margin: 0;
-              padding: 0;
-            "
-          >
-            <a href="detail/base/Bessel.html">
-              <img
-                src="www/square.svg"
-                alt=""
-                style="height: 200px; width: 200px"
-              />
-            </a>
-            <text>Bessel</text>
-          </div>
-          <div
-            class="lineitem"
-            style="
-              position: relative;
-              display: block;
-              overflow: hidden;
-              margin: 0;
-              padding: 0;
-            "
-          >
-            <p>テスト１</p>
-          </div>
-          <div
-            class="lineitem"
-            style="
-              position: relative;
-              display: block;
-              overflow: hidden;
-              margin: 0;
-              padding: 0;
-            "
-          >
-            <p>テスト２</p>
-          </div>
-        </div>
+  <div
+    class="sec_inner"
+    style="
+      white-space: nrowrap;
+      width: 100%;
+      height: 250px;
+      border-radius: 9.194px;
+      stroke: rgb(36, 61, 37);
+      stroke-miterlimit: 10;
+      stroke-width: 1;
+      border: 2px solid rgb(0, 0, 0);
+      transform: translate(21.529px, 57.832px);
+    "
+  >
+    <div style="position: fixed; right: 0; top: 0">
+      <h1 style="font-size: 50px">base</h1>
+      <nav style="flex: 0 0 auto; margin-right: 10px">
+        <a href="/infopage/base.html" style="padding: 15px">一覧を見る</a>
+      </nav>
+    </div>
+
+    <div class="slick-slider">
+      <div class="slick-list">
+        <a href="/detail/base/apply.html">
+          <img
+            src="www/square.svg"
+            alt=""
+            style="height: 200px; width: 200px"
+          />
+        </a>
+        <text>apply</text>
       </div>
-    </section>
+      <div class="slick-list">
+        <a href="detail/base/Bessel.html">
+          <img
+            src="www/square.svg"
+            alt=""
+            style="height: 200px; width: 200px"
+          />
+        </a>
+        <text>Bessel</text>
+      </div>
+      <div class="slick-list">
+        <p>テスト１</p>
+      </div>
+      <div class="slick-list">
+        <p>テスト２</p>
+      </div>
+    </div>
   </div>
+
   <script src="jquery.js"></script>
   <script src="slick-1.8.1/slick/slick.min.js"></script>
   <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css" type="text/css" />
 </body>
