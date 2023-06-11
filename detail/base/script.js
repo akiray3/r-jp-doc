@@ -2,8 +2,10 @@ const content = document.querySelector(".block");
 //全体関数ブロック
 const div = document.createElement("div");
 div.style.whiteSpace = "flex";
+div.style.flexWrap = "nowrap";
 div.style.width = "100%";
-div.style.transform = "translate(47px ,57px)";
+div.style.overflow = "auto";
+div.style.transform = "translate(167px ,57px)";
 
 //関数名
 const funcframe = document.createElement("div");
@@ -70,22 +72,22 @@ xyz.style.fontFamily = "ArialRoundedMTBold";
 xyz.style.display = "flex: 0 0 auto; margin-right: 10px";
 const xyztxt = document.createTextNode(")");
 xyz.appendChild(xyztxt);
-argcol.appendChild(xyz);
+txt3.appendChild(xyz);
 
 //hoverframe
 const argframe = document.createElement("div");
-argframe.style.width = "50%";
+argframe.style.width = "40%";
 argframe.style.display = "inline-block";
 argframe.style.marginRight = "10px";
+argframe.style.transform = "translate(50px,10px)";
 div.appendChild(argframe);
 
 ///hover
 const hovinfo1 = document.createElement("div");
 hovinfo1.classList.add("hovanime");
 hovinfo1.style.display = "none";
-hovinfo1.style.width = "50%";
 hovinfo1.style.height = "120px";
-hovinfo1.style.backgroundColor = "#BDBDD7";
+hovinfo1.style.backgroundColor = "#DAE1E7";
 hovinfo1.style.fontSize = "20px";
 const hov1txt = document.createTextNode("引数１");
 hovinfo1.appendChild(hov1txt);
@@ -95,13 +97,22 @@ argframe.appendChild(hovinfo1);
 const hovinfo2 = document.createElement("div");
 hovinfo2.classList.add("hovanime");
 hovinfo2.style.display = "none";
-hovinfo2.style.width = "50%";
 hovinfo2.style.height = "120px";
-hovinfo2.style.backgroundColor = "#BDBDD7";
+hovinfo2.style.backgroundColor = "#DAE1E7";
 hovinfo2.style.fontSize = "20px";
 const hov2txt = document.createTextNode("引数2");
 hovinfo2.appendChild(hov2txt);
 argframe.appendChild(hovinfo2);
+
+const hovinfo3 = document.createElement("div");
+hovinfo3.classList.add("hovanime");
+hovinfo3.style.display = "none";
+hovinfo3.style.height = "120px";
+hovinfo3.style.backgroundColor = "#DAE1E7";
+hovinfo3.style.fontSize = "20px";
+const hov3txt = document.createTextNode("引数3");
+hovinfo3.appendChild(hov3txt);
+argframe.appendChild(hovinfo3);
 
 txt1.addEventListener("mouseover", function () {
   hovinfo1.style.display = "block";
@@ -114,6 +125,12 @@ txt2.addEventListener("mouseover", function () {
 });
 txt2.addEventListener("mouseout", function () {
   hovinfo2.style.display = "none";
+});
+txt3.addEventListener("mouseover", function () {
+  hovinfo3.style.display = "block";
+});
+txt3.addEventListener("mouseout", function () {
+  hovinfo3.style.display = "none";
 });
 
 content.appendChild(div);
