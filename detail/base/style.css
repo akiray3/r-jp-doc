@@ -1,0 +1,11 @@
+.hovanime {
+  animation: fadein 1s ease 0s 1 normal forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
