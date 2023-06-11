@@ -134,3 +134,71 @@ txt3.addEventListener("mouseout", function () {
 });
 
 content.appendChild(div);
+
+//tabmenu
+const tabcontent = document.querySelector(".tabcontents");
+
+const Descriptionbox = document.createElement("div");
+Descriptionbox.classList.add("content");
+Descriptionbox.setAttribute("id", "Description");
+const Descriptiontxt = document.createTextNode("description内容");
+Descriptionbox.appendChild(Descriptiontxt);
+tabcontent.appendChild(Descriptionbox);
+
+const Argumentsbox = document.createElement("div");
+Argumentsbox.classList.add("content");
+Argumentsbox.setAttribute("id", "Arguments");
+const Argumentstxt = document.createTextNode("Arguments内容");
+Argumentsbox.appendChild(Argumentstxt);
+tabcontent.appendChild(Argumentsbox);
+
+const Valuebox = document.createElement("div");
+Valuebox.classList.add("content");
+Valuebox.setAttribute("id", "Value");
+const Valuetxt = document.createTextNode("Value内容");
+Valuebox.appendChild(Valuetxt);
+tabcontent.appendChild(Valuebox);
+
+const Detailsbox = document.createElement("div");
+Detailsbox.classList.add("content");
+Detailsbox.setAttribute("id", "Details");
+const Detailstxt = document.createTextNode("Details内容");
+Detailsbox.appendChild(Detailstxt);
+tabcontent.appendChild(Detailsbox);
+
+const Examplesbox = document.createElement("div");
+Examplesbox.classList.add("content");
+Examplesbox.setAttribute("id", "Examples");
+const Examplestxt = document.createTextNode("Examples内容");
+Examplesbox.appendChild(Examplestxt);
+tabcontent.appendChild(Examplesbox);
+
+const Referencesbox = document.createElement("div");
+Referencesbox.classList.add("content");
+Referencesbox.setAttribute("id", "References");
+const Referencestxt = document.createTextNode("References内容");
+Referencesbox.appendChild(Referencestxt);
+tabcontent.appendChild(Referencesbox);
+
+const See_Alsobox = document.createElement("div");
+See_Alsobox.classList.add("content");
+See_Alsobox.setAttribute("id", "See_Also");
+const See_Alsotxt = document.createTextNode("See_Also内容");
+See_Alsobox.appendChild(See_Alsotxt);
+tabcontent.appendChild(See_Alsobox);
+
+function openTab(event, tabId) {
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".content");
+  tabs.forEach((tab) => tab.classList.remove("active"));
+  contents.forEach((content) => (content.style.display = "none"));
+
+  const clicktab = event.currentTarget;
+  const clickedcontent = document.getElementById(tabId);
+  clicktab.classList.add("active");
+  clickedcontent.style.display = "block";
+}
+
+const defaulttab = document.querySelector(".tab");
+const defaulttabid = defaulttab.getAttribute("Description");
+openTab({ currentTarget: defaulttab }, defaulttabid);
