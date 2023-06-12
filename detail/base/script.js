@@ -6,7 +6,7 @@ div.style.flexWrap = "nowrap";
 div.style.width = "100%";
 div.style.overflow = "auto";
 div.style.transform = "translate(167px ,57px)";
-
+content.appendChild(div);
 //関数名
 const funcframe = document.createElement("div");
 funcframe.style.display = "inline-block";
@@ -16,7 +16,7 @@ div.appendChild(funcframe);
 
 const funcname = document.createElement("div");
 funcname.style.fontSize = "48px";
-funcname.style.fontFamily = "ArialRoundedMTBold";
+funcname.style.fontFamily =  "Hiragino Maru Gothic ProN,YuGoshic,sans-serif" ;
 funcname.style.display = "flex: 0 0 auto; margin-right: 10px";
 const funcnametxt = document.createTextNode("function(");
 funcname.appendChild(funcnametxt);
@@ -34,10 +34,8 @@ argblock.appendChild(argcol);
 
 //引数１
 const txt1 = document.createElement("text");
-txt1.className = "txt1";
+txt1.className = "txt";
 txt1.style.flexGrow = "1";
-txt1.style.fontSize = "48px";
-txt1.style.fontFamily = "ArialRoundedMTBold";
 txt1.style.display = "flex: 0 0 auto; margin-right: 10px";
 const txt1node = document.createTextNode("x" + ",");
 txt1.appendChild(txt1node);
@@ -45,10 +43,8 @@ argcol.appendChild(txt1);
 
 //引数２
 const txt2 = document.createElement("text");
-txt2.className = "txt2";
+txt2.className = "txt";
 txt2.style.flexGrow = "2";
-txt2.style.fontSize = "48px";
-txt2.style.fontFamily = "ArialRoundedMTBold";
 txt2.style.display = "flex: 0 0 auto; margin-right: 10px";
 const txt2node = document.createTextNode("y" + ",");
 txt2.appendChild(txt2node);
@@ -56,10 +52,8 @@ argcol.appendChild(txt2);
 
 //引数３
 const txt3 = document.createElement("text");
-txt3.className = "txt3";
+txt3.className = "txt";
 txt3.style.flexGrow = "3";
-txt3.style.fontSize = "48px";
-txt3.style.fontFamily = "ArialRoundedMTBold";
 txt3.style.display = "flex: 0 0 auto; margin-right: 10px";
 const txt3node = document.createTextNode("z");
 txt3.appendChild(txt3node);
@@ -68,11 +62,14 @@ argcol.appendChild(txt3);
 //)
 const xyz = document.createElement("text");
 xyz.style.fontSize = "48px";
-xyz.style.fontFamily = "ArialRoundedMTBold";
+xyz.style.fontFamily ="Hiragino Maru Gothic ProN,YuGoshic,sans-serif" ;
 xyz.style.display = "flex: 0 0 auto; margin-right: 10px";
 const xyztxt = document.createTextNode(")");
 xyz.appendChild(xyztxt);
 txt3.appendChild(xyz);
+
+const heightblock = argblock.offsetHeight;
+content.style.height = `${heightblock + 197}px`;
 
 //hoverframe
 const argframe = document.createElement("div");
