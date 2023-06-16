@@ -1,3 +1,12 @@
+const path = "../help_db_raw.json";
+const funclist = new XMLHttpRequest();
+funclist.open("GET", path);
+funclist.responseType = "json";
+console.log(funclist);
+funclist.onreadystatechange = function () {
+  const jsondata = funclist.response;
+  console.log(jsondata);
+};
 const content = document.querySelector(".block");
 //全体関数ブロック
 const div = document.createElement("div");
