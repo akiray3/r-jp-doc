@@ -4,8 +4,7 @@ needs(tidyverse)
 dat <- readxl::read_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/help_dbコピー関数名用.xlsx")
 head(dat)
 dat2 <- dat %>% 
- mutate(tagtxt = func) %>% 
-filter(pack == "stats") 
+ mutate(funcoriginal = func) 
  
 dat2$func <- gsub("[/\\\\?%*:|\"<>]","_",dat2$func)
 dat2%>%
@@ -19,7 +18,7 @@ dat2%>%
   select(-"tagtxt") %>% 
   writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/librarylist.xlsx")
 
-
+dat2%>%writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/関数名と変換前の比較.xlsx")
 #base関数用　関数紹介のページ作成
 filenamelist <- dat2 %>%
   filter(pack == "stats") %>% 
