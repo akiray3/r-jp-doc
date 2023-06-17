@@ -19,11 +19,10 @@ dat2%>%
   select(-"tagtxt") %>% 
   writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/librarylist.xlsx")
 
-dat2%>%writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/関数名と変換前の比較.xlsx")
+#dat2%>%writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/関数名と変換前の比較.xlsx")
 #base関数用　関数紹介のページ作成
 filenamelist <- dat2 %>%
   filter(pack =="base") %>% 
-  mutate(func = str_remove(string = func,pattern = "\\.")) %>% 
   select(func) %>% as.list()%>%unlist()%>%unique()
 funcoriginal <- dat2%>%
   filter(pack == "base")%>%
@@ -52,6 +51,6 @@ foreach::foreach(a = filenamelist,b = funcoriginal)%do%{
 <link rel=\"stylesheet\" href=\"../style.css\" type=\"text/css\" />
 <script src=\"../script.js\"></script>
 </body>")    
-  htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/detail/stats", paste0(a, ".html"))
+  htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/detail/base", paste0(a, ".html"))
   write_lines(content, path = htmlpath)
 }
