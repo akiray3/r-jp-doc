@@ -1,6 +1,7 @@
 #関数一覧リンクの作成
 needs(readxl)
 needs(tidyverse)
+needs(foreach)
 dat <- readxl::read_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/help_dbコピー関数名用.xlsx")
 head(dat)
 dat2 <- dat %>% 
@@ -21,13 +22,16 @@ dat2%>%
 dat2%>%writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/関数名と変換前の比較.xlsx")
 #base関数用　関数紹介のページ作成
 filenamelist <- dat2 %>%
-  filter(pack == "stats") %>% 
+  filter(pack =="base") %>% 
   mutate(func = str_remove(string = func,pattern = "\\.")) %>% 
   select(func) %>% as.list()%>%unlist()%>%unique()
+funcoriginal <- dat2%>%
+  filter(pack == "base")%>%
+  select(funcoriginal)%>%as.list() %>% unlist() %>% unique()
 
-for (i in filenamelist) {
-content <- paste0("
-<!DOCTYPE html><head>    <title>", i, "</title>
+foreach::foreach(a = filenamelist,b = funcoriginal)%do%{
+  content <- paste0("
+<!DOCTYPE html><head>    <title>", b, "</title>
  </head>
  <body>    
  <div class=\"block\"></div>    
@@ -48,6 +52,6 @@ content <- paste0("
 <link rel=\"stylesheet\" href=\"../style.css\" type=\"text/css\" />
 <script src=\"../script.js\"></script>
 </body>")    
-  htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/detail/stats", paste0(i, ".html"))
+  htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/detail/stats", paste0(a, ".html"))
   write_lines(content, path = htmlpath)
 }
