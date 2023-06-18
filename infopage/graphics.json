@@ -1,333 +1,297 @@
 [
-  {
-    "id": "abline",
-    "href": "/detail/graphics/abline.html",
-    "funcname": "abline"
-  },
-  {
-    "id": "arrows",
-    "href": "/detail/graphics/arrows.html",
-    "funcname": "arrows"
-  },
+  { "id": "abline", "href": "/detail/base/abline.html", "funcname": "abline" },
+  { "id": "arrows", "href": "/detail/base/arrows.html", "funcname": "arrows" },
   {
     "id": "assocplot",
-    "href": "/detail/graphics/assocplot.html",
+    "href": "/detail/base/assocplot.html",
     "funcname": "assocplot"
   },
-  { "id": "axis", "href": "/detail/graphics/axis.html", "funcname": "axis" },
-  { "id": "Axis", "href": "/detail/graphics/Axis.html", "funcname": "Axis" },
+  { "id": "axis", "href": "/detail/base/axis.html", "funcname": "axis" },
+  { "id": "Axis", "href": "/detail/base/Axis.html", "funcname": "Axis" },
   {
     "id": "axis.Date",
-    "href": "/detail/graphics/axisDate.html",
+    "href": "/detail/base/axissymbol11Date.html",
     "funcname": "axis.Date"
   },
   {
     "id": "axis.POSIXct",
-    "href": "/detail/graphics/axisPOSIXct.html",
+    "href": "/detail/base/axissymbol11POSIXct.html",
     "funcname": "axis.POSIXct"
   },
   {
     "id": "axTicks",
-    "href": "/detail/graphics/axTicks.html",
+    "href": "/detail/base/axTicks.html",
     "funcname": "axTicks"
   },
   {
     "id": "barplot",
-    "href": "/detail/graphics/barplot.html",
+    "href": "/detail/base/barplot.html",
     "funcname": "barplot"
   },
   {
     "id": "barplot.default",
-    "href": "/detail/graphics/barplotdefault.html",
+    "href": "/detail/base/barplotsymbol11default.html",
     "funcname": "barplot.default"
   },
-  { "id": "box", "href": "/detail/graphics/box.html", "funcname": "box" },
+  { "id": "box", "href": "/detail/base/box.html", "funcname": "box" },
   {
     "id": "boxplot",
-    "href": "/detail/graphics/boxplot.html",
+    "href": "/detail/base/boxplot.html",
     "funcname": "boxplot"
   },
   {
     "id": "boxplot.default",
-    "href": "/detail/graphics/boxplotdefault.html",
+    "href": "/detail/base/boxplotsymbol11default.html",
     "funcname": "boxplot.default"
   },
   {
     "id": "boxplot.matrix",
-    "href": "/detail/graphics/boxplotmatrix.html",
+    "href": "/detail/base/boxplotsymbol11matrix.html",
     "funcname": "boxplot.matrix"
   },
-  { "id": "bxp", "href": "/detail/graphics/bxp.html", "funcname": "bxp" },
-  {
-    "id": "cdplot",
-    "href": "/detail/graphics/cdplot.html",
-    "funcname": "cdplot"
-  },
-  { "id": "clip", "href": "/detail/graphics/clip.html", "funcname": "clip" },
+  { "id": "bxp", "href": "/detail/base/bxp.html", "funcname": "bxp" },
+  { "id": "cdplot", "href": "/detail/base/cdplot.html", "funcname": "cdplot" },
+  { "id": "clip", "href": "/detail/base/clip.html", "funcname": "clip" },
   {
     "id": "close.screen",
-    "href": "/detail/graphics/closescreen.html",
+    "href": "/detail/base/closesymbol11screen.html",
     "funcname": "close.screen"
   },
   {
     "id": "co.intervals",
-    "href": "/detail/graphics/cointervals.html",
+    "href": "/detail/base/cosymbol11intervals.html",
     "funcname": "co.intervals"
   },
   {
     "id": "contour",
-    "href": "/detail/graphics/contour.html",
+    "href": "/detail/base/contour.html",
     "funcname": "contour"
   },
   {
     "id": "contour.default",
-    "href": "/detail/graphics/contourdefault.html",
+    "href": "/detail/base/contoursymbol11default.html",
     "funcname": "contour.default"
   },
-  {
-    "id": "coplot",
-    "href": "/detail/graphics/coplot.html",
-    "funcname": "coplot"
-  },
-  { "id": "curve", "href": "/detail/graphics/curve.html", "funcname": "curve" },
+  { "id": "coplot", "href": "/detail/base/coplot.html", "funcname": "coplot" },
+  { "id": "curve", "href": "/detail/base/curve.html", "funcname": "curve" },
   {
     "id": "dotchart",
-    "href": "/detail/graphics/dotchart.html",
+    "href": "/detail/base/dotchart.html",
     "funcname": "dotchart"
   },
   {
     "id": "erase.screen",
-    "href": "/detail/graphics/erasescreen.html",
+    "href": "/detail/base/erasesymbol11screen.html",
     "funcname": "erase.screen"
   },
   {
     "id": "filled.contour",
-    "href": "/detail/graphics/filledcontour.html",
+    "href": "/detail/base/filledsymbol11contour.html",
     "funcname": "filled.contour"
   },
   {
     "id": "fourfoldplot",
-    "href": "/detail/graphics/fourfoldplot.html",
+    "href": "/detail/base/fourfoldplot.html",
     "funcname": "fourfoldplot"
   },
-  { "id": "frame", "href": "/detail/graphics/frame.html", "funcname": "frame" },
+  { "id": "frame", "href": "/detail/base/frame.html", "funcname": "frame" },
   {
     "id": "grconvertX",
-    "href": "/detail/graphics/grconvertX.html",
+    "href": "/detail/base/grconvertX.html",
     "funcname": "grconvertX"
   },
   {
     "id": "grconvertY",
-    "href": "/detail/graphics/grconvertY.html",
+    "href": "/detail/base/grconvertY.html",
     "funcname": "grconvertY"
   },
-  { "id": "grid", "href": "/detail/graphics/grid.html", "funcname": "grid" },
-  { "id": "hist", "href": "/detail/graphics/hist.html", "funcname": "hist" },
+  { "id": "grid", "href": "/detail/base/grid.html", "funcname": "grid" },
+  { "id": "hist", "href": "/detail/base/hist.html", "funcname": "hist" },
   {
     "id": "hist.default",
-    "href": "/detail/graphics/histdefault.html",
+    "href": "/detail/base/histsymbol11default.html",
     "funcname": "hist.default"
   },
   {
     "id": "identify",
-    "href": "/detail/graphics/identify.html",
+    "href": "/detail/base/identify.html",
     "funcname": "identify"
   },
-  { "id": "image", "href": "/detail/graphics/image.html", "funcname": "image" },
+  { "id": "image", "href": "/detail/base/image.html", "funcname": "image" },
   {
     "id": "image.default",
-    "href": "/detail/graphics/imagedefault.html",
+    "href": "/detail/base/imagesymbol11default.html",
     "funcname": "image.default"
   },
-  {
-    "id": "layout",
-    "href": "/detail/graphics/layout.html",
-    "funcname": "layout"
-  },
+  { "id": "layout", "href": "/detail/base/layout.html", "funcname": "layout" },
   {
     "id": "layout.show",
-    "href": "/detail/graphics/layoutshow.html",
+    "href": "/detail/base/layoutsymbol11show.html",
     "funcname": "layout.show"
   },
-  { "id": "lcm", "href": "/detail/graphics/lcm.html", "funcname": "lcm" },
-  {
-    "id": "legend",
-    "href": "/detail/graphics/legend.html",
-    "funcname": "legend"
-  },
-  { "id": "lines", "href": "/detail/graphics/lines.html", "funcname": "lines" },
+  { "id": "lcm", "href": "/detail/base/lcm.html", "funcname": "lcm" },
+  { "id": "legend", "href": "/detail/base/legend.html", "funcname": "legend" },
+  { "id": "lines", "href": "/detail/base/lines.html", "funcname": "lines" },
   {
     "id": "lines.default",
-    "href": "/detail/graphics/linesdefault.html",
+    "href": "/detail/base/linessymbol11default.html",
     "funcname": "lines.default"
   },
   {
     "id": "locator",
-    "href": "/detail/graphics/locator.html",
+    "href": "/detail/base/locator.html",
     "funcname": "locator"
   },
   {
     "id": "matlines",
-    "href": "/detail/graphics/matlines.html",
+    "href": "/detail/base/matlines.html",
     "funcname": "matlines"
   },
   {
     "id": "matplot",
-    "href": "/detail/graphics/matplot.html",
+    "href": "/detail/base/matplot.html",
     "funcname": "matplot"
   },
   {
     "id": "matpoints",
-    "href": "/detail/graphics/matpoints.html",
+    "href": "/detail/base/matpoints.html",
     "funcname": "matpoints"
   },
   {
     "id": "mosaicplot",
-    "href": "/detail/graphics/mosaicplot.html",
+    "href": "/detail/base/mosaicplot.html",
     "funcname": "mosaicplot"
   },
-  { "id": "mtext", "href": "/detail/graphics/mtext.html", "funcname": "mtext" },
-  { "id": "pairs", "href": "/detail/graphics/pairs.html", "funcname": "pairs" },
+  { "id": "mtext", "href": "/detail/base/mtext.html", "funcname": "mtext" },
+  { "id": "pairs", "href": "/detail/base/pairs.html", "funcname": "pairs" },
   {
     "id": "pairs.default",
-    "href": "/detail/graphics/pairsdefault.html",
+    "href": "/detail/base/pairssymbol11default.html",
     "funcname": "pairs.default"
   },
   {
     "id": "panel.smooth",
-    "href": "/detail/graphics/panelsmooth.html",
+    "href": "/detail/base/panelsymbol11smooth.html",
     "funcname": "panel.smooth"
   },
-  { "id": "par", "href": "/detail/graphics/par.html", "funcname": "par" },
-  { "id": "persp", "href": "/detail/graphics/persp.html", "funcname": "persp" },
-  { "id": "pie", "href": "/detail/graphics/pie.html", "funcname": "pie" },
-  { "id": "plot", "href": "/detail/graphics/plot.html", "funcname": "plot" },
+  { "id": "par", "href": "/detail/base/par.html", "funcname": "par" },
+  { "id": "persp", "href": "/detail/base/persp.html", "funcname": "persp" },
+  { "id": "pie", "href": "/detail/base/pie.html", "funcname": "pie" },
+  { "id": "plot", "href": "/detail/base/plot.html", "funcname": "plot" },
   {
     "id": "plot.default",
-    "href": "/detail/graphics/plotdefault.html",
+    "href": "/detail/base/plotsymbol11default.html",
     "funcname": "plot.default"
   },
   {
     "id": "plot.design",
-    "href": "/detail/graphics/plotdesign.html",
+    "href": "/detail/base/plotsymbol11design.html",
     "funcname": "plot.design"
   },
   {
     "id": "plot.function",
-    "href": "/detail/graphics/plotfunction.html",
+    "href": "/detail/base/plotsymbol11function.html",
     "funcname": "plot.function"
   },
   {
     "id": "plot.new",
-    "href": "/detail/graphics/plotnew.html",
+    "href": "/detail/base/plotsymbol11new.html",
     "funcname": "plot.new"
   },
   {
     "id": "plot.window",
-    "href": "/detail/graphics/plotwindow.html",
+    "href": "/detail/base/plotsymbol11window.html",
     "funcname": "plot.window"
   },
   {
     "id": "plot.xy",
-    "href": "/detail/graphics/plotxy.html",
+    "href": "/detail/base/plotsymbol11xy.html",
     "funcname": "plot.xy"
   },
-  {
-    "id": "points",
-    "href": "/detail/graphics/points.html",
-    "funcname": "points"
-  },
+  { "id": "points", "href": "/detail/base/points.html", "funcname": "points" },
   {
     "id": "points.default",
-    "href": "/detail/graphics/pointsdefault.html",
+    "href": "/detail/base/pointssymbol11default.html",
     "funcname": "points.default"
   },
   {
     "id": "polygon",
-    "href": "/detail/graphics/polygon.html",
+    "href": "/detail/base/polygon.html",
     "funcname": "polygon"
   },
   {
     "id": "polypath",
-    "href": "/detail/graphics/polypath.html",
+    "href": "/detail/base/polypath.html",
     "funcname": "polypath"
   },
   {
     "id": "rasterImage",
-    "href": "/detail/graphics/rasterImage.html",
+    "href": "/detail/base/rasterImage.html",
     "funcname": "rasterImage"
   },
-  { "id": "rect", "href": "/detail/graphics/rect.html", "funcname": "rect" },
-  { "id": "rug", "href": "/detail/graphics/rug.html", "funcname": "rug" },
-  {
-    "id": "screen",
-    "href": "/detail/graphics/screen.html",
-    "funcname": "screen"
-  },
+  { "id": "rect", "href": "/detail/base/rect.html", "funcname": "rect" },
+  { "id": "rug", "href": "/detail/base/rug.html", "funcname": "rug" },
+  { "id": "screen", "href": "/detail/base/screen.html", "funcname": "screen" },
   {
     "id": "segments",
-    "href": "/detail/graphics/segments.html",
+    "href": "/detail/base/segments.html",
     "funcname": "segments"
   },
   {
     "id": "smoothScatter",
-    "href": "/detail/graphics/smoothScatter.html",
+    "href": "/detail/base/smoothScatter.html",
     "funcname": "smoothScatter"
   },
   {
     "id": "spineplot",
-    "href": "/detail/graphics/spineplot.html",
+    "href": "/detail/base/spineplot.html",
     "funcname": "spineplot"
   },
   {
     "id": "split.screen",
-    "href": "/detail/graphics/splitscreen.html",
+    "href": "/detail/base/splitsymbol11screen.html",
     "funcname": "split.screen"
   },
-  { "id": "stars", "href": "/detail/graphics/stars.html", "funcname": "stars" },
-  { "id": "stem", "href": "/detail/graphics/stem.html", "funcname": "stem" },
+  { "id": "stars", "href": "/detail/base/stars.html", "funcname": "stars" },
+  { "id": "stem", "href": "/detail/base/stem.html", "funcname": "stem" },
   {
     "id": "strheight",
-    "href": "/detail/graphics/strheight.html",
+    "href": "/detail/base/strheight.html",
     "funcname": "strheight"
   },
   {
     "id": "stripchart",
-    "href": "/detail/graphics/stripchart.html",
+    "href": "/detail/base/stripchart.html",
     "funcname": "stripchart"
   },
   {
     "id": "strwidth",
-    "href": "/detail/graphics/strwidth.html",
+    "href": "/detail/base/strwidth.html",
     "funcname": "strwidth"
   },
   {
     "id": "sunflowerplot",
-    "href": "/detail/graphics/sunflowerplot.html",
+    "href": "/detail/base/sunflowerplot.html",
     "funcname": "sunflowerplot"
   },
   {
     "id": "symbols",
-    "href": "/detail/graphics/symbols.html",
+    "href": "/detail/base/symbols.html",
     "funcname": "symbols"
   },
-  { "id": "text", "href": "/detail/graphics/text.html", "funcname": "text" },
+  { "id": "text", "href": "/detail/base/text.html", "funcname": "text" },
   {
     "id": "text.default",
-    "href": "/detail/graphics/textdefault.html",
+    "href": "/detail/base/textsymbol11default.html",
     "funcname": "text.default"
   },
-  { "id": "title", "href": "/detail/graphics/title.html", "funcname": "title" },
-  { "id": "xinch", "href": "/detail/graphics/xinch.html", "funcname": "xinch" },
+  { "id": "title", "href": "/detail/base/title.html", "funcname": "title" },
+  { "id": "xinch", "href": "/detail/base/xinch.html", "funcname": "xinch" },
   {
     "id": "xspline",
-    "href": "/detail/graphics/xspline.html",
+    "href": "/detail/base/xspline.html",
     "funcname": "xspline"
   },
-  {
-    "id": "xyinch",
-    "href": "/detail/graphics/xyinch.html",
-    "funcname": "xyinch"
-  },
-  { "id": "yinch", "href": "/detail/graphics/yinch.html", "funcname": "yinch" }
+  { "id": "xyinch", "href": "/detail/base/xyinch.html", "funcname": "xyinch" },
+  { "id": "yinch", "href": "/detail/base/yinch.html", "funcname": "yinch" }
 ]
