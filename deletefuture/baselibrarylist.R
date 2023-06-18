@@ -19,9 +19,9 @@ dat2$filename <- gsub("[<]","symbol9",dat2$filename)
 dat2$filename <- gsub("[>]","symbol10",dat2$filename)
 dat2$filename <- gsub("[.]","symbol11",dat2$filename)
 dat2%>%
-  filter(pack == "base") %>% 
+  filter(pack == "psych") %>% 
   mutate(func = paste0("{ id:'",func,"', href:")) %>% 
-  mutate(html = paste0("'/detail/base/",filename,".html'")) %>% 
+  mutate(html = paste0("'/detail/psych/",filename,".html'")) %>% 
   mutate(funcoriginal = paste0(",funcname:'",funcoriginal,"'}")) %>% 
   mutate(func = paste0(func,html,funcoriginal,",")) %>% 
   select(-"html") %>%

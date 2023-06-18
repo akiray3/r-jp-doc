@@ -1,2062 +1,2066 @@
 [
   {
     "id": "%+%",
-    "href": "/detail/base/symbol4+symbol4.html",
+    "href": "/detail/psych/symbol4+symbol4.html",
     "funcname": "%+%"
   },
-  { "id": "acs", "href": "/detail/base/acs.html", "funcname": "acs" },
-  { "id": "alpha", "href": "/detail/base/alpha.html", "funcname": "alpha" },
+  { "id": "acs", "href": "/detail/psych/acs.html", "funcname": "acs" },
+  { "id": "alpha", "href": "/detail/psych/alpha.html", "funcname": "alpha" },
   {
     "id": "alpha.ci",
-    "href": "/detail/base/alphasymbol11ci.html",
+    "href": "/detail/psych/alphasymbol11ci.html",
     "funcname": "alpha.ci"
   },
   {
     "id": "anova.psych",
-    "href": "/detail/base/anovasymbol11psych.html",
+    "href": "/detail/psych/anovasymbol11psych.html",
     "funcname": "anova.psych"
   },
-  { "id": "AUC", "href": "/detail/base/AUC.html", "funcname": "AUC" },
-  { "id": "autoR", "href": "/detail/base/autoR.html", "funcname": "autoR" },
+  { "id": "AUC", "href": "/detail/psych/AUC.html", "funcname": "AUC" },
+  { "id": "autoR", "href": "/detail/psych/autoR.html", "funcname": "autoR" },
   {
     "id": "bassAckward",
-    "href": "/detail/base/bassAckward.html",
+    "href": "/detail/psych/bassAckward.html",
     "funcname": "bassAckward"
   },
   {
     "id": "bassAckward.diagram",
-    "href": "/detail/base/bassAckwardsymbol11diagram.html",
+    "href": "/detail/psych/bassAckwardsymbol11diagram.html",
     "funcname": "bassAckward.diagram"
   },
   {
     "id": "Bechtoldt",
-    "href": "/detail/base/Bechtoldt.html",
+    "href": "/detail/psych/Bechtoldt.html",
     "funcname": "Bechtoldt"
   },
   {
     "id": "Bechtoldt.1",
-    "href": "/detail/base/Bechtoldtsymbol111.html",
+    "href": "/detail/psych/Bechtoldtsymbol111.html",
     "funcname": "Bechtoldt.1"
   },
   {
     "id": "Bechtoldt.2",
-    "href": "/detail/base/Bechtoldtsymbol112.html",
+    "href": "/detail/psych/Bechtoldtsymbol112.html",
     "funcname": "Bechtoldt.2"
   },
   {
     "id": "bestItems",
-    "href": "/detail/base/bestItems.html",
+    "href": "/detail/psych/bestItems.html",
     "funcname": "bestItems"
   },
   {
     "id": "bestScales",
-    "href": "/detail/base/bestScales.html",
+    "href": "/detail/psych/bestScales.html",
     "funcname": "bestScales"
   },
-  { "id": "bfi", "href": "/detail/base/bfi.html", "funcname": "bfi" },
+  { "id": "bfi", "href": "/detail/psych/bfi.html", "funcname": "bfi" },
   {
     "id": "bfi.keys",
-    "href": "/detail/base/bfisymbol11keys.html",
+    "href": "/detail/psych/bfisymbol11keys.html",
     "funcname": "bfi.keys"
   },
   {
     "id": "bi.bars",
-    "href": "/detail/base/bisymbol11bars.html",
+    "href": "/detail/psych/bisymbol11bars.html",
     "funcname": "bi.bars"
   },
   {
     "id": "bifactor",
-    "href": "/detail/base/bifactor.html",
+    "href": "/detail/psych/bifactor.html",
     "funcname": "bifactor"
   },
-  { "id": "bigCor", "href": "/detail/base/bigCor.html", "funcname": "bigCor" },
+  { "id": "bigCor", "href": "/detail/psych/bigCor.html", "funcname": "bigCor" },
   {
     "id": "biplot.psych",
-    "href": "/detail/base/biplotsymbol11psych.html",
+    "href": "/detail/psych/biplotsymbol11psych.html",
     "funcname": "biplot.psych"
   },
   {
     "id": "biquartimin",
-    "href": "/detail/base/biquartimin.html",
+    "href": "/detail/psych/biquartimin.html",
     "funcname": "biquartimin"
   },
   {
     "id": "biserial",
-    "href": "/detail/base/biserial.html",
+    "href": "/detail/psych/biserial.html",
     "funcname": "biserial"
   },
   {
     "id": "block.random",
-    "href": "/detail/base/blocksymbol11random.html",
+    "href": "/detail/psych/blocksymbol11random.html",
     "funcname": "block.random"
   },
   {
     "id": "bock.table",
-    "href": "/detail/base/bocksymbol11table.html",
+    "href": "/detail/psych/bocksymbol11table.html",
     "funcname": "bock.table"
   },
   {
     "id": "cattell",
-    "href": "/detail/base/cattell.html",
+    "href": "/detail/psych/cattell.html",
     "funcname": "cattell"
   },
   {
     "id": "char2numeric",
-    "href": "/detail/base/char2numeric.html",
+    "href": "/detail/psych/char2numeric.html",
     "funcname": "char2numeric"
   },
-  { "id": "Chen", "href": "/detail/base/Chen.html", "funcname": "Chen" },
-  { "id": "chi2r", "href": "/detail/base/chi2r.html", "funcname": "chi2r" },
+  { "id": "Chen", "href": "/detail/psych/Chen.html", "funcname": "Chen" },
+  { "id": "chi2r", "href": "/detail/psych/chi2r.html", "funcname": "chi2r" },
   {
     "id": "circ.sim",
-    "href": "/detail/base/circsymbol11sim.html",
+    "href": "/detail/psych/circsymbol11sim.html",
     "funcname": "circ.sim"
   },
   {
     "id": "circ.sim.plot",
-    "href": "/detail/base/circsymbol11simsymbol11plot.html",
+    "href": "/detail/psych/circsymbol11simsymbol11plot.html",
     "funcname": "circ.sim.plot"
   },
   {
     "id": "circ.simulation",
-    "href": "/detail/base/circsymbol11simulation.html",
+    "href": "/detail/psych/circsymbol11simulation.html",
     "funcname": "circ.simulation"
   },
   {
     "id": "circ.tests",
-    "href": "/detail/base/circsymbol11tests.html",
+    "href": "/detail/psych/circsymbol11tests.html",
     "funcname": "circ.tests"
   },
   {
     "id": "circadian.cor",
-    "href": "/detail/base/circadiansymbol11cor.html",
+    "href": "/detail/psych/circadiansymbol11cor.html",
     "funcname": "circadian.cor"
   },
   {
     "id": "circadian.F",
-    "href": "/detail/base/circadiansymbol11F.html",
+    "href": "/detail/psych/circadiansymbol11F.html",
     "funcname": "circadian.F"
   },
   {
     "id": "circadian.linear.cor",
-    "href": "/detail/base/circadiansymbol11linearsymbol11cor.html",
+    "href": "/detail/psych/circadiansymbol11linearsymbol11cor.html",
     "funcname": "circadian.linear.cor"
   },
   {
     "id": "circadian.mean",
-    "href": "/detail/base/circadiansymbol11mean.html",
+    "href": "/detail/psych/circadiansymbol11mean.html",
     "funcname": "circadian.mean"
   },
   {
     "id": "circadian.phase",
-    "href": "/detail/base/circadiansymbol11phase.html",
+    "href": "/detail/psych/circadiansymbol11phase.html",
     "funcname": "circadian.phase"
   },
   {
     "id": "circadian.reliability",
-    "href": "/detail/base/circadiansymbol11reliability.html",
+    "href": "/detail/psych/circadiansymbol11reliability.html",
     "funcname": "circadian.reliability"
   },
   {
     "id": "circadian.sd",
-    "href": "/detail/base/circadiansymbol11sd.html",
+    "href": "/detail/psych/circadiansymbol11sd.html",
     "funcname": "circadian.sd"
   },
   {
     "id": "circadian.stats",
-    "href": "/detail/base/circadiansymbol11stats.html",
+    "href": "/detail/psych/circadiansymbol11stats.html",
     "funcname": "circadian.stats"
   },
   {
     "id": "circular.cor",
-    "href": "/detail/base/circularsymbol11cor.html",
+    "href": "/detail/psych/circularsymbol11cor.html",
     "funcname": "circular.cor"
   },
   {
     "id": "circular.mean",
-    "href": "/detail/base/circularsymbol11mean.html",
+    "href": "/detail/psych/circularsymbol11mean.html",
     "funcname": "circular.mean"
   },
   {
     "id": "cluster.cor",
-    "href": "/detail/base/clustersymbol11cor.html",
+    "href": "/detail/psych/clustersymbol11cor.html",
     "funcname": "cluster.cor"
   },
   {
     "id": "cluster.fit",
-    "href": "/detail/base/clustersymbol11fit.html",
+    "href": "/detail/psych/clustersymbol11fit.html",
     "funcname": "cluster.fit"
   },
   {
     "id": "cluster.loadings",
-    "href": "/detail/base/clustersymbol11loadings.html",
+    "href": "/detail/psych/clustersymbol11loadings.html",
     "funcname": "cluster.loadings"
   },
   {
     "id": "cluster.plot",
-    "href": "/detail/base/clustersymbol11plot.html",
+    "href": "/detail/psych/clustersymbol11plot.html",
     "funcname": "cluster.plot"
   },
   {
     "id": "cluster2keys",
-    "href": "/detail/base/cluster2keys.html",
+    "href": "/detail/psych/cluster2keys.html",
     "funcname": "cluster2keys"
   },
   {
     "id": "cohen.d",
-    "href": "/detail/base/cohensymbol11d.html",
+    "href": "/detail/psych/cohensymbol11d.html",
     "funcname": "cohen.d"
   },
   {
     "id": "cohen.d.by",
-    "href": "/detail/base/cohensymbol11dsymbol11by.html",
+    "href": "/detail/psych/cohensymbol11dsymbol11by.html",
     "funcname": "cohen.d.by"
   },
   {
     "id": "cohen.d.ci",
-    "href": "/detail/base/cohensymbol11dsymbol11ci.html",
+    "href": "/detail/psych/cohensymbol11dsymbol11ci.html",
     "funcname": "cohen.d.ci"
   },
   {
     "id": "cohen.kappa",
-    "href": "/detail/base/cohensymbol11kappa.html",
+    "href": "/detail/psych/cohensymbol11kappa.html",
     "funcname": "cohen.kappa"
   },
   {
     "id": "cohen.profile",
-    "href": "/detail/base/cohensymbol11profile.html",
+    "href": "/detail/psych/cohensymbol11profile.html",
     "funcname": "cohen.profile"
   },
   {
     "id": "comorbidity",
-    "href": "/detail/base/comorbidity.html",
+    "href": "/detail/psych/comorbidity.html",
     "funcname": "comorbidity"
   },
   {
     "id": "con2cat",
-    "href": "/detail/base/con2cat.html",
+    "href": "/detail/psych/con2cat.html",
     "funcname": "con2cat"
   },
   {
     "id": "congeneric.sim",
-    "href": "/detail/base/congenericsymbol11sim.html",
+    "href": "/detail/psych/congenericsymbol11sim.html",
     "funcname": "congeneric.sim"
   },
   {
     "id": "congruence",
-    "href": "/detail/base/congruence.html",
+    "href": "/detail/psych/congruence.html",
     "funcname": "congruence"
   },
   {
     "id": "cor.ci",
-    "href": "/detail/base/corsymbol11ci.html",
+    "href": "/detail/psych/corsymbol11ci.html",
     "funcname": "cor.ci"
   },
   {
     "id": "cor.plot",
-    "href": "/detail/base/corsymbol11plot.html",
+    "href": "/detail/psych/corsymbol11plot.html",
     "funcname": "cor.plot"
   },
   {
     "id": "cor.plot.upperLowerCi",
-    "href": "/detail/base/corsymbol11plotsymbol11upperLowerCi.html",
+    "href": "/detail/psych/corsymbol11plotsymbol11upperLowerCi.html",
     "funcname": "cor.plot.upperLowerCi"
   },
   {
     "id": "cor.smooth",
-    "href": "/detail/base/corsymbol11smooth.html",
+    "href": "/detail/psych/corsymbol11smooth.html",
     "funcname": "cor.smooth"
   },
   {
     "id": "cor.smoother",
-    "href": "/detail/base/corsymbol11smoother.html",
+    "href": "/detail/psych/corsymbol11smoother.html",
     "funcname": "cor.smoother"
   },
   {
     "id": "cor.wt",
-    "href": "/detail/base/corsymbol11wt.html",
+    "href": "/detail/psych/corsymbol11wt.html",
     "funcname": "cor.wt"
   },
-  { "id": "cor2", "href": "/detail/base/cor2.html", "funcname": "cor2" },
+  { "id": "cor2", "href": "/detail/psych/cor2.html", "funcname": "cor2" },
   {
     "id": "cor2cov",
-    "href": "/detail/base/cor2cov.html",
+    "href": "/detail/psych/cor2cov.html",
     "funcname": "cor2cov"
   },
   {
     "id": "cor2dist",
-    "href": "/detail/base/cor2dist.html",
+    "href": "/detail/psych/cor2dist.html",
     "funcname": "cor2dist"
   },
-  { "id": "corCi", "href": "/detail/base/corCi.html", "funcname": "corCi" },
+  { "id": "corCi", "href": "/detail/psych/corCi.html", "funcname": "corCi" },
   {
     "id": "corFiml",
-    "href": "/detail/base/corFiml.html",
+    "href": "/detail/psych/corFiml.html",
     "funcname": "corFiml"
   },
   {
     "id": "corPlot",
-    "href": "/detail/base/corPlot.html",
+    "href": "/detail/psych/corPlot.html",
     "funcname": "corPlot"
   },
   {
     "id": "corPlotUpperLowerCi",
-    "href": "/detail/base/corPlotUpperLowerCi.html",
+    "href": "/detail/psych/corPlotUpperLowerCi.html",
     "funcname": "corPlotUpperLowerCi"
   },
   {
     "id": "corr.p",
-    "href": "/detail/base/corrsymbol11p.html",
+    "href": "/detail/psych/corrsymbol11p.html",
     "funcname": "corr.p"
   },
   {
     "id": "corr.test",
-    "href": "/detail/base/corrsymbol11test.html",
+    "href": "/detail/psych/corrsymbol11test.html",
     "funcname": "corr.test"
   },
   {
     "id": "correct.cor",
-    "href": "/detail/base/correctsymbol11cor.html",
+    "href": "/detail/psych/correctsymbol11cor.html",
     "funcname": "correct.cor"
   },
   {
     "id": "cortest",
-    "href": "/detail/base/cortest.html",
+    "href": "/detail/psych/cortest.html",
     "funcname": "cortest"
   },
   {
     "id": "cortest.bartlett",
-    "href": "/detail/base/cortestsymbol11bartlett.html",
+    "href": "/detail/psych/cortestsymbol11bartlett.html",
     "funcname": "cortest.bartlett"
   },
   {
     "id": "cortest.jennrich",
-    "href": "/detail/base/cortestsymbol11jennrich.html",
+    "href": "/detail/psych/cortestsymbol11jennrich.html",
     "funcname": "cortest.jennrich"
   },
   {
     "id": "cortest.mat",
-    "href": "/detail/base/cortestsymbol11mat.html",
+    "href": "/detail/psych/cortestsymbol11mat.html",
     "funcname": "cortest.mat"
   },
   {
     "id": "cortest.normal",
-    "href": "/detail/base/cortestsymbol11normal.html",
+    "href": "/detail/psych/cortestsymbol11normal.html",
     "funcname": "cortest.normal"
   },
   {
     "id": "cosinor",
-    "href": "/detail/base/cosinor.html",
+    "href": "/detail/psych/cosinor.html",
     "funcname": "cosinor"
   },
   {
     "id": "cosinor.period",
-    "href": "/detail/base/cosinorsymbol11period.html",
+    "href": "/detail/psych/cosinorsymbol11period.html",
     "funcname": "cosinor.period"
   },
   {
     "id": "cosinor.plot",
-    "href": "/detail/base/cosinorsymbol11plot.html",
+    "href": "/detail/psych/cosinorsymbol11plot.html",
     "funcname": "cosinor.plot"
   },
   {
     "id": "count.pairwise",
-    "href": "/detail/base/countsymbol11pairwise.html",
+    "href": "/detail/psych/countsymbol11pairwise.html",
     "funcname": "count.pairwise"
   },
   {
     "id": "crossValidation",
-    "href": "/detail/base/crossValidation.html",
+    "href": "/detail/psych/crossValidation.html",
     "funcname": "crossValidation"
   },
-  { "id": "cs", "href": "/detail/base/cs.html", "funcname": "cs" },
-  { "id": "cta", "href": "/detail/base/cta.html", "funcname": "cta" },
+  { "id": "cs", "href": "/detail/psych/cs.html", "funcname": "cs" },
+  { "id": "cta", "href": "/detail/psych/cta.html", "funcname": "cta" },
   {
     "id": "cta.15",
-    "href": "/detail/base/ctasymbol1115.html",
+    "href": "/detail/psych/ctasymbol1115.html",
     "funcname": "cta.15"
   },
-  { "id": "d.ci", "href": "/detail/base/dsymbol11ci.html", "funcname": "d.ci" },
+  {
+    "id": "d.ci",
+    "href": "/detail/psych/dsymbol11ci.html",
+    "funcname": "d.ci"
+  },
   {
     "id": "d.robust",
-    "href": "/detail/base/dsymbol11robust.html",
+    "href": "/detail/psych/dsymbol11robust.html",
     "funcname": "d.robust"
   },
-  { "id": "d2CL", "href": "/detail/base/d2CL.html", "funcname": "d2CL" },
-  { "id": "d2OVL", "href": "/detail/base/d2OVL.html", "funcname": "d2OVL" },
-  { "id": "d2OVL2", "href": "/detail/base/d2OVL2.html", "funcname": "d2OVL2" },
-  { "id": "d2r", "href": "/detail/base/d2r.html", "funcname": "d2r" },
-  { "id": "d2t", "href": "/detail/base/d2t.html", "funcname": "d2t" },
-  { "id": "d2U3", "href": "/detail/base/d2U3.html", "funcname": "d2U3" },
+  { "id": "d2CL", "href": "/detail/psych/d2CL.html", "funcname": "d2CL" },
+  { "id": "d2OVL", "href": "/detail/psych/d2OVL.html", "funcname": "d2OVL" },
+  { "id": "d2OVL2", "href": "/detail/psych/d2OVL2.html", "funcname": "d2OVL2" },
+  { "id": "d2r", "href": "/detail/psych/d2r.html", "funcname": "d2r" },
+  { "id": "d2t", "href": "/detail/psych/d2t.html", "funcname": "d2t" },
+  { "id": "d2U3", "href": "/detail/psych/d2U3.html", "funcname": "d2U3" },
   {
     "id": "densityBy",
-    "href": "/detail/base/densityBy.html",
+    "href": "/detail/psych/densityBy.html",
     "funcname": "densityBy"
   },
   {
     "id": "describe",
-    "href": "/detail/base/describe.html",
+    "href": "/detail/psych/describe.html",
     "funcname": "describe"
   },
   {
     "id": "describe.by",
-    "href": "/detail/base/describesymbol11by.html",
+    "href": "/detail/psych/describesymbol11by.html",
     "funcname": "describe.by"
   },
   {
     "id": "describeBy",
-    "href": "/detail/base/describeBy.html",
+    "href": "/detail/psych/describeBy.html",
     "funcname": "describeBy"
   },
   {
     "id": "describeData",
-    "href": "/detail/base/describeData.html",
+    "href": "/detail/psych/describeData.html",
     "funcname": "describeData"
   },
   {
     "id": "describeFast",
-    "href": "/detail/base/describeFast.html",
+    "href": "/detail/psych/describeFast.html",
     "funcname": "describeFast"
   },
   {
     "id": "dia.arrow",
-    "href": "/detail/base/diasymbol11arrow.html",
+    "href": "/detail/psych/diasymbol11arrow.html",
     "funcname": "dia.arrow"
   },
   {
     "id": "dia.cone",
-    "href": "/detail/base/diasymbol11cone.html",
+    "href": "/detail/psych/diasymbol11cone.html",
     "funcname": "dia.cone"
   },
   {
     "id": "dia.curve",
-    "href": "/detail/base/diasymbol11curve.html",
+    "href": "/detail/psych/diasymbol11curve.html",
     "funcname": "dia.curve"
   },
   {
     "id": "dia.curved.arrow",
-    "href": "/detail/base/diasymbol11curvedsymbol11arrow.html",
+    "href": "/detail/psych/diasymbol11curvedsymbol11arrow.html",
     "funcname": "dia.curved.arrow"
   },
   {
     "id": "dia.ellipse",
-    "href": "/detail/base/diasymbol11ellipse.html",
+    "href": "/detail/psych/diasymbol11ellipse.html",
     "funcname": "dia.ellipse"
   },
   {
     "id": "dia.ellipse1",
-    "href": "/detail/base/diasymbol11ellipse1.html",
+    "href": "/detail/psych/diasymbol11ellipse1.html",
     "funcname": "dia.ellipse1"
   },
   {
     "id": "dia.rect",
-    "href": "/detail/base/diasymbol11rect.html",
+    "href": "/detail/psych/diasymbol11rect.html",
     "funcname": "dia.rect"
   },
   {
     "id": "dia.self",
-    "href": "/detail/base/diasymbol11self.html",
+    "href": "/detail/psych/diasymbol11self.html",
     "funcname": "dia.self"
   },
   {
     "id": "dia.shape",
-    "href": "/detail/base/diasymbol11shape.html",
+    "href": "/detail/psych/diasymbol11shape.html",
     "funcname": "dia.shape"
   },
   {
     "id": "dia.triangle",
-    "href": "/detail/base/diasymbol11triangle.html",
+    "href": "/detail/psych/diasymbol11triangle.html",
     "funcname": "dia.triangle"
   },
   {
     "id": "diagram",
-    "href": "/detail/base/diagram.html",
+    "href": "/detail/psych/diagram.html",
     "funcname": "diagram"
   },
   {
     "id": "directSl",
-    "href": "/detail/base/directSl.html",
+    "href": "/detail/psych/directSl.html",
     "funcname": "directSl"
   },
   {
     "id": "distance",
-    "href": "/detail/base/distance.html",
+    "href": "/detail/psych/distance.html",
     "funcname": "distance"
   },
   {
     "id": "draw.cor",
-    "href": "/detail/base/drawsymbol11cor.html",
+    "href": "/detail/psych/drawsymbol11cor.html",
     "funcname": "draw.cor"
   },
   {
     "id": "draw.tetra",
-    "href": "/detail/base/drawsymbol11tetra.html",
+    "href": "/detail/psych/drawsymbol11tetra.html",
     "funcname": "draw.tetra"
   },
   {
     "id": "dummy.code",
-    "href": "/detail/base/dummysymbol11code.html",
+    "href": "/detail/psych/dummysymbol11code.html",
     "funcname": "dummy.code"
   },
-  { "id": "Dwyer", "href": "/detail/base/Dwyer.html", "funcname": "Dwyer" },
+  { "id": "Dwyer", "href": "/detail/psych/Dwyer.html", "funcname": "Dwyer" },
   {
     "id": "eigen.loadings",
-    "href": "/detail/base/eigensymbol11loadings.html",
+    "href": "/detail/psych/eigensymbol11loadings.html",
     "funcname": "eigen.loadings"
   },
   {
     "id": "ellipses",
-    "href": "/detail/base/ellipses.html",
+    "href": "/detail/psych/ellipses.html",
     "funcname": "ellipses"
   },
   {
     "id": "equamax",
-    "href": "/detail/base/equamax.html",
+    "href": "/detail/psych/equamax.html",
     "funcname": "equamax"
   },
   {
     "id": "error.bars",
-    "href": "/detail/base/errorsymbol11bars.html",
+    "href": "/detail/psych/errorsymbol11bars.html",
     "funcname": "error.bars"
   },
   {
     "id": "error.bars.by",
-    "href": "/detail/base/errorsymbol11barssymbol11by.html",
+    "href": "/detail/psych/errorsymbol11barssymbol11by.html",
     "funcname": "error.bars.by"
   },
   {
     "id": "error.bars.tab",
-    "href": "/detail/base/errorsymbol11barssymbol11tab.html",
+    "href": "/detail/psych/errorsymbol11barssymbol11tab.html",
     "funcname": "error.bars.tab"
   },
   {
     "id": "error.crosses",
-    "href": "/detail/base/errorsymbol11crosses.html",
+    "href": "/detail/psych/errorsymbol11crosses.html",
     "funcname": "error.crosses"
   },
   {
     "id": "error.dots",
-    "href": "/detail/base/errorsymbol11dots.html",
+    "href": "/detail/psych/errorsymbol11dots.html",
     "funcname": "error.dots"
   },
   {
     "id": "errorCircles",
-    "href": "/detail/base/errorCircles.html",
+    "href": "/detail/psych/errorCircles.html",
     "funcname": "errorCircles"
   },
-  { "id": "esem", "href": "/detail/base/esem.html", "funcname": "esem" },
+  { "id": "esem", "href": "/detail/psych/esem.html", "funcname": "esem" },
   {
     "id": "esem.diagram",
-    "href": "/detail/base/esemsymbol11diagram.html",
+    "href": "/detail/psych/esemsymbol11diagram.html",
     "funcname": "esem.diagram"
   },
   {
     "id": "extension.diagram",
-    "href": "/detail/base/extensionsymbol11diagram.html",
+    "href": "/detail/psych/extensionsymbol11diagram.html",
     "funcname": "extension.diagram"
   },
-  { "id": "fa", "href": "/detail/base/fa.html", "funcname": "fa" },
+  { "id": "fa", "href": "/detail/psych/fa.html", "funcname": "fa" },
   {
     "id": "fa.congruence",
-    "href": "/detail/base/fasymbol11congruence.html",
+    "href": "/detail/psych/fasymbol11congruence.html",
     "funcname": "fa.congruence"
   },
   {
     "id": "fa.diagram",
-    "href": "/detail/base/fasymbol11diagram.html",
+    "href": "/detail/psych/fasymbol11diagram.html",
     "funcname": "fa.diagram"
   },
   {
     "id": "fa.extend",
-    "href": "/detail/base/fasymbol11extend.html",
+    "href": "/detail/psych/fasymbol11extend.html",
     "funcname": "fa.extend"
   },
   {
     "id": "fa.extension",
-    "href": "/detail/base/fasymbol11extension.html",
+    "href": "/detail/psych/fasymbol11extension.html",
     "funcname": "fa.extension"
   },
   {
     "id": "fa.graph",
-    "href": "/detail/base/fasymbol11graph.html",
+    "href": "/detail/psych/fasymbol11graph.html",
     "funcname": "fa.graph"
   },
   {
     "id": "fa.lookup",
-    "href": "/detail/base/fasymbol11lookup.html",
+    "href": "/detail/psych/fasymbol11lookup.html",
     "funcname": "fa.lookup"
   },
   {
     "id": "fa.multi",
-    "href": "/detail/base/fasymbol11multi.html",
+    "href": "/detail/psych/fasymbol11multi.html",
     "funcname": "fa.multi"
   },
   {
     "id": "fa.multi.diagram",
-    "href": "/detail/base/fasymbol11multisymbol11diagram.html",
+    "href": "/detail/psych/fasymbol11multisymbol11diagram.html",
     "funcname": "fa.multi.diagram"
   },
   {
     "id": "fa.organize",
-    "href": "/detail/base/fasymbol11organize.html",
+    "href": "/detail/psych/fasymbol11organize.html",
     "funcname": "fa.organize"
   },
   {
     "id": "fa.parallel",
-    "href": "/detail/base/fasymbol11parallel.html",
+    "href": "/detail/psych/fasymbol11parallel.html",
     "funcname": "fa.parallel"
   },
   {
     "id": "fa.parallel.poly",
-    "href": "/detail/base/fasymbol11parallelsymbol11poly.html",
+    "href": "/detail/psych/fasymbol11parallelsymbol11poly.html",
     "funcname": "fa.parallel.poly"
   },
   {
     "id": "fa.plot",
-    "href": "/detail/base/fasymbol11plot.html",
+    "href": "/detail/psych/fasymbol11plot.html",
     "funcname": "fa.plot"
   },
   {
     "id": "fa.poly",
-    "href": "/detail/base/fasymbol11poly.html",
+    "href": "/detail/psych/fasymbol11poly.html",
     "funcname": "fa.poly"
   },
   {
     "id": "fa.pooled",
-    "href": "/detail/base/fasymbol11pooled.html",
+    "href": "/detail/psych/fasymbol11pooled.html",
     "funcname": "fa.pooled"
   },
   {
     "id": "fa.random",
-    "href": "/detail/base/fasymbol11random.html",
+    "href": "/detail/psych/fasymbol11random.html",
     "funcname": "fa.random"
   },
   {
     "id": "fa.rgraph",
-    "href": "/detail/base/fasymbol11rgraph.html",
+    "href": "/detail/psych/fasymbol11rgraph.html",
     "funcname": "fa.rgraph"
   },
   {
     "id": "fa.sapa",
-    "href": "/detail/base/fasymbol11sapa.html",
+    "href": "/detail/psych/fasymbol11sapa.html",
     "funcname": "fa.sapa"
   },
   {
     "id": "fa.sort",
-    "href": "/detail/base/fasymbol11sort.html",
+    "href": "/detail/psych/fasymbol11sort.html",
     "funcname": "fa.sort"
   },
   {
     "id": "fa.stats",
-    "href": "/detail/base/fasymbol11stats.html",
+    "href": "/detail/psych/fasymbol11stats.html",
     "funcname": "fa.stats"
   },
-  { "id": "fa2irt", "href": "/detail/base/fa2irt.html", "funcname": "fa2irt" },
-  { "id": "faBy", "href": "/detail/base/faBy.html", "funcname": "faBy" },
-  { "id": "fac", "href": "/detail/base/fac.html", "funcname": "fac" },
-  { "id": "faCor", "href": "/detail/base/faCor.html", "funcname": "faCor" },
+  { "id": "fa2irt", "href": "/detail/psych/fa2irt.html", "funcname": "fa2irt" },
+  { "id": "faBy", "href": "/detail/psych/faBy.html", "funcname": "faBy" },
+  { "id": "fac", "href": "/detail/psych/fac.html", "funcname": "fac" },
+  { "id": "faCor", "href": "/detail/psych/faCor.html", "funcname": "faCor" },
   {
     "id": "factor.congruence",
-    "href": "/detail/base/factorsymbol11congruence.html",
+    "href": "/detail/psych/factorsymbol11congruence.html",
     "funcname": "factor.congruence"
   },
   {
     "id": "factor.fit",
-    "href": "/detail/base/factorsymbol11fit.html",
+    "href": "/detail/psych/factorsymbol11fit.html",
     "funcname": "factor.fit"
   },
   {
     "id": "factor.minres",
-    "href": "/detail/base/factorsymbol11minres.html",
+    "href": "/detail/psych/factorsymbol11minres.html",
     "funcname": "factor.minres"
   },
   {
     "id": "factor.model",
-    "href": "/detail/base/factorsymbol11model.html",
+    "href": "/detail/psych/factorsymbol11model.html",
     "funcname": "factor.model"
   },
   {
     "id": "factor.pa",
-    "href": "/detail/base/factorsymbol11pa.html",
+    "href": "/detail/psych/factorsymbol11pa.html",
     "funcname": "factor.pa"
   },
   {
     "id": "factor.plot",
-    "href": "/detail/base/factorsymbol11plot.html",
+    "href": "/detail/psych/factorsymbol11plot.html",
     "funcname": "factor.plot"
   },
   {
     "id": "factor.residuals",
-    "href": "/detail/base/factorsymbol11residuals.html",
+    "href": "/detail/psych/factorsymbol11residuals.html",
     "funcname": "factor.residuals"
   },
   {
     "id": "factor.rotate",
-    "href": "/detail/base/factorsymbol11rotate.html",
+    "href": "/detail/psych/factorsymbol11rotate.html",
     "funcname": "factor.rotate"
   },
   {
     "id": "factor.scores",
-    "href": "/detail/base/factorsymbol11scores.html",
+    "href": "/detail/psych/factorsymbol11scores.html",
     "funcname": "factor.scores"
   },
   {
     "id": "factor.stats",
-    "href": "/detail/base/factorsymbol11stats.html",
+    "href": "/detail/psych/factorsymbol11stats.html",
     "funcname": "factor.stats"
   },
   {
     "id": "factor.wls",
-    "href": "/detail/base/factorsymbol11wls.html",
+    "href": "/detail/psych/factorsymbol11wls.html",
     "funcname": "factor.wls"
   },
   {
     "id": "factor2cluster",
-    "href": "/detail/base/factor2cluster.html",
+    "href": "/detail/psych/factor2cluster.html",
     "funcname": "factor2cluster"
   },
   {
     "id": "faRotate",
-    "href": "/detail/base/faRotate.html",
+    "href": "/detail/psych/faRotate.html",
     "funcname": "faRotate"
   },
   {
     "id": "faRotations",
-    "href": "/detail/base/faRotations.html",
+    "href": "/detail/psych/faRotations.html",
     "funcname": "faRotations"
   },
   {
     "id": "fisherz",
-    "href": "/detail/base/fisherz.html",
+    "href": "/detail/psych/fisherz.html",
     "funcname": "fisherz"
   },
   {
     "id": "fisherz2r",
-    "href": "/detail/base/fisherz2r.html",
+    "href": "/detail/psych/fisherz2r.html",
     "funcname": "fisherz2r"
   },
-  { "id": "fparse", "href": "/detail/base/fparse.html", "funcname": "fparse" },
-  { "id": "fromTo", "href": "/detail/base/fromTo.html", "funcname": "fromTo" },
-  { "id": "g2r", "href": "/detail/base/g2r.html", "funcname": "g2r" },
-  { "id": "Garcia", "href": "/detail/base/Garcia.html", "funcname": "Garcia" },
+  { "id": "fparse", "href": "/detail/psych/fparse.html", "funcname": "fparse" },
+  { "id": "fromTo", "href": "/detail/psych/fromTo.html", "funcname": "fromTo" },
+  { "id": "g2r", "href": "/detail/psych/g2r.html", "funcname": "g2r" },
+  { "id": "Garcia", "href": "/detail/psych/Garcia.html", "funcname": "Garcia" },
   {
     "id": "geometric.mean",
-    "href": "/detail/base/geometricsymbol11mean.html",
+    "href": "/detail/psych/geometricsymbol11mean.html",
     "funcname": "geometric.mean"
   },
-  { "id": "glb", "href": "/detail/base/glb.html", "funcname": "glb" },
+  { "id": "glb", "href": "/detail/psych/glb.html", "funcname": "glb" },
   {
     "id": "glb.algebraic",
-    "href": "/detail/base/glbsymbol11algebraic.html",
+    "href": "/detail/psych/glbsymbol11algebraic.html",
     "funcname": "glb.algebraic"
   },
   {
     "id": "glb.fa",
-    "href": "/detail/base/glbsymbol11fa.html",
+    "href": "/detail/psych/glbsymbol11fa.html",
     "funcname": "glb.fa"
   },
-  { "id": "Gleser", "href": "/detail/base/Gleser.html", "funcname": "Gleser" },
+  { "id": "Gleser", "href": "/detail/psych/Gleser.html", "funcname": "Gleser" },
   {
     "id": "Gorsuch",
-    "href": "/detail/base/Gorsuch.html",
+    "href": "/detail/psych/Gorsuch.html",
     "funcname": "Gorsuch"
   },
   {
     "id": "guttman",
-    "href": "/detail/base/guttman.html",
+    "href": "/detail/psych/guttman.html",
     "funcname": "guttman"
   },
   {
     "id": "Harman.5",
-    "href": "/detail/base/Harmansymbol115.html",
+    "href": "/detail/psych/Harmansymbol115.html",
     "funcname": "Harman.5"
   },
   {
     "id": "Harman.8",
-    "href": "/detail/base/Harmansymbol118.html",
+    "href": "/detail/psych/Harmansymbol118.html",
     "funcname": "Harman.8"
   },
   {
     "id": "Harman.Burt",
-    "href": "/detail/base/Harmansymbol11Burt.html",
+    "href": "/detail/psych/Harmansymbol11Burt.html",
     "funcname": "Harman.Burt"
   },
   {
     "id": "Harman.Holzinger",
-    "href": "/detail/base/Harmansymbol11Holzinger.html",
+    "href": "/detail/psych/Harmansymbol11Holzinger.html",
     "funcname": "Harman.Holzinger"
   },
   {
     "id": "Harman.political",
-    "href": "/detail/base/Harmansymbol11political.html",
+    "href": "/detail/psych/Harmansymbol11political.html",
     "funcname": "Harman.political"
   },
   {
     "id": "harmonic.mean",
-    "href": "/detail/base/harmonicsymbol11mean.html",
+    "href": "/detail/psych/harmonicsymbol11mean.html",
     "funcname": "harmonic.mean"
   },
   {
     "id": "headtail",
-    "href": "/detail/base/headtail.html",
+    "href": "/detail/psych/headtail.html",
     "funcname": "headtail"
   },
   {
     "id": "headTail",
-    "href": "/detail/base/headTail.html",
+    "href": "/detail/psych/headTail.html",
     "funcname": "headTail"
   },
   {
     "id": "het.diagram",
-    "href": "/detail/base/hetsymbol11diagram.html",
+    "href": "/detail/psych/hetsymbol11diagram.html",
     "funcname": "het.diagram"
   },
-  { "id": "histBy", "href": "/detail/base/histBy.html", "funcname": "histBy" },
+  { "id": "histBy", "href": "/detail/psych/histBy.html", "funcname": "histBy" },
   {
     "id": "Holzinger",
-    "href": "/detail/base/Holzinger.html",
+    "href": "/detail/psych/Holzinger.html",
     "funcname": "Holzinger"
   },
   {
     "id": "Holzinger.9",
-    "href": "/detail/base/Holzingersymbol119.html",
+    "href": "/detail/psych/Holzingersymbol119.html",
     "funcname": "Holzinger.9"
   },
-  { "id": "ICC", "href": "/detail/base/ICC.html", "funcname": "ICC" },
-  { "id": "iclust", "href": "/detail/base/iclust.html", "funcname": "iclust" },
-  { "id": "ICLUST", "href": "/detail/base/ICLUST.html", "funcname": "ICLUST" },
+  { "id": "ICC", "href": "/detail/psych/ICC.html", "funcname": "ICC" },
+  { "id": "iclust", "href": "/detail/psych/iclust.html", "funcname": "iclust" },
+  { "id": "ICLUST", "href": "/detail/psych/ICLUST.html", "funcname": "ICLUST" },
   {
     "id": "ICLUST.cluster",
-    "href": "/detail/base/ICLUSTsymbol11cluster.html",
+    "href": "/detail/psych/ICLUSTsymbol11cluster.html",
     "funcname": "ICLUST.cluster"
   },
   {
     "id": "iclust.diagram",
-    "href": "/detail/base/iclustsymbol11diagram.html",
+    "href": "/detail/psych/iclustsymbol11diagram.html",
     "funcname": "iclust.diagram"
   },
   {
     "id": "ICLUST.graph",
-    "href": "/detail/base/ICLUSTsymbol11graph.html",
+    "href": "/detail/psych/ICLUSTsymbol11graph.html",
     "funcname": "ICLUST.graph"
   },
   {
     "id": "ICLUST.rgraph",
-    "href": "/detail/base/ICLUSTsymbol11rgraph.html",
+    "href": "/detail/psych/ICLUSTsymbol11rgraph.html",
     "funcname": "ICLUST.rgraph"
   },
   {
     "id": "iclust.sort",
-    "href": "/detail/base/iclustsymbol11sort.html",
+    "href": "/detail/psych/iclustsymbol11sort.html",
     "funcname": "iclust.sort"
   },
   {
     "id": "ICLUST.sort",
-    "href": "/detail/base/ICLUSTsymbol11sort.html",
+    "href": "/detail/psych/ICLUSTsymbol11sort.html",
     "funcname": "ICLUST.sort"
   },
   {
     "id": "interbattery",
-    "href": "/detail/base/interbattery.html",
+    "href": "/detail/psych/interbattery.html",
     "funcname": "interbattery"
   },
   {
     "id": "interp.boxplot",
-    "href": "/detail/base/interpsymbol11boxplot.html",
+    "href": "/detail/psych/interpsymbol11boxplot.html",
     "funcname": "interp.boxplot"
   },
   {
     "id": "interp.median",
-    "href": "/detail/base/interpsymbol11median.html",
+    "href": "/detail/psych/interpsymbol11median.html",
     "funcname": "interp.median"
   },
   {
     "id": "interp.q",
-    "href": "/detail/base/interpsymbol11q.html",
+    "href": "/detail/psych/interpsymbol11q.html",
     "funcname": "interp.q"
   },
   {
     "id": "interp.qplot.by",
-    "href": "/detail/base/interpsymbol11qplotsymbol11by.html",
+    "href": "/detail/psych/interpsymbol11qplotsymbol11by.html",
     "funcname": "interp.qplot.by"
   },
   {
     "id": "interp.quantiles",
-    "href": "/detail/base/interpsymbol11quantiles.html",
+    "href": "/detail/psych/interpsymbol11quantiles.html",
     "funcname": "interp.quantiles"
   },
   {
     "id": "interp.quart",
-    "href": "/detail/base/interpsymbol11quart.html",
+    "href": "/detail/psych/interpsymbol11quart.html",
     "funcname": "interp.quart"
   },
   {
     "id": "interp.quartiles",
-    "href": "/detail/base/interpsymbol11quartiles.html",
+    "href": "/detail/psych/interpsymbol11quartiles.html",
     "funcname": "interp.quartiles"
   },
   {
     "id": "interp.values",
-    "href": "/detail/base/interpsymbol11values.html",
+    "href": "/detail/psych/interpsymbol11values.html",
     "funcname": "interp.values"
   },
   {
     "id": "irt.0p",
-    "href": "/detail/base/irtsymbol110p.html",
+    "href": "/detail/psych/irtsymbol110p.html",
     "funcname": "irt.0p"
   },
   {
     "id": "irt.1p",
-    "href": "/detail/base/irtsymbol111p.html",
+    "href": "/detail/psych/irtsymbol111p.html",
     "funcname": "irt.1p"
   },
   {
     "id": "irt.2p",
-    "href": "/detail/base/irtsymbol112p.html",
+    "href": "/detail/psych/irtsymbol112p.html",
     "funcname": "irt.2p"
   },
   {
     "id": "irt.discrim",
-    "href": "/detail/base/irtsymbol11discrim.html",
+    "href": "/detail/psych/irtsymbol11discrim.html",
     "funcname": "irt.discrim"
   },
   {
     "id": "irt.fa",
-    "href": "/detail/base/irtsymbol11fa.html",
+    "href": "/detail/psych/irtsymbol11fa.html",
     "funcname": "irt.fa"
   },
   {
     "id": "irt.item.diff.rasch",
-    "href": "/detail/base/irtsymbol11itemsymbol11diffsymbol11rasch.html",
+    "href": "/detail/psych/irtsymbol11itemsymbol11diffsymbol11rasch.html",
     "funcname": "irt.item.diff.rasch"
   },
   {
     "id": "irt.person.rasch",
-    "href": "/detail/base/irtsymbol11personsymbol11rasch.html",
+    "href": "/detail/psych/irtsymbol11personsymbol11rasch.html",
     "funcname": "irt.person.rasch"
   },
   {
     "id": "irt.responses",
-    "href": "/detail/base/irtsymbol11responses.html",
+    "href": "/detail/psych/irtsymbol11responses.html",
     "funcname": "irt.responses"
   },
   {
     "id": "irt.se",
-    "href": "/detail/base/irtsymbol11se.html",
+    "href": "/detail/psych/irtsymbol11se.html",
     "funcname": "irt.se"
   },
   {
     "id": "irt.select",
-    "href": "/detail/base/irtsymbol11select.html",
+    "href": "/detail/psych/irtsymbol11select.html",
     "funcname": "irt.select"
   },
   {
     "id": "irt.stats.like",
-    "href": "/detail/base/irtsymbol11statssymbol11like.html",
+    "href": "/detail/psych/irtsymbol11statssymbol11like.html",
     "funcname": "irt.stats.like"
   },
   {
     "id": "irt.tau",
-    "href": "/detail/base/irtsymbol11tau.html",
+    "href": "/detail/psych/irtsymbol11tau.html",
     "funcname": "irt.tau"
   },
   {
     "id": "isCorrelation",
-    "href": "/detail/base/isCorrelation.html",
+    "href": "/detail/psych/isCorrelation.html",
     "funcname": "isCorrelation"
   },
   {
     "id": "isCovariance",
-    "href": "/detail/base/isCovariance.html",
+    "href": "/detail/psych/isCovariance.html",
     "funcname": "isCovariance"
   },
   {
     "id": "item.dichot",
-    "href": "/detail/base/itemsymbol11dichot.html",
+    "href": "/detail/psych/itemsymbol11dichot.html",
     "funcname": "item.dichot"
   },
   {
     "id": "item.lookup",
-    "href": "/detail/base/itemsymbol11lookup.html",
+    "href": "/detail/psych/itemsymbol11lookup.html",
     "funcname": "item.lookup"
   },
   {
     "id": "item.sim",
-    "href": "/detail/base/itemsymbol11sim.html",
+    "href": "/detail/psych/itemsymbol11sim.html",
     "funcname": "item.sim"
   },
   {
     "id": "item.validity",
-    "href": "/detail/base/itemsymbol11validity.html",
+    "href": "/detail/psych/itemsymbol11validity.html",
     "funcname": "item.validity"
   },
-  { "id": "kaiser", "href": "/detail/base/kaiser.html", "funcname": "kaiser" },
+  { "id": "kaiser", "href": "/detail/psych/kaiser.html", "funcname": "kaiser" },
   {
     "id": "keys.lookup",
-    "href": "/detail/base/keyssymbol11lookup.html",
+    "href": "/detail/psych/keyssymbol11lookup.html",
     "funcname": "keys.lookup"
   },
   {
     "id": "keys2list",
-    "href": "/detail/base/keys2list.html",
+    "href": "/detail/psych/keys2list.html",
     "funcname": "keys2list"
   },
   {
     "id": "keysort",
-    "href": "/detail/base/keysort.html",
+    "href": "/detail/psych/keysort.html",
     "funcname": "keysort"
   },
-  { "id": "KMO", "href": "/detail/base/KMO.html", "funcname": "KMO" },
+  { "id": "KMO", "href": "/detail/psych/KMO.html", "funcname": "KMO" },
   {
     "id": "kurtosi",
-    "href": "/detail/base/kurtosi.html",
+    "href": "/detail/psych/kurtosi.html",
     "funcname": "kurtosi"
   },
   {
     "id": "lavaan.diagram",
-    "href": "/detail/base/lavaansymbol11diagram.html",
+    "href": "/detail/psych/lavaansymbol11diagram.html",
     "funcname": "lavaan.diagram"
   },
   {
     "id": "levels2numeric",
-    "href": "/detail/base/levels2numeric.html",
+    "href": "/detail/psych/levels2numeric.html",
     "funcname": "levels2numeric"
   },
   {
     "id": "logistic",
-    "href": "/detail/base/logistic.html",
+    "href": "/detail/psych/logistic.html",
     "funcname": "logistic"
   },
   {
     "id": "logistic.grm",
-    "href": "/detail/base/logisticsymbol11grm.html",
+    "href": "/detail/psych/logisticsymbol11grm.html",
     "funcname": "logistic.grm"
   },
-  { "id": "logit", "href": "/detail/base/logit.html", "funcname": "logit" },
-  { "id": "lookup", "href": "/detail/base/lookup.html", "funcname": "lookup" },
+  { "id": "logit", "href": "/detail/psych/logit.html", "funcname": "logit" },
+  { "id": "lookup", "href": "/detail/psych/lookup.html", "funcname": "lookup" },
   {
     "id": "lookupFromKeys",
-    "href": "/detail/base/lookupFromKeys.html",
+    "href": "/detail/psych/lookupFromKeys.html",
     "funcname": "lookupFromKeys"
   },
   {
     "id": "lookupItems",
-    "href": "/detail/base/lookupItems.html",
+    "href": "/detail/psych/lookupItems.html",
     "funcname": "lookupItems"
   },
   {
     "id": "lowerCor",
-    "href": "/detail/base/lowerCor.html",
+    "href": "/detail/psych/lowerCor.html",
     "funcname": "lowerCor"
   },
   {
     "id": "lowerMat",
-    "href": "/detail/base/lowerMat.html",
+    "href": "/detail/psych/lowerMat.html",
     "funcname": "lowerMat"
   },
   {
     "id": "lowerUpper",
-    "href": "/detail/base/lowerUpper.html",
+    "href": "/detail/psych/lowerUpper.html",
     "funcname": "lowerUpper"
   },
-  { "id": "lsat6", "href": "/detail/base/lsat6.html", "funcname": "lsat6" },
-  { "id": "lsat7", "href": "/detail/base/lsat7.html", "funcname": "lsat7" },
-  { "id": "m2d", "href": "/detail/base/m2d.html", "funcname": "m2d" },
-  { "id": "m2t", "href": "/detail/base/m2t.html", "funcname": "m2t" },
+  { "id": "lsat6", "href": "/detail/psych/lsat6.html", "funcname": "lsat6" },
+  { "id": "lsat7", "href": "/detail/psych/lsat7.html", "funcname": "lsat7" },
+  { "id": "m2d", "href": "/detail/psych/m2d.html", "funcname": "m2d" },
+  { "id": "m2t", "href": "/detail/psych/m2t.html", "funcname": "m2t" },
   {
     "id": "make.congeneric",
-    "href": "/detail/base/makesymbol11congeneric.html",
+    "href": "/detail/psych/makesymbol11congeneric.html",
     "funcname": "make.congeneric"
   },
   {
     "id": "make.hierarchical",
-    "href": "/detail/base/makesymbol11hierarchical.html",
+    "href": "/detail/psych/makesymbol11hierarchical.html",
     "funcname": "make.hierarchical"
   },
   {
     "id": "make.irt.stats",
-    "href": "/detail/base/makesymbol11irtsymbol11stats.html",
+    "href": "/detail/psych/makesymbol11irtsymbol11stats.html",
     "funcname": "make.irt.stats"
   },
   {
     "id": "make.keys",
-    "href": "/detail/base/makesymbol11keys.html",
+    "href": "/detail/psych/makesymbol11keys.html",
     "funcname": "make.keys"
   },
   {
     "id": "makePositiveKeys",
-    "href": "/detail/base/makePositiveKeys.html",
+    "href": "/detail/psych/makePositiveKeys.html",
     "funcname": "makePositiveKeys"
   },
   {
     "id": "manhattan",
-    "href": "/detail/base/manhattan.html",
+    "href": "/detail/psych/manhattan.html",
     "funcname": "manhattan"
   },
-  { "id": "mardia", "href": "/detail/base/mardia.html", "funcname": "mardia" },
+  { "id": "mardia", "href": "/detail/psych/mardia.html", "funcname": "mardia" },
   {
     "id": "mat.regress",
-    "href": "/detail/base/matsymbol11regress.html",
+    "href": "/detail/psych/matsymbol11regress.html",
     "funcname": "mat.regress"
   },
   {
     "id": "mat.sort",
-    "href": "/detail/base/matsymbol11sort.html",
+    "href": "/detail/psych/matsymbol11sort.html",
     "funcname": "mat.sort"
   },
   {
     "id": "matPlot",
-    "href": "/detail/base/matPlot.html",
+    "href": "/detail/psych/matPlot.html",
     "funcname": "matPlot"
   },
-  { "id": "matReg", "href": "/detail/base/matReg.html", "funcname": "matReg" },
+  { "id": "matReg", "href": "/detail/psych/matReg.html", "funcname": "matReg" },
   {
     "id": "matSort",
-    "href": "/detail/base/matSort.html",
+    "href": "/detail/psych/matSort.html",
     "funcname": "matSort"
   },
   {
     "id": "mediate",
-    "href": "/detail/base/mediate.html",
+    "href": "/detail/psych/mediate.html",
     "funcname": "mediate"
   },
   {
     "id": "mediate.diagram",
-    "href": "/detail/base/mediatesymbol11diagram.html",
+    "href": "/detail/psych/mediatesymbol11diagram.html",
     "funcname": "mediate.diagram"
   },
   {
     "id": "minkowski",
-    "href": "/detail/base/minkowski.html",
+    "href": "/detail/psych/minkowski.html",
     "funcname": "minkowski"
   },
   {
     "id": "mixed.cor",
-    "href": "/detail/base/mixedsymbol11cor.html",
+    "href": "/detail/psych/mixedsymbol11cor.html",
     "funcname": "mixed.cor"
   },
   {
     "id": "mixedCor",
-    "href": "/detail/base/mixedCor.html",
+    "href": "/detail/psych/mixedCor.html",
     "funcname": "mixedCor"
   },
   {
     "id": "mlArrange",
-    "href": "/detail/base/mlArrange.html",
+    "href": "/detail/psych/mlArrange.html",
     "funcname": "mlArrange"
   },
-  { "id": "mlPlot", "href": "/detail/base/mlPlot.html", "funcname": "mlPlot" },
-  { "id": "mlr", "href": "/detail/base/mlr.html", "funcname": "mlr" },
+  { "id": "mlPlot", "href": "/detail/psych/mlPlot.html", "funcname": "mlPlot" },
+  { "id": "mlr", "href": "/detail/psych/mlr.html", "funcname": "mlr" },
   {
     "id": "moderate.diagram",
-    "href": "/detail/base/moderatesymbol11diagram.html",
+    "href": "/detail/psych/moderatesymbol11diagram.html",
     "funcname": "moderate.diagram"
   },
-  { "id": "mssd", "href": "/detail/base/mssd.html", "funcname": "mssd" },
+  { "id": "mssd", "href": "/detail/psych/mssd.html", "funcname": "mssd" },
   {
     "id": "multi.arrow",
-    "href": "/detail/base/multisymbol11arrow.html",
+    "href": "/detail/psych/multisymbol11arrow.html",
     "funcname": "multi.arrow"
   },
   {
     "id": "multi.curved.arrow",
-    "href": "/detail/base/multisymbol11curvedsymbol11arrow.html",
+    "href": "/detail/psych/multisymbol11curvedsymbol11arrow.html",
     "funcname": "multi.curved.arrow"
   },
   {
     "id": "multi.hist",
-    "href": "/detail/base/multisymbol11hist.html",
+    "href": "/detail/psych/multisymbol11hist.html",
     "funcname": "multi.hist"
   },
   {
     "id": "multi.rect",
-    "href": "/detail/base/multisymbol11rect.html",
+    "href": "/detail/psych/multisymbol11rect.html",
     "funcname": "multi.rect"
   },
   {
     "id": "multi.self",
-    "href": "/detail/base/multisymbol11self.html",
+    "href": "/detail/psych/multisymbol11self.html",
     "funcname": "multi.self"
   },
   {
     "id": "multilevel.reliability",
-    "href": "/detail/base/multilevelsymbol11reliability.html",
+    "href": "/detail/psych/multilevelsymbol11reliability.html",
     "funcname": "multilevel.reliability"
   },
   {
     "id": "nchar2numeric",
-    "href": "/detail/base/nchar2numeric.html",
+    "href": "/detail/psych/nchar2numeric.html",
     "funcname": "nchar2numeric"
   },
   {
     "id": "nfactors",
-    "href": "/detail/base/nfactors.html",
+    "href": "/detail/psych/nfactors.html",
     "funcname": "nfactors"
   },
-  { "id": "omega", "href": "/detail/base/omega.html", "funcname": "omega" },
+  { "id": "omega", "href": "/detail/psych/omega.html", "funcname": "omega" },
   {
     "id": "omega.diagram",
-    "href": "/detail/base/omegasymbol11diagram.html",
+    "href": "/detail/psych/omegasymbol11diagram.html",
     "funcname": "omega.diagram"
   },
   {
     "id": "omega.graph",
-    "href": "/detail/base/omegasymbol11graph.html",
+    "href": "/detail/psych/omegasymbol11graph.html",
     "funcname": "omega.graph"
   },
   {
     "id": "omegaDirect",
-    "href": "/detail/base/omegaDirect.html",
+    "href": "/detail/psych/omegaDirect.html",
     "funcname": "omegaDirect"
   },
   {
     "id": "omegaFromSem",
-    "href": "/detail/base/omegaFromSem.html",
+    "href": "/detail/psych/omegaFromSem.html",
     "funcname": "omegaFromSem"
   },
-  { "id": "omegah", "href": "/detail/base/omegah.html", "funcname": "omegah" },
+  { "id": "omegah", "href": "/detail/psych/omegah.html", "funcname": "omegah" },
   {
     "id": "omegaSem",
-    "href": "/detail/base/omegaSem.html",
+    "href": "/detail/psych/omegaSem.html",
     "funcname": "omegaSem"
   },
   {
     "id": "outlier",
-    "href": "/detail/base/outlier.html",
+    "href": "/detail/psych/outlier.html",
     "funcname": "outlier"
   },
   {
     "id": "p.rep",
-    "href": "/detail/base/psymbol11rep.html",
+    "href": "/detail/psych/psymbol11rep.html",
     "funcname": "p.rep"
   },
   {
     "id": "p.rep.f",
-    "href": "/detail/base/psymbol11repsymbol11f.html",
+    "href": "/detail/psych/psymbol11repsymbol11f.html",
     "funcname": "p.rep.f"
   },
   {
     "id": "p.rep.r",
-    "href": "/detail/base/psymbol11repsymbol11r.html",
+    "href": "/detail/psych/psymbol11repsymbol11r.html",
     "funcname": "p.rep.r"
   },
   {
     "id": "p.rep.t",
-    "href": "/detail/base/psymbol11repsymbol11t.html",
+    "href": "/detail/psych/psymbol11repsymbol11t.html",
     "funcname": "p.rep.t"
   },
   {
     "id": "paired.r",
-    "href": "/detail/base/pairedsymbol11r.html",
+    "href": "/detail/psych/pairedsymbol11r.html",
     "funcname": "paired.r"
   },
   {
     "id": "pairs.panels",
-    "href": "/detail/base/pairssymbol11panels.html",
+    "href": "/detail/psych/pairssymbol11panels.html",
     "funcname": "pairs.panels"
   },
   {
     "id": "pairwiseCount",
-    "href": "/detail/base/pairwiseCount.html",
+    "href": "/detail/psych/pairwiseCount.html",
     "funcname": "pairwiseCount"
   },
   {
     "id": "pairwiseCountBig",
-    "href": "/detail/base/pairwiseCountBig.html",
+    "href": "/detail/psych/pairwiseCountBig.html",
     "funcname": "pairwiseCountBig"
   },
   {
     "id": "pairwiseDescribe",
-    "href": "/detail/base/pairwiseDescribe.html",
+    "href": "/detail/psych/pairwiseDescribe.html",
     "funcname": "pairwiseDescribe"
   },
   {
     "id": "pairwiseImpute",
-    "href": "/detail/base/pairwiseImpute.html",
+    "href": "/detail/psych/pairwiseImpute.html",
     "funcname": "pairwiseImpute"
   },
   {
     "id": "pairwisePlot",
-    "href": "/detail/base/pairwisePlot.html",
+    "href": "/detail/psych/pairwisePlot.html",
     "funcname": "pairwisePlot"
   },
   {
     "id": "pairwiseReport",
-    "href": "/detail/base/pairwiseReport.html",
+    "href": "/detail/psych/pairwiseReport.html",
     "funcname": "pairwiseReport"
   },
   {
     "id": "pairwiseSample",
-    "href": "/detail/base/pairwiseSample.html",
+    "href": "/detail/psych/pairwiseSample.html",
     "funcname": "pairwiseSample"
   },
   {
     "id": "pairwiseZero",
-    "href": "/detail/base/pairwiseZero.html",
+    "href": "/detail/psych/pairwiseZero.html",
     "funcname": "pairwiseZero"
   },
   {
     "id": "parcels",
-    "href": "/detail/base/parcels.html",
+    "href": "/detail/psych/parcels.html",
     "funcname": "parcels"
   },
   {
     "id": "partial.r",
-    "href": "/detail/base/partialsymbol11r.html",
+    "href": "/detail/psych/partialsymbol11r.html",
     "funcname": "partial.r"
   },
-  { "id": "pca", "href": "/detail/base/pca.html", "funcname": "pca" },
-  { "id": "phi", "href": "/detail/base/phi.html", "funcname": "phi" },
+  { "id": "pca", "href": "/detail/psych/pca.html", "funcname": "pca" },
+  { "id": "phi", "href": "/detail/psych/phi.html", "funcname": "phi" },
   {
     "id": "phi.demo",
-    "href": "/detail/base/phisymbol11demo.html",
+    "href": "/detail/psych/phisymbol11demo.html",
     "funcname": "phi.demo"
   },
   {
     "id": "phi.list",
-    "href": "/detail/base/phisymbol11list.html",
+    "href": "/detail/psych/phisymbol11list.html",
     "funcname": "phi.list"
   },
   {
     "id": "phi2poly",
-    "href": "/detail/base/phi2poly.html",
+    "href": "/detail/psych/phi2poly.html",
     "funcname": "phi2poly"
   },
   {
     "id": "phi2poly.matrix",
-    "href": "/detail/base/phi2polysymbol11matrix.html",
+    "href": "/detail/psych/phi2polysymbol11matrix.html",
     "funcname": "phi2poly.matrix"
   },
   {
     "id": "phi2tetra",
-    "href": "/detail/base/phi2tetra.html",
+    "href": "/detail/psych/phi2tetra.html",
     "funcname": "phi2tetra"
   },
-  { "id": "Pinv", "href": "/detail/base/Pinv.html", "funcname": "Pinv" },
+  { "id": "Pinv", "href": "/detail/psych/Pinv.html", "funcname": "Pinv" },
   {
     "id": "plot.irt",
-    "href": "/detail/base/plotsymbol11irt.html",
+    "href": "/detail/psych/plotsymbol11irt.html",
     "funcname": "plot.irt"
   },
   {
     "id": "plot.poly",
-    "href": "/detail/base/plotsymbol11poly.html",
+    "href": "/detail/psych/plotsymbol11poly.html",
     "funcname": "plot.poly"
   },
   {
     "id": "plot.poly.parallel",
-    "href": "/detail/base/plotsymbol11polysymbol11parallel.html",
+    "href": "/detail/psych/plotsymbol11polysymbol11parallel.html",
     "funcname": "plot.poly.parallel"
   },
   {
     "id": "plot.psych",
-    "href": "/detail/base/plotsymbol11psych.html",
+    "href": "/detail/psych/plotsymbol11psych.html",
     "funcname": "plot.psych"
   },
   {
     "id": "plot.reliability",
-    "href": "/detail/base/plotsymbol11reliability.html",
+    "href": "/detail/psych/plotsymbol11reliability.html",
     "funcname": "plot.reliability"
   },
   {
     "id": "plot.residuals",
-    "href": "/detail/base/plotsymbol11residuals.html",
+    "href": "/detail/psych/plotsymbol11residuals.html",
     "funcname": "plot.residuals"
   },
-  { "id": "polar", "href": "/detail/base/polar.html", "funcname": "polar" },
+  { "id": "polar", "href": "/detail/psych/polar.html", "funcname": "polar" },
   {
     "id": "poly.mat",
-    "href": "/detail/base/polysymbol11mat.html",
+    "href": "/detail/psych/polysymbol11mat.html",
     "funcname": "poly.mat"
   },
   {
     "id": "polychoric",
-    "href": "/detail/base/polychoric.html",
+    "href": "/detail/psych/polychoric.html",
     "funcname": "polychoric"
   },
-  { "id": "polydi", "href": "/detail/base/polydi.html", "funcname": "polydi" },
+  { "id": "polydi", "href": "/detail/psych/polydi.html", "funcname": "polydi" },
   {
     "id": "polyserial",
-    "href": "/detail/base/polyserial.html",
+    "href": "/detail/psych/polyserial.html",
     "funcname": "polyserial"
   },
   {
     "id": "predict.psych",
-    "href": "/detail/base/predictsymbol11psych.html",
+    "href": "/detail/psych/predictsymbol11psych.html",
     "funcname": "predict.psych"
   },
   {
     "id": "predicted.validity",
-    "href": "/detail/base/predictedsymbol11validity.html",
+    "href": "/detail/psych/predictedsymbol11validity.html",
     "funcname": "predicted.validity"
   },
   {
     "id": "principal",
-    "href": "/detail/base/principal.html",
+    "href": "/detail/psych/principal.html",
     "funcname": "principal"
   },
   {
     "id": "print.psych",
-    "href": "/detail/base/printsymbol11psych.html",
+    "href": "/detail/psych/printsymbol11psych.html",
     "funcname": "print.psych"
   },
   {
     "id": "Procrustes",
-    "href": "/detail/base/Procrustes.html",
+    "href": "/detail/psych/Procrustes.html",
     "funcname": "Procrustes"
   },
   {
     "id": "progressBar",
-    "href": "/detail/base/progressBar.html",
+    "href": "/detail/psych/progressBar.html",
     "funcname": "progressBar"
   },
-  { "id": "Promax", "href": "/detail/base/Promax.html", "funcname": "Promax" },
-  { "id": "psych", "href": "/detail/base/psych.html", "funcname": "psych" },
+  { "id": "Promax", "href": "/detail/psych/Promax.html", "funcname": "Promax" },
+  { "id": "psych", "href": "/detail/psych/psych.html", "funcname": "psych" },
   {
     "id": "psych.misc",
-    "href": "/detail/base/psychsymbol11misc.html",
+    "href": "/detail/psych/psychsymbol11misc.html",
     "funcname": "psych.misc"
   },
   {
     "id": "quickView",
-    "href": "/detail/base/quickView.html",
+    "href": "/detail/psych/quickView.html",
     "funcname": "quickView"
   },
   {
     "id": "r.con",
-    "href": "/detail/base/rsymbol11con.html",
+    "href": "/detail/psych/rsymbol11con.html",
     "funcname": "r.con"
   },
   {
     "id": "r.test",
-    "href": "/detail/base/rsymbol11test.html",
+    "href": "/detail/psych/rsymbol11test.html",
     "funcname": "r.test"
   },
-  { "id": "r2c", "href": "/detail/base/r2c.html", "funcname": "r2c" },
-  { "id": "r2chi", "href": "/detail/base/r2chi.html", "funcname": "r2chi" },
-  { "id": "r2d", "href": "/detail/base/r2d.html", "funcname": "r2d" },
-  { "id": "r2t", "href": "/detail/base/r2t.html", "funcname": "r2t" },
-  { "id": "radar", "href": "/detail/base/radar.html", "funcname": "radar" },
+  { "id": "r2c", "href": "/detail/psych/r2c.html", "funcname": "r2c" },
+  { "id": "r2chi", "href": "/detail/psych/r2chi.html", "funcname": "r2chi" },
+  { "id": "r2d", "href": "/detail/psych/r2d.html", "funcname": "r2d" },
+  { "id": "r2t", "href": "/detail/psych/r2t.html", "funcname": "r2t" },
+  { "id": "radar", "href": "/detail/psych/radar.html", "funcname": "radar" },
   {
     "id": "rangeCorrection",
-    "href": "/detail/base/rangeCorrection.html",
+    "href": "/detail/psych/rangeCorrection.html",
     "funcname": "rangeCorrection"
   },
   {
     "id": "reflect",
-    "href": "/detail/base/reflect.html",
+    "href": "/detail/psych/reflect.html",
     "funcname": "reflect"
   },
-  { "id": "Reise", "href": "/detail/base/Reise.html", "funcname": "Reise" },
+  { "id": "Reise", "href": "/detail/psych/Reise.html", "funcname": "Reise" },
   {
     "id": "reliability",
-    "href": "/detail/base/reliability.html",
+    "href": "/detail/psych/reliability.html",
     "funcname": "reliability"
   },
   {
     "id": "rescale",
-    "href": "/detail/base/rescale.html",
+    "href": "/detail/psych/rescale.html",
     "funcname": "rescale"
   },
   {
     "id": "resid.psych",
-    "href": "/detail/base/residsymbol11psych.html",
+    "href": "/detail/psych/residsymbol11psych.html",
     "funcname": "resid.psych"
   },
   {
     "id": "residuals.psych",
-    "href": "/detail/base/residualssymbol11psych.html",
+    "href": "/detail/psych/residualssymbol11psych.html",
     "funcname": "residuals.psych"
   },
   {
     "id": "response.frequencies",
-    "href": "/detail/base/responsesymbol11frequencies.html",
+    "href": "/detail/psych/responsesymbol11frequencies.html",
     "funcname": "response.frequencies"
   },
   {
     "id": "responseFrequency",
-    "href": "/detail/base/responseFrequency.html",
+    "href": "/detail/psych/responseFrequency.html",
     "funcname": "responseFrequency"
   },
   {
     "id": "reverse.code",
-    "href": "/detail/base/reversesymbol11code.html",
+    "href": "/detail/psych/reversesymbol11code.html",
     "funcname": "reverse.code"
   },
-  { "id": "rmssd", "href": "/detail/base/rmssd.html", "funcname": "rmssd" },
+  { "id": "rmssd", "href": "/detail/psych/rmssd.html", "funcname": "rmssd" },
   {
     "id": "sat.act",
-    "href": "/detail/base/satsymbol11act.html",
+    "href": "/detail/psych/satsymbol11act.html",
     "funcname": "sat.act"
   },
   {
     "id": "scaling.fits",
-    "href": "/detail/base/scalingsymbol11fits.html",
+    "href": "/detail/psych/scalingsymbol11fits.html",
     "funcname": "scaling.fits"
   },
   {
     "id": "scatter.hist",
-    "href": "/detail/base/scattersymbol11hist.html",
+    "href": "/detail/psych/scattersymbol11hist.html",
     "funcname": "scatter.hist"
   },
   {
     "id": "scatterHist",
-    "href": "/detail/base/scatterHist.html",
+    "href": "/detail/psych/scatterHist.html",
     "funcname": "scatterHist"
   },
-  { "id": "schmid", "href": "/detail/base/schmid.html", "funcname": "schmid" },
-  { "id": "Schmid", "href": "/detail/base/Schmid.html", "funcname": "Schmid" },
+  { "id": "schmid", "href": "/detail/psych/schmid.html", "funcname": "schmid" },
+  { "id": "Schmid", "href": "/detail/psych/Schmid.html", "funcname": "Schmid" },
   {
     "id": "schmid.leiman",
-    "href": "/detail/base/schmidsymbol11leiman.html",
+    "href": "/detail/psych/schmidsymbol11leiman.html",
     "funcname": "schmid.leiman"
   },
   {
     "id": "score.alpha",
-    "href": "/detail/base/scoresymbol11alpha.html",
+    "href": "/detail/psych/scoresymbol11alpha.html",
     "funcname": "score.alpha"
   },
   {
     "id": "score.irt",
-    "href": "/detail/base/scoresymbol11irt.html",
+    "href": "/detail/psych/scoresymbol11irt.html",
     "funcname": "score.irt"
   },
   {
     "id": "score.irt.2",
-    "href": "/detail/base/scoresymbol11irtsymbol112.html",
+    "href": "/detail/psych/scoresymbol11irtsymbol112.html",
     "funcname": "score.irt.2"
   },
   {
     "id": "score.irt.poly",
-    "href": "/detail/base/scoresymbol11irtsymbol11poly.html",
+    "href": "/detail/psych/scoresymbol11irtsymbol11poly.html",
     "funcname": "score.irt.poly"
   },
   {
     "id": "score.items",
-    "href": "/detail/base/scoresymbol11items.html",
+    "href": "/detail/psych/scoresymbol11items.html",
     "funcname": "score.items"
   },
   {
     "id": "score.multiple.choice",
-    "href": "/detail/base/scoresymbol11multiplesymbol11choice.html",
+    "href": "/detail/psych/scoresymbol11multiplesymbol11choice.html",
     "funcname": "score.multiple.choice"
   },
   {
     "id": "scoreBy",
-    "href": "/detail/base/scoreBy.html",
+    "href": "/detail/psych/scoreBy.html",
     "funcname": "scoreBy"
   },
   {
     "id": "scoreFast",
-    "href": "/detail/base/scoreFast.html",
+    "href": "/detail/psych/scoreFast.html",
     "funcname": "scoreFast"
   },
   {
     "id": "scoreIrt",
-    "href": "/detail/base/scoreIrt.html",
+    "href": "/detail/psych/scoreIrt.html",
     "funcname": "scoreIrt"
   },
   {
     "id": "scoreIrt.1pl",
-    "href": "/detail/base/scoreIrtsymbol111pl.html",
+    "href": "/detail/psych/scoreIrtsymbol111pl.html",
     "funcname": "scoreIrt.1pl"
   },
   {
     "id": "scoreIrt.2pl",
-    "href": "/detail/base/scoreIrtsymbol112pl.html",
+    "href": "/detail/psych/scoreIrtsymbol112pl.html",
     "funcname": "scoreIrt.2pl"
   },
   {
     "id": "scoreItems",
-    "href": "/detail/base/scoreItems.html",
+    "href": "/detail/psych/scoreItems.html",
     "funcname": "scoreItems"
   },
   {
     "id": "scoreOverlap",
-    "href": "/detail/base/scoreOverlap.html",
+    "href": "/detail/psych/scoreOverlap.html",
     "funcname": "scoreOverlap"
   },
   {
     "id": "scoreVeryFast",
-    "href": "/detail/base/scoreVeryFast.html",
+    "href": "/detail/psych/scoreVeryFast.html",
     "funcname": "scoreVeryFast"
   },
   {
     "id": "scoreWtd",
-    "href": "/detail/base/scoreWtd.html",
+    "href": "/detail/psych/scoreWtd.html",
     "funcname": "scoreWtd"
   },
-  { "id": "scree", "href": "/detail/base/scree.html", "funcname": "scree" },
-  { "id": "scrub", "href": "/detail/base/scrub.html", "funcname": "scrub" },
-  { "id": "SD", "href": "/detail/base/SD.html", "funcname": "SD" },
+  { "id": "scree", "href": "/detail/psych/scree.html", "funcname": "scree" },
+  { "id": "scrub", "href": "/detail/psych/scrub.html", "funcname": "scrub" },
+  { "id": "SD", "href": "/detail/psych/SD.html", "funcname": "SD" },
   {
     "id": "selectFromKeys",
-    "href": "/detail/base/selectFromKeys.html",
+    "href": "/detail/psych/selectFromKeys.html",
     "funcname": "selectFromKeys"
   },
   {
     "id": "sem.diagram",
-    "href": "/detail/base/semsymbol11diagram.html",
+    "href": "/detail/psych/semsymbol11diagram.html",
     "funcname": "sem.diagram"
   },
   {
     "id": "sem.graph",
-    "href": "/detail/base/semsymbol11graph.html",
+    "href": "/detail/psych/semsymbol11graph.html",
     "funcname": "sem.graph"
   },
   {
     "id": "set.cor",
-    "href": "/detail/base/setsymbol11cor.html",
+    "href": "/detail/psych/setsymbol11cor.html",
     "funcname": "set.cor"
   },
-  { "id": "setCor", "href": "/detail/base/setCor.html", "funcname": "setCor" },
+  { "id": "setCor", "href": "/detail/psych/setCor.html", "funcname": "setCor" },
   {
     "id": "setCor.diagram",
-    "href": "/detail/base/setCorsymbol11diagram.html",
+    "href": "/detail/psych/setCorsymbol11diagram.html",
     "funcname": "setCor.diagram"
   },
   {
     "id": "setCorLookup",
-    "href": "/detail/base/setCorLookup.html",
+    "href": "/detail/psych/setCorLookup.html",
     "funcname": "setCorLookup"
   },
   {
     "id": "shannon",
-    "href": "/detail/base/shannon.html",
+    "href": "/detail/psych/shannon.html",
     "funcname": "shannon"
   },
-  { "id": "sim", "href": "/detail/base/sim.html", "funcname": "sim" },
+  { "id": "sim", "href": "/detail/psych/sim.html", "funcname": "sim" },
   {
     "id": "sim.anova",
-    "href": "/detail/base/simsymbol11anova.html",
+    "href": "/detail/psych/simsymbol11anova.html",
     "funcname": "sim.anova"
   },
   {
     "id": "sim.bonds",
-    "href": "/detail/base/simsymbol11bonds.html",
+    "href": "/detail/psych/simsymbol11bonds.html",
     "funcname": "sim.bonds"
   },
   {
     "id": "sim.circ",
-    "href": "/detail/base/simsymbol11circ.html",
+    "href": "/detail/psych/simsymbol11circ.html",
     "funcname": "sim.circ"
   },
   {
     "id": "sim.congeneric",
-    "href": "/detail/base/simsymbol11congeneric.html",
+    "href": "/detail/psych/simsymbol11congeneric.html",
     "funcname": "sim.congeneric"
   },
   {
     "id": "sim.correlation",
-    "href": "/detail/base/simsymbol11correlation.html",
+    "href": "/detail/psych/simsymbol11correlation.html",
     "funcname": "sim.correlation"
   },
   {
     "id": "sim.dichot",
-    "href": "/detail/base/simsymbol11dichot.html",
+    "href": "/detail/psych/simsymbol11dichot.html",
     "funcname": "sim.dichot"
   },
   {
     "id": "sim.general",
-    "href": "/detail/base/simsymbol11general.html",
+    "href": "/detail/psych/simsymbol11general.html",
     "funcname": "sim.general"
   },
   {
     "id": "sim.hierarchical",
-    "href": "/detail/base/simsymbol11hierarchical.html",
+    "href": "/detail/psych/simsymbol11hierarchical.html",
     "funcname": "sim.hierarchical"
   },
   {
     "id": "sim.irt",
-    "href": "/detail/base/simsymbol11irt.html",
+    "href": "/detail/psych/simsymbol11irt.html",
     "funcname": "sim.irt"
   },
   {
     "id": "sim.item",
-    "href": "/detail/base/simsymbol11item.html",
+    "href": "/detail/psych/simsymbol11item.html",
     "funcname": "sim.item"
   },
   {
     "id": "sim.minor",
-    "href": "/detail/base/simsymbol11minor.html",
+    "href": "/detail/psych/simsymbol11minor.html",
     "funcname": "sim.minor"
   },
   {
     "id": "sim.multi",
-    "href": "/detail/base/simsymbol11multi.html",
+    "href": "/detail/psych/simsymbol11multi.html",
     "funcname": "sim.multi"
   },
   {
     "id": "sim.multilevel",
-    "href": "/detail/base/simsymbol11multilevel.html",
+    "href": "/detail/psych/simsymbol11multilevel.html",
     "funcname": "sim.multilevel"
   },
   {
     "id": "sim.npl",
-    "href": "/detail/base/simsymbol11npl.html",
+    "href": "/detail/psych/simsymbol11npl.html",
     "funcname": "sim.npl"
   },
   {
     "id": "sim.npn",
-    "href": "/detail/base/simsymbol11npn.html",
+    "href": "/detail/psych/simsymbol11npn.html",
     "funcname": "sim.npn"
   },
   {
     "id": "sim.omega",
-    "href": "/detail/base/simsymbol11omega.html",
+    "href": "/detail/psych/simsymbol11omega.html",
     "funcname": "sim.omega"
   },
   {
     "id": "sim.parallel",
-    "href": "/detail/base/simsymbol11parallel.html",
+    "href": "/detail/psych/simsymbol11parallel.html",
     "funcname": "sim.parallel"
   },
   {
     "id": "sim.poly",
-    "href": "/detail/base/simsymbol11poly.html",
+    "href": "/detail/psych/simsymbol11poly.html",
     "funcname": "sim.poly"
   },
   {
     "id": "sim.poly.ideal",
-    "href": "/detail/base/simsymbol11polysymbol11ideal.html",
+    "href": "/detail/psych/simsymbol11polysymbol11ideal.html",
     "funcname": "sim.poly.ideal"
   },
   {
     "id": "sim.poly.ideal.npl",
-    "href": "/detail/base/simsymbol11polysymbol11idealsymbol11npl.html",
+    "href": "/detail/psych/simsymbol11polysymbol11idealsymbol11npl.html",
     "funcname": "sim.poly.ideal.npl"
   },
   {
     "id": "sim.poly.ideal.npn",
-    "href": "/detail/base/simsymbol11polysymbol11idealsymbol11npn.html",
+    "href": "/detail/psych/simsymbol11polysymbol11idealsymbol11npn.html",
     "funcname": "sim.poly.ideal.npn"
   },
   {
     "id": "sim.poly.mat",
-    "href": "/detail/base/simsymbol11polysymbol11mat.html",
+    "href": "/detail/psych/simsymbol11polysymbol11mat.html",
     "funcname": "sim.poly.mat"
   },
   {
     "id": "sim.poly.npl",
-    "href": "/detail/base/simsymbol11polysymbol11npl.html",
+    "href": "/detail/psych/simsymbol11polysymbol11npl.html",
     "funcname": "sim.poly.npl"
   },
   {
     "id": "sim.poly.npn",
-    "href": "/detail/base/simsymbol11polysymbol11npn.html",
+    "href": "/detail/psych/simsymbol11polysymbol11npn.html",
     "funcname": "sim.poly.npn"
   },
   {
     "id": "sim.rasch",
-    "href": "/detail/base/simsymbol11rasch.html",
+    "href": "/detail/psych/simsymbol11rasch.html",
     "funcname": "sim.rasch"
   },
   {
     "id": "sim.simplex",
-    "href": "/detail/base/simsymbol11simplex.html",
+    "href": "/detail/psych/simsymbol11simplex.html",
     "funcname": "sim.simplex"
   },
   {
     "id": "sim.spherical",
-    "href": "/detail/base/simsymbol11spherical.html",
+    "href": "/detail/psych/simsymbol11spherical.html",
     "funcname": "sim.spherical"
   },
   {
     "id": "sim.structural",
-    "href": "/detail/base/simsymbol11structural.html",
+    "href": "/detail/psych/simsymbol11structural.html",
     "funcname": "sim.structural"
   },
   {
     "id": "sim.structure",
-    "href": "/detail/base/simsymbol11structure.html",
+    "href": "/detail/psych/simsymbol11structure.html",
     "funcname": "sim.structure"
   },
   {
     "id": "sim.VSS",
-    "href": "/detail/base/simsymbol11VSS.html",
+    "href": "/detail/psych/simsymbol11VSS.html",
     "funcname": "sim.VSS"
   },
-  { "id": "simCor", "href": "/detail/base/simCor.html", "funcname": "simCor" },
+  { "id": "simCor", "href": "/detail/psych/simCor.html", "funcname": "simCor" },
   {
     "id": "simulation.circ",
-    "href": "/detail/base/simulationsymbol11circ.html",
+    "href": "/detail/psych/simulationsymbol11circ.html",
     "funcname": "simulation.circ"
   },
-  { "id": "skew", "href": "/detail/base/skew.html", "funcname": "skew" },
-  { "id": "smc", "href": "/detail/base/smc.html", "funcname": "smc" },
-  { "id": "spider", "href": "/detail/base/spider.html", "funcname": "spider" },
+  { "id": "skew", "href": "/detail/psych/skew.html", "funcname": "skew" },
+  { "id": "smc", "href": "/detail/psych/smc.html", "funcname": "smc" },
+  { "id": "spider", "href": "/detail/psych/spider.html", "funcname": "spider" },
   {
     "id": "splitHalf",
-    "href": "/detail/base/splitHalf.html",
+    "href": "/detail/psych/splitHalf.html",
     "funcname": "splitHalf"
   },
   {
     "id": "statsBy",
-    "href": "/detail/base/statsBy.html",
+    "href": "/detail/psych/statsBy.html",
     "funcname": "statsBy"
   },
   {
     "id": "statsBy.boot",
-    "href": "/detail/base/statsBysymbol11boot.html",
+    "href": "/detail/psych/statsBysymbol11boot.html",
     "funcname": "statsBy.boot"
   },
   {
     "id": "statsBy.boot.summary",
-    "href": "/detail/base/statsBysymbol11bootsymbol11summary.html",
+    "href": "/detail/psych/statsBysymbol11bootsymbol11summary.html",
     "funcname": "statsBy.boot.summary"
   },
   {
     "id": "structure.diagram",
-    "href": "/detail/base/structuresymbol11diagram.html",
+    "href": "/detail/psych/structuresymbol11diagram.html",
     "funcname": "structure.diagram"
   },
   {
     "id": "structure.graph",
-    "href": "/detail/base/structuresymbol11graph.html",
+    "href": "/detail/psych/structuresymbol11graph.html",
     "funcname": "structure.graph"
   },
   {
     "id": "structure.list",
-    "href": "/detail/base/structuresymbol11list.html",
+    "href": "/detail/psych/structuresymbol11list.html",
     "funcname": "structure.list"
   },
   {
     "id": "structure.sem",
-    "href": "/detail/base/structuresymbol11sem.html",
+    "href": "/detail/psych/structuresymbol11sem.html",
     "funcname": "structure.sem"
   },
   {
     "id": "summary.psych",
-    "href": "/detail/base/summarysymbol11psych.html",
+    "href": "/detail/psych/summarysymbol11psych.html",
     "funcname": "summary.psych"
   },
   {
     "id": "super.matrix",
-    "href": "/detail/base/supersymbol11matrix.html",
+    "href": "/detail/psych/supersymbol11matrix.html",
     "funcname": "super.matrix"
   },
   {
     "id": "superCor",
-    "href": "/detail/base/superCor.html",
+    "href": "/detail/psych/superCor.html",
     "funcname": "superCor"
   },
   {
     "id": "superMatrix",
-    "href": "/detail/base/superMatrix.html",
+    "href": "/detail/psych/superMatrix.html",
     "funcname": "superMatrix"
   },
-  { "id": "t2d", "href": "/detail/base/t2d.html", "funcname": "t2d" },
-  { "id": "t2r", "href": "/detail/base/t2r.html", "funcname": "t2r" },
+  { "id": "t2d", "href": "/detail/psych/t2d.html", "funcname": "t2d" },
+  { "id": "t2r", "href": "/detail/psych/t2r.html", "funcname": "t2r" },
   {
     "id": "table2df",
-    "href": "/detail/base/table2df.html",
+    "href": "/detail/psych/table2df.html",
     "funcname": "table2df"
   },
   {
     "id": "table2matrix",
-    "href": "/detail/base/table2matrix.html",
+    "href": "/detail/psych/table2matrix.html",
     "funcname": "table2matrix"
   },
-  { "id": "tableF", "href": "/detail/base/tableF.html", "funcname": "tableF" },
-  { "id": "Tal_Or", "href": "/detail/base/Tal_Or.html", "funcname": "Tal_Or" },
+  { "id": "tableF", "href": "/detail/psych/tableF.html", "funcname": "tableF" },
+  { "id": "Tal_Or", "href": "/detail/psych/Tal_Or.html", "funcname": "Tal_Or" },
   {
     "id": "Tal.Or",
-    "href": "/detail/base/Talsymbol11Or.html",
+    "href": "/detail/psych/Talsymbol11Or.html",
     "funcname": "Tal.Or"
   },
   {
     "id": "target.rot",
-    "href": "/detail/base/targetsymbol11rot.html",
+    "href": "/detail/psych/targetsymbol11rot.html",
     "funcname": "target.rot"
   },
   {
     "id": "TargetQ",
-    "href": "/detail/base/TargetQ.html",
+    "href": "/detail/psych/TargetQ.html",
     "funcname": "TargetQ"
   },
   {
     "id": "TargetT",
-    "href": "/detail/base/TargetT.html",
+    "href": "/detail/psych/TargetT.html",
     "funcname": "TargetT"
   },
   {
     "id": "tenberge",
-    "href": "/detail/base/tenberge.html",
+    "href": "/detail/psych/tenberge.html",
     "funcname": "tenberge"
   },
   {
     "id": "test.all",
-    "href": "/detail/base/testsymbol11all.html",
+    "href": "/detail/psych/testsymbol11all.html",
     "funcname": "test.all"
   },
   {
     "id": "test.irt",
-    "href": "/detail/base/testsymbol11irt.html",
+    "href": "/detail/psych/testsymbol11irt.html",
     "funcname": "test.irt"
   },
   {
     "id": "test.psych",
-    "href": "/detail/base/testsymbol11psych.html",
+    "href": "/detail/psych/testsymbol11psych.html",
     "funcname": "test.psych"
   },
   {
     "id": "testRetest",
-    "href": "/detail/base/testRetest.html",
+    "href": "/detail/psych/testRetest.html",
     "funcname": "testRetest"
   },
   {
     "id": "tetrachoric",
-    "href": "/detail/base/tetrachoric.html",
+    "href": "/detail/psych/tetrachoric.html",
     "funcname": "tetrachoric"
   },
   {
     "id": "thurstone",
-    "href": "/detail/base/thurstone.html",
+    "href": "/detail/psych/thurstone.html",
     "funcname": "thurstone"
   },
   {
     "id": "Thurstone",
-    "href": "/detail/base/Thurstone.html",
+    "href": "/detail/psych/Thurstone.html",
     "funcname": "Thurstone"
   },
   {
     "id": "Thurstone.33",
-    "href": "/detail/base/Thurstonesymbol1133.html",
+    "href": "/detail/psych/Thurstonesymbol1133.html",
     "funcname": "Thurstone.33"
   },
   {
     "id": "Thurstone.9",
-    "href": "/detail/base/Thurstonesymbol119.html",
+    "href": "/detail/psych/Thurstonesymbol119.html",
     "funcname": "Thurstone.9"
   },
   {
     "id": "topBottom",
-    "href": "/detail/base/topBottom.html",
+    "href": "/detail/psych/topBottom.html",
     "funcname": "topBottom"
   },
-  { "id": "tr", "href": "/detail/base/tr.html", "funcname": "tr" },
-  { "id": "Tucker", "href": "/detail/base/Tucker.html", "funcname": "Tucker" },
-  { "id": "unidim", "href": "/detail/base/unidim.html", "funcname": "unidim" },
+  { "id": "tr", "href": "/detail/psych/tr.html", "funcname": "tr" },
+  { "id": "Tucker", "href": "/detail/psych/Tucker.html", "funcname": "Tucker" },
+  { "id": "unidim", "href": "/detail/psych/unidim.html", "funcname": "unidim" },
   {
     "id": "varimin",
-    "href": "/detail/base/varimin.html",
+    "href": "/detail/psych/varimin.html",
     "funcname": "varimin"
   },
   {
     "id": "vgQ.bimin",
-    "href": "/detail/base/vgQsymbol11bimin.html",
+    "href": "/detail/psych/vgQsymbol11bimin.html",
     "funcname": "vgQ.bimin"
   },
   {
     "id": "vgQ.targetQ",
-    "href": "/detail/base/vgQsymbol11targetQ.html",
+    "href": "/detail/psych/vgQsymbol11targetQ.html",
     "funcname": "vgQ.targetQ"
   },
   {
     "id": "vgQ.varimin",
-    "href": "/detail/base/vgQsymbol11varimin.html",
+    "href": "/detail/psych/vgQsymbol11varimin.html",
     "funcname": "vgQ.varimin"
   },
-  { "id": "violin", "href": "/detail/base/violin.html", "funcname": "violin" },
+  { "id": "violin", "href": "/detail/psych/violin.html", "funcname": "violin" },
   {
     "id": "violinBy",
-    "href": "/detail/base/violinBy.html",
+    "href": "/detail/psych/violinBy.html",
     "funcname": "violinBy"
   },
-  { "id": "vss", "href": "/detail/base/vss.html", "funcname": "vss" },
-  { "id": "VSS", "href": "/detail/base/VSS.html", "funcname": "VSS" },
+  { "id": "vss", "href": "/detail/psych/vss.html", "funcname": "vss" },
+  { "id": "VSS", "href": "/detail/psych/VSS.html", "funcname": "VSS" },
   {
     "id": "VSS.parallel",
-    "href": "/detail/base/VSSsymbol11parallel.html",
+    "href": "/detail/psych/VSSsymbol11parallel.html",
     "funcname": "VSS.parallel"
   },
   {
     "id": "VSS.plot",
-    "href": "/detail/base/VSSsymbol11plot.html",
+    "href": "/detail/psych/VSSsymbol11plot.html",
     "funcname": "VSS.plot"
   },
   {
     "id": "VSS.scree",
-    "href": "/detail/base/VSSsymbol11scree.html",
+    "href": "/detail/psych/VSSsymbol11scree.html",
     "funcname": "VSS.scree"
   },
   {
     "id": "VSS.sim",
-    "href": "/detail/base/VSSsymbol11sim.html",
+    "href": "/detail/psych/VSSsymbol11sim.html",
     "funcname": "VSS.sim"
   },
   {
     "id": "VSS.simulate",
-    "href": "/detail/base/VSSsymbol11simulate.html",
+    "href": "/detail/psych/VSSsymbol11simulate.html",
     "funcname": "VSS.simulate"
   },
-  { "id": "West", "href": "/detail/base/West.html", "funcname": "West" },
-  { "id": "winsor", "href": "/detail/base/winsor.html", "funcname": "winsor" },
+  { "id": "West", "href": "/detail/psych/West.html", "funcname": "West" },
+  { "id": "winsor", "href": "/detail/psych/winsor.html", "funcname": "winsor" },
   {
     "id": "winsor.mean",
-    "href": "/detail/base/winsorsymbol11mean.html",
+    "href": "/detail/psych/winsorsymbol11mean.html",
     "funcname": "winsor.mean"
   },
   {
     "id": "winsor.means",
-    "href": "/detail/base/winsorsymbol11means.html",
+    "href": "/detail/psych/winsorsymbol11means.html",
     "funcname": "winsor.means"
   },
   {
     "id": "winsor.sd",
-    "href": "/detail/base/winsorsymbol11sd.html",
+    "href": "/detail/psych/winsorsymbol11sd.html",
     "funcname": "winsor.sd"
   },
   {
     "id": "winsor.var",
-    "href": "/detail/base/winsorsymbol11var.html",
+    "href": "/detail/psych/winsorsymbol11var.html",
     "funcname": "winsor.var"
   },
   {
     "id": "withinBetween",
-    "href": "/detail/base/withinBetween.html",
+    "href": "/detail/psych/withinBetween.html",
     "funcname": "withinBetween"
   },
-  { "id": "wkappa", "href": "/detail/base/wkappa.html", "funcname": "wkappa" },
-  { "id": "Yule", "href": "/detail/base/Yule.html", "funcname": "Yule" },
+  { "id": "wkappa", "href": "/detail/psych/wkappa.html", "funcname": "wkappa" },
+  { "id": "Yule", "href": "/detail/psych/Yule.html", "funcname": "Yule" },
   {
     "id": "Yule.inv",
-    "href": "/detail/base/Yulesymbol11inv.html",
+    "href": "/detail/psych/Yulesymbol11inv.html",
     "funcname": "Yule.inv"
   },
   {
     "id": "Yule2phi",
-    "href": "/detail/base/Yule2phi.html",
+    "href": "/detail/psych/Yule2phi.html",
     "funcname": "Yule2phi"
   },
   {
     "id": "Yule2phi.matrix",
-    "href": "/detail/base/Yule2phisymbol11matrix.html",
+    "href": "/detail/psych/Yule2phisymbol11matrix.html",
     "funcname": "Yule2phi.matrix"
   },
   {
     "id": "Yule2poly",
-    "href": "/detail/base/Yule2poly.html",
+    "href": "/detail/psych/Yule2poly.html",
     "funcname": "Yule2poly"
   },
   {
     "id": "Yule2poly.matrix",
-    "href": "/detail/base/Yule2polysymbol11matrix.html",
+    "href": "/detail/psych/Yule2polysymbol11matrix.html",
     "funcname": "Yule2poly.matrix"
   },
   {
     "id": "Yule2tetra",
-    "href": "/detail/base/Yule2tetra.html",
+    "href": "/detail/psych/Yule2tetra.html",
     "funcname": "Yule2tetra"
   },
   {
     "id": "YuleBonett",
-    "href": "/detail/base/YuleBonett.html",
+    "href": "/detail/psych/YuleBonett.html",
     "funcname": "YuleBonett"
   },
   {
     "id": "YuleCor",
-    "href": "/detail/base/YuleCor.html",
+    "href": "/detail/psych/YuleCor.html",
     "funcname": "YuleCor"
   }
 ]

@@ -1,1591 +1,1591 @@
 [
-  { "id": "acf", "href": "/detail/base/acf.html", "funcname": "acf" },
-  { "id": "acf2AR", "href": "/detail/base/acf2AR.html", "funcname": "acf2AR" },
+  { "id": "acf", "href": "/detail/stats/acf.html", "funcname": "acf" },
+  { "id": "acf2AR", "href": "/detail/stats/acf2AR.html", "funcname": "acf2AR" },
   {
     "id": "add.scope",
-    "href": "/detail/base/addsymbol11scope.html",
+    "href": "/detail/stats/addsymbol11scope.html",
     "funcname": "add.scope"
   },
-  { "id": "add1", "href": "/detail/base/add1.html", "funcname": "add1" },
+  { "id": "add1", "href": "/detail/stats/add1.html", "funcname": "add1" },
   {
     "id": "addmargins",
-    "href": "/detail/base/addmargins.html",
+    "href": "/detail/stats/addmargins.html",
     "funcname": "addmargins"
   },
   {
     "id": "aggregate",
-    "href": "/detail/base/aggregate.html",
+    "href": "/detail/stats/aggregate.html",
     "funcname": "aggregate"
   },
   {
     "id": "aggregate.data.frame",
-    "href": "/detail/base/aggregatesymbol11datasymbol11frame.html",
+    "href": "/detail/stats/aggregatesymbol11datasymbol11frame.html",
     "funcname": "aggregate.data.frame"
   },
   {
     "id": "aggregate.ts",
-    "href": "/detail/base/aggregatesymbol11ts.html",
+    "href": "/detail/stats/aggregatesymbol11ts.html",
     "funcname": "aggregate.ts"
   },
-  { "id": "AIC", "href": "/detail/base/AIC.html", "funcname": "AIC" },
-  { "id": "alias", "href": "/detail/base/alias.html", "funcname": "alias" },
-  { "id": "anova", "href": "/detail/base/anova.html", "funcname": "anova" },
+  { "id": "AIC", "href": "/detail/stats/AIC.html", "funcname": "AIC" },
+  { "id": "alias", "href": "/detail/stats/alias.html", "funcname": "alias" },
+  { "id": "anova", "href": "/detail/stats/anova.html", "funcname": "anova" },
   {
     "id": "ansari.test",
-    "href": "/detail/base/ansarisymbol11test.html",
+    "href": "/detail/stats/ansarisymbol11test.html",
     "funcname": "ansari.test"
   },
-  { "id": "aov", "href": "/detail/base/aov.html", "funcname": "aov" },
-  { "id": "approx", "href": "/detail/base/approx.html", "funcname": "approx" },
+  { "id": "aov", "href": "/detail/stats/aov.html", "funcname": "aov" },
+  { "id": "approx", "href": "/detail/stats/approx.html", "funcname": "approx" },
   {
     "id": "approxfun",
-    "href": "/detail/base/approxfun.html",
+    "href": "/detail/stats/approxfun.html",
     "funcname": "approxfun"
   },
-  { "id": "ar", "href": "/detail/base/ar.html", "funcname": "ar" },
+  { "id": "ar", "href": "/detail/stats/ar.html", "funcname": "ar" },
   {
     "id": "ar.burg",
-    "href": "/detail/base/arsymbol11burg.html",
+    "href": "/detail/stats/arsymbol11burg.html",
     "funcname": "ar.burg"
   },
   {
     "id": "ar.mle",
-    "href": "/detail/base/arsymbol11mle.html",
+    "href": "/detail/stats/arsymbol11mle.html",
     "funcname": "ar.mle"
   },
   {
     "id": "ar.ols",
-    "href": "/detail/base/arsymbol11ols.html",
+    "href": "/detail/stats/arsymbol11ols.html",
     "funcname": "ar.ols"
   },
   {
     "id": "ar.yw",
-    "href": "/detail/base/arsymbol11yw.html",
+    "href": "/detail/stats/arsymbol11yw.html",
     "funcname": "ar.yw"
   },
-  { "id": "arima", "href": "/detail/base/arima.html", "funcname": "arima" },
+  { "id": "arima", "href": "/detail/stats/arima.html", "funcname": "arima" },
   {
     "id": "arima.sim",
-    "href": "/detail/base/arimasymbol11sim.html",
+    "href": "/detail/stats/arimasymbol11sim.html",
     "funcname": "arima.sim"
   },
-  { "id": "arima0", "href": "/detail/base/arima0.html", "funcname": "arima0" },
+  { "id": "arima0", "href": "/detail/stats/arima0.html", "funcname": "arima0" },
   {
     "id": "arima0.diag",
-    "href": "/detail/base/arima0symbol11diag.html",
+    "href": "/detail/stats/arima0symbol11diag.html",
     "funcname": "arima0.diag"
   },
   {
     "id": "ARMAacf",
-    "href": "/detail/base/ARMAacf.html",
+    "href": "/detail/stats/ARMAacf.html",
     "funcname": "ARMAacf"
   },
   {
     "id": "ARMAtoMA",
-    "href": "/detail/base/ARMAtoMA.html",
+    "href": "/detail/stats/ARMAtoMA.html",
     "funcname": "ARMAtoMA"
   },
   {
     "id": "as.dendrogram",
-    "href": "/detail/base/assymbol11dendrogram.html",
+    "href": "/detail/stats/assymbol11dendrogram.html",
     "funcname": "as.dendrogram"
   },
   {
     "id": "as.dist",
-    "href": "/detail/base/assymbol11dist.html",
+    "href": "/detail/stats/assymbol11dist.html",
     "funcname": "as.dist"
   },
   {
     "id": "as.formula",
-    "href": "/detail/base/assymbol11formula.html",
+    "href": "/detail/stats/assymbol11formula.html",
     "funcname": "as.formula"
   },
   {
     "id": "as.hclust",
-    "href": "/detail/base/assymbol11hclust.html",
+    "href": "/detail/stats/assymbol11hclust.html",
     "funcname": "as.hclust"
   },
   {
     "id": "as.stepfun",
-    "href": "/detail/base/assymbol11stepfun.html",
+    "href": "/detail/stats/assymbol11stepfun.html",
     "funcname": "as.stepfun"
   },
   {
     "id": "as.ts",
-    "href": "/detail/base/assymbol11ts.html",
+    "href": "/detail/stats/assymbol11ts.html",
     "funcname": "as.ts"
   },
   {
     "id": "asOneSidedFormula",
-    "href": "/detail/base/asOneSidedFormula.html",
+    "href": "/detail/stats/asOneSidedFormula.html",
     "funcname": "asOneSidedFormula"
   },
-  { "id": "ave", "href": "/detail/base/ave.html", "funcname": "ave" },
+  { "id": "ave", "href": "/detail/stats/ave.html", "funcname": "ave" },
   {
     "id": "bandwidth.kernel",
-    "href": "/detail/base/bandwidthsymbol11kernel.html",
+    "href": "/detail/stats/bandwidthsymbol11kernel.html",
     "funcname": "bandwidth.kernel"
   },
   {
     "id": "bartlett.test",
-    "href": "/detail/base/bartlettsymbol11test.html",
+    "href": "/detail/stats/bartlettsymbol11test.html",
     "funcname": "bartlett.test"
   },
-  { "id": "BIC", "href": "/detail/base/BIC.html", "funcname": "BIC" },
+  { "id": "BIC", "href": "/detail/stats/BIC.html", "funcname": "BIC" },
   {
     "id": "binom.test",
-    "href": "/detail/base/binomsymbol11test.html",
+    "href": "/detail/stats/binomsymbol11test.html",
     "funcname": "binom.test"
   },
   {
     "id": "binomial",
-    "href": "/detail/base/binomial.html",
+    "href": "/detail/stats/binomial.html",
     "funcname": "binomial"
   },
-  { "id": "biplot", "href": "/detail/base/biplot.html", "funcname": "biplot" },
+  { "id": "biplot", "href": "/detail/stats/biplot.html", "funcname": "biplot" },
   {
     "id": "Box.test",
-    "href": "/detail/base/Boxsymbol11test.html",
+    "href": "/detail/stats/Boxsymbol11test.html",
     "funcname": "Box.test"
   },
   {
     "id": "bw.bcv",
-    "href": "/detail/base/bwsymbol11bcv.html",
+    "href": "/detail/stats/bwsymbol11bcv.html",
     "funcname": "bw.bcv"
   },
   {
     "id": "bw.nrd",
-    "href": "/detail/base/bwsymbol11nrd.html",
+    "href": "/detail/stats/bwsymbol11nrd.html",
     "funcname": "bw.nrd"
   },
   {
     "id": "bw.nrd0",
-    "href": "/detail/base/bwsymbol11nrd0.html",
+    "href": "/detail/stats/bwsymbol11nrd0.html",
     "funcname": "bw.nrd0"
   },
   {
     "id": "bw.SJ",
-    "href": "/detail/base/bwsymbol11SJ.html",
+    "href": "/detail/stats/bwsymbol11SJ.html",
     "funcname": "bw.SJ"
   },
   {
     "id": "bw.ucv",
-    "href": "/detail/base/bwsymbol11ucv.html",
+    "href": "/detail/stats/bwsymbol11ucv.html",
     "funcname": "bw.ucv"
   },
-  { "id": "C", "href": "/detail/base/C.html", "funcname": "C" },
-  { "id": "cancor", "href": "/detail/base/cancor.html", "funcname": "cancor" },
+  { "id": "C", "href": "/detail/stats/C.html", "funcname": "C" },
+  { "id": "cancor", "href": "/detail/stats/cancor.html", "funcname": "cancor" },
   {
     "id": "case.names",
-    "href": "/detail/base/casesymbol11names.html",
+    "href": "/detail/stats/casesymbol11names.html",
     "funcname": "case.names"
   },
-  { "id": "ccf", "href": "/detail/base/ccf.html", "funcname": "ccf" },
+  { "id": "ccf", "href": "/detail/stats/ccf.html", "funcname": "ccf" },
   {
     "id": "chisq.test",
-    "href": "/detail/base/chisqsymbol11test.html",
+    "href": "/detail/stats/chisqsymbol11test.html",
     "funcname": "chisq.test"
   },
   {
     "id": "cmdscale",
-    "href": "/detail/base/cmdscale.html",
+    "href": "/detail/stats/cmdscale.html",
     "funcname": "cmdscale"
   },
-  { "id": "coef", "href": "/detail/base/coef.html", "funcname": "coef" },
+  { "id": "coef", "href": "/detail/stats/coef.html", "funcname": "coef" },
   {
     "id": "coefficients",
-    "href": "/detail/base/coefficients.html",
+    "href": "/detail/stats/coefficients.html",
     "funcname": "coefficients"
   },
   {
     "id": "complete.cases",
-    "href": "/detail/base/completesymbol11cases.html",
+    "href": "/detail/stats/completesymbol11cases.html",
     "funcname": "complete.cases"
   },
   {
     "id": "confint",
-    "href": "/detail/base/confint.html",
+    "href": "/detail/stats/confint.html",
     "funcname": "confint"
   },
   {
     "id": "confint.default",
-    "href": "/detail/base/confintsymbol11default.html",
+    "href": "/detail/stats/confintsymbol11default.html",
     "funcname": "confint.default"
   },
   {
     "id": "confint.lm",
-    "href": "/detail/base/confintsymbol11lm.html",
+    "href": "/detail/stats/confintsymbol11lm.html",
     "funcname": "confint.lm"
   },
   {
     "id": "constrOptim",
-    "href": "/detail/base/constrOptim.html",
+    "href": "/detail/stats/constrOptim.html",
     "funcname": "constrOptim"
   },
   {
     "id": "contr.helmert",
-    "href": "/detail/base/contrsymbol11helmert.html",
+    "href": "/detail/stats/contrsymbol11helmert.html",
     "funcname": "contr.helmert"
   },
   {
     "id": "contr.poly",
-    "href": "/detail/base/contrsymbol11poly.html",
+    "href": "/detail/stats/contrsymbol11poly.html",
     "funcname": "contr.poly"
   },
   {
     "id": "contr.SAS",
-    "href": "/detail/base/contrsymbol11SAS.html",
+    "href": "/detail/stats/contrsymbol11SAS.html",
     "funcname": "contr.SAS"
   },
   {
     "id": "contr.sum",
-    "href": "/detail/base/contrsymbol11sum.html",
+    "href": "/detail/stats/contrsymbol11sum.html",
     "funcname": "contr.sum"
   },
   {
     "id": "contr.treatment",
-    "href": "/detail/base/contrsymbol11treatment.html",
+    "href": "/detail/stats/contrsymbol11treatment.html",
     "funcname": "contr.treatment"
   },
   {
     "id": "contrasts",
-    "href": "/detail/base/contrasts.html",
+    "href": "/detail/stats/contrasts.html",
     "funcname": "contrasts"
   },
   {
     "id": "contrasts<-",
-    "href": "/detail/base/contrastssymbol9-.html",
+    "href": "/detail/stats/contrastssymbol9-.html",
     "funcname": "contrasts<-"
   },
   {
     "id": "convolve",
-    "href": "/detail/base/convolve.html",
+    "href": "/detail/stats/convolve.html",
     "funcname": "convolve"
   },
   {
     "id": "cooks.distance",
-    "href": "/detail/base/cookssymbol11distance.html",
+    "href": "/detail/stats/cookssymbol11distance.html",
     "funcname": "cooks.distance"
   },
   {
     "id": "cophenetic",
-    "href": "/detail/base/cophenetic.html",
+    "href": "/detail/stats/cophenetic.html",
     "funcname": "cophenetic"
   },
-  { "id": "cor", "href": "/detail/base/cor.html", "funcname": "cor" },
+  { "id": "cor", "href": "/detail/stats/cor.html", "funcname": "cor" },
   {
     "id": "cor.test",
-    "href": "/detail/base/corsymbol11test.html",
+    "href": "/detail/stats/corsymbol11test.html",
     "funcname": "cor.test"
   },
-  { "id": "cov", "href": "/detail/base/cov.html", "funcname": "cov" },
+  { "id": "cov", "href": "/detail/stats/cov.html", "funcname": "cov" },
   {
     "id": "cov.wt",
-    "href": "/detail/base/covsymbol11wt.html",
+    "href": "/detail/stats/covsymbol11wt.html",
     "funcname": "cov.wt"
   },
   {
     "id": "cov2cor",
-    "href": "/detail/base/cov2cor.html",
+    "href": "/detail/stats/cov2cor.html",
     "funcname": "cov2cor"
   },
   {
     "id": "covratio",
-    "href": "/detail/base/covratio.html",
+    "href": "/detail/stats/covratio.html",
     "funcname": "covratio"
   },
-  { "id": "cpgram", "href": "/detail/base/cpgram.html", "funcname": "cpgram" },
-  { "id": "cutree", "href": "/detail/base/cutree.html", "funcname": "cutree" },
-  { "id": "cycle", "href": "/detail/base/cycle.html", "funcname": "cycle" },
-  { "id": "D", "href": "/detail/base/D.html", "funcname": "D" },
-  { "id": "dbeta", "href": "/detail/base/dbeta.html", "funcname": "dbeta" },
-  { "id": "dbinom", "href": "/detail/base/dbinom.html", "funcname": "dbinom" },
+  { "id": "cpgram", "href": "/detail/stats/cpgram.html", "funcname": "cpgram" },
+  { "id": "cutree", "href": "/detail/stats/cutree.html", "funcname": "cutree" },
+  { "id": "cycle", "href": "/detail/stats/cycle.html", "funcname": "cycle" },
+  { "id": "D", "href": "/detail/stats/D.html", "funcname": "D" },
+  { "id": "dbeta", "href": "/detail/stats/dbeta.html", "funcname": "dbeta" },
+  { "id": "dbinom", "href": "/detail/stats/dbinom.html", "funcname": "dbinom" },
   {
     "id": "dcauchy",
-    "href": "/detail/base/dcauchy.html",
+    "href": "/detail/stats/dcauchy.html",
     "funcname": "dcauchy"
   },
-  { "id": "dchisq", "href": "/detail/base/dchisq.html", "funcname": "dchisq" },
+  { "id": "dchisq", "href": "/detail/stats/dchisq.html", "funcname": "dchisq" },
   {
     "id": "decompose",
-    "href": "/detail/base/decompose.html",
+    "href": "/detail/stats/decompose.html",
     "funcname": "decompose"
   },
   {
     "id": "delete.response",
-    "href": "/detail/base/deletesymbol11response.html",
+    "href": "/detail/stats/deletesymbol11response.html",
     "funcname": "delete.response"
   },
-  { "id": "deltat", "href": "/detail/base/deltat.html", "funcname": "deltat" },
+  { "id": "deltat", "href": "/detail/stats/deltat.html", "funcname": "deltat" },
   {
     "id": "dendrapply",
-    "href": "/detail/base/dendrapply.html",
+    "href": "/detail/stats/dendrapply.html",
     "funcname": "dendrapply"
   },
   {
     "id": "density",
-    "href": "/detail/base/density.html",
+    "href": "/detail/stats/density.html",
     "funcname": "density"
   },
   {
     "id": "density.default",
-    "href": "/detail/base/densitysymbol11default.html",
+    "href": "/detail/stats/densitysymbol11default.html",
     "funcname": "density.default"
   },
-  { "id": "deriv", "href": "/detail/base/deriv.html", "funcname": "deriv" },
-  { "id": "deriv3", "href": "/detail/base/deriv3.html", "funcname": "deriv3" },
+  { "id": "deriv", "href": "/detail/stats/deriv.html", "funcname": "deriv" },
+  { "id": "deriv3", "href": "/detail/stats/deriv3.html", "funcname": "deriv3" },
   {
     "id": "deviance",
-    "href": "/detail/base/deviance.html",
+    "href": "/detail/stats/deviance.html",
     "funcname": "deviance"
   },
-  { "id": "dexp", "href": "/detail/base/dexp.html", "funcname": "dexp" },
-  { "id": "df", "href": "/detail/base/df.html", "funcname": "df" },
+  { "id": "dexp", "href": "/detail/stats/dexp.html", "funcname": "dexp" },
+  { "id": "df", "href": "/detail/stats/df.html", "funcname": "df" },
   {
     "id": "df.kernel",
-    "href": "/detail/base/dfsymbol11kernel.html",
+    "href": "/detail/stats/dfsymbol11kernel.html",
     "funcname": "df.kernel"
   },
   {
     "id": "df.residual",
-    "href": "/detail/base/dfsymbol11residual.html",
+    "href": "/detail/stats/dfsymbol11residual.html",
     "funcname": "df.residual"
   },
   {
     "id": "DF2formula",
-    "href": "/detail/base/DF2formula.html",
+    "href": "/detail/stats/DF2formula.html",
     "funcname": "DF2formula"
   },
-  { "id": "dfbeta", "href": "/detail/base/dfbeta.html", "funcname": "dfbeta" },
+  { "id": "dfbeta", "href": "/detail/stats/dfbeta.html", "funcname": "dfbeta" },
   {
     "id": "dfbetas",
-    "href": "/detail/base/dfbetas.html",
+    "href": "/detail/stats/dfbetas.html",
     "funcname": "dfbetas"
   },
-  { "id": "dffits", "href": "/detail/base/dffits.html", "funcname": "dffits" },
-  { "id": "dgamma", "href": "/detail/base/dgamma.html", "funcname": "dgamma" },
-  { "id": "dgeom", "href": "/detail/base/dgeom.html", "funcname": "dgeom" },
-  { "id": "dhyper", "href": "/detail/base/dhyper.html", "funcname": "dhyper" },
+  { "id": "dffits", "href": "/detail/stats/dffits.html", "funcname": "dffits" },
+  { "id": "dgamma", "href": "/detail/stats/dgamma.html", "funcname": "dgamma" },
+  { "id": "dgeom", "href": "/detail/stats/dgeom.html", "funcname": "dgeom" },
+  { "id": "dhyper", "href": "/detail/stats/dhyper.html", "funcname": "dhyper" },
   {
     "id": "diffinv",
-    "href": "/detail/base/diffinv.html",
+    "href": "/detail/stats/diffinv.html",
     "funcname": "diffinv"
   },
-  { "id": "dist", "href": "/detail/base/dist.html", "funcname": "dist" },
-  { "id": "dlnorm", "href": "/detail/base/dlnorm.html", "funcname": "dlnorm" },
-  { "id": "dlogis", "href": "/detail/base/dlogis.html", "funcname": "dlogis" },
+  { "id": "dist", "href": "/detail/stats/dist.html", "funcname": "dist" },
+  { "id": "dlnorm", "href": "/detail/stats/dlnorm.html", "funcname": "dlnorm" },
+  { "id": "dlogis", "href": "/detail/stats/dlogis.html", "funcname": "dlogis" },
   {
     "id": "dmultinom",
-    "href": "/detail/base/dmultinom.html",
+    "href": "/detail/stats/dmultinom.html",
     "funcname": "dmultinom"
   },
   {
     "id": "dnbinom",
-    "href": "/detail/base/dnbinom.html",
+    "href": "/detail/stats/dnbinom.html",
     "funcname": "dnbinom"
   },
-  { "id": "dnorm", "href": "/detail/base/dnorm.html", "funcname": "dnorm" },
-  { "id": "dpois", "href": "/detail/base/dpois.html", "funcname": "dpois" },
+  { "id": "dnorm", "href": "/detail/stats/dnorm.html", "funcname": "dnorm" },
+  { "id": "dpois", "href": "/detail/stats/dpois.html", "funcname": "dpois" },
   {
     "id": "drop.scope",
-    "href": "/detail/base/dropsymbol11scope.html",
+    "href": "/detail/stats/dropsymbol11scope.html",
     "funcname": "drop.scope"
   },
   {
     "id": "drop.terms",
-    "href": "/detail/base/dropsymbol11terms.html",
+    "href": "/detail/stats/dropsymbol11terms.html",
     "funcname": "drop.terms"
   },
-  { "id": "drop1", "href": "/detail/base/drop1.html", "funcname": "drop1" },
+  { "id": "drop1", "href": "/detail/stats/drop1.html", "funcname": "drop1" },
   {
     "id": "dsignrank",
-    "href": "/detail/base/dsignrank.html",
+    "href": "/detail/stats/dsignrank.html",
     "funcname": "dsignrank"
   },
-  { "id": "dt", "href": "/detail/base/dt.html", "funcname": "dt" },
+  { "id": "dt", "href": "/detail/stats/dt.html", "funcname": "dt" },
   {
     "id": "dummy.coef",
-    "href": "/detail/base/dummysymbol11coef.html",
+    "href": "/detail/stats/dummysymbol11coef.html",
     "funcname": "dummy.coef"
   },
   {
     "id": "dummy.coef.lm",
-    "href": "/detail/base/dummysymbol11coefsymbol11lm.html",
+    "href": "/detail/stats/dummysymbol11coefsymbol11lm.html",
     "funcname": "dummy.coef.lm"
   },
-  { "id": "dunif", "href": "/detail/base/dunif.html", "funcname": "dunif" },
+  { "id": "dunif", "href": "/detail/stats/dunif.html", "funcname": "dunif" },
   {
     "id": "dweibull",
-    "href": "/detail/base/dweibull.html",
+    "href": "/detail/stats/dweibull.html",
     "funcname": "dweibull"
   },
   {
     "id": "dwilcox",
-    "href": "/detail/base/dwilcox.html",
+    "href": "/detail/stats/dwilcox.html",
     "funcname": "dwilcox"
   },
-  { "id": "ecdf", "href": "/detail/base/ecdf.html", "funcname": "ecdf" },
+  { "id": "ecdf", "href": "/detail/stats/ecdf.html", "funcname": "ecdf" },
   {
     "id": "eff.aovlist",
-    "href": "/detail/base/effsymbol11aovlist.html",
+    "href": "/detail/stats/effsymbol11aovlist.html",
     "funcname": "eff.aovlist"
   },
   {
     "id": "effects",
-    "href": "/detail/base/effects.html",
+    "href": "/detail/stats/effects.html",
     "funcname": "effects"
   },
-  { "id": "embed", "href": "/detail/base/embed.html", "funcname": "embed" },
-  { "id": "end", "href": "/detail/base/end.html", "funcname": "end" },
-  { "id": "estVar", "href": "/detail/base/estVar.html", "funcname": "estVar" },
+  { "id": "embed", "href": "/detail/stats/embed.html", "funcname": "embed" },
+  { "id": "end", "href": "/detail/stats/end.html", "funcname": "end" },
+  { "id": "estVar", "href": "/detail/stats/estVar.html", "funcname": "estVar" },
   {
     "id": "expand.model.frame",
-    "href": "/detail/base/expandsymbol11modelsymbol11frame.html",
+    "href": "/detail/stats/expandsymbol11modelsymbol11frame.html",
     "funcname": "expand.model.frame"
   },
   {
     "id": "extractAIC",
-    "href": "/detail/base/extractAIC.html",
+    "href": "/detail/stats/extractAIC.html",
     "funcname": "extractAIC"
   },
   {
     "id": "factanal",
-    "href": "/detail/base/factanal.html",
+    "href": "/detail/stats/factanal.html",
     "funcname": "factanal"
   },
   {
     "id": "factor.scope",
-    "href": "/detail/base/factorsymbol11scope.html",
+    "href": "/detail/stats/factorsymbol11scope.html",
     "funcname": "factor.scope"
   },
-  { "id": "family", "href": "/detail/base/family.html", "funcname": "family" },
-  { "id": "fft", "href": "/detail/base/fft.html", "funcname": "fft" },
-  { "id": "filter", "href": "/detail/base/filter.html", "funcname": "filter" },
+  { "id": "family", "href": "/detail/stats/family.html", "funcname": "family" },
+  { "id": "fft", "href": "/detail/stats/fft.html", "funcname": "fft" },
+  { "id": "filter", "href": "/detail/stats/filter.html", "funcname": "filter" },
   {
     "id": "fisher.test",
-    "href": "/detail/base/fishersymbol11test.html",
+    "href": "/detail/stats/fishersymbol11test.html",
     "funcname": "fisher.test"
   },
-  { "id": "fitted", "href": "/detail/base/fitted.html", "funcname": "fitted" },
+  { "id": "fitted", "href": "/detail/stats/fitted.html", "funcname": "fitted" },
   {
     "id": "fitted.values",
-    "href": "/detail/base/fittedsymbol11values.html",
+    "href": "/detail/stats/fittedsymbol11values.html",
     "funcname": "fitted.values"
   },
   {
     "id": "fivenum",
-    "href": "/detail/base/fivenum.html",
+    "href": "/detail/stats/fivenum.html",
     "funcname": "fivenum"
   },
   {
     "id": "fligner.test",
-    "href": "/detail/base/flignersymbol11test.html",
+    "href": "/detail/stats/flignersymbol11test.html",
     "funcname": "fligner.test"
   },
   {
     "id": "formula",
-    "href": "/detail/base/formula.html",
+    "href": "/detail/stats/formula.html",
     "funcname": "formula"
   },
   {
     "id": "frequency",
-    "href": "/detail/base/frequency.html",
+    "href": "/detail/stats/frequency.html",
     "funcname": "frequency"
   },
   {
     "id": "friedman.test",
-    "href": "/detail/base/friedmansymbol11test.html",
+    "href": "/detail/stats/friedmansymbol11test.html",
     "funcname": "friedman.test"
   },
-  { "id": "ftable", "href": "/detail/base/ftable.html", "funcname": "ftable" },
-  { "id": "Gamma", "href": "/detail/base/Gamma.html", "funcname": "Gamma" },
+  { "id": "ftable", "href": "/detail/stats/ftable.html", "funcname": "ftable" },
+  { "id": "Gamma", "href": "/detail/stats/Gamma.html", "funcname": "Gamma" },
   {
     "id": "gaussian",
-    "href": "/detail/base/gaussian.html",
+    "href": "/detail/stats/gaussian.html",
     "funcname": "gaussian"
   },
   {
     "id": "get_all_vars",
-    "href": "/detail/base/get_all_vars.html",
+    "href": "/detail/stats/get_all_vars.html",
     "funcname": "get_all_vars"
   },
   {
     "id": "getCall",
-    "href": "/detail/base/getCall.html",
+    "href": "/detail/stats/getCall.html",
     "funcname": "getCall"
   },
   {
     "id": "getInitial",
-    "href": "/detail/base/getInitial.html",
+    "href": "/detail/stats/getInitial.html",
     "funcname": "getInitial"
   },
-  { "id": "glm", "href": "/detail/base/glm.html", "funcname": "glm" },
+  { "id": "glm", "href": "/detail/stats/glm.html", "funcname": "glm" },
   {
     "id": "glm.control",
-    "href": "/detail/base/glmsymbol11control.html",
+    "href": "/detail/stats/glmsymbol11control.html",
     "funcname": "glm.control"
   },
   {
     "id": "glm.fit",
-    "href": "/detail/base/glmsymbol11fit.html",
+    "href": "/detail/stats/glmsymbol11fit.html",
     "funcname": "glm.fit"
   },
-  { "id": "hasTsp", "href": "/detail/base/hasTsp.html", "funcname": "hasTsp" },
-  { "id": "hat", "href": "/detail/base/hat.html", "funcname": "hat" },
+  { "id": "hasTsp", "href": "/detail/stats/hasTsp.html", "funcname": "hasTsp" },
+  { "id": "hat", "href": "/detail/stats/hat.html", "funcname": "hat" },
   {
     "id": "hatvalues",
-    "href": "/detail/base/hatvalues.html",
+    "href": "/detail/stats/hatvalues.html",
     "funcname": "hatvalues"
   },
-  { "id": "hclust", "href": "/detail/base/hclust.html", "funcname": "hclust" },
+  { "id": "hclust", "href": "/detail/stats/hclust.html", "funcname": "hclust" },
   {
     "id": "heatmap",
-    "href": "/detail/base/heatmap.html",
+    "href": "/detail/stats/heatmap.html",
     "funcname": "heatmap"
   },
   {
     "id": "HoltWinters",
-    "href": "/detail/base/HoltWinters.html",
+    "href": "/detail/stats/HoltWinters.html",
     "funcname": "HoltWinters"
   },
   {
     "id": "influence",
-    "href": "/detail/base/influence.html",
+    "href": "/detail/stats/influence.html",
     "funcname": "influence"
   },
   {
     "id": "influence.measures",
-    "href": "/detail/base/influencesymbol11measures.html",
+    "href": "/detail/stats/influencesymbol11measures.html",
     "funcname": "influence.measures"
   },
   {
     "id": "integrate",
-    "href": "/detail/base/integrate.html",
+    "href": "/detail/stats/integrate.html",
     "funcname": "integrate"
   },
   {
     "id": "interaction.plot",
-    "href": "/detail/base/interactionsymbol11plot.html",
+    "href": "/detail/stats/interactionsymbol11plot.html",
     "funcname": "interaction.plot"
   },
   {
     "id": "inverse.gaussian",
-    "href": "/detail/base/inversesymbol11gaussian.html",
+    "href": "/detail/stats/inversesymbol11gaussian.html",
     "funcname": "inverse.gaussian"
   },
-  { "id": "IQR", "href": "/detail/base/IQR.html", "funcname": "IQR" },
+  { "id": "IQR", "href": "/detail/stats/IQR.html", "funcname": "IQR" },
   {
     "id": "is.empty.model",
-    "href": "/detail/base/issymbol11emptysymbol11model.html",
+    "href": "/detail/stats/issymbol11emptysymbol11model.html",
     "funcname": "is.empty.model"
   },
   {
     "id": "is.leaf",
-    "href": "/detail/base/issymbol11leaf.html",
+    "href": "/detail/stats/issymbol11leaf.html",
     "funcname": "is.leaf"
   },
   {
     "id": "is.mts",
-    "href": "/detail/base/issymbol11mts.html",
+    "href": "/detail/stats/issymbol11mts.html",
     "funcname": "is.mts"
   },
   {
     "id": "is.stepfun",
-    "href": "/detail/base/issymbol11stepfun.html",
+    "href": "/detail/stats/issymbol11stepfun.html",
     "funcname": "is.stepfun"
   },
   {
     "id": "is.ts",
-    "href": "/detail/base/issymbol11ts.html",
+    "href": "/detail/stats/issymbol11ts.html",
     "funcname": "is.ts"
   },
   {
     "id": "is.tskernel",
-    "href": "/detail/base/issymbol11tskernel.html",
+    "href": "/detail/stats/issymbol11tskernel.html",
     "funcname": "is.tskernel"
   },
-  { "id": "isoreg", "href": "/detail/base/isoreg.html", "funcname": "isoreg" },
+  { "id": "isoreg", "href": "/detail/stats/isoreg.html", "funcname": "isoreg" },
   {
     "id": "KalmanForecast",
-    "href": "/detail/base/KalmanForecast.html",
+    "href": "/detail/stats/KalmanForecast.html",
     "funcname": "KalmanForecast"
   },
   {
     "id": "KalmanLike",
-    "href": "/detail/base/KalmanLike.html",
+    "href": "/detail/stats/KalmanLike.html",
     "funcname": "KalmanLike"
   },
   {
     "id": "KalmanRun",
-    "href": "/detail/base/KalmanRun.html",
+    "href": "/detail/stats/KalmanRun.html",
     "funcname": "KalmanRun"
   },
   {
     "id": "KalmanSmooth",
-    "href": "/detail/base/KalmanSmooth.html",
+    "href": "/detail/stats/KalmanSmooth.html",
     "funcname": "KalmanSmooth"
   },
   {
     "id": "kernapply",
-    "href": "/detail/base/kernapply.html",
+    "href": "/detail/stats/kernapply.html",
     "funcname": "kernapply"
   },
-  { "id": "kernel", "href": "/detail/base/kernel.html", "funcname": "kernel" },
-  { "id": "kmeans", "href": "/detail/base/kmeans.html", "funcname": "kmeans" },
-  { "id": "knots", "href": "/detail/base/knots.html", "funcname": "knots" },
+  { "id": "kernel", "href": "/detail/stats/kernel.html", "funcname": "kernel" },
+  { "id": "kmeans", "href": "/detail/stats/kmeans.html", "funcname": "kmeans" },
+  { "id": "knots", "href": "/detail/stats/knots.html", "funcname": "knots" },
   {
     "id": "kruskal.test",
-    "href": "/detail/base/kruskalsymbol11test.html",
+    "href": "/detail/stats/kruskalsymbol11test.html",
     "funcname": "kruskal.test"
   },
   {
     "id": "ks.test",
-    "href": "/detail/base/kssymbol11test.html",
+    "href": "/detail/stats/kssymbol11test.html",
     "funcname": "ks.test"
   },
   {
     "id": "ksmooth",
-    "href": "/detail/base/ksmooth.html",
+    "href": "/detail/stats/ksmooth.html",
     "funcname": "ksmooth"
   },
-  { "id": "lag", "href": "/detail/base/lag.html", "funcname": "lag" },
+  { "id": "lag", "href": "/detail/stats/lag.html", "funcname": "lag" },
   {
     "id": "lag.plot",
-    "href": "/detail/base/lagsymbol11plot.html",
+    "href": "/detail/stats/lagsymbol11plot.html",
     "funcname": "lag.plot"
   },
-  { "id": "line", "href": "/detail/base/line.html", "funcname": "line" },
-  { "id": "lm", "href": "/detail/base/lm.html", "funcname": "lm" },
+  { "id": "line", "href": "/detail/stats/line.html", "funcname": "line" },
+  { "id": "lm", "href": "/detail/stats/lm.html", "funcname": "lm" },
   {
     "id": "lm.fit",
-    "href": "/detail/base/lmsymbol11fit.html",
+    "href": "/detail/stats/lmsymbol11fit.html",
     "funcname": "lm.fit"
   },
   {
     "id": "lm.influence",
-    "href": "/detail/base/lmsymbol11influence.html",
+    "href": "/detail/stats/lmsymbol11influence.html",
     "funcname": "lm.influence"
   },
   {
     "id": "lm.wfit",
-    "href": "/detail/base/lmsymbol11wfit.html",
+    "href": "/detail/stats/lmsymbol11wfit.html",
     "funcname": "lm.wfit"
   },
   {
     "id": "loadings",
-    "href": "/detail/base/loadings.html",
+    "href": "/detail/stats/loadings.html",
     "funcname": "loadings"
   },
-  { "id": "loess", "href": "/detail/base/loess.html", "funcname": "loess" },
+  { "id": "loess", "href": "/detail/stats/loess.html", "funcname": "loess" },
   {
     "id": "loess.control",
-    "href": "/detail/base/loesssymbol11control.html",
+    "href": "/detail/stats/loesssymbol11control.html",
     "funcname": "loess.control"
   },
   {
     "id": "loess.smooth",
-    "href": "/detail/base/loesssymbol11smooth.html",
+    "href": "/detail/stats/loesssymbol11smooth.html",
     "funcname": "loess.smooth"
   },
-  { "id": "logLik", "href": "/detail/base/logLik.html", "funcname": "logLik" },
-  { "id": "loglin", "href": "/detail/base/loglin.html", "funcname": "loglin" },
-  { "id": "lowess", "href": "/detail/base/lowess.html", "funcname": "lowess" },
+  { "id": "logLik", "href": "/detail/stats/logLik.html", "funcname": "logLik" },
+  { "id": "loglin", "href": "/detail/stats/loglin.html", "funcname": "loglin" },
+  { "id": "lowess", "href": "/detail/stats/lowess.html", "funcname": "lowess" },
   {
     "id": "ls.diag",
-    "href": "/detail/base/lssymbol11diag.html",
+    "href": "/detail/stats/lssymbol11diag.html",
     "funcname": "ls.diag"
   },
   {
     "id": "ls.print",
-    "href": "/detail/base/lssymbol11print.html",
+    "href": "/detail/stats/lssymbol11print.html",
     "funcname": "ls.print"
   },
-  { "id": "lsfit", "href": "/detail/base/lsfit.html", "funcname": "lsfit" },
-  { "id": "mad", "href": "/detail/base/mad.html", "funcname": "mad" },
+  { "id": "lsfit", "href": "/detail/stats/lsfit.html", "funcname": "lsfit" },
+  { "id": "mad", "href": "/detail/stats/mad.html", "funcname": "mad" },
   {
     "id": "mahalanobis",
-    "href": "/detail/base/mahalanobis.html",
+    "href": "/detail/stats/mahalanobis.html",
     "funcname": "mahalanobis"
   },
   {
     "id": "make.link",
-    "href": "/detail/base/makesymbol11link.html",
+    "href": "/detail/stats/makesymbol11link.html",
     "funcname": "make.link"
   },
   {
     "id": "makeARIMA",
-    "href": "/detail/base/makeARIMA.html",
+    "href": "/detail/stats/makeARIMA.html",
     "funcname": "makeARIMA"
   },
   {
     "id": "makepredictcall",
-    "href": "/detail/base/makepredictcall.html",
+    "href": "/detail/stats/makepredictcall.html",
     "funcname": "makepredictcall"
   },
-  { "id": "manova", "href": "/detail/base/manova.html", "funcname": "manova" },
+  { "id": "manova", "href": "/detail/stats/manova.html", "funcname": "manova" },
   {
     "id": "mantelhaen.test",
-    "href": "/detail/base/mantelhaensymbol11test.html",
+    "href": "/detail/stats/mantelhaensymbol11test.html",
     "funcname": "mantelhaen.test"
   },
   {
     "id": "mauchly.test",
-    "href": "/detail/base/mauchlysymbol11test.html",
+    "href": "/detail/stats/mauchlysymbol11test.html",
     "funcname": "mauchly.test"
   },
   {
     "id": "mcnemar.test",
-    "href": "/detail/base/mcnemarsymbol11test.html",
+    "href": "/detail/stats/mcnemarsymbol11test.html",
     "funcname": "mcnemar.test"
   },
-  { "id": "median", "href": "/detail/base/median.html", "funcname": "median" },
+  { "id": "median", "href": "/detail/stats/median.html", "funcname": "median" },
   {
     "id": "median.default",
-    "href": "/detail/base/mediansymbol11default.html",
+    "href": "/detail/stats/mediansymbol11default.html",
     "funcname": "median.default"
   },
   {
     "id": "medpolish",
-    "href": "/detail/base/medpolish.html",
+    "href": "/detail/stats/medpolish.html",
     "funcname": "medpolish"
   },
   {
     "id": "model.extract",
-    "href": "/detail/base/modelsymbol11extract.html",
+    "href": "/detail/stats/modelsymbol11extract.html",
     "funcname": "model.extract"
   },
   {
     "id": "model.frame",
-    "href": "/detail/base/modelsymbol11frame.html",
+    "href": "/detail/stats/modelsymbol11frame.html",
     "funcname": "model.frame"
   },
   {
     "id": "model.frame.default",
-    "href": "/detail/base/modelsymbol11framesymbol11default.html",
+    "href": "/detail/stats/modelsymbol11framesymbol11default.html",
     "funcname": "model.frame.default"
   },
   {
     "id": "model.matrix",
-    "href": "/detail/base/modelsymbol11matrix.html",
+    "href": "/detail/stats/modelsymbol11matrix.html",
     "funcname": "model.matrix"
   },
   {
     "id": "model.matrix.default",
-    "href": "/detail/base/modelsymbol11matrixsymbol11default.html",
+    "href": "/detail/stats/modelsymbol11matrixsymbol11default.html",
     "funcname": "model.matrix.default"
   },
   {
     "id": "model.matrix.lm",
-    "href": "/detail/base/modelsymbol11matrixsymbol11lm.html",
+    "href": "/detail/stats/modelsymbol11matrixsymbol11lm.html",
     "funcname": "model.matrix.lm"
   },
   {
     "id": "model.offset",
-    "href": "/detail/base/modelsymbol11offset.html",
+    "href": "/detail/stats/modelsymbol11offset.html",
     "funcname": "model.offset"
   },
   {
     "id": "model.response",
-    "href": "/detail/base/modelsymbol11response.html",
+    "href": "/detail/stats/modelsymbol11response.html",
     "funcname": "model.response"
   },
   {
     "id": "model.tables",
-    "href": "/detail/base/modelsymbol11tables.html",
+    "href": "/detail/stats/modelsymbol11tables.html",
     "funcname": "model.tables"
   },
   {
     "id": "model.weights",
-    "href": "/detail/base/modelsymbol11weights.html",
+    "href": "/detail/stats/modelsymbol11weights.html",
     "funcname": "model.weights"
   },
   {
     "id": "monthplot",
-    "href": "/detail/base/monthplot.html",
+    "href": "/detail/stats/monthplot.html",
     "funcname": "monthplot"
   },
   {
     "id": "mood.test",
-    "href": "/detail/base/moodsymbol11test.html",
+    "href": "/detail/stats/moodsymbol11test.html",
     "funcname": "mood.test"
   },
-  { "id": "mvfft", "href": "/detail/base/mvfft.html", "funcname": "mvfft" },
+  { "id": "mvfft", "href": "/detail/stats/mvfft.html", "funcname": "mvfft" },
   {
     "id": "na.action",
-    "href": "/detail/base/nasymbol11action.html",
+    "href": "/detail/stats/nasymbol11action.html",
     "funcname": "na.action"
   },
   {
     "id": "na.contiguous",
-    "href": "/detail/base/nasymbol11contiguous.html",
+    "href": "/detail/stats/nasymbol11contiguous.html",
     "funcname": "na.contiguous"
   },
   {
     "id": "na.exclude",
-    "href": "/detail/base/nasymbol11exclude.html",
+    "href": "/detail/stats/nasymbol11exclude.html",
     "funcname": "na.exclude"
   },
   {
     "id": "na.fail",
-    "href": "/detail/base/nasymbol11fail.html",
+    "href": "/detail/stats/nasymbol11fail.html",
     "funcname": "na.fail"
   },
   {
     "id": "na.omit",
-    "href": "/detail/base/nasymbol11omit.html",
+    "href": "/detail/stats/nasymbol11omit.html",
     "funcname": "na.omit"
   },
   {
     "id": "na.pass",
-    "href": "/detail/base/nasymbol11pass.html",
+    "href": "/detail/stats/nasymbol11pass.html",
     "funcname": "na.pass"
   },
   {
     "id": "napredict",
-    "href": "/detail/base/napredict.html",
+    "href": "/detail/stats/napredict.html",
     "funcname": "napredict"
   },
   {
     "id": "naprint",
-    "href": "/detail/base/naprint.html",
+    "href": "/detail/stats/naprint.html",
     "funcname": "naprint"
   },
   {
     "id": "naresid",
-    "href": "/detail/base/naresid.html",
+    "href": "/detail/stats/naresid.html",
     "funcname": "naresid"
   },
-  { "id": "nextn", "href": "/detail/base/nextn.html", "funcname": "nextn" },
-  { "id": "nlm", "href": "/detail/base/nlm.html", "funcname": "nlm" },
-  { "id": "nlminb", "href": "/detail/base/nlminb.html", "funcname": "nlminb" },
-  { "id": "nls", "href": "/detail/base/nls.html", "funcname": "nls" },
+  { "id": "nextn", "href": "/detail/stats/nextn.html", "funcname": "nextn" },
+  { "id": "nlm", "href": "/detail/stats/nlm.html", "funcname": "nlm" },
+  { "id": "nlminb", "href": "/detail/stats/nlminb.html", "funcname": "nlminb" },
+  { "id": "nls", "href": "/detail/stats/nls.html", "funcname": "nls" },
   {
     "id": "nls.control",
-    "href": "/detail/base/nlssymbol11control.html",
+    "href": "/detail/stats/nlssymbol11control.html",
     "funcname": "nls.control"
   },
   {
     "id": "NLSstAsymptotic",
-    "href": "/detail/base/NLSstAsymptotic.html",
+    "href": "/detail/stats/NLSstAsymptotic.html",
     "funcname": "NLSstAsymptotic"
   },
   {
     "id": "NLSstClosestX",
-    "href": "/detail/base/NLSstClosestX.html",
+    "href": "/detail/stats/NLSstClosestX.html",
     "funcname": "NLSstClosestX"
   },
   {
     "id": "NLSstLfAsymptote",
-    "href": "/detail/base/NLSstLfAsymptote.html",
+    "href": "/detail/stats/NLSstLfAsymptote.html",
     "funcname": "NLSstLfAsymptote"
   },
   {
     "id": "NLSstRtAsymptote",
-    "href": "/detail/base/NLSstRtAsymptote.html",
+    "href": "/detail/stats/NLSstRtAsymptote.html",
     "funcname": "NLSstRtAsymptote"
   },
-  { "id": "nobs", "href": "/detail/base/nobs.html", "funcname": "nobs" },
+  { "id": "nobs", "href": "/detail/stats/nobs.html", "funcname": "nobs" },
   {
     "id": "numericDeriv",
-    "href": "/detail/base/numericDeriv.html",
+    "href": "/detail/stats/numericDeriv.html",
     "funcname": "numericDeriv"
   },
-  { "id": "offset", "href": "/detail/base/offset.html", "funcname": "offset" },
+  { "id": "offset", "href": "/detail/stats/offset.html", "funcname": "offset" },
   {
     "id": "oneway.test",
-    "href": "/detail/base/onewaysymbol11test.html",
+    "href": "/detail/stats/onewaysymbol11test.html",
     "funcname": "oneway.test"
   },
-  { "id": "optim", "href": "/detail/base/optim.html", "funcname": "optim" },
+  { "id": "optim", "href": "/detail/stats/optim.html", "funcname": "optim" },
   {
     "id": "optimHess",
-    "href": "/detail/base/optimHess.html",
+    "href": "/detail/stats/optimHess.html",
     "funcname": "optimHess"
   },
   {
     "id": "optimise",
-    "href": "/detail/base/optimise.html",
+    "href": "/detail/stats/optimise.html",
     "funcname": "optimise"
   },
   {
     "id": "optimize",
-    "href": "/detail/base/optimize.html",
+    "href": "/detail/stats/optimize.html",
     "funcname": "optimize"
   },
   {
     "id": "order.dendrogram",
-    "href": "/detail/base/ordersymbol11dendrogram.html",
+    "href": "/detail/stats/ordersymbol11dendrogram.html",
     "funcname": "order.dendrogram"
   },
   {
     "id": "p.adjust",
-    "href": "/detail/base/psymbol11adjust.html",
+    "href": "/detail/stats/psymbol11adjust.html",
     "funcname": "p.adjust"
   },
   {
     "id": "p.adjust.methods",
-    "href": "/detail/base/psymbol11adjustsymbol11methods.html",
+    "href": "/detail/stats/psymbol11adjustsymbol11methods.html",
     "funcname": "p.adjust.methods"
   },
-  { "id": "pacf", "href": "/detail/base/pacf.html", "funcname": "pacf" },
-  { "id": "Pair", "href": "/detail/base/Pair.html", "funcname": "Pair" },
+  { "id": "pacf", "href": "/detail/stats/pacf.html", "funcname": "pacf" },
+  { "id": "Pair", "href": "/detail/stats/Pair.html", "funcname": "Pair" },
   {
     "id": "pairwise.prop.test",
-    "href": "/detail/base/pairwisesymbol11propsymbol11test.html",
+    "href": "/detail/stats/pairwisesymbol11propsymbol11test.html",
     "funcname": "pairwise.prop.test"
   },
   {
     "id": "pairwise.t.test",
-    "href": "/detail/base/pairwisesymbol11tsymbol11test.html",
+    "href": "/detail/stats/pairwisesymbol11tsymbol11test.html",
     "funcname": "pairwise.t.test"
   },
   {
     "id": "pairwise.table",
-    "href": "/detail/base/pairwisesymbol11table.html",
+    "href": "/detail/stats/pairwisesymbol11table.html",
     "funcname": "pairwise.table"
   },
   {
     "id": "pairwise.wilcox.test",
-    "href": "/detail/base/pairwisesymbol11wilcoxsymbol11test.html",
+    "href": "/detail/stats/pairwisesymbol11wilcoxsymbol11test.html",
     "funcname": "pairwise.wilcox.test"
   },
-  { "id": "pbeta", "href": "/detail/base/pbeta.html", "funcname": "pbeta" },
-  { "id": "pbinom", "href": "/detail/base/pbinom.html", "funcname": "pbinom" },
+  { "id": "pbeta", "href": "/detail/stats/pbeta.html", "funcname": "pbeta" },
+  { "id": "pbinom", "href": "/detail/stats/pbinom.html", "funcname": "pbinom" },
   {
     "id": "pbirthday",
-    "href": "/detail/base/pbirthday.html",
+    "href": "/detail/stats/pbirthday.html",
     "funcname": "pbirthday"
   },
   {
     "id": "pcauchy",
-    "href": "/detail/base/pcauchy.html",
+    "href": "/detail/stats/pcauchy.html",
     "funcname": "pcauchy"
   },
-  { "id": "pchisq", "href": "/detail/base/pchisq.html", "funcname": "pchisq" },
-  { "id": "pexp", "href": "/detail/base/pexp.html", "funcname": "pexp" },
-  { "id": "pf", "href": "/detail/base/pf.html", "funcname": "pf" },
-  { "id": "pgamma", "href": "/detail/base/pgamma.html", "funcname": "pgamma" },
-  { "id": "pgeom", "href": "/detail/base/pgeom.html", "funcname": "pgeom" },
-  { "id": "phyper", "href": "/detail/base/phyper.html", "funcname": "phyper" },
+  { "id": "pchisq", "href": "/detail/stats/pchisq.html", "funcname": "pchisq" },
+  { "id": "pexp", "href": "/detail/stats/pexp.html", "funcname": "pexp" },
+  { "id": "pf", "href": "/detail/stats/pf.html", "funcname": "pf" },
+  { "id": "pgamma", "href": "/detail/stats/pgamma.html", "funcname": "pgamma" },
+  { "id": "pgeom", "href": "/detail/stats/pgeom.html", "funcname": "pgeom" },
+  { "id": "phyper", "href": "/detail/stats/phyper.html", "funcname": "phyper" },
   {
     "id": "plclust",
-    "href": "/detail/base/plclust.html",
+    "href": "/detail/stats/plclust.html",
     "funcname": "plclust"
   },
-  { "id": "plnorm", "href": "/detail/base/plnorm.html", "funcname": "plnorm" },
-  { "id": "plogis", "href": "/detail/base/plogis.html", "funcname": "plogis" },
+  { "id": "plnorm", "href": "/detail/stats/plnorm.html", "funcname": "plnorm" },
+  { "id": "plogis", "href": "/detail/stats/plogis.html", "funcname": "plogis" },
   {
     "id": "plot.ecdf",
-    "href": "/detail/base/plotsymbol11ecdf.html",
+    "href": "/detail/stats/plotsymbol11ecdf.html",
     "funcname": "plot.ecdf"
   },
   {
     "id": "plot.spec.coherency",
-    "href": "/detail/base/plotsymbol11specsymbol11coherency.html",
+    "href": "/detail/stats/plotsymbol11specsymbol11coherency.html",
     "funcname": "plot.spec.coherency"
   },
   {
     "id": "plot.spec.phase",
-    "href": "/detail/base/plotsymbol11specsymbol11phase.html",
+    "href": "/detail/stats/plotsymbol11specsymbol11phase.html",
     "funcname": "plot.spec.phase"
   },
   {
     "id": "plot.stepfun",
-    "href": "/detail/base/plotsymbol11stepfun.html",
+    "href": "/detail/stats/plotsymbol11stepfun.html",
     "funcname": "plot.stepfun"
   },
   {
     "id": "plot.ts",
-    "href": "/detail/base/plotsymbol11ts.html",
+    "href": "/detail/stats/plotsymbol11ts.html",
     "funcname": "plot.ts"
   },
   {
     "id": "pnbinom",
-    "href": "/detail/base/pnbinom.html",
+    "href": "/detail/stats/pnbinom.html",
     "funcname": "pnbinom"
   },
-  { "id": "pnorm", "href": "/detail/base/pnorm.html", "funcname": "pnorm" },
+  { "id": "pnorm", "href": "/detail/stats/pnorm.html", "funcname": "pnorm" },
   {
     "id": "poisson",
-    "href": "/detail/base/poisson.html",
+    "href": "/detail/stats/poisson.html",
     "funcname": "poisson"
   },
   {
     "id": "poisson.test",
-    "href": "/detail/base/poissonsymbol11test.html",
+    "href": "/detail/stats/poissonsymbol11test.html",
     "funcname": "poisson.test"
   },
-  { "id": "poly", "href": "/detail/base/poly.html", "funcname": "poly" },
-  { "id": "polym", "href": "/detail/base/polym.html", "funcname": "polym" },
-  { "id": "power", "href": "/detail/base/power.html", "funcname": "power" },
+  { "id": "poly", "href": "/detail/stats/poly.html", "funcname": "poly" },
+  { "id": "polym", "href": "/detail/stats/polym.html", "funcname": "polym" },
+  { "id": "power", "href": "/detail/stats/power.html", "funcname": "power" },
   {
     "id": "power.anova.test",
-    "href": "/detail/base/powersymbol11anovasymbol11test.html",
+    "href": "/detail/stats/powersymbol11anovasymbol11test.html",
     "funcname": "power.anova.test"
   },
   {
     "id": "power.prop.test",
-    "href": "/detail/base/powersymbol11propsymbol11test.html",
+    "href": "/detail/stats/powersymbol11propsymbol11test.html",
     "funcname": "power.prop.test"
   },
   {
     "id": "power.t.test",
-    "href": "/detail/base/powersymbol11tsymbol11test.html",
+    "href": "/detail/stats/powersymbol11tsymbol11test.html",
     "funcname": "power.t.test"
   },
   {
     "id": "PP.test",
-    "href": "/detail/base/PPsymbol11test.html",
+    "href": "/detail/stats/PPsymbol11test.html",
     "funcname": "PP.test"
   },
   {
     "id": "ppoints",
-    "href": "/detail/base/ppoints.html",
+    "href": "/detail/stats/ppoints.html",
     "funcname": "ppoints"
   },
-  { "id": "ppois", "href": "/detail/base/ppois.html", "funcname": "ppois" },
-  { "id": "ppr", "href": "/detail/base/ppr.html", "funcname": "ppr" },
-  { "id": "prcomp", "href": "/detail/base/prcomp.html", "funcname": "prcomp" },
+  { "id": "ppois", "href": "/detail/stats/ppois.html", "funcname": "ppois" },
+  { "id": "ppr", "href": "/detail/stats/ppr.html", "funcname": "ppr" },
+  { "id": "prcomp", "href": "/detail/stats/prcomp.html", "funcname": "prcomp" },
   {
     "id": "predict",
-    "href": "/detail/base/predict.html",
+    "href": "/detail/stats/predict.html",
     "funcname": "predict"
   },
   {
     "id": "predict.glm",
-    "href": "/detail/base/predictsymbol11glm.html",
+    "href": "/detail/stats/predictsymbol11glm.html",
     "funcname": "predict.glm"
   },
   {
     "id": "predict.lm",
-    "href": "/detail/base/predictsymbol11lm.html",
+    "href": "/detail/stats/predictsymbol11lm.html",
     "funcname": "predict.lm"
   },
   {
     "id": "preplot",
-    "href": "/detail/base/preplot.html",
+    "href": "/detail/stats/preplot.html",
     "funcname": "preplot"
   },
   {
     "id": "princomp",
-    "href": "/detail/base/princomp.html",
+    "href": "/detail/stats/princomp.html",
     "funcname": "princomp"
   },
   {
     "id": "printCoefmat",
-    "href": "/detail/base/printCoefmat.html",
+    "href": "/detail/stats/printCoefmat.html",
     "funcname": "printCoefmat"
   },
   {
     "id": "profile",
-    "href": "/detail/base/profile.html",
+    "href": "/detail/stats/profile.html",
     "funcname": "profile"
   },
-  { "id": "proj", "href": "/detail/base/proj.html", "funcname": "proj" },
-  { "id": "promax", "href": "/detail/base/promax.html", "funcname": "promax" },
+  { "id": "proj", "href": "/detail/stats/proj.html", "funcname": "proj" },
+  { "id": "promax", "href": "/detail/stats/promax.html", "funcname": "promax" },
   {
     "id": "prop.test",
-    "href": "/detail/base/propsymbol11test.html",
+    "href": "/detail/stats/propsymbol11test.html",
     "funcname": "prop.test"
   },
   {
     "id": "prop.trend.test",
-    "href": "/detail/base/propsymbol11trendsymbol11test.html",
+    "href": "/detail/stats/propsymbol11trendsymbol11test.html",
     "funcname": "prop.trend.test"
   },
   {
     "id": "psignrank",
-    "href": "/detail/base/psignrank.html",
+    "href": "/detail/stats/psignrank.html",
     "funcname": "psignrank"
   },
-  { "id": "pt", "href": "/detail/base/pt.html", "funcname": "pt" },
-  { "id": "ptukey", "href": "/detail/base/ptukey.html", "funcname": "ptukey" },
-  { "id": "punif", "href": "/detail/base/punif.html", "funcname": "punif" },
+  { "id": "pt", "href": "/detail/stats/pt.html", "funcname": "pt" },
+  { "id": "ptukey", "href": "/detail/stats/ptukey.html", "funcname": "ptukey" },
+  { "id": "punif", "href": "/detail/stats/punif.html", "funcname": "punif" },
   {
     "id": "pweibull",
-    "href": "/detail/base/pweibull.html",
+    "href": "/detail/stats/pweibull.html",
     "funcname": "pweibull"
   },
   {
     "id": "pwilcox",
-    "href": "/detail/base/pwilcox.html",
+    "href": "/detail/stats/pwilcox.html",
     "funcname": "pwilcox"
   },
-  { "id": "qbeta", "href": "/detail/base/qbeta.html", "funcname": "qbeta" },
-  { "id": "qbinom", "href": "/detail/base/qbinom.html", "funcname": "qbinom" },
+  { "id": "qbeta", "href": "/detail/stats/qbeta.html", "funcname": "qbeta" },
+  { "id": "qbinom", "href": "/detail/stats/qbinom.html", "funcname": "qbinom" },
   {
     "id": "qbirthday",
-    "href": "/detail/base/qbirthday.html",
+    "href": "/detail/stats/qbirthday.html",
     "funcname": "qbirthday"
   },
   {
     "id": "qcauchy",
-    "href": "/detail/base/qcauchy.html",
+    "href": "/detail/stats/qcauchy.html",
     "funcname": "qcauchy"
   },
-  { "id": "qchisq", "href": "/detail/base/qchisq.html", "funcname": "qchisq" },
-  { "id": "qexp", "href": "/detail/base/qexp.html", "funcname": "qexp" },
-  { "id": "qf", "href": "/detail/base/qf.html", "funcname": "qf" },
-  { "id": "qgamma", "href": "/detail/base/qgamma.html", "funcname": "qgamma" },
-  { "id": "qgeom", "href": "/detail/base/qgeom.html", "funcname": "qgeom" },
-  { "id": "qhyper", "href": "/detail/base/qhyper.html", "funcname": "qhyper" },
-  { "id": "qlnorm", "href": "/detail/base/qlnorm.html", "funcname": "qlnorm" },
-  { "id": "qlogis", "href": "/detail/base/qlogis.html", "funcname": "qlogis" },
+  { "id": "qchisq", "href": "/detail/stats/qchisq.html", "funcname": "qchisq" },
+  { "id": "qexp", "href": "/detail/stats/qexp.html", "funcname": "qexp" },
+  { "id": "qf", "href": "/detail/stats/qf.html", "funcname": "qf" },
+  { "id": "qgamma", "href": "/detail/stats/qgamma.html", "funcname": "qgamma" },
+  { "id": "qgeom", "href": "/detail/stats/qgeom.html", "funcname": "qgeom" },
+  { "id": "qhyper", "href": "/detail/stats/qhyper.html", "funcname": "qhyper" },
+  { "id": "qlnorm", "href": "/detail/stats/qlnorm.html", "funcname": "qlnorm" },
+  { "id": "qlogis", "href": "/detail/stats/qlogis.html", "funcname": "qlogis" },
   {
     "id": "qnbinom",
-    "href": "/detail/base/qnbinom.html",
+    "href": "/detail/stats/qnbinom.html",
     "funcname": "qnbinom"
   },
-  { "id": "qnorm", "href": "/detail/base/qnorm.html", "funcname": "qnorm" },
-  { "id": "qpois", "href": "/detail/base/qpois.html", "funcname": "qpois" },
-  { "id": "qqline", "href": "/detail/base/qqline.html", "funcname": "qqline" },
-  { "id": "qqnorm", "href": "/detail/base/qqnorm.html", "funcname": "qqnorm" },
-  { "id": "qqplot", "href": "/detail/base/qqplot.html", "funcname": "qqplot" },
+  { "id": "qnorm", "href": "/detail/stats/qnorm.html", "funcname": "qnorm" },
+  { "id": "qpois", "href": "/detail/stats/qpois.html", "funcname": "qpois" },
+  { "id": "qqline", "href": "/detail/stats/qqline.html", "funcname": "qqline" },
+  { "id": "qqnorm", "href": "/detail/stats/qqnorm.html", "funcname": "qqnorm" },
+  { "id": "qqplot", "href": "/detail/stats/qqplot.html", "funcname": "qqplot" },
   {
     "id": "qsignrank",
-    "href": "/detail/base/qsignrank.html",
+    "href": "/detail/stats/qsignrank.html",
     "funcname": "qsignrank"
   },
-  { "id": "qt", "href": "/detail/base/qt.html", "funcname": "qt" },
-  { "id": "qtukey", "href": "/detail/base/qtukey.html", "funcname": "qtukey" },
+  { "id": "qt", "href": "/detail/stats/qt.html", "funcname": "qt" },
+  { "id": "qtukey", "href": "/detail/stats/qtukey.html", "funcname": "qtukey" },
   {
     "id": "quade.test",
-    "href": "/detail/base/quadesymbol11test.html",
+    "href": "/detail/stats/quadesymbol11test.html",
     "funcname": "quade.test"
   },
   {
     "id": "quantile",
-    "href": "/detail/base/quantile.html",
+    "href": "/detail/stats/quantile.html",
     "funcname": "quantile"
   },
-  { "id": "quasi", "href": "/detail/base/quasi.html", "funcname": "quasi" },
+  { "id": "quasi", "href": "/detail/stats/quasi.html", "funcname": "quasi" },
   {
     "id": "quasibinomial",
-    "href": "/detail/base/quasibinomial.html",
+    "href": "/detail/stats/quasibinomial.html",
     "funcname": "quasibinomial"
   },
   {
     "id": "quasipoisson",
-    "href": "/detail/base/quasipoisson.html",
+    "href": "/detail/stats/quasipoisson.html",
     "funcname": "quasipoisson"
   },
-  { "id": "qunif", "href": "/detail/base/qunif.html", "funcname": "qunif" },
+  { "id": "qunif", "href": "/detail/stats/qunif.html", "funcname": "qunif" },
   {
     "id": "qweibull",
-    "href": "/detail/base/qweibull.html",
+    "href": "/detail/stats/qweibull.html",
     "funcname": "qweibull"
   },
   {
     "id": "qwilcox",
-    "href": "/detail/base/qwilcox.html",
+    "href": "/detail/stats/qwilcox.html",
     "funcname": "qwilcox"
   },
   {
     "id": "r2dtable",
-    "href": "/detail/base/r2dtable.html",
+    "href": "/detail/stats/r2dtable.html",
     "funcname": "r2dtable"
   },
-  { "id": "rbeta", "href": "/detail/base/rbeta.html", "funcname": "rbeta" },
-  { "id": "rbinom", "href": "/detail/base/rbinom.html", "funcname": "rbinom" },
+  { "id": "rbeta", "href": "/detail/stats/rbeta.html", "funcname": "rbeta" },
+  { "id": "rbinom", "href": "/detail/stats/rbinom.html", "funcname": "rbinom" },
   {
     "id": "rcauchy",
-    "href": "/detail/base/rcauchy.html",
+    "href": "/detail/stats/rcauchy.html",
     "funcname": "rcauchy"
   },
-  { "id": "rchisq", "href": "/detail/base/rchisq.html", "funcname": "rchisq" },
+  { "id": "rchisq", "href": "/detail/stats/rchisq.html", "funcname": "rchisq" },
   {
     "id": "read.ftable",
-    "href": "/detail/base/readsymbol11ftable.html",
+    "href": "/detail/stats/readsymbol11ftable.html",
     "funcname": "read.ftable"
   },
   {
     "id": "rect.hclust",
-    "href": "/detail/base/rectsymbol11hclust.html",
+    "href": "/detail/stats/rectsymbol11hclust.html",
     "funcname": "rect.hclust"
   },
   {
     "id": "reformulate",
-    "href": "/detail/base/reformulate.html",
+    "href": "/detail/stats/reformulate.html",
     "funcname": "reformulate"
   },
   {
     "id": "relevel",
-    "href": "/detail/base/relevel.html",
+    "href": "/detail/stats/relevel.html",
     "funcname": "relevel"
   },
   {
     "id": "reorder",
-    "href": "/detail/base/reorder.html",
+    "href": "/detail/stats/reorder.html",
     "funcname": "reorder"
   },
   {
     "id": "replications",
-    "href": "/detail/base/replications.html",
+    "href": "/detail/stats/replications.html",
     "funcname": "replications"
   },
   {
     "id": "reshape",
-    "href": "/detail/base/reshape.html",
+    "href": "/detail/stats/reshape.html",
     "funcname": "reshape"
   },
-  { "id": "resid", "href": "/detail/base/resid.html", "funcname": "resid" },
+  { "id": "resid", "href": "/detail/stats/resid.html", "funcname": "resid" },
   {
     "id": "residuals",
-    "href": "/detail/base/residuals.html",
+    "href": "/detail/stats/residuals.html",
     "funcname": "residuals"
   },
   {
     "id": "residuals.glm",
-    "href": "/detail/base/residualssymbol11glm.html",
+    "href": "/detail/stats/residualssymbol11glm.html",
     "funcname": "residuals.glm"
   },
   {
     "id": "residuals.lm",
-    "href": "/detail/base/residualssymbol11lm.html",
+    "href": "/detail/stats/residualssymbol11lm.html",
     "funcname": "residuals.lm"
   },
-  { "id": "rexp", "href": "/detail/base/rexp.html", "funcname": "rexp" },
-  { "id": "rf", "href": "/detail/base/rf.html", "funcname": "rf" },
-  { "id": "rgamma", "href": "/detail/base/rgamma.html", "funcname": "rgamma" },
-  { "id": "rgeom", "href": "/detail/base/rgeom.html", "funcname": "rgeom" },
-  { "id": "rhyper", "href": "/detail/base/rhyper.html", "funcname": "rhyper" },
-  { "id": "rlnorm", "href": "/detail/base/rlnorm.html", "funcname": "rlnorm" },
-  { "id": "rlogis", "href": "/detail/base/rlogis.html", "funcname": "rlogis" },
+  { "id": "rexp", "href": "/detail/stats/rexp.html", "funcname": "rexp" },
+  { "id": "rf", "href": "/detail/stats/rf.html", "funcname": "rf" },
+  { "id": "rgamma", "href": "/detail/stats/rgamma.html", "funcname": "rgamma" },
+  { "id": "rgeom", "href": "/detail/stats/rgeom.html", "funcname": "rgeom" },
+  { "id": "rhyper", "href": "/detail/stats/rhyper.html", "funcname": "rhyper" },
+  { "id": "rlnorm", "href": "/detail/stats/rlnorm.html", "funcname": "rlnorm" },
+  { "id": "rlogis", "href": "/detail/stats/rlogis.html", "funcname": "rlogis" },
   {
     "id": "rmultinom",
-    "href": "/detail/base/rmultinom.html",
+    "href": "/detail/stats/rmultinom.html",
     "funcname": "rmultinom"
   },
   {
     "id": "rnbinom",
-    "href": "/detail/base/rnbinom.html",
+    "href": "/detail/stats/rnbinom.html",
     "funcname": "rnbinom"
   },
-  { "id": "rnorm", "href": "/detail/base/rnorm.html", "funcname": "rnorm" },
-  { "id": "rpois", "href": "/detail/base/rpois.html", "funcname": "rpois" },
+  { "id": "rnorm", "href": "/detail/stats/rnorm.html", "funcname": "rnorm" },
+  { "id": "rpois", "href": "/detail/stats/rpois.html", "funcname": "rpois" },
   {
     "id": "rsignrank",
-    "href": "/detail/base/rsignrank.html",
+    "href": "/detail/stats/rsignrank.html",
     "funcname": "rsignrank"
   },
   {
     "id": "rstandard",
-    "href": "/detail/base/rstandard.html",
+    "href": "/detail/stats/rstandard.html",
     "funcname": "rstandard"
   },
   {
     "id": "rstudent",
-    "href": "/detail/base/rstudent.html",
+    "href": "/detail/stats/rstudent.html",
     "funcname": "rstudent"
   },
-  { "id": "rt", "href": "/detail/base/rt.html", "funcname": "rt" },
-  { "id": "runif", "href": "/detail/base/runif.html", "funcname": "runif" },
-  { "id": "runmed", "href": "/detail/base/runmed.html", "funcname": "runmed" },
+  { "id": "rt", "href": "/detail/stats/rt.html", "funcname": "rt" },
+  { "id": "runif", "href": "/detail/stats/runif.html", "funcname": "runif" },
+  { "id": "runmed", "href": "/detail/stats/runmed.html", "funcname": "runmed" },
   {
     "id": "rweibull",
-    "href": "/detail/base/rweibull.html",
+    "href": "/detail/stats/rweibull.html",
     "funcname": "rweibull"
   },
   {
     "id": "rwilcox",
-    "href": "/detail/base/rwilcox.html",
+    "href": "/detail/stats/rwilcox.html",
     "funcname": "rwilcox"
   },
   {
     "id": "rWishart",
-    "href": "/detail/base/rWishart.html",
+    "href": "/detail/stats/rWishart.html",
     "funcname": "rWishart"
   },
   {
     "id": "scatter.smooth",
-    "href": "/detail/base/scattersymbol11smooth.html",
+    "href": "/detail/stats/scattersymbol11smooth.html",
     "funcname": "scatter.smooth"
   },
   {
     "id": "screeplot",
-    "href": "/detail/base/screeplot.html",
+    "href": "/detail/stats/screeplot.html",
     "funcname": "screeplot"
   },
-  { "id": "sd", "href": "/detail/base/sd.html", "funcname": "sd" },
+  { "id": "sd", "href": "/detail/stats/sd.html", "funcname": "sd" },
   {
     "id": "se.contrast",
-    "href": "/detail/base/sesymbol11contrast.html",
+    "href": "/detail/stats/sesymbol11contrast.html",
     "funcname": "se.contrast"
   },
   {
     "id": "selfStart",
-    "href": "/detail/base/selfStart.html",
+    "href": "/detail/stats/selfStart.html",
     "funcname": "selfStart"
   },
   {
     "id": "setNames",
-    "href": "/detail/base/setNames.html",
+    "href": "/detail/stats/setNames.html",
     "funcname": "setNames"
   },
   {
     "id": "shapiro.test",
-    "href": "/detail/base/shapirosymbol11test.html",
+    "href": "/detail/stats/shapirosymbol11test.html",
     "funcname": "shapiro.test"
   },
-  { "id": "sigma", "href": "/detail/base/sigma.html", "funcname": "sigma" },
+  { "id": "sigma", "href": "/detail/stats/sigma.html", "funcname": "sigma" },
   {
     "id": "simulate",
-    "href": "/detail/base/simulate.html",
+    "href": "/detail/stats/simulate.html",
     "funcname": "simulate"
   },
-  { "id": "smooth", "href": "/detail/base/smooth.html", "funcname": "smooth" },
+  { "id": "smooth", "href": "/detail/stats/smooth.html", "funcname": "smooth" },
   {
     "id": "smooth.spline",
-    "href": "/detail/base/smoothsymbol11spline.html",
+    "href": "/detail/stats/smoothsymbol11spline.html",
     "funcname": "smooth.spline"
   },
   {
     "id": "smoothEnds",
-    "href": "/detail/base/smoothEnds.html",
+    "href": "/detail/stats/smoothEnds.html",
     "funcname": "smoothEnds"
   },
   {
     "id": "sortedXyData",
-    "href": "/detail/base/sortedXyData.html",
+    "href": "/detail/stats/sortedXyData.html",
     "funcname": "sortedXyData"
   },
   {
     "id": "spec.ar",
-    "href": "/detail/base/specsymbol11ar.html",
+    "href": "/detail/stats/specsymbol11ar.html",
     "funcname": "spec.ar"
   },
   {
     "id": "spec.pgram",
-    "href": "/detail/base/specsymbol11pgram.html",
+    "href": "/detail/stats/specsymbol11pgram.html",
     "funcname": "spec.pgram"
   },
   {
     "id": "spec.taper",
-    "href": "/detail/base/specsymbol11taper.html",
+    "href": "/detail/stats/specsymbol11taper.html",
     "funcname": "spec.taper"
   },
   {
     "id": "spectrum",
-    "href": "/detail/base/spectrum.html",
+    "href": "/detail/stats/spectrum.html",
     "funcname": "spectrum"
   },
-  { "id": "spline", "href": "/detail/base/spline.html", "funcname": "spline" },
+  { "id": "spline", "href": "/detail/stats/spline.html", "funcname": "spline" },
   {
     "id": "splinefun",
-    "href": "/detail/base/splinefun.html",
+    "href": "/detail/stats/splinefun.html",
     "funcname": "splinefun"
   },
   {
     "id": "splinefunH",
-    "href": "/detail/base/splinefunH.html",
+    "href": "/detail/stats/splinefunH.html",
     "funcname": "splinefunH"
   },
   {
     "id": "SSasymp",
-    "href": "/detail/base/SSasymp.html",
+    "href": "/detail/stats/SSasymp.html",
     "funcname": "SSasymp"
   },
   {
     "id": "SSasympOff",
-    "href": "/detail/base/SSasympOff.html",
+    "href": "/detail/stats/SSasympOff.html",
     "funcname": "SSasympOff"
   },
   {
     "id": "SSasympOrig",
-    "href": "/detail/base/SSasympOrig.html",
+    "href": "/detail/stats/SSasympOrig.html",
     "funcname": "SSasympOrig"
   },
   {
     "id": "SSbiexp",
-    "href": "/detail/base/SSbiexp.html",
+    "href": "/detail/stats/SSbiexp.html",
     "funcname": "SSbiexp"
   },
-  { "id": "SSD", "href": "/detail/base/SSD.html", "funcname": "SSD" },
-  { "id": "SSfol", "href": "/detail/base/SSfol.html", "funcname": "SSfol" },
-  { "id": "SSfpl", "href": "/detail/base/SSfpl.html", "funcname": "SSfpl" },
+  { "id": "SSD", "href": "/detail/stats/SSD.html", "funcname": "SSD" },
+  { "id": "SSfol", "href": "/detail/stats/SSfol.html", "funcname": "SSfol" },
+  { "id": "SSfpl", "href": "/detail/stats/SSfpl.html", "funcname": "SSfpl" },
   {
     "id": "SSgompertz",
-    "href": "/detail/base/SSgompertz.html",
+    "href": "/detail/stats/SSgompertz.html",
     "funcname": "SSgompertz"
   },
   {
     "id": "SSlogis",
-    "href": "/detail/base/SSlogis.html",
+    "href": "/detail/stats/SSlogis.html",
     "funcname": "SSlogis"
   },
   {
     "id": "SSmicmen",
-    "href": "/detail/base/SSmicmen.html",
+    "href": "/detail/stats/SSmicmen.html",
     "funcname": "SSmicmen"
   },
   {
     "id": "SSweibull",
-    "href": "/detail/base/SSweibull.html",
+    "href": "/detail/stats/SSweibull.html",
     "funcname": "SSweibull"
   },
-  { "id": "start", "href": "/detail/base/start.html", "funcname": "start" },
+  { "id": "start", "href": "/detail/stats/start.html", "funcname": "start" },
   {
     "id": "stat.anova",
-    "href": "/detail/base/statsymbol11anova.html",
+    "href": "/detail/stats/statsymbol11anova.html",
     "funcname": "stat.anova"
   },
-  { "id": "step", "href": "/detail/base/step.html", "funcname": "step" },
+  { "id": "step", "href": "/detail/stats/step.html", "funcname": "step" },
   {
     "id": "stepfun",
-    "href": "/detail/base/stepfun.html",
+    "href": "/detail/stats/stepfun.html",
     "funcname": "stepfun"
   },
-  { "id": "stl", "href": "/detail/base/stl.html", "funcname": "stl" },
+  { "id": "stl", "href": "/detail/stats/stl.html", "funcname": "stl" },
   {
     "id": "StructTS",
-    "href": "/detail/base/StructTS.html",
+    "href": "/detail/stats/StructTS.html",
     "funcname": "StructTS"
   },
   {
     "id": "summary.aov",
-    "href": "/detail/base/summarysymbol11aov.html",
+    "href": "/detail/stats/summarysymbol11aov.html",
     "funcname": "summary.aov"
   },
   {
     "id": "summary.glm",
-    "href": "/detail/base/summarysymbol11glm.html",
+    "href": "/detail/stats/summarysymbol11glm.html",
     "funcname": "summary.glm"
   },
   {
     "id": "summary.lm",
-    "href": "/detail/base/summarysymbol11lm.html",
+    "href": "/detail/stats/summarysymbol11lm.html",
     "funcname": "summary.lm"
   },
   {
     "id": "summary.manova",
-    "href": "/detail/base/summarysymbol11manova.html",
+    "href": "/detail/stats/summarysymbol11manova.html",
     "funcname": "summary.manova"
   },
   {
     "id": "summary.stepfun",
-    "href": "/detail/base/summarysymbol11stepfun.html",
+    "href": "/detail/stats/summarysymbol11stepfun.html",
     "funcname": "summary.stepfun"
   },
-  { "id": "supsmu", "href": "/detail/base/supsmu.html", "funcname": "supsmu" },
-  { "id": "symnum", "href": "/detail/base/symnum.html", "funcname": "symnum" },
+  { "id": "supsmu", "href": "/detail/stats/supsmu.html", "funcname": "supsmu" },
+  { "id": "symnum", "href": "/detail/stats/symnum.html", "funcname": "symnum" },
   {
     "id": "t.test",
-    "href": "/detail/base/tsymbol11test.html",
+    "href": "/detail/stats/tsymbol11test.html",
     "funcname": "t.test"
   },
   {
     "id": "termplot",
-    "href": "/detail/base/termplot.html",
+    "href": "/detail/stats/termplot.html",
     "funcname": "termplot"
   },
-  { "id": "terms", "href": "/detail/base/terms.html", "funcname": "terms" },
+  { "id": "terms", "href": "/detail/stats/terms.html", "funcname": "terms" },
   {
     "id": "terms.formula",
-    "href": "/detail/base/termssymbol11formula.html",
+    "href": "/detail/stats/termssymbol11formula.html",
     "funcname": "terms.formula"
   },
-  { "id": "time", "href": "/detail/base/time.html", "funcname": "time" },
+  { "id": "time", "href": "/detail/stats/time.html", "funcname": "time" },
   {
     "id": "toeplitz",
-    "href": "/detail/base/toeplitz.html",
+    "href": "/detail/stats/toeplitz.html",
     "funcname": "toeplitz"
   },
-  { "id": "ts", "href": "/detail/base/ts.html", "funcname": "ts" },
+  { "id": "ts", "href": "/detail/stats/ts.html", "funcname": "ts" },
   {
     "id": "ts.intersect",
-    "href": "/detail/base/tssymbol11intersect.html",
+    "href": "/detail/stats/tssymbol11intersect.html",
     "funcname": "ts.intersect"
   },
   {
     "id": "ts.plot",
-    "href": "/detail/base/tssymbol11plot.html",
+    "href": "/detail/stats/tssymbol11plot.html",
     "funcname": "ts.plot"
   },
   {
     "id": "ts.union",
-    "href": "/detail/base/tssymbol11union.html",
+    "href": "/detail/stats/tssymbol11union.html",
     "funcname": "ts.union"
   },
-  { "id": "tsdiag", "href": "/detail/base/tsdiag.html", "funcname": "tsdiag" },
-  { "id": "tsp", "href": "/detail/base/tsp.html", "funcname": "tsp" },
+  { "id": "tsdiag", "href": "/detail/stats/tsdiag.html", "funcname": "tsdiag" },
+  { "id": "tsp", "href": "/detail/stats/tsp.html", "funcname": "tsp" },
   {
     "id": "tsp<-",
-    "href": "/detail/base/tspsymbol9-.html",
+    "href": "/detail/stats/tspsymbol9-.html",
     "funcname": "tsp<-"
   },
   {
     "id": "tsSmooth",
-    "href": "/detail/base/tsSmooth.html",
+    "href": "/detail/stats/tsSmooth.html",
     "funcname": "tsSmooth"
   },
   {
     "id": "TukeyHSD",
-    "href": "/detail/base/TukeyHSD.html",
+    "href": "/detail/stats/TukeyHSD.html",
     "funcname": "TukeyHSD"
   },
   {
     "id": "uniroot",
-    "href": "/detail/base/uniroot.html",
+    "href": "/detail/stats/uniroot.html",
     "funcname": "uniroot"
   },
-  { "id": "update", "href": "/detail/base/update.html", "funcname": "update" },
+  { "id": "update", "href": "/detail/stats/update.html", "funcname": "update" },
   {
     "id": "update.default",
-    "href": "/detail/base/updatesymbol11default.html",
+    "href": "/detail/stats/updatesymbol11default.html",
     "funcname": "update.default"
   },
   {
     "id": "update.formula",
-    "href": "/detail/base/updatesymbol11formula.html",
+    "href": "/detail/stats/updatesymbol11formula.html",
     "funcname": "update.formula"
   },
-  { "id": "var", "href": "/detail/base/var.html", "funcname": "var" },
+  { "id": "var", "href": "/detail/stats/var.html", "funcname": "var" },
   {
     "id": "var.test",
-    "href": "/detail/base/varsymbol11test.html",
+    "href": "/detail/stats/varsymbol11test.html",
     "funcname": "var.test"
   },
   {
     "id": "variable.names",
-    "href": "/detail/base/variablesymbol11names.html",
+    "href": "/detail/stats/variablesymbol11names.html",
     "funcname": "variable.names"
   },
   {
     "id": "varimax",
-    "href": "/detail/base/varimax.html",
+    "href": "/detail/stats/varimax.html",
     "funcname": "varimax"
   },
-  { "id": "vcov", "href": "/detail/base/vcov.html", "funcname": "vcov" },
+  { "id": "vcov", "href": "/detail/stats/vcov.html", "funcname": "vcov" },
   {
     "id": "weighted.mean",
-    "href": "/detail/base/weightedsymbol11mean.html",
+    "href": "/detail/stats/weightedsymbol11mean.html",
     "funcname": "weighted.mean"
   },
   {
     "id": "weighted.residuals",
-    "href": "/detail/base/weightedsymbol11residuals.html",
+    "href": "/detail/stats/weightedsymbol11residuals.html",
     "funcname": "weighted.residuals"
   },
   {
     "id": "weights",
-    "href": "/detail/base/weights.html",
+    "href": "/detail/stats/weights.html",
     "funcname": "weights"
   },
   {
     "id": "wilcox.test",
-    "href": "/detail/base/wilcoxsymbol11test.html",
+    "href": "/detail/stats/wilcoxsymbol11test.html",
     "funcname": "wilcox.test"
   },
-  { "id": "window", "href": "/detail/base/window.html", "funcname": "window" },
+  { "id": "window", "href": "/detail/stats/window.html", "funcname": "window" },
   {
     "id": "window<-",
-    "href": "/detail/base/windowsymbol9-.html",
+    "href": "/detail/stats/windowsymbol9-.html",
     "funcname": "window<-"
   },
   {
     "id": "write.ftable",
-    "href": "/detail/base/writesymbol11ftable.html",
+    "href": "/detail/stats/writesymbol11ftable.html",
     "funcname": "write.ftable"
   },
-  { "id": "xtabs", "href": "/detail/base/xtabs.html", "funcname": "xtabs" }
+  { "id": "xtabs", "href": "/detail/stats/xtabs.html", "funcname": "xtabs" }
 ]
