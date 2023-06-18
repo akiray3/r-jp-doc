@@ -7,29 +7,33 @@ head(dat)
 dat2 <- dat %>% 
  mutate(funcoriginal = func) 
  
-dat2$func <- gsub("[/\\\\?%*:|\"<>]","_",dat2$func)
+dat2$filename <- gsub("[/\\\\?%*:|\"<>]","_",dat2$func)
 dat2%>%
-  mutate(html = func)%>%
+  mutate(html = filename)%>%
+  filter(pack == "base") %>% 
   mutate(html = str_remove(string = html,pattern = "\\.")) %>% 
   mutate(func = paste0("{ id:'",func,"', href:")) %>% 
   mutate(html = paste0("'/detail/base/",html,".html'")) %>% 
-  mutate(tagtxt = paste0(",texttag:'",tagtxt,"'}")) %>% 
-  mutate(func = paste0(func,html,tagtxt,",")) %>% 
+  mutate(funcoriginal = paste0(",funcname:'",funcoriginal,"'}")) %>% 
+  mutate(func = paste0(func,html,funcoriginal,",")) %>% 
   select(-"html") %>%
-  select(-"tagtxt") %>% 
+  select(-"funcoriginal") %>% 
   writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/librarylist.xlsx")
 
 #dat2%>%writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/関数名と変換前の比較.xlsx")
 #base関数用　関数紹介のページ作成
-filenamelist <- dat2 %>%
-  filter(pack =="base") %>% 
-  select(func) %>% as.list()%>%unlist()%>%unique()
-funcoriginal <- dat2%>%
-  filter(pack == "base")%>%
-  select(funcoriginal)%>%as.list() %>% unlist() %>% unique()
 
-foreach::foreach(a = filenamelist,b = funcoriginal)%do%{
-  content <- paste0("
+detail <- c("base","psych","stats","graphics")
+foreach::foreach(c = detail)%do%{
+  filenamelist <- dat2 %>%
+    filter(pack ==c) %>% 
+    select(filename) %>% as.list()%>%unlist()%>%unique()
+  
+  funcoriginal <- dat2%>%
+    filter(pack == c)%>%
+    select(funcoriginal)%>%as.list() %>% unlist() %>% unique()
+  foreach::foreach(a = filenamelist,b = funcoriginal)%do%{
+    content <- paste0("
 <!DOCTYPE html><head>    <title>", b, "</title>
  </head>
  <body>    
@@ -51,6 +55,8 @@ foreach::foreach(a = filenamelist,b = funcoriginal)%do%{
 <link rel=\"stylesheet\" href=\"../style.css\" type=\"text/css\" />
 <script src=\"../script.js\"></script>
 </body>")    
-  htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/detail/base", paste0(a, ".html"))
-  write_lines(content, path = htmlpath)
+    htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/detail/",c, paste0(a, ".html"))
+    write_lines(content, path = htmlpath)
+  }
+  
 }

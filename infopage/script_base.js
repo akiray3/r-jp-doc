@@ -5,13 +5,13 @@ request.send();
 
 request.onload = function () {
   const jsondata = JSON.parse(request.responseText);
-  const libraryname = jsondata.map((item) => item.texttag);
+  const funcname = jsondata.map((item) => item.funcname);
   const href = jsondata.map((item) => item.href);
 
-  console.log(libraryname[1]);
+  console.log(funcname[1]);
   var infocontent = document.getElementById("baseinfo");
-  for (let i = 0; i < libraryname.length; i++) {
-    const basename = libraryname[i];
+  for (let i = 0; i < funcname.length; i++) {
+    const basename = funcname[i];
     const div = document.createElement("div");
     div.className = "lineitem";
     div.id = basename;

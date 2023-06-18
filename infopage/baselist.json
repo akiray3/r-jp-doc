@@ -1,4911 +1,4995 @@
 [
-  { "id": "-", "href": "/detail/base/-.html", "texttag": "-" },
-  { "id": "-.Date", "href": "/detail/base/-Date.html", "texttag": "-.Date" },
+  { "id": "-", "href": "/detail/base/-.html", "funcname": "-" },
+  { "id": "-.Date", "href": "/detail/base/-Date.html", "funcname": "-.Date" },
   {
     "id": "-.POSIXt",
     "href": "/detail/base/-POSIXt.html",
-    "texttag": "-.POSIXt"
+    "funcname": "-.POSIXt"
   },
-  { "id": "_", "href": "/detail/base/_.html", "texttag": ":" },
-  { "id": "__", "href": "/detail/base/__.html", "texttag": "::" },
-  { "id": "___", "href": "/detail/base/___.html", "texttag": ":::" },
-  { "id": "!", "href": "/detail/base/!.html", "texttag": "!" },
+  { "id": ":", "href": "/detail/base/_.html", "funcname": ":" },
+  { "id": "::", "href": "/detail/base/__.html", "funcname": "::" },
+  { "id": ":::", "href": "/detail/base/___.html", "funcname": ":::" },
+  { "id": "!", "href": "/detail/base/!.html", "funcname": "!" },
   {
     "id": "!.hexmode",
     "href": "/detail/base/!hexmode.html",
-    "texttag": "!.hexmode"
+    "funcname": "!.hexmode"
   },
   {
     "id": "!.octmode",
     "href": "/detail/base/!octmode.html",
-    "texttag": "!.octmode"
+    "funcname": "!.octmode"
   },
-  { "id": "!=", "href": "/detail/base/!=.html", "texttag": "!=" },
-  { "id": "(", "href": "/detail/base/(.html", "texttag": "(" },
-  { "id": "[", "href": "/detail/base/[.html", "texttag": "[" },
-  { "id": "[.AsIs", "href": "/detail/base/[AsIs.html", "texttag": "[.AsIs" },
+  { "id": "!=", "href": "/detail/base/!=.html", "funcname": "!=" },
+  { "id": "(", "href": "/detail/base/(.html", "funcname": "(" },
+  { "id": "[", "href": "/detail/base/[.html", "funcname": "[" },
+  { "id": "[.AsIs", "href": "/detail/base/[AsIs.html", "funcname": "[.AsIs" },
   {
     "id": "[.data.frame",
     "href": "/detail/base/[data.frame.html",
-    "texttag": "[.data.frame"
+    "funcname": "[.data.frame"
   },
-  { "id": "[.Date", "href": "/detail/base/[Date.html", "texttag": "[.Date" },
+  { "id": "[.Date", "href": "/detail/base/[Date.html", "funcname": "[.Date" },
   {
     "id": "[.difftime",
     "href": "/detail/base/[difftime.html",
-    "texttag": "[.difftime"
+    "funcname": "[.difftime"
   },
-  { "id": "[.Dlist", "href": "/detail/base/[Dlist.html", "texttag": "[.Dlist" },
+  {
+    "id": "[.Dlist",
+    "href": "/detail/base/[Dlist.html",
+    "funcname": "[.Dlist"
+  },
   {
     "id": "[.DLLInfoList",
     "href": "/detail/base/[DLLInfoList.html",
-    "texttag": "[.DLLInfoList"
+    "funcname": "[.DLLInfoList"
   },
   {
     "id": "[.factor",
     "href": "/detail/base/[factor.html",
-    "texttag": "[.factor"
+    "funcname": "[.factor"
   },
   {
     "id": "[.hexmode",
     "href": "/detail/base/[hexmode.html",
-    "texttag": "[.hexmode"
+    "funcname": "[.hexmode"
   },
   {
     "id": "[.listof",
     "href": "/detail/base/[listof.html",
-    "texttag": "[.listof"
+    "funcname": "[.listof"
   },
   {
     "id": "[.noquote",
     "href": "/detail/base/[noquote.html",
-    "texttag": "[.noquote"
+    "funcname": "[.noquote"
   },
   {
     "id": "[.numeric_version",
     "href": "/detail/base/[numeric_version.html",
-    "texttag": "[.numeric_version"
+    "funcname": "[.numeric_version"
   },
   {
     "id": "[.octmode",
     "href": "/detail/base/[octmode.html",
-    "texttag": "[.octmode"
+    "funcname": "[.octmode"
   },
   {
     "id": "[.POSIXct",
     "href": "/detail/base/[POSIXct.html",
-    "texttag": "[.POSIXct"
+    "funcname": "[.POSIXct"
   },
   {
     "id": "[.POSIXlt",
     "href": "/detail/base/[POSIXlt.html",
-    "texttag": "[.POSIXlt"
+    "funcname": "[.POSIXlt"
   },
   {
     "id": "[.simple.list",
     "href": "/detail/base/[simple.list.html",
-    "texttag": "[.simple.list"
+    "funcname": "[.simple.list"
   },
-  { "id": "[.table", "href": "/detail/base/[table.html", "texttag": "[.table" },
+  {
+    "id": "[.table",
+    "href": "/detail/base/[table.html",
+    "funcname": "[.table"
+  },
   {
     "id": "[.warnings",
     "href": "/detail/base/[warnings.html",
-    "texttag": "[.warnings"
+    "funcname": "[.warnings"
   },
-  { "id": "[[", "href": "/detail/base/[[.html", "texttag": "[[" },
+  { "id": "[[", "href": "/detail/base/[[.html", "funcname": "[[" },
   {
     "id": "[[.data.frame",
     "href": "/detail/base/[[data.frame.html",
-    "texttag": "[[.data.frame"
+    "funcname": "[[.data.frame"
   },
-  { "id": "[[.Date", "href": "/detail/base/[[Date.html", "texttag": "[[.Date" },
+  {
+    "id": "[[.Date",
+    "href": "/detail/base/[[Date.html",
+    "funcname": "[[.Date"
+  },
   {
     "id": "[[.factor",
     "href": "/detail/base/[[factor.html",
-    "texttag": "[[.factor"
+    "funcname": "[[.factor"
   },
   {
     "id": "[[.numeric_version",
     "href": "/detail/base/[[numeric_version.html",
-    "texttag": "[[.numeric_version"
+    "funcname": "[[.numeric_version"
   },
   {
     "id": "[[.POSIXct",
     "href": "/detail/base/[[POSIXct.html",
-    "texttag": "[[.POSIXct"
+    "funcname": "[[.POSIXct"
   },
   {
     "id": "[[.POSIXlt",
     "href": "/detail/base/[[POSIXlt.html",
-    "texttag": "[[.POSIXlt"
+    "funcname": "[[.POSIXlt"
   },
-  { "id": "[[_-", "href": "/detail/base/[[_-.html", "texttag": "[[<-" },
+  { "id": "[[<-", "href": "/detail/base/[[_-.html", "funcname": "[[<-" },
   {
-    "id": "[[_-.data.frame",
+    "id": "[[<-.data.frame",
     "href": "/detail/base/[[_-data.frame.html",
-    "texttag": "[[<-.data.frame"
+    "funcname": "[[<-.data.frame"
   },
   {
-    "id": "[[_-.factor",
+    "id": "[[<-.factor",
     "href": "/detail/base/[[_-factor.html",
-    "texttag": "[[<-.factor"
+    "funcname": "[[<-.factor"
   },
   {
-    "id": "[[_-.numeric_version",
+    "id": "[[<-.numeric_version",
     "href": "/detail/base/[[_-numeric_version.html",
-    "texttag": "[[<-.numeric_version"
+    "funcname": "[[<-.numeric_version"
   },
   {
-    "id": "[[_-.POSIXlt",
+    "id": "[[<-.POSIXlt",
     "href": "/detail/base/[[_-POSIXlt.html",
-    "texttag": "[[<-.POSIXlt"
+    "funcname": "[[<-.POSIXlt"
   },
-  { "id": "[_-", "href": "/detail/base/[_-.html", "texttag": "[<-" },
+  { "id": "[<-", "href": "/detail/base/[_-.html", "funcname": "[<-" },
   {
-    "id": "[_-.data.frame",
+    "id": "[<-.data.frame",
     "href": "/detail/base/[_-data.frame.html",
-    "texttag": "[<-.data.frame"
+    "funcname": "[<-.data.frame"
   },
   {
-    "id": "[_-.Date",
+    "id": "[<-.Date",
     "href": "/detail/base/[_-Date.html",
-    "texttag": "[<-.Date"
+    "funcname": "[<-.Date"
   },
   {
-    "id": "[_-.difftime",
+    "id": "[<-.difftime",
     "href": "/detail/base/[_-difftime.html",
-    "texttag": "[<-.difftime"
+    "funcname": "[<-.difftime"
   },
   {
-    "id": "[_-.factor",
+    "id": "[<-.factor",
     "href": "/detail/base/[_-factor.html",
-    "texttag": "[<-.factor"
+    "funcname": "[<-.factor"
   },
   {
-    "id": "[_-.numeric_version",
+    "id": "[<-.numeric_version",
     "href": "/detail/base/[_-numeric_version.html",
-    "texttag": "[<-.numeric_version"
+    "funcname": "[<-.numeric_version"
   },
   {
-    "id": "[_-.POSIXct",
+    "id": "[<-.POSIXct",
     "href": "/detail/base/[_-POSIXct.html",
-    "texttag": "[<-.POSIXct"
+    "funcname": "[<-.POSIXct"
   },
   {
-    "id": "[_-.POSIXlt",
+    "id": "[<-.POSIXlt",
     "href": "/detail/base/[_-POSIXlt.html",
-    "texttag": "[<-.POSIXlt"
+    "funcname": "[<-.POSIXlt"
   },
-  { "id": "{", "href": "/detail/base/{.html", "texttag": "{" },
-  { "id": "@", "href": "/detail/base/@.html", "texttag": "@" },
-  { "id": "@_-", "href": "/detail/base/@_-.html", "texttag": "@<-" },
-  { "id": "_", "href": "/detail/base/_.html", "texttag": "*" },
+  { "id": "{", "href": "/detail/base/{.html", "funcname": "{" },
+  { "id": "@", "href": "/detail/base/@.html", "funcname": "@" },
+  { "id": "@<-", "href": "/detail/base/@_-.html", "funcname": "@<-" },
+  { "id": "*", "href": "/detail/base/_.html", "funcname": "*" },
   {
-    "id": "_.difftime",
+    "id": "*.difftime",
     "href": "/detail/base/_difftime.html",
-    "texttag": "*.difftime"
+    "funcname": "*.difftime"
   },
-  { "id": "_", "href": "/detail/base/_.html", "texttag": "/" },
+  { "id": "/", "href": "/detail/base/_.html", "funcname": "/" },
   {
-    "id": "_.difftime",
+    "id": "/.difftime",
     "href": "/detail/base/_difftime.html",
-    "texttag": "/.difftime"
+    "funcname": "/.difftime"
   },
-  { "id": "&", "href": "/detail/base/&.html", "texttag": "&" },
+  { "id": "&", "href": "/detail/base/&.html", "funcname": "&" },
   {
     "id": "&.hexmode",
     "href": "/detail/base/&hexmode.html",
-    "texttag": "&.hexmode"
+    "funcname": "&.hexmode"
   },
   {
     "id": "&.octmode",
     "href": "/detail/base/&octmode.html",
-    "texttag": "&.octmode"
+    "funcname": "&.octmode"
   },
-  { "id": "&&", "href": "/detail/base/&&.html", "texttag": "&&" },
-  { "id": "___", "href": "/detail/base/___.html", "texttag": "%*%" },
-  { "id": "___", "href": "/detail/base/___.html", "texttag": "%/%" },
-  { "id": "__", "href": "/detail/base/__.html", "texttag": "%%" },
-  { "id": "_in_", "href": "/detail/base/_in_.html", "texttag": "%in%" },
-  { "id": "_o_", "href": "/detail/base/_o_.html", "texttag": "%o%" },
-  { "id": "_x_", "href": "/detail/base/_x_.html", "texttag": "%x%" },
-  { "id": "^", "href": "/detail/base/^.html", "texttag": "^" },
-  { "id": "+", "href": "/detail/base/+.html", "texttag": "+" },
-  { "id": "+.Date", "href": "/detail/base/+Date.html", "texttag": "+.Date" },
+  { "id": "&&", "href": "/detail/base/&&.html", "funcname": "&&" },
+  { "id": "%*%", "href": "/detail/base/___.html", "funcname": "%*%" },
+  { "id": "%/%", "href": "/detail/base/___.html", "funcname": "%/%" },
+  { "id": "%%", "href": "/detail/base/__.html", "funcname": "%%" },
+  { "id": "%in%", "href": "/detail/base/_in_.html", "funcname": "%in%" },
+  { "id": "%o%", "href": "/detail/base/_o_.html", "funcname": "%o%" },
+  { "id": "%x%", "href": "/detail/base/_x_.html", "funcname": "%x%" },
+  { "id": "^", "href": "/detail/base/^.html", "funcname": "^" },
+  { "id": "+", "href": "/detail/base/+.html", "funcname": "+" },
+  { "id": "+.Date", "href": "/detail/base/+Date.html", "funcname": "+.Date" },
   {
     "id": "+.POSIXt",
     "href": "/detail/base/+POSIXt.html",
-    "texttag": "+.POSIXt"
+    "funcname": "+.POSIXt"
   },
-  { "id": "_", "href": "/detail/base/_.html", "texttag": "<" },
-  { "id": "_-", "href": "/detail/base/_-.html", "texttag": "<-" },
-  { "id": "__-", "href": "/detail/base/__-.html", "texttag": "<<-" },
-  { "id": "_=", "href": "/detail/base/_=.html", "texttag": "<=" },
-  { "id": "=", "href": "/detail/base/=.html", "texttag": "=" },
-  { "id": "==", "href": "/detail/base/==.html", "texttag": "==" },
-  { "id": "_", "href": "/detail/base/_.html", "texttag": ">" },
-  { "id": "_=", "href": "/detail/base/_=.html", "texttag": ">=" },
-  { "id": "_", "href": "/detail/base/_.html", "texttag": "|" },
+  { "id": "<", "href": "/detail/base/_.html", "funcname": "<" },
+  { "id": "<-", "href": "/detail/base/_-.html", "funcname": "<-" },
+  { "id": "<<-", "href": "/detail/base/__-.html", "funcname": "<<-" },
+  { "id": "<=", "href": "/detail/base/_=.html", "funcname": "<=" },
+  { "id": "=", "href": "/detail/base/=.html", "funcname": "=" },
+  { "id": "==", "href": "/detail/base/==.html", "funcname": "==" },
+  { "id": ">", "href": "/detail/base/_.html", "funcname": ">" },
+  { "id": ">=", "href": "/detail/base/_=.html", "funcname": ">=" },
+  { "id": "|", "href": "/detail/base/_.html", "funcname": "|" },
   {
-    "id": "_.hexmode",
+    "id": "|.hexmode",
     "href": "/detail/base/_hexmode.html",
-    "texttag": "|.hexmode"
+    "funcname": "|.hexmode"
   },
   {
-    "id": "_.octmode",
+    "id": "|.octmode",
     "href": "/detail/base/_octmode.html",
-    "texttag": "|.octmode"
+    "funcname": "|.octmode"
   },
-  { "id": "__", "href": "/detail/base/__.html", "texttag": "||" },
-  { "id": "~", "href": "/detail/base/~.html", "texttag": "~" },
-  { "id": "$", "href": "/detail/base/$.html", "texttag": "$" },
+  { "id": "||", "href": "/detail/base/__.html", "funcname": "||" },
+  { "id": "~", "href": "/detail/base/~.html", "funcname": "~" },
+  { "id": "$", "href": "/detail/base/$.html", "funcname": "$" },
   {
     "id": "$.DLLInfo",
     "href": "/detail/base/$DLLInfo.html",
-    "texttag": "$.DLLInfo"
+    "funcname": "$.DLLInfo"
   },
   {
     "id": "$.package_version",
     "href": "/detail/base/$package_version.html",
-    "texttag": "$.package_version"
+    "funcname": "$.package_version"
   },
-  { "id": "$_-", "href": "/detail/base/$_-.html", "texttag": "$<-" },
+  { "id": "$<-", "href": "/detail/base/$_-.html", "funcname": "$<-" },
   {
-    "id": "$_-.data.frame",
+    "id": "$<-.data.frame",
     "href": "/detail/base/$_-data.frame.html",
-    "texttag": "$<-.data.frame"
+    "funcname": "$<-.data.frame"
   },
   {
     "id": "abbreviate",
     "href": "/detail/base/abbreviate.html",
-    "texttag": "abbreviate"
+    "funcname": "abbreviate"
   },
-  { "id": "abs", "href": "/detail/base/abs.html", "texttag": "abs" },
-  { "id": "acos", "href": "/detail/base/acos.html", "texttag": "acos" },
-  { "id": "acosh", "href": "/detail/base/acosh.html", "texttag": "acosh" },
+  { "id": "abs", "href": "/detail/base/abs.html", "funcname": "abs" },
+  { "id": "acos", "href": "/detail/base/acos.html", "funcname": "acos" },
+  { "id": "acosh", "href": "/detail/base/acosh.html", "funcname": "acosh" },
   {
     "id": "activeBindingFunction",
     "href": "/detail/base/activeBindingFunction.html",
-    "texttag": "activeBindingFunction"
+    "funcname": "activeBindingFunction"
   },
-  { "id": "addNA", "href": "/detail/base/addNA.html", "texttag": "addNA" },
+  { "id": "addNA", "href": "/detail/base/addNA.html", "funcname": "addNA" },
   {
     "id": "addTaskCallback",
     "href": "/detail/base/addTaskCallback.html",
-    "texttag": "addTaskCallback"
+    "funcname": "addTaskCallback"
   },
-  { "id": "agrep", "href": "/detail/base/agrep.html", "texttag": "agrep" },
-  { "id": "agrepl", "href": "/detail/base/agrepl.html", "texttag": "agrepl" },
-  { "id": "alist", "href": "/detail/base/alist.html", "texttag": "alist" },
-  { "id": "all", "href": "/detail/base/all.html", "texttag": "all" },
+  { "id": "agrep", "href": "/detail/base/agrep.html", "funcname": "agrep" },
+  { "id": "agrepl", "href": "/detail/base/agrepl.html", "funcname": "agrepl" },
+  { "id": "alist", "href": "/detail/base/alist.html", "funcname": "alist" },
+  { "id": "all", "href": "/detail/base/all.html", "funcname": "all" },
   {
     "id": "all.equal",
     "href": "/detail/base/allequal.html",
-    "texttag": "all.equal"
+    "funcname": "all.equal"
   },
   {
     "id": "all.equal.character",
     "href": "/detail/base/allequal.character.html",
-    "texttag": "all.equal.character"
+    "funcname": "all.equal.character"
   },
   {
     "id": "all.equal.default",
     "href": "/detail/base/allequal.default.html",
-    "texttag": "all.equal.default"
+    "funcname": "all.equal.default"
   },
   {
     "id": "all.equal.environment",
     "href": "/detail/base/allequal.environment.html",
-    "texttag": "all.equal.environment"
+    "funcname": "all.equal.environment"
   },
   {
     "id": "all.equal.envRefClass",
     "href": "/detail/base/allequal.envRefClass.html",
-    "texttag": "all.equal.envRefClass"
+    "funcname": "all.equal.envRefClass"
   },
   {
     "id": "all.equal.factor",
     "href": "/detail/base/allequal.factor.html",
-    "texttag": "all.equal.factor"
+    "funcname": "all.equal.factor"
   },
   {
     "id": "all.equal.formula",
     "href": "/detail/base/allequal.formula.html",
-    "texttag": "all.equal.formula"
+    "funcname": "all.equal.formula"
   },
   {
     "id": "all.equal.function",
     "href": "/detail/base/allequal.function.html",
-    "texttag": "all.equal.function"
+    "funcname": "all.equal.function"
   },
   {
     "id": "all.equal.language",
     "href": "/detail/base/allequal.language.html",
-    "texttag": "all.equal.language"
+    "funcname": "all.equal.language"
   },
   {
     "id": "all.equal.list",
     "href": "/detail/base/allequal.list.html",
-    "texttag": "all.equal.list"
+    "funcname": "all.equal.list"
   },
   {
     "id": "all.equal.numeric",
     "href": "/detail/base/allequal.numeric.html",
-    "texttag": "all.equal.numeric"
+    "funcname": "all.equal.numeric"
   },
   {
     "id": "all.equal.POSIXt",
     "href": "/detail/base/allequal.POSIXt.html",
-    "texttag": "all.equal.POSIXt"
+    "funcname": "all.equal.POSIXt"
   },
   {
     "id": "all.equal.raw",
     "href": "/detail/base/allequal.raw.html",
-    "texttag": "all.equal.raw"
+    "funcname": "all.equal.raw"
   },
   {
     "id": "all.names",
     "href": "/detail/base/allnames.html",
-    "texttag": "all.names"
+    "funcname": "all.names"
   },
   {
     "id": "all.vars",
     "href": "/detail/base/allvars.html",
-    "texttag": "all.vars"
+    "funcname": "all.vars"
   },
   {
     "id": "allowInterrupts",
     "href": "/detail/base/allowInterrupts.html",
-    "texttag": "allowInterrupts"
+    "funcname": "allowInterrupts"
   },
-  { "id": "any", "href": "/detail/base/any.html", "texttag": "any" },
+  { "id": "any", "href": "/detail/base/any.html", "funcname": "any" },
   {
     "id": "anyDuplicated",
     "href": "/detail/base/anyDuplicated.html",
-    "texttag": "anyDuplicated"
+    "funcname": "anyDuplicated"
   },
   {
     "id": "anyDuplicated.array",
     "href": "/detail/base/anyDuplicatedarray.html",
-    "texttag": "anyDuplicated.array"
+    "funcname": "anyDuplicated.array"
   },
   {
     "id": "anyDuplicated.data.frame",
     "href": "/detail/base/anyDuplicateddata.frame.html",
-    "texttag": "anyDuplicated.data.frame"
+    "funcname": "anyDuplicated.data.frame"
   },
   {
     "id": "anyDuplicated.default",
     "href": "/detail/base/anyDuplicateddefault.html",
-    "texttag": "anyDuplicated.default"
+    "funcname": "anyDuplicated.default"
   },
   {
     "id": "anyDuplicated.matrix",
     "href": "/detail/base/anyDuplicatedmatrix.html",
-    "texttag": "anyDuplicated.matrix"
+    "funcname": "anyDuplicated.matrix"
   },
-  { "id": "anyNA", "href": "/detail/base/anyNA.html", "texttag": "anyNA" },
+  { "id": "anyNA", "href": "/detail/base/anyNA.html", "funcname": "anyNA" },
   {
     "id": "anyNA.data.frame",
     "href": "/detail/base/anyNAdata.frame.html",
-    "texttag": "anyNA.data.frame"
+    "funcname": "anyNA.data.frame"
   },
   {
     "id": "anyNA.numeric_version",
     "href": "/detail/base/anyNAnumeric_version.html",
-    "texttag": "anyNA.numeric_version"
+    "funcname": "anyNA.numeric_version"
   },
   {
     "id": "anyNA.POSIXlt",
     "href": "/detail/base/anyNAPOSIXlt.html",
-    "texttag": "anyNA.POSIXlt"
+    "funcname": "anyNA.POSIXlt"
   },
-  { "id": "aperm", "href": "/detail/base/aperm.html", "texttag": "aperm" },
+  { "id": "aperm", "href": "/detail/base/aperm.html", "funcname": "aperm" },
   {
     "id": "aperm.default",
     "href": "/detail/base/apermdefault.html",
-    "texttag": "aperm.default"
+    "funcname": "aperm.default"
   },
   {
     "id": "aperm.table",
     "href": "/detail/base/apermtable.html",
-    "texttag": "aperm.table"
+    "funcname": "aperm.table"
   },
-  { "id": "append", "href": "/detail/base/append.html", "texttag": "append" },
-  { "id": "apply", "href": "/detail/base/apply.html", "texttag": "apply" },
-  { "id": "Arg", "href": "/detail/base/Arg.html", "texttag": "Arg" },
-  { "id": "args", "href": "/detail/base/args.html", "texttag": "args" },
-  { "id": "array", "href": "/detail/base/array.html", "texttag": "array" },
+  { "id": "append", "href": "/detail/base/append.html", "funcname": "append" },
+  { "id": "apply", "href": "/detail/base/apply.html", "funcname": "apply" },
+  { "id": "Arg", "href": "/detail/base/Arg.html", "funcname": "Arg" },
+  { "id": "args", "href": "/detail/base/args.html", "funcname": "args" },
+  { "id": "array", "href": "/detail/base/array.html", "funcname": "array" },
   {
     "id": "arrayInd",
     "href": "/detail/base/arrayInd.html",
-    "texttag": "arrayInd"
+    "funcname": "arrayInd"
   },
   {
     "id": "as.array",
     "href": "/detail/base/asarray.html",
-    "texttag": "as.array"
+    "funcname": "as.array"
   },
   {
     "id": "as.array.default",
     "href": "/detail/base/asarray.default.html",
-    "texttag": "as.array.default"
+    "funcname": "as.array.default"
   },
-  { "id": "as.call", "href": "/detail/base/ascall.html", "texttag": "as.call" },
+  {
+    "id": "as.call",
+    "href": "/detail/base/ascall.html",
+    "funcname": "as.call"
+  },
   {
     "id": "as.character",
     "href": "/detail/base/ascharacter.html",
-    "texttag": "as.character"
+    "funcname": "as.character"
   },
   {
     "id": "as.character.condition",
     "href": "/detail/base/ascharacter.condition.html",
-    "texttag": "as.character.condition"
+    "funcname": "as.character.condition"
   },
   {
     "id": "as.character.Date",
     "href": "/detail/base/ascharacter.Date.html",
-    "texttag": "as.character.Date"
+    "funcname": "as.character.Date"
   },
   {
     "id": "as.character.default",
     "href": "/detail/base/ascharacter.default.html",
-    "texttag": "as.character.default"
+    "funcname": "as.character.default"
   },
   {
     "id": "as.character.error",
     "href": "/detail/base/ascharacter.error.html",
-    "texttag": "as.character.error"
+    "funcname": "as.character.error"
   },
   {
     "id": "as.character.factor",
     "href": "/detail/base/ascharacter.factor.html",
-    "texttag": "as.character.factor"
+    "funcname": "as.character.factor"
   },
   {
     "id": "as.character.hexmode",
     "href": "/detail/base/ascharacter.hexmode.html",
-    "texttag": "as.character.hexmode"
+    "funcname": "as.character.hexmode"
   },
   {
     "id": "as.character.numeric_version",
     "href": "/detail/base/ascharacter.numeric_version.html",
-    "texttag": "as.character.numeric_version"
+    "funcname": "as.character.numeric_version"
   },
   {
     "id": "as.character.octmode",
     "href": "/detail/base/ascharacter.octmode.html",
-    "texttag": "as.character.octmode"
+    "funcname": "as.character.octmode"
   },
   {
     "id": "as.character.POSIXt",
     "href": "/detail/base/ascharacter.POSIXt.html",
-    "texttag": "as.character.POSIXt"
+    "funcname": "as.character.POSIXt"
   },
   {
     "id": "as.character.srcref",
     "href": "/detail/base/ascharacter.srcref.html",
-    "texttag": "as.character.srcref"
+    "funcname": "as.character.srcref"
   },
   {
     "id": "as.complex",
     "href": "/detail/base/ascomplex.html",
-    "texttag": "as.complex"
+    "funcname": "as.complex"
   },
   {
     "id": "as.data.frame",
     "href": "/detail/base/asdata.frame.html",
-    "texttag": "as.data.frame"
+    "funcname": "as.data.frame"
   },
   {
     "id": "as.data.frame.array",
     "href": "/detail/base/asdata.frame.array.html",
-    "texttag": "as.data.frame.array"
+    "funcname": "as.data.frame.array"
   },
   {
     "id": "as.data.frame.AsIs",
     "href": "/detail/base/asdata.frame.AsIs.html",
-    "texttag": "as.data.frame.AsIs"
+    "funcname": "as.data.frame.AsIs"
   },
   {
     "id": "as.data.frame.character",
     "href": "/detail/base/asdata.frame.character.html",
-    "texttag": "as.data.frame.character"
+    "funcname": "as.data.frame.character"
   },
   {
     "id": "as.data.frame.complex",
     "href": "/detail/base/asdata.frame.complex.html",
-    "texttag": "as.data.frame.complex"
+    "funcname": "as.data.frame.complex"
   },
   {
     "id": "as.data.frame.data.frame",
     "href": "/detail/base/asdata.frame.data.frame.html",
-    "texttag": "as.data.frame.data.frame"
+    "funcname": "as.data.frame.data.frame"
   },
   {
     "id": "as.data.frame.Date",
     "href": "/detail/base/asdata.frame.Date.html",
-    "texttag": "as.data.frame.Date"
+    "funcname": "as.data.frame.Date"
   },
   {
     "id": "as.data.frame.default",
     "href": "/detail/base/asdata.frame.default.html",
-    "texttag": "as.data.frame.default"
+    "funcname": "as.data.frame.default"
   },
   {
     "id": "as.data.frame.difftime",
     "href": "/detail/base/asdata.frame.difftime.html",
-    "texttag": "as.data.frame.difftime"
+    "funcname": "as.data.frame.difftime"
   },
   {
     "id": "as.data.frame.factor",
     "href": "/detail/base/asdata.frame.factor.html",
-    "texttag": "as.data.frame.factor"
+    "funcname": "as.data.frame.factor"
   },
   {
     "id": "as.data.frame.integer",
     "href": "/detail/base/asdata.frame.integer.html",
-    "texttag": "as.data.frame.integer"
+    "funcname": "as.data.frame.integer"
   },
   {
     "id": "as.data.frame.list",
     "href": "/detail/base/asdata.frame.list.html",
-    "texttag": "as.data.frame.list"
+    "funcname": "as.data.frame.list"
   },
   {
     "id": "as.data.frame.logical",
     "href": "/detail/base/asdata.frame.logical.html",
-    "texttag": "as.data.frame.logical"
+    "funcname": "as.data.frame.logical"
   },
   {
     "id": "as.data.frame.matrix",
     "href": "/detail/base/asdata.frame.matrix.html",
-    "texttag": "as.data.frame.matrix"
+    "funcname": "as.data.frame.matrix"
   },
   {
     "id": "as.data.frame.model.matrix",
     "href": "/detail/base/asdata.frame.model.matrix.html",
-    "texttag": "as.data.frame.model.matrix"
+    "funcname": "as.data.frame.model.matrix"
   },
   {
     "id": "as.data.frame.noquote",
     "href": "/detail/base/asdata.frame.noquote.html",
-    "texttag": "as.data.frame.noquote"
+    "funcname": "as.data.frame.noquote"
   },
   {
     "id": "as.data.frame.numeric",
     "href": "/detail/base/asdata.frame.numeric.html",
-    "texttag": "as.data.frame.numeric"
+    "funcname": "as.data.frame.numeric"
   },
   {
     "id": "as.data.frame.numeric_version",
     "href": "/detail/base/asdata.frame.numeric_version.html",
-    "texttag": "as.data.frame.numeric_version"
+    "funcname": "as.data.frame.numeric_version"
   },
   {
     "id": "as.data.frame.ordered",
     "href": "/detail/base/asdata.frame.ordered.html",
-    "texttag": "as.data.frame.ordered"
+    "funcname": "as.data.frame.ordered"
   },
   {
     "id": "as.data.frame.POSIXct",
     "href": "/detail/base/asdata.frame.POSIXct.html",
-    "texttag": "as.data.frame.POSIXct"
+    "funcname": "as.data.frame.POSIXct"
   },
   {
     "id": "as.data.frame.POSIXlt",
     "href": "/detail/base/asdata.frame.POSIXlt.html",
-    "texttag": "as.data.frame.POSIXlt"
+    "funcname": "as.data.frame.POSIXlt"
   },
   {
     "id": "as.data.frame.raw",
     "href": "/detail/base/asdata.frame.raw.html",
-    "texttag": "as.data.frame.raw"
+    "funcname": "as.data.frame.raw"
   },
   {
     "id": "as.data.frame.table",
     "href": "/detail/base/asdata.frame.table.html",
-    "texttag": "as.data.frame.table"
+    "funcname": "as.data.frame.table"
   },
   {
     "id": "as.data.frame.ts",
     "href": "/detail/base/asdata.frame.ts.html",
-    "texttag": "as.data.frame.ts"
+    "funcname": "as.data.frame.ts"
   },
   {
     "id": "as.data.frame.vector",
     "href": "/detail/base/asdata.frame.vector.html",
-    "texttag": "as.data.frame.vector"
+    "funcname": "as.data.frame.vector"
   },
-  { "id": "as.Date", "href": "/detail/base/asDate.html", "texttag": "as.Date" },
+  {
+    "id": "as.Date",
+    "href": "/detail/base/asDate.html",
+    "funcname": "as.Date"
+  },
   {
     "id": "as.Date.character",
     "href": "/detail/base/asDate.character.html",
-    "texttag": "as.Date.character"
+    "funcname": "as.Date.character"
   },
   {
     "id": "as.Date.default",
     "href": "/detail/base/asDate.default.html",
-    "texttag": "as.Date.default"
+    "funcname": "as.Date.default"
   },
   {
     "id": "as.Date.factor",
     "href": "/detail/base/asDate.factor.html",
-    "texttag": "as.Date.factor"
+    "funcname": "as.Date.factor"
   },
   {
     "id": "as.Date.numeric",
     "href": "/detail/base/asDate.numeric.html",
-    "texttag": "as.Date.numeric"
+    "funcname": "as.Date.numeric"
   },
   {
     "id": "as.Date.POSIXct",
     "href": "/detail/base/asDate.POSIXct.html",
-    "texttag": "as.Date.POSIXct"
+    "funcname": "as.Date.POSIXct"
   },
   {
     "id": "as.Date.POSIXlt",
     "href": "/detail/base/asDate.POSIXlt.html",
-    "texttag": "as.Date.POSIXlt"
+    "funcname": "as.Date.POSIXlt"
   },
   {
     "id": "as.difftime",
     "href": "/detail/base/asdifftime.html",
-    "texttag": "as.difftime"
+    "funcname": "as.difftime"
   },
   {
     "id": "as.double",
     "href": "/detail/base/asdouble.html",
-    "texttag": "as.double"
+    "funcname": "as.double"
   },
   {
     "id": "as.double.difftime",
     "href": "/detail/base/asdouble.difftime.html",
-    "texttag": "as.double.difftime"
+    "funcname": "as.double.difftime"
   },
   {
     "id": "as.double.POSIXlt",
     "href": "/detail/base/asdouble.POSIXlt.html",
-    "texttag": "as.double.POSIXlt"
+    "funcname": "as.double.POSIXlt"
   },
   {
     "id": "as.environment",
     "href": "/detail/base/asenvironment.html",
-    "texttag": "as.environment"
+    "funcname": "as.environment"
   },
   {
     "id": "as.expression",
     "href": "/detail/base/asexpression.html",
-    "texttag": "as.expression"
+    "funcname": "as.expression"
   },
   {
     "id": "as.expression.default",
     "href": "/detail/base/asexpression.default.html",
-    "texttag": "as.expression.default"
+    "funcname": "as.expression.default"
   },
   {
     "id": "as.factor",
     "href": "/detail/base/asfactor.html",
-    "texttag": "as.factor"
+    "funcname": "as.factor"
   },
   {
     "id": "as.function",
     "href": "/detail/base/asfunction.html",
-    "texttag": "as.function"
+    "funcname": "as.function"
   },
   {
     "id": "as.function.default",
     "href": "/detail/base/asfunction.default.html",
-    "texttag": "as.function.default"
+    "funcname": "as.function.default"
   },
   {
     "id": "as.hexmode",
     "href": "/detail/base/ashexmode.html",
-    "texttag": "as.hexmode"
+    "funcname": "as.hexmode"
   },
   {
     "id": "as.integer",
     "href": "/detail/base/asinteger.html",
-    "texttag": "as.integer"
+    "funcname": "as.integer"
   },
-  { "id": "as.list", "href": "/detail/base/aslist.html", "texttag": "as.list" },
+  {
+    "id": "as.list",
+    "href": "/detail/base/aslist.html",
+    "funcname": "as.list"
+  },
   {
     "id": "as.list.data.frame",
     "href": "/detail/base/aslist.data.frame.html",
-    "texttag": "as.list.data.frame"
+    "funcname": "as.list.data.frame"
   },
   {
     "id": "as.list.Date",
     "href": "/detail/base/aslist.Date.html",
-    "texttag": "as.list.Date"
+    "funcname": "as.list.Date"
   },
   {
     "id": "as.list.default",
     "href": "/detail/base/aslist.default.html",
-    "texttag": "as.list.default"
+    "funcname": "as.list.default"
   },
   {
     "id": "as.list.difftime",
     "href": "/detail/base/aslist.difftime.html",
-    "texttag": "as.list.difftime"
+    "funcname": "as.list.difftime"
   },
   {
     "id": "as.list.environment",
     "href": "/detail/base/aslist.environment.html",
-    "texttag": "as.list.environment"
+    "funcname": "as.list.environment"
   },
   {
     "id": "as.list.factor",
     "href": "/detail/base/aslist.factor.html",
-    "texttag": "as.list.factor"
+    "funcname": "as.list.factor"
   },
   {
     "id": "as.list.function",
     "href": "/detail/base/aslist.function.html",
-    "texttag": "as.list.function"
+    "funcname": "as.list.function"
   },
   {
     "id": "as.list.numeric_version",
     "href": "/detail/base/aslist.numeric_version.html",
-    "texttag": "as.list.numeric_version"
+    "funcname": "as.list.numeric_version"
   },
   {
     "id": "as.list.POSIXct",
     "href": "/detail/base/aslist.POSIXct.html",
-    "texttag": "as.list.POSIXct"
+    "funcname": "as.list.POSIXct"
   },
   {
     "id": "as.list.POSIXlt",
     "href": "/detail/base/aslist.POSIXlt.html",
-    "texttag": "as.list.POSIXlt"
+    "funcname": "as.list.POSIXlt"
   },
   {
     "id": "as.logical",
     "href": "/detail/base/aslogical.html",
-    "texttag": "as.logical"
+    "funcname": "as.logical"
   },
   {
     "id": "as.logical.factor",
     "href": "/detail/base/aslogical.factor.html",
-    "texttag": "as.logical.factor"
+    "funcname": "as.logical.factor"
   },
   {
     "id": "as.matrix",
     "href": "/detail/base/asmatrix.html",
-    "texttag": "as.matrix"
+    "funcname": "as.matrix"
   },
   {
     "id": "as.matrix.data.frame",
     "href": "/detail/base/asmatrix.data.frame.html",
-    "texttag": "as.matrix.data.frame"
+    "funcname": "as.matrix.data.frame"
   },
   {
     "id": "as.matrix.default",
     "href": "/detail/base/asmatrix.default.html",
-    "texttag": "as.matrix.default"
+    "funcname": "as.matrix.default"
   },
   {
     "id": "as.matrix.noquote",
     "href": "/detail/base/asmatrix.noquote.html",
-    "texttag": "as.matrix.noquote"
+    "funcname": "as.matrix.noquote"
   },
   {
     "id": "as.matrix.POSIXlt",
     "href": "/detail/base/asmatrix.POSIXlt.html",
-    "texttag": "as.matrix.POSIXlt"
+    "funcname": "as.matrix.POSIXlt"
   },
-  { "id": "as.name", "href": "/detail/base/asname.html", "texttag": "as.name" },
-  { "id": "as.null", "href": "/detail/base/asnull.html", "texttag": "as.null" },
+  {
+    "id": "as.name",
+    "href": "/detail/base/asname.html",
+    "funcname": "as.name"
+  },
+  {
+    "id": "as.null",
+    "href": "/detail/base/asnull.html",
+    "funcname": "as.null"
+  },
   {
     "id": "as.null.default",
     "href": "/detail/base/asnull.default.html",
-    "texttag": "as.null.default"
+    "funcname": "as.null.default"
   },
   {
     "id": "as.numeric",
     "href": "/detail/base/asnumeric.html",
-    "texttag": "as.numeric"
+    "funcname": "as.numeric"
   },
   {
     "id": "as.numeric_version",
     "href": "/detail/base/asnumeric_version.html",
-    "texttag": "as.numeric_version"
+    "funcname": "as.numeric_version"
   },
   {
     "id": "as.octmode",
     "href": "/detail/base/asoctmode.html",
-    "texttag": "as.octmode"
+    "funcname": "as.octmode"
   },
   {
     "id": "as.ordered",
     "href": "/detail/base/asordered.html",
-    "texttag": "as.ordered"
+    "funcname": "as.ordered"
   },
   {
     "id": "as.package_version",
     "href": "/detail/base/aspackage_version.html",
-    "texttag": "as.package_version"
+    "funcname": "as.package_version"
   },
   {
     "id": "as.pairlist",
     "href": "/detail/base/aspairlist.html",
-    "texttag": "as.pairlist"
+    "funcname": "as.pairlist"
   },
   {
     "id": "as.POSIXct",
     "href": "/detail/base/asPOSIXct.html",
-    "texttag": "as.POSIXct"
+    "funcname": "as.POSIXct"
   },
   {
     "id": "as.POSIXct.Date",
     "href": "/detail/base/asPOSIXct.Date.html",
-    "texttag": "as.POSIXct.Date"
+    "funcname": "as.POSIXct.Date"
   },
   {
     "id": "as.POSIXct.default",
     "href": "/detail/base/asPOSIXct.default.html",
-    "texttag": "as.POSIXct.default"
+    "funcname": "as.POSIXct.default"
   },
   {
     "id": "as.POSIXct.numeric",
     "href": "/detail/base/asPOSIXct.numeric.html",
-    "texttag": "as.POSIXct.numeric"
+    "funcname": "as.POSIXct.numeric"
   },
   {
     "id": "as.POSIXct.POSIXlt",
     "href": "/detail/base/asPOSIXct.POSIXlt.html",
-    "texttag": "as.POSIXct.POSIXlt"
+    "funcname": "as.POSIXct.POSIXlt"
   },
   {
     "id": "as.POSIXlt",
     "href": "/detail/base/asPOSIXlt.html",
-    "texttag": "as.POSIXlt"
+    "funcname": "as.POSIXlt"
   },
   {
     "id": "as.POSIXlt.character",
     "href": "/detail/base/asPOSIXlt.character.html",
-    "texttag": "as.POSIXlt.character"
+    "funcname": "as.POSIXlt.character"
   },
   {
     "id": "as.POSIXlt.Date",
     "href": "/detail/base/asPOSIXlt.Date.html",
-    "texttag": "as.POSIXlt.Date"
+    "funcname": "as.POSIXlt.Date"
   },
   {
     "id": "as.POSIXlt.default",
     "href": "/detail/base/asPOSIXlt.default.html",
-    "texttag": "as.POSIXlt.default"
+    "funcname": "as.POSIXlt.default"
   },
   {
     "id": "as.POSIXlt.factor",
     "href": "/detail/base/asPOSIXlt.factor.html",
-    "texttag": "as.POSIXlt.factor"
+    "funcname": "as.POSIXlt.factor"
   },
   {
     "id": "as.POSIXlt.numeric",
     "href": "/detail/base/asPOSIXlt.numeric.html",
-    "texttag": "as.POSIXlt.numeric"
+    "funcname": "as.POSIXlt.numeric"
   },
   {
     "id": "as.POSIXlt.POSIXct",
     "href": "/detail/base/asPOSIXlt.POSIXct.html",
-    "texttag": "as.POSIXlt.POSIXct"
+    "funcname": "as.POSIXlt.POSIXct"
   },
-  { "id": "as.qr", "href": "/detail/base/asqr.html", "texttag": "as.qr" },
-  { "id": "as.raw", "href": "/detail/base/asraw.html", "texttag": "as.raw" },
+  { "id": "as.qr", "href": "/detail/base/asqr.html", "funcname": "as.qr" },
+  { "id": "as.raw", "href": "/detail/base/asraw.html", "funcname": "as.raw" },
   {
     "id": "as.single",
     "href": "/detail/base/assingle.html",
-    "texttag": "as.single"
+    "funcname": "as.single"
   },
   {
     "id": "as.single.default",
     "href": "/detail/base/assingle.default.html",
-    "texttag": "as.single.default"
+    "funcname": "as.single.default"
   },
   {
     "id": "as.symbol",
     "href": "/detail/base/assymbol.html",
-    "texttag": "as.symbol"
+    "funcname": "as.symbol"
   },
   {
     "id": "as.table",
     "href": "/detail/base/astable.html",
-    "texttag": "as.table"
+    "funcname": "as.table"
   },
   {
     "id": "as.table.default",
     "href": "/detail/base/astable.default.html",
-    "texttag": "as.table.default"
+    "funcname": "as.table.default"
   },
   {
     "id": "as.vector",
     "href": "/detail/base/asvector.html",
-    "texttag": "as.vector"
+    "funcname": "as.vector"
   },
   {
     "id": "as.vector.factor",
     "href": "/detail/base/asvector.factor.html",
-    "texttag": "as.vector.factor"
+    "funcname": "as.vector.factor"
   },
-  { "id": "asin", "href": "/detail/base/asin.html", "texttag": "asin" },
-  { "id": "asinh", "href": "/detail/base/asinh.html", "texttag": "asinh" },
+  { "id": "asin", "href": "/detail/base/asin.html", "funcname": "asin" },
+  { "id": "asinh", "href": "/detail/base/asinh.html", "funcname": "asinh" },
   {
     "id": "asNamespace",
     "href": "/detail/base/asNamespace.html",
-    "texttag": "asNamespace"
+    "funcname": "asNamespace"
   },
-  { "id": "asplit", "href": "/detail/base/asplit.html", "texttag": "asplit" },
-  { "id": "asS3", "href": "/detail/base/asS3.html", "texttag": "asS3" },
-  { "id": "asS4", "href": "/detail/base/asS4.html", "texttag": "asS4" },
-  { "id": "assign", "href": "/detail/base/assign.html", "texttag": "assign" },
-  { "id": "atan", "href": "/detail/base/atan.html", "texttag": "atan" },
-  { "id": "atan2", "href": "/detail/base/atan2.html", "texttag": "atan2" },
-  { "id": "atanh", "href": "/detail/base/atanh.html", "texttag": "atanh" },
-  { "id": "attach", "href": "/detail/base/attach.html", "texttag": "attach" },
+  { "id": "asplit", "href": "/detail/base/asplit.html", "funcname": "asplit" },
+  { "id": "asS3", "href": "/detail/base/asS3.html", "funcname": "asS3" },
+  { "id": "asS4", "href": "/detail/base/asS4.html", "funcname": "asS4" },
+  { "id": "assign", "href": "/detail/base/assign.html", "funcname": "assign" },
+  { "id": "atan", "href": "/detail/base/atan.html", "funcname": "atan" },
+  { "id": "atan2", "href": "/detail/base/atan2.html", "funcname": "atan2" },
+  { "id": "atanh", "href": "/detail/base/atanh.html", "funcname": "atanh" },
+  { "id": "attach", "href": "/detail/base/attach.html", "funcname": "attach" },
   {
     "id": "attachNamespace",
     "href": "/detail/base/attachNamespace.html",
-    "texttag": "attachNamespace"
+    "funcname": "attachNamespace"
   },
-  { "id": "attr", "href": "/detail/base/attr.html", "texttag": "attr" },
+  { "id": "attr", "href": "/detail/base/attr.html", "funcname": "attr" },
   {
     "id": "attr.all.equal",
     "href": "/detail/base/attrall.equal.html",
-    "texttag": "attr.all.equal"
+    "funcname": "attr.all.equal"
   },
-  { "id": "attr_-", "href": "/detail/base/attr_-.html", "texttag": "attr<-" },
+  { "id": "attr<-", "href": "/detail/base/attr_-.html", "funcname": "attr<-" },
   {
     "id": "attributes",
     "href": "/detail/base/attributes.html",
-    "texttag": "attributes"
+    "funcname": "attributes"
   },
   {
-    "id": "attributes_-",
+    "id": "attributes<-",
     "href": "/detail/base/attributes_-.html",
-    "texttag": "attributes<-"
+    "funcname": "attributes<-"
   },
   {
     "id": "autoload",
     "href": "/detail/base/autoload.html",
-    "texttag": "autoload"
+    "funcname": "autoload"
   },
   {
     "id": "autoloader",
     "href": "/detail/base/autoloader.html",
-    "texttag": "autoloader"
+    "funcname": "autoloader"
   },
   {
     "id": "backsolve",
     "href": "/detail/base/backsolve.html",
-    "texttag": "backsolve"
+    "funcname": "backsolve"
   },
   {
     "id": "baseenv",
     "href": "/detail/base/baseenv.html",
-    "texttag": "baseenv"
+    "funcname": "baseenv"
   },
   {
     "id": "basename",
     "href": "/detail/base/basename.html",
-    "texttag": "basename"
+    "funcname": "basename"
   },
   {
     "id": "besselI",
     "href": "/detail/base/besselI.html",
-    "texttag": "besselI"
+    "funcname": "besselI"
   },
   {
     "id": "besselJ",
     "href": "/detail/base/besselJ.html",
-    "texttag": "besselJ"
+    "funcname": "besselJ"
   },
   {
     "id": "besselK",
     "href": "/detail/base/besselK.html",
-    "texttag": "besselK"
+    "funcname": "besselK"
   },
   {
     "id": "besselY",
     "href": "/detail/base/besselY.html",
-    "texttag": "besselY"
+    "funcname": "besselY"
   },
-  { "id": "beta", "href": "/detail/base/beta.html", "texttag": "beta" },
+  { "id": "beta", "href": "/detail/base/beta.html", "funcname": "beta" },
   {
     "id": "bindingIsActive",
     "href": "/detail/base/bindingIsActive.html",
-    "texttag": "bindingIsActive"
+    "funcname": "bindingIsActive"
   },
   {
     "id": "bindingIsLocked",
     "href": "/detail/base/bindingIsLocked.html",
-    "texttag": "bindingIsLocked"
+    "funcname": "bindingIsLocked"
   },
   {
     "id": "bindtextdomain",
     "href": "/detail/base/bindtextdomain.html",
-    "texttag": "bindtextdomain"
+    "funcname": "bindtextdomain"
   },
   {
     "id": "bitwAnd",
     "href": "/detail/base/bitwAnd.html",
-    "texttag": "bitwAnd"
+    "funcname": "bitwAnd"
   },
   {
     "id": "bitwNot",
     "href": "/detail/base/bitwNot.html",
-    "texttag": "bitwNot"
+    "funcname": "bitwNot"
   },
-  { "id": "bitwOr", "href": "/detail/base/bitwOr.html", "texttag": "bitwOr" },
+  { "id": "bitwOr", "href": "/detail/base/bitwOr.html", "funcname": "bitwOr" },
   {
     "id": "bitwShiftL",
     "href": "/detail/base/bitwShiftL.html",
-    "texttag": "bitwShiftL"
+    "funcname": "bitwShiftL"
   },
   {
     "id": "bitwShiftR",
     "href": "/detail/base/bitwShiftR.html",
-    "texttag": "bitwShiftR"
+    "funcname": "bitwShiftR"
   },
   {
     "id": "bitwXor",
     "href": "/detail/base/bitwXor.html",
-    "texttag": "bitwXor"
+    "funcname": "bitwXor"
   },
-  { "id": "body", "href": "/detail/base/body.html", "texttag": "body" },
-  { "id": "body_-", "href": "/detail/base/body_-.html", "texttag": "body<-" },
-  { "id": "bquote", "href": "/detail/base/bquote.html", "texttag": "bquote" },
-  { "id": "break", "href": "/detail/base/break.html", "texttag": "break" },
+  { "id": "body", "href": "/detail/base/body.html", "funcname": "body" },
+  { "id": "body<-", "href": "/detail/base/body_-.html", "funcname": "body<-" },
+  { "id": "bquote", "href": "/detail/base/bquote.html", "funcname": "bquote" },
+  { "id": "break", "href": "/detail/base/break.html", "funcname": "break" },
   {
     "id": "browser",
     "href": "/detail/base/browser.html",
-    "texttag": "browser"
+    "funcname": "browser"
   },
   {
     "id": "browserCondition",
     "href": "/detail/base/browserCondition.html",
-    "texttag": "browserCondition"
+    "funcname": "browserCondition"
   },
   {
     "id": "browserSetDebug",
     "href": "/detail/base/browserSetDebug.html",
-    "texttag": "browserSetDebug"
+    "funcname": "browserSetDebug"
   },
   {
     "id": "browserText",
     "href": "/detail/base/browserText.html",
-    "texttag": "browserText"
+    "funcname": "browserText"
   },
   {
     "id": "builtins",
     "href": "/detail/base/builtins.html",
-    "texttag": "builtins"
+    "funcname": "builtins"
   },
-  { "id": "by", "href": "/detail/base/by.html", "texttag": "by" },
+  { "id": "by", "href": "/detail/base/by.html", "funcname": "by" },
   {
     "id": "by.data.frame",
     "href": "/detail/base/bydata.frame.html",
-    "texttag": "by.data.frame"
+    "funcname": "by.data.frame"
   },
   {
     "id": "by.default",
     "href": "/detail/base/bydefault.html",
-    "texttag": "by.default"
+    "funcname": "by.default"
   },
-  { "id": "bzfile", "href": "/detail/base/bzfile.html", "texttag": "bzfile" },
-  { "id": "c", "href": "/detail/base/c.html", "texttag": "c" },
-  { "id": "c.Date", "href": "/detail/base/cDate.html", "texttag": "c.Date" },
+  { "id": "bzfile", "href": "/detail/base/bzfile.html", "funcname": "bzfile" },
+  { "id": "c", "href": "/detail/base/c.html", "funcname": "c" },
+  { "id": "c.Date", "href": "/detail/base/cDate.html", "funcname": "c.Date" },
   {
     "id": "c.difftime",
     "href": "/detail/base/cdifftime.html",
-    "texttag": "c.difftime"
+    "funcname": "c.difftime"
   },
   {
     "id": "c.factor",
     "href": "/detail/base/cfactor.html",
-    "texttag": "c.factor"
+    "funcname": "c.factor"
   },
   {
     "id": "c.noquote",
     "href": "/detail/base/cnoquote.html",
-    "texttag": "c.noquote"
+    "funcname": "c.noquote"
   },
   {
     "id": "c.numeric_version",
     "href": "/detail/base/cnumeric_version.html",
-    "texttag": "c.numeric_version"
+    "funcname": "c.numeric_version"
   },
   {
     "id": "c.POSIXct",
     "href": "/detail/base/cPOSIXct.html",
-    "texttag": "c.POSIXct"
+    "funcname": "c.POSIXct"
   },
   {
     "id": "c.POSIXlt",
     "href": "/detail/base/cPOSIXlt.html",
-    "texttag": "c.POSIXlt"
+    "funcname": "c.POSIXlt"
   },
   {
     "id": "c.warnings",
     "href": "/detail/base/cwarnings.html",
-    "texttag": "c.warnings"
+    "funcname": "c.warnings"
   },
-  { "id": "call", "href": "/detail/base/call.html", "texttag": "call" },
-  { "id": "callCC", "href": "/detail/base/callCC.html", "texttag": "callCC" },
+  { "id": "call", "href": "/detail/base/call.html", "funcname": "call" },
+  { "id": "callCC", "href": "/detail/base/callCC.html", "funcname": "callCC" },
   {
     "id": "capabilities",
     "href": "/detail/base/capabilities.html",
-    "texttag": "capabilities"
+    "funcname": "capabilities"
   },
   {
     "id": "casefold",
     "href": "/detail/base/casefold.html",
-    "texttag": "casefold"
+    "funcname": "casefold"
   },
-  { "id": "cat", "href": "/detail/base/cat.html", "texttag": "cat" },
-  { "id": "cbind", "href": "/detail/base/cbind.html", "texttag": "cbind" },
+  { "id": "cat", "href": "/detail/base/cat.html", "funcname": "cat" },
+  { "id": "cbind", "href": "/detail/base/cbind.html", "funcname": "cbind" },
   {
     "id": "cbind.data.frame",
     "href": "/detail/base/cbinddata.frame.html",
-    "texttag": "cbind.data.frame"
+    "funcname": "cbind.data.frame"
   },
   {
     "id": "ceiling",
     "href": "/detail/base/ceiling.html",
-    "texttag": "ceiling"
+    "funcname": "ceiling"
   },
   {
     "id": "char.expand",
     "href": "/detail/base/charexpand.html",
-    "texttag": "char.expand"
+    "funcname": "char.expand"
   },
   {
     "id": "character",
     "href": "/detail/base/character.html",
-    "texttag": "character"
+    "funcname": "character"
   },
   {
     "id": "charmatch",
     "href": "/detail/base/charmatch.html",
-    "texttag": "charmatch"
+    "funcname": "charmatch"
   },
   {
     "id": "charToRaw",
     "href": "/detail/base/charToRaw.html",
-    "texttag": "charToRaw"
+    "funcname": "charToRaw"
   },
-  { "id": "chartr", "href": "/detail/base/chartr.html", "texttag": "chartr" },
+  { "id": "chartr", "href": "/detail/base/chartr.html", "funcname": "chartr" },
   {
     "id": "check_tzones",
     "href": "/detail/base/check_tzones.html",
-    "texttag": "check_tzones"
+    "funcname": "check_tzones"
   },
   {
     "id": "chkDots",
     "href": "/detail/base/chkDots.html",
-    "texttag": "chkDots"
+    "funcname": "chkDots"
   },
-  { "id": "chol", "href": "/detail/base/chol.html", "texttag": "chol" },
+  { "id": "chol", "href": "/detail/base/chol.html", "funcname": "chol" },
   {
     "id": "chol.default",
     "href": "/detail/base/choldefault.html",
-    "texttag": "chol.default"
+    "funcname": "chol.default"
   },
   {
     "id": "chol2inv",
     "href": "/detail/base/chol2inv.html",
-    "texttag": "chol2inv"
+    "funcname": "chol2inv"
   },
-  { "id": "choose", "href": "/detail/base/choose.html", "texttag": "choose" },
-  { "id": "class", "href": "/detail/base/class.html", "texttag": "class" },
+  { "id": "choose", "href": "/detail/base/choose.html", "funcname": "choose" },
+  { "id": "class", "href": "/detail/base/class.html", "funcname": "class" },
   {
-    "id": "class_-",
+    "id": "class<-",
     "href": "/detail/base/class_-.html",
-    "texttag": "class<-"
+    "funcname": "class<-"
   },
   {
     "id": "clearPushBack",
     "href": "/detail/base/clearPushBack.html",
-    "texttag": "clearPushBack"
+    "funcname": "clearPushBack"
   },
-  { "id": "close", "href": "/detail/base/close.html", "texttag": "close" },
+  { "id": "close", "href": "/detail/base/close.html", "funcname": "close" },
   {
     "id": "close.connection",
     "href": "/detail/base/closeconnection.html",
-    "texttag": "close.connection"
+    "funcname": "close.connection"
   },
   {
     "id": "close.srcfile",
     "href": "/detail/base/closesrcfile.html",
-    "texttag": "close.srcfile"
+    "funcname": "close.srcfile"
   },
   {
     "id": "close.srcfilealias",
     "href": "/detail/base/closesrcfilealias.html",
-    "texttag": "close.srcfilealias"
+    "funcname": "close.srcfilealias"
   },
   {
     "id": "closeAllConnections",
     "href": "/detail/base/closeAllConnections.html",
-    "texttag": "closeAllConnections"
+    "funcname": "closeAllConnections"
   },
-  { "id": "col", "href": "/detail/base/col.html", "texttag": "col" },
+  { "id": "col", "href": "/detail/base/col.html", "funcname": "col" },
   {
     "id": "colMeans",
     "href": "/detail/base/colMeans.html",
-    "texttag": "colMeans"
+    "funcname": "colMeans"
   },
   {
     "id": "colnames",
     "href": "/detail/base/colnames.html",
-    "texttag": "colnames"
+    "funcname": "colnames"
   },
   {
-    "id": "colnames_-",
+    "id": "colnames<-",
     "href": "/detail/base/colnames_-.html",
-    "texttag": "colnames<-"
+    "funcname": "colnames<-"
   },
   {
     "id": "colSums",
     "href": "/detail/base/colSums.html",
-    "texttag": "colSums"
+    "funcname": "colSums"
   },
   {
     "id": "commandArgs",
     "href": "/detail/base/commandArgs.html",
-    "texttag": "commandArgs"
+    "funcname": "commandArgs"
   },
   {
     "id": "comment",
     "href": "/detail/base/comment.html",
-    "texttag": "comment"
+    "funcname": "comment"
   },
   {
-    "id": "comment_-",
+    "id": "comment<-",
     "href": "/detail/base/comment_-.html",
-    "texttag": "comment<-"
+    "funcname": "comment<-"
   },
   {
     "id": "complex",
     "href": "/detail/base/complex.html",
-    "texttag": "complex"
+    "funcname": "complex"
   },
   {
     "id": "computeRestarts",
     "href": "/detail/base/computeRestarts.html",
-    "texttag": "computeRestarts"
+    "funcname": "computeRestarts"
   },
   {
     "id": "conditionCall",
     "href": "/detail/base/conditionCall.html",
-    "texttag": "conditionCall"
+    "funcname": "conditionCall"
   },
   {
     "id": "conditionCall.condition",
     "href": "/detail/base/conditionCallcondition.html",
-    "texttag": "conditionCall.condition"
+    "funcname": "conditionCall.condition"
   },
   {
     "id": "conditionMessage",
     "href": "/detail/base/conditionMessage.html",
-    "texttag": "conditionMessage"
+    "funcname": "conditionMessage"
   },
   {
     "id": "conditionMessage.condition",
     "href": "/detail/base/conditionMessagecondition.html",
-    "texttag": "conditionMessage.condition"
+    "funcname": "conditionMessage.condition"
   },
   {
     "id": "conflictRules",
     "href": "/detail/base/conflictRules.html",
-    "texttag": "conflictRules"
+    "funcname": "conflictRules"
   },
   {
     "id": "conflicts",
     "href": "/detail/base/conflicts.html",
-    "texttag": "conflicts"
+    "funcname": "conflicts"
   },
-  { "id": "Conj", "href": "/detail/base/Conj.html", "texttag": "Conj" },
+  { "id": "Conj", "href": "/detail/base/Conj.html", "funcname": "Conj" },
   {
     "id": "contributors",
     "href": "/detail/base/contributors.html",
-    "texttag": "contributors"
+    "funcname": "contributors"
   },
-  { "id": "cos", "href": "/detail/base/cos.html", "texttag": "cos" },
-  { "id": "cosh", "href": "/detail/base/cosh.html", "texttag": "cosh" },
-  { "id": "cospi", "href": "/detail/base/cospi.html", "texttag": "cospi" },
+  { "id": "cos", "href": "/detail/base/cos.html", "funcname": "cos" },
+  { "id": "cosh", "href": "/detail/base/cosh.html", "funcname": "cosh" },
+  { "id": "cospi", "href": "/detail/base/cospi.html", "funcname": "cospi" },
   {
     "id": "crossprod",
     "href": "/detail/base/crossprod.html",
-    "texttag": "crossprod"
+    "funcname": "crossprod"
   },
   {
     "id": "Cstack_info",
     "href": "/detail/base/Cstack_info.html",
-    "texttag": "Cstack_info"
+    "funcname": "Cstack_info"
   },
-  { "id": "cummax", "href": "/detail/base/cummax.html", "texttag": "cummax" },
-  { "id": "cummin", "href": "/detail/base/cummin.html", "texttag": "cummin" },
+  { "id": "cummax", "href": "/detail/base/cummax.html", "funcname": "cummax" },
+  { "id": "cummin", "href": "/detail/base/cummin.html", "funcname": "cummin" },
   {
     "id": "cumprod",
     "href": "/detail/base/cumprod.html",
-    "texttag": "cumprod"
+    "funcname": "cumprod"
   },
-  { "id": "cumsum", "href": "/detail/base/cumsum.html", "texttag": "cumsum" },
+  { "id": "cumsum", "href": "/detail/base/cumsum.html", "funcname": "cumsum" },
   {
     "id": "curlGetHeaders",
     "href": "/detail/base/curlGetHeaders.html",
-    "texttag": "curlGetHeaders"
+    "funcname": "curlGetHeaders"
   },
-  { "id": "cut", "href": "/detail/base/cut.html", "texttag": "cut" },
+  { "id": "cut", "href": "/detail/base/cut.html", "funcname": "cut" },
   {
     "id": "cut.Date",
     "href": "/detail/base/cutDate.html",
-    "texttag": "cut.Date"
+    "funcname": "cut.Date"
   },
   {
     "id": "cut.default",
     "href": "/detail/base/cutdefault.html",
-    "texttag": "cut.default"
+    "funcname": "cut.default"
   },
   {
     "id": "cut.POSIXt",
     "href": "/detail/base/cutPOSIXt.html",
-    "texttag": "cut.POSIXt"
+    "funcname": "cut.POSIXt"
   },
   {
     "id": "data.class",
     "href": "/detail/base/dataclass.html",
-    "texttag": "data.class"
+    "funcname": "data.class"
   },
   {
     "id": "data.frame",
     "href": "/detail/base/dataframe.html",
-    "texttag": "data.frame"
+    "funcname": "data.frame"
   },
   {
     "id": "data.matrix",
     "href": "/detail/base/datamatrix.html",
-    "texttag": "data.matrix"
+    "funcname": "data.matrix"
   },
-  { "id": "date", "href": "/detail/base/date.html", "texttag": "date" },
-  { "id": "debug", "href": "/detail/base/debug.html", "texttag": "debug" },
+  { "id": "date", "href": "/detail/base/date.html", "funcname": "date" },
+  { "id": "debug", "href": "/detail/base/debug.html", "funcname": "debug" },
   {
     "id": "debuggingState",
     "href": "/detail/base/debuggingState.html",
-    "texttag": "debuggingState"
+    "funcname": "debuggingState"
   },
   {
     "id": "debugonce",
     "href": "/detail/base/debugonce.html",
-    "texttag": "debugonce"
+    "funcname": "debugonce"
   },
   {
     "id": "default.stringsAsFactors",
     "href": "/detail/base/defaultstringsAsFactors.html",
-    "texttag": "default.stringsAsFactors"
+    "funcname": "default.stringsAsFactors"
   },
   {
     "id": "delayedAssign",
     "href": "/detail/base/delayedAssign.html",
-    "texttag": "delayedAssign"
+    "funcname": "delayedAssign"
   },
   {
     "id": "deparse",
     "href": "/detail/base/deparse.html",
-    "texttag": "deparse"
+    "funcname": "deparse"
   },
   {
     "id": "deparse1",
     "href": "/detail/base/deparse1.html",
-    "texttag": "deparse1"
+    "funcname": "deparse1"
   },
-  { "id": "det", "href": "/detail/base/det.html", "texttag": "det" },
-  { "id": "detach", "href": "/detail/base/detach.html", "texttag": "detach" },
+  { "id": "det", "href": "/detail/base/det.html", "funcname": "det" },
+  { "id": "detach", "href": "/detail/base/detach.html", "funcname": "detach" },
   {
     "id": "determinant",
     "href": "/detail/base/determinant.html",
-    "texttag": "determinant"
+    "funcname": "determinant"
   },
   {
     "id": "determinant.matrix",
     "href": "/detail/base/determinantmatrix.html",
-    "texttag": "determinant.matrix"
+    "funcname": "determinant.matrix"
   },
-  { "id": "dget", "href": "/detail/base/dget.html", "texttag": "dget" },
-  { "id": "diag", "href": "/detail/base/diag.html", "texttag": "diag" },
-  { "id": "diag_-", "href": "/detail/base/diag_-.html", "texttag": "diag<-" },
-  { "id": "diff", "href": "/detail/base/diff.html", "texttag": "diff" },
+  { "id": "dget", "href": "/detail/base/dget.html", "funcname": "dget" },
+  { "id": "diag", "href": "/detail/base/diag.html", "funcname": "diag" },
+  { "id": "diag<-", "href": "/detail/base/diag_-.html", "funcname": "diag<-" },
+  { "id": "diff", "href": "/detail/base/diff.html", "funcname": "diff" },
   {
     "id": "diff.Date",
     "href": "/detail/base/diffDate.html",
-    "texttag": "diff.Date"
+    "funcname": "diff.Date"
   },
   {
     "id": "diff.default",
     "href": "/detail/base/diffdefault.html",
-    "texttag": "diff.default"
+    "funcname": "diff.default"
   },
   {
     "id": "diff.difftime",
     "href": "/detail/base/diffdifftime.html",
-    "texttag": "diff.difftime"
+    "funcname": "diff.difftime"
   },
   {
     "id": "diff.POSIXt",
     "href": "/detail/base/diffPOSIXt.html",
-    "texttag": "diff.POSIXt"
+    "funcname": "diff.POSIXt"
   },
   {
     "id": "difftime",
     "href": "/detail/base/difftime.html",
-    "texttag": "difftime"
+    "funcname": "difftime"
   },
   {
     "id": "digamma",
     "href": "/detail/base/digamma.html",
-    "texttag": "digamma"
+    "funcname": "digamma"
   },
-  { "id": "dim", "href": "/detail/base/dim.html", "texttag": "dim" },
+  { "id": "dim", "href": "/detail/base/dim.html", "funcname": "dim" },
   {
     "id": "dim.data.frame",
     "href": "/detail/base/dimdata.frame.html",
-    "texttag": "dim.data.frame"
+    "funcname": "dim.data.frame"
   },
-  { "id": "dim_-", "href": "/detail/base/dim_-.html", "texttag": "dim<-" },
+  { "id": "dim<-", "href": "/detail/base/dim_-.html", "funcname": "dim<-" },
   {
     "id": "dimnames",
     "href": "/detail/base/dimnames.html",
-    "texttag": "dimnames"
+    "funcname": "dimnames"
   },
   {
     "id": "dimnames.data.frame",
     "href": "/detail/base/dimnamesdata.frame.html",
-    "texttag": "dimnames.data.frame"
+    "funcname": "dimnames.data.frame"
   },
   {
-    "id": "dimnames_-",
+    "id": "dimnames<-",
     "href": "/detail/base/dimnames_-.html",
-    "texttag": "dimnames<-"
+    "funcname": "dimnames<-"
   },
   {
-    "id": "dimnames_-.data.frame",
+    "id": "dimnames<-.data.frame",
     "href": "/detail/base/dimnames_-data.frame.html",
-    "texttag": "dimnames<-.data.frame"
+    "funcname": "dimnames<-.data.frame"
   },
-  { "id": "dir", "href": "/detail/base/dir.html", "texttag": "dir" },
+  { "id": "dir", "href": "/detail/base/dir.html", "funcname": "dir" },
   {
     "id": "dir.create",
     "href": "/detail/base/dircreate.html",
-    "texttag": "dir.create"
+    "funcname": "dir.create"
   },
   {
     "id": "dir.exists",
     "href": "/detail/base/direxists.html",
-    "texttag": "dir.exists"
+    "funcname": "dir.exists"
   },
   {
     "id": "dirname",
     "href": "/detail/base/dirname.html",
-    "texttag": "dirname"
+    "funcname": "dirname"
   },
-  { "id": "do.call", "href": "/detail/base/docall.html", "texttag": "do.call" },
+  {
+    "id": "do.call",
+    "href": "/detail/base/docall.html",
+    "funcname": "do.call"
+  },
   {
     "id": "dontCheck",
     "href": "/detail/base/dontCheck.html",
-    "texttag": "dontCheck"
+    "funcname": "dontCheck"
   },
-  { "id": "double", "href": "/detail/base/double.html", "texttag": "double" },
-  { "id": "dput", "href": "/detail/base/dput.html", "texttag": "dput" },
-  { "id": "dQuote", "href": "/detail/base/dQuote.html", "texttag": "dQuote" },
-  { "id": "drop", "href": "/detail/base/drop.html", "texttag": "drop" },
+  { "id": "double", "href": "/detail/base/double.html", "funcname": "double" },
+  { "id": "dput", "href": "/detail/base/dput.html", "funcname": "dput" },
+  { "id": "dQuote", "href": "/detail/base/dQuote.html", "funcname": "dQuote" },
+  { "id": "drop", "href": "/detail/base/drop.html", "funcname": "drop" },
   {
     "id": "droplevels",
     "href": "/detail/base/droplevels.html",
-    "texttag": "droplevels"
+    "funcname": "droplevels"
   },
   {
     "id": "droplevels.data.frame",
     "href": "/detail/base/droplevelsdata.frame.html",
-    "texttag": "droplevels.data.frame"
+    "funcname": "droplevels.data.frame"
   },
   {
     "id": "droplevels.factor",
     "href": "/detail/base/droplevelsfactor.html",
-    "texttag": "droplevels.factor"
+    "funcname": "droplevels.factor"
   },
-  { "id": "dump", "href": "/detail/base/dump.html", "texttag": "dump" },
+  { "id": "dump", "href": "/detail/base/dump.html", "funcname": "dump" },
   {
     "id": "duplicated",
     "href": "/detail/base/duplicated.html",
-    "texttag": "duplicated"
+    "funcname": "duplicated"
   },
   {
     "id": "duplicated.array",
     "href": "/detail/base/duplicatedarray.html",
-    "texttag": "duplicated.array"
+    "funcname": "duplicated.array"
   },
   {
     "id": "duplicated.data.frame",
     "href": "/detail/base/duplicateddata.frame.html",
-    "texttag": "duplicated.data.frame"
+    "funcname": "duplicated.data.frame"
   },
   {
     "id": "duplicated.default",
     "href": "/detail/base/duplicateddefault.html",
-    "texttag": "duplicated.default"
+    "funcname": "duplicated.default"
   },
   {
     "id": "duplicated.matrix",
     "href": "/detail/base/duplicatedmatrix.html",
-    "texttag": "duplicated.matrix"
+    "funcname": "duplicated.matrix"
   },
   {
     "id": "duplicated.numeric_version",
     "href": "/detail/base/duplicatednumeric_version.html",
-    "texttag": "duplicated.numeric_version"
+    "funcname": "duplicated.numeric_version"
   },
   {
     "id": "duplicated.POSIXlt",
     "href": "/detail/base/duplicatedPOSIXlt.html",
-    "texttag": "duplicated.POSIXlt"
+    "funcname": "duplicated.POSIXlt"
   },
   {
     "id": "duplicated.warnings",
     "href": "/detail/base/duplicatedwarnings.html",
-    "texttag": "duplicated.warnings"
+    "funcname": "duplicated.warnings"
   },
   {
     "id": "dyn.load",
     "href": "/detail/base/dynload.html",
-    "texttag": "dyn.load"
+    "funcname": "dyn.load"
   },
   {
     "id": "dyn.unload",
     "href": "/detail/base/dynunload.html",
-    "texttag": "dyn.unload"
+    "funcname": "dyn.unload"
   },
-  { "id": "dynGet", "href": "/detail/base/dynGet.html", "texttag": "dynGet" },
-  { "id": "eapply", "href": "/detail/base/eapply.html", "texttag": "eapply" },
-  { "id": "eigen", "href": "/detail/base/eigen.html", "texttag": "eigen" },
+  { "id": "dynGet", "href": "/detail/base/dynGet.html", "funcname": "dynGet" },
+  { "id": "eapply", "href": "/detail/base/eapply.html", "funcname": "eapply" },
+  { "id": "eigen", "href": "/detail/base/eigen.html", "funcname": "eigen" },
   {
     "id": "emptyenv",
     "href": "/detail/base/emptyenv.html",
-    "texttag": "emptyenv"
+    "funcname": "emptyenv"
   },
   {
     "id": "enc2native",
     "href": "/detail/base/enc2native.html",
-    "texttag": "enc2native"
+    "funcname": "enc2native"
   },
   {
     "id": "enc2utf8",
     "href": "/detail/base/enc2utf8.html",
-    "texttag": "enc2utf8"
+    "funcname": "enc2utf8"
   },
   {
     "id": "encodeString",
     "href": "/detail/base/encodeString.html",
-    "texttag": "encodeString"
+    "funcname": "encodeString"
   },
   {
     "id": "Encoding",
     "href": "/detail/base/Encoding.html",
-    "texttag": "Encoding"
+    "funcname": "Encoding"
   },
   {
-    "id": "Encoding_-",
+    "id": "Encoding<-",
     "href": "/detail/base/Encoding_-.html",
-    "texttag": "Encoding<-"
+    "funcname": "Encoding<-"
   },
   {
     "id": "endsWith",
     "href": "/detail/base/endsWith.html",
-    "texttag": "endsWith"
+    "funcname": "endsWith"
   },
   {
     "id": "enquote",
     "href": "/detail/base/enquote.html",
-    "texttag": "enquote"
+    "funcname": "enquote"
   },
   {
     "id": "env.profile",
     "href": "/detail/base/envprofile.html",
-    "texttag": "env.profile"
+    "funcname": "env.profile"
   },
   {
     "id": "environment",
     "href": "/detail/base/environment.html",
-    "texttag": "environment"
+    "funcname": "environment"
   },
   {
-    "id": "environment_-",
+    "id": "environment<-",
     "href": "/detail/base/environment_-.html",
-    "texttag": "environment<-"
+    "funcname": "environment<-"
   },
   {
     "id": "environmentIsLocked",
     "href": "/detail/base/environmentIsLocked.html",
-    "texttag": "environmentIsLocked"
+    "funcname": "environmentIsLocked"
   },
   {
     "id": "environmentName",
     "href": "/detail/base/environmentName.html",
-    "texttag": "environmentName"
+    "funcname": "environmentName"
   },
   {
     "id": "errorCondition",
     "href": "/detail/base/errorCondition.html",
-    "texttag": "errorCondition"
+    "funcname": "errorCondition"
   },
-  { "id": "eval", "href": "/detail/base/eval.html", "texttag": "eval" },
+  { "id": "eval", "href": "/detail/base/eval.html", "funcname": "eval" },
   {
     "id": "eval.parent",
     "href": "/detail/base/evalparent.html",
-    "texttag": "eval.parent"
+    "funcname": "eval.parent"
   },
-  { "id": "evalq", "href": "/detail/base/evalq.html", "texttag": "evalq" },
-  { "id": "exists", "href": "/detail/base/exists.html", "texttag": "exists" },
-  { "id": "exp", "href": "/detail/base/exp.html", "texttag": "exp" },
+  { "id": "evalq", "href": "/detail/base/evalq.html", "funcname": "evalq" },
+  { "id": "exists", "href": "/detail/base/exists.html", "funcname": "exists" },
+  { "id": "exp", "href": "/detail/base/exp.html", "funcname": "exp" },
   {
     "id": "expand.grid",
     "href": "/detail/base/expandgrid.html",
-    "texttag": "expand.grid"
+    "funcname": "expand.grid"
   },
-  { "id": "expm1", "href": "/detail/base/expm1.html", "texttag": "expm1" },
+  { "id": "expm1", "href": "/detail/base/expm1.html", "funcname": "expm1" },
   {
     "id": "expression",
     "href": "/detail/base/expression.html",
-    "texttag": "expression"
+    "funcname": "expression"
   },
   {
     "id": "extSoftVersion",
     "href": "/detail/base/extSoftVersion.html",
-    "texttag": "extSoftVersion"
+    "funcname": "extSoftVersion"
   },
-  { "id": "F", "href": "/detail/base/F.html", "texttag": "F" },
-  { "id": "factor", "href": "/detail/base/factor.html", "texttag": "factor" },
+  { "id": "F", "href": "/detail/base/F.html", "funcname": "F" },
+  { "id": "factor", "href": "/detail/base/factor.html", "funcname": "factor" },
   {
     "id": "factorial",
     "href": "/detail/base/factorial.html",
-    "texttag": "factorial"
+    "funcname": "factorial"
   },
-  { "id": "fifo", "href": "/detail/base/fifo.html", "texttag": "fifo" },
-  { "id": "file", "href": "/detail/base/file.html", "texttag": "file" },
+  { "id": "fifo", "href": "/detail/base/fifo.html", "funcname": "fifo" },
+  { "id": "file", "href": "/detail/base/file.html", "funcname": "file" },
   {
     "id": "file.access",
     "href": "/detail/base/fileaccess.html",
-    "texttag": "file.access"
+    "funcname": "file.access"
   },
   {
     "id": "file.append",
     "href": "/detail/base/fileappend.html",
-    "texttag": "file.append"
+    "funcname": "file.append"
   },
   {
     "id": "file.choose",
     "href": "/detail/base/filechoose.html",
-    "texttag": "file.choose"
+    "funcname": "file.choose"
   },
   {
     "id": "file.copy",
     "href": "/detail/base/filecopy.html",
-    "texttag": "file.copy"
+    "funcname": "file.copy"
   },
   {
     "id": "file.create",
     "href": "/detail/base/filecreate.html",
-    "texttag": "file.create"
+    "funcname": "file.create"
   },
   {
     "id": "file.exists",
     "href": "/detail/base/fileexists.html",
-    "texttag": "file.exists"
+    "funcname": "file.exists"
   },
   {
     "id": "file.info",
     "href": "/detail/base/fileinfo.html",
-    "texttag": "file.info"
+    "funcname": "file.info"
   },
   {
     "id": "file.link",
     "href": "/detail/base/filelink.html",
-    "texttag": "file.link"
+    "funcname": "file.link"
   },
   {
     "id": "file.mode",
     "href": "/detail/base/filemode.html",
-    "texttag": "file.mode"
+    "funcname": "file.mode"
   },
   {
     "id": "file.mtime",
     "href": "/detail/base/filemtime.html",
-    "texttag": "file.mtime"
+    "funcname": "file.mtime"
   },
   {
     "id": "file.path",
     "href": "/detail/base/filepath.html",
-    "texttag": "file.path"
+    "funcname": "file.path"
   },
   {
     "id": "file.remove",
     "href": "/detail/base/fileremove.html",
-    "texttag": "file.remove"
+    "funcname": "file.remove"
   },
   {
     "id": "file.rename",
     "href": "/detail/base/filerename.html",
-    "texttag": "file.rename"
+    "funcname": "file.rename"
   },
   {
     "id": "file.show",
     "href": "/detail/base/fileshow.html",
-    "texttag": "file.show"
+    "funcname": "file.show"
   },
   {
     "id": "file.size",
     "href": "/detail/base/filesize.html",
-    "texttag": "file.size"
+    "funcname": "file.size"
   },
   {
     "id": "file.symlink",
     "href": "/detail/base/filesymlink.html",
-    "texttag": "file.symlink"
+    "funcname": "file.symlink"
   },
-  { "id": "Filter", "href": "/detail/base/Filter.html", "texttag": "Filter" },
-  { "id": "Find", "href": "/detail/base/Find.html", "texttag": "Find" },
+  { "id": "Filter", "href": "/detail/base/Filter.html", "funcname": "Filter" },
+  { "id": "Find", "href": "/detail/base/Find.html", "funcname": "Find" },
   {
     "id": "find.package",
     "href": "/detail/base/findpackage.html",
-    "texttag": "find.package"
+    "funcname": "find.package"
   },
   {
     "id": "findInterval",
     "href": "/detail/base/findInterval.html",
-    "texttag": "findInterval"
+    "funcname": "findInterval"
   },
   {
     "id": "findPackageEnv",
     "href": "/detail/base/findPackageEnv.html",
-    "texttag": "findPackageEnv"
+    "funcname": "findPackageEnv"
   },
   {
     "id": "findRestart",
     "href": "/detail/base/findRestart.html",
-    "texttag": "findRestart"
+    "funcname": "findRestart"
   },
-  { "id": "floor", "href": "/detail/base/floor.html", "texttag": "floor" },
-  { "id": "flush", "href": "/detail/base/flush.html", "texttag": "flush" },
+  { "id": "floor", "href": "/detail/base/floor.html", "funcname": "floor" },
+  { "id": "flush", "href": "/detail/base/flush.html", "funcname": "flush" },
   {
     "id": "flush.connection",
     "href": "/detail/base/flushconnection.html",
-    "texttag": "flush.connection"
+    "funcname": "flush.connection"
   },
-  { "id": "for", "href": "/detail/base/for.html", "texttag": "for" },
-  { "id": "force", "href": "/detail/base/force.html", "texttag": "force" },
+  { "id": "for", "href": "/detail/base/for.html", "funcname": "for" },
+  { "id": "force", "href": "/detail/base/force.html", "funcname": "force" },
   {
     "id": "forceAndCall",
     "href": "/detail/base/forceAndCall.html",
-    "texttag": "forceAndCall"
+    "funcname": "forceAndCall"
   },
   {
     "id": "formals",
     "href": "/detail/base/formals.html",
-    "texttag": "formals"
+    "funcname": "formals"
   },
   {
-    "id": "formals_-",
+    "id": "formals<-",
     "href": "/detail/base/formals_-.html",
-    "texttag": "formals<-"
+    "funcname": "formals<-"
   },
-  { "id": "format", "href": "/detail/base/format.html", "texttag": "format" },
+  { "id": "format", "href": "/detail/base/format.html", "funcname": "format" },
   {
     "id": "format.AsIs",
     "href": "/detail/base/formatAsIs.html",
-    "texttag": "format.AsIs"
+    "funcname": "format.AsIs"
   },
   {
     "id": "format.data.frame",
     "href": "/detail/base/formatdata.frame.html",
-    "texttag": "format.data.frame"
+    "funcname": "format.data.frame"
   },
   {
     "id": "format.Date",
     "href": "/detail/base/formatDate.html",
-    "texttag": "format.Date"
+    "funcname": "format.Date"
   },
   {
     "id": "format.default",
     "href": "/detail/base/formatdefault.html",
-    "texttag": "format.default"
+    "funcname": "format.default"
   },
   {
     "id": "format.difftime",
     "href": "/detail/base/formatdifftime.html",
-    "texttag": "format.difftime"
+    "funcname": "format.difftime"
   },
   {
     "id": "format.factor",
     "href": "/detail/base/formatfactor.html",
-    "texttag": "format.factor"
+    "funcname": "format.factor"
   },
   {
     "id": "format.hexmode",
     "href": "/detail/base/formathexmode.html",
-    "texttag": "format.hexmode"
+    "funcname": "format.hexmode"
   },
   {
     "id": "format.info",
     "href": "/detail/base/formatinfo.html",
-    "texttag": "format.info"
+    "funcname": "format.info"
   },
   {
     "id": "format.libraryIQR",
     "href": "/detail/base/formatlibraryIQR.html",
-    "texttag": "format.libraryIQR"
+    "funcname": "format.libraryIQR"
   },
   {
     "id": "format.numeric_version",
     "href": "/detail/base/formatnumeric_version.html",
-    "texttag": "format.numeric_version"
+    "funcname": "format.numeric_version"
   },
   {
     "id": "format.octmode",
     "href": "/detail/base/formatoctmode.html",
-    "texttag": "format.octmode"
+    "funcname": "format.octmode"
   },
   {
     "id": "format.packageInfo",
     "href": "/detail/base/formatpackageInfo.html",
-    "texttag": "format.packageInfo"
+    "funcname": "format.packageInfo"
   },
   {
     "id": "format.POSIXct",
     "href": "/detail/base/formatPOSIXct.html",
-    "texttag": "format.POSIXct"
+    "funcname": "format.POSIXct"
   },
   {
     "id": "format.POSIXlt",
     "href": "/detail/base/formatPOSIXlt.html",
-    "texttag": "format.POSIXlt"
+    "funcname": "format.POSIXlt"
   },
   {
     "id": "format.pval",
     "href": "/detail/base/formatpval.html",
-    "texttag": "format.pval"
+    "funcname": "format.pval"
   },
   {
     "id": "format.summaryDefault",
     "href": "/detail/base/formatsummaryDefault.html",
-    "texttag": "format.summaryDefault"
+    "funcname": "format.summaryDefault"
   },
   {
     "id": "formatC",
     "href": "/detail/base/formatC.html",
-    "texttag": "formatC"
+    "funcname": "formatC"
   },
   {
     "id": "formatDL",
     "href": "/detail/base/formatDL.html",
-    "texttag": "formatDL"
+    "funcname": "formatDL"
   },
   {
     "id": "forwardsolve",
     "href": "/detail/base/forwardsolve.html",
-    "texttag": "forwardsolve"
+    "funcname": "forwardsolve"
   },
   {
     "id": "function",
     "href": "/detail/base/function.html",
-    "texttag": "function"
+    "funcname": "function"
   },
-  { "id": "gamma", "href": "/detail/base/gamma.html", "texttag": "gamma" },
-  { "id": "gc", "href": "/detail/base/gc.html", "texttag": "gc" },
-  { "id": "gc.time", "href": "/detail/base/gctime.html", "texttag": "gc.time" },
-  { "id": "gcinfo", "href": "/detail/base/gcinfo.html", "texttag": "gcinfo" },
+  { "id": "gamma", "href": "/detail/base/gamma.html", "funcname": "gamma" },
+  { "id": "gc", "href": "/detail/base/gc.html", "funcname": "gc" },
+  {
+    "id": "gc.time",
+    "href": "/detail/base/gctime.html",
+    "funcname": "gc.time"
+  },
+  { "id": "gcinfo", "href": "/detail/base/gcinfo.html", "funcname": "gcinfo" },
   {
     "id": "gctorture",
     "href": "/detail/base/gctorture.html",
-    "texttag": "gctorture"
+    "funcname": "gctorture"
   },
   {
     "id": "gctorture2",
     "href": "/detail/base/gctorture2.html",
-    "texttag": "gctorture2"
+    "funcname": "gctorture2"
   },
-  { "id": "get", "href": "/detail/base/get.html", "texttag": "get" },
-  { "id": "get0", "href": "/detail/base/get0.html", "texttag": "get0" },
+  { "id": "get", "href": "/detail/base/get.html", "funcname": "get" },
+  { "id": "get0", "href": "/detail/base/get0.html", "funcname": "get0" },
   {
     "id": "getAllConnections",
     "href": "/detail/base/getAllConnections.html",
-    "texttag": "getAllConnections"
+    "funcname": "getAllConnections"
   },
   {
     "id": "getCallingDLL",
     "href": "/detail/base/getCallingDLL.html",
-    "texttag": "getCallingDLL"
+    "funcname": "getCallingDLL"
   },
   {
     "id": "getCallingDLLe",
     "href": "/detail/base/getCallingDLLe.html",
-    "texttag": "getCallingDLLe"
+    "funcname": "getCallingDLLe"
   },
   {
     "id": "getConnection",
     "href": "/detail/base/getConnection.html",
-    "texttag": "getConnection"
+    "funcname": "getConnection"
   },
   {
     "id": "getDLLRegisteredRoutines",
     "href": "/detail/base/getDLLRegisteredRoutines.html",
-    "texttag": "getDLLRegisteredRoutines"
+    "funcname": "getDLLRegisteredRoutines"
   },
   {
     "id": "getDLLRegisteredRoutines.character",
     "href": "/detail/base/getDLLRegisteredRoutinescharacter.html",
-    "texttag": "getDLLRegisteredRoutines.character"
+    "funcname": "getDLLRegisteredRoutines.character"
   },
   {
     "id": "getDLLRegisteredRoutines.DLLInfo",
     "href": "/detail/base/getDLLRegisteredRoutinesDLLInfo.html",
-    "texttag": "getDLLRegisteredRoutines.DLLInfo"
+    "funcname": "getDLLRegisteredRoutines.DLLInfo"
   },
   {
     "id": "getElement",
     "href": "/detail/base/getElement.html",
-    "texttag": "getElement"
+    "funcname": "getElement"
   },
   {
     "id": "geterrmessage",
     "href": "/detail/base/geterrmessage.html",
-    "texttag": "geterrmessage"
+    "funcname": "geterrmessage"
   },
   {
     "id": "getExportedValue",
     "href": "/detail/base/getExportedValue.html",
-    "texttag": "getExportedValue"
+    "funcname": "getExportedValue"
   },
   {
     "id": "getHook",
     "href": "/detail/base/getHook.html",
-    "texttag": "getHook"
+    "funcname": "getHook"
   },
   {
     "id": "getLoadedDLLs",
     "href": "/detail/base/getLoadedDLLs.html",
-    "texttag": "getLoadedDLLs"
+    "funcname": "getLoadedDLLs"
   },
   {
     "id": "getNamespace",
     "href": "/detail/base/getNamespace.html",
-    "texttag": "getNamespace"
+    "funcname": "getNamespace"
   },
   {
     "id": "getNamespaceExports",
     "href": "/detail/base/getNamespaceExports.html",
-    "texttag": "getNamespaceExports"
+    "funcname": "getNamespaceExports"
   },
   {
     "id": "getNamespaceImports",
     "href": "/detail/base/getNamespaceImports.html",
-    "texttag": "getNamespaceImports"
+    "funcname": "getNamespaceImports"
   },
   {
     "id": "getNamespaceInfo",
     "href": "/detail/base/getNamespaceInfo.html",
-    "texttag": "getNamespaceInfo"
+    "funcname": "getNamespaceInfo"
   },
   {
     "id": "getNamespaceName",
     "href": "/detail/base/getNamespaceName.html",
-    "texttag": "getNamespaceName"
+    "funcname": "getNamespaceName"
   },
   {
     "id": "getNamespaceUsers",
     "href": "/detail/base/getNamespaceUsers.html",
-    "texttag": "getNamespaceUsers"
+    "funcname": "getNamespaceUsers"
   },
   {
     "id": "getNamespaceVersion",
     "href": "/detail/base/getNamespaceVersion.html",
-    "texttag": "getNamespaceVersion"
+    "funcname": "getNamespaceVersion"
   },
   {
     "id": "getNativeSymbolInfo",
     "href": "/detail/base/getNativeSymbolInfo.html",
-    "texttag": "getNativeSymbolInfo"
+    "funcname": "getNativeSymbolInfo"
   },
   {
     "id": "getOption",
     "href": "/detail/base/getOption.html",
-    "texttag": "getOption"
+    "funcname": "getOption"
   },
   {
     "id": "getRversion",
     "href": "/detail/base/getRversion.html",
-    "texttag": "getRversion"
+    "funcname": "getRversion"
   },
   {
     "id": "getSrcLines",
     "href": "/detail/base/getSrcLines.html",
-    "texttag": "getSrcLines"
+    "funcname": "getSrcLines"
   },
   {
     "id": "getTaskCallbackNames",
     "href": "/detail/base/getTaskCallbackNames.html",
-    "texttag": "getTaskCallbackNames"
+    "funcname": "getTaskCallbackNames"
   },
   {
     "id": "gettext",
     "href": "/detail/base/gettext.html",
-    "texttag": "gettext"
+    "funcname": "gettext"
   },
   {
     "id": "gettextf",
     "href": "/detail/base/gettextf.html",
-    "texttag": "gettextf"
+    "funcname": "gettextf"
   },
-  { "id": "getwd", "href": "/detail/base/getwd.html", "texttag": "getwd" },
-  { "id": "gl", "href": "/detail/base/gl.html", "texttag": "gl" },
+  { "id": "getwd", "href": "/detail/base/getwd.html", "funcname": "getwd" },
+  { "id": "gl", "href": "/detail/base/gl.html", "funcname": "gl" },
   {
     "id": "globalCallingHandlers",
     "href": "/detail/base/globalCallingHandlers.html",
-    "texttag": "globalCallingHandlers"
+    "funcname": "globalCallingHandlers"
   },
   {
     "id": "globalenv",
     "href": "/detail/base/globalenv.html",
-    "texttag": "globalenv"
+    "funcname": "globalenv"
   },
   {
     "id": "gregexec",
     "href": "/detail/base/gregexec.html",
-    "texttag": "gregexec"
+    "funcname": "gregexec"
   },
   {
     "id": "gregexpr",
     "href": "/detail/base/gregexpr.html",
-    "texttag": "gregexpr"
+    "funcname": "gregexpr"
   },
-  { "id": "grep", "href": "/detail/base/grep.html", "texttag": "grep" },
-  { "id": "grepl", "href": "/detail/base/grepl.html", "texttag": "grepl" },
+  { "id": "grep", "href": "/detail/base/grep.html", "funcname": "grep" },
+  { "id": "grepl", "href": "/detail/base/grepl.html", "funcname": "grepl" },
   {
     "id": "grepRaw",
     "href": "/detail/base/grepRaw.html",
-    "texttag": "grepRaw"
+    "funcname": "grepRaw"
   },
   {
     "id": "grouping",
     "href": "/detail/base/grouping.html",
-    "texttag": "grouping"
+    "funcname": "grouping"
   },
-  { "id": "gsub", "href": "/detail/base/gsub.html", "texttag": "gsub" },
-  { "id": "gzcon", "href": "/detail/base/gzcon.html", "texttag": "gzcon" },
-  { "id": "gzfile", "href": "/detail/base/gzfile.html", "texttag": "gzfile" },
-  { "id": "I", "href": "/detail/base/I.html", "texttag": "I" },
-  { "id": "iconv", "href": "/detail/base/iconv.html", "texttag": "iconv" },
+  { "id": "gsub", "href": "/detail/base/gsub.html", "funcname": "gsub" },
+  { "id": "gzcon", "href": "/detail/base/gzcon.html", "funcname": "gzcon" },
+  { "id": "gzfile", "href": "/detail/base/gzfile.html", "funcname": "gzfile" },
+  { "id": "I", "href": "/detail/base/I.html", "funcname": "I" },
+  { "id": "iconv", "href": "/detail/base/iconv.html", "funcname": "iconv" },
   {
     "id": "iconvlist",
     "href": "/detail/base/iconvlist.html",
-    "texttag": "iconvlist"
+    "funcname": "iconvlist"
   },
   {
     "id": "icuGetCollate",
     "href": "/detail/base/icuGetCollate.html",
-    "texttag": "icuGetCollate"
+    "funcname": "icuGetCollate"
   },
   {
     "id": "icuSetCollate",
     "href": "/detail/base/icuSetCollate.html",
-    "texttag": "icuSetCollate"
+    "funcname": "icuSetCollate"
   },
   {
     "id": "identical",
     "href": "/detail/base/identical.html",
-    "texttag": "identical"
+    "funcname": "identical"
   },
   {
     "id": "identity",
     "href": "/detail/base/identity.html",
-    "texttag": "identity"
+    "funcname": "identity"
   },
-  { "id": "if", "href": "/detail/base/if.html", "texttag": "if" },
-  { "id": "ifelse", "href": "/detail/base/ifelse.html", "texttag": "ifelse" },
-  { "id": "Im", "href": "/detail/base/Im.html", "texttag": "Im" },
+  { "id": "if", "href": "/detail/base/if.html", "funcname": "if" },
+  { "id": "ifelse", "href": "/detail/base/ifelse.html", "funcname": "ifelse" },
+  { "id": "Im", "href": "/detail/base/Im.html", "funcname": "Im" },
   {
     "id": "importIntoEnv",
     "href": "/detail/base/importIntoEnv.html",
-    "texttag": "importIntoEnv"
+    "funcname": "importIntoEnv"
   },
   {
     "id": "infoRDS",
     "href": "/detail/base/infoRDS.html",
-    "texttag": "infoRDS"
+    "funcname": "infoRDS"
   },
   {
     "id": "inherits",
     "href": "/detail/base/inherits.html",
-    "texttag": "inherits"
+    "funcname": "inherits"
   },
   {
     "id": "integer",
     "href": "/detail/base/integer.html",
-    "texttag": "integer"
+    "funcname": "integer"
   },
   {
     "id": "interaction",
     "href": "/detail/base/interaction.html",
-    "texttag": "interaction"
+    "funcname": "interaction"
   },
   {
     "id": "interactive",
     "href": "/detail/base/interactive.html",
-    "texttag": "interactive"
+    "funcname": "interactive"
   },
   {
     "id": "intersect",
     "href": "/detail/base/intersect.html",
-    "texttag": "intersect"
+    "funcname": "intersect"
   },
   {
     "id": "intToBits",
     "href": "/detail/base/intToBits.html",
-    "texttag": "intToBits"
+    "funcname": "intToBits"
   },
   {
     "id": "intToUtf8",
     "href": "/detail/base/intToUtf8.html",
-    "texttag": "intToUtf8"
+    "funcname": "intToUtf8"
   },
   {
     "id": "inverse.rle",
     "href": "/detail/base/inverserle.html",
-    "texttag": "inverse.rle"
+    "funcname": "inverse.rle"
   },
   {
     "id": "invisible",
     "href": "/detail/base/invisible.html",
-    "texttag": "invisible"
+    "funcname": "invisible"
   },
   {
     "id": "invokeRestart",
     "href": "/detail/base/invokeRestart.html",
-    "texttag": "invokeRestart"
+    "funcname": "invokeRestart"
   },
   {
     "id": "invokeRestartInteractively",
     "href": "/detail/base/invokeRestartInteractively.html",
-    "texttag": "invokeRestartInteractively"
+    "funcname": "invokeRestartInteractively"
   },
   {
     "id": "is.array",
     "href": "/detail/base/isarray.html",
-    "texttag": "is.array"
+    "funcname": "is.array"
   },
   {
     "id": "is.atomic",
     "href": "/detail/base/isatomic.html",
-    "texttag": "is.atomic"
+    "funcname": "is.atomic"
   },
-  { "id": "is.call", "href": "/detail/base/iscall.html", "texttag": "is.call" },
+  {
+    "id": "is.call",
+    "href": "/detail/base/iscall.html",
+    "funcname": "is.call"
+  },
   {
     "id": "is.character",
     "href": "/detail/base/ischaracter.html",
-    "texttag": "is.character"
+    "funcname": "is.character"
   },
   {
     "id": "is.complex",
     "href": "/detail/base/iscomplex.html",
-    "texttag": "is.complex"
+    "funcname": "is.complex"
   },
   {
     "id": "is.data.frame",
     "href": "/detail/base/isdata.frame.html",
-    "texttag": "is.data.frame"
+    "funcname": "is.data.frame"
   },
   {
     "id": "is.double",
     "href": "/detail/base/isdouble.html",
-    "texttag": "is.double"
+    "funcname": "is.double"
   },
   {
     "id": "is.element",
     "href": "/detail/base/iselement.html",
-    "texttag": "is.element"
+    "funcname": "is.element"
   },
   {
     "id": "is.environment",
     "href": "/detail/base/isenvironment.html",
-    "texttag": "is.environment"
+    "funcname": "is.environment"
   },
   {
     "id": "is.expression",
     "href": "/detail/base/isexpression.html",
-    "texttag": "is.expression"
+    "funcname": "is.expression"
   },
   {
     "id": "is.factor",
     "href": "/detail/base/isfactor.html",
-    "texttag": "is.factor"
+    "funcname": "is.factor"
   },
   {
     "id": "is.finite",
     "href": "/detail/base/isfinite.html",
-    "texttag": "is.finite"
+    "funcname": "is.finite"
   },
   {
     "id": "is.function",
     "href": "/detail/base/isfunction.html",
-    "texttag": "is.function"
+    "funcname": "is.function"
   },
   {
     "id": "is.infinite",
     "href": "/detail/base/isinfinite.html",
-    "texttag": "is.infinite"
+    "funcname": "is.infinite"
   },
   {
     "id": "is.integer",
     "href": "/detail/base/isinteger.html",
-    "texttag": "is.integer"
+    "funcname": "is.integer"
   },
   {
     "id": "is.language",
     "href": "/detail/base/islanguage.html",
-    "texttag": "is.language"
+    "funcname": "is.language"
   },
-  { "id": "is.list", "href": "/detail/base/islist.html", "texttag": "is.list" },
+  {
+    "id": "is.list",
+    "href": "/detail/base/islist.html",
+    "funcname": "is.list"
+  },
   {
     "id": "is.loaded",
     "href": "/detail/base/isloaded.html",
-    "texttag": "is.loaded"
+    "funcname": "is.loaded"
   },
   {
     "id": "is.logical",
     "href": "/detail/base/islogical.html",
-    "texttag": "is.logical"
+    "funcname": "is.logical"
   },
   {
     "id": "is.matrix",
     "href": "/detail/base/ismatrix.html",
-    "texttag": "is.matrix"
+    "funcname": "is.matrix"
   },
-  { "id": "is.na", "href": "/detail/base/isna.html", "texttag": "is.na" },
+  { "id": "is.na", "href": "/detail/base/isna.html", "funcname": "is.na" },
   {
     "id": "is.na.data.frame",
     "href": "/detail/base/isna.data.frame.html",
-    "texttag": "is.na.data.frame"
+    "funcname": "is.na.data.frame"
   },
   {
     "id": "is.na.numeric_version",
     "href": "/detail/base/isna.numeric_version.html",
-    "texttag": "is.na.numeric_version"
+    "funcname": "is.na.numeric_version"
   },
   {
     "id": "is.na.POSIXlt",
     "href": "/detail/base/isna.POSIXlt.html",
-    "texttag": "is.na.POSIXlt"
+    "funcname": "is.na.POSIXlt"
   },
-  { "id": "is.na_-", "href": "/detail/base/isna_-.html", "texttag": "is.na<-" },
   {
-    "id": "is.na_-.default",
+    "id": "is.na<-",
+    "href": "/detail/base/isna_-.html",
+    "funcname": "is.na<-"
+  },
+  {
+    "id": "is.na<-.default",
     "href": "/detail/base/isna_-.default.html",
-    "texttag": "is.na<-.default"
+    "funcname": "is.na<-.default"
   },
   {
-    "id": "is.na_-.factor",
+    "id": "is.na<-.factor",
     "href": "/detail/base/isna_-.factor.html",
-    "texttag": "is.na<-.factor"
+    "funcname": "is.na<-.factor"
   },
   {
-    "id": "is.na_-.numeric_version",
+    "id": "is.na<-.numeric_version",
     "href": "/detail/base/isna_-.numeric_version.html",
-    "texttag": "is.na<-.numeric_version"
+    "funcname": "is.na<-.numeric_version"
   },
-  { "id": "is.name", "href": "/detail/base/isname.html", "texttag": "is.name" },
-  { "id": "is.nan", "href": "/detail/base/isnan.html", "texttag": "is.nan" },
-  { "id": "is.null", "href": "/detail/base/isnull.html", "texttag": "is.null" },
+  {
+    "id": "is.name",
+    "href": "/detail/base/isname.html",
+    "funcname": "is.name"
+  },
+  { "id": "is.nan", "href": "/detail/base/isnan.html", "funcname": "is.nan" },
+  {
+    "id": "is.null",
+    "href": "/detail/base/isnull.html",
+    "funcname": "is.null"
+  },
   {
     "id": "is.numeric",
     "href": "/detail/base/isnumeric.html",
-    "texttag": "is.numeric"
+    "funcname": "is.numeric"
   },
   {
     "id": "is.numeric_version",
     "href": "/detail/base/isnumeric_version.html",
-    "texttag": "is.numeric_version"
+    "funcname": "is.numeric_version"
   },
   {
     "id": "is.numeric.Date",
     "href": "/detail/base/isnumeric.Date.html",
-    "texttag": "is.numeric.Date"
+    "funcname": "is.numeric.Date"
   },
   {
     "id": "is.numeric.difftime",
     "href": "/detail/base/isnumeric.difftime.html",
-    "texttag": "is.numeric.difftime"
+    "funcname": "is.numeric.difftime"
   },
   {
     "id": "is.numeric.POSIXt",
     "href": "/detail/base/isnumeric.POSIXt.html",
-    "texttag": "is.numeric.POSIXt"
+    "funcname": "is.numeric.POSIXt"
   },
   {
     "id": "is.object",
     "href": "/detail/base/isobject.html",
-    "texttag": "is.object"
+    "funcname": "is.object"
   },
   {
     "id": "is.ordered",
     "href": "/detail/base/isordered.html",
-    "texttag": "is.ordered"
+    "funcname": "is.ordered"
   },
   {
     "id": "is.package_version",
     "href": "/detail/base/ispackage_version.html",
-    "texttag": "is.package_version"
+    "funcname": "is.package_version"
   },
   {
     "id": "is.pairlist",
     "href": "/detail/base/ispairlist.html",
-    "texttag": "is.pairlist"
+    "funcname": "is.pairlist"
   },
   {
     "id": "is.primitive",
     "href": "/detail/base/isprimitive.html",
-    "texttag": "is.primitive"
+    "funcname": "is.primitive"
   },
-  { "id": "is.qr", "href": "/detail/base/isqr.html", "texttag": "is.qr" },
-  { "id": "is.R", "href": "/detail/base/isR.html", "texttag": "is.R" },
-  { "id": "is.raw", "href": "/detail/base/israw.html", "texttag": "is.raw" },
+  { "id": "is.qr", "href": "/detail/base/isqr.html", "funcname": "is.qr" },
+  { "id": "is.R", "href": "/detail/base/isR.html", "funcname": "is.R" },
+  { "id": "is.raw", "href": "/detail/base/israw.html", "funcname": "is.raw" },
   {
     "id": "is.recursive",
     "href": "/detail/base/isrecursive.html",
-    "texttag": "is.recursive"
+    "funcname": "is.recursive"
   },
   {
     "id": "is.single",
     "href": "/detail/base/issingle.html",
-    "texttag": "is.single"
+    "funcname": "is.single"
   },
   {
     "id": "is.symbol",
     "href": "/detail/base/issymbol.html",
-    "texttag": "is.symbol"
+    "funcname": "is.symbol"
   },
   {
     "id": "is.table",
     "href": "/detail/base/istable.html",
-    "texttag": "is.table"
+    "funcname": "is.table"
   },
   {
     "id": "is.unsorted",
     "href": "/detail/base/isunsorted.html",
-    "texttag": "is.unsorted"
+    "funcname": "is.unsorted"
   },
   {
     "id": "is.vector",
     "href": "/detail/base/isvector.html",
-    "texttag": "is.vector"
+    "funcname": "is.vector"
   },
-  { "id": "isa", "href": "/detail/base/isa.html", "texttag": "isa" },
-  { "id": "isatty", "href": "/detail/base/isatty.html", "texttag": "isatty" },
+  { "id": "isa", "href": "/detail/base/isa.html", "funcname": "isa" },
+  { "id": "isatty", "href": "/detail/base/isatty.html", "funcname": "isatty" },
   {
     "id": "isBaseNamespace",
     "href": "/detail/base/isBaseNamespace.html",
-    "texttag": "isBaseNamespace"
+    "funcname": "isBaseNamespace"
   },
   {
     "id": "isdebugged",
     "href": "/detail/base/isdebugged.html",
-    "texttag": "isdebugged"
+    "funcname": "isdebugged"
   },
   {
     "id": "isFALSE",
     "href": "/detail/base/isFALSE.html",
-    "texttag": "isFALSE"
+    "funcname": "isFALSE"
   },
   {
     "id": "isIncomplete",
     "href": "/detail/base/isIncomplete.html",
-    "texttag": "isIncomplete"
+    "funcname": "isIncomplete"
   },
   {
     "id": "isNamespace",
     "href": "/detail/base/isNamespace.html",
-    "texttag": "isNamespace"
+    "funcname": "isNamespace"
   },
   {
     "id": "isNamespaceLoaded",
     "href": "/detail/base/isNamespaceLoaded.html",
-    "texttag": "isNamespaceLoaded"
+    "funcname": "isNamespaceLoaded"
   },
   {
     "id": "ISOdate",
     "href": "/detail/base/ISOdate.html",
-    "texttag": "ISOdate"
+    "funcname": "ISOdate"
   },
   {
     "id": "ISOdatetime",
     "href": "/detail/base/ISOdatetime.html",
-    "texttag": "ISOdatetime"
+    "funcname": "ISOdatetime"
   },
-  { "id": "isOpen", "href": "/detail/base/isOpen.html", "texttag": "isOpen" },
+  { "id": "isOpen", "href": "/detail/base/isOpen.html", "funcname": "isOpen" },
   {
     "id": "isRestart",
     "href": "/detail/base/isRestart.html",
-    "texttag": "isRestart"
+    "funcname": "isRestart"
   },
-  { "id": "isS4", "href": "/detail/base/isS4.html", "texttag": "isS4" },
+  { "id": "isS4", "href": "/detail/base/isS4.html", "funcname": "isS4" },
   {
     "id": "isSeekable",
     "href": "/detail/base/isSeekable.html",
-    "texttag": "isSeekable"
+    "funcname": "isSeekable"
   },
   {
     "id": "isSymmetric",
     "href": "/detail/base/isSymmetric.html",
-    "texttag": "isSymmetric"
+    "funcname": "isSymmetric"
   },
   {
     "id": "isSymmetric.matrix",
     "href": "/detail/base/isSymmetricmatrix.html",
-    "texttag": "isSymmetric.matrix"
+    "funcname": "isSymmetric.matrix"
   },
-  { "id": "isTRUE", "href": "/detail/base/isTRUE.html", "texttag": "isTRUE" },
-  { "id": "jitter", "href": "/detail/base/jitter.html", "texttag": "jitter" },
-  { "id": "julian", "href": "/detail/base/julian.html", "texttag": "julian" },
+  { "id": "isTRUE", "href": "/detail/base/isTRUE.html", "funcname": "isTRUE" },
+  { "id": "jitter", "href": "/detail/base/jitter.html", "funcname": "jitter" },
+  { "id": "julian", "href": "/detail/base/julian.html", "funcname": "julian" },
   {
     "id": "julian.Date",
     "href": "/detail/base/julianDate.html",
-    "texttag": "julian.Date"
+    "funcname": "julian.Date"
   },
   {
     "id": "julian.POSIXt",
     "href": "/detail/base/julianPOSIXt.html",
-    "texttag": "julian.POSIXt"
+    "funcname": "julian.POSIXt"
   },
-  { "id": "kappa", "href": "/detail/base/kappa.html", "texttag": "kappa" },
+  { "id": "kappa", "href": "/detail/base/kappa.html", "funcname": "kappa" },
   {
     "id": "kappa.default",
     "href": "/detail/base/kappadefault.html",
-    "texttag": "kappa.default"
+    "funcname": "kappa.default"
   },
   {
     "id": "kappa.lm",
     "href": "/detail/base/kappalm.html",
-    "texttag": "kappa.lm"
+    "funcname": "kappa.lm"
   },
   {
     "id": "kappa.qr",
     "href": "/detail/base/kappaqr.html",
-    "texttag": "kappa.qr"
+    "funcname": "kappa.qr"
   },
   {
     "id": "kronecker",
     "href": "/detail/base/kronecker.html",
-    "texttag": "kronecker"
+    "funcname": "kronecker"
   },
   {
     "id": "l10n_info",
     "href": "/detail/base/l10n_info.html",
-    "texttag": "l10n_info"
+    "funcname": "l10n_info"
   },
   {
     "id": "La_library",
     "href": "/detail/base/La_library.html",
-    "texttag": "La_library"
+    "funcname": "La_library"
   },
   {
     "id": "La_version",
     "href": "/detail/base/La_version.html",
-    "texttag": "La_version"
+    "funcname": "La_version"
   },
-  { "id": "La.svd", "href": "/detail/base/Lasvd.html", "texttag": "La.svd" },
-  { "id": "labels", "href": "/detail/base/labels.html", "texttag": "labels" },
+  { "id": "La.svd", "href": "/detail/base/Lasvd.html", "funcname": "La.svd" },
+  { "id": "labels", "href": "/detail/base/labels.html", "funcname": "labels" },
   {
     "id": "labels.default",
     "href": "/detail/base/labelsdefault.html",
-    "texttag": "labels.default"
+    "funcname": "labels.default"
   },
-  { "id": "lapply", "href": "/detail/base/lapply.html", "texttag": "lapply" },
+  { "id": "lapply", "href": "/detail/base/lapply.html", "funcname": "lapply" },
   {
     "id": "last.warning",
     "href": "/detail/base/lastwarning.html",
-    "texttag": "last.warning"
+    "funcname": "last.warning"
   },
   {
     "id": "lazyLoad",
     "href": "/detail/base/lazyLoad.html",
-    "texttag": "lazyLoad"
+    "funcname": "lazyLoad"
   },
   {
     "id": "lazyLoadDBexec",
     "href": "/detail/base/lazyLoadDBexec.html",
-    "texttag": "lazyLoadDBexec"
+    "funcname": "lazyLoadDBexec"
   },
   {
     "id": "lazyLoadDBfetch",
     "href": "/detail/base/lazyLoadDBfetch.html",
-    "texttag": "lazyLoadDBfetch"
+    "funcname": "lazyLoadDBfetch"
   },
-  { "id": "lbeta", "href": "/detail/base/lbeta.html", "texttag": "lbeta" },
+  { "id": "lbeta", "href": "/detail/base/lbeta.html", "funcname": "lbeta" },
   {
     "id": "lchoose",
     "href": "/detail/base/lchoose.html",
-    "texttag": "lchoose"
+    "funcname": "lchoose"
   },
-  { "id": "length", "href": "/detail/base/length.html", "texttag": "length" },
+  { "id": "length", "href": "/detail/base/length.html", "funcname": "length" },
   {
     "id": "length.POSIXlt",
     "href": "/detail/base/lengthPOSIXlt.html",
-    "texttag": "length.POSIXlt"
+    "funcname": "length.POSIXlt"
   },
   {
-    "id": "length_-",
+    "id": "length<-",
     "href": "/detail/base/length_-.html",
-    "texttag": "length<-"
+    "funcname": "length<-"
   },
   {
-    "id": "length_-.Date",
+    "id": "length<-.Date",
     "href": "/detail/base/length_-Date.html",
-    "texttag": "length<-.Date"
+    "funcname": "length<-.Date"
   },
   {
-    "id": "length_-.difftime",
+    "id": "length<-.difftime",
     "href": "/detail/base/length_-difftime.html",
-    "texttag": "length<-.difftime"
+    "funcname": "length<-.difftime"
   },
   {
-    "id": "length_-.factor",
+    "id": "length<-.factor",
     "href": "/detail/base/length_-factor.html",
-    "texttag": "length<-.factor"
+    "funcname": "length<-.factor"
   },
   {
-    "id": "length_-.POSIXct",
+    "id": "length<-.POSIXct",
     "href": "/detail/base/length_-POSIXct.html",
-    "texttag": "length<-.POSIXct"
+    "funcname": "length<-.POSIXct"
   },
   {
-    "id": "length_-.POSIXlt",
+    "id": "length<-.POSIXlt",
     "href": "/detail/base/length_-POSIXlt.html",
-    "texttag": "length<-.POSIXlt"
+    "funcname": "length<-.POSIXlt"
   },
   {
     "id": "lengths",
     "href": "/detail/base/lengths.html",
-    "texttag": "lengths"
+    "funcname": "lengths"
   },
   {
     "id": "letters",
     "href": "/detail/base/letters.html",
-    "texttag": "letters"
+    "funcname": "letters"
   },
   {
     "id": "LETTERS",
     "href": "/detail/base/LETTERS.html",
-    "texttag": "LETTERS"
+    "funcname": "LETTERS"
   },
-  { "id": "levels", "href": "/detail/base/levels.html", "texttag": "levels" },
+  { "id": "levels", "href": "/detail/base/levels.html", "funcname": "levels" },
   {
     "id": "levels.default",
     "href": "/detail/base/levelsdefault.html",
-    "texttag": "levels.default"
+    "funcname": "levels.default"
   },
   {
-    "id": "levels_-",
+    "id": "levels<-",
     "href": "/detail/base/levels_-.html",
-    "texttag": "levels<-"
+    "funcname": "levels<-"
   },
   {
-    "id": "levels_-.factor",
+    "id": "levels<-.factor",
     "href": "/detail/base/levels_-factor.html",
-    "texttag": "levels<-.factor"
+    "funcname": "levels<-.factor"
   },
   {
     "id": "lfactorial",
     "href": "/detail/base/lfactorial.html",
-    "texttag": "lfactorial"
+    "funcname": "lfactorial"
   },
-  { "id": "lgamma", "href": "/detail/base/lgamma.html", "texttag": "lgamma" },
+  { "id": "lgamma", "href": "/detail/base/lgamma.html", "funcname": "lgamma" },
   {
     "id": "libcurlVersion",
     "href": "/detail/base/libcurlVersion.html",
-    "texttag": "libcurlVersion"
+    "funcname": "libcurlVersion"
   },
   {
     "id": "library",
     "href": "/detail/base/library.html",
-    "texttag": "library"
+    "funcname": "library"
   },
   {
     "id": "library.dynam",
     "href": "/detail/base/librarydynam.html",
-    "texttag": "library.dynam"
+    "funcname": "library.dynam"
   },
   {
     "id": "library.dynam.unload",
     "href": "/detail/base/librarydynam.unload.html",
-    "texttag": "library.dynam.unload"
+    "funcname": "library.dynam.unload"
   },
   {
     "id": "licence",
     "href": "/detail/base/licence.html",
-    "texttag": "licence"
+    "funcname": "licence"
   },
   {
     "id": "license",
     "href": "/detail/base/license.html",
-    "texttag": "license"
+    "funcname": "license"
   },
-  { "id": "list", "href": "/detail/base/list.html", "texttag": "list" },
+  { "id": "list", "href": "/detail/base/list.html", "funcname": "list" },
   {
     "id": "list.dirs",
     "href": "/detail/base/listdirs.html",
-    "texttag": "list.dirs"
+    "funcname": "list.dirs"
   },
   {
     "id": "list.files",
     "href": "/detail/base/listfiles.html",
-    "texttag": "list.files"
+    "funcname": "list.files"
   },
   {
     "id": "list2DF",
     "href": "/detail/base/list2DF.html",
-    "texttag": "list2DF"
+    "funcname": "list2DF"
   },
   {
     "id": "list2env",
     "href": "/detail/base/list2env.html",
-    "texttag": "list2env"
+    "funcname": "list2env"
   },
-  { "id": "load", "href": "/detail/base/load.html", "texttag": "load" },
+  { "id": "load", "href": "/detail/base/load.html", "funcname": "load" },
   {
     "id": "loadedNamespaces",
     "href": "/detail/base/loadedNamespaces.html",
-    "texttag": "loadedNamespaces"
+    "funcname": "loadedNamespaces"
   },
   {
     "id": "loadingNamespaceInfo",
     "href": "/detail/base/loadingNamespaceInfo.html",
-    "texttag": "loadingNamespaceInfo"
+    "funcname": "loadingNamespaceInfo"
   },
   {
     "id": "loadNamespace",
     "href": "/detail/base/loadNamespace.html",
-    "texttag": "loadNamespace"
+    "funcname": "loadNamespace"
   },
-  { "id": "local", "href": "/detail/base/local.html", "texttag": "local" },
+  { "id": "local", "href": "/detail/base/local.html", "funcname": "local" },
   {
     "id": "lockBinding",
     "href": "/detail/base/lockBinding.html",
-    "texttag": "lockBinding"
+    "funcname": "lockBinding"
   },
   {
     "id": "lockEnvironment",
     "href": "/detail/base/lockEnvironment.html",
-    "texttag": "lockEnvironment"
+    "funcname": "lockEnvironment"
   },
-  { "id": "log", "href": "/detail/base/log.html", "texttag": "log" },
-  { "id": "log10", "href": "/detail/base/log10.html", "texttag": "log10" },
-  { "id": "log1p", "href": "/detail/base/log1p.html", "texttag": "log1p" },
-  { "id": "log2", "href": "/detail/base/log2.html", "texttag": "log2" },
-  { "id": "logb", "href": "/detail/base/logb.html", "texttag": "logb" },
+  { "id": "log", "href": "/detail/base/log.html", "funcname": "log" },
+  { "id": "log10", "href": "/detail/base/log10.html", "funcname": "log10" },
+  { "id": "log1p", "href": "/detail/base/log1p.html", "funcname": "log1p" },
+  { "id": "log2", "href": "/detail/base/log2.html", "funcname": "log2" },
+  { "id": "logb", "href": "/detail/base/logb.html", "funcname": "logb" },
   {
     "id": "logical",
     "href": "/detail/base/logical.html",
-    "texttag": "logical"
+    "funcname": "logical"
   },
   {
     "id": "lower.tri",
     "href": "/detail/base/lowertri.html",
-    "texttag": "lower.tri"
+    "funcname": "lower.tri"
   },
-  { "id": "ls", "href": "/detail/base/ls.html", "texttag": "ls" },
+  { "id": "ls", "href": "/detail/base/ls.html", "funcname": "ls" },
   {
     "id": "make.names",
     "href": "/detail/base/makenames.html",
-    "texttag": "make.names"
+    "funcname": "make.names"
   },
   {
     "id": "make.unique",
     "href": "/detail/base/makeunique.html",
-    "texttag": "make.unique"
+    "funcname": "make.unique"
   },
   {
     "id": "makeActiveBinding",
     "href": "/detail/base/makeActiveBinding.html",
-    "texttag": "makeActiveBinding"
+    "funcname": "makeActiveBinding"
   },
-  { "id": "Map", "href": "/detail/base/Map.html", "texttag": "Map" },
-  { "id": "mapply", "href": "/detail/base/mapply.html", "texttag": "mapply" },
+  { "id": "Map", "href": "/detail/base/Map.html", "funcname": "Map" },
+  { "id": "mapply", "href": "/detail/base/mapply.html", "funcname": "mapply" },
   {
     "id": "margin.table",
     "href": "/detail/base/margintable.html",
-    "texttag": "margin.table"
+    "funcname": "margin.table"
   },
   {
     "id": "marginSums",
     "href": "/detail/base/marginSums.html",
-    "texttag": "marginSums"
+    "funcname": "marginSums"
   },
   {
     "id": "mat.or.vec",
     "href": "/detail/base/mator.vec.html",
-    "texttag": "mat.or.vec"
+    "funcname": "mat.or.vec"
   },
-  { "id": "match", "href": "/detail/base/match.html", "texttag": "match" },
+  { "id": "match", "href": "/detail/base/match.html", "funcname": "match" },
   {
     "id": "match.arg",
     "href": "/detail/base/matcharg.html",
-    "texttag": "match.arg"
+    "funcname": "match.arg"
   },
   {
     "id": "match.call",
     "href": "/detail/base/matchcall.html",
-    "texttag": "match.call"
+    "funcname": "match.call"
   },
   {
     "id": "match.fun",
     "href": "/detail/base/matchfun.html",
-    "texttag": "match.fun"
+    "funcname": "match.fun"
   },
   {
     "id": "Math.data.frame",
     "href": "/detail/base/Mathdata.frame.html",
-    "texttag": "Math.data.frame"
+    "funcname": "Math.data.frame"
   },
   {
     "id": "Math.Date",
     "href": "/detail/base/MathDate.html",
-    "texttag": "Math.Date"
+    "funcname": "Math.Date"
   },
   {
     "id": "Math.difftime",
     "href": "/detail/base/Mathdifftime.html",
-    "texttag": "Math.difftime"
+    "funcname": "Math.difftime"
   },
   {
     "id": "Math.factor",
     "href": "/detail/base/Mathfactor.html",
-    "texttag": "Math.factor"
+    "funcname": "Math.factor"
   },
   {
     "id": "Math.POSIXt",
     "href": "/detail/base/MathPOSIXt.html",
-    "texttag": "Math.POSIXt"
+    "funcname": "Math.POSIXt"
   },
-  { "id": "matrix", "href": "/detail/base/matrix.html", "texttag": "matrix" },
-  { "id": "max", "href": "/detail/base/max.html", "texttag": "max" },
-  { "id": "max.col", "href": "/detail/base/maxcol.html", "texttag": "max.col" },
-  { "id": "mean", "href": "/detail/base/mean.html", "texttag": "mean" },
+  { "id": "matrix", "href": "/detail/base/matrix.html", "funcname": "matrix" },
+  { "id": "max", "href": "/detail/base/max.html", "funcname": "max" },
+  {
+    "id": "max.col",
+    "href": "/detail/base/maxcol.html",
+    "funcname": "max.col"
+  },
+  { "id": "mean", "href": "/detail/base/mean.html", "funcname": "mean" },
   {
     "id": "mean.Date",
     "href": "/detail/base/meanDate.html",
-    "texttag": "mean.Date"
+    "funcname": "mean.Date"
   },
   {
     "id": "mean.default",
     "href": "/detail/base/meandefault.html",
-    "texttag": "mean.default"
+    "funcname": "mean.default"
   },
   {
     "id": "mean.difftime",
     "href": "/detail/base/meandifftime.html",
-    "texttag": "mean.difftime"
+    "funcname": "mean.difftime"
   },
   {
     "id": "mean.POSIXct",
     "href": "/detail/base/meanPOSIXct.html",
-    "texttag": "mean.POSIXct"
+    "funcname": "mean.POSIXct"
   },
   {
     "id": "mean.POSIXlt",
     "href": "/detail/base/meanPOSIXlt.html",
-    "texttag": "mean.POSIXlt"
+    "funcname": "mean.POSIXlt"
   },
   {
     "id": "mem.maxNSize",
     "href": "/detail/base/memmaxNSize.html",
-    "texttag": "mem.maxNSize"
+    "funcname": "mem.maxNSize"
   },
   {
     "id": "mem.maxVSize",
     "href": "/detail/base/memmaxVSize.html",
-    "texttag": "mem.maxVSize"
+    "funcname": "mem.maxVSize"
   },
   {
     "id": "memCompress",
     "href": "/detail/base/memCompress.html",
-    "texttag": "memCompress"
+    "funcname": "memCompress"
   },
   {
     "id": "memDecompress",
     "href": "/detail/base/memDecompress.html",
-    "texttag": "memDecompress"
+    "funcname": "memDecompress"
   },
   {
     "id": "memory.profile",
     "href": "/detail/base/memoryprofile.html",
-    "texttag": "memory.profile"
+    "funcname": "memory.profile"
   },
-  { "id": "merge", "href": "/detail/base/merge.html", "texttag": "merge" },
+  { "id": "merge", "href": "/detail/base/merge.html", "funcname": "merge" },
   {
     "id": "merge.data.frame",
     "href": "/detail/base/mergedata.frame.html",
-    "texttag": "merge.data.frame"
+    "funcname": "merge.data.frame"
   },
   {
     "id": "merge.default",
     "href": "/detail/base/mergedefault.html",
-    "texttag": "merge.default"
+    "funcname": "merge.default"
   },
   {
     "id": "message",
     "href": "/detail/base/message.html",
-    "texttag": "message"
+    "funcname": "message"
   },
-  { "id": "mget", "href": "/detail/base/mget.html", "texttag": "mget" },
-  { "id": "min", "href": "/detail/base/min.html", "texttag": "min" },
+  { "id": "mget", "href": "/detail/base/mget.html", "funcname": "mget" },
+  { "id": "min", "href": "/detail/base/min.html", "funcname": "min" },
   {
     "id": "missing",
     "href": "/detail/base/missing.html",
-    "texttag": "missing"
+    "funcname": "missing"
   },
-  { "id": "Mod", "href": "/detail/base/Mod.html", "texttag": "Mod" },
-  { "id": "mode", "href": "/detail/base/mode.html", "texttag": "mode" },
-  { "id": "mode_-", "href": "/detail/base/mode_-.html", "texttag": "mode<-" },
+  { "id": "Mod", "href": "/detail/base/Mod.html", "funcname": "Mod" },
+  { "id": "mode", "href": "/detail/base/mode.html", "funcname": "mode" },
+  { "id": "mode<-", "href": "/detail/base/mode_-.html", "funcname": "mode<-" },
   {
     "id": "month.abb",
     "href": "/detail/base/monthabb.html",
-    "texttag": "month.abb"
+    "funcname": "month.abb"
   },
   {
     "id": "month.name",
     "href": "/detail/base/monthname.html",
-    "texttag": "month.name"
+    "funcname": "month.name"
   },
-  { "id": "months", "href": "/detail/base/months.html", "texttag": "months" },
+  { "id": "months", "href": "/detail/base/months.html", "funcname": "months" },
   {
     "id": "months.Date",
     "href": "/detail/base/monthsDate.html",
-    "texttag": "months.Date"
+    "funcname": "months.Date"
   },
   {
     "id": "months.POSIXt",
     "href": "/detail/base/monthsPOSIXt.html",
-    "texttag": "months.POSIXt"
+    "funcname": "months.POSIXt"
   },
   {
-    "id": "mostattributes_-",
+    "id": "mostattributes<-",
     "href": "/detail/base/mostattributes_-.html",
-    "texttag": "mostattributes<-"
+    "funcname": "mostattributes<-"
   },
-  { "id": "names", "href": "/detail/base/names.html", "texttag": "names" },
+  { "id": "names", "href": "/detail/base/names.html", "funcname": "names" },
   {
     "id": "names.POSIXlt",
     "href": "/detail/base/namesPOSIXlt.html",
-    "texttag": "names.POSIXlt"
+    "funcname": "names.POSIXlt"
   },
   {
-    "id": "names_-",
+    "id": "names<-",
     "href": "/detail/base/names_-.html",
-    "texttag": "names<-"
+    "funcname": "names<-"
   },
   {
-    "id": "names_-.POSIXlt",
+    "id": "names<-.POSIXlt",
     "href": "/detail/base/names_-POSIXlt.html",
-    "texttag": "names<-.POSIXlt"
+    "funcname": "names<-.POSIXlt"
   },
   {
     "id": "namespaceExport",
     "href": "/detail/base/namespaceExport.html",
-    "texttag": "namespaceExport"
+    "funcname": "namespaceExport"
   },
   {
     "id": "namespaceImport",
     "href": "/detail/base/namespaceImport.html",
-    "texttag": "namespaceImport"
+    "funcname": "namespaceImport"
   },
   {
     "id": "namespaceImportClasses",
     "href": "/detail/base/namespaceImportClasses.html",
-    "texttag": "namespaceImportClasses"
+    "funcname": "namespaceImportClasses"
   },
   {
     "id": "namespaceImportFrom",
     "href": "/detail/base/namespaceImportFrom.html",
-    "texttag": "namespaceImportFrom"
+    "funcname": "namespaceImportFrom"
   },
   {
     "id": "namespaceImportMethods",
     "href": "/detail/base/namespaceImportMethods.html",
-    "texttag": "namespaceImportMethods"
+    "funcname": "namespaceImportMethods"
   },
-  { "id": "nargs", "href": "/detail/base/nargs.html", "texttag": "nargs" },
-  { "id": "nchar", "href": "/detail/base/nchar.html", "texttag": "nchar" },
-  { "id": "ncol", "href": "/detail/base/ncol.html", "texttag": "ncol" },
-  { "id": "NCOL", "href": "/detail/base/NCOL.html", "texttag": "NCOL" },
-  { "id": "Negate", "href": "/detail/base/Negate.html", "texttag": "Negate" },
-  { "id": "new.env", "href": "/detail/base/newenv.html", "texttag": "new.env" },
-  { "id": "next", "href": "/detail/base/next.html", "texttag": "next" },
+  { "id": "nargs", "href": "/detail/base/nargs.html", "funcname": "nargs" },
+  { "id": "nchar", "href": "/detail/base/nchar.html", "funcname": "nchar" },
+  { "id": "ncol", "href": "/detail/base/ncol.html", "funcname": "ncol" },
+  { "id": "NCOL", "href": "/detail/base/NCOL.html", "funcname": "NCOL" },
+  { "id": "Negate", "href": "/detail/base/Negate.html", "funcname": "Negate" },
+  {
+    "id": "new.env",
+    "href": "/detail/base/newenv.html",
+    "funcname": "new.env"
+  },
+  { "id": "next", "href": "/detail/base/next.html", "funcname": "next" },
   {
     "id": "NextMethod",
     "href": "/detail/base/NextMethod.html",
-    "texttag": "NextMethod"
+    "funcname": "NextMethod"
   },
   {
     "id": "ngettext",
     "href": "/detail/base/ngettext.html",
-    "texttag": "ngettext"
+    "funcname": "ngettext"
   },
   {
     "id": "nlevels",
     "href": "/detail/base/nlevels.html",
-    "texttag": "nlevels"
+    "funcname": "nlevels"
   },
   {
     "id": "noquote",
     "href": "/detail/base/noquote.html",
-    "texttag": "noquote"
+    "funcname": "noquote"
   },
-  { "id": "norm", "href": "/detail/base/norm.html", "texttag": "norm" },
+  { "id": "norm", "href": "/detail/base/norm.html", "funcname": "norm" },
   {
     "id": "normalizePath",
     "href": "/detail/base/normalizePath.html",
-    "texttag": "normalizePath"
+    "funcname": "normalizePath"
   },
-  { "id": "nrow", "href": "/detail/base/nrow.html", "texttag": "nrow" },
-  { "id": "NROW", "href": "/detail/base/NROW.html", "texttag": "NROW" },
+  { "id": "nrow", "href": "/detail/base/nrow.html", "funcname": "nrow" },
+  { "id": "NROW", "href": "/detail/base/NROW.html", "funcname": "NROW" },
   {
     "id": "nullfile",
     "href": "/detail/base/nullfile.html",
-    "texttag": "nullfile"
+    "funcname": "nullfile"
   },
   {
     "id": "numeric",
     "href": "/detail/base/numeric.html",
-    "texttag": "numeric"
+    "funcname": "numeric"
   },
   {
     "id": "numeric_version",
     "href": "/detail/base/numeric_version.html",
-    "texttag": "numeric_version"
+    "funcname": "numeric_version"
   },
   {
     "id": "numToBits",
     "href": "/detail/base/numToBits.html",
-    "texttag": "numToBits"
+    "funcname": "numToBits"
   },
   {
     "id": "numToInts",
     "href": "/detail/base/numToInts.html",
-    "texttag": "numToInts"
+    "funcname": "numToInts"
   },
-  { "id": "nzchar", "href": "/detail/base/nzchar.html", "texttag": "nzchar" },
+  { "id": "nzchar", "href": "/detail/base/nzchar.html", "funcname": "nzchar" },
   {
     "id": "objects",
     "href": "/detail/base/objects.html",
-    "texttag": "objects"
+    "funcname": "objects"
   },
   {
     "id": "oldClass",
     "href": "/detail/base/oldClass.html",
-    "texttag": "oldClass"
+    "funcname": "oldClass"
   },
   {
-    "id": "oldClass_-",
+    "id": "oldClass<-",
     "href": "/detail/base/oldClass_-.html",
-    "texttag": "oldClass<-"
+    "funcname": "oldClass<-"
   },
   {
     "id": "OlsonNames",
     "href": "/detail/base/OlsonNames.html",
-    "texttag": "OlsonNames"
+    "funcname": "OlsonNames"
   },
-  { "id": "on.exit", "href": "/detail/base/onexit.html", "texttag": "on.exit" },
-  { "id": "open", "href": "/detail/base/open.html", "texttag": "open" },
+  {
+    "id": "on.exit",
+    "href": "/detail/base/onexit.html",
+    "funcname": "on.exit"
+  },
+  { "id": "open", "href": "/detail/base/open.html", "funcname": "open" },
   {
     "id": "open.connection",
     "href": "/detail/base/openconnection.html",
-    "texttag": "open.connection"
+    "funcname": "open.connection"
   },
   {
     "id": "open.srcfile",
     "href": "/detail/base/opensrcfile.html",
-    "texttag": "open.srcfile"
+    "funcname": "open.srcfile"
   },
   {
     "id": "open.srcfilealias",
     "href": "/detail/base/opensrcfilealias.html",
-    "texttag": "open.srcfilealias"
+    "funcname": "open.srcfilealias"
   },
   {
     "id": "open.srcfilecopy",
     "href": "/detail/base/opensrcfilecopy.html",
-    "texttag": "open.srcfilecopy"
+    "funcname": "open.srcfilecopy"
   },
   {
     "id": "Ops.data.frame",
     "href": "/detail/base/Opsdata.frame.html",
-    "texttag": "Ops.data.frame"
+    "funcname": "Ops.data.frame"
   },
   {
     "id": "Ops.Date",
     "href": "/detail/base/OpsDate.html",
-    "texttag": "Ops.Date"
+    "funcname": "Ops.Date"
   },
   {
     "id": "Ops.difftime",
     "href": "/detail/base/Opsdifftime.html",
-    "texttag": "Ops.difftime"
+    "funcname": "Ops.difftime"
   },
   {
     "id": "Ops.factor",
     "href": "/detail/base/Opsfactor.html",
-    "texttag": "Ops.factor"
+    "funcname": "Ops.factor"
   },
   {
     "id": "Ops.numeric_version",
     "href": "/detail/base/Opsnumeric_version.html",
-    "texttag": "Ops.numeric_version"
+    "funcname": "Ops.numeric_version"
   },
   {
     "id": "Ops.ordered",
     "href": "/detail/base/Opsordered.html",
-    "texttag": "Ops.ordered"
+    "funcname": "Ops.ordered"
   },
   {
     "id": "Ops.POSIXt",
     "href": "/detail/base/OpsPOSIXt.html",
-    "texttag": "Ops.POSIXt"
+    "funcname": "Ops.POSIXt"
   },
   {
     "id": "options",
     "href": "/detail/base/options.html",
-    "texttag": "options"
+    "funcname": "options"
   },
-  { "id": "order", "href": "/detail/base/order.html", "texttag": "order" },
+  { "id": "order", "href": "/detail/base/order.html", "funcname": "order" },
   {
     "id": "ordered",
     "href": "/detail/base/ordered.html",
-    "texttag": "ordered"
+    "funcname": "ordered"
   },
-  { "id": "outer", "href": "/detail/base/outer.html", "texttag": "outer" },
+  { "id": "outer", "href": "/detail/base/outer.html", "funcname": "outer" },
   {
     "id": "package_version",
     "href": "/detail/base/package_version.html",
-    "texttag": "package_version"
+    "funcname": "package_version"
   },
   {
     "id": "packageEvent",
     "href": "/detail/base/packageEvent.html",
-    "texttag": "packageEvent"
+    "funcname": "packageEvent"
   },
   {
     "id": "packageHasNamespace",
     "href": "/detail/base/packageHasNamespace.html",
-    "texttag": "packageHasNamespace"
+    "funcname": "packageHasNamespace"
   },
   {
     "id": "packageNotFoundError",
     "href": "/detail/base/packageNotFoundError.html",
-    "texttag": "packageNotFoundError"
+    "funcname": "packageNotFoundError"
   },
   {
     "id": "packageStartupMessage",
     "href": "/detail/base/packageStartupMessage.html",
-    "texttag": "packageStartupMessage"
+    "funcname": "packageStartupMessage"
   },
   {
     "id": "packBits",
     "href": "/detail/base/packBits.html",
-    "texttag": "packBits"
+    "funcname": "packBits"
   },
   {
     "id": "pairlist",
     "href": "/detail/base/pairlist.html",
-    "texttag": "pairlist"
+    "funcname": "pairlist"
   },
   {
     "id": "parent.env",
     "href": "/detail/base/parentenv.html",
-    "texttag": "parent.env"
+    "funcname": "parent.env"
   },
   {
-    "id": "parent.env_-",
+    "id": "parent.env<-",
     "href": "/detail/base/parentenv_-.html",
-    "texttag": "parent.env<-"
+    "funcname": "parent.env<-"
   },
   {
     "id": "parent.frame",
     "href": "/detail/base/parentframe.html",
-    "texttag": "parent.frame"
+    "funcname": "parent.frame"
   },
-  { "id": "parse", "href": "/detail/base/parse.html", "texttag": "parse" },
+  { "id": "parse", "href": "/detail/base/parse.html", "funcname": "parse" },
   {
     "id": "parseNamespaceFile",
     "href": "/detail/base/parseNamespaceFile.html",
-    "texttag": "parseNamespaceFile"
+    "funcname": "parseNamespaceFile"
   },
-  { "id": "paste", "href": "/detail/base/paste.html", "texttag": "paste" },
-  { "id": "paste0", "href": "/detail/base/paste0.html", "texttag": "paste0" },
+  { "id": "paste", "href": "/detail/base/paste.html", "funcname": "paste" },
+  { "id": "paste0", "href": "/detail/base/paste0.html", "funcname": "paste0" },
   {
     "id": "path.expand",
     "href": "/detail/base/pathexpand.html",
-    "texttag": "path.expand"
+    "funcname": "path.expand"
   },
   {
     "id": "path.package",
     "href": "/detail/base/pathpackage.html",
-    "texttag": "path.package"
+    "funcname": "path.package"
   },
   {
     "id": "pcre_config",
     "href": "/detail/base/pcre_config.html",
-    "texttag": "pcre_config"
+    "funcname": "pcre_config"
   },
-  { "id": "pi", "href": "/detail/base/pi.html", "texttag": "pi" },
-  { "id": "pipe", "href": "/detail/base/pipe.html", "texttag": "pipe" },
-  { "id": "plot", "href": "/detail/base/plot.html", "texttag": "plot" },
-  { "id": "pmatch", "href": "/detail/base/pmatch.html", "texttag": "pmatch" },
-  { "id": "pmax", "href": "/detail/base/pmax.html", "texttag": "pmax" },
+  { "id": "pi", "href": "/detail/base/pi.html", "funcname": "pi" },
+  { "id": "pipe", "href": "/detail/base/pipe.html", "funcname": "pipe" },
+  { "id": "plot", "href": "/detail/base/plot.html", "funcname": "plot" },
+  { "id": "pmatch", "href": "/detail/base/pmatch.html", "funcname": "pmatch" },
+  { "id": "pmax", "href": "/detail/base/pmax.html", "funcname": "pmax" },
   {
     "id": "pmax.int",
     "href": "/detail/base/pmaxint.html",
-    "texttag": "pmax.int"
+    "funcname": "pmax.int"
   },
-  { "id": "pmin", "href": "/detail/base/pmin.html", "texttag": "pmin" },
+  { "id": "pmin", "href": "/detail/base/pmin.html", "funcname": "pmin" },
   {
     "id": "pmin.int",
     "href": "/detail/base/pminint.html",
-    "texttag": "pmin.int"
+    "funcname": "pmin.int"
   },
   {
     "id": "polyroot",
     "href": "/detail/base/polyroot.html",
-    "texttag": "polyroot"
+    "funcname": "polyroot"
   },
   {
     "id": "pos.to.env",
     "href": "/detail/base/posto.env.html",
-    "texttag": "pos.to.env"
+    "funcname": "pos.to.env"
   },
   {
     "id": "Position",
     "href": "/detail/base/Position.html",
-    "texttag": "Position"
+    "funcname": "Position"
   },
-  { "id": "pretty", "href": "/detail/base/pretty.html", "texttag": "pretty" },
+  { "id": "pretty", "href": "/detail/base/pretty.html", "funcname": "pretty" },
   {
     "id": "pretty.default",
     "href": "/detail/base/prettydefault.html",
-    "texttag": "pretty.default"
+    "funcname": "pretty.default"
   },
   {
     "id": "prettyNum",
     "href": "/detail/base/prettyNum.html",
-    "texttag": "prettyNum"
+    "funcname": "prettyNum"
   },
-  { "id": "print", "href": "/detail/base/print.html", "texttag": "print" },
+  { "id": "print", "href": "/detail/base/print.html", "funcname": "print" },
   {
     "id": "print.AsIs",
     "href": "/detail/base/printAsIs.html",
-    "texttag": "print.AsIs"
+    "funcname": "print.AsIs"
   },
   {
     "id": "print.by",
     "href": "/detail/base/printby.html",
-    "texttag": "print.by"
+    "funcname": "print.by"
   },
   {
     "id": "print.condition",
     "href": "/detail/base/printcondition.html",
-    "texttag": "print.condition"
+    "funcname": "print.condition"
   },
   {
     "id": "print.connection",
     "href": "/detail/base/printconnection.html",
-    "texttag": "print.connection"
+    "funcname": "print.connection"
   },
   {
     "id": "print.data.frame",
     "href": "/detail/base/printdata.frame.html",
-    "texttag": "print.data.frame"
+    "funcname": "print.data.frame"
   },
   {
     "id": "print.Date",
     "href": "/detail/base/printDate.html",
-    "texttag": "print.Date"
+    "funcname": "print.Date"
   },
   {
     "id": "print.default",
     "href": "/detail/base/printdefault.html",
-    "texttag": "print.default"
+    "funcname": "print.default"
   },
   {
     "id": "print.difftime",
     "href": "/detail/base/printdifftime.html",
-    "texttag": "print.difftime"
+    "funcname": "print.difftime"
   },
   {
     "id": "print.Dlist",
     "href": "/detail/base/printDlist.html",
-    "texttag": "print.Dlist"
+    "funcname": "print.Dlist"
   },
   {
     "id": "print.DLLInfo",
     "href": "/detail/base/printDLLInfo.html",
-    "texttag": "print.DLLInfo"
+    "funcname": "print.DLLInfo"
   },
   {
     "id": "print.DLLInfoList",
     "href": "/detail/base/printDLLInfoList.html",
-    "texttag": "print.DLLInfoList"
+    "funcname": "print.DLLInfoList"
   },
   {
     "id": "print.DLLRegisteredRoutines",
     "href": "/detail/base/printDLLRegisteredRoutines.html",
-    "texttag": "print.DLLRegisteredRoutines"
+    "funcname": "print.DLLRegisteredRoutines"
   },
   {
     "id": "print.eigen",
     "href": "/detail/base/printeigen.html",
-    "texttag": "print.eigen"
+    "funcname": "print.eigen"
   },
   {
     "id": "print.factor",
     "href": "/detail/base/printfactor.html",
-    "texttag": "print.factor"
+    "funcname": "print.factor"
   },
   {
     "id": "print.function",
     "href": "/detail/base/printfunction.html",
-    "texttag": "print.function"
+    "funcname": "print.function"
   },
   {
     "id": "print.hexmode",
     "href": "/detail/base/printhexmode.html",
-    "texttag": "print.hexmode"
+    "funcname": "print.hexmode"
   },
   {
     "id": "print.libraryIQR",
     "href": "/detail/base/printlibraryIQR.html",
-    "texttag": "print.libraryIQR"
+    "funcname": "print.libraryIQR"
   },
   {
     "id": "print.listof",
     "href": "/detail/base/printlistof.html",
-    "texttag": "print.listof"
+    "funcname": "print.listof"
   },
   {
     "id": "print.NativeRoutineList",
     "href": "/detail/base/printNativeRoutineList.html",
-    "texttag": "print.NativeRoutineList"
+    "funcname": "print.NativeRoutineList"
   },
   {
     "id": "print.noquote",
     "href": "/detail/base/printnoquote.html",
-    "texttag": "print.noquote"
+    "funcname": "print.noquote"
   },
   {
     "id": "print.numeric_version",
     "href": "/detail/base/printnumeric_version.html",
-    "texttag": "print.numeric_version"
+    "funcname": "print.numeric_version"
   },
   {
     "id": "print.octmode",
     "href": "/detail/base/printoctmode.html",
-    "texttag": "print.octmode"
+    "funcname": "print.octmode"
   },
   {
     "id": "print.packageInfo",
     "href": "/detail/base/printpackageInfo.html",
-    "texttag": "print.packageInfo"
+    "funcname": "print.packageInfo"
   },
   {
     "id": "print.POSIXct",
     "href": "/detail/base/printPOSIXct.html",
-    "texttag": "print.POSIXct"
+    "funcname": "print.POSIXct"
   },
   {
     "id": "print.POSIXlt",
     "href": "/detail/base/printPOSIXlt.html",
-    "texttag": "print.POSIXlt"
+    "funcname": "print.POSIXlt"
   },
   {
     "id": "print.proc_time",
     "href": "/detail/base/printproc_time.html",
-    "texttag": "print.proc_time"
+    "funcname": "print.proc_time"
   },
   {
     "id": "print.restart",
     "href": "/detail/base/printrestart.html",
-    "texttag": "print.restart"
+    "funcname": "print.restart"
   },
   {
     "id": "print.rle",
     "href": "/detail/base/printrle.html",
-    "texttag": "print.rle"
+    "funcname": "print.rle"
   },
   {
     "id": "print.simple.list",
     "href": "/detail/base/printsimple.list.html",
-    "texttag": "print.simple.list"
+    "funcname": "print.simple.list"
   },
   {
     "id": "print.srcfile",
     "href": "/detail/base/printsrcfile.html",
-    "texttag": "print.srcfile"
+    "funcname": "print.srcfile"
   },
   {
     "id": "print.srcref",
     "href": "/detail/base/printsrcref.html",
-    "texttag": "print.srcref"
+    "funcname": "print.srcref"
   },
   {
     "id": "print.summary.table",
     "href": "/detail/base/printsummary.table.html",
-    "texttag": "print.summary.table"
+    "funcname": "print.summary.table"
   },
   {
     "id": "print.summary.warnings",
     "href": "/detail/base/printsummary.warnings.html",
-    "texttag": "print.summary.warnings"
+    "funcname": "print.summary.warnings"
   },
   {
     "id": "print.summaryDefault",
     "href": "/detail/base/printsummaryDefault.html",
-    "texttag": "print.summaryDefault"
+    "funcname": "print.summaryDefault"
   },
   {
     "id": "print.table",
     "href": "/detail/base/printtable.html",
-    "texttag": "print.table"
+    "funcname": "print.table"
   },
   {
     "id": "print.warnings",
     "href": "/detail/base/printwarnings.html",
-    "texttag": "print.warnings"
+    "funcname": "print.warnings"
   },
   {
     "id": "prmatrix",
     "href": "/detail/base/prmatrix.html",
-    "texttag": "prmatrix"
+    "funcname": "prmatrix"
   },
   {
     "id": "proc.time",
     "href": "/detail/base/proctime.html",
-    "texttag": "proc.time"
+    "funcname": "proc.time"
   },
-  { "id": "prod", "href": "/detail/base/prod.html", "texttag": "prod" },
+  { "id": "prod", "href": "/detail/base/prod.html", "funcname": "prod" },
   {
     "id": "prop.table",
     "href": "/detail/base/proptable.html",
-    "texttag": "prop.table"
+    "funcname": "prop.table"
   },
   {
     "id": "proportions",
     "href": "/detail/base/proportions.html",
-    "texttag": "proportions"
+    "funcname": "proportions"
   },
   {
     "id": "provideDimnames",
     "href": "/detail/base/provideDimnames.html",
-    "texttag": "provideDimnames"
+    "funcname": "provideDimnames"
   },
   {
     "id": "psigamma",
     "href": "/detail/base/psigamma.html",
-    "texttag": "psigamma"
+    "funcname": "psigamma"
   },
   {
     "id": "pushBack",
     "href": "/detail/base/pushBack.html",
-    "texttag": "pushBack"
+    "funcname": "pushBack"
   },
   {
     "id": "pushBackLength",
     "href": "/detail/base/pushBackLength.html",
-    "texttag": "pushBackLength"
+    "funcname": "pushBackLength"
   },
-  { "id": "q", "href": "/detail/base/q.html", "texttag": "q" },
-  { "id": "qr", "href": "/detail/base/qr.html", "texttag": "qr" },
-  { "id": "qr.coef", "href": "/detail/base/qrcoef.html", "texttag": "qr.coef" },
+  { "id": "q", "href": "/detail/base/q.html", "funcname": "q" },
+  { "id": "qr", "href": "/detail/base/qr.html", "funcname": "qr" },
+  {
+    "id": "qr.coef",
+    "href": "/detail/base/qrcoef.html",
+    "funcname": "qr.coef"
+  },
   {
     "id": "qr.default",
     "href": "/detail/base/qrdefault.html",
-    "texttag": "qr.default"
+    "funcname": "qr.default"
   },
   {
     "id": "qr.fitted",
     "href": "/detail/base/qrfitted.html",
-    "texttag": "qr.fitted"
+    "funcname": "qr.fitted"
   },
-  { "id": "qr.Q", "href": "/detail/base/qrQ.html", "texttag": "qr.Q" },
-  { "id": "qr.qty", "href": "/detail/base/qrqty.html", "texttag": "qr.qty" },
-  { "id": "qr.qy", "href": "/detail/base/qrqy.html", "texttag": "qr.qy" },
-  { "id": "qr.R", "href": "/detail/base/qrR.html", "texttag": "qr.R" },
+  { "id": "qr.Q", "href": "/detail/base/qrQ.html", "funcname": "qr.Q" },
+  { "id": "qr.qty", "href": "/detail/base/qrqty.html", "funcname": "qr.qty" },
+  { "id": "qr.qy", "href": "/detail/base/qrqy.html", "funcname": "qr.qy" },
+  { "id": "qr.R", "href": "/detail/base/qrR.html", "funcname": "qr.R" },
   {
     "id": "qr.resid",
     "href": "/detail/base/qrresid.html",
-    "texttag": "qr.resid"
+    "funcname": "qr.resid"
   },
   {
     "id": "qr.solve",
     "href": "/detail/base/qrsolve.html",
-    "texttag": "qr.solve"
+    "funcname": "qr.solve"
   },
-  { "id": "qr.X", "href": "/detail/base/qrX.html", "texttag": "qr.X" },
+  { "id": "qr.X", "href": "/detail/base/qrX.html", "funcname": "qr.X" },
   {
     "id": "quarters",
     "href": "/detail/base/quarters.html",
-    "texttag": "quarters"
+    "funcname": "quarters"
   },
   {
     "id": "quarters.Date",
     "href": "/detail/base/quartersDate.html",
-    "texttag": "quarters.Date"
+    "funcname": "quarters.Date"
   },
   {
     "id": "quarters.POSIXt",
     "href": "/detail/base/quartersPOSIXt.html",
-    "texttag": "quarters.POSIXt"
+    "funcname": "quarters.POSIXt"
   },
-  { "id": "quit", "href": "/detail/base/quit.html", "texttag": "quit" },
-  { "id": "quote", "href": "/detail/base/quote.html", "texttag": "quote" },
+  { "id": "quit", "href": "/detail/base/quit.html", "funcname": "quit" },
+  { "id": "quote", "href": "/detail/base/quote.html", "funcname": "quote" },
   {
     "id": "R_system_version",
     "href": "/detail/base/R_system_version.html",
-    "texttag": "R_system_version"
+    "funcname": "R_system_version"
   },
-  { "id": "R.home", "href": "/detail/base/Rhome.html", "texttag": "R.home" },
+  { "id": "R.home", "href": "/detail/base/Rhome.html", "funcname": "R.home" },
   {
     "id": "R.version",
     "href": "/detail/base/Rversion.html",
-    "texttag": "R.version"
+    "funcname": "R.version"
   },
   {
     "id": "R.Version",
     "href": "/detail/base/RVersion.html",
-    "texttag": "R.Version"
+    "funcname": "R.Version"
   },
   {
     "id": "R.version.string",
     "href": "/detail/base/Rversion.string.html",
-    "texttag": "R.version.string"
+    "funcname": "R.version.string"
   },
-  { "id": "range", "href": "/detail/base/range.html", "texttag": "range" },
+  { "id": "range", "href": "/detail/base/range.html", "funcname": "range" },
   {
     "id": "range.default",
     "href": "/detail/base/rangedefault.html",
-    "texttag": "range.default"
+    "funcname": "range.default"
   },
-  { "id": "rank", "href": "/detail/base/rank.html", "texttag": "rank" },
-  { "id": "rapply", "href": "/detail/base/rapply.html", "texttag": "rapply" },
-  { "id": "raw", "href": "/detail/base/raw.html", "texttag": "raw" },
+  { "id": "rank", "href": "/detail/base/rank.html", "funcname": "rank" },
+  { "id": "rapply", "href": "/detail/base/rapply.html", "funcname": "rapply" },
+  { "id": "raw", "href": "/detail/base/raw.html", "funcname": "raw" },
   {
     "id": "rawConnection",
     "href": "/detail/base/rawConnection.html",
-    "texttag": "rawConnection"
+    "funcname": "rawConnection"
   },
   {
     "id": "rawConnectionValue",
     "href": "/detail/base/rawConnectionValue.html",
-    "texttag": "rawConnectionValue"
+    "funcname": "rawConnectionValue"
   },
   {
     "id": "rawShift",
     "href": "/detail/base/rawShift.html",
-    "texttag": "rawShift"
+    "funcname": "rawShift"
   },
   {
     "id": "rawToBits",
     "href": "/detail/base/rawToBits.html",
-    "texttag": "rawToBits"
+    "funcname": "rawToBits"
   },
   {
     "id": "rawToChar",
     "href": "/detail/base/rawToChar.html",
-    "texttag": "rawToChar"
+    "funcname": "rawToChar"
   },
-  { "id": "rbind", "href": "/detail/base/rbind.html", "texttag": "rbind" },
+  { "id": "rbind", "href": "/detail/base/rbind.html", "funcname": "rbind" },
   {
     "id": "rbind.data.frame",
     "href": "/detail/base/rbinddata.frame.html",
-    "texttag": "rbind.data.frame"
+    "funcname": "rbind.data.frame"
   },
-  { "id": "rcond", "href": "/detail/base/rcond.html", "texttag": "rcond" },
-  { "id": "Re", "href": "/detail/base/Re.html", "texttag": "Re" },
+  { "id": "rcond", "href": "/detail/base/rcond.html", "funcname": "rcond" },
+  { "id": "Re", "href": "/detail/base/Re.html", "funcname": "Re" },
   {
     "id": "read.dcf",
     "href": "/detail/base/readdcf.html",
-    "texttag": "read.dcf"
+    "funcname": "read.dcf"
   },
   {
     "id": "readBin",
     "href": "/detail/base/readBin.html",
-    "texttag": "readBin"
+    "funcname": "readBin"
   },
   {
     "id": "readChar",
     "href": "/detail/base/readChar.html",
-    "texttag": "readChar"
+    "funcname": "readChar"
   },
   {
     "id": "readline",
     "href": "/detail/base/readline.html",
-    "texttag": "readline"
+    "funcname": "readline"
   },
   {
     "id": "readLines",
     "href": "/detail/base/readLines.html",
-    "texttag": "readLines"
+    "funcname": "readLines"
   },
   {
     "id": "readRDS",
     "href": "/detail/base/readRDS.html",
-    "texttag": "readRDS"
+    "funcname": "readRDS"
   },
   {
     "id": "readRenviron",
     "href": "/detail/base/readRenviron.html",
-    "texttag": "readRenviron"
+    "funcname": "readRenviron"
   },
-  { "id": "Recall", "href": "/detail/base/Recall.html", "texttag": "Recall" },
-  { "id": "Reduce", "href": "/detail/base/Reduce.html", "texttag": "Reduce" },
+  { "id": "Recall", "href": "/detail/base/Recall.html", "funcname": "Recall" },
+  { "id": "Reduce", "href": "/detail/base/Reduce.html", "funcname": "Reduce" },
   {
     "id": "reg.finalizer",
     "href": "/detail/base/regfinalizer.html",
-    "texttag": "reg.finalizer"
+    "funcname": "reg.finalizer"
   },
   {
     "id": "regexec",
     "href": "/detail/base/regexec.html",
-    "texttag": "regexec"
+    "funcname": "regexec"
   },
   {
     "id": "regexpr",
     "href": "/detail/base/regexpr.html",
-    "texttag": "regexpr"
+    "funcname": "regexpr"
   },
   {
     "id": "registerS3method",
     "href": "/detail/base/registerS3method.html",
-    "texttag": "registerS3method"
+    "funcname": "registerS3method"
   },
   {
     "id": "registerS3methods",
     "href": "/detail/base/registerS3methods.html",
-    "texttag": "registerS3methods"
+    "funcname": "registerS3methods"
   },
   {
     "id": "regmatches",
     "href": "/detail/base/regmatches.html",
-    "texttag": "regmatches"
+    "funcname": "regmatches"
   },
   {
-    "id": "regmatches_-",
+    "id": "regmatches<-",
     "href": "/detail/base/regmatches_-.html",
-    "texttag": "regmatches<-"
+    "funcname": "regmatches<-"
   },
-  { "id": "remove", "href": "/detail/base/remove.html", "texttag": "remove" },
+  { "id": "remove", "href": "/detail/base/remove.html", "funcname": "remove" },
   {
     "id": "removeTaskCallback",
     "href": "/detail/base/removeTaskCallback.html",
-    "texttag": "removeTaskCallback"
+    "funcname": "removeTaskCallback"
   },
-  { "id": "rep", "href": "/detail/base/rep.html", "texttag": "rep" },
+  { "id": "rep", "href": "/detail/base/rep.html", "funcname": "rep" },
   {
     "id": "rep_len",
     "href": "/detail/base/rep_len.html",
-    "texttag": "rep_len"
+    "funcname": "rep_len"
   },
   {
     "id": "rep.Date",
     "href": "/detail/base/repDate.html",
-    "texttag": "rep.Date"
+    "funcname": "rep.Date"
   },
   {
     "id": "rep.difftime",
     "href": "/detail/base/repdifftime.html",
-    "texttag": "rep.difftime"
+    "funcname": "rep.difftime"
   },
   {
     "id": "rep.factor",
     "href": "/detail/base/repfactor.html",
-    "texttag": "rep.factor"
+    "funcname": "rep.factor"
   },
-  { "id": "rep.int", "href": "/detail/base/repint.html", "texttag": "rep.int" },
+  {
+    "id": "rep.int",
+    "href": "/detail/base/repint.html",
+    "funcname": "rep.int"
+  },
   {
     "id": "rep.numeric_version",
     "href": "/detail/base/repnumeric_version.html",
-    "texttag": "rep.numeric_version"
+    "funcname": "rep.numeric_version"
   },
   {
     "id": "rep.POSIXct",
     "href": "/detail/base/repPOSIXct.html",
-    "texttag": "rep.POSIXct"
+    "funcname": "rep.POSIXct"
   },
   {
     "id": "rep.POSIXlt",
     "href": "/detail/base/repPOSIXlt.html",
-    "texttag": "rep.POSIXlt"
+    "funcname": "rep.POSIXlt"
   },
-  { "id": "repeat", "href": "/detail/base/repeat.html", "texttag": "repeat" },
+  { "id": "repeat", "href": "/detail/base/repeat.html", "funcname": "repeat" },
   {
     "id": "replace",
     "href": "/detail/base/replace.html",
-    "texttag": "replace"
+    "funcname": "replace"
   },
   {
     "id": "replicate",
     "href": "/detail/base/replicate.html",
-    "texttag": "replicate"
+    "funcname": "replicate"
   },
   {
     "id": "require",
     "href": "/detail/base/require.html",
-    "texttag": "require"
+    "funcname": "require"
   },
   {
     "id": "requireNamespace",
     "href": "/detail/base/requireNamespace.html",
-    "texttag": "requireNamespace"
+    "funcname": "requireNamespace"
   },
   {
     "id": "restartDescription",
     "href": "/detail/base/restartDescription.html",
-    "texttag": "restartDescription"
+    "funcname": "restartDescription"
   },
   {
     "id": "restartFormals",
     "href": "/detail/base/restartFormals.html",
-    "texttag": "restartFormals"
+    "funcname": "restartFormals"
   },
   {
     "id": "retracemem",
     "href": "/detail/base/retracemem.html",
-    "texttag": "retracemem"
+    "funcname": "retracemem"
   },
-  { "id": "return", "href": "/detail/base/return.html", "texttag": "return" },
+  { "id": "return", "href": "/detail/base/return.html", "funcname": "return" },
   {
     "id": "returnValue",
     "href": "/detail/base/returnValue.html",
-    "texttag": "returnValue"
+    "funcname": "returnValue"
   },
-  { "id": "rev", "href": "/detail/base/rev.html", "texttag": "rev" },
+  { "id": "rev", "href": "/detail/base/rev.html", "funcname": "rev" },
   {
     "id": "rev.default",
     "href": "/detail/base/revdefault.html",
-    "texttag": "rev.default"
+    "funcname": "rev.default"
   },
-  { "id": "rle", "href": "/detail/base/rle.html", "texttag": "rle" },
-  { "id": "rm", "href": "/detail/base/rm.html", "texttag": "rm" },
+  { "id": "rle", "href": "/detail/base/rle.html", "funcname": "rle" },
+  { "id": "rm", "href": "/detail/base/rm.html", "funcname": "rm" },
   {
     "id": "RNGkind",
     "href": "/detail/base/RNGkind.html",
-    "texttag": "RNGkind"
+    "funcname": "RNGkind"
   },
   {
     "id": "RNGversion",
     "href": "/detail/base/RNGversion.html",
-    "texttag": "RNGversion"
+    "funcname": "RNGversion"
   },
-  { "id": "round", "href": "/detail/base/round.html", "texttag": "round" },
+  { "id": "round", "href": "/detail/base/round.html", "funcname": "round" },
   {
     "id": "round.Date",
     "href": "/detail/base/roundDate.html",
-    "texttag": "round.Date"
+    "funcname": "round.Date"
   },
   {
     "id": "round.POSIXt",
     "href": "/detail/base/roundPOSIXt.html",
-    "texttag": "round.POSIXt"
+    "funcname": "round.POSIXt"
   },
-  { "id": "row", "href": "/detail/base/row.html", "texttag": "row" },
+  { "id": "row", "href": "/detail/base/row.html", "funcname": "row" },
   {
     "id": "row.names",
     "href": "/detail/base/rownames.html",
-    "texttag": "row.names"
+    "funcname": "row.names"
   },
   {
     "id": "row.names.data.frame",
     "href": "/detail/base/rownames.data.frame.html",
-    "texttag": "row.names.data.frame"
+    "funcname": "row.names.data.frame"
   },
   {
     "id": "row.names.default",
     "href": "/detail/base/rownames.default.html",
-    "texttag": "row.names.default"
+    "funcname": "row.names.default"
   },
   {
-    "id": "row.names_-",
+    "id": "row.names<-",
     "href": "/detail/base/rownames_-.html",
-    "texttag": "row.names<-"
+    "funcname": "row.names<-"
   },
   {
-    "id": "row.names_-.data.frame",
+    "id": "row.names<-.data.frame",
     "href": "/detail/base/rownames_-.data.frame.html",
-    "texttag": "row.names<-.data.frame"
+    "funcname": "row.names<-.data.frame"
   },
   {
-    "id": "row.names_-.default",
+    "id": "row.names<-.default",
     "href": "/detail/base/rownames_-.default.html",
-    "texttag": "row.names<-.default"
+    "funcname": "row.names<-.default"
   },
   {
     "id": "rowMeans",
     "href": "/detail/base/rowMeans.html",
-    "texttag": "rowMeans"
+    "funcname": "rowMeans"
   },
   {
     "id": "rownames",
     "href": "/detail/base/rownames.html",
-    "texttag": "rownames"
+    "funcname": "rownames"
   },
   {
-    "id": "rownames_-",
+    "id": "rownames<-",
     "href": "/detail/base/rownames_-.html",
-    "texttag": "rownames<-"
+    "funcname": "rownames<-"
   },
-  { "id": "rowsum", "href": "/detail/base/rowsum.html", "texttag": "rowsum" },
+  { "id": "rowsum", "href": "/detail/base/rowsum.html", "funcname": "rowsum" },
   {
     "id": "rowsum.data.frame",
     "href": "/detail/base/rowsumdata.frame.html",
-    "texttag": "rowsum.data.frame"
+    "funcname": "rowsum.data.frame"
   },
   {
     "id": "rowsum.default",
     "href": "/detail/base/rowsumdefault.html",
-    "texttag": "rowsum.default"
+    "funcname": "rowsum.default"
   },
   {
     "id": "rowSums",
     "href": "/detail/base/rowSums.html",
-    "texttag": "rowSums"
+    "funcname": "rowSums"
   },
-  { "id": "sample", "href": "/detail/base/sample.html", "texttag": "sample" },
+  { "id": "sample", "href": "/detail/base/sample.html", "funcname": "sample" },
   {
     "id": "sample.int",
     "href": "/detail/base/sampleint.html",
-    "texttag": "sample.int"
+    "funcname": "sample.int"
   },
-  { "id": "sapply", "href": "/detail/base/sapply.html", "texttag": "sapply" },
-  { "id": "save", "href": "/detail/base/save.html", "texttag": "save" },
+  { "id": "sapply", "href": "/detail/base/sapply.html", "funcname": "sapply" },
+  { "id": "save", "href": "/detail/base/save.html", "funcname": "save" },
   {
     "id": "save.image",
     "href": "/detail/base/saveimage.html",
-    "texttag": "save.image"
+    "funcname": "save.image"
   },
   {
     "id": "saveRDS",
     "href": "/detail/base/saveRDS.html",
-    "texttag": "saveRDS"
+    "funcname": "saveRDS"
   },
-  { "id": "scale", "href": "/detail/base/scale.html", "texttag": "scale" },
+  { "id": "scale", "href": "/detail/base/scale.html", "funcname": "scale" },
   {
     "id": "scale.default",
     "href": "/detail/base/scaledefault.html",
-    "texttag": "scale.default"
+    "funcname": "scale.default"
   },
-  { "id": "scan", "href": "/detail/base/scan.html", "texttag": "scan" },
-  { "id": "search", "href": "/detail/base/search.html", "texttag": "search" },
+  { "id": "scan", "href": "/detail/base/scan.html", "funcname": "scan" },
+  { "id": "search", "href": "/detail/base/search.html", "funcname": "search" },
   {
     "id": "searchpaths",
     "href": "/detail/base/searchpaths.html",
-    "texttag": "searchpaths"
+    "funcname": "searchpaths"
   },
-  { "id": "seek", "href": "/detail/base/seek.html", "texttag": "seek" },
+  { "id": "seek", "href": "/detail/base/seek.html", "funcname": "seek" },
   {
     "id": "seek.connection",
     "href": "/detail/base/seekconnection.html",
-    "texttag": "seek.connection"
+    "funcname": "seek.connection"
   },
-  { "id": "seq", "href": "/detail/base/seq.html", "texttag": "seq" },
+  { "id": "seq", "href": "/detail/base/seq.html", "funcname": "seq" },
   {
     "id": "seq_along",
     "href": "/detail/base/seq_along.html",
-    "texttag": "seq_along"
+    "funcname": "seq_along"
   },
   {
     "id": "seq_len",
     "href": "/detail/base/seq_len.html",
-    "texttag": "seq_len"
+    "funcname": "seq_len"
   },
   {
     "id": "seq.Date",
     "href": "/detail/base/seqDate.html",
-    "texttag": "seq.Date"
+    "funcname": "seq.Date"
   },
   {
     "id": "seq.default",
     "href": "/detail/base/seqdefault.html",
-    "texttag": "seq.default"
+    "funcname": "seq.default"
   },
-  { "id": "seq.int", "href": "/detail/base/seqint.html", "texttag": "seq.int" },
+  {
+    "id": "seq.int",
+    "href": "/detail/base/seqint.html",
+    "funcname": "seq.int"
+  },
   {
     "id": "seq.POSIXt",
     "href": "/detail/base/seqPOSIXt.html",
-    "texttag": "seq.POSIXt"
+    "funcname": "seq.POSIXt"
   },
   {
     "id": "sequence",
     "href": "/detail/base/sequence.html",
-    "texttag": "sequence"
+    "funcname": "sequence"
   },
   {
     "id": "sequence.default",
     "href": "/detail/base/sequencedefault.html",
-    "texttag": "sequence.default"
+    "funcname": "sequence.default"
   },
   {
     "id": "serialize",
     "href": "/detail/base/serialize.html",
-    "texttag": "serialize"
+    "funcname": "serialize"
   },
   {
     "id": "serverSocket",
     "href": "/detail/base/serverSocket.html",
-    "texttag": "serverSocket"
+    "funcname": "serverSocket"
   },
   {
     "id": "set.seed",
     "href": "/detail/base/setseed.html",
-    "texttag": "set.seed"
+    "funcname": "set.seed"
   },
   {
     "id": "setdiff",
     "href": "/detail/base/setdiff.html",
-    "texttag": "setdiff"
+    "funcname": "setdiff"
   },
   {
     "id": "setequal",
     "href": "/detail/base/setequal.html",
-    "texttag": "setequal"
+    "funcname": "setequal"
   },
   {
     "id": "setHook",
     "href": "/detail/base/setHook.html",
-    "texttag": "setHook"
+    "funcname": "setHook"
   },
   {
     "id": "setNamespaceInfo",
     "href": "/detail/base/setNamespaceInfo.html",
-    "texttag": "setNamespaceInfo"
+    "funcname": "setNamespaceInfo"
   },
   {
     "id": "setSessionTimeLimit",
     "href": "/detail/base/setSessionTimeLimit.html",
-    "texttag": "setSessionTimeLimit"
+    "funcname": "setSessionTimeLimit"
   },
   {
     "id": "setTimeLimit",
     "href": "/detail/base/setTimeLimit.html",
-    "texttag": "setTimeLimit"
+    "funcname": "setTimeLimit"
   },
-  { "id": "setwd", "href": "/detail/base/setwd.html", "texttag": "setwd" },
+  { "id": "setwd", "href": "/detail/base/setwd.html", "funcname": "setwd" },
   {
     "id": "showConnections",
     "href": "/detail/base/showConnections.html",
-    "texttag": "showConnections"
+    "funcname": "showConnections"
   },
   {
     "id": "shQuote",
     "href": "/detail/base/shQuote.html",
-    "texttag": "shQuote"
+    "funcname": "shQuote"
   },
-  { "id": "sign", "href": "/detail/base/sign.html", "texttag": "sign" },
+  { "id": "sign", "href": "/detail/base/sign.html", "funcname": "sign" },
   {
     "id": "signalCondition",
     "href": "/detail/base/signalCondition.html",
-    "texttag": "signalCondition"
+    "funcname": "signalCondition"
   },
-  { "id": "signif", "href": "/detail/base/signif.html", "texttag": "signif" },
+  { "id": "signif", "href": "/detail/base/signif.html", "funcname": "signif" },
   {
     "id": "simpleCondition",
     "href": "/detail/base/simpleCondition.html",
-    "texttag": "simpleCondition"
+    "funcname": "simpleCondition"
   },
   {
     "id": "simpleError",
     "href": "/detail/base/simpleError.html",
-    "texttag": "simpleError"
+    "funcname": "simpleError"
   },
   {
     "id": "simpleMessage",
     "href": "/detail/base/simpleMessage.html",
-    "texttag": "simpleMessage"
+    "funcname": "simpleMessage"
   },
   {
     "id": "simpleWarning",
     "href": "/detail/base/simpleWarning.html",
-    "texttag": "simpleWarning"
+    "funcname": "simpleWarning"
   },
   {
     "id": "simplify2array",
     "href": "/detail/base/simplify2array.html",
-    "texttag": "simplify2array"
+    "funcname": "simplify2array"
   },
-  { "id": "sin", "href": "/detail/base/sin.html", "texttag": "sin" },
-  { "id": "single", "href": "/detail/base/single.html", "texttag": "single" },
-  { "id": "sinh", "href": "/detail/base/sinh.html", "texttag": "sinh" },
-  { "id": "sink", "href": "/detail/base/sink.html", "texttag": "sink" },
+  { "id": "sin", "href": "/detail/base/sin.html", "funcname": "sin" },
+  { "id": "single", "href": "/detail/base/single.html", "funcname": "single" },
+  { "id": "sinh", "href": "/detail/base/sinh.html", "funcname": "sinh" },
+  { "id": "sink", "href": "/detail/base/sink.html", "funcname": "sink" },
   {
     "id": "sink.number",
     "href": "/detail/base/sinknumber.html",
-    "texttag": "sink.number"
+    "funcname": "sink.number"
   },
-  { "id": "sinpi", "href": "/detail/base/sinpi.html", "texttag": "sinpi" },
+  { "id": "sinpi", "href": "/detail/base/sinpi.html", "funcname": "sinpi" },
   {
     "id": "slice.index",
     "href": "/detail/base/sliceindex.html",
-    "texttag": "slice.index"
+    "funcname": "slice.index"
   },
   {
     "id": "socketAccept",
     "href": "/detail/base/socketAccept.html",
-    "texttag": "socketAccept"
+    "funcname": "socketAccept"
   },
   {
     "id": "socketConnection",
     "href": "/detail/base/socketConnection.html",
-    "texttag": "socketConnection"
+    "funcname": "socketConnection"
   },
   {
     "id": "socketSelect",
     "href": "/detail/base/socketSelect.html",
-    "texttag": "socketSelect"
+    "funcname": "socketSelect"
   },
   {
     "id": "socketTimeout",
     "href": "/detail/base/socketTimeout.html",
-    "texttag": "socketTimeout"
+    "funcname": "socketTimeout"
   },
-  { "id": "solve", "href": "/detail/base/solve.html", "texttag": "solve" },
+  { "id": "solve", "href": "/detail/base/solve.html", "funcname": "solve" },
   {
     "id": "solve.default",
     "href": "/detail/base/solvedefault.html",
-    "texttag": "solve.default"
+    "funcname": "solve.default"
   },
   {
     "id": "solve.qr",
     "href": "/detail/base/solveqr.html",
-    "texttag": "solve.qr"
+    "funcname": "solve.qr"
   },
-  { "id": "sort", "href": "/detail/base/sort.html", "texttag": "sort" },
+  { "id": "sort", "href": "/detail/base/sort.html", "funcname": "sort" },
   {
     "id": "sort.default",
     "href": "/detail/base/sortdefault.html",
-    "texttag": "sort.default"
+    "funcname": "sort.default"
   },
   {
     "id": "sort.int",
     "href": "/detail/base/sortint.html",
-    "texttag": "sort.int"
+    "funcname": "sort.int"
   },
   {
     "id": "sort.list",
     "href": "/detail/base/sortlist.html",
-    "texttag": "sort.list"
+    "funcname": "sort.list"
   },
   {
     "id": "sort.POSIXlt",
     "href": "/detail/base/sortPOSIXlt.html",
-    "texttag": "sort.POSIXlt"
+    "funcname": "sort.POSIXlt"
   },
-  { "id": "source", "href": "/detail/base/source.html", "texttag": "source" },
-  { "id": "split", "href": "/detail/base/split.html", "texttag": "split" },
+  { "id": "source", "href": "/detail/base/source.html", "funcname": "source" },
+  { "id": "split", "href": "/detail/base/split.html", "funcname": "split" },
   {
     "id": "split.data.frame",
     "href": "/detail/base/splitdata.frame.html",
-    "texttag": "split.data.frame"
+    "funcname": "split.data.frame"
   },
   {
     "id": "split.Date",
     "href": "/detail/base/splitDate.html",
-    "texttag": "split.Date"
+    "funcname": "split.Date"
   },
   {
     "id": "split.default",
     "href": "/detail/base/splitdefault.html",
-    "texttag": "split.default"
+    "funcname": "split.default"
   },
   {
     "id": "split.POSIXct",
     "href": "/detail/base/splitPOSIXct.html",
-    "texttag": "split.POSIXct"
+    "funcname": "split.POSIXct"
   },
   {
-    "id": "split_-",
+    "id": "split<-",
     "href": "/detail/base/split_-.html",
-    "texttag": "split<-"
+    "funcname": "split<-"
   },
   {
-    "id": "split_-.data.frame",
+    "id": "split<-.data.frame",
     "href": "/detail/base/split_-data.frame.html",
-    "texttag": "split<-.data.frame"
+    "funcname": "split<-.data.frame"
   },
   {
-    "id": "split_-.default",
+    "id": "split<-.default",
     "href": "/detail/base/split_-default.html",
-    "texttag": "split<-.default"
+    "funcname": "split<-.default"
   },
   {
     "id": "sprintf",
     "href": "/detail/base/sprintf.html",
-    "texttag": "sprintf"
+    "funcname": "sprintf"
   },
-  { "id": "sqrt", "href": "/detail/base/sqrt.html", "texttag": "sqrt" },
-  { "id": "sQuote", "href": "/detail/base/sQuote.html", "texttag": "sQuote" },
+  { "id": "sqrt", "href": "/detail/base/sqrt.html", "funcname": "sqrt" },
+  { "id": "sQuote", "href": "/detail/base/sQuote.html", "funcname": "sQuote" },
   {
     "id": "srcfile",
     "href": "/detail/base/srcfile.html",
-    "texttag": "srcfile"
+    "funcname": "srcfile"
   },
   {
     "id": "srcfilealias",
     "href": "/detail/base/srcfilealias.html",
-    "texttag": "srcfilealias"
+    "funcname": "srcfilealias"
   },
   {
     "id": "srcfilecopy",
     "href": "/detail/base/srcfilecopy.html",
-    "texttag": "srcfilecopy"
+    "funcname": "srcfilecopy"
   },
-  { "id": "srcref", "href": "/detail/base/srcref.html", "texttag": "srcref" },
+  { "id": "srcref", "href": "/detail/base/srcref.html", "funcname": "srcref" },
   {
     "id": "standardGeneric",
     "href": "/detail/base/standardGeneric.html",
-    "texttag": "standardGeneric"
+    "funcname": "standardGeneric"
   },
   {
     "id": "startsWith",
     "href": "/detail/base/startsWith.html",
-    "texttag": "startsWith"
+    "funcname": "startsWith"
   },
-  { "id": "stderr", "href": "/detail/base/stderr.html", "texttag": "stderr" },
-  { "id": "stdin", "href": "/detail/base/stdin.html", "texttag": "stdin" },
-  { "id": "stdout", "href": "/detail/base/stdout.html", "texttag": "stdout" },
-  { "id": "stop", "href": "/detail/base/stop.html", "texttag": "stop" },
+  { "id": "stderr", "href": "/detail/base/stderr.html", "funcname": "stderr" },
+  { "id": "stdin", "href": "/detail/base/stdin.html", "funcname": "stdin" },
+  { "id": "stdout", "href": "/detail/base/stdout.html", "funcname": "stdout" },
+  { "id": "stop", "href": "/detail/base/stop.html", "funcname": "stop" },
   {
     "id": "stopifnot",
     "href": "/detail/base/stopifnot.html",
-    "texttag": "stopifnot"
+    "funcname": "stopifnot"
   },
   {
     "id": "storage.mode",
     "href": "/detail/base/storagemode.html",
-    "texttag": "storage.mode"
+    "funcname": "storage.mode"
   },
   {
-    "id": "storage.mode_-",
+    "id": "storage.mode<-",
     "href": "/detail/base/storagemode_-.html",
-    "texttag": "storage.mode<-"
+    "funcname": "storage.mode<-"
   },
   {
     "id": "str2expression",
     "href": "/detail/base/str2expression.html",
-    "texttag": "str2expression"
+    "funcname": "str2expression"
   },
   {
     "id": "str2lang",
     "href": "/detail/base/str2lang.html",
-    "texttag": "str2lang"
+    "funcname": "str2lang"
   },
   {
     "id": "strftime",
     "href": "/detail/base/strftime.html",
-    "texttag": "strftime"
+    "funcname": "strftime"
   },
   {
     "id": "strptime",
     "href": "/detail/base/strptime.html",
-    "texttag": "strptime"
+    "funcname": "strptime"
   },
-  { "id": "strrep", "href": "/detail/base/strrep.html", "texttag": "strrep" },
+  { "id": "strrep", "href": "/detail/base/strrep.html", "funcname": "strrep" },
   {
     "id": "strsplit",
     "href": "/detail/base/strsplit.html",
-    "texttag": "strsplit"
+    "funcname": "strsplit"
   },
-  { "id": "strtoi", "href": "/detail/base/strtoi.html", "texttag": "strtoi" },
+  { "id": "strtoi", "href": "/detail/base/strtoi.html", "funcname": "strtoi" },
   {
     "id": "strtrim",
     "href": "/detail/base/strtrim.html",
-    "texttag": "strtrim"
+    "funcname": "strtrim"
   },
   {
     "id": "structure",
     "href": "/detail/base/structure.html",
-    "texttag": "structure"
+    "funcname": "structure"
   },
   {
     "id": "strwrap",
     "href": "/detail/base/strwrap.html",
-    "texttag": "strwrap"
+    "funcname": "strwrap"
   },
-  { "id": "sub", "href": "/detail/base/sub.html", "texttag": "sub" },
-  { "id": "subset", "href": "/detail/base/subset.html", "texttag": "subset" },
+  { "id": "sub", "href": "/detail/base/sub.html", "funcname": "sub" },
+  { "id": "subset", "href": "/detail/base/subset.html", "funcname": "subset" },
   {
     "id": "subset.data.frame",
     "href": "/detail/base/subsetdata.frame.html",
-    "texttag": "subset.data.frame"
+    "funcname": "subset.data.frame"
   },
   {
     "id": "subset.default",
     "href": "/detail/base/subsetdefault.html",
-    "texttag": "subset.default"
+    "funcname": "subset.default"
   },
   {
     "id": "subset.matrix",
     "href": "/detail/base/subsetmatrix.html",
-    "texttag": "subset.matrix"
+    "funcname": "subset.matrix"
   },
   {
     "id": "substitute",
     "href": "/detail/base/substitute.html",
-    "texttag": "substitute"
+    "funcname": "substitute"
   },
-  { "id": "substr", "href": "/detail/base/substr.html", "texttag": "substr" },
+  { "id": "substr", "href": "/detail/base/substr.html", "funcname": "substr" },
   {
-    "id": "substr_-",
+    "id": "substr<-",
     "href": "/detail/base/substr_-.html",
-    "texttag": "substr<-"
+    "funcname": "substr<-"
   },
   {
     "id": "substring",
     "href": "/detail/base/substring.html",
-    "texttag": "substring"
+    "funcname": "substring"
   },
   {
-    "id": "substring_-",
+    "id": "substring<-",
     "href": "/detail/base/substring_-.html",
-    "texttag": "substring<-"
+    "funcname": "substring<-"
   },
-  { "id": "sum", "href": "/detail/base/sum.html", "texttag": "sum" },
+  { "id": "sum", "href": "/detail/base/sum.html", "funcname": "sum" },
   {
     "id": "summary",
     "href": "/detail/base/summary.html",
-    "texttag": "summary"
+    "funcname": "summary"
   },
   {
     "id": "summary.connection",
     "href": "/detail/base/summaryconnection.html",
-    "texttag": "summary.connection"
+    "funcname": "summary.connection"
   },
   {
     "id": "summary.data.frame",
     "href": "/detail/base/summarydata.frame.html",
-    "texttag": "summary.data.frame"
+    "funcname": "summary.data.frame"
   },
   {
     "id": "Summary.data.frame",
     "href": "/detail/base/Summarydata.frame.html",
-    "texttag": "Summary.data.frame"
+    "funcname": "Summary.data.frame"
   },
   {
     "id": "summary.Date",
     "href": "/detail/base/summaryDate.html",
-    "texttag": "summary.Date"
+    "funcname": "summary.Date"
   },
   {
     "id": "Summary.Date",
     "href": "/detail/base/SummaryDate.html",
-    "texttag": "Summary.Date"
+    "funcname": "Summary.Date"
   },
   {
     "id": "summary.default",
     "href": "/detail/base/summarydefault.html",
-    "texttag": "summary.default"
+    "funcname": "summary.default"
   },
   {
     "id": "Summary.difftime",
     "href": "/detail/base/Summarydifftime.html",
-    "texttag": "Summary.difftime"
+    "funcname": "Summary.difftime"
   },
   {
     "id": "summary.factor",
     "href": "/detail/base/summaryfactor.html",
-    "texttag": "summary.factor"
+    "funcname": "summary.factor"
   },
   {
     "id": "Summary.factor",
     "href": "/detail/base/Summaryfactor.html",
-    "texttag": "Summary.factor"
+    "funcname": "Summary.factor"
   },
   {
     "id": "summary.matrix",
     "href": "/detail/base/summarymatrix.html",
-    "texttag": "summary.matrix"
+    "funcname": "summary.matrix"
   },
   {
     "id": "Summary.numeric_version",
     "href": "/detail/base/Summarynumeric_version.html",
-    "texttag": "Summary.numeric_version"
+    "funcname": "Summary.numeric_version"
   },
   {
     "id": "Summary.ordered",
     "href": "/detail/base/Summaryordered.html",
-    "texttag": "Summary.ordered"
+    "funcname": "Summary.ordered"
   },
   {
     "id": "summary.POSIXct",
     "href": "/detail/base/summaryPOSIXct.html",
-    "texttag": "summary.POSIXct"
+    "funcname": "summary.POSIXct"
   },
   {
     "id": "Summary.POSIXct",
     "href": "/detail/base/SummaryPOSIXct.html",
-    "texttag": "Summary.POSIXct"
+    "funcname": "Summary.POSIXct"
   },
   {
     "id": "summary.POSIXlt",
     "href": "/detail/base/summaryPOSIXlt.html",
-    "texttag": "summary.POSIXlt"
+    "funcname": "summary.POSIXlt"
   },
   {
     "id": "Summary.POSIXlt",
     "href": "/detail/base/SummaryPOSIXlt.html",
-    "texttag": "Summary.POSIXlt"
+    "funcname": "Summary.POSIXlt"
   },
   {
     "id": "summary.proc_time",
     "href": "/detail/base/summaryproc_time.html",
-    "texttag": "summary.proc_time"
+    "funcname": "summary.proc_time"
   },
   {
     "id": "summary.srcfile",
     "href": "/detail/base/summarysrcfile.html",
-    "texttag": "summary.srcfile"
+    "funcname": "summary.srcfile"
   },
   {
     "id": "summary.srcref",
     "href": "/detail/base/summarysrcref.html",
-    "texttag": "summary.srcref"
+    "funcname": "summary.srcref"
   },
   {
     "id": "summary.table",
     "href": "/detail/base/summarytable.html",
-    "texttag": "summary.table"
+    "funcname": "summary.table"
   },
   {
     "id": "summary.warnings",
     "href": "/detail/base/summarywarnings.html",
-    "texttag": "summary.warnings"
+    "funcname": "summary.warnings"
   },
   {
     "id": "suppressMessages",
     "href": "/detail/base/suppressMessages.html",
-    "texttag": "suppressMessages"
+    "funcname": "suppressMessages"
   },
   {
     "id": "suppressPackageStartupMessages",
     "href": "/detail/base/suppressPackageStartupMessages.html",
-    "texttag": "suppressPackageStartupMessages"
+    "funcname": "suppressPackageStartupMessages"
   },
   {
     "id": "suppressWarnings",
     "href": "/detail/base/suppressWarnings.html",
-    "texttag": "suppressWarnings"
+    "funcname": "suppressWarnings"
   },
   {
     "id": "suspendInterrupts",
     "href": "/detail/base/suspendInterrupts.html",
-    "texttag": "suspendInterrupts"
+    "funcname": "suspendInterrupts"
   },
-  { "id": "svd", "href": "/detail/base/svd.html", "texttag": "svd" },
-  { "id": "sweep", "href": "/detail/base/sweep.html", "texttag": "sweep" },
-  { "id": "switch", "href": "/detail/base/switch.html", "texttag": "switch" },
+  { "id": "svd", "href": "/detail/base/svd.html", "funcname": "svd" },
+  { "id": "sweep", "href": "/detail/base/sweep.html", "funcname": "sweep" },
+  { "id": "switch", "href": "/detail/base/switch.html", "funcname": "switch" },
   {
     "id": "sys.call",
     "href": "/detail/base/syscall.html",
-    "texttag": "sys.call"
+    "funcname": "sys.call"
   },
   {
     "id": "sys.calls",
     "href": "/detail/base/syscalls.html",
-    "texttag": "sys.calls"
+    "funcname": "sys.calls"
   },
   {
     "id": "Sys.chmod",
     "href": "/detail/base/Syschmod.html",
-    "texttag": "Sys.chmod"
+    "funcname": "Sys.chmod"
   },
   {
     "id": "Sys.Date",
     "href": "/detail/base/SysDate.html",
-    "texttag": "Sys.Date"
+    "funcname": "Sys.Date"
   },
   {
     "id": "sys.frame",
     "href": "/detail/base/sysframe.html",
-    "texttag": "sys.frame"
+    "funcname": "sys.frame"
   },
   {
     "id": "sys.frames",
     "href": "/detail/base/sysframes.html",
-    "texttag": "sys.frames"
+    "funcname": "sys.frames"
   },
   {
     "id": "sys.function",
     "href": "/detail/base/sysfunction.html",
-    "texttag": "sys.function"
+    "funcname": "sys.function"
   },
   {
     "id": "Sys.getenv",
     "href": "/detail/base/Sysgetenv.html",
-    "texttag": "Sys.getenv"
+    "funcname": "Sys.getenv"
   },
   {
     "id": "Sys.getlocale",
     "href": "/detail/base/Sysgetlocale.html",
-    "texttag": "Sys.getlocale"
+    "funcname": "Sys.getlocale"
   },
   {
     "id": "Sys.getpid",
     "href": "/detail/base/Sysgetpid.html",
-    "texttag": "Sys.getpid"
+    "funcname": "Sys.getpid"
   },
   {
     "id": "Sys.glob",
     "href": "/detail/base/Sysglob.html",
-    "texttag": "Sys.glob"
+    "funcname": "Sys.glob"
   },
   {
     "id": "Sys.info",
     "href": "/detail/base/Sysinfo.html",
-    "texttag": "Sys.info"
+    "funcname": "Sys.info"
   },
   {
     "id": "sys.load.image",
     "href": "/detail/base/sysload.image.html",
-    "texttag": "sys.load.image"
+    "funcname": "sys.load.image"
   },
   {
     "id": "Sys.localeconv",
     "href": "/detail/base/Syslocaleconv.html",
-    "texttag": "Sys.localeconv"
+    "funcname": "Sys.localeconv"
   },
   {
     "id": "sys.nframe",
     "href": "/detail/base/sysnframe.html",
-    "texttag": "sys.nframe"
+    "funcname": "sys.nframe"
   },
   {
     "id": "sys.on.exit",
     "href": "/detail/base/syson.exit.html",
-    "texttag": "sys.on.exit"
+    "funcname": "sys.on.exit"
   },
   {
     "id": "sys.parent",
     "href": "/detail/base/sysparent.html",
-    "texttag": "sys.parent"
+    "funcname": "sys.parent"
   },
   {
     "id": "sys.parents",
     "href": "/detail/base/sysparents.html",
-    "texttag": "sys.parents"
+    "funcname": "sys.parents"
   },
   {
     "id": "Sys.readlink",
     "href": "/detail/base/Sysreadlink.html",
-    "texttag": "Sys.readlink"
+    "funcname": "Sys.readlink"
   },
   {
     "id": "sys.save.image",
     "href": "/detail/base/syssave.image.html",
-    "texttag": "sys.save.image"
+    "funcname": "sys.save.image"
   },
   {
     "id": "Sys.setenv",
     "href": "/detail/base/Syssetenv.html",
-    "texttag": "Sys.setenv"
+    "funcname": "Sys.setenv"
   },
   {
     "id": "Sys.setFileTime",
     "href": "/detail/base/SyssetFileTime.html",
-    "texttag": "Sys.setFileTime"
+    "funcname": "Sys.setFileTime"
   },
   {
     "id": "Sys.setlocale",
     "href": "/detail/base/Syssetlocale.html",
-    "texttag": "Sys.setlocale"
+    "funcname": "Sys.setlocale"
   },
   {
     "id": "Sys.sleep",
     "href": "/detail/base/Syssleep.html",
-    "texttag": "Sys.sleep"
+    "funcname": "Sys.sleep"
   },
   {
     "id": "sys.source",
     "href": "/detail/base/syssource.html",
-    "texttag": "sys.source"
+    "funcname": "sys.source"
   },
   {
     "id": "sys.status",
     "href": "/detail/base/sysstatus.html",
-    "texttag": "sys.status"
+    "funcname": "sys.status"
   },
   {
     "id": "Sys.time",
     "href": "/detail/base/Systime.html",
-    "texttag": "Sys.time"
+    "funcname": "Sys.time"
   },
   {
     "id": "Sys.timezone",
     "href": "/detail/base/Systimezone.html",
-    "texttag": "Sys.timezone"
+    "funcname": "Sys.timezone"
   },
   {
     "id": "Sys.umask",
     "href": "/detail/base/Sysumask.html",
-    "texttag": "Sys.umask"
+    "funcname": "Sys.umask"
   },
   {
     "id": "Sys.unsetenv",
     "href": "/detail/base/Sysunsetenv.html",
-    "texttag": "Sys.unsetenv"
+    "funcname": "Sys.unsetenv"
   },
   {
     "id": "Sys.which",
     "href": "/detail/base/Syswhich.html",
-    "texttag": "Sys.which"
+    "funcname": "Sys.which"
   },
-  { "id": "system", "href": "/detail/base/system.html", "texttag": "system" },
+  { "id": "system", "href": "/detail/base/system.html", "funcname": "system" },
   {
     "id": "system.file",
     "href": "/detail/base/systemfile.html",
-    "texttag": "system.file"
+    "funcname": "system.file"
   },
   {
     "id": "system.time",
     "href": "/detail/base/systemtime.html",
-    "texttag": "system.time"
+    "funcname": "system.time"
   },
   {
     "id": "system2",
     "href": "/detail/base/system2.html",
-    "texttag": "system2"
+    "funcname": "system2"
   },
-  { "id": "t", "href": "/detail/base/t.html", "texttag": "t" },
-  { "id": "T", "href": "/detail/base/T.html", "texttag": "T" },
+  { "id": "t", "href": "/detail/base/t.html", "funcname": "t" },
+  { "id": "T", "href": "/detail/base/T.html", "funcname": "T" },
   {
     "id": "t.data.frame",
     "href": "/detail/base/tdata.frame.html",
-    "texttag": "t.data.frame"
+    "funcname": "t.data.frame"
   },
   {
     "id": "t.default",
     "href": "/detail/base/tdefault.html",
-    "texttag": "t.default"
+    "funcname": "t.default"
   },
-  { "id": "table", "href": "/detail/base/table.html", "texttag": "table" },
+  { "id": "table", "href": "/detail/base/table.html", "funcname": "table" },
   {
     "id": "tabulate",
     "href": "/detail/base/tabulate.html",
-    "texttag": "tabulate"
+    "funcname": "tabulate"
   },
-  { "id": "tan", "href": "/detail/base/tan.html", "texttag": "tan" },
-  { "id": "tanh", "href": "/detail/base/tanh.html", "texttag": "tanh" },
-  { "id": "tanpi", "href": "/detail/base/tanpi.html", "texttag": "tanpi" },
-  { "id": "tapply", "href": "/detail/base/tapply.html", "texttag": "tapply" },
+  { "id": "tan", "href": "/detail/base/tan.html", "funcname": "tan" },
+  { "id": "tanh", "href": "/detail/base/tanh.html", "funcname": "tanh" },
+  { "id": "tanpi", "href": "/detail/base/tanpi.html", "funcname": "tanpi" },
+  { "id": "tapply", "href": "/detail/base/tapply.html", "funcname": "tapply" },
   {
     "id": "taskCallbackManager",
     "href": "/detail/base/taskCallbackManager.html",
-    "texttag": "taskCallbackManager"
+    "funcname": "taskCallbackManager"
   },
   {
     "id": "tcrossprod",
     "href": "/detail/base/tcrossprod.html",
-    "texttag": "tcrossprod"
+    "funcname": "tcrossprod"
   },
   {
     "id": "tempdir",
     "href": "/detail/base/tempdir.html",
-    "texttag": "tempdir"
+    "funcname": "tempdir"
   },
   {
     "id": "tempfile",
     "href": "/detail/base/tempfile.html",
-    "texttag": "tempfile"
+    "funcname": "tempfile"
   },
   {
     "id": "textConnection",
     "href": "/detail/base/textConnection.html",
-    "texttag": "textConnection"
+    "funcname": "textConnection"
   },
   {
     "id": "textConnectionValue",
     "href": "/detail/base/textConnectionValue.html",
-    "texttag": "textConnectionValue"
+    "funcname": "textConnectionValue"
   },
   {
     "id": "tolower",
     "href": "/detail/base/tolower.html",
-    "texttag": "tolower"
+    "funcname": "tolower"
   },
-  { "id": "topenv", "href": "/detail/base/topenv.html", "texttag": "topenv" },
+  { "id": "topenv", "href": "/detail/base/topenv.html", "funcname": "topenv" },
   {
     "id": "toString",
     "href": "/detail/base/toString.html",
-    "texttag": "toString"
+    "funcname": "toString"
   },
   {
     "id": "toString.default",
     "href": "/detail/base/toStringdefault.html",
-    "texttag": "toString.default"
+    "funcname": "toString.default"
   },
   {
     "id": "toupper",
     "href": "/detail/base/toupper.html",
-    "texttag": "toupper"
+    "funcname": "toupper"
   },
-  { "id": "trace", "href": "/detail/base/trace.html", "texttag": "trace" },
+  { "id": "trace", "href": "/detail/base/trace.html", "funcname": "trace" },
   {
     "id": "traceback",
     "href": "/detail/base/traceback.html",
-    "texttag": "traceback"
+    "funcname": "traceback"
   },
   {
     "id": "tracemem",
     "href": "/detail/base/tracemem.html",
-    "texttag": "tracemem"
+    "funcname": "tracemem"
   },
   {
     "id": "tracingState",
     "href": "/detail/base/tracingState.html",
-    "texttag": "tracingState"
+    "funcname": "tracingState"
   },
   {
     "id": "transform",
     "href": "/detail/base/transform.html",
-    "texttag": "transform"
+    "funcname": "transform"
   },
   {
     "id": "transform.data.frame",
     "href": "/detail/base/transformdata.frame.html",
-    "texttag": "transform.data.frame"
+    "funcname": "transform.data.frame"
   },
   {
     "id": "transform.default",
     "href": "/detail/base/transformdefault.html",
-    "texttag": "transform.default"
+    "funcname": "transform.default"
   },
   {
     "id": "trigamma",
     "href": "/detail/base/trigamma.html",
-    "texttag": "trigamma"
+    "funcname": "trigamma"
   },
-  { "id": "trimws", "href": "/detail/base/trimws.html", "texttag": "trimws" },
-  { "id": "trunc", "href": "/detail/base/trunc.html", "texttag": "trunc" },
+  { "id": "trimws", "href": "/detail/base/trimws.html", "funcname": "trimws" },
+  { "id": "trunc", "href": "/detail/base/trunc.html", "funcname": "trunc" },
   {
     "id": "trunc.Date",
     "href": "/detail/base/truncDate.html",
-    "texttag": "trunc.Date"
+    "funcname": "trunc.Date"
   },
   {
     "id": "trunc.POSIXt",
     "href": "/detail/base/truncPOSIXt.html",
-    "texttag": "trunc.POSIXt"
+    "funcname": "trunc.POSIXt"
   },
   {
     "id": "truncate",
     "href": "/detail/base/truncate.html",
-    "texttag": "truncate"
+    "funcname": "truncate"
   },
   {
     "id": "truncate.connection",
     "href": "/detail/base/truncateconnection.html",
-    "texttag": "truncate.connection"
+    "funcname": "truncate.connection"
   },
-  { "id": "try", "href": "/detail/base/try.html", "texttag": "try" },
+  { "id": "try", "href": "/detail/base/try.html", "funcname": "try" },
   {
     "id": "tryCatch",
     "href": "/detail/base/tryCatch.html",
-    "texttag": "tryCatch"
+    "funcname": "tryCatch"
   },
   {
     "id": "tryInvokeRestart",
     "href": "/detail/base/tryInvokeRestart.html",
-    "texttag": "tryInvokeRestart"
+    "funcname": "tryInvokeRestart"
   },
-  { "id": "typeof", "href": "/detail/base/typeof.html", "texttag": "typeof" },
+  { "id": "typeof", "href": "/detail/base/typeof.html", "funcname": "typeof" },
   {
     "id": "unclass",
     "href": "/detail/base/unclass.html",
-    "texttag": "unclass"
+    "funcname": "unclass"
   },
   {
     "id": "undebug",
     "href": "/detail/base/undebug.html",
-    "texttag": "undebug"
+    "funcname": "undebug"
   },
-  { "id": "union", "href": "/detail/base/union.html", "texttag": "union" },
-  { "id": "unique", "href": "/detail/base/unique.html", "texttag": "unique" },
+  { "id": "union", "href": "/detail/base/union.html", "funcname": "union" },
+  { "id": "unique", "href": "/detail/base/unique.html", "funcname": "unique" },
   {
     "id": "unique.array",
     "href": "/detail/base/uniquearray.html",
-    "texttag": "unique.array"
+    "funcname": "unique.array"
   },
   {
     "id": "unique.data.frame",
     "href": "/detail/base/uniquedata.frame.html",
-    "texttag": "unique.data.frame"
+    "funcname": "unique.data.frame"
   },
   {
     "id": "unique.default",
     "href": "/detail/base/uniquedefault.html",
-    "texttag": "unique.default"
+    "funcname": "unique.default"
   },
   {
     "id": "unique.matrix",
     "href": "/detail/base/uniquematrix.html",
-    "texttag": "unique.matrix"
+    "funcname": "unique.matrix"
   },
   {
     "id": "unique.numeric_version",
     "href": "/detail/base/uniquenumeric_version.html",
-    "texttag": "unique.numeric_version"
+    "funcname": "unique.numeric_version"
   },
   {
     "id": "unique.POSIXlt",
     "href": "/detail/base/uniquePOSIXlt.html",
-    "texttag": "unique.POSIXlt"
+    "funcname": "unique.POSIXlt"
   },
   {
     "id": "unique.warnings",
     "href": "/detail/base/uniquewarnings.html",
-    "texttag": "unique.warnings"
+    "funcname": "unique.warnings"
   },
-  { "id": "units", "href": "/detail/base/units.html", "texttag": "units" },
+  { "id": "units", "href": "/detail/base/units.html", "funcname": "units" },
   {
     "id": "units.difftime",
     "href": "/detail/base/unitsdifftime.html",
-    "texttag": "units.difftime"
+    "funcname": "units.difftime"
   },
   {
-    "id": "units_-",
+    "id": "units<-",
     "href": "/detail/base/units_-.html",
-    "texttag": "units<-"
+    "funcname": "units<-"
   },
   {
-    "id": "units_-.difftime",
+    "id": "units<-.difftime",
     "href": "/detail/base/units_-difftime.html",
-    "texttag": "units<-.difftime"
+    "funcname": "units<-.difftime"
   },
   {
     "id": "unix.time",
     "href": "/detail/base/unixtime.html",
-    "texttag": "unix.time"
+    "funcname": "unix.time"
   },
-  { "id": "unlink", "href": "/detail/base/unlink.html", "texttag": "unlink" },
-  { "id": "unlist", "href": "/detail/base/unlist.html", "texttag": "unlist" },
+  { "id": "unlink", "href": "/detail/base/unlink.html", "funcname": "unlink" },
+  { "id": "unlist", "href": "/detail/base/unlist.html", "funcname": "unlist" },
   {
     "id": "unloadNamespace",
     "href": "/detail/base/unloadNamespace.html",
-    "texttag": "unloadNamespace"
+    "funcname": "unloadNamespace"
   },
   {
     "id": "unlockBinding",
     "href": "/detail/base/unlockBinding.html",
-    "texttag": "unlockBinding"
+    "funcname": "unlockBinding"
   },
-  { "id": "unname", "href": "/detail/base/unname.html", "texttag": "unname" },
+  { "id": "unname", "href": "/detail/base/unname.html", "funcname": "unname" },
   {
     "id": "unserialize",
     "href": "/detail/base/unserialize.html",
-    "texttag": "unserialize"
+    "funcname": "unserialize"
   },
   {
     "id": "unsplit",
     "href": "/detail/base/unsplit.html",
-    "texttag": "unsplit"
+    "funcname": "unsplit"
   },
   {
     "id": "untrace",
     "href": "/detail/base/untrace.html",
-    "texttag": "untrace"
+    "funcname": "untrace"
   },
   {
     "id": "untracemem",
     "href": "/detail/base/untracemem.html",
-    "texttag": "untracemem"
+    "funcname": "untracemem"
   },
-  { "id": "unz", "href": "/detail/base/unz.html", "texttag": "unz" },
+  { "id": "unz", "href": "/detail/base/unz.html", "funcname": "unz" },
   {
     "id": "upper.tri",
     "href": "/detail/base/uppertri.html",
-    "texttag": "upper.tri"
+    "funcname": "upper.tri"
   },
-  { "id": "url", "href": "/detail/base/url.html", "texttag": "url" },
+  { "id": "url", "href": "/detail/base/url.html", "funcname": "url" },
   {
     "id": "UseMethod",
     "href": "/detail/base/UseMethod.html",
-    "texttag": "UseMethod"
+    "funcname": "UseMethod"
   },
   {
     "id": "utf8ToInt",
     "href": "/detail/base/utf8ToInt.html",
-    "texttag": "utf8ToInt"
+    "funcname": "utf8ToInt"
   },
   {
     "id": "validEnc",
     "href": "/detail/base/validEnc.html",
-    "texttag": "validEnc"
+    "funcname": "validEnc"
   },
   {
     "id": "validUTF8",
     "href": "/detail/base/validUTF8.html",
-    "texttag": "validUTF8"
+    "funcname": "validUTF8"
   },
-  { "id": "vapply", "href": "/detail/base/vapply.html", "texttag": "vapply" },
-  { "id": "vector", "href": "/detail/base/vector.html", "texttag": "vector" },
+  { "id": "vapply", "href": "/detail/base/vapply.html", "funcname": "vapply" },
+  { "id": "vector", "href": "/detail/base/vector.html", "funcname": "vector" },
   {
     "id": "Vectorize",
     "href": "/detail/base/Vectorize.html",
-    "texttag": "Vectorize"
+    "funcname": "Vectorize"
   },
   {
     "id": "version",
     "href": "/detail/base/version.html",
-    "texttag": "version"
+    "funcname": "version"
   },
   {
     "id": "warning",
     "href": "/detail/base/warning.html",
-    "texttag": "warning"
+    "funcname": "warning"
   },
   {
     "id": "warningCondition",
     "href": "/detail/base/warningCondition.html",
-    "texttag": "warningCondition"
+    "funcname": "warningCondition"
   },
   {
     "id": "warnings",
     "href": "/detail/base/warnings.html",
-    "texttag": "warnings"
+    "funcname": "warnings"
   },
   {
     "id": "weekdays",
     "href": "/detail/base/weekdays.html",
-    "texttag": "weekdays"
+    "funcname": "weekdays"
   },
   {
     "id": "weekdays.Date",
     "href": "/detail/base/weekdaysDate.html",
-    "texttag": "weekdays.Date"
+    "funcname": "weekdays.Date"
   },
   {
     "id": "weekdays.POSIXt",
     "href": "/detail/base/weekdaysPOSIXt.html",
-    "texttag": "weekdays.POSIXt"
+    "funcname": "weekdays.POSIXt"
   },
-  { "id": "which", "href": "/detail/base/which.html", "texttag": "which" },
+  { "id": "which", "href": "/detail/base/which.html", "funcname": "which" },
   {
     "id": "which.max",
     "href": "/detail/base/whichmax.html",
-    "texttag": "which.max"
+    "funcname": "which.max"
   },
   {
     "id": "which.min",
     "href": "/detail/base/whichmin.html",
-    "texttag": "which.min"
+    "funcname": "which.min"
   },
-  { "id": "while", "href": "/detail/base/while.html", "texttag": "while" },
-  { "id": "with", "href": "/detail/base/with.html", "texttag": "with" },
+  { "id": "while", "href": "/detail/base/while.html", "funcname": "while" },
+  { "id": "with", "href": "/detail/base/with.html", "funcname": "with" },
   {
     "id": "with.default",
     "href": "/detail/base/withdefault.html",
-    "texttag": "with.default"
+    "funcname": "with.default"
   },
   {
     "id": "withAutoprint",
     "href": "/detail/base/withAutoprint.html",
-    "texttag": "withAutoprint"
+    "funcname": "withAutoprint"
   },
   {
     "id": "withCallingHandlers",
     "href": "/detail/base/withCallingHandlers.html",
-    "texttag": "withCallingHandlers"
+    "funcname": "withCallingHandlers"
   },
-  { "id": "within", "href": "/detail/base/within.html", "texttag": "within" },
+  { "id": "within", "href": "/detail/base/within.html", "funcname": "within" },
   {
     "id": "within.data.frame",
     "href": "/detail/base/withindata.frame.html",
-    "texttag": "within.data.frame"
+    "funcname": "within.data.frame"
   },
   {
     "id": "within.list",
     "href": "/detail/base/withinlist.html",
-    "texttag": "within.list"
+    "funcname": "within.list"
   },
   {
     "id": "withRestarts",
     "href": "/detail/base/withRestarts.html",
-    "texttag": "withRestarts"
+    "funcname": "withRestarts"
   },
   {
     "id": "withVisible",
     "href": "/detail/base/withVisible.html",
-    "texttag": "withVisible"
+    "funcname": "withVisible"
   },
-  { "id": "write", "href": "/detail/base/write.html", "texttag": "write" },
+  { "id": "write", "href": "/detail/base/write.html", "funcname": "write" },
   {
     "id": "write.dcf",
     "href": "/detail/base/writedcf.html",
-    "texttag": "write.dcf"
+    "funcname": "write.dcf"
   },
   {
     "id": "writeBin",
     "href": "/detail/base/writeBin.html",
-    "texttag": "writeBin"
+    "funcname": "writeBin"
   },
   {
     "id": "writeChar",
     "href": "/detail/base/writeChar.html",
-    "texttag": "writeChar"
+    "funcname": "writeChar"
   },
   {
     "id": "writeLines",
     "href": "/detail/base/writeLines.html",
-    "texttag": "writeLines"
+    "funcname": "writeLines"
   },
-  { "id": "xor", "href": "/detail/base/xor.html", "texttag": "xor" },
+  { "id": "xor", "href": "/detail/base/xor.html", "funcname": "xor" },
   {
     "id": "xpdrows.data.frame",
     "href": "/detail/base/xpdrowsdata.frame.html",
-    "texttag": "xpdrows.data.frame"
+    "funcname": "xpdrows.data.frame"
   },
-  { "id": "xtfrm", "href": "/detail/base/xtfrm.html", "texttag": "xtfrm" },
+  { "id": "xtfrm", "href": "/detail/base/xtfrm.html", "funcname": "xtfrm" },
   {
     "id": "xtfrm.AsIs",
     "href": "/detail/base/xtfrmAsIs.html",
-    "texttag": "xtfrm.AsIs"
+    "funcname": "xtfrm.AsIs"
   },
   {
     "id": "xtfrm.data.frame",
     "href": "/detail/base/xtfrmdata.frame.html",
-    "texttag": "xtfrm.data.frame"
+    "funcname": "xtfrm.data.frame"
   },
   {
     "id": "xtfrm.Date",
     "href": "/detail/base/xtfrmDate.html",
-    "texttag": "xtfrm.Date"
+    "funcname": "xtfrm.Date"
   },
   {
     "id": "xtfrm.default",
     "href": "/detail/base/xtfrmdefault.html",
-    "texttag": "xtfrm.default"
+    "funcname": "xtfrm.default"
   },
   {
     "id": "xtfrm.difftime",
     "href": "/detail/base/xtfrmdifftime.html",
-    "texttag": "xtfrm.difftime"
+    "funcname": "xtfrm.difftime"
   },
   {
     "id": "xtfrm.factor",
     "href": "/detail/base/xtfrmfactor.html",
-    "texttag": "xtfrm.factor"
+    "funcname": "xtfrm.factor"
   },
   {
     "id": "xtfrm.numeric_version",
     "href": "/detail/base/xtfrmnumeric_version.html",
-    "texttag": "xtfrm.numeric_version"
+    "funcname": "xtfrm.numeric_version"
   },
   {
     "id": "xtfrm.POSIXct",
     "href": "/detail/base/xtfrmPOSIXct.html",
-    "texttag": "xtfrm.POSIXct"
+    "funcname": "xtfrm.POSIXct"
   },
   {
     "id": "xtfrm.POSIXlt",
     "href": "/detail/base/xtfrmPOSIXlt.html",
-    "texttag": "xtfrm.POSIXlt"
+    "funcname": "xtfrm.POSIXlt"
   },
-  { "id": "xzfile", "href": "/detail/base/xzfile.html", "texttag": "xzfile" },
+  { "id": "xzfile", "href": "/detail/base/xzfile.html", "funcname": "xzfile" },
   {
     "id": "zapsmall",
     "href": "/detail/base/zapsmall.html",
-    "texttag": "zapsmall"
+    "funcname": "zapsmall"
   }
 ]
