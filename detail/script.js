@@ -1,12 +1,10 @@
 const path = "../../help_db_raw.json";
 const request = new XMLHttpRequest();
 request.open("GET", path, true);
-console.log(request);
 request.send();
 
 request.onload = function () {
   const jsondata = JSON.parse(request.responseText);
-  console.log(jsondata);
   const title = document.head.querySelector("title").textContent;
   const findfunc = jsondata.find((obj) => obj.func === title);
   console.log(findfunc.func);
@@ -145,6 +143,7 @@ request.onload = function () {
 
   content.appendChild(div);
 };
+
 //tabmenu
 const tabcontent = document.querySelector(".tabcontents");
 
