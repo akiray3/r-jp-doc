@@ -8,13 +8,11 @@ request.onload = function () {
   const funcname = jsondata.map((item) => item.funcname);
   const href = jsondata.map((item) => item.href);
 
-  console.log(funcname[1]);
   var infocontent = document.getElementById("baseinfo");
   for (let i = 0; i < funcname.length; i++) {
-    const basename = funcname[i];
     const div = document.createElement("div");
     div.className = "lineitem";
-    div.id = basename;
+    div.id = funcname[i];
     div.style.display = "inline-block";
     div.style.width = "289px";
     div.style.height = "125px";
@@ -36,7 +34,7 @@ request.onload = function () {
     atag.href = href[i];
 
     const txttag = document.createElement("text");
-    const txtnode = document.createTextNode(basename);
+    const txtnode = document.createTextNode(funcname[i]);
     txttag.style.fontFamily = "ArialRoundedMTBold";
 
     txttag.appendChild(txtnode);
