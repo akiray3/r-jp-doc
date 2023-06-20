@@ -1,13 +1,10 @@
+//jsonファイル定義
 const path = "../../help_db_raw.json";
 const request = new XMLHttpRequest();
 request.open("GET", path, true);
 request.send();
 
 request.onload = function () {
-  const jsondata = JSON.parse(request.responseText);
-  const title = document.head.querySelector("title").textContent;
-  const findfunc = jsondata.find((obj) => obj.func === title);
-
   const content = document.querySelector(".block");
   //全体関数ブロック
   const div = document.createElement("div");
@@ -17,6 +14,7 @@ request.onload = function () {
   div.style.overflow = "auto";
   div.style.transform = "translate(167px ,57px)";
   content.appendChild(div);
+
   //関数名
   const funcframe = document.createElement("div");
   funcframe.style.display = "inline-block";
@@ -28,9 +26,6 @@ request.onload = function () {
   funcname.style.fontSize = "48px";
   funcname.style.fontFamily = "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
   funcname.style.display = "flex: 0 0 auto; margin-right: 10px";
-  const funcnametxt = document.createTextNode(findfunc.func + "(");
-  funcname.appendChild(funcnametxt);
-  funcframe.appendChild(funcname);
 
   //引数ブロック
   const argblock = document.createElement("div");
@@ -41,6 +36,15 @@ request.onload = function () {
   argcol.style.display = "flex";
   argcol.style.flexDirection = "column";
   argblock.appendChild(argcol);
+
+  const jsondata = JSON.parse(request.responseText);
+  const title = document.head.querySelector("title").textContent;
+  const findfunc = jsondata.find((obj) => obj.func === title);
+
+  //関数名
+  const funcnametxt = document.createTextNode(findfunc.func + "(");
+  funcname.appendChild(funcnametxt);
+  funcframe.appendChild(funcname);
 
   //引数１
   const txt1 = document.createElement("text");
@@ -144,69 +148,83 @@ request.onload = function () {
 };
 
 //tabmenu
-const tabcontent = document.querySelector(".tabcontents");
+const tabcontent = document.querySelector(".tabs");
 
 const Descriptionbox = document.createElement("div");
 Descriptionbox.classList.add("content");
 Descriptionbox.setAttribute("id", "Description");
-const Descriptiontxt = document.createTextNode("description内容");
-Descriptionbox.appendChild(Descriptiontxt);
-tabcontent.appendChild(Descriptionbox);
 
 const Argumentsbox = document.createElement("div");
 Argumentsbox.classList.add("content");
 Argumentsbox.setAttribute("id", "Arguments");
-const Argumentstxt = document.createTextNode("Arguments内容");
-Argumentsbox.appendChild(Argumentstxt);
-tabcontent.appendChild(Argumentsbox);
 
 const Valuebox = document.createElement("div");
 Valuebox.classList.add("content");
 Valuebox.setAttribute("id", "Value");
-const Valuetxt = document.createTextNode("Value内容");
-Valuebox.appendChild(Valuetxt);
-tabcontent.appendChild(Valuebox);
 
 const Detailsbox = document.createElement("div");
 Detailsbox.classList.add("content");
 Detailsbox.setAttribute("id", "Details");
-const Detailstxt = document.createTextNode("Details内容");
-Detailsbox.appendChild(Detailstxt);
-tabcontent.appendChild(Detailsbox);
 
 const Examplesbox = document.createElement("div");
 Examplesbox.classList.add("content");
 Examplesbox.setAttribute("id", "Examples");
-const Examplestxt = document.createTextNode("Examples内容");
-Examplesbox.appendChild(Examplestxt);
-tabcontent.appendChild(Examplesbox);
 
 const Referencesbox = document.createElement("div");
 Referencesbox.classList.add("content");
 Referencesbox.setAttribute("id", "References");
-const Referencestxt = document.createTextNode("References内容");
-Referencesbox.appendChild(Referencestxt);
-tabcontent.appendChild(Referencesbox);
 
 const See_Alsobox = document.createElement("div");
 See_Alsobox.classList.add("content");
 See_Alsobox.setAttribute("id", "See_Also");
-const See_Alsotxt = document.createTextNode("See_Also内容");
-See_Alsobox.appendChild(See_Alsotxt);
-tabcontent.appendChild(See_Alsobox);
+
+const load = new XMLHttpRequest();
+load.open("GET", path, true);
+load.send();
 
 function openTab(event, tabId) {
   const tabs = document.querySelectorAll(".tab");
   const contents = document.querySelectorAll(".content");
   tabs.forEach((tab) => tab.classList.remove("active"));
-  contents.forEach((content) => (content.style.display = "none"));
+  contents.forEach((cont) => (cont.style.display = "none"));
 
   const clicktab = event.currentTarget;
-  const clickedcontent = document.getElementById(tabId);
+  const clickedcontent = document.querySelector("#" + tabId);
+  console.log(clickedcontent);
   clicktab.classList.add("active");
   clickedcontent.style.display = "block";
 }
 
-const defaulttab = document.querySelector(".tab");
-const defaulttabid = defaulttab.getAttribute("Description");
-openTab({ currentTarget: defaulttab }, defaulttabid);
+load.onload = function () {
+  const jsondata = JSON.parse(load.responseText);
+  const title = document.head.querySelector("title").textContent;
+  const findfunc = jsondata.find((obj) => obj.func === title);
+
+  const Descriptiontxt = document.createTextNode(findfunc.Description);
+  Descriptionbox.appendChild(Descriptiontxt);
+  tabcontent.appendChild(Descriptionbox);
+
+  const Argumentstxt = document.createTextNode(findfunc.Arguments);
+  Argumentsbox.appendChild(Argumentstxt);
+  tabcontent.appendChild(Argumentsbox);
+
+  const Valuetxt = document.createTextNode("Value内容");
+  Valuebox.appendChild(Valuetxt);
+  tabcontent.appendChild(Valuebox);
+
+  const Detailstxt = document.createTextNode(findfunc.Details);
+  Detailsbox.appendChild(Detailstxt);
+  tabcontent.appendChild(Detailsbox);
+
+  const Examplestxt = document.createTextNode(findfunc.Examples);
+  Examplesbox.appendChild(Examplestxt);
+  tabcontent.appendChild(Examplesbox);
+
+  const Referencestxt = document.createTextNode(findfunc.References);
+  Referencesbox.appendChild(Referencestxt);
+  tabcontent.appendChild(Referencesbox);
+
+  const See_Alsotxt = document.createTextNode(findfunc.See_Also);
+  See_Alsobox.appendChild(See_Alsotxt);
+  tabcontent.appendChild(See_Alsobox);
+};
