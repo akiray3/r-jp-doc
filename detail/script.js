@@ -208,7 +208,7 @@ load.onload = function () {
   Argumentsbox.appendChild(Argumentstxt);
   tabcontent.appendChild(Argumentsbox);
 
-  const Valuetxt = document.createTextNode("Value内容");
+  const Valuetxt = document.createTextNode(findfunc.Value);
   Valuebox.appendChild(Valuetxt);
   tabcontent.appendChild(Valuebox);
 
