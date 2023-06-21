@@ -1,3 +1,4 @@
+//関数部分
 //jsonファイル定義
 const path = "../../help_db_raw.json";
 const request = new XMLHttpRequest();
@@ -147,6 +148,7 @@ request.onload = function () {
   content.appendChild(div);
 };
 
+///////////////////////////////////////////////////////
 //tabmenu
 const tabcontent = document.querySelector(".tabs");
 
@@ -184,14 +186,16 @@ load.send();
 
 function openTab(event, tabId) {
   const tabs = document.querySelectorAll(".tab");
+
   const contents = document.querySelectorAll(".content");
   tabs.forEach((tab) => tab.classList.remove("active"));
   contents.forEach((cont) => (cont.style.display = "none"));
 
   const clicktab = event.currentTarget;
+  console.log(clicktab);
   const clickedcontent = document.querySelector("#" + tabId);
-  console.log(clickedcontent);
   clicktab.classList.add("active");
+
   clickedcontent.style.display = "block";
 }
 
@@ -227,4 +231,8 @@ load.onload = function () {
   const See_Alsotxt = document.createTextNode(findfunc.See_Also);
   See_Alsobox.appendChild(See_Alsotxt);
   tabcontent.appendChild(See_Alsobox);
+
+  document.querySelector("#default").click();
 };
+
+

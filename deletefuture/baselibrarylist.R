@@ -19,9 +19,9 @@ dat2$filename <- gsub("[<]","symbol9",dat2$filename)
 dat2$filename <- gsub("[>]","symbol10",dat2$filename)
 dat2$filename <- gsub("[.]","symbol11",dat2$filename)
 dat2%>%
-  filter(pack == "psych") %>% 
+  filter(pack == "base") %>% 
   mutate(func = paste0("{ id:'",func,"', href:")) %>% 
-  mutate(html = paste0("'/detail/psych/",filename,".html'")) %>% 
+  mutate(html = paste0("'/detail/base/",filename,".html'")) %>% 
   mutate(funcoriginal = paste0(",funcname:'",funcoriginal,"'}")) %>% 
   mutate(func = paste0(func,html,funcoriginal,",")) %>% 
   select(-"html") %>%
@@ -49,7 +49,7 @@ foreach::foreach(c = detail)%do%{
   <div class=\"tabcontents\" style=\"display: block\"></div>
   <div class=\"tabs\" style=\"display: block\">
     <div style=\"display: flex; transform: translate(0, 0)\">
-      <button class=\"tab\" onclick=\"openTab(event,'Description') \">
+      <button class=\"tab\" onclick=\"openTab(event,'Description') id=\"default\"\">
         Description
       </button>
       <button class=\"tab\" onclick=\"openTab(event,'Arguments')\">
