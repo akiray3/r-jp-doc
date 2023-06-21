@@ -14,6 +14,7 @@ request.onload = function () {
   div.style.width = "100%";
   div.style.overflow = "auto";
   div.style.transform = "translate(167px ,57px)";
+  div.style.position = "relative";
   content.appendChild(div);
 
   //関数名
@@ -84,14 +85,14 @@ request.onload = function () {
   txt3.appendChild(xyz);
 
   const heightblock = argblock.offsetHeight;
-  content.style.height = `${heightblock + 197}px`;
+  content.style.height = `${heightblock + 300}px`;
 
   //hoverframe
   const argframe = document.createElement("div");
-  argframe.style.width = "40%";
   argframe.style.display = "inline-block";
-  argframe.style.marginRight = "10px";
-  argframe.style.transform = "translate(50px,10px)";
+  argframe.height = "100%";
+  argframe.style.position = "absolute";
+  argframe.style.transform = "translate(120px,10px)";
   div.appendChild(argframe);
 
   ///hover
@@ -101,6 +102,7 @@ request.onload = function () {
   hovinfo1.style.height = "120px";
   hovinfo1.style.backgroundColor = "#DAE1E7";
   hovinfo1.style.fontSize = "20px";
+  hovinfo1.style.flexGrow = "1";
   const hov1txt = document.createTextNode("引数１");
   hovinfo1.appendChild(hov1txt);
   argframe.appendChild(hovinfo1);
@@ -120,29 +122,44 @@ request.onload = function () {
   hovinfo3.classList.add("hovanime");
   hovinfo3.style.display = "none";
   hovinfo3.style.height = "120px";
+  hovinfo3.style.width = "120px";
   hovinfo3.style.backgroundColor = "#DAE1E7";
   hovinfo3.style.fontSize = "20px";
   const hov3txt = document.createTextNode("引数3");
   hovinfo3.appendChild(hov3txt);
   argframe.appendChild(hovinfo3);
 
+  const imgframe = document.createElement("div");
+  const image = document.createElement("img");
+  image.classList.add("hovanime");
+  image.setAttribute("src", "../../www/math-operations.svg");
+  image.style.width = "220px";
+  imgframe.appendChild(image);
+  argframe.appendChild(imgframe);
+
   txt1.addEventListener("mouseover", function () {
     hovinfo1.style.display = "block";
+    image.style.display = "none";
   });
   txt1.addEventListener("mouseout", function () {
     hovinfo1.style.display = "none";
+    image.style.display = "block";
   });
   txt2.addEventListener("mouseover", function () {
     hovinfo2.style.display = "block";
+    image.style.display = "none";
   });
   txt2.addEventListener("mouseout", function () {
     hovinfo2.style.display = "none";
+    image.style.display = "block";
   });
   txt3.addEventListener("mouseover", function () {
     hovinfo3.style.display = "block";
+    image.style.display = "none";
   });
   txt3.addEventListener("mouseout", function () {
     hovinfo3.style.display = "none";
+    image.style.display = "block";
   });
 
   content.appendChild(div);
@@ -234,5 +251,3 @@ load.onload = function () {
 
   document.querySelector("#default").click();
 };
-
-
