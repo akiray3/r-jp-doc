@@ -92,14 +92,13 @@ request.onload = function () {
   argframe.style.display = "inline-block";
   argframe.height = "100%";
   argframe.style.position = "absolute";
-  argframe.style.transform = "translate(120px,10px)";
+  argframe.style.transform = "translate(90px,10px)";
   div.appendChild(argframe);
 
   ///hover
   const hovinfo1 = document.createElement("div");
-  hovinfo1.classList.add("hovanime");
+  hovinfo1.classList.add("hover");
   hovinfo1.style.display = "none";
-  hovinfo1.style.height = "120px";
   hovinfo1.style.backgroundColor = "#DAE1E7";
   hovinfo1.style.fontSize = "20px";
   hovinfo1.style.flexGrow = "1";
@@ -109,9 +108,8 @@ request.onload = function () {
 
   //hover
   const hovinfo2 = document.createElement("div");
-  hovinfo2.classList.add("hovanime");
+  hovinfo2.classList.add("hover");
   hovinfo2.style.display = "none";
-  hovinfo2.style.height = "120px";
   hovinfo2.style.backgroundColor = "#DAE1E7";
   hovinfo2.style.fontSize = "20px";
   const hov2txt = document.createTextNode("引数2");
@@ -119,10 +117,8 @@ request.onload = function () {
   argframe.appendChild(hovinfo2);
 
   const hovinfo3 = document.createElement("div");
-  hovinfo3.classList.add("hovanime");
+  hovinfo3.classList.add("hover");
   hovinfo3.style.display = "none";
-  hovinfo3.style.height = "120px";
-  hovinfo3.style.width = "120px";
   hovinfo3.style.backgroundColor = "#DAE1E7";
   hovinfo3.style.fontSize = "20px";
   const hov3txt = document.createTextNode("引数3");
@@ -131,9 +127,8 @@ request.onload = function () {
 
   const imgframe = document.createElement("div");
   const image = document.createElement("img");
-  image.classList.add("hovanime");
+  image.classList.add("hover");
   image.setAttribute("src", "../../www/math-operations.svg");
-  image.style.width = "220px";
   imgframe.appendChild(image);
   argframe.appendChild(imgframe);
 

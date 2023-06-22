@@ -1,6 +1,8 @@
 /* 関数*/
-.hovanime {
+.hover {
   animation: fadein 1s ease 0s 1 normal forwards;
+  height: 240px;
+  width: 240px;
 }
 @keyframes fadein {
   from {
