@@ -1,5 +1,10 @@
 [
-  { "id": "-", "href": "/detail/base/-.html", "funcname": "-" },
+  {
+    "id": "-",
+    "href": "/detail/base/-.html",
+    "funcname": "-",
+    "svg": "math-operations.svg"
+  },
   {
     "id": "-.Date",
     "href": "/detail/base/-symbol11Date.html",
