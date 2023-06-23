@@ -6,7 +6,7 @@ for (let b = 0; b < list.length; b++) {
   jsonfile.open("GET", path, true);
   jsonfile.send();
 
-  jsonfile.onload = function () {
+  jsonfile.onload = function loadpage() {
     const jsondata = JSON.parse(jsonfile.responseText);
     const slideblock = document.querySelector("#" + list[b] + "_slider");
     for (let i = 0; i < jsondata.length; i++) {
@@ -30,12 +30,16 @@ for (let b = 0; b < list.length; b++) {
       } else {
         const funcnametxt = document.createElement("p");
         const fnnametxt = document.createTextNode(jsondata[i].funcname);
+        slide_link.style.padding = "10px";
         funcnametxt.appendChild(fnnametxt);
         slide.appendChild(slide_link);
         slide.appendChild(funcnametxt);
         slideblock.appendChild(slide);
       }
-      
+      if(i<jsondata.length-1){
+        loadpage(i+1);
+      }
     }
   };
+
 }
