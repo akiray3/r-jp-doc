@@ -28,7 +28,7 @@
       stroke-width: 1;
       border: 2px solid rgb(0, 0, 0);
       transform: translate(21.529px, 57.832px);
-      margin: 3%;
+      margin-top: 3%;
     "
   >
     <div
@@ -55,7 +55,7 @@
       stroke-width: 1;
       border: 2px solid rgb(0, 0, 0);
       transform: translate(21.529px, 57.832px);
-      margin: 3%;
+      margin-top: 3%;
     "
   >
     <div style="position: fixed; top: 0; transform: translateX(12px)">
@@ -80,7 +80,7 @@
       stroke-width: 1;
       border: 2px solid rgb(0, 0, 0);
       transform: translate(21.529px, 57.832px);
-      margin: 3%;
+      margin-top: 3%;
     "
   >
     <div
@@ -107,7 +107,7 @@
       stroke-width: 1;
       border: 2px solid rgb(0, 0, 0);
       transform: translate(21.529px, 57.832px);
-      margin: 3%;
+      margin-top: 3%;
     "
   >
     <div style="position: fixed; top: 0; transform: translateX(12px)">
@@ -133,13 +133,13 @@
         const jsondata = JSON.parse(jsonfile.responseText);
         const slideblock = document.querySelector("#" + list[b] + "_slider");
         for (let i = 0; i < jsondata.length; i++) {
-          //base
-          const slide = document.createElement("div");
-          slide.className = "slick-list";
-          slide.id = jsondata[i].funcname;
-          const slide_link = document.createElement("a");
-          slide_link.href = jsondata[i].href;
           if (jsondata[i].svg) {
+            //base
+            const slide = document.createElement("div");
+            slide.className = "slick-list";
+            slide.id = jsondata[i].funcname;
+            const slide_link = document.createElement("a");
+            slide_link.href = jsondata[i].href;
             const imgbox = document.createElement("img");
             imgbox.src = "www/" + jsondata[i].svg;
             imgbox.style.height = "200px";
@@ -150,14 +150,6 @@
             slide.appendChild(slide_link);
             slide.appendChild(funcnametxt);
             slideblock.appendChild(slide);
-          } else {
-            const funcnametxt = document.createElement("p");
-            const fnnametxt = document.createTextNode(jsondata[i].funcname);
-            slide_link.style.padding = "10px";
-            funcnametxt.appendChild(fnnametxt);
-            slide.appendChild(slide_link);
-            slide.appendChild(funcnametxt);
-            slideblock.appendChild(slide);
           }
         }
       };
@@ -165,5 +157,10 @@
   </script>
   <script src="jquery.js"></script>
   <script src="slick-1.8.1/slick/slick.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+    $(".slick-slider").slick({
+      slidesToShow: 3,
+      adaptiveHeight: true,
+    });
+  </script>
 </body>

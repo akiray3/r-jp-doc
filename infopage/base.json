@@ -8,7 +8,8 @@
   {
     "id": "-.Date",
     "href": "/detail/base/-symbol11Date.html",
-    "funcname": "-.Date"
+    "funcname": "-.Date",
+    "svg": ""
   },
   {
     "id": "-.POSIXt",
@@ -44,7 +45,8 @@
   {
     "id": "[.data.frame",
     "href": "/detail/base/[symbol11datasymbol11frame.html",
-    "funcname": "[.data.frame"
+    "funcname": "[.data.frame",
+    "svg": "grid-nine-light.svg"
   },
   {
     "id": "[.Date",
@@ -495,12 +497,14 @@
   {
     "id": "as.call",
     "href": "/detail/base/assymbol11call.html",
-    "funcname": "as.call"
+    "funcname": "as.call",
+    "svg": "megaphone-light.svg"
   },
   {
     "id": "as.character",
     "href": "/detail/base/assymbol11character.html",
-    "funcname": "as.character"
+    "funcname": "as.character",
+    "svg": "text-aa-light.svg"
   },
   {
     "id": "as.character.condition",
@@ -559,8 +563,9 @@
   },
   {
     "id": "as.data.frame",
-    "href": "/detail/base/assymbol11datasymbol11frame.html",
-    "funcname": "as.data.frame"
+    "href": "/detail/base/assymbol1,1datasymbol11frame.html",
+    "funcname": "as.data.frame",
+    "svg": "grid-nine-light.svg"
   },
   {
     "id": "as.data.frame.array",
@@ -780,7 +785,8 @@
   {
     "id": "as.list",
     "href": "/detail/base/assymbol11list.html",
-    "funcname": "as.list"
+    "funcname": "as.list",
+    "svg": "list-bullets-light.svg"
   },
   {
     "id": "as.list.data.frame",
@@ -885,7 +891,8 @@
   {
     "id": "as.numeric",
     "href": "/detail/base/assymbol11numeric.html",
-    "funcname": "as.numeric"
+    "funcname": "as.numeric",
+    "svg": "list-numbers-light.svg"
   },
   {
     "id": "as.numeric_version",
@@ -1000,7 +1007,8 @@
   {
     "id": "as.table",
     "href": "/detail/base/assymbol11table.html",
-    "funcname": "as.table"
+    "funcname": "as.table",
+    "svg": "layout-light.svg"
   },
   {
     "id": "as.table.default",
@@ -1231,7 +1239,12 @@
     "href": "/detail/base/csymbol11warnings.html",
     "funcname": "c.warnings"
   },
-  { "id": "call", "href": "/detail/base/call.html", "funcname": "call" },
+  {
+    "id": "call",
+    "href": "/detail/base/call.html",
+    "funcname": "call",
+    "svg": "megaphone-simple-light.svg"
+  },
   { "id": "callCC", "href": "/detail/base/callCC.html", "funcname": "callCC" },
   {
     "id": "capabilities",
@@ -1263,7 +1276,8 @@
   {
     "id": "character",
     "href": "/detail/base/character.html",
-    "funcname": "character"
+    "funcname": "character",
+    "svg": "text-t-light.svg"
   },
   {
     "id": "charmatch",
@@ -1469,8 +1483,18 @@
     "href": "/detail/base/datasymbol11matrix.html",
     "funcname": "data.matrix"
   },
-  { "id": "date", "href": "/detail/base/date.html", "funcname": "date" },
-  { "id": "debug", "href": "/detail/base/debug.html", "funcname": "debug" },
+  {
+    "id": "date",
+    "href": "/detail/base/date.html",
+    "funcname": "date",
+    "svg": "calendar.svg"
+  },
+  {
+    "id": "debug",
+    "href": "/detail/base/debug.html",
+    "funcname": "debug",
+    "svg": "bug.svg"
+  },
   {
     "id": "debuggingState",
     "href": "/detail/base/debuggingState.html",
@@ -1838,22 +1862,26 @@
   {
     "id": "file.path",
     "href": "/detail/base/filesymbol11path.html",
-    "funcname": "file.path"
+    "funcname": "file.path",
+    "svg": "path-light.svg"
   },
   {
     "id": "file.remove",
     "href": "/detail/base/filesymbol11remove.html",
-    "funcname": "file.remove"
+    "funcname": "file.remove",
+    "svg": "archive-light.svg"
   },
   {
     "id": "file.rename",
     "href": "/detail/base/filesymbol11rename.html",
-    "funcname": "file.rename"
+    "funcname": "file.rename",
+    "svg": "textbox-light.svg"
   },
   {
     "id": "file.show",
     "href": "/detail/base/filesymbol11show.html",
-    "funcname": "file.show"
+    "funcname": "file.show",
+    "svg": "files-light.svg"
   },
   {
     "id": "file.size",
@@ -1866,11 +1894,17 @@
     "funcname": "file.symlink"
   },
   { "id": "Filter", "href": "/detail/base/Filter.html", "funcname": "Filter" },
-  { "id": "Find", "href": "/detail/base/Find.html", "funcname": "Find" },
+  {
+    "id": "Find",
+    "href": "/detail/base/Find.html",
+    "funcname": "Find",
+    "svg": "list-magnifying-glass-light.svg"
+  },
   {
     "id": "find.package",
     "href": "/detail/base/findsymbol11package.html",
-    "funcname": "find.package"
+    "funcname": "find.package",
+    "svg": "binoculars-light.svg"
   },
   {
     "id": "findInterval",
@@ -1894,7 +1928,12 @@
     "href": "/detail/base/flushsymbol11connection.html",
     "funcname": "flush.connection"
   },
-  { "id": "for", "href": "/detail/base/for.html", "funcname": "for" },
+  {
+    "id": "for",
+    "href": "/detail/base/for.html",
+    "funcname": "for",
+    "svg": "arrows-clockwise-light.svg"
+  },
   { "id": "force", "href": "/detail/base/force.html", "funcname": "force" },
   {
     "id": "forceAndCall",
@@ -2010,7 +2049,8 @@
   {
     "id": "function",
     "href": "/detail/base/function.html",
-    "funcname": "function"
+    "funcname": "function",
+    "svg": "code-block-light.svg"
   },
   { "id": "gamma", "href": "/detail/base/gamma.html", "funcname": "gamma" },
   { "id": "gc", "href": "/detail/base/gc.html", "funcname": "gc" },
@@ -3641,12 +3681,14 @@
   {
     "id": "R_system_version",
     "href": "/detail/base/R_system_version.html",
-    "funcname": "R_system_version"
+    "funcname": "R_system_version",
+    "svg": "git-merge-light.svg"
   },
   {
     "id": "R.home",
     "href": "/detail/base/Rsymbol11home.html",
-    "funcname": "R.home"
+    "funcname": "R.home",
+    "svg": "house-line-light.svg"
   },
   {
     "id": "R.version",
@@ -3723,7 +3765,8 @@
   {
     "id": "readline",
     "href": "/detail/base/readline.html",
-    "funcname": "readline"
+    "funcname": "readline",
+    "svg": "text-align-justify-light.svg"
   },
   {
     "id": "readLines",
@@ -4611,7 +4654,8 @@
   {
     "id": "Sys.sleep",
     "href": "/detail/base/Syssymbol11sleep.html",
-    "funcname": "Sys.sleep"
+    "funcname": "Sys.sleep",
+    "svg": "bell-simple-z-light.svg"
   },
   {
     "id": "sys.source",
@@ -4626,7 +4670,8 @@
   {
     "id": "Sys.time",
     "href": "/detail/base/Syssymbol11time.html",
-    "funcname": "Sys.time"
+    "funcname": "Sys.time",
+    "svg": "clock-light.svg"
   },
   {
     "id": "Sys.timezone",
@@ -4648,16 +4693,23 @@
     "href": "/detail/base/Syssymbol11which.html",
     "funcname": "Sys.which"
   },
-  { "id": "system", "href": "/detail/base/system.html", "funcname": "system" },
+  {
+    "id": "system",
+    "href": "/detail/base/system.html",
+    "funcname": "system",
+    "svg": "wrench-light.svg"
+  },
   {
     "id": "system.file",
     "href": "/detail/base/systemsymbol11file.html",
-    "funcname": "system.file"
+    "funcname": "system.file",
+    "svg": "file-light.svg"
   },
   {
     "id": "system.time",
     "href": "/detail/base/systemsymbol11time.html",
-    "funcname": "system.time"
+    "funcname": "system.time",
+    "svg": "hourglass-light.svg"
   },
   {
     "id": "system2",
