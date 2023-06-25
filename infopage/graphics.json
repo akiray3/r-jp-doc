@@ -200,7 +200,12 @@
   },
   { "id": "par", "href": "/detail/graphics/par.html", "funcname": "par" },
   { "id": "persp", "href": "/detail/graphics/persp.html", "funcname": "persp" },
-  { "id": "pie", "href": "/detail/graphics/pie.html", "funcname": "pie" },
+  {
+    "id": "pie",
+    "href": "/detail/graphics/pie.html",
+    "funcname": "pie",
+    "svg": "chart-pie-light.svg"
+  },
   { "id": "plot", "href": "/detail/graphics/plot.html", "funcname": "plot" },
   {
     "id": "plot.default",

@@ -1501,7 +1501,8 @@
   {
     "id": "scatter.hist",
     "href": "/detail/psych/scattersymbol11hist.html",
-    "funcname": "scatter.hist"
+    "funcname": "scatter.hist",
+    "svg": "chart-scatter-light.svg"
   },
   {
     "id": "scatterHist",

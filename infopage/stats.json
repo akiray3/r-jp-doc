@@ -1528,7 +1528,8 @@
     "href": "/detail/stats/uniroot.html",
     "funcname": "uniroot"
   },
-  { "id": "update", "href": "/detail/stats/update.html", "funcname": "update" },
+  { "id": "update", "href": "/detail/stats/update.html", "funcname": "update" ,
+"svg":"arrow-fat-line-up-light.svg"},
   {
     "id": "update.default",
     "href": "/detail/stats/updatesymbol11default.html",

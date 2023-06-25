@@ -158,9 +158,11 @@
   <script src="jquery.js"></script>
   <script src="slick-1.8.1/slick/slick.min.js"></script>
   <script>
-    $(".slick-slider").slick({
-      slidesToShow: 3,
-      adaptiveHeight: true,
+    $(document).ready(function () {
+      $(".slick-slider").slick({
+        slidesToShow: 3,
+        adaptiveHeight: true,
+      });
     });
   </script>
 </body>
