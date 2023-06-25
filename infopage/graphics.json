@@ -24,14 +24,12 @@
   {
     "id": "axis.POSIXct",
     "href": "/detail/graphics/axissymbol11POSIXct.html",
-    "funcname": "axis.POSIXct",
-    "svg": "square.svg"
+    "funcname": "axis.POSIXct"
   },
   {
     "id": "axTicks",
     "href": "/detail/graphics/axTicks.html",
-    "funcname": "axTicks",
-    "svg": "square.svg"
+    "funcname": "axTicks"
   },
   {
     "id": "barplot",
@@ -66,11 +64,17 @@
     "href": "/detail/graphics/cdplot.html",
     "funcname": "cdplot"
   },
-  { "id": "clip", "href": "/detail/graphics/clip.html", "funcname": "clip" },
+  {
+    "id": "clip",
+    "href": "/detail/graphics/clip.html",
+    "funcname": "clip",
+    "svg": "paperclip-light.svg"
+  },
   {
     "id": "close.screen",
     "href": "/detail/graphics/closesymbol11screen.html",
-    "funcname": "close.screen"
+    "funcname": "close.screen",
+    "svg": "x-circle-light.svg"
   },
   {
     "id": "co.intervals",
@@ -96,12 +100,14 @@
   {
     "id": "dotchart",
     "href": "/detail/graphics/dotchart.html",
-    "funcname": "dotchart"
+    "funcname": "dotchart",
+    "svg": "chart-scatter-light.svg"
   },
   {
     "id": "erase.screen",
     "href": "/detail/graphics/erasesymbol11screen.html",
-    "funcname": "erase.screen"
+    "funcname": "erase.screen",
+    "svg": "eraser-light.svg"
   },
   {
     "id": "filled.contour",

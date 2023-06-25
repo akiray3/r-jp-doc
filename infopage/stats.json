@@ -540,26 +540,25 @@
   {
     "id": "hatvalues",
     "href": "/detail/stats/hatvalues.html",
-    "funcname": "hatvalues",
-    "svg": "square.svg"
+    "funcname": "hatvalues"
   },
   {
     "id": "hclust",
     "href": "/detail/stats/hclust.html",
     "funcname": "hclust",
-    "svg": "square.svg"
+    "svg": "tree-structure-light.svg"
   },
   {
     "id": "heatmap",
     "href": "/detail/stats/heatmap.html",
     "funcname": "heatmap",
-    "svg": "square.svg"
+    "svg": "heatmap.svg"
   },
   {
     "id": "HoltWinters",
     "href": "/detail/stats/HoltWinters.html",
     "funcname": "HoltWinters",
-    "svg": "square.svg"
+    "svg": "chart-line-up-light.svg"
   },
   {
     "id": "influence",
