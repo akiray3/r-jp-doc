@@ -32,14 +32,14 @@
     "
   >
     <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-12px)"
+      style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
     >
       <h1 style="font-size: 50px">base</h1>
       <nav>
         <a href="/infopage/base.html" style="padding: 15px">一覧を見る</a>
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translate(24px)">
+    <div class="border-box" style="width: 70%; transform: translate(30px)">
       <div class="slick-slider" id="base_slider"></div>
     </div>
   </div>
@@ -64,7 +64,7 @@
         <a href="/infopage/graphics.html" style="padding: 15px">一覧を見る</a>
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translatex(320px)">
+    <div class="border-box" style="width: 70%; transform: translatex(314px)">
       <div class="slick-slider" id="graphics_slider"></div>
     </div>
   </div>
@@ -84,14 +84,14 @@
     "
   >
     <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-12px)"
+      style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
     >
       <h1 style="font-size: 50px">psych</h1>
       <nav>
         <a href="/infopage/psych.html" style="padding: 15px">一覧を見る</a>
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translate(24px)">
+    <div class="border-box" style="width: 70%; transform: translate(30px)">
       <div class="slick-slider" id="psych_slider"></div>
     </div>
   </div>
@@ -116,7 +116,7 @@
         <a href="/infopage/stats.html" style="padding: 15px">一覧を見る</a>
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translatex(320px)">
+    <div class="border-box" style="width: 70%; transform: translatex(314px)">
       <div class="slick-slider" id="stats_slider"></div>
     </div>
   </div>
@@ -134,7 +134,6 @@
         const slideblock = document.querySelector("#" + list[b] + "_slider");
         for (let i = 0; i < jsondata.length; i++) {
           if (jsondata[i].svg) {
-            //base
             const slide = document.createElement("div");
             slide.className = "slick-list";
             slide.id = jsondata[i].funcname;

@@ -12,7 +12,7 @@ request.onload = function () {
   div.style.whiteSpace = "flex";
   div.style.flexWrap = "nowrap";
   div.style.width = "100%";
-  div.style.overflow = "auto";
+  div.style.overflow = "no";
   div.style.transform = "translate(167px ,57px)";
   div.style.position = "relative";
   content.appendChild(div);
@@ -125,12 +125,25 @@ request.onload = function () {
   hovinfo3.appendChild(hov3txt);
   argframe.appendChild(hovinfo3);
 
-  const imgframe = document.createElement("div");
-  const image = document.createElement("img");
-  image.classList.add("hover");
-  image.setAttribute("src", "../../www/math-operations.svg");
-  imgframe.appendChild(image);
-  argframe.appendChild(imgframe);
+  const pack = findfunc.pack;
+  const svgpath = "../../infopage/" + pack + ".json";
+  console.log(svgpath);
+  const svgjson = new XMLHttpRequest();
+  svgjson.open("GET", svgpath, true);
+  svgjson.send();
+  svgjson.onload = function () {
+    const loaddata = JSON.parse(svgjson.responseText);
+    const svgdata = loaddata.find((obj) => obj.funcname === title);
+    if (svgdata.svg) {
+      const imgframe = document.createElement("div");
+      const image = document.createElement("img");
+      image.classList.add("hover");
+      image.setAttribute("src", "../../www/" + svgdata.svg);
+      imgframe.appendChild(image);
+      argframe.appendChild(imgframe);
+    } else {
+    }
+  };
 
   txt1.addEventListener("mouseover", function () {
     hovinfo1.style.display = "block";
