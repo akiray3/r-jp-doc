@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>home</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="slick-1.8.1/slick/slick-theme.css"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" type="text/css" />
+</head>
+<body>
+  <div
+    class="sec_inner"
+    style="
+      white-space: nrowrap;
+      width: 100%;
+      height: 250px;
+      border-radius: 9.194px;
+      stroke: rgb(36, 61, 37);
+      stroke-miterlimit: 10;
+      stroke-width: 1;
+      border: 2px solid rgb(0, 0, 0);
+      transform: translate(2.529px, 57.832px);
+      margin-top: 3%;
+    "
+  >
+    <div
+      style="position: fixed; right: 0; top: 0; transform: translateX(-12px)"
+    >
+      <h1 style="font-size: 50px">base</h1>
+      <nav>
+        <a href="/infopage/base.html" style="padding: 15px">一覧を見る</a>
+      </nav>
+    </div>
+    <div class="border-box" style="width: 70%; transform: translate(24px)">
+      <div class="slick-slider" id="base_slider"></div>
+    </div>
+  </div>
+  
+  </div>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script >
+    const path = "infopage/base.json";
+const jsonfile = new XMLHttpRequest();
+jsonfile.open("GET", path, true);
+jsonfile.send();
+
+jsonfile.onload = function () {
+  const jsondata = JSON.parse(jsonfile.responseText);
+  const slideblock = document.querySelector("#base_slider");
+  for (let i = 0; i < jsondata.length; i++) {
+    if (jsondata[i].svg) {
+      //base
+      const slide = document.createElement("div");
+      slide.className = "slick-list";
+      slide.id = jsondata[i].funcname;
+      const slide_link = document.createElement("a");
+      slide_link.href = jsondata[i].href;
+      const imgbox = document.createElement("img");
+      imgbox.src = "www/" + jsondata[i].svg;
+      imgbox.style.height = "200px";
+      const funcnametxt = document.createElement("p");
+      const fnnametxt = document.createTextNode(jsondata[i].funcname);
+      funcnametxt.appendChild(fnnametxt);
+      slide_link.appendChild(imgbox);
+      slide.appendChild(slide_link);
+      slide.appendChild(funcnametxt);
+      slideblock.appendChild(slide);
+    }
+  }
+  $(".slick-slider").slick({
+    slidesToShow: 3,
+    adaptiveHeight: true,
+  });
+};
+
+  </script>
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+</body>

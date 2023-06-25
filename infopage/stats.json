@@ -498,7 +498,12 @@
     "funcname": "friedman.test"
   },
   { "id": "ftable", "href": "/detail/stats/ftable.html", "funcname": "ftable" },
-  { "id": "Gamma", "href": "/detail/stats/Gamma.html", "funcname": "Gamma" },
+  {
+    "id": "Gamma",
+    "href": "/detail/stats/Gamma.html",
+    "funcname": "Gamma",
+    "svg": "chart-polar-light.svg"
+  },
   {
     "id": "gaussian",
     "href": "/detail/stats/gaussian.html",
@@ -535,18 +540,26 @@
   {
     "id": "hatvalues",
     "href": "/detail/stats/hatvalues.html",
-    "funcname": "hatvalues"
+    "funcname": "hatvalues",
+    "svg": "square.svg"
   },
-  { "id": "hclust", "href": "/detail/stats/hclust.html", "funcname": "hclust" },
+  {
+    "id": "hclust",
+    "href": "/detail/stats/hclust.html",
+    "funcname": "hclust",
+    "svg": "square.svg"
+  },
   {
     "id": "heatmap",
     "href": "/detail/stats/heatmap.html",
-    "funcname": "heatmap"
+    "funcname": "heatmap",
+    "svg": "square.svg"
   },
   {
     "id": "HoltWinters",
     "href": "/detail/stats/HoltWinters.html",
-    "funcname": "HoltWinters"
+    "funcname": "HoltWinters",
+    "svg": "square.svg"
   },
   {
     "id": "influence",
@@ -1528,8 +1541,12 @@
     "href": "/detail/stats/uniroot.html",
     "funcname": "uniroot"
   },
-  { "id": "update", "href": "/detail/stats/update.html", "funcname": "update" ,
-"svg":"arrow-fat-line-up-light.svg"},
+  {
+    "id": "update",
+    "href": "/detail/stats/update.html",
+    "funcname": "update",
+    "svg": "arrow-fat-line-up-light.svg"
+  },
   {
     "id": "update.default",
     "href": "/detail/stats/updatesymbol11default.html",

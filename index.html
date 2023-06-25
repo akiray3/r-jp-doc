@@ -15,154 +15,35 @@
     <input type="text" name="keyword" placeholder="キーワードを入力" />
     <button id="reserch"></button>
   </form>
+  <iframe
+    src="baseslide.html"
+    frameborder="0"
+    width="100%"
+    height="360px"    scrolling = "no"
 
-  <div
-    class="sec_inner"
-    style="
-      white-space: nrowrap;
-      width: 100%;
-      height: 250px;
-      border-radius: 9.194px;
-      stroke: rgb(36, 61, 37);
-      stroke-miterlimit: 10;
-      stroke-width: 1;
-      border: 2px solid rgb(0, 0, 0);
-      transform: translate(21.529px, 57.832px);
-      margin-top: 3%;
-    "
-  >
-    <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-12px)"
-    >
-      <h1 style="font-size: 50px">base</h1>
-      <nav>
-        <a href="/infopage/base.html" style="padding: 15px">一覧を見る</a>
-      </nav>
-    </div>
-    <div class="border-box" style="width: 70%; transform: translate(24px)">
-      <div class="slick-slider" id="base_slider"></div>
-    </div>
-  </div>
-  <div
-    class="sec_inner"
-    style="
-      white-space: nrowrap;
-      width: 100%;
-      height: 250px;
-      border-radius: 9.194px;
-      stroke: rgb(36, 61, 37);
-      stroke-miterlimit: 10;
-      stroke-width: 1;
-      border: 2px solid rgb(0, 0, 0);
-      transform: translate(21.529px, 57.832px);
-      margin-top: 3%;
-    "
-  >
-    <div style="position: fixed; top: 0; transform: translateX(12px)">
-      <h1 style="font-size: 50px">graphics</h1>
-      <nav>
-        <a href="/infopage/graphics.html" style="padding: 15px">一覧を見る</a>
-      </nav>
-    </div>
-    <div class="border-box" style="width: 70%; transform: translatex(320px)">
-      <div class="slick-slider" id="graphics_slider"></div>
-    </div>
-  </div>
-  <div
-    class="sec_inner"
-    style="
-      white-space: nrowrap;
-      width: 100%;
-      height: 250px;
-      border-radius: 9.194px;
-      stroke: rgb(36, 61, 37);
-      stroke-miterlimit: 10;
-      stroke-width: 1;
-      border: 2px solid rgb(0, 0, 0);
-      transform: translate(21.529px, 57.832px);
-      margin-top: 3%;
-    "
-  >
-    <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-12px)"
-    >
-      <h1 style="font-size: 50px">psych</h1>
-      <nav>
-        <a href="/infopage/psych.html" style="padding: 15px">一覧を見る</a>
-      </nav>
-    </div>
-    <div class="border-box" style="width: 70%; transform: translate(24px)">
-      <div class="slick-slider" id="psych_slider"></div>
-    </div>
-  </div>
-  <div
-    class="sec_inner"
-    style="
-      white-space: nrowrap;
-      width: 100%;
-      height: 250px;
-      border-radius: 9.194px;
-      stroke: rgb(36, 61, 37);
-      stroke-miterlimit: 10;
-      stroke-width: 1;
-      border: 2px solid rgb(0, 0, 0);
-      transform: translate(21.529px, 57.832px);
-      margin-top: 3%;
-    "
-  >
-    <div style="position: fixed; top: 0; transform: translateX(12px)">
-      <h1 style="font-size: 50px">stats</h1>
-      <nav>
-        <a href="/infopage/stats.html" style="padding: 15px">一覧を見る</a>
-      </nav>
-    </div>
-    <div class="border-box" style="width: 70%; transform: translatex(320px)">
-      <div class="slick-slider" id="stats_slider"></div>
-    </div>
-  </div>
-  <script>
-    const list = ["base", "graphics", "psych", "stats"];
+  ></iframe>
+  <iframe
+    src="graphicsslide.html"
+    frameborder="0"
+    width="100%"
+    height="360px"
+    scrolling = "no"
+  ></iframe>
+  <iframe
+    src="psychslide.html"
+    frameborder="0"
+    width="100%"
+    height="360px"    scrolling = "no"
 
-    for (let b = 0; b < list.length; b++) {
-      const path = "infopage/" + list[b] + ".json";
-      const jsonfile = new XMLHttpRequest();
-      jsonfile.open("GET", path, true);
-      jsonfile.send();
+  ></iframe>
+  <iframe
+    src="statsslide.html"
+    frameborder="0"
+    width="100%"
+    height="360px"    scrolling = "no"
 
-      jsonfile.onload = function () {
-        const jsondata = JSON.parse(jsonfile.responseText);
-        const slideblock = document.querySelector("#" + list[b] + "_slider");
-        for (let i = 0; i < jsondata.length; i++) {
-          if (jsondata[i].svg) {
-            //base
-            const slide = document.createElement("div");
-            slide.className = "slick-list";
-            slide.id = jsondata[i].funcname;
-            const slide_link = document.createElement("a");
-            slide_link.href = jsondata[i].href;
-            const imgbox = document.createElement("img");
-            imgbox.src = "www/" + jsondata[i].svg;
-            imgbox.style.height = "200px";
-            const funcnametxt = document.createElement("p");
-            const fnnametxt = document.createTextNode(jsondata[i].funcname);
-            funcnametxt.appendChild(fnnametxt);
-            slide_link.appendChild(imgbox);
-            slide.appendChild(slide_link);
-            slide.appendChild(funcnametxt);
-            slideblock.appendChild(slide);
-          }
-        }
-      };
-    }
-  </script>
-  <script src="jquery.js"></script>
-  <script src="slick-1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".slick-slider").slick({
-        slidesToShow: 3,
-        adaptiveHeight: true,
-      });
-    });
-  </script>
+  ></iframe>
+  <script type="text/javascript" src="jquery.js"></script>
+
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 </body>

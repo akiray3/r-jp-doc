@@ -24,17 +24,20 @@
   {
     "id": "axis.POSIXct",
     "href": "/detail/graphics/axissymbol11POSIXct.html",
-    "funcname": "axis.POSIXct"
+    "funcname": "axis.POSIXct",
+    "svg": "square.svg"
   },
   {
     "id": "axTicks",
     "href": "/detail/graphics/axTicks.html",
-    "funcname": "axTicks"
+    "funcname": "axTicks",
+    "svg": "square.svg"
   },
   {
     "id": "barplot",
     "href": "/detail/graphics/barplot.html",
-    "funcname": "barplot"
+    "funcname": "barplot",
+    "svg": "chart-bar-light.svg"
   },
   {
     "id": "barplot.default",
