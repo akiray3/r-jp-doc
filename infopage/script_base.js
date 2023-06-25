@@ -1,4 +1,4 @@
-const path = "baselist.json";
+const path = "base.json";
 const request = new XMLHttpRequest();
 request.open("GET", path, true);
 request.send();
@@ -33,8 +33,14 @@ request.onload = function () {
     const atag = document.createElement("a");
     atag.href = href[i];
 
-    const txttag = document.createElement("text");
+    const txttag = document.createElement("button");
+    txttag.style.width = "274.045px";
+    txttag.style.height = "100.124px";
+    txttag.style.backgroundColor = "#00000000";
+
     const txtnode = document.createTextNode(funcname[i]);
+    txtnode.fontSize = "27px";
+
     txttag.style.fontFamily = "ArialRoundedMTBold";
 
     txttag.appendChild(txtnode);

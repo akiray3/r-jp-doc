@@ -42,7 +42,6 @@ request.onload = function () {
   const jsondata = JSON.parse(request.responseText);
   const title = document.head.querySelector("title").textContent;
   const findfunc = jsondata.find((obj) => obj.func === title);
-
   //関数名
   const funcnametxt = document.createTextNode(findfunc.func + "(");
   funcname.appendChild(funcnametxt);
