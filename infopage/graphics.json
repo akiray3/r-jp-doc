@@ -34,7 +34,8 @@
   {
     "id": "barplot",
     "href": "/detail/graphics/barplot.html",
-    "funcname": "barplot"
+    "funcname": "barplot",
+    "svg": "chart-bar-light.svg"
   },
   {
     "id": "barplot.default",
@@ -63,11 +64,17 @@
     "href": "/detail/graphics/cdplot.html",
     "funcname": "cdplot"
   },
-  { "id": "clip", "href": "/detail/graphics/clip.html", "funcname": "clip" },
+  {
+    "id": "clip",
+    "href": "/detail/graphics/clip.html",
+    "funcname": "clip",
+    "svg": "paperclip-light.svg"
+  },
   {
     "id": "close.screen",
     "href": "/detail/graphics/closesymbol11screen.html",
-    "funcname": "close.screen"
+    "funcname": "close.screen",
+    "svg": "x-circle-light.svg"
   },
   {
     "id": "co.intervals",
@@ -93,12 +100,14 @@
   {
     "id": "dotchart",
     "href": "/detail/graphics/dotchart.html",
-    "funcname": "dotchart"
+    "funcname": "dotchart",
+    "svg": "chart-scatter-light.svg"
   },
   {
     "id": "erase.screen",
     "href": "/detail/graphics/erasesymbol11screen.html",
-    "funcname": "erase.screen"
+    "funcname": "erase.screen",
+    "svg": "eraser-light.svg"
   },
   {
     "id": "filled.contour",
@@ -200,7 +209,12 @@
   },
   { "id": "par", "href": "/detail/graphics/par.html", "funcname": "par" },
   { "id": "persp", "href": "/detail/graphics/persp.html", "funcname": "persp" },
-  { "id": "pie", "href": "/detail/graphics/pie.html", "funcname": "pie" },
+  {
+    "id": "pie",
+    "href": "/detail/graphics/pie.html",
+    "funcname": "pie",
+    "svg": "chart-pie-light.svg"
+  },
   { "id": "plot", "href": "/detail/graphics/plot.html", "funcname": "plot" },
   {
     "id": "plot.default",

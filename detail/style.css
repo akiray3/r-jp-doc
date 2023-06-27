@@ -1,6 +1,8 @@
 /* 関数*/
-.hovanime {
+.hover {
   animation: fadein 1s ease 0s 1 normal forwards;
+  height: 240px;
+  width: 240px;
 }
 @keyframes fadein {
   from {
@@ -14,17 +16,24 @@
 /*引数*/
 .txt {
   font-size: 38px;
-  font-family: "Hiragino Maru Gothic ProN","YuGoshic", sans-serif;
+  font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
   margin: 14%;
 }
 /*タブ部分*/
+.tabs{
+  width: auto;
+}
 .tab {
   font-size: 24.7px;
-  font-family: "Hiragino Maru Gothic ProN","YuGoshic", sans-serif;
+  font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
   background-color: #00000000;
   margin: 1%;
   border: none;
   border-radius: 9px;
   cursor: pointer;
   display: block;
+}
+.content {
+  transform: translate(15px);
+  font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
 }

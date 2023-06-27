@@ -2,7 +2,7 @@
 needs(readxl)
 needs(tidyverse)
 needs(foreach)
-dat <- readxl::read_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/help_dbコピー関数名用.xlsx")
+dat <- readxl::read_xlsx("/Users/aizawaharuka/Documents/GitHub/名称未設定/deletefuture/help_dbコピー関数名用.xlsx")
 head(dat)
 dat2 <- dat %>% 
  mutate(funcoriginal = func) %>% 
@@ -19,14 +19,14 @@ dat2$filename <- gsub("[<]","symbol9",dat2$filename)
 dat2$filename <- gsub("[>]","symbol10",dat2$filename)
 dat2$filename <- gsub("[.]","symbol11",dat2$filename)
 dat2%>%
-  filter(pack == "psych") %>% 
+  filter(pack == "base") %>% 
   mutate(func = paste0("{ id:'",func,"', href:")) %>% 
-  mutate(html = paste0("'/detail/psych/",filename,".html'")) %>% 
+  mutate(html = paste0("'/detail/base/",filename,".html'")) %>% 
   mutate(funcoriginal = paste0(",funcname:'",funcoriginal,"'}")) %>% 
   mutate(func = paste0(func,html,funcoriginal,",")) %>% 
   select(-"html") %>%
   select(-"funcoriginal") %>% 
-  writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/librarylist.xlsx")
+  writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/名称未設定/deletefuture/librarylist.xlsx")
 
 #dat2%>%writexl::write_xlsx("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/deletefuture/関数名と変換前の比較.xlsx")
 #base関数用　関数紹介のページ作成
@@ -39,27 +39,35 @@ foreach::foreach(c = detail)%do%{
     select(funcoriginal)%>%as.list() %>% unlist
   foreach::foreach(b = funcoriginal)%do%{
     content <- paste0("
-    <!DOCTYPE html><head>    <title>", b, "</title>
-     </head>
-     <body>    
-     <div class=\"block\"></div>    
-     <div class=\"tabs\" style=\"display: flex; transform: translate(0, 0)\" >
-       <button class=\"tab\" onclick=\"openTab(event,'Description') \">
-         Description
-       </button>
-       <button class=\"tab\" onclick=\"openTab(event,'Arguments')\">Arguments</button>
-       <button class=\"tab\" onclick=\"openTab(event,'Value')\">Value</button>
-       <button class=\"tab\" onclick=\"openTab(event,'Details')\">Details</button>
-       <button class=\"tab\" onclick=\"openTab(event,'Examples')\">Examples</button>
-       <button class=\"tab\" onclick=\"openTab(event,'References')\">
-         References
-       </button>
-       <button class=\"tab\" onclick=\"openTab(event,'See_Also')\">See_Also</button>
-     </div>
-    <div class=\"tabcontents\" style=\"display: block;\"></div>
-    <link rel=\"stylesheet\" href=\"../style.css\" type=\"text/css\" />
-    <script src=\"../script.js\"></script>
-    </body>")    
+    <!DOCTYPE html>
+<head>
+  <title>",b,"</title>
+</head>
+<body>
+  <div class=\"block\"></div>
+
+  <div class=\"tabcontents\" style=\"display: block\"></div>
+  <div class=\"tabs\" style=\"display: block\">
+    <div style=\"display: flex; transform: translate(0, 0)\">
+      <button class=\"tab\" onclick=\"openTab(event,'Description')\" id=\"default\">
+        Description
+      </button>
+      <button class=\"tab\" onclick=\"openTab(event,'Arguments')\">
+        Arguments
+      </button>
+      <button class=\"tab\" onclick=\"openTab(event,'Value')\">Value</button>
+      <button class=\"tab\" onclick=\"openTab(event,'Details')\">Details</button>
+      <button class=\"tab\" onclick=\"openTab(event,'Examples')\">Examples</button>
+      <button class=\"tab\" onclick=\"openTab(event,'References')\">
+        References
+      </button>
+      <button class=\"tab\" onclick=\"openTab(event,'See_Also')\">See_Also</button>
+    </div>
+  </div>
+  <link rel=\"stylesheet\" href=\"../style.css\" type=\"text/css\" />
+  <script src=\"../script.js\"></script>
+</body>
+")    
     b <- gsub("[/]","symbol1",b)
     b <- gsub("[\\\\]","symbol2",b)
     b <- gsub("[?]","symbol3",b)
@@ -71,8 +79,8 @@ foreach::foreach(c = detail)%do%{
     b <- gsub("[<]","symbol9",b)
     b <- gsub("[>]","symbol10",b)
     b <- gsub("[.]","symbol11",b)
-    htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/detail/", paste0(c,"/",b, ".html"))
-    write_lines(content, path = htmlpath)
+    htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/名称未設定/detail/", paste0(c,"/",b, ".html"))
+    write_lines(content, file = htmlpath)
   }
   
 }

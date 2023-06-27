@@ -1501,7 +1501,8 @@
   {
     "id": "scatter.hist",
     "href": "/detail/psych/scattersymbol11hist.html",
-    "funcname": "scatter.hist"
+    "funcname": "scatter.hist",
+    "svg": "chart-scatter-light.svg"
   },
   {
     "id": "scatterHist",
@@ -1622,7 +1623,8 @@
   {
     "id": "setCorLookup",
     "href": "/detail/psych/setCorLookup.html",
-    "funcname": "setCorLookup"
+    "funcname": "setCorLookup",
+    "svg": "magnifying-glass-light.svg"
   },
   {
     "id": "shannon",
@@ -1876,7 +1878,8 @@
   {
     "id": "TargetQ",
     "href": "/detail/psych/TargetQ.html",
-    "funcname": "TargetQ"
+    "funcname": "TargetQ",
+    "svg": "spiral-light.svg"
   },
   {
     "id": "TargetT",
@@ -1891,7 +1894,8 @@
   {
     "id": "test.all",
     "href": "/detail/psych/testsymbol11all.html",
-    "funcname": "test.all"
+    "funcname": "test.all",
+    "svg": "test-tube-light.svg"
   },
   {
     "id": "test.irt",
@@ -2036,18 +2040,15 @@
   {
     "id": "Yule2phi.matrix",
     "href": "/detail/psych/Yule2phisymbol11matrix.html",
-    "funcname": "Yule2phi.matrix"
-  },
+    "funcname": "Yule2phi.matrix"  },
   {
     "id": "Yule2poly",
     "href": "/detail/psych/Yule2poly.html",
-    "funcname": "Yule2poly"
-  },
+    "funcname": "Yule2poly"  },
   {
     "id": "Yule2poly.matrix",
     "href": "/detail/psych/Yule2polysymbol11matrix.html",
-    "funcname": "Yule2poly.matrix"
-  },
+    "funcname": "Yule2poly.matrix"  },
   {
     "id": "Yule2tetra",
     "href": "/detail/psych/Yule2tetra.html",
