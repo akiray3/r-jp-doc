@@ -109,7 +109,7 @@ request.onload = function () {
       }
     }
   };
-  const test  = document.createElement("div");
+  const test = document.createElement("div");
   test.innerHTML = findfunc.Arguments;
   argcol.appendChild(test);
   //hoverframe
@@ -162,7 +162,8 @@ request.onload = function () {
     if (svgdata.svg) {
       const imgframe = document.createElement("div");
       const image = document.createElement("img");
-      image.classList.add("hover");
+      image.classList.add("image");
+      image.classList.add("funcimage");
       image.setAttribute("src", "../../www/" + svgdata.svg);
       imgframe.appendChild(image);
       argframe.appendChild(imgframe);
@@ -172,27 +173,51 @@ request.onload = function () {
 
   txt1.addEventListener("mouseover", function () {
     hovinfo1.style.display = "block";
-    image.style.display = "none";
+    if (document.querySelector(".funcimage")) {
+      const image = document.querySelector(".funcimage");
+      image.style.display = "none";
+    } else {
+    }
   });
   txt1.addEventListener("mouseout", function () {
     hovinfo1.style.display = "none";
-    image.style.display = "block";
+    if (document.querySelector(".funcimage")) {
+      const image = document.querySelector(".funcimage");
+      image.style.display = "block";
+    } else {
+    }
   });
   txt2.addEventListener("mouseover", function () {
     hovinfo2.style.display = "block";
-    image.style.display = "none";
+    if (document.querySelector(".funcimage")) {
+      const image = document.querySelector(".funcimage");
+      image.style.display = "none";
+    } else {
+    }
   });
   txt2.addEventListener("mouseout", function () {
     hovinfo2.style.display = "none";
-    image.style.display = "block";
+    if (document.querySelector(".funcimage")) {
+      const image = document.querySelector(".funcimage");
+      image.style.display = "block";
+    } else {
+    }
   });
   txt3.addEventListener("mouseover", function () {
     hovinfo3.style.display = "block";
-    image.style.display = "none";
+    if (document.querySelector(".funcimage")) {
+      const image = document.querySelector(".funcimage");
+      image.style.display = "none";
+    } else {
+    }
   });
   txt3.addEventListener("mouseout", function () {
     hovinfo3.style.display = "none";
-    image.style.display = "block";
+    if (document.querySelector(".funcimage")) {
+      const image = document.querySelector(".funcimage");
+      image.style.display = "block";
+    } else {
+    }
   });
 
   content.appendChild(div);
