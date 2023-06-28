@@ -86,6 +86,32 @@ request.onload = function () {
   const heightblock = argblock.offsetHeight;
   content.style.height = `${heightblock + 300}px`;
 
+  //引数の取り込みテスト
+  const path_arg = "../argument.json";
+  const req = new XMLHttpRequest();
+  req.open("GET", path_arg, true);
+  req.send();
+
+  req.onload = function () {
+    const json = JSON.parse(req.responseText);
+    const arg = json.find((obj) => obj.func === title);
+    console.log(arg);
+    for (let b = 0; b <= 50; b++) {
+      if (arg["arguments" + b]) {
+        const txt = document.createElement("text");
+        txt.className = "txt";
+        txt.style.flexGrow = "1";
+        txt.style.display = "flex: 0 0 auto; margin-right: 10px";
+        const txtnode = document.createTextNode(arg["arguments" + b] + ",");
+        txt.appendChild(txtnode);
+        argcol.appendChild(txt);
+      } else {
+      }
+    }
+  };
+  const test  = document.createElement("div");
+  test.innerHTML = findfunc.Arguments;
+  argcol.appendChild(test);
   //hoverframe
   const argframe = document.createElement("div");
   argframe.style.display = "inline-block";
