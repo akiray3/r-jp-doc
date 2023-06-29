@@ -47,46 +47,10 @@ request.onload = function () {
   funcname.appendChild(funcnametxt);
   funcframe.appendChild(funcname);
 
-  //引数１
-  const txt1 = document.createElement("text");
-  txt1.className = "txt";
-  txt1.style.flexGrow = "1";
-  txt1.style.display = "flex: 0 0 auto; margin-right: 10px";
-  const txt1node = document.createTextNode("x" + ",");
-  txt1.appendChild(txt1node);
-  argcol.appendChild(txt1);
-
-  //引数２
-  const txt2 = document.createElement("text");
-  txt2.className = "txt";
-  txt2.style.flexGrow = "2";
-  txt2.style.display = "flex: 0 0 auto; margin-right: 10px";
-  const txt2node = document.createTextNode("y" + ",");
-  txt2.appendChild(txt2node);
-  argcol.appendChild(txt2);
-
-  //引数３
-  const txt3 = document.createElement("text");
-  txt3.className = "txt";
-  txt3.style.flexGrow = "3";
-  txt3.style.display = "flex: 0 0 auto; margin-right: 10px";
-  const txt3node = document.createTextNode("z");
-  txt3.appendChild(txt3node);
-  argcol.appendChild(txt3);
-
-  //)
-  const xyz = document.createElement("text");
-  xyz.style.fontSize = "48px";
-  xyz.style.fontFamily = "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
-  xyz.style.display = "flex: 0 0 auto; margin-right: 10px";
-  const xyztxt = document.createTextNode(")");
-  xyz.appendChild(xyztxt);
-  txt3.appendChild(xyz);
-
   const heightblock = argblock.offsetHeight;
   content.style.height = `${heightblock + 300}px`;
 
-  //引数の取り込みテスト
+  //引数の取り込み
   const path_arg = "../argument.json";
   const req = new XMLHttpRequest();
   req.open("GET", path_arg, true);
@@ -95,7 +59,6 @@ request.onload = function () {
   req.onload = function () {
     const json = JSON.parse(req.responseText);
     const arg = json.find((obj) => obj.func === title);
-    console.log(arg);
     for (let b = 0; b <= 50; b++) {
       if (arg["arguments" + b]) {
         const txt = document.createElement("text");
@@ -147,7 +110,7 @@ request.onload = function () {
         };
 
         txt.addEventListener("mouseover", function () {
-          hovinfo1.style.display = "block";
+          hovinfo.style.display = "block";
           if (document.querySelector(".funcimage")) {
             const image = document.querySelector(".funcimage");
             image.style.display = "none";
@@ -155,7 +118,7 @@ request.onload = function () {
           }
         });
         txt.addEventListener("mouseout", function () {
-          hovinfo1.style.display = "none";
+          hovinfo.style.display = "none";
           if (document.querySelector(".funcimage")) {
             const image = document.querySelector(".funcimage");
             image.style.display = "block";
@@ -165,115 +128,21 @@ request.onload = function () {
       } else {
       }
     }
-  };
 
-  //hoverframe
-  const argframe = document.createElement("div");
-  argframe.style.display = "inline-block";
-  argframe.height = "100%";
-  argframe.style.position = "absolute";
-  argframe.style.transform = "translate(90px,10px)";
-  div.appendChild(argframe);
-
-  ///hover
-  const hovinfo1 = document.createElement("div");
-  hovinfo1.classList.add("hover");
-  hovinfo1.style.display = "none";
-  hovinfo1.style.backgroundColor = "#DAE1E7";
-  hovinfo1.style.fontSize = "20px";
-  hovinfo1.style.flexGrow = "1";
-  const hov1txt = document.createTextNode("引数１");
-  hovinfo1.appendChild(hov1txt);
-  argframe.appendChild(hovinfo1);
-
-  //hover
-  const hovinfo2 = document.createElement("div");
-  hovinfo2.classList.add("hover");
-  hovinfo2.style.display = "none";
-  hovinfo2.style.backgroundColor = "#DAE1E7";
-  hovinfo2.style.fontSize = "20px";
-  const hov2txt = document.createTextNode("引数2");
-  hovinfo2.appendChild(hov2txt);
-  argframe.appendChild(hovinfo2);
-
-  const hovinfo3 = document.createElement("div");
-  hovinfo3.classList.add("hover");
-  hovinfo3.style.display = "none";
-  hovinfo3.style.backgroundColor = "#DAE1E7";
-  hovinfo3.style.fontSize = "20px";
-  const hov3txt = document.createTextNode("引数3");
-  hovinfo3.appendChild(hov3txt);
-  argframe.appendChild(hovinfo3);
-
-  const pack = findfunc.pack;
-  const svgpath = "../../infopage/" + pack + ".json";
-  console.log(svgpath);
-  const svgjson = new XMLHttpRequest();
-  svgjson.open("GET", svgpath, true);
-  svgjson.send();
-  svgjson.onload = function () {
-    const loaddata = JSON.parse(svgjson.responseText);
-    const svgdata = loaddata.find((obj) => obj.funcname === title);
-    if (svgdata.svg) {
-      const imgframe = document.createElement("div");
-      const image = document.createElement("img");
-      image.classList.add("image");
-      image.classList.add("funcimage");
-      image.setAttribute("src", "../../www/" + svgdata.svg);
-      imgframe.appendChild(image);
-      argframe.appendChild(imgframe);
+    if (arg) {
+      //)
+      const xyz = document.createElement("text");
+      xyz.style.fontSize = "48px";
+      xyz.style.fontFamily = "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
+      xyz.style.display = "flex: 0 0 auto; margin-right: 10px";
+      const xyztxt = document.createTextNode(")");
+      xyz.appendChild(xyztxt);
+      const alltxt = document.querySelectorAll(".txt");
+      const lasttxt = alltxt[alltxt.length - 1];
+      lasttxt.appendChild(xyz);
     } else {
     }
   };
-
-  txt1.addEventListener("mouseover", function () {
-    hovinfo1.style.display = "block";
-    if (document.querySelector(".funcimage")) {
-      const image = document.querySelector(".funcimage");
-      image.style.display = "none";
-    } else {
-    }
-  });
-  txt1.addEventListener("mouseout", function () {
-    hovinfo1.style.display = "none";
-    if (document.querySelector(".funcimage")) {
-      const image = document.querySelector(".funcimage");
-      image.style.display = "block";
-    } else {
-    }
-  });
-  txt2.addEventListener("mouseover", function () {
-    hovinfo2.style.display = "block";
-    if (document.querySelector(".funcimage")) {
-      const image = document.querySelector(".funcimage");
-      image.style.display = "none";
-    } else {
-    }
-  });
-  txt2.addEventListener("mouseout", function () {
-    hovinfo2.style.display = "none";
-    if (document.querySelector(".funcimage")) {
-      const image = document.querySelector(".funcimage");
-      image.style.display = "block";
-    } else {
-    }
-  });
-  txt3.addEventListener("mouseover", function () {
-    hovinfo3.style.display = "block";
-    if (document.querySelector(".funcimage")) {
-      const image = document.querySelector(".funcimage");
-      image.style.display = "none";
-    } else {
-    }
-  });
-  txt3.addEventListener("mouseout", function () {
-    hovinfo3.style.display = "none";
-    if (document.querySelector(".funcimage")) {
-      const image = document.querySelector(".funcimage");
-      image.style.display = "block";
-    } else {
-    }
-  });
 
   content.appendChild(div);
 };
