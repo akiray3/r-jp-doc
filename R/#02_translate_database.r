@@ -40,11 +40,8 @@ for (i in 1:imax) {
   }
 }
 
-
-
 rep(org$func, times = as.numeric(sapply(arg_eng_list, length)))
 rep(org$func, times = as.numeric(sapply(dtl_eng_list, length)))
-
 
 length(unlist(dsc_eng_list))
 write.table(x = unlist(dsc_eng_list), file = "R/eng_dsc.txt",
@@ -58,30 +55,49 @@ length(unlist(dsc_eng_list))
 write.table(x = unlist(dsc_eng_list), file = "R/eng_dtl.txt",
   sep = ",", quote = FALSE, row.names = FALSE)
 
-dsc_jpn <- readLines("R/jpn_dsc.txt")[-1]
-dsc_eng <- readLines("R/eng_dsc.txt")[-1]
-desc_je <- tibble::tibble(
-    func = rep(org$func, times = as.numeric(sapply(dsc_eng_list, length))),
-    jpn = dsc_jpn[dsc_jpn != ""],
-    eng = dsc_eng[dsc_eng != ""]
-  )
+dsc_jpn <- readLines("R/jpn_dsc.txt", skipNul = TRUE)[-1]
+dsc_eng <- readLines("R/eng_dsc.txt", skipNul = TRUE)[-1]
+func_part <- rep(org$func, times = as.numeric(sapply(dsc_eng_list, length)))
+length(dsc_jpn)
+length(func_part)
 
-head(dsc_jpn[dsc_jpn != ""])
-head(unlist(dsc_eng_list))
+desc_je <- tibble::tibble(jpn = dsc_jpn, eng = dsc_eng) %>%
+  dplyr::filter(eng != "") %>%
+  dplyr::mutate(func = func_part) %>%
+  dplyr::select(func, eng, jpn) %>%
+  print()
+org_nrow <- nrow(org)
+for (i in 1:org_nrow) {
+  desc_i <- desc_je %>%
+    dplyr::filter(func == org$func[i])
+  eng_i <- desc_i %>%
+    dplyr::pull(eng) %>%
+    paste0(collapse = "")
+  jpn_i <- desc_i %>%
+    dplyr::pull(jpn) %>%
+    paste0(collapse = "")
+  org$Description[i] <- stringr::str_replace(
+      string = org$Description[i],
+      pattern = eng_i,
+      replacement = jpn_i
+    )
 
-which(dsc_jpn == "")
-which(unlist(dsc_eng_list) == "")
 
+}
 
-head(dsc_jpn)
-nrow(dsc_jpn)
+x <- "Create a contingency table (optionally a sparse matrix) fromcross-classifying factors, usually contained in a data frame,using a formula interface."
+y <- "<h3>Description</h3><p>Create a contingency table (optionally a sparse matrix) fromcross-classifying factors, usually contained in a data frame,using a formula interface.</p>"
 
-
-
-
-
-
+str_detect(string = y, pattern = x)
+regexpr(pattern = x, text = y)
+regexpr(pattern = "apple", text = y)
+regexpr(pattern = "<p>", text = y)
+charmatch(x = "<p>", table = y)
 
 startnum <- gregexpr(pattern = "<p>", text = thistext)[[1]] + 3
 stopnum <- gregexpr(pattern = "</p>", text = thistext)[[1]] - 1
 transtext <- substring(text = thistext, first = startnum, last = stopnum)
+
+
+"These unary and binary operators perform arithmetic on numeric orcomplex vectors (or objects which can be coerced to them)."
+"<h3>Description</h3><p>These unary and binary operators perform arithmetic on numeric orcomplex vectors (or objects which can be coerced to them).</p>"
