@@ -105,13 +105,68 @@ request.onload = function () {
         const txtnode = document.createTextNode(arg["arguments" + b] + ",");
         txt.appendChild(txtnode);
         argcol.appendChild(txt);
+
+        //hover
+        const argframe = document.createElement("div");
+        argframe.style.display = "inline-block";
+        argframe.height = "100%";
+        argframe.style.position = "absolute";
+        argframe.style.transform = "translate(90px,10px)";
+        div.appendChild(argframe);
+
+        ///hover
+        const hovinfo = document.createElement("div");
+        hovinfo.classList.add("hover");
+        hovinfo.style.display = "none";
+        hovinfo.style.backgroundColor = "#DAE1E7";
+        hovinfo.style.fontSize = "20px";
+        hovinfo.style.flexGrow = "1";
+        const hovtxt = document.createTextNode("引数１");
+        hovinfo.appendChild(hovtxt);
+        argframe.appendChild(hovinfo);
+
+        const pack = findfunc.pack;
+        const svgpath = "../../infopage/" + pack + ".json";
+        console.log(svgpath);
+        const svgjson = new XMLHttpRequest();
+        svgjson.open("GET", svgpath, true);
+        svgjson.send();
+        svgjson.onload = function () {
+          const loaddata = JSON.parse(svgjson.responseText);
+          const svgdata = loaddata.find((obj) => obj.funcname === title);
+          if (svgdata.svg) {
+            const imgframe = document.createElement("div");
+            const image = document.createElement("img");
+            image.classList.add("image");
+            image.classList.add("funcimage");
+            image.setAttribute("src", "../../www/" + svgdata.svg);
+            imgframe.appendChild(image);
+            argframe.appendChild(imgframe);
+          } else {
+          }
+        };
+
+        txt.addEventListener("mouseover", function () {
+          hovinfo1.style.display = "block";
+          if (document.querySelector(".funcimage")) {
+            const image = document.querySelector(".funcimage");
+            image.style.display = "none";
+          } else {
+          }
+        });
+        txt.addEventListener("mouseout", function () {
+          hovinfo1.style.display = "none";
+          if (document.querySelector(".funcimage")) {
+            const image = document.querySelector(".funcimage");
+            image.style.display = "block";
+          } else {
+          }
+        });
       } else {
       }
     }
   };
-  const test = document.createElement("div");
-  test.innerHTML = findfunc.Arguments;
-  argcol.appendChild(test);
+
   //hoverframe
   const argframe = document.createElement("div");
   argframe.style.display = "inline-block";
