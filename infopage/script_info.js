@@ -35,7 +35,7 @@ request.onload = function () {
     div2.style.transform = "translate(21.529px ,57.832px)";
 
     const atag = document.createElement("a");
-    atag.href = href[i];
+    atag.href = "/r-jp-doc" + href[i];
 
     const txttag = document.createElement("button");
     txttag.style.width = "274.045px";
