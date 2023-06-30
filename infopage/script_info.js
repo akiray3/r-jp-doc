@@ -38,6 +38,7 @@ request.onload = function () {
     atag.href = "/r-jp-doc" + href[i];
 
     const txttag = document.createElement("button");
+    txttag.className = "ToDetailButton";
     txttag.style.width = "274.045px";
     txttag.style.height = "100.124px";
     txttag.style.backgroundColor = "#00000000";

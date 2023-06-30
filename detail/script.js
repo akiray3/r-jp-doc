@@ -125,21 +125,32 @@ request.onload = function () {
           } else {
           }
         });
-      } else {
       }
     }
 
     if (arg) {
-      //)
-      const xyz = document.createElement("text");
-      xyz.style.fontSize = "48px";
-      xyz.style.fontFamily = "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
-      xyz.style.display = "flex: 0 0 auto; margin-right: 10px";
-      const xyztxt = document.createTextNode(")");
-      xyz.appendChild(xyztxt);
       const alltxt = document.querySelectorAll(".txt");
       const lasttxt = alltxt[alltxt.length - 1];
-      lasttxt.appendChild(xyz);
+      for (let i = 0; i < alltxt.length; i++) {
+        if (alltxt[i] == lasttxt) {
+          //)
+          const xyz = document.createElement("text");
+          xyz.style.fontSize = "48px";
+          xyz.style.fontFamily =
+            "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
+          xyz.style.display = "flex: 0 0 auto; margin-right: 10px";
+          const xyztxt = document.createTextNode(")");
+          xyz.appendChild(xyztxt);
+          alltxt[i].appendChild(xyz);
+        } else if (alltxt[1] !== lasttxt) {
+          const comma = document.createElement("div");
+          const commatxt = document.createTextNode(",");
+          comma.style.fontFamily =
+            "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
+          comma.appendChild(commatxt);
+          alltxt[i].appendChild(comma);
+        }
+      }
     } else {
     }
   };
