@@ -20,7 +20,7 @@
   margin: 14%;
 }
 /*タブ部分*/
-.tabs{
+.tabs {
   width: auto;
 }
 .tab {
@@ -36,4 +36,9 @@
 .content {
   transform: translate(15px);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
+}
+
+.image.funcimage {
+  height: 190px;
+  margin-top: -18px;
 }
