@@ -107,6 +107,10 @@ request.onload = function () {
           }
         };
 
+        //ホバー有効無効の判定
+        function hoverjudge(){
+          return window.matchMedia('(hover:none)').matches;
+        }
         txt.addEventListener("mouseover", function () {
           hovinfo.style.display = "block";
           if (document.querySelector(".funcimage")) {
