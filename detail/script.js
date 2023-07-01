@@ -32,6 +32,7 @@ request.onload = function () {
   //引数ブロック
   const argblock = document.createElement("div");
   argblock.style.display = "inline-block";
+  argblock.className = "argblock";
   div.appendChild(argblock);
 
   const argcol = document.createElement("div");
@@ -47,14 +48,19 @@ request.onload = function () {
   funcname.appendChild(funcnametxt);
   funcframe.appendChild(funcname);
 
-  const heightblock = argblock.offsetHeight;
-  content.style.height = `${heightblock + 300}px`;
-
-  //引数の取り込み
+  //引数
   const path_arg = "../argument.json";
   const req = new XMLHttpRequest();
   req.open("GET", path_arg, true);
   req.send();
+
+  //hoverframe
+  const argframe = document.createElement("div");
+  argframe.style.display = "inline-block";
+
+  argframe.style.position = "absolute";
+  argframe.style.transform = "translate(90px,10px)";
+  div.appendChild(argframe);
 
   req.onload = function () {
     const json = JSON.parse(req.responseText);
@@ -69,14 +75,6 @@ request.onload = function () {
         txt.appendChild(txtnode);
         argcol.appendChild(txt);
 
-        //hover
-        const argframe = document.createElement("div");
-        argframe.style.display = "inline-block";
-        argframe.height = "100%";
-        argframe.style.position = "absolute";
-        argframe.style.transform = "translate(90px,10px)";
-        div.appendChild(argframe);
-
         ///hover
         const hovinfo = document.createElement("div");
         hovinfo.classList.add("hover");
@@ -84,13 +82,13 @@ request.onload = function () {
         hovinfo.style.backgroundColor = "#DAE1E7";
         hovinfo.style.fontSize = "20px";
         hovinfo.style.flexGrow = "1";
+
         const hovtxt = document.createTextNode("引数１");
         hovinfo.appendChild(hovtxt);
         argframe.appendChild(hovinfo);
 
         const pack = findfunc.pack;
         const svgpath = "../../infopage/" + pack + ".json";
-        console.log(svgpath);
         const svgjson = new XMLHttpRequest();
         svgjson.open("GET", svgpath, true);
         svgjson.send();
@@ -127,6 +125,12 @@ request.onload = function () {
         });
       }
     }
+    //hover size
+    heightblock = argblock.offsetHeight;
+    const hovinfo = document.querySelectorAll(".hover");
+    for (let i = 0; i < hovinfo.length; i++) {
+      hovinfo[i].style.height = `${heightblock + 20}px`;
+    }
 
     if (arg) {
       const alltxt = document.querySelectorAll(".txt");
@@ -143,16 +147,13 @@ request.onload = function () {
           xyz.appendChild(xyztxt);
           alltxt[i].appendChild(xyz);
         } else if (alltxt[1] !== lasttxt) {
-          const comma = document.createElement("div");
-          const commatxt = document.createTextNode(",");
-          comma.style.fontFamily =
-            "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
-          comma.appendChild(commatxt);
-          alltxt[i].appendChild(comma);
         }
       }
     } else {
     }
+    //関数名ボックスのサイズ
+    heightblock = argblock.offsetHeight;
+    content.style.height = `${heightblock + 19}px`;
   };
 
   content.appendChild(div);
@@ -202,7 +203,6 @@ function openTab(event, tabId) {
   contents.forEach((cont) => (cont.style.display = "none"));
 
   const clicktab = event.currentTarget;
-  console.log(clicktab);
   const clickedcontent = document.querySelector("#" + tabId);
   clicktab.classList.add("active");
 

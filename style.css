@@ -1,3 +1,7 @@
+.librarylink{
+  -webkit-user-select: none;
+  user-select: none;
+}
 .slick-list {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 24px;

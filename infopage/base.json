@@ -52,14 +52,16 @@
     "id": "!.octmode",
     "href": "/detail/base/!symbol11octmode.html",
     "funcname": "!.octmode",
-    "tag":"math"
+    "tag": "math"
   },
-  { "id": "!=", "href": "/detail/base/!=.html", "funcname": "!=" ,
-"tag":"operator"},
-  { "id": "(", "href": "/detail/base/(.html", "funcname": "(",
-"tag":"sign"}
-  { "id": "[", "href": "/detail/base/[.html", "funcname": "[" ,
-"tag":"sign"},
+  {
+    "id": "!=",
+    "href": "/detail/base/!=.html",
+    "funcname": "!=",
+    "tag": "operator"
+  },
+  { "id": "(", "href": "/detail/base/(.html", "funcname": "(", "tag": "sign" },
+  { "id": "[", "href": "/detail/base/[.html", "funcname": "[", "tag": "sign" },
   {
     "id": "[.AsIs",
     "href": "/detail/base/[symbol11AsIs.html",
