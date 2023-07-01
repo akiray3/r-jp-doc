@@ -79,7 +79,7 @@ request.onload = function () {
         const hovinfo = document.createElement("div");
         hovinfo.classList.add("hover");
         hovinfo.style.display = "none";
-        hovinfo.style.backgroundColor = "#DAE1E7";
+        hovinfo.style.backgroundColor = "#00000000";
         hovinfo.style.fontSize = "20px";
         hovinfo.style.flexGrow = "1";
 

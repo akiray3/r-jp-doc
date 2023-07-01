@@ -54,7 +54,7 @@ foreach::foreach(c = detail)%do%{
 
   <div class=\"tabcontents\" style=\"display: block\"></div>
   <div class=\"tabs\" style=\"display: block\">
-    <div style=\"display: flex; transform: translate(0, 0)\">
+    <div style=\"display: flex; flex-wrap: wrap; transform: translate(0, 0)\">
       <button class=\"tab\" onclick=\"openTab(event,'Description')\" id=\"default\">
         Description
       </button>
