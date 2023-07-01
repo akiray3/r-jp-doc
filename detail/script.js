@@ -108,9 +108,7 @@ request.onload = function () {
         };
 
         //ホバー有効無効の判定
-        function hoverjudge(){
-          return window.matchMedia('(hover:none)').matches;
-        }
+        //ホバー有効
         txt.addEventListener("mouseover", function () {
           hovinfo.style.display = "block";
           if (document.querySelector(".funcimage")) {
@@ -125,6 +123,20 @@ request.onload = function () {
             const image = document.querySelector(".funcimage");
             image.style.display = "block";
           } else {
+          }
+        });
+        //ホバー無効
+        function hoverjudge() {
+          return window.matchMedia("(hover:none)").matches;
+        }
+        txt.addEventListener("touchstart", function () {
+          if (hoverjudge()) {
+            hovinfo.style.display = "block";
+            if (document.querySelector(".funcimage")) {
+              const image = document.querySelector(".funcimage");
+              image.style.display = "none";
+            } else {
+            }
           }
         });
       }
