@@ -2,7 +2,7 @@
 needs(readxl)
 needs(tidyverse)
 needs(foreach)
-dat <- readxl::read_xlsx("/Users/aizawaharuka/Documents/GitHub/名称未設定/deletefuture/help_dbコピー関数名用.xlsx")
+dat <- readxl::read_xlsx("/Users/aizawaharuka/Documents/GitHub/名称未設定フォルダ/名称未設定/deletefuture/help_dbコピー関数名用.xlsx")
 head(dat)
 dat2 <- dat %>% 
  mutate(funcoriginal = func) %>% 
@@ -44,11 +44,17 @@ foreach::foreach(c = detail)%do%{
   <title>",b,"</title>
 </head>
 <body>
+  <div class=\"menu\" style=\"display: flex; margin-left: 20px\">
+    <p>></p>
+    <p><a href=\"/r-jp-doc/index.html\"> homeへ </a></p>
+    <p>></p>
+    <p><a href=\"/r-jp-doc/infopage/",c,".html\"> ",c,"一覧へ </a></p>
+  </div>
   <div class=\"block\"></div>
 
   <div class=\"tabcontents\" style=\"display: block\"></div>
   <div class=\"tabs\" style=\"display: block\">
-    <div style=\"display: flex; transform: translate(0, 0)\">
+    <div style=\"display: flex; flex-wrap: wrap; transform: translate(0, 0)\">
       <button class=\"tab\" onclick=\"openTab(event,'Description')\" id=\"default\">
         Description
       </button>
@@ -79,7 +85,7 @@ foreach::foreach(c = detail)%do%{
     b <- gsub("[<]","symbol9",b)
     b <- gsub("[>]","symbol10",b)
     b <- gsub("[.]","symbol11",b)
-    htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/名称未設定/detail/", paste0(c,"/",b, ".html"))
+    htmlpath <- file.path("/Users/aizawaharuka/Documents/GitHub/名称未設定フォルダ/名称未設定/detail/", paste0(c,"/",b, ".html"))
     write_lines(content, file = htmlpath)
   }
   

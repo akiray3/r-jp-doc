@@ -3,40 +3,65 @@
     "id": "-",
     "href": "/detail/base/-.html",
     "funcname": "-",
-    "svg": "math-operations.svg"
+    "svg": "math-operations.svg",
+    "tag": "operator"
   },
   {
     "id": "-.Date",
     "href": "/detail/base/-symbol11Date.html",
     "funcname": "-.Date",
-    "svg": ""
+    "tag": "date"
   },
   {
     "id": "-.POSIXt",
     "href": "/detail/base/-symbol11POSIXt.html",
-    "funcname": "-.POSIXt"
+    "funcname": "-.POSIXt",
+    "tag": "operator"
   },
-  { "id": ":", "href": "/detail/base/symbol6.html", "funcname": ":" },
-  { "id": "::", "href": "/detail/base/symbol6symbol6.html", "funcname": "::" },
+  {
+    "id": ":",
+    "href": "/detail/base/symbol6.html",
+    "funcname": ":",
+    "tag": "operator"
+  },
+  {
+    "id": "::",
+    "href": "/detail/base/symbol6symbol6.html",
+    "funcname": "::",
+    "tag": "system"
+  },
   {
     "id": ":::",
     "href": "/detail/base/symbol6symbol6symbol6.html",
-    "funcname": ":::"
+    "funcname": ":::",
+    "tag": "system"
   },
-  { "id": "!", "href": "/detail/base/!.html", "funcname": "!" },
+  {
+    "id": "!",
+    "href": "/detail/base/!.html",
+    "funcname": "!",
+    "tag": "operator"
+  },
   {
     "id": "!.hexmode",
     "href": "/detail/base/!symbol11hexmode.html",
-    "funcname": "!.hexmode"
+    "funcname": "!.hexmode",
+    "tag": "math"
   },
   {
     "id": "!.octmode",
     "href": "/detail/base/!symbol11octmode.html",
-    "funcname": "!.octmode"
+    "funcname": "!.octmode",
+    "tag": "math"
   },
-  { "id": "!=", "href": "/detail/base/!=.html", "funcname": "!=" },
-  { "id": "(", "href": "/detail/base/(.html", "funcname": "(" },
-  { "id": "[", "href": "/detail/base/[.html", "funcname": "[" },
+  {
+    "id": "!=",
+    "href": "/detail/base/!=.html",
+    "funcname": "!=",
+    "tag": "operator"
+  },
+  { "id": "(", "href": "/detail/base/(.html", "funcname": "(", "tag": "sign" },
+  { "id": "[", "href": "/detail/base/[.html", "funcname": "[", "tag": "sign" },
   {
     "id": "[.AsIs",
     "href": "/detail/base/[symbol11AsIs.html",
