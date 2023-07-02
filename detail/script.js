@@ -57,6 +57,26 @@ request.onload = function () {
   //hoverframe
   const argframe = document.createElement("div");
   argframe.style.display = "inline-block";
+  //svg
+  const pack = findfunc.pack;
+  const svgpath = "../../infopage/" + pack + ".json";
+  const svgjson = new XMLHttpRequest();
+  svgjson.open("GET", svgpath, true);
+  svgjson.send();
+  svgjson.onload = function () {
+    const loaddata = JSON.parse(svgjson.responseText);
+    const svgdata = loaddata.find((obj) => obj.funcname === title);
+    if (svgdata.svg) {
+      const imgframe = document.createElement("div");
+      const image = document.createElement("img");
+      image.classList.add("image");
+      image.classList.add("funcimage");
+      image.setAttribute("src", "../../www/" + svgdata.svg);
+      imgframe.appendChild(image);
+      argframe.appendChild(imgframe);
+    } else {
+    }
+  };
 
   argframe.style.position = "absolute";
   argframe.style.transform = "translate(90px,10px)";
@@ -86,26 +106,6 @@ request.onload = function () {
         const hovtxt = document.createTextNode("引数１");
         hovinfo.appendChild(hovtxt);
         argframe.appendChild(hovinfo);
-
-        const pack = findfunc.pack;
-        const svgpath = "../../infopage/" + pack + ".json";
-        const svgjson = new XMLHttpRequest();
-        svgjson.open("GET", svgpath, true);
-        svgjson.send();
-        svgjson.onload = function () {
-          const loaddata = JSON.parse(svgjson.responseText);
-          const svgdata = loaddata.find((obj) => obj.funcname === title);
-          if (svgdata.svg) {
-            const imgframe = document.createElement("div");
-            const image = document.createElement("img");
-            image.classList.add("image");
-            image.classList.add("funcimage");
-            image.setAttribute("src", "../../www/" + svgdata.svg);
-            imgframe.appendChild(image);
-            argframe.appendChild(imgframe);
-          } else {
-          }
-        };
 
         //ホバー有効無効の判定
         //ホバー有効
