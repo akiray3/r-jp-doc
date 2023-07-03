@@ -1,3 +1,6 @@
+.menu {
+  
+}
 /* 関数*/
 .hover {
   animation: fadein 1s ease 0s 1 normal forwards;
@@ -20,7 +23,10 @@
   margin: 14%;
 }
 /*タブ部分*/
-.tabs{
+.tabcontents{
+  margin-top: 54px;
+}
+.tabs {
   width: auto;
 }
 .tab {
@@ -36,4 +42,15 @@
 .content {
   transform: translate(15px);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
+}
+
+.image.funcimage {
+  height: 190px;
+  margin-top: -18px;
+}
+
+/*タブ*/
+.tab {
+  -webkit-user-select: none;
+  user-select: none;
 }

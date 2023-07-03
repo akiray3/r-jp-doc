@@ -1,5 +1,21 @@
+.librarylink{
+  -webkit-user-select: none;
+  user-select: none;
+}
 .slick-list {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 24px;
 }
 
+.sec_inner {
+  white-space: nrowrap;
+  width: 100%;
+  height: 250px;
+  border-radius: 9.194px;
+  stroke: rgb(36, 61, 37);
+  stroke-miterlimit: 10;
+  stroke-width: 1;
+  border: 2px solid rgb(0, 0, 0);
+  transform: translate(21.529px, 57.832px);
+  margin-top: 3%;
+}
