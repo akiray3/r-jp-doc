@@ -811,57 +811,68 @@
     "id": "as.list",
     "href": "/detail/base/assymbol11list.html",
     "funcname": "as.list",
-    "svg": "list-bullets-light.svg"
+    "svg": "list-bullets-light.svg",
+"tag":"list"
   },
   {
     "id": "as.list.data.frame",
     "href": "/detail/base/assymbol11listsymbol11datasymbol11frame.html",
-    "funcname": "as.list.data.frame"
+    "funcname": "as.list.data.frame",
+"tag":"list"
   },
   {
     "id": "as.list.Date",
     "href": "/detail/base/assymbol11listsymbol11Date.html",
-    "funcname": "as.list.Date"
+    "funcname": "as.list.Date",
+"tag":"list"
   },
   {
     "id": "as.list.default",
     "href": "/detail/base/assymbol11listsymbol11default.html",
-    "funcname": "as.list.default"
+    "funcname": "as.list.default",
+"tag":"list"
   },
   {
     "id": "as.list.difftime",
     "href": "/detail/base/assymbol11listsymbol11difftime.html",
-    "funcname": "as.list.difftime"
+    "funcname": "as.list.difftime",
+"tag":"list"
   },
   {
     "id": "as.list.environment",
     "href": "/detail/base/assymbol11listsymbol11environment.html",
-    "funcname": "as.list.environment"
+    "funcname": "as.list.environment",
+"tag":"list"
   },
   {
     "id": "as.list.factor",
     "href": "/detail/base/assymbol11listsymbol11factor.html",
-    "funcname": "as.list.factor"
+    "funcname": "as.list.factor",
+"tag":"list"
   },
   {
     "id": "as.list.function",
     "href": "/detail/base/assymbol11listsymbol11function.html",
-    "funcname": "as.list.function"
+    "funcname": "as.list.function",
+"tag":"list"
   },
   {
     "id": "as.list.numeric_version",
     "href": "/detail/base/assymbol11listsymbol11numeric_version.html",
-    "funcname": "as.list.numeric_version"
+    "funcname": "as.list.numeric_version",
+"tag":"list"
   },
   {
     "id": "as.list.POSIXct",
     "href": "/detail/base/assymbol11listsymbol11POSIXct.html",
-    "funcname": "as.list.POSIXct"
+    "funcname": "as.list.POSIXct",
+"tag":"list"
   },
   {
     "id": "as.list.POSIXlt",
     "href": "/detail/base/assymbol11listsymbol11POSIXlt.html",
-    "funcname": "as.list.POSIXlt"
+    "funcname": "as.list.POSIXlt",
+"tag":"list"
   },
   {
     "id": "as.logical",
@@ -937,7 +948,9 @@
   {
     "id": "as.package_version",
     "href": "/detail/base/assymbol11package_version.html",
-    "funcname": "as.package_version"
+    "funcname": "as.package_version",
+"tag":
+"system"
   },
   {
     "id": "as.pairlist",
@@ -1369,16 +1382,22 @@
     "href": "/detail/base/closeAllConnections.html",
     "funcname": "closeAllConnections"
   },
-  { "id": "col", "href": "/detail/base/col.html", "funcname": "col" },
+  { "id": "col", "href": "/detail/base/col.html", "funcname": "col" ,
+"tag":
+"dataframe"},
   {
     "id": "colMeans",
     "href": "/detail/base/colMeans.html",
-    "funcname": "colMeans"
+    "funcname": "colMeans",
+"tag":
+"dataframe"
   },
   {
     "id": "colnames",
     "href": "/detail/base/colnames.html",
-    "funcname": "colnames"
+    "funcname": "colnames",
+"tag":
+"dataframe"
   },
   {
     "id": "colnames<-",
