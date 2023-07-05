@@ -20,7 +20,7 @@
       ];
       for (let c = 0; c < svglist.length; c++) {
         const img = new Image();
-        img.setAttribute("data-src", svglist[c]);
+        img.setAttribute("src", svglist[c]);
         console.log(svglist[c]);
       }
     }
@@ -146,18 +146,18 @@
             slideblock.appendChild(slide);
           }
         }
+        $("#" + list[b] + "_slider").slick({
+          slidesToShow: 3,
+          adaptiveHeight: true,
+          slidesToScroll: 1,
+          centerMode: false,
+          preloadImages: true,
+          lazyload: "ondemand",
+          LoadBuffer: 0,
+        });
       };
     }
     $(document).ready(function () {
-      $(".slick-slider").slick({
-        slidesToShow: 3,
-        adaptiveHeight: true,
-        slidesToScroll: 1,
-        centerMode: false,
-        preloadImages: true,
-        lazyload: "ondemand",
-        LoadBuffer: 0,
-      });
       $(".lazyload").slick({
         lazyload: "ondemand",
       });
