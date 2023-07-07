@@ -1,3 +1,11 @@
+#search{
+  transform: translate(20%,54px);
+
+}
+#keywordbox{
+  height: 70px;
+  width: 520px;
+}
 .librarylink {
   -webkit-user-select: none;
   user-select: none;
