@@ -1,10 +1,26 @@
-#search{
-  transform: translate(20%,54px);
-
+#search {
+  transform: translate(20%, 54px);
 }
-#keywordbox{
+#keywordbox {
   height: 70px;
   width: 520px;
+  border-radius: 510.194px;
+  stroke: #000;
+  stroke-width: 1px;
+}
+#reserch {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(127, 255, 212, 0);
+  border-color: #00000000;
+  right: 0;
+  top: 0;
+  transform: translate(-94px, 30px);
+
+}
+#magnifying-glass-duotone{
+  width: 60px;
+  height: 60px;
 }
 .librarylink {
   -webkit-user-select: none;
@@ -48,7 +64,7 @@
   border: 1px solid #000;
   transform: translate(21.529px, 57.832px);
 }
-.ToDetailButton{
+.ToDetailButton {
   width: 274.045px;
   height: 100.124px;
   background-color: #00000000;
