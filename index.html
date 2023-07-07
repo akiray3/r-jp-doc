@@ -14,12 +14,16 @@
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
   <script src="jquery.js"></script>
   <script src="slick-1.8.1/slick/slick.min.js"></script>
-  s
 </head>
 <body>
-  <form action="search.html" method="get">
-    <input type="text" name="keyword" placeholder="キーワードを入力" />
-    <button id="reserch"></button>
+  <form id="search" action="search.html" method="get">
+    <input
+      type="text"
+      id="keywordbox"
+      name="keyword"
+      placeholder="キーワードを入力"
+    />
+    <button type="submit" id="reserch"></button>
   </form>
 
   <div class="sec_inner">
@@ -137,5 +141,17 @@
         });
       };
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document
+        .getElementById("search")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const keyword = document.getElementById("keywordbox").value;
+          window.location.href =
+            "search.html?keyword=" + encodeURIComponent(keyword);
+        });
+    });
   </script>
+  
 </body>

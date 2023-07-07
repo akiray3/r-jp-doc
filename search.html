@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>search</title>
+</head>
+
+<body>
+  <div class="lineitem" id="keyword">
+    <div class="namebox" id="keyword_namebox">
+      <a class="hrefbox">
+        <button class="ToDetailButton"></button>
+      </a>
+    </div>
+  </div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentURL = window.location.search;
+    const urlParams = new URLSearchParams(currentURL);
+    const keyword = urlParams.get("keyword");
+    console.log(keyword);
+
+    const button = document.querySelector(".ToDetailButton");
+    if (keyword.length < 18) {
+      button.style.fontSize = "26px";
+    } else {
+      button.style.fontSize = "20px";
+    }
+    const txtnode = document.createTextNode(keyword);
+    button.appendChild(txtnode);
+
+    const path = "help_db_raw.json";
+    const request = new XMLHttpRequest();
+    request.open("GET", path, true);
+    request.send();
+    request.onload = function () {
+      const jsondb = JSON.parse(request.responseText);
+      const funcname = jsondb.find((item) => item.func === keyword);
+      const pack = funcname.pack;
+      const href = document.querySelector(".hrefbox");
+      href.href = "detail/" + pack + "/" + keyword + ".html";
+    };
+  });
+</script>
