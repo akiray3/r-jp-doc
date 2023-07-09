@@ -52,7 +52,7 @@
     "id": "!.octmode",
     "href": "/detail/base/!symbol11octmode.html",
     "funcname": "!.octmode",
-    "tag": "math"
+    "tag": "data"
   },
   {
     "id": "!=",
@@ -60,8 +60,8 @@
     "funcname": "!=",
     "tag": "operator"
   },
-  { "id": "(", "href": "/detail/base/(.html", "funcname": "(", "tag": "sign" },
-  { "id": "[", "href": "/detail/base/[.html", "funcname": "[", "tag": "sign" },
+  { "id": "(", "href": "/detail/base/(.html", "funcname": "(", "tag": "operater" },
+  { "id": "[", "href": "/detail/base/[.html", "funcname": "[", "tag": "operater" },
   {
     "id": "[.AsIs",
     "href": "/detail/base/[symbol11AsIs.html",
@@ -71,12 +71,16 @@
     "id": "[.data.frame",
     "href": "/detail/base/[symbol11datasymbol11frame.html",
     "funcname": "[.data.frame",
-    "svg": "grid-nine-light.svg"
+    "svg": "grid-nine-light.svg",
+"tag":
+"data"
   },
   {
     "id": "[.Date",
     "href": "/detail/base/[symbol11Date.html",
-    "funcname": "[.Date"
+    "funcname": "[.Date",
+"tag":
+"data"
   },
   {
     "id": "[.difftime",
@@ -209,7 +213,9 @@
   {
     "id": "[<-.Date",
     "href": "/detail/base/[symbol9-symbol11Date.html",
-    "funcname": "[<-.Date"
+    "funcname": "[<-.Date",
+"tag":
+"data"
   },
   {
     "id": "[<-.difftime",
@@ -236,22 +242,34 @@
     "href": "/detail/base/[symbol9-symbol11POSIXlt.html",
     "funcname": "[<-.POSIXlt"
   },
-  { "id": "{", "href": "/detail/base/{.html", "funcname": "{" },
-  { "id": "@", "href": "/detail/base/@.html", "funcname": "@" },
-  { "id": "@<-", "href": "/detail/base/@symbol9-.html", "funcname": "@<-" },
-  { "id": "*", "href": "/detail/base/symbol5.html", "funcname": "*" },
+  { "id": "{", "href": "/detail/base/{.html", "funcname": "{" ,
+"tag":
+"operater"},
+  { "id": "@", "href": "/detail/base/@.html", "funcname": "@" ,
+"tag":
+"operater"},
+  { "id": "@<-", "href": "/detail/base/@symbol9-.html", "funcname": "@<-" ,
+"tag":
+"operater"},
+  { "id": "*", "href": "/detail/base/symbol5.html", "funcname": "*" ,
+"tag":
+"operater"},
   {
     "id": "*.difftime",
     "href": "/detail/base/symbol5symbol11difftime.html",
     "funcname": "*.difftime"
   },
-  { "id": "/", "href": "/detail/base/symbol1.html", "funcname": "/" },
+  { "id": "/", "href": "/detail/base/symbol1.html", "funcname": "/" ,
+"tag":
+"operater"},
   {
     "id": "/.difftime",
     "href": "/detail/base/symbol1symbol11difftime.html",
     "funcname": "/.difftime"
   },
-  { "id": "&", "href": "/detail/base/&.html", "funcname": "&" },
+  { "id": "&", "href": "/detail/base/&.html", "funcname": "&" ,
+"tag":
+"operater"},
   {
     "id": "&.hexmode",
     "href": "/detail/base/&symbol11hexmode.html",
@@ -262,35 +280,53 @@
     "href": "/detail/base/&symbol11octmode.html",
     "funcname": "&.octmode"
   },
-  { "id": "&&", "href": "/detail/base/&&.html", "funcname": "&&" },
+  { "id": "&&", "href": "/detail/base/&&.html", "funcname": "&&" ,
+"tag":
+"operater"},
   {
     "id": "%*%",
     "href": "/detail/base/symbol4symbol5symbol4.html",
-    "funcname": "%*%"
+    "funcname": "%*%",
+"tag":
+"operater"
   },
   {
     "id": "%/%",
     "href": "/detail/base/symbol4symbol1symbol4.html",
-    "funcname": "%/%"
+    "funcname": "%/%",
+"tag":
+"operater"
   },
-  { "id": "%%", "href": "/detail/base/symbol4symbol4.html", "funcname": "%%" },
+  { "id": "%%", "href": "/detail/base/symbol4symbol4.html", "funcname": "%%" ,
+"tag":
+"operater"},
   {
     "id": "%in%",
     "href": "/detail/base/symbol4insymbol4.html",
-    "funcname": "%in%"
+    "funcname": "%in%",
+"tag":
+"operater"
   },
   {
     "id": "%o%",
     "href": "/detail/base/symbol4osymbol4.html",
-    "funcname": "%o%"
+    "funcname": "%o%",
+"tag":
+"operater"
   },
   {
     "id": "%x%",
     "href": "/detail/base/symbol4xsymbol4.html",
-    "funcname": "%x%"
+    "funcname": "%x%",
+"tag":
+"operater"
   },
-  { "id": "^", "href": "/detail/base/^.html", "funcname": "^" },
-  { "id": "+", "href": "/detail/base/+.html", "funcname": "+" },
+  { "id": "^", "href": "/detail/base/^.html", "funcname": "^" ,
+"tag":
+"operater"},
+  { "id": "+", "href": "/detail/base/+.html", "funcname": "+" ,
+"tag":
+"operater"},
   {
     "id": "+.Date",
     "href": "/detail/base/+symbol11Date.html",
@@ -301,19 +337,37 @@
     "href": "/detail/base/+symbol11POSIXt.html",
     "funcname": "+.POSIXt"
   },
-  { "id": "<", "href": "/detail/base/symbol9.html", "funcname": "<" },
-  { "id": "<-", "href": "/detail/base/symbol9-.html", "funcname": "<-" },
+  { "id": "<", "href": "/detail/base/symbol9.html", "funcname": "<" ,
+"tag":
+"operater"},
+  { "id": "<-", "href": "/detail/base/symbol9-.html", "funcname": "<-" ,
+"tag":
+"operater"},
   {
     "id": "<<-",
     "href": "/detail/base/symbol9symbol9-.html",
-    "funcname": "<<-"
+    "funcname": "<<-",
+"tag":
+"operater"
   },
-  { "id": "<=", "href": "/detail/base/symbol9=.html", "funcname": "<=" },
-  { "id": "=", "href": "/detail/base/=.html", "funcname": "=" },
-  { "id": "==", "href": "/detail/base/==.html", "funcname": "==" },
-  { "id": ">", "href": "/detail/base/symbol10.html", "funcname": ">" },
-  { "id": ">=", "href": "/detail/base/symbol10=.html", "funcname": ">=" },
-  { "id": "|", "href": "/detail/base/symbol7.html", "funcname": "|" },
+  { "id": "<=", "href": "/detail/base/symbol9=.html", "funcname": "<=" ,
+"tag":
+"operater"},
+  { "id": "=", "href": "/detail/base/=.html", "funcname": "=" ,
+"tag":
+"operater"},
+  { "id": "==", "href": "/detail/base/==.html", "funcname": "==" ,
+"tag":
+"operater"},
+  { "id": ">", "href": "/detail/base/symbol10.html", "funcname": ">" ,
+"tag":
+"operater"},
+  { "id": ">=", "href": "/detail/base/symbol10=.html", "funcname": ">=" ,
+"tag":
+"operater"},
+  { "id": "|", "href": "/detail/base/symbol7.html", "funcname": "|" ,
+"tag":
+"operater"},
   {
     "id": "|.hexmode",
     "href": "/detail/base/symbol7symbol11hexmode.html",
@@ -324,9 +378,15 @@
     "href": "/detail/base/symbol7symbol11octmode.html",
     "funcname": "|.octmode"
   },
-  { "id": "||", "href": "/detail/base/symbol7symbol7.html", "funcname": "||" },
-  { "id": "~", "href": "/detail/base/~.html", "funcname": "~" },
-  { "id": "$", "href": "/detail/base/$.html", "funcname": "$" },
+  { "id": "||", "href": "/detail/base/symbol7symbol7.html", "funcname": "||" ,
+"tag":
+"operater"},
+  { "id": "~", "href": "/detail/base/~.html", "funcname": "~" ,
+"tag":
+"operater"},
+  { "id": "$", "href": "/detail/base/$.html", "funcname": "$" ,
+"tag":
+"operater"},
   {
     "id": "$.DLLInfo",
     "href": "/detail/base/$symbol11DLLInfo.html",
@@ -337,11 +397,15 @@
     "href": "/detail/base/$symbol11package_version.html",
     "funcname": "$.package_version"
   },
-  { "id": "$<-", "href": "/detail/base/$symbol9-.html", "funcname": "$<-" },
+  { "id": "$<-", "href": "/detail/base/$symbol9-.html", "funcname": "$<-" ,
+"tag":
+"operater"},
   {
     "id": "$<-.data.frame",
     "href": "/detail/base/$symbol9-symbol11datasymbol11frame.html",
-    "funcname": "$<-.data.frame"
+    "funcname": "$<-.data.frame",
+"tag":
+"dataframe"
   },
   {
     "id": "abbreviate",
@@ -362,8 +426,11 @@
     "href": "/detail/base/addTaskCallback.html",
     "funcname": "addTaskCallback"
   },
-  { "id": "agrep", "href": "/detail/base/agrep.html", "funcname": "agrep" },
-  { "id": "agrepl", "href": "/detail/base/agrepl.html", "funcname": "agrepl" },
+  { "id": "agrep", "href": "/detail/base/agrep.html", "funcname": "agrep" ,
+  "tag":"conversion"},
+  { "id": "agrepl", "href": "/detail/base/agrepl.html", "funcname": "agrepl" ,
+"tag":
+"conversion"},
   { "id": "alist", "href": "/detail/base/alist.html", "funcname": "alist" },
   { "id": "all", "href": "/detail/base/all.html", "funcname": "all" },
   {
@@ -470,7 +537,9 @@
   {
     "id": "anyDuplicated.matrix",
     "href": "/detail/base/anyDuplicatedsymbol11matrix.html",
-    "funcname": "anyDuplicated.matrix"
+    "funcname": "anyDuplicated.matrix",
+"tag":
+"dataframe"
   },
   { "id": "anyNA", "href": "/detail/base/anyNA.html", "funcname": "anyNA" },
   {
@@ -500,7 +569,8 @@
     "funcname": "aperm.table"
   },
   { "id": "append", "href": "/detail/base/append.html", "funcname": "append" },
-  { "id": "apply", "href": "/detail/base/apply.html", "funcname": "apply" },
+  { "id": "apply", "href": "/detail/base/apply.html", "funcname": "apply" ,
+  "tag":"manipulation"},
   { "id": "Arg", "href": "/detail/base/Arg.html", "funcname": "Arg" },
   { "id": "args", "href": "/detail/base/args.html", "funcname": "args" },
   { "id": "array", "href": "/detail/base/array.html", "funcname": "array" },
@@ -512,34 +582,45 @@
   {
     "id": "as.array",
     "href": "/detail/base/assymbol11array.html",
-    "funcname": "as.array"
+    "funcname": "as.array",
+"tag":
+"conversion"
   },
   {
     "id": "as.array.default",
     "href": "/detail/base/assymbol11arraysymbol11default.html",
-    "funcname": "as.array.default"
+    "funcname": "as.array.default",
+"tag":
+"conversion"
   },
   {
     "id": "as.call",
     "href": "/detail/base/assymbol11call.html",
     "funcname": "as.call",
-    "svg": "megaphone-light.svg"
+    "svg": "megaphone-light.svg",
+"tag":
+"conversion"
   },
   {
     "id": "as.character",
     "href": "/detail/base/assymbol11character.html",
     "funcname": "as.character",
-    "svg": "text-aa-light.svg"
+    "svg": "text-aa-light.svg",
+"tag":
+"conversion"
   },
   {
     "id": "as.character.condition",
     "href": "/detail/base/assymbol11charactersymbol11condition.html",
-    "funcname": "as.character.condition"
+    "funcname": "as.character.condition",
+"tag":
+"conversion"
   },
   {
     "id": "as.character.Date",
     "href": "/detail/base/assymbol11charactersymbol11Date.html",
-    "funcname": "as.character.Date"
+    "funcname": "as.character.Date",
+"tag":"conversion"
   },
   {
     "id": "as.character.default",
@@ -1056,12 +1137,16 @@
   {
     "id": "as.vector",
     "href": "/detail/base/assymbol11vector.html",
-    "funcname": "as.vector"
+    "funcname": "as.vector",
+"tag":
+"conversion"
   },
   {
     "id": "as.vector.factor",
     "href": "/detail/base/assymbol11vectorsymbol11factor.html",
-    "funcname": "as.vector.factor"
+    "funcname": "as.vector.factor",
+"tag":
+"conversion"
   },
   { "id": "asin", "href": "/detail/base/asin.html", "funcname": "asin" },
   { "id": "asinh", "href": "/detail/base/asinh.html", "funcname": "asinh" },
