@@ -179,23 +179,34 @@
         .getElementById("keywordbox")
         .addEventListener("input", function (event) {
           const input = event.target.value;
-          const result_autocomplete = getAutocompleteresults(input);
-          displayAutocomplete(result_autocomplete);
+          if (input === "") {
+            if (document.querySelector(".list")) {
+              const list = document.querySelectorAll(".list");
+              list.forEach(function (item) {
+                const autocompletelist =
+                  document.getElementById("autocompletelist");
+                autocompletelist.removeChild(item);
+              });
+            }
+          } else {
+            const result_autocomplete = getAutocompleteresults(input);
+            displayAutocomplete(result_autocomplete);
+          }
         });
       function getAutocompleteresults(input) {
-        const help_db_func = help_db.map(item=>item.func);
+        const help_db_func = help_db.map((item) => item.func);
         const results = help_db_func.filter(function (option) {
           return option.toLowerCase().includes(input.toLowerCase());
         });
         return results;
         console.log(results);
-
       }
       function displayAutocomplete(result) {
         const autocompletelist = document.getElementById("autocompletelist");
         autocompletelist.innerHTML = "";
         result.forEach(function (item) {
           const listItem = document.createElement("li");
+          listItem.className = "list";
           listItem.textContent = item;
           autocompletelist.appendChild(listItem);
         });
