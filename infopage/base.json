@@ -10,7 +10,7 @@
     "id": "-.Date",
     "href": "/detail/base/-symbol11Date.html",
     "funcname": "-.Date",
-    "tag": "date"
+    "tag": "data"
   },
   {
     "id": "-.POSIXt",
@@ -28,13 +28,13 @@
     "id": "::",
     "href": "/detail/base/symbol6symbol6.html",
     "funcname": "::",
-    "tag": "system"
+    "tag": "operater"
   },
   {
     "id": ":::",
     "href": "/detail/base/symbol6symbol6symbol6.html",
     "funcname": ":::",
-    "tag": "system"
+    "tag": "operater"
   },
   {
     "id": "!",
@@ -46,7 +46,7 @@
     "id": "!.hexmode",
     "href": "/detail/base/!symbol11hexmode.html",
     "funcname": "!.hexmode",
-    "tag": "math"
+    "tag": "data"
   },
   {
     "id": "!.octmode",
@@ -85,7 +85,8 @@
   {
     "id": "[.difftime",
     "href": "/detail/base/[symbol11difftime.html",
-    "funcname": "[.difftime"
+    "funcname": "[.difftime",
+
   },
   {
     "id": "[.Dlist",
@@ -427,7 +428,7 @@
     "funcname": "addTaskCallback"
   },
   { "id": "agrep", "href": "/detail/base/agrep.html", "funcname": "agrep" ,
-  "tag":"conversion"},
+"conversion"},
   { "id": "agrepl", "href": "/detail/base/agrepl.html", "funcname": "agrepl" ,
 "tag":
 "conversion"},
@@ -570,7 +571,7 @@
   },
   { "id": "append", "href": "/detail/base/append.html", "funcname": "append" },
   { "id": "apply", "href": "/detail/base/apply.html", "funcname": "apply" ,
-  "tag":"manipulation"},
+"manipulation"},
   { "id": "Arg", "href": "/detail/base/Arg.html", "funcname": "Arg" },
   { "id": "args", "href": "/detail/base/args.html", "funcname": "args" },
   { "id": "array", "href": "/detail/base/array.html", "funcname": "array" },
@@ -620,7 +621,7 @@
     "id": "as.character.Date",
     "href": "/detail/base/assymbol11charactersymbol11Date.html",
     "funcname": "as.character.Date",
-"tag":"conversion"
+"conversion"
   },
   {
     "id": "as.character.default",

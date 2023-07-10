@@ -16,7 +16,7 @@
   <script src="slick-1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-  <form id="search" action="search.html" method="get">
+  <form id="search" action="/r-jp-doc/search.html" method="get">
     <input
       type="text"
       id="keywordbox"
@@ -209,6 +209,10 @@
           listItem.className = "list";
           listItem.textContent = item;
           autocompletelist.appendChild(listItem);
+          listItem.addEventListener("click", function () {
+            document.getElementById("keywordbox").value = item;
+            autocompletelist.innerHTML = "";
+          });
         });
       }
     };
@@ -220,7 +224,7 @@
           event.preventDefault();
           const keyword = document.getElementById("keywordbox").value;
           window.location.href =
-            "search.html?keyword=" + encodeURIComponent(keyword);
+            "/r-jp-doc/search.html?keyword=" + encodeURIComponent(keyword);
         });
     });
   </script>
