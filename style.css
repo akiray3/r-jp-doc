@@ -69,3 +69,6 @@
   background-color: #00000000;
   border: none;
 }
+.namebox.none{
+  display: none;
+}

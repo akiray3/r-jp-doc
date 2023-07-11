@@ -5,13 +5,7 @@
 </head>
 
 <body>
-  <div class="lineitem" id="keyword">
-    <div class="namebox" id="keyword_namebox">
-      <a class="hrefbox">
-        <button class="ToDetailButton"></button>
-      </a>
-    </div>
-  </div>
+  <div class="body"></div>
 </body>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -20,25 +14,72 @@
     const keyword = urlParams.get("keyword");
     console.log(keyword);
 
-    const button = document.querySelector(".ToDetailButton");
-    if (keyword.length < 18) {
-      button.style.fontSize = "26px";
-    } else {
-      button.style.fontSize = "20px";
-    }
-    const txtnode = document.createTextNode(keyword);
-    button.appendChild(txtnode);
+    const db_path = "help_db_raw.json";
+    const help_db_raw = new XMLHttpRequest();
+    help_db_raw.open("GET", db_path, true);
+    help_db_raw.send();
+    help_db_raw.onload = function () {
+      const body = document.querySelector(".body");
+      const help_db = JSON.parse(help_db_raw.responseText);
+      if (keyword === null || keyword.trim() === "") {
+        const ptag = document.createElement("p");
+        const message = document.createTextNode(
+          "検索結果はありませんでした。違う単語を入れてみてください。"
+        );
+        ptag.appendChild(message);
+        lineitem.appendChild(ptag);
+        namebox.classList.add("none");
+      } else {
+        const namelist = getAutocompleteresults(keyword);
+        console.log(namelist);
+        namelist.forEach(function (item) {
+          const lineitem = document.createElement("div");
+          lineitem.classList = "lineitem";
+          const namebox = document.createElement("div");
+          namebox.classList = "namebox";
+          const atag = document.createElement("a");
+          atag.classList = "hrefbox";
+          const button = document.createElement("button");
+          button.classList = "ToDetailButton";
 
-    const path = "help_db_raw.json";
-    const request = new XMLHttpRequest();
-    request.open("GET", path, true);
-    request.send();
-    request.onload = function () {
-      const jsondb = JSON.parse(request.responseText);
-      const funcname = jsondb.find((item) => item.func === keyword);
-      const pack = funcname.pack;
-      const href = document.querySelector(".hrefbox");
-      href.href = "/r-jp-doc/detail/" + pack + "/" + keyword + ".html";
+          atag.appendChild(button);
+          namebox.appendChild(atag);
+          lineitem.appendChild(namebox);
+          body.appendChild(lineitem);
+          if (item.length < 18) {
+            button.style.fontSize = "26px";
+          } else {
+            button.style.fontSize = "20px";
+          }
+          const txtnode = document.createTextNode(item);
+          button.appendChild(txtnode);
+
+          const funcname = help_db.find((obj) => obj.func === item);
+          const pack = funcname.pack;
+          atag.href = "/r-jp-doc/detail/" + pack + "/" + item + ".html";
+        });
+      }
+      function getAutocompleteresults(input) {
+        const help_db_func = help_db.map((item) => item.func);
+        const results = help_db_func.filter(function (option) {
+          return option.toLowerCase().includes(input.toLowerCase());
+        });
+        return results;
+      }
+      function displayAutocomplete(result) {
+        const autocompletelist = document.getElementById("autocompletelist");
+        autocompletelist.innerHTML = "";
+        result.forEach(function (item) {
+          const listItem = document.createElement("li");
+          listItem.className = "list";
+          listItem.textContent = item;
+          autocompletelist.appendChild(listItem);
+          listItem.addEventListener("click", function () {
+            document.getElementById("keywordbox").value = item;
+            autocompletelist.innerHTML = "";
+          });
+        });
+      }
     };
   });
 </script>
