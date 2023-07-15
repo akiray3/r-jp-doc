@@ -54,9 +54,9 @@
           const txtnode = document.createTextNode(item);
           button.appendChild(txtnode);
 
-          atag.href = "/detail/detailpage.html";
-          window.location.href =
-            "/detail/detailpage.html?keyword=" + encodeURIComponent(item);
+          const funcname = help_db.find((obj) => obj.func === item);
+          const pack = funcname.pack;
+          atag.href = "/r-jp-doc/detail/" + pack + "/" + item + ".html";
         });
       }
       function getAutocompleteresults(input) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.08 198.64">
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.08 195.14">
   <defs>
     <style>
       .cls-1, .cls-2 {
@@ -26,51 +26,37 @@
         fill: #262626;
       }
 
-      .cls-2, .cls-8, .cls-9 {
+      .cls-2, .cls-8 {
         stroke: #000;
         stroke-miterlimit: 10;
       }
 
       .cls-8 {
-        fill: #171616;
-      }
-
-      .cls-9 {
         fill: none;
-        stroke-width: 8px;
       }
     </style>
   </defs>
   <g id="_レイヤー_1-2" data-name="レイヤー 1">
-    <rect class="cls-2" x="30.1" y="29.14" width="228" height="169"/>
-    <rect class="cls-3" x="103.1" y="69.52" width="74" height="61.68"/>
-    <rect class="cls-7" x="29.71" y="69.52" width="73.39" height="59.84"/>
-    <rect class="cls-4" x="202.68" y="127.52" width="55.43" height="70.61"/>
-    <rect x="174.08" y="69.52" width="85" height="58"/>
-    <rect class="cls-1" x="182.21" y="29.14" width="76.86" height="40.39"/>
-    <rect class="cls-6" x="114.21" y="29.14" width="68" height="40.39"/>
-    <rect x="134.66" y="127.52" width="68.02" height="70.61"/>
-    <rect x="29.71" y="29.75" width="84.51" height="39.77"/>
-    <rect class="cls-5" x="29.71" y="127.52" width="106.21" height="70"/>
-    <line class="cls-9" x1="78.03" y1="29.75" x2="78.03" y2="14.96"/>
-    <line class="cls-9" x1="226.03" y1="29.75" x2="226.03" y2="4"/>
-    <line class="cls-9" x1="148.21" y1="29.75" x2="148.21" y2="14.96"/>
-    <line class="cls-9" x1="78.03" y1="14.96" x2="148.21" y2="14.96"/>
-    <line class="cls-9" x1="114.21" y1="14.96" x2="114.21" y2="4"/>
-    <line class="cls-9" x1="114.21" y1="4" x2="226.03" y2="4"/>
-    <line class="cls-9" x1="30.1" y1="52.48" x2="20.06" y2="52.48"/>
-    <line class="cls-9" x1="29.71" y1="113.64" x2="20.06" y2="113.64"/>
-    <line class="cls-9" x1="20.06" y1="52.48" x2="20.06" y2="113.64"/>
-    <line class="cls-9" x1="20.06" y1="85.62" x2="4" y2="85.62"/>
-    <line class="cls-9" x1="28.79" y1="166.39" x2="4" y2="166.39"/>
-    <line class="cls-9" x1="4" y1="85.62" x2="4" y2="166.39"/>
-    <circle class="cls-8" cx="4.14" cy="166.37" r="3.62"/>
-    <circle class="cls-8" cx="4.08" cy="85.71" r="3.54"/>
-    <circle class="cls-8" cx="78.06" cy="14.93" r="3.49"/>
-    <circle class="cls-8" cx="148.21" cy="14.96" r="3.49"/>
-    <circle class="cls-8" cx="226.03" cy="4" r="3.49"/>
-    <circle class="cls-8" cx="20.38" cy="52.48" r="3.49"/>
-    <circle class="cls-8" cx="114.21" cy="4" r="3.49"/>
-    <circle class="cls-8" cx="19.96" cy="113.53" r="3.57"/>
+    <rect class="cls-2" x="26.1" y="25.64" width="228" height="169"/>
+    <rect class="cls-3" x="99.1" y="66.02" width="74" height="61.68"/>
+    <rect class="cls-7" x="25.71" y="66.02" width="73.39" height="59.84"/>
+    <rect class="cls-4" x="198.68" y="124.02" width="55.43" height="70.61"/>
+    <rect x="170.08" y="66.02" width="85" height="58"/>
+    <rect class="cls-1" x="178.21" y="25.64" width="76.86" height="40.39"/>
+    <rect class="cls-6" x="110.21" y="25.64" width="68" height="40.39"/>
+    <rect x="130.66" y="124.02" width="68.02" height="70.61"/>
+    <rect x="25.71" y="26.25" width="84.51" height="39.77"/>
+    <rect class="cls-5" x="25.71" y="124.02" width="106.21" height="70"/>
+    <line class="cls-8" x1="74.03" y1="26.25" x2="74.03" y2="11.46"/>
+    <line class="cls-8" x1="222.03" y1="26.25" x2="222.03" y2=".5"/>
+    <line class="cls-8" x1="144.21" y1="26.25" x2="144.21" y2="11.46"/>
+    <line class="cls-8" x1="74.03" y1="11.46" x2="144.21" y2="11.46"/>
+    <line class="cls-8" x1="110.21" y1="11.46" x2="110.21" y2=".5"/>
+    <line class="cls-8" x1="110.21" y1=".5" x2="222.03" y2=".5"/>
+    <line class="cls-8" x1="26.1" y1="48.98" x2="16.06" y2="48.98"/>
+    <line class="cls-8" x1="25.71" y1="110.14" x2="16.06" y2="110.14"/>
+    <line class="cls-8" x1="16.06" y1="48.98" x2="16.06" y2="110.14"/>
+    <line class="cls-8" x1="16.06" y1="82.12" x2="0" y2="82.12"/>
+    <line class="cls-8" x1="24.79" y1="162.89" y2="162.89"/>
   </g>
 </svg>
