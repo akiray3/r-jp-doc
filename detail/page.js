@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const returnfuncpage = document.querySelector(".rturnfunc");
     const returnhref = document.createElement("a");
     const packname = jsondata.filter((item) => item.func === keyword);
-    returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
+    returnhref.href = "/r-jp-doc/infopage/" + packname[0].pack + ".html";
 
     const content = document.querySelector(".block");
     //全体関数ブロック
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ///////////////////////////////////////////////////////
 //tabmenu
-const openTab = (event, tabId) => {
+function openTab(event, tabId) {
   const tabs = document.querySelectorAll(".tab");
 
   const contents = document.querySelectorAll(".content");
@@ -197,7 +197,7 @@ const openTab = (event, tabId) => {
   clicktab.classList.add("active");
 
   clickedcontent.style.display = "block";
-};
+}
 document.addEventListener("DOMContentLoaded", function () {
   const currentURL = window.location.search;
   const urlParams = new URLSearchParams(currentURL);
@@ -239,8 +239,9 @@ document.addEventListener("DOMContentLoaded", function () {
   load.send();
   load.onload = function () {
     const jsondata = JSON.parse(load.responseText);
+    const title = document.head.querySelector("title").textContent;
     const findfunc = jsondata.find((obj) => obj.func === keyword);
-    console.log(findfunc);
+
     const Descriptiontxt = document.createTextNode(findfunc.Description);
     Descriptionbox.appendChild(Descriptiontxt);
     tabcontent.appendChild(Descriptionbox);

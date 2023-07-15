@@ -54,12 +54,9 @@
           const txtnode = document.createTextNode(item);
           button.appendChild(txtnode);
 
-          atag.href = "/r-jp-doc/detail/detailpage.html";
-          document.addEventListener("click", (event) => {
-            event.preventDefault();
-            window.location.href =
-              "/r-jp-doc/detail/detailpage.html?keyword=" + encodeURIComponent(item);
-          });
+          atag.href = "/detail/detailpage.html";
+          window.location.href =
+            "/detail/detailpage.html?keyword=" + encodeURIComponent(item);
         });
       }
       function getAutocompleteresults(input) {
