@@ -11,9 +11,9 @@
   />
   <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" type="text/css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-  <script src="jquery.js"></script>
-  <script src="slick-1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js" defer></script>
+  <script src="jquery.js" defer></script>
+  <script src="slick-1.8.1/slick/slick.min.js" defer></script>
 </head>
 <body>
   <form id="search" action="/r-jp-doc/search.html" method="get">
@@ -126,14 +126,14 @@
     const list = ["base", "graphics", "psych", "stats"];
 
     for (let b = 0; b < list.length; b++) {
-      const path = "infopage/" + list[b] + ".json";
+      const path = `infopage/${list[b]}.json`;
       const jsonfile = new XMLHttpRequest();
       jsonfile.open("GET", path, true);
       jsonfile.send();
 
       jsonfile.onload = function () {
         const jsondata = JSON.parse(jsonfile.responseText);
-        const slideblock = document.querySelector("#" + list[b] + "_slider");
+        const slideblock = document.querySelector(`#${list[b]}_slider`);
         for (let i = 0; i < jsondata.length; i++) {
           if (jsondata[i].svg) {
             const slide = document.createElement("div");
@@ -143,7 +143,7 @@
             slide_link.href = "/r-jp-doc" + jsondata[i].href;
             const imgbox = document.createElement("img");
             imgbox.classList.add("lazyload");
-            imgbox.setAttribute("data-lazy", "www/" + jsondata[i].svg);
+            imgbox.setAttribute("data-lazy", `www/${jsondata[i].svg}`);
             imgbox.style.height = "200px";
             const funcnametxt = document.createElement("p");
             const fnnametxt = document.createTextNode(jsondata[i].funcname);
@@ -154,7 +154,7 @@
             slideblock.appendChild(slide);
           }
         }
-        $("#" + list[b] + "_slider").slick({
+        $(`#`+list[b]+`_slider`).slick({
           slidesToShow: 3,
           adaptiveHeight: true,
           slidesToScroll: 1,
@@ -223,8 +223,7 @@
         .addEventListener("submit", function (event) {
           event.preventDefault();
           const keyword = document.getElementById("keywordbox").value;
-          window.location.href =
-            "/r-jp-doc/search.html?keyword=" + encodeURIComponent(keyword);
+          window.location.href = `search.html?keyword=${keyword}`;
         });
     });
   </script>

@@ -54,11 +54,18 @@
           const txtnode = document.createTextNode(item);
           button.appendChild(txtnode);
 
-          const funcname = help_db.find((obj) => obj.func === item);
+          const funcname = help_db.filter((obj) => obj.func === item);
           const pack = funcname.pack;
-          atag.href = "/r-jp-doc/detail/" + pack + "/" + item + ".html";
+          atag.href = "detail/detailpage.html";
+          
+          
+            button.addEventListener("click", (event) => {
+              event.preventDefault();
+              window.location.href = `detail/detailpage.html?keyword=${item}`;
+            });
         });
       }
+
       function getAutocompleteresults(input) {
         const help_db_func = help_db.map((item) => item.func);
         const results = help_db_func.filter(function (option) {
