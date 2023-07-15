@@ -11,7 +11,10 @@
   />
   <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" type="text/css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js" defer></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"
+    defer
+  ></script>
   <script src="jquery.js" defer></script>
   <script src="slick-1.8.1/slick/slick.min.js" defer></script>
 </head>
@@ -140,7 +143,11 @@
             slide.className = "slick-slide";
             slide.id = list[b] + "_slide_" + i;
             const slide_link = document.createElement("a");
-            slide_link.href = "/r-jp-doc" + jsondata[i].href;
+            slide_link.href = "detail/detailpage.html";
+            slide.addEventListener("click", (event) => {
+              event.preventDefault();
+              window.location.href = `detail/detailpage.html?keyword=${jsondata[i].funcname}`;
+            });
             const imgbox = document.createElement("img");
             imgbox.classList.add("lazyload");
             imgbox.setAttribute("data-lazy", `www/${jsondata[i].svg}`);
@@ -154,7 +161,7 @@
             slideblock.appendChild(slide);
           }
         }
-        $(`#`+list[b]+`_slider`).slick({
+        $(`#` + list[b] + `_slider`).slick({
           slidesToShow: 3,
           adaptiveHeight: true,
           slidesToScroll: 1,

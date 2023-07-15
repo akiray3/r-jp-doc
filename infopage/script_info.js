@@ -35,7 +35,11 @@ request.onload = function () {
     div2.style.transform = "translate(21.529px ,57.832px)";
 
     const atag = document.createElement("a");
-    atag.href = "/r-jp-doc" + href[i];
+    atag.href = `../detail/detailpage.html`;
+    atag.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location.href = ` ../detail/detailpage.html?keyword=${funcname[i]}`;
+    });
 
     const txttag = document.createElement("button");
     txttag.className = "ToDetailButton";
