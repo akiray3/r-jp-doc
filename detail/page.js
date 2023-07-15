@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const keyword = urlParams.get("keyword");
   console.log(keyword);
 
-  const path = "../../help_db_raw.json";
+  const path = "../../help_db_jpn_main.json";
   const jsonfile = new XMLHttpRequest();
   jsonfile.open("GET", path, true);
   jsonfile.send();
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
   See_Alsobox.classList.add("content");
   See_Alsobox.setAttribute("id", "See_Also");
 
-  const path = "../../help_db_raw.json";
+  const path = "../../help_db_jpn_main.json";
   const load = new XMLHttpRequest();
   load.open("GET", path, true);
   load.send();
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const title = document.head.querySelector("title").textContent;
     const findfunc = jsondata.find((obj) => obj.func === keyword);
 
-    const Descriptiontxt = document.createTextNode(findfunc.Description);
+    const Descriptiontxt = document.createTextNode(findfunc.Description.value);
     Descriptionbox.appendChild(Descriptiontxt);
     tabcontent.appendChild(Descriptionbox);
 
