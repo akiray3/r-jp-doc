@@ -2,3 +2,33 @@
   -webkit-user-select: none;
   user-select: none;
 }
+@media screen and (max-width: 395px) {
+  .lineitem {
+    display: inline-block;
+    width: 389px;
+    height: 160px;
+  }
+  .namebox {
+    width: 345.045px;
+    height: 100.0124px;
+    stroke: rgb(66, 22, 104);
+  }
+  .ToDetailButton {
+    width: 274.045px;
+    height: 100.124px;
+  }
+}
+@media screen and (min-width: 395px) {
+  .lineitem {
+    width: 289px;
+    height: 125px;
+  }
+  .namebox {
+    width: 274.045px;
+    height: 100.124px;
+  }
+  .ToDetailButton {
+    width: 274.045px;
+    height: 100.124px;
+  }
+}

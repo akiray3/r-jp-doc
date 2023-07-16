@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
   <title>search</title>
 </head>
 
@@ -57,12 +59,11 @@
           const funcname = help_db.filter((obj) => obj.func === item);
           const pack = funcname.pack;
           atag.href = "detail/detailpage.html";
-          
-          
-            button.addEventListener("click", (event) => {
-              event.preventDefault();
-              window.location.href = `detail/detailpage.html?keyword=${item}`;
-            });
+
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.location.href = `detail/detailpage.html?keyword=${item}`;
+          });
         });
       }
 

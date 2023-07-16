@@ -1,3 +1,6 @@
+const WindowSize = window.innerWidth;
+console.log(WindowSize);
+
 document.addEventListener("DOMContentLoaded", function () {
   const currentURL = window.location.search;
   const urlParams = new URLSearchParams(currentURL);
@@ -20,25 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const content = document.querySelector(".block");
     //全体関数ブロック
     const div = document.createElement("div");
-    div.style.whiteSpace = "flex";
-    div.style.flexWrap = "nowrap";
-    div.style.width = "100%";
-    div.style.overflow = "no";
-    div.style.transform = "translate(167px ,57px)";
-    div.style.position = "relative";
+    div.className = "funcblockall";
     content.appendChild(div);
 
     //関数名
     const funcframe = document.createElement("div");
-    funcframe.style.display = "inline-block";
-    funcframe.style.flexGrow = "1";
-    funcframe.style.height = "100%";
+    funcframe.className = "funcFrame";
     div.appendChild(funcframe);
 
     const funcname = document.createElement("div");
-    funcname.style.fontSize = "48px";
-    funcname.style.fontFamily = "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
-    funcname.style.display = "flex: 0 0 auto; margin-right: 10px";
+    funcname.className = "funcName";
 
     //引数ブロック
     const argblock = document.createElement("div");
@@ -50,12 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     argcol.style.display = "flex";
     argcol.style.flexDirection = "column";
     argblock.appendChild(argcol);
-
-    const title = document.head.querySelector("title").textContent;
-    //関数名
-    const funcnametxt = document.createTextNode(keyword + "(");
-    funcname.appendChild(funcnametxt);
-    funcframe.appendChild(funcname);
 
     //引数/////この辺に入れる
     const path_arg = "argument.json";
@@ -93,6 +81,37 @@ document.addEventListener("DOMContentLoaded", function () {
     req.onload = function () {
       const json = JSON.parse(req.responseText);
       const arg = json.find((obj) => obj.func === keyword);
+      if (arg) {
+        //関数名
+        if (WindowSize <= 395) {
+          const funcnametxt = document.createTextNode(keyword);
+          const funcstart = document.createElement("text");
+          funcstart.className = "txt";
+          const funcstarttxt = document.createTextNode("(");
+          funcstart.style.fontSize = "40px";
+          funcstart.style.fontFamily =
+            "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
+          funcstart.style.display = "flex: 0 0 auto; margin-right: 10px";
+          funcname.appendChild(funcnametxt);
+          funcstart.appendChild(funcstarttxt);
+          argcol.appendChild(funcstart);
+        } else if (WindowSize > 395) {
+          const funcnametxt = document.createTextNode(keyword + "(");
+          funcname.appendChild(funcnametxt);
+        }
+      } else {
+        if (WindowSize <= 395) {
+          const funcnametxt = document.createTextNode(keyword);
+          funcname.appendChild(funcnametxt);
+          argcol.appendChild(funcstart);
+        } else if (WindowSize > 395) {
+          const funcnametxt = document.createTextNode(keyword);
+          funcname.appendChild(funcnametxt);
+        }
+      }
+
+      funcframe.appendChild(funcname);
+
       for (let b = 0; b <= 50; b++) {
         if (arg["arguments" + b]) {
           const txt = document.createElement("text");
@@ -158,15 +177,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (arg) {
         const alltxt = document.querySelectorAll(".txt");
+
+        if (WindowSize <= 395) {
+          const firsttxt = alltxt[0];
+          const abc = document.createElement("text");
+          abc.classList = "funcfirst";
+          const abctxt = document.createTextNode("(");
+          abc.append(abctxt);
+          abc.append(firsttxt);
+          argblock.appendChild(abc);
+        }
         const lasttxt = alltxt[alltxt.length - 1];
         for (let i = 0; i < alltxt.length; i++) {
           if (alltxt[i] == lasttxt) {
             //)
             const xyz = document.createElement("text");
-            xyz.style.fontSize = "48px";
-            xyz.style.fontFamily =
-              "Hiragino Maru Gothic ProN,YuGoshic,sans-serif";
-            xyz.style.display = "flex: 0 0 auto; margin-right: 10px";
+            xyz.classList = "funclast";
             const xyztxt = document.createTextNode(")");
             xyz.appendChild(xyztxt);
             alltxt[i].appendChild(xyz);
@@ -209,10 +235,6 @@ document.addEventListener("DOMContentLoaded", function () {
   Descriptionbox.classList.add("content");
   Descriptionbox.setAttribute("id", "Description");
 
-  const Argumentsbox = document.createElement("div");
-  Argumentsbox.classList.add("content");
-  Argumentsbox.setAttribute("id", "Arguments");
-
   const Valuebox = document.createElement("div");
   Valuebox.classList.add("content");
   Valuebox.setAttribute("id", "Value");
@@ -245,10 +267,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const Descriptiontxt = document.createTextNode(findfunc.Description.value);
     Descriptionbox.appendChild(Descriptiontxt);
     tabcontent.appendChild(Descriptionbox);
-
-    const Argumentstxt = document.createTextNode(findfunc.Arguments);
-    Argumentsbox.appendChild(Argumentstxt);
-    tabcontent.appendChild(Argumentsbox);
 
     const Valuetxt = document.createTextNode(findfunc.Value);
     Valuebox.appendChild(Valuetxt);

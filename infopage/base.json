@@ -108,99 +108,120 @@
   {
     "id": "[.factor",
     "href": "/detail/base/[symbol11factor.html",
-    "funcname": "[.factor"
+    "funcname": "[.factor",
+    "tag":"data"
   },
   {
     "id": "[.hexmode",
     "href": "/detail/base/[symbol11hexmode.html",
-    "funcname": "[.hexmode"
+    "funcname": "[.hexmode",
+    "tag":"data"
   },
   {
     "id": "[.listof",
     "href": "/detail/base/[symbol11listof.html",
-    "funcname": "[.listof"
+    "funcname": "[.listof",
+    "tag":"data"
   },
   {
     "id": "[.noquote",
     "href": "/detail/base/[symbol11noquote.html",
-    "funcname": "[.noquote"
+    "funcname": "[.noquote",
+    "tag":"string"
   },
   {
     "id": "[.numeric_version",
     "href": "/detail/base/[symbol11numeric_version.html",
-    "funcname": "[.numeric_version"
+    "funcname": "[.numeric_version",
+    "tag":"data"
   },
   {
     "id": "[.octmode",
     "href": "/detail/base/[symbol11octmode.html",
-    "funcname": "[.octmode"
+    "funcname": "[.octmode",
+    "tag":"data"
   },
   {
     "id": "[.POSIXct",
     "href": "/detail/base/[symbol11POSIXct.html",
-    "funcname": "[.POSIXct"
+    "funcname": "[.POSIXct",
+    "tag":"date"
   },
   {
     "id": "[.POSIXlt",
     "href": "/detail/base/[symbol11POSIXlt.html",
-    "funcname": "[.POSIXlt"
+    "funcname": "[.POSIXlt",
+    "tag":"date"
   },
   {
     "id": "[.simple.list",
     "href": "/detail/base/[symbol11simplesymbol11list.html",
-    "funcname": "[.simple.list"
+    "funcname": "[.simple.list",
+    "tag":"operater"
   },
   {
     "id": "[.table",
     "href": "/detail/base/[symbol11table.html",
-    "funcname": "[.table"
+    "funcname": "[.table",
+    "tag":"data"
   },
   {
     "id": "[.warnings",
     "href": "/detail/base/[symbol11warnings.html",
-    "funcname": "[.warnings"
+    "funcname": "[.warnings",
+    "tag":"system"
   },
-  { "id": "[[", "href": "/detail/base/[[.html", "funcname": "[[" },
+  { "id": "[[", "href": "/detail/base/[[.html", "funcname": "[[" ,
+"tag":"operater"},
   {
     "id": "[[.data.frame",
     "href": "/detail/base/[[symbol11datasymbol11frame.html",
-    "funcname": "[[.data.frame"
+    "funcname": "[[.data.frame",
+    "tag":"dataframe"
   },
   {
     "id": "[[.Date",
     "href": "/detail/base/[[symbol11Date.html",
-    "funcname": "[[.Date"
+    "funcname": "[[.Date",
+    "tag":"date"
   },
   {
     "id": "[[.factor",
     "href": "/detail/base/[[symbol11factor.html",
-    "funcname": "[[.factor"
+    "funcname": "[[.factor",
+    "tag":"data"
   },
   {
     "id": "[[.numeric_version",
     "href": "/detail/base/[[symbol11numeric_version.html",
-    "funcname": "[[.numeric_version"
+    "funcname": "[[.numeric_version",
+    "tag":"data"
   },
   {
     "id": "[[.POSIXct",
     "href": "/detail/base/[[symbol11POSIXct.html",
-    "funcname": "[[.POSIXct"
+    "funcname": "[[.POSIXct",
+    "tag":"date"
   },
   {
     "id": "[[.POSIXlt",
     "href": "/detail/base/[[symbol11POSIXlt.html",
-    "funcname": "[[.POSIXlt"
+    "funcname": "[[.POSIXlt",
+    "tag":"date"
   },
-  { "id": "[[<-", "href": "/detail/base/[[symbol9-.html", "funcname": "[[<-" },
+  { "id": "[[<-", "href": "/detail/base/[[symbol9-.html", "funcname": "[[<-" ,
+"tag":"operater"},
   {
     "id": "[[<-.data.frame",
     "href": "/detail/base/[[symbol9-symbol11datasymbol11frame.html",
-    "funcname": "[[<-.data.frame"
+    "funcname": "[[<-.data.frame",
+    "tag":"dataframe"
   },
   {
     "id": "[[<-.factor",
     "href": "/detail/base/[[symbol9-symbol11factor.html",
-    "funcname": "[[<-.factor"
+    "funcname": "[[<-.factor",
+    "tag":"operater"
   },
   {
     "id": "[[<-.numeric_version",

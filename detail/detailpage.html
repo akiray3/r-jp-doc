@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <head>
   <title></title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
   <script src="page.js" defer></script>
 </head>
 <body>
   <div class="menu" style="display: flex; margin-left: 20px">
     <p>></p>
-    <p><a href="/r-jp-doc/index.hrml">homeへ</a></p>
+    <p><a href="/r-jp-doc/index.hrml" class="returnlink">homeへ</a></p>
     <p class="rturnfunc">
-      <a href="/r-jp-doc/infopage/base.html">base一覧へ</a>
+      <a href="/r-jp-doc/infopage/base.html" class="returnlink">base一覧へ</a>
     </p>
   </div>
   <div class="block"></div>
@@ -19,9 +21,7 @@
       <button class="tab" onclick="openTab(event,'Description')" id="default">
         Description
       </button>
-      <button class="tab" onclick="openTab(event,'Arguments')">
-        Arguments
-      </button>
+
       <button class="tab" onclick="openTab(event,'Value')">Value</button
       ><button class="tab" onclick="openTab(event,'Details')">Details</button>
       <button class="tab" onclick="openTab(event,'Examples')">Examples</button
@@ -30,5 +30,4 @@
       ><button class="tab" onclick="openTab(event,'See_Also')">See_Also</button>
     </div>
   </div>
-
 </body>

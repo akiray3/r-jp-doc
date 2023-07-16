@@ -1,6 +1,8 @@
 const titletag = document.getElementsByTagName("title")[0];
 const titleid = titletag.id;
-console.log(titleid);
+
+const WindowSize = window.innerWidth;
+console.log(WindowSize);
 
 const path = titleid + ".json";
 const request = new XMLHttpRequest();
@@ -18,14 +20,10 @@ request.onload = function () {
     div.className = "lineitem";
     div.id = funcname[i];
     div.style.display = "inline-block";
-    div.style.width = "289px";
-    div.style.height = "125px";
     div.style.fill = "none";
 
     const div2 = document.createElement("div");
-    div2.className = titleid + "namebox";
-    div2.style.width = "274.045px";
-    div2.style.height = "100.124px";
+    div2.className = "namebox";
     div2.style.borderRadius = "9.194px";
     div2.style.stroke = "#243D25";
     div2.style.strokeMiterlimit = "10";
@@ -43,16 +41,28 @@ request.onload = function () {
 
     const txttag = document.createElement("button");
     txttag.className = "ToDetailButton";
-    txttag.style.width = "274.045px";
-    txttag.style.height = "100.124px";
+
     txttag.style.backgroundColor = "#00000000";
     txttag.style.border = "none";
 
-    if (funcname[i].length < 18) {
-      txttag.style.fontSize = "26px";
+    if (WindowSize <= 395) {
+      if (funcname[i].length < 15) {
+        txttag.style.fontSize = "39px";
+      } else if (funcname[i].length >= 15 && funcname[i].length < 20) {
+        txttag.style.fontSize = "35px";
+      } else if (funcname[i].length >= 20 && funcname[i].length < 35) {
+        txttag.style.fontSize = "30px";
+      } else {
+        txttag.style.fontSize = "25px";
+      }
     } else {
-      txttag.style.fontSize = "20px";
+      if (funcname[i].length < 18) {
+        txttag.style.fontSize = "26px";
+      } else {
+        txttag.style.fontSize = "20px";
+      }
     }
+
     txttag.style.fontFamily = "ArialRoundedMTBold";
 
     const txtnode = document.createTextNode(funcname[i]);

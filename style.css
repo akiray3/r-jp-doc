@@ -24,6 +24,7 @@
 .librarylink {
   -webkit-user-select: none;
   user-select: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .slick-list {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -69,6 +70,6 @@
   background-color: #00000000;
   border: none;
 }
-.namebox.none{
+.namebox.none {
   display: none;
 }
