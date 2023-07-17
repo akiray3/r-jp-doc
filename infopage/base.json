@@ -3759,432 +3759,553 @@
   {
     "id": "levels<-",
     "href": "/detail/base/levelssymbol9-.html",
-    "funcname": "levels<-"
+    "funcname": "levels<-",
+    "tag": "vector"
   },
   {
     "id": "levels<-.factor",
     "href": "/detail/base/levelssymbol9-symbol11factor.html",
-    "funcname": "levels<-.factor"
+    "funcname": "levels<-.factor",
+    "tag": "vector"
   },
   {
     "id": "lfactorial",
     "href": "/detail/base/lfactorial.html",
-    "funcname": "lfactorial"
+    "funcname": "lfactorial",
+    "tag": "math"
   },
-  { "id": "lgamma", "href": "/detail/base/lgamma.html", "funcname": "lgamma" },
+  { "id": "lgamma", "href": "/detail/base/lgamma.html", "funcname": "lgamma" ,
+"tag":"math"},
   {
     "id": "libcurlVersion",
     "href": "/detail/base/libcurlVersion.html",
-    "funcname": "libcurlVersion"
+    "funcname": "libcurlVersion",
+    "tag": "system"
   },
   {
     "id": "library",
     "href": "/detail/base/library.html",
-    "funcname": "library"
+    "funcname": "library",
+    "tag": "system"
   },
   {
     "id": "library.dynam",
     "href": "/detail/base/librarysymbol11dynam.html",
-    "funcname": "library.dynam"
+    "funcname": "library.dynam",
+    "tag": "system"
   },
   {
     "id": "library.dynam.unload",
     "href": "/detail/base/librarysymbol11dynamsymbol11unload.html",
-    "funcname": "library.dynam.unload"
+    "funcname": "library.dynam.unload",
+    "tag": "system"
   },
   {
     "id": "licence",
     "href": "/detail/base/licence.html",
-    "funcname": "licence"
+    "funcname": "licence",
+    "tag": "system"
   },
   {
     "id": "license",
     "href": "/detail/base/license.html",
-    "funcname": "license"
+    "funcname": "license",
+    "tag": "system"
   },
-  { "id": "list", "href": "/detail/base/list.html", "funcname": "list" },
+  { "id": "list", "href": "/detail/base/list.html", "funcname": "list" ,
+"tag":"operater"},
   {
     "id": "list.dirs",
     "href": "/detail/base/listsymbol11dirs.html",
-    "funcname": "list.dirs"
+    "funcname": "list.dirs",
+    "tag":"vector"
   },
   {
     "id": "list.files",
     "href": "/detail/base/listsymbol11files.html",
-    "funcname": "list.files"
+    "funcname": "list.files",
+    "tag": "vector"
   },
   {
     "id": "list2DF",
     "href": "/detail/base/list2DF.html",
-    "funcname": "list2DF"
+    "funcname": "list2DF",
+    "tag": "dataframe"
   },
   {
     "id": "list2env",
     "href": "/detail/base/list2env.html",
-    "funcname": "list2env"
+    "funcname": "list2env",
+    "tag": "system"
   },
-  { "id": "load", "href": "/detail/base/load.html", "funcname": "load" },
+  { "id": "load", "href": "/detail/base/load.html", "funcname": "load" ,
+  "tag":"system"},
   {
     "id": "loadedNamespaces",
     "href": "/detail/base/loadedNamespaces.html",
-    "funcname": "loadedNamespaces"
+    "funcname": "loadedNamespaces",
+    "tag": "system"
   },
   {
     "id": "loadingNamespaceInfo",
     "href": "/detail/base/loadingNamespaceInfo.html",
-    "funcname": "loadingNamespaceInfo"
+    "funcname": "loadingNamespaceInfo",
+    "tag": "system"
   },
   {
     "id": "loadNamespace",
     "href": "/detail/base/loadNamespace.html",
-    "funcname": "loadNamespace"
+    "funcname": "loadNamespace",
+    "tag": "system"
   },
-  { "id": "local", "href": "/detail/base/local.html", "funcname": "local" },
+  { "id": "local", "href": "/detail/base/local.html", "funcname": "local" ,
+  "tag":"system"},
   {
     "id": "lockBinding",
     "href": "/detail/base/lockBinding.html",
-    "funcname": "lockBinding"
+    "funcname": "lockBinding",
+    "tag": "system"
   },
   {
     "id": "lockEnvironment",
     "href": "/detail/base/lockEnvironment.html",
-    "funcname": "lockEnvironment"
+    "funcname": "lockEnvironment",
+    "tag": "system"
   },
-  { "id": "log", "href": "/detail/base/log.html", "funcname": "log" },
-  { "id": "log10", "href": "/detail/base/log10.html", "funcname": "log10" },
-  { "id": "log1p", "href": "/detail/base/log1p.html", "funcname": "log1p" },
-  { "id": "log2", "href": "/detail/base/log2.html", "funcname": "log2" },
-  { "id": "logb", "href": "/detail/base/logb.html", "funcname": "logb" },
+  { "id": "log", "href": "/detail/base/log.html", "funcname": "log" ,
+  "tag":"math"},
+  { "id": "log10", "href": "/detail/base/log10.html", "funcname": "log10" ,
+  "tag":"math"},
+  { "id": "log1p", "href": "/detail/base/log1p.html", "funcname": "log1p" ,
+  "tag":"math"},
+  { "id": "log2", "href": "/detail/base/log2.html", "funcname": "log2" ,
+  "tag":"math"},
+  { "id": "logb", "href": "/detail/base/logb.html", "funcname": "logb" ,
+  "tag":"math"},
   {
     "id": "logical",
     "href": "/detail/base/logical.html",
-    "funcname": "logical"
+    "funcname": "logical",
+    "tag": "vector"
   },
   {
     "id": "lower.tri",
-    "href": "/detail/base/lowersymbol11tri.html",
-    "funcname": "lower.tri"
+    "href": "/detail/base/lower.symbol11tri.html",
+    "funcname": "lower.tri",
+    "tag": "math"
   },
-  { "id": "ls", "href": "/detail/base/ls.html", "funcname": "ls" },
+  { "id": "ls", "href": "/detail/base/ls.html", "funcname": "ls" ,
+  "tag":"vector"},
   {
     "id": "make.names",
     "href": "/detail/base/makesymbol11names.html",
-    "funcname": "make.names"
+    "funcname": "make.names",
+    "tag": "vector"
   },
   {
     "id": "make.unique",
     "href": "/detail/base/makesymbol11unique.html",
-    "funcname": "make.unique"
+    "funcname": "make.unique",
+    "tag": "vector"
   },
   {
     "id": "makeActiveBinding",
     "href": "/detail/base/makeActiveBinding.html",
-    "funcname": "makeActiveBinding"
+    "funcname": "makeActiveBinding",
+    "tag": "system"
   },
-  { "id": "Map", "href": "/detail/base/Map.html", "funcname": "Map" },
-  { "id": "mapply", "href": "/detail/base/mapply.html", "funcname": "mapply" },
+  { "id": "Map", "href": "/detail/base/Map.html", "funcname": "Map" ,
+  "tag":"vector"},
+    { "id": "mapply", "href": "/detail/base/mapply.html", "funcname": "mapply" ,
+  "tag":"vector"},
   {
     "id": "margin.table",
     "href": "/detail/base/marginsymbol11table.html",
-    "funcname": "margin.table"
+    "funcname": "margin.table",
+    "tag": "dataframe"
   },
   {
     "id": "marginSums",
     "href": "/detail/base/marginSums.html",
-    "funcname": "marginSums"
+    "funcname": "marginSums",
+    "tag": "math"
   },
   {
     "id": "mat.or.vec",
     "href": "/detail/base/matsymbol11orsymbol11vec.html",
-    "funcname": "mat.or.vec"
+    "funcname": "mat.or.vec",
+    "tag": "vector"
   },
-  { "id": "match", "href": "/detail/base/match.html", "funcname": "match" },
+  { "id": "match", "href": "/detail/base/match.html", "funcname": "match" ,
+  "tag":"vector"},
   {
     "id": "match.arg",
     "href": "/detail/base/matchsymbol11arg.html",
-    "funcname": "match.arg"
+    "funcname": "match.arg",
+    "tag": "vector"
   },
   {
     "id": "match.call",
     "href": "/detail/base/matchsymbol11call.html",
-    "funcname": "match.call"
+    "funcname": "match.call",
+    "tag": "vector"
   },
   {
     "id": "match.fun",
     "href": "/detail/base/matchsymbol11fun.html",
-    "funcname": "match.fun"
+    "funcname": "match.fun",
+    "tag": "vector"
   },
   {
     "id": "Math.data.frame",
     "href": "/detail/base/Mathsymbol11datasymbol11frame.html",
-    "funcname": "Math.data.frame"
+    "funcname": "Math.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "Math.Date",
     "href": "/detail/base/Mathsymbol11Date.html",
-    "funcname": "Math.Date"
+    "funcname": "Math.Date",
+    "tag": "date"
   },
   {
     "id": "Math.difftime",
     "href": "/detail/base/Mathsymbol11difftime.html",
-    "funcname": "Math.difftime"
+    "funcname": "Math.difftime",
+    "tag": "date"
   },
   {
     "id": "Math.factor",
     "href": "/detail/base/Mathsymbol11factor.html",
-    "funcname": "Math.factor"
+    "funcname": "Math.factor",
+    "tag": "vector"
   },
   {
     "id": "Math.POSIXt",
     "href": "/detail/base/Mathsymbol11POSIXt.html",
-    "funcname": "Math.POSIXt"
+    "funcname": "Math.POSIXt",
+    "tag": "date"
   },
-  { "id": "matrix", "href": "/detail/base/matrix.html", "funcname": "matrix" },
-  { "id": "max", "href": "/detail/base/max.html", "funcname": "max" },
+  { "id": "matrix", "href": "/detail/base/matrix.html", "funcname": "matrix" ,
+  "tag":"dataframe"
+},{ "id": "max", "href": "/detail/base/max.html", "funcname": "max" ,
+"tag":"vector"},
   {
     "id": "max.col",
     "href": "/detail/base/maxsymbol11col.html",
-    "funcname": "max.col"
+    "funcname": "max.col",
+    "tag": "summary"
   },
-  { "id": "mean", "href": "/detail/base/mean.html", "funcname": "mean" },
+  { "id": "mean", "href": "/detail/base/mean.html", "funcname": "mean" ,
+"tag":"summary"},
   {
     "id": "mean.Date",
     "href": "/detail/base/meansymbol11Date.html",
-    "funcname": "mean.Date"
+    "funcname": "mean.Date",
+    "tag":"date"
   },
   {
     "id": "mean.default",
     "href": "/detail/base/meansymbol11default.html",
-    "funcname": "mean.default"
+    "funcname": "mean.default",
+    "tag":"summary"
   },
   {
     "id": "mean.difftime",
     "href": "/detail/base/meansymbol11difftime.html",
-    "funcname": "mean.difftime"
+    "funcname": "mean.difftime",
+    "tag":"date"
   },
   {
     "id": "mean.POSIXct",
     "href": "/detail/base/meansymbol11POSIXct.html",
-    "funcname": "mean.POSIXct"
+    "funcname": "mean.POSIXct",
+    "tag":"date"
   },
   {
     "id": "mean.POSIXlt",
     "href": "/detail/base/meansymbol11POSIXlt.html",
-    "funcname": "mean.POSIXlt"
+    "funcname": "mean.POSIXlt",
+    "tag":"date"
   },
   {
     "id": "mem.maxNSize",
     "href": "/detail/base/memsymbol11maxNSize.html",
-    "funcname": "mem.maxNSize"
+    "funcname": "mem.maxNSize",
+    "tag": "system"
   },
   {
     "id": "mem.maxVSize",
     "href": "/detail/base/memsymbol11maxVSize.html",
-    "funcname": "mem.maxVSize"
+    "funcname": "mem.maxVSize",
+    "tag":"system"
   },
   {
     "id": "memCompress",
     "href": "/detail/base/memCompress.html",
-    "funcname": "memCompress"
+    "funcname": "memCompress",
+    "tag": "system"
   },
   {
     "id": "memDecompress",
     "href": "/detail/base/memDecompress.html",
-    "funcname": "memDecompress"
+    "funcname": "memDecompress",
+    "tag": "system"
   },
   {
     "id": "memory.profile",
     "href": "/detail/base/memorysymbol11profile.html",
-    "funcname": "memory.profile"
+    "funcname": "memory.profile",
+    "tag": "system"
   },
-  { "id": "merge", "href": "/detail/base/merge.html", "funcname": "merge" },
+  { "id": "merge", "href": "/detail/base/merge.html", "funcname": "merge" ,
+"tag":"dataframe"},
   {
     "id": "merge.data.frame",
     "href": "/detail/base/mergesymbol11datasymbol11frame.html",
-    "funcname": "merge.data.frame"
+    "funcname": "merge.data.frame",
+    "tag":"dataframe"
   },
   {
     "id": "merge.default",
     "href": "/detail/base/mergesymbol11default.html",
-    "funcname": "merge.default"
+    "funcname": "merge.default",
+    "tag":"dataframe"
   },
   {
     "id": "message",
     "href": "/detail/base/message.html",
-    "funcname": "message"
+    "funcname": "message",
+    "tag": "system"
   },
-  { "id": "mget", "href": "/detail/base/mget.html", "funcname": "mget" },
-  { "id": "min", "href": "/detail/base/min.html", "funcname": "min" },
+  { "id": "mget", "href": "/detail/base/mget.html", "funcname": "mget" ,
+"tag":"vector"},
+  { "id": "min", "href": "/detail/base/min.html", "funcname": "min" ,
+"tag":"vector"},
   {
     "id": "missing",
     "href": "/detail/base/missing.html",
-    "funcname": "missing"
+    "funcname": "missing",
+    "tag": "system"
   },
-  { "id": "Mod", "href": "/detail/base/Mod.html", "funcname": "Mod" },
-  { "id": "mode", "href": "/detail/base/mode.html", "funcname": "mode" },
+  { "id": "Mod", "href": "/detail/base/Mod.html", "funcname": "Mod" ,
+"tag":"math"},
+  { "id": "mode", "href": "/detail/base/mode.html", "funcname": "mode" ,
+  "tag":"vector"},
   {
     "id": "mode<-",
     "href": "/detail/base/modesymbol9-.html",
-    "funcname": "mode<-"
+    "funcname": "mode<-",
+    "tag": "vector"
   },
   {
     "id": "month.abb",
     "href": "/detail/base/monthsymbol11abb.html",
-    "funcname": "month.abb"
+    "funcname": "month.abb",
+    "tag": "string"
   },
   {
     "id": "month.name",
     "href": "/detail/base/monthsymbol11name.html",
-    "funcname": "month.name"
+    "funcname": "month.name",
+    "tag": "string"
   },
-  { "id": "months", "href": "/detail/base/months.html", "funcname": "months" },
+  { "id": "months", "href": "/detail/base/months.html", "funcname": "months" ,
+  "tag":"date"},
   {
     "id": "months.Date",
     "href": "/detail/base/monthssymbol11Date.html",
-    "funcname": "months.Date"
+    "funcname": "months.Date",
+    "tag": "date"
   },
   {
     "id": "months.POSIXt",
     "href": "/detail/base/monthssymbol11POSIXt.html",
-    "funcname": "months.POSIXt"
+    "funcname": "months.POSIXt",
+    "tag": "date"
   },
   {
     "id": "mostattributes<-",
     "href": "/detail/base/mostattributessymbol9-.html",
-    "funcname": "mostattributes<-"
+    "funcname": "mostattributes<-",
+    "tag": "vector"
   },
-  { "id": "names", "href": "/detail/base/names.html", "funcname": "names" },
+  { "id": "names", "href": "/detail/base/names.html", "funcname": "names" ,
+  "tag":"vector"},
   {
     "id": "names.POSIXlt",
     "href": "/detail/base/namessymbol11POSIXlt.html",
-    "funcname": "names.POSIXlt"
+    "funcname": "names.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "names<-",
     "href": "/detail/base/namessymbol9-.html",
-    "funcname": "names<-"
+    "funcname": "names<-",
+    "tag": "vector"
   },
   {
     "id": "names<-.POSIXlt",
     "href": "/detail/base/namessymbol9-symbol11POSIXlt.html",
-    "funcname": "names<-.POSIXlt"
+    "funcname": "names<-.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "namespaceExport",
     "href": "/detail/base/namespaceExport.html",
-    "funcname": "namespaceExport"
+    "funcname": "namespaceExport",
+    "tag": "system"
   },
   {
     "id": "namespaceImport",
     "href": "/detail/base/namespaceImport.html",
-    "funcname": "namespaceImport"
+    "funcname": "namespaceImport",
+    "tag": "system"
   },
   {
     "id": "namespaceImportClasses",
     "href": "/detail/base/namespaceImportClasses.html",
-    "funcname": "namespaceImportClasses"
+    "funcname": "namespaceImportClasses",
+    "tag": "system"
   },
   {
     "id": "namespaceImportFrom",
     "href": "/detail/base/namespaceImportFrom.html",
-    "funcname": "namespaceImportFrom"
+    "funcname": "namespaceImportFrom",
+    "tag": "system"
   },
   {
     "id": "namespaceImportMethods",
     "href": "/detail/base/namespaceImportMethods.html",
-    "funcname": "namespaceImportMethods"
+    "funcname": "namespaceImportMethods",
+    "tag": "system"
   },
-  { "id": "nargs", "href": "/detail/base/nargs.html", "funcname": "nargs" },
-  { "id": "nchar", "href": "/detail/base/nchar.html", "funcname": "nchar" },
-  { "id": "ncol", "href": "/detail/base/ncol.html", "funcname": "ncol" },
-  { "id": "NCOL", "href": "/detail/base/NCOL.html", "funcname": "NCOL" },
-  { "id": "Negate", "href": "/detail/base/Negate.html", "funcname": "Negate" },
+  { "id": "nargs", "href": "/detail/base/nargs.html", "funcname": "nargs" ,
+  "tag":"vector"},
+  { "id": "nchar", "href": "/detail/base/nchar.html", "funcname": "nchar" ,
+  "tag":"string"},
+  { "id": "ncol", "href": "/detail/base/ncol.html", "funcname": "ncol" ,
+  "tag":"dataframe"},
+  { "id": "NCOL", "href": "/detail/base/NCOL.html", "funcname": "NCOL" ,
+  "tag":"dataframe"},
+  { "id": "Negate", "href": "/detail/base/Negate.html", "funcname": "Negate" ,
+"tag":"vector"},
   {
     "id": "new.env",
     "href": "/detail/base/newsymbol11env.html",
-    "funcname": "new.env"
+    "funcname": "new.env",
+    "tag": "system"
   },
-  { "id": "next", "href": "/detail/base/next.html", "funcname": "next" },
+  { "id": "next", "href": "/detail/base/next.html", "funcname": "next" ,
+"tag":"system"},
   {
     "id": "NextMethod",
     "href": "/detail/base/NextMethod.html",
-    "funcname": "NextMethod"
+    "funcname": "NextMethod",
+    "tag": "system"
   },
   {
     "id": "ngettext",
     "href": "/detail/base/ngettext.html",
-    "funcname": "ngettext"
+    "funcname": "ngettext",
+    "tag": "string"
   },
   {
     "id": "nlevels",
     "href": "/detail/base/nlevels.html",
-    "funcname": "nlevels"
+    "funcname": "nlevels",
+    "tag": "vector"
   },
   {
     "id": "noquote",
     "href": "/detail/base/noquote.html",
-    "funcname": "noquote"
+    "funcname": "noquote",
+    "tag": "string"
   },
-  { "id": "norm", "href": "/detail/base/norm.html", "funcname": "norm" },
+  { "id": "norm", "href": "/detail/base/norm.html", "funcname": "norm" ,
+  "tag":"math"},
   {
     "id": "normalizePath",
     "href": "/detail/base/normalizePath.html",
-    "funcname": "normalizePath"
+    "funcname": "normalizePath",
+    "tag": "system"
   },
-  { "id": "nrow", "href": "/detail/base/nrow.html", "funcname": "nrow" },
-  { "id": "NROW", "href": "/detail/base/NROW.html", "funcname": "NROW" },
+  { "id": "nrow", "href": "/detail/base/nrow.html", "funcname": "nrow" ,
+  "tag":"dataframe"},
+  { "id": "NROW", "href": "/detail/base/NROW.html", "funcname": "NROW" ,
+  "tag":"dataframe"},
   {
     "id": "nullfile",
     "href": "/detail/base/nullfile.html",
-    "funcname": "nullfile"
+    "funcname": "nullfile",
+    "tag": "system"
   },
   {
     "id": "numeric",
     "href": "/detail/base/numeric.html",
-    "funcname": "numeric"
+    "funcname": "numeric",
+    "tag": "vector"
   },
   {
     "id": "numeric_version",
     "href": "/detail/base/numeric_version.html",
-    "funcname": "numeric_version"
+    "funcname": "numeric_version",
+    "tag": "system"
   },
   {
     "id": "numToBits",
     "href": "/detail/base/numToBits.html",
-    "funcname": "numToBits"
+    "funcname": "numToBits",
+    "tag": "operater"
   },
+
+
+
   {
     "id": "numToInts",
     "href": "/detail/base/numToInts.html",
-    "funcname": "numToInts"
+    "funcname": "numToInts",
+    "tag": "operater"
   },
-  { "id": "nzchar", "href": "/detail/base/nzchar.html", "funcname": "nzchar" },
+  {
+    "id": "nzchar",
+    "href": "/detail/base/nzchar.html",
+    "funcname": "nzchar",
+    "tag": "string"
+  },
   {
     "id": "objects",
     "href": "/detail/base/objects.html",
-    "funcname": "objects"
+    "funcname": "objects",
+    "tag": "system"
   },
   {
     "id": "oldClass",
     "href": "/detail/base/oldClass.html",
-    "funcname": "oldClass"
+    "funcname": "oldClass",
+    "tag": "system"
   },
   {
     "id": "oldClass<-",
     "href": "/detail/base/oldClasssymbol9-.html",
-    "funcname": "oldClass<-"
+    "funcname": "oldClass<-",
+    "tag": "system"
   },
   {
     "id": "OlsonNames",
     "href": "/detail/base/OlsonNames.html",
-    "funcname": "OlsonNames"
+    "funcname": "OlsonNames",
+    "tag": "date"
   },
   {
     "id": "on.exit",
     "href": "/detail/base/onsymbol11exit.html",
-    "funcname": "on.exit"
+    "funcname": "on.exit",
+    "tag": "system"
   },
-  { "id": "open", "href": "/detail/base/open.html", "funcname": "open" },
+  { "id": "open", "href": "/detail/base/open.html", "funcname": "open" ,
+  "tag":"system"
+},
   {
     "id": "open.connection",
     "href": "/detail/base/opensymbol11connection.html",
