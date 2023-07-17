@@ -774,27 +774,35 @@
     "funcname": "Arg",
     "tag": "operater"
   },
-  { "id": "args", "href": "/detail/base/args.html", "funcname": "args" ,
-"tag":"data"},
-  { "id": "array", "href": "/detail/base/array.html", "funcname": "array" ,
-"tag":"data"},
+  {
+    "id": "args",
+    "href": "/detail/base/args.html",
+    "funcname": "args",
+    "tag": "data"
+  },
+  {
+    "id": "array",
+    "href": "/detail/base/array.html",
+    "funcname": "array",
+    "tag": "data"
+  },
   {
     "id": "arrayInd",
     "href": "/detail/base/arrayInd.html",
     "funcname": "arrayInd",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "as.array",
     "href": "/detail/base/assymbol11array.html",
     "funcname": "as.array",
-    "tag":"dataframe"
+    "tag": "dataframe"
   },
   {
     "id": "as.array.default",
     "href": "/detail/base/assymbol11arraysymbol11default.html",
     "funcname": "as.array.default",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "as.call",
@@ -826,31 +834,31 @@
     "id": "as.character.default",
     "href": "/detail/base/assymbol11charactersymbol11default.html",
     "funcname": "as.character.default",
-    "tag":"system"
+    "tag": "system"
   },
   {
     "id": "as.character.error",
     "href": "/detail/base/assymbol11charactersymbol11error.html",
     "funcname": "as.character.error",
-    "tag":"system"
+    "tag": "system"
   },
   {
     "id": "as.character.factor",
     "href": "/detail/base/assymbol11charactersymbol11factor.html",
     "funcname": "as.character.factor",
-    "tag":"vector"
+    "tag": "vector"
   },
   {
     "id": "as.character.hexmode",
     "href": "/detail/base/assymbol11charactersymbol11hexmode.html",
     "funcname": "as.character.hexmode",
-    "tag":"vector"
+    "tag": "vector"
   },
   {
     "id": "as.character.numeric_version",
     "href": "/detail/base/assymbol11charactersymbol11numeric_version.html",
     "funcname": "as.character.numeric_version",
-    "tag":"system"
+    "tag": "system"
   },
   {
     "id": "as.character.octmode",
@@ -1358,324 +1366,521 @@
     "funcname": "as.vector.factor",
     "tag": "conversion"
   },
-  { "id": "asin", "href": "/detail/base/asin.html", "funcname": "asin" },
-  { "id": "asinh", "href": "/detail/base/asinh.html", "funcname": "asinh" },
+  {
+    "id": "asin",
+    "href": "/detail/base/asin.html",
+    "funcname": "asin",
+    "tag": "math"
+  },
+  {
+    "id": "asinh",
+    "href": "/detail/base/asinh.html",
+    "funcname": "asinh",
+    "tag": "math"
+  },
   {
     "id": "asNamespace",
     "href": "/detail/base/asNamespace.html",
-    "funcname": "asNamespace"
+    "funcname": "asNamespace",
+    "tag": "system"
   },
-  { "id": "asplit", "href": "/detail/base/asplit.html", "funcname": "asplit" },
-  { "id": "asS3", "href": "/detail/base/asS3.html", "funcname": "asS3" },
-  { "id": "asS4", "href": "/detail/base/asS4.html", "funcname": "asS4" },
-  { "id": "assign", "href": "/detail/base/assign.html", "funcname": "assign" },
-  { "id": "atan", "href": "/detail/base/atan.html", "funcname": "atan" },
-  { "id": "atan2", "href": "/detail/base/atan2.html", "funcname": "atan2" },
-  { "id": "atanh", "href": "/detail/base/atanh.html", "funcname": "atanh" },
-  { "id": "attach", "href": "/detail/base/attach.html", "funcname": "attach" },
+  {
+    "id": "asplit",
+    "href": "/detail/base/asplit.html",
+    "funcname": "asplit",
+    "tag": "data"
+  },
+  {
+    "id": "asS3",
+    "href": "/detail/base/asS3.html",
+    "funcname": "asS3",
+    "tag": "data"
+  },
+  {
+    "id": "asS4",
+    "href": "/detail/base/asS4.html",
+    "funcname": "asS4",
+    "tag": "data"
+  },
+
+  {
+    "id": "assign",
+    "href": "/detail/base/assign.html",
+    "funcname": "assign",
+    "tag": "data"
+  },
+  {
+    "id": "atan",
+    "href": "/detail/base/atan.html",
+    "funcname": "atan",
+    "tag": "math"
+  },
+  {
+    "id": "atan2",
+    "href": "/detail/base/atan2.html",
+    "funcname": "atan2",
+    "tag": "math"
+  },
+  {
+    "id": "atanh",
+    "href": "/detail/base/atanh.html",
+    "funcname": "atanh",
+    "tag": "math"
+  },
+  {
+    "id": "attach",
+    "href": "/detail/base/attach.html",
+    "funcname": "attach",
+    "tag": "math"
+  },
   {
     "id": "attachNamespace",
     "href": "/detail/base/attachNamespace.html",
-    "funcname": "attachNamespace"
+    "funcname": "attachNamespace",
+    "tag": "operater"
   },
-  { "id": "attr", "href": "/detail/base/attr.html", "funcname": "attr" },
+  {
+    "id": "attr",
+    "href": "/detail/base/attr.html",
+    "funcname": "attr",
+    "tag": "operater"
+  },
   {
     "id": "attr.all.equal",
     "href": "/detail/base/attrsymbol11allsymbol11equal.html",
-    "funcname": "attr.all.equal"
+    "funcname": "attr.all.equal",
+    "tag": "operater"
   },
   {
     "id": "attr<-",
     "href": "/detail/base/attrsymbol9-.html",
-    "funcname": "attr<-"
+    "funcname": "attr<-",
+    "tag": "operater"
   },
   {
     "id": "attributes",
     "href": "/detail/base/attributes.html",
-    "funcname": "attributes"
+    "funcname": "attributes",
+    "tag": "operater"
   },
   {
     "id": "attributes<-",
     "href": "/detail/base/attributessymbol9-.html",
-    "funcname": "attributes<-"
+    "funcname": "attributes<-",
+    "tag": "operater"
   },
   {
     "id": "autoload",
     "href": "/detail/base/autoload.html",
-    "funcname": "autoload"
+    "funcname": "autoload",
+    "tag": "operater"
   },
   {
     "id": "autoloader",
     "href": "/detail/base/autoloader.html",
-    "funcname": "autoloader"
+    "funcname": "autoloader",
+    "tag": "operater"
   },
   {
     "id": "backsolve",
     "href": "/detail/base/backsolve.html",
-    "funcname": "backsolve"
+    "funcname": "backsolve",
+    "tag": "math"
   },
   {
     "id": "baseenv",
     "href": "/detail/base/baseenv.html",
-    "funcname": "baseenv"
+    "funcname": "baseenv",
+    "tag": "system"
   },
   {
     "id": "basename",
     "href": "/detail/base/basename.html",
-    "funcname": "basename"
+    "funcname": "basename",
+    "tag": "system"
   },
   {
     "id": "besselI",
     "href": "/detail/base/besselI.html",
-    "funcname": "besselI"
+    "funcname": "besselI",
+    "tag": "math"
   },
   {
     "id": "besselJ",
     "href": "/detail/base/besselJ.html",
-    "funcname": "besselJ"
+    "funcname": "besselJ",
+    "tag": "math"
   },
   {
     "id": "besselK",
     "href": "/detail/base/besselK.html",
-    "funcname": "besselK"
+    "funcname": "besselK",
+    "tag": "math"
   },
   {
     "id": "besselY",
     "href": "/detail/base/besselY.html",
-    "funcname": "besselY"
+    "funcname": "besselY",
+    "tag": "math"
   },
-  { "id": "beta", "href": "/detail/base/beta.html", "funcname": "beta" },
+  {
+    "id": "beta",
+    "href": "/detail/base/beta.html",
+    "funcname": "beta",
+    "tag": "math"
+  },
+
   {
     "id": "bindingIsActive",
     "href": "/detail/base/bindingIsActive.html",
-    "funcname": "bindingIsActive"
+    "funcname": "bindingIsActive",
+    "tag": "system"
   },
   {
     "id": "bindingIsLocked",
     "href": "/detail/base/bindingIsLocked.html",
-    "funcname": "bindingIsLocked"
+    "funcname": "bindingIsLocked",
+    "tag": "math"
   },
   {
     "id": "bindtextdomain",
     "href": "/detail/base/bindtextdomain.html",
-    "funcname": "bindtextdomain"
+    "funcname": "bindtextdomain",
+    "tag": "system"
   },
   {
     "id": "bitwAnd",
     "href": "/detail/base/bitwAnd.html",
-    "funcname": "bitwAnd"
+    "funcname": "bitwAnd",
+    "tag": "math"
   },
   {
     "id": "bitwNot",
     "href": "/detail/base/bitwNot.html",
-    "funcname": "bitwNot"
+    "funcname": "bitwNot",
+    "tag": "math"
   },
-  { "id": "bitwOr", "href": "/detail/base/bitwOr.html", "funcname": "bitwOr" },
+  {
+    "id": "bitwOr",
+    "href": "/detail/base/bitwOr.html",
+    "funcname": "bitwOr",
+    "tag": "math"
+  },
   {
     "id": "bitwShiftL",
     "href": "/detail/base/bitwShiftL.html",
-    "funcname": "bitwShiftL"
+    "funcname": "bitwShiftL",
+    "tag": "math"
   },
   {
     "id": "bitwShiftR",
     "href": "/detail/base/bitwShiftR.html",
-    "funcname": "bitwShiftR"
+    "funcname": "bitwShiftR",
+    "tag": "math"
   },
   {
     "id": "bitwXor",
     "href": "/detail/base/bitwXor.html",
-    "funcname": "bitwXor"
+    "funcname": "bitwXor",
+    "tag": "math"
   },
-  { "id": "body", "href": "/detail/base/body.html", "funcname": "body" },
+  {
+    "id": "body",
+    "href": "/detail/base/body.html",
+    "funcname": "body",
+    "tag": "system"
+  },
   {
     "id": "body<-",
     "href": "/detail/base/bodysymbol9-.html",
-    "funcname": "body<-"
+    "funcname": "body<-",
+    "tag": "system"
   },
-  { "id": "bquote", "href": "/detail/base/bquote.html", "funcname": "bquote" },
-  { "id": "break", "href": "/detail/base/break.html", "funcname": "break" },
+  {
+    "id": "bquote",
+    "href": "/detail/base/bquote.html",
+    "funcname": "bquote",
+    "tag": "operater"
+  },
+  {
+    "id": "break",
+    "href": "/detail/base/break.html",
+    "funcname": "break",
+    "tag": "operater"
+  },
   {
     "id": "browser",
     "href": "/detail/base/browser.html",
-    "funcname": "browser"
+    "funcname": "browser",
+    "tag": "system"
   },
   {
     "id": "browserCondition",
     "href": "/detail/base/browserCondition.html",
-    "funcname": "browserCondition"
+    "funcname": "browserCondition",
+    "tag": "system"
   },
   {
     "id": "browserSetDebug",
     "href": "/detail/base/browserSetDebug.html",
-    "funcname": "browserSetDebug"
+    "funcname": "browserSetDebug",
+    "tag": "system"
   },
   {
     "id": "browserText",
     "href": "/detail/base/browserText.html",
-    "funcname": "browserText"
+    "funcname": "browserText",
+    "tag": "data"
   },
   {
     "id": "builtins",
     "href": "/detail/base/builtins.html",
-    "funcname": "builtins"
+    "funcname": "builtins",
+    "tag": "operater"
   },
-  { "id": "by", "href": "/detail/base/by.html", "funcname": "by" },
+  {
+    "id": "by",
+    "href": "/detail/base/by.html",
+    "funcname": "by",
+    "tag": "operater"
+  },
   {
     "id": "by.data.frame",
     "href": "/detail/base/bysymbol11datasymbol11frame.html",
-    "funcname": "by.data.frame"
+    "funcname": "by.data.frame",
+    "tag": "operater"
   },
   {
     "id": "by.default",
     "href": "/detail/base/bysymbol11default.html",
-    "funcname": "by.default"
+    "funcname": "by.default",
+    "tag": "operater"
   },
-  { "id": "bzfile", "href": "/detail/base/bzfile.html", "funcname": "bzfile" },
-  { "id": "c", "href": "/detail/base/c.html", "funcname": "c" },
+  {
+    "id": "bzfile",
+    "href": "/detail/base/bzfile.html",
+    "funcname": "bzfile",
+    "tag": "operater"
+  },
+  {
+    "id": "c",
+    "href": "/detail/base/c.html",
+    "funcname": "c",
+    "tag": "operater"
+  },
   {
     "id": "c.Date",
     "href": "/detail/base/csymbol11Date.html",
-    "funcname": "c.Date"
+    "funcname": "c.Date",
+    "tag": "date"
   },
   {
     "id": "c.difftime",
     "href": "/detail/base/csymbol11difftime.html",
-    "funcname": "c.difftime"
+    "funcname": "c.difftime",
+    "tag": "date"
   },
   {
     "id": "c.factor",
     "href": "/detail/base/csymbol11factor.html",
-    "funcname": "c.factor"
+    "funcname": "c.factor",
+    "tag": "vector"
   },
   {
     "id": "c.noquote",
     "href": "/detail/base/csymbol11noquote.html",
-    "funcname": "c.noquote"
+    "funcname": "c.noquote",
+    "tag": "string"
   },
   {
     "id": "c.numeric_version",
     "href": "/detail/base/csymbol11numeric_version.html",
-    "funcname": "c.numeric_version"
+    "funcname": "c.numeric_version",
+    "tag": "system"
   },
   {
     "id": "c.POSIXct",
     "href": "/detail/base/csymbol11POSIXct.html",
-    "funcname": "c.POSIXct"
+    "funcname": "c.POSIXct",
+    "tag": "date"
   },
   {
     "id": "c.POSIXlt",
     "href": "/detail/base/csymbol11POSIXlt.html",
-    "funcname": "c.POSIXlt"
+    "funcname": "c.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "c.warnings",
     "href": "/detail/base/csymbol11warnings.html",
-    "funcname": "c.warnings"
+    "funcname": "c.warnings",
+    "tag": "system"
   },
   {
     "id": "call",
     "href": "/detail/base/call.html",
     "funcname": "call",
-    "svg": "megaphone-simple-light.svg"
+    "svg": "megaphone-simple-light.svg",
+    "tag": "system"
   },
-  { "id": "callCC", "href": "/detail/base/callCC.html", "funcname": "callCC" },
+  {
+    "id": "callCC",
+    "href": "/detail/base/callCC.html",
+    "funcname": "callCC",
+    "tag": "system"
+  },
+
   {
     "id": "capabilities",
     "href": "/detail/base/capabilities.html",
-    "funcname": "capabilities"
+    "funcname": "capabilities",
+    "tag": "system"
   },
   {
     "id": "casefold",
     "href": "/detail/base/casefold.html",
-    "funcname": "casefold"
+    "funcname": "casefold",
+    "tag": "string"
   },
-  { "id": "cat", "href": "/detail/base/cat.html", "funcname": "cat" },
-  { "id": "cbind", "href": "/detail/base/cbind.html", "funcname": "cbind" },
+  {
+    "id": "cat",
+    "href": "/detail/base/cat.html",
+    "funcname": "cat",
+    "tag": "string"
+  },
+
+  {
+    "id": "cbind",
+    "href": "/detail/base/cbind.html",
+    "funcname": "cbind",
+    "tag": "dataframe"
+  },
   {
     "id": "cbind.data.frame",
     "href": "/detail/base/cbindsymbol11datasymbol11frame.html",
-    "funcname": "cbind.data.frame"
+    "funcname": "cbind.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "ceiling",
     "href": "/detail/base/ceiling.html",
-    "funcname": "ceiling"
+    "funcname": "ceiling",
+    "tag": "math"
   },
   {
     "id": "char.expand",
     "href": "/detail/base/charsymbol11expand.html",
-    "funcname": "char.expand"
+    "funcname": "char.expand",
+    "tag": "operater"
   },
   {
     "id": "character",
     "href": "/detail/base/character.html",
     "funcname": "character",
-    "svg": "text-t-light.svg"
+    "svg": "text-t-light.svg",
+    "tag": "string"
   },
   {
     "id": "charmatch",
     "href": "/detail/base/charmatch.html",
-    "funcname": "charmatch"
+    "funcname": "charmatch",
+    "tag": "operater"
   },
   {
     "id": "charToRaw",
     "href": "/detail/base/charToRaw.html",
-    "funcname": "charToRaw"
+    "funcname": "charToRaw",
+    "tag": "operater"
   },
-  { "id": "chartr", "href": "/detail/base/chartr.html", "funcname": "chartr" },
+  {
+    "id": "chartr",
+    "href": "/detail/base/chartr.html",
+    "funcname": "chartr",
+    "tag": "string"
+  },
   {
     "id": "check_tzones",
     "href": "/detail/base/check_tzones.html",
-    "funcname": "check_tzones"
+    "funcname": "check_tzones",
+    "tag": "date"
   },
   {
     "id": "chkDots",
     "href": "/detail/base/chkDots.html",
-    "funcname": "chkDots"
+    "funcname": "chkDots",
+    "tag": "system"
   },
-  { "id": "chol", "href": "/detail/base/chol.html", "funcname": "chol" },
+  {
+    "id": "chol",
+    "href": "/detail/base/chol.html",
+    "funcname": "chol",
+    "tag": "math"
+  },
   {
     "id": "chol.default",
     "href": "/detail/base/cholsymbol11default.html",
-    "funcname": "chol.default"
+    "funcname": "chol.default",
+    "tag": "math"
   },
   {
     "id": "chol2inv",
     "href": "/detail/base/chol2inv.html",
-    "funcname": "chol2inv"
+    "funcname": "chol2inv",
+    "tag": "math"
   },
-  { "id": "choose", "href": "/detail/base/choose.html", "funcname": "choose" },
-  { "id": "class", "href": "/detail/base/class.html", "funcname": "class" },
+  {
+    "id": "choose",
+    "href": "/detail/base/choose.html",
+    "funcname": "choose",
+    "tag": "math"
+  },
+  {
+    "id": "class",
+    "href": "/detail/base/class.html",
+    "funcname": "class",
+    "tag": "operater"
+  },
   {
     "id": "class<-",
     "href": "/detail/base/classsymbol9-.html",
-    "funcname": "class<-"
+    "funcname": "class<-",
+    "tag": "operater"
   },
   {
     "id": "clearPushBack",
     "href": "/detail/base/clearPushBack.html",
-    "funcname": "clearPushBack"
+    "funcname": "clearPushBack",
+    "tag": "operater"
   },
-  { "id": "close", "href": "/detail/base/close.html", "funcname": "close" },
+  {
+    "id": "close",
+    "href": "/detail/base/close.html",
+    "funcname": "close",
+    "tag": "system"
+  },
   {
     "id": "close.connection",
     "href": "/detail/base/closesymbol11connection.html",
-    "funcname": "close.connection"
+    "funcname": "close.connection",
+    "tag": "system"
   },
   {
     "id": "close.srcfile",
     "href": "/detail/base/closesymbol11srcfile.html",
-    "funcname": "close.srcfile"
+    "funcname": "close.srcfile",
+    "tag": "system"
   },
   {
     "id": "close.srcfilealias",
     "href": "/detail/base/closesymbol11srcfilealias.html",
-    "funcname": "close.srcfilealias"
+    "funcname": "close.srcfilealias",
+    "tag": "system"
   },
   {
     "id": "closeAllConnections",
     "href": "/detail/base/closeAllConnections.html",
-    "funcname": "closeAllConnections"
+    "funcname": "closeAllConnections",
+    "tag": "system"
   },
   {
     "id": "col",
@@ -1687,7 +1892,7 @@
     "id": "colMeans",
     "href": "/detail/base/colMeans.html",
     "funcname": "colMeans",
-    "tag": "dataframe"
+    "tag": "summary"
   },
   {
     "id": "colnames",
@@ -1698,471 +1903,676 @@
   {
     "id": "colnames<-",
     "href": "/detail/base/colnamessymbol9-.html",
-    "funcname": "colnames<-"
+    "funcname": "colnames<-",
+    "tag": "dataframe"
   },
   {
     "id": "colSums",
     "href": "/detail/base/colSums.html",
-    "funcname": "colSums"
+    "funcname": "colSums",
+    "tag": "summary"
   },
   {
     "id": "commandArgs",
     "href": "/detail/base/commandArgs.html",
-    "funcname": "commandArgs"
+    "funcname": "commandArgs",
+    "tag": "system"
   },
   {
     "id": "comment",
     "href": "/detail/base/comment.html",
-    "funcname": "comment"
+    "funcname": "comment",
+    "tag": "dataframe"
   },
   {
     "id": "comment<-",
     "href": "/detail/base/commentsymbol9-.html",
-    "funcname": "comment<-"
+    "funcname": "comment<-",
+    "tag": "dataframe"
   },
   {
     "id": "complex",
     "href": "/detail/base/complex.html",
-    "funcname": "complex"
+    "funcname": "complex",
+    "tag": "math"
   },
   {
     "id": "computeRestarts",
     "href": "/detail/base/computeRestarts.html",
-    "funcname": "computeRestarts"
+    "funcname": "computeRestarts",
+    "tag": "system"
   },
   {
     "id": "conditionCall",
     "href": "/detail/base/conditionCall.html",
-    "funcname": "conditionCall"
+    "funcname": "conditionCall",
+    "tag": "system"
   },
   {
     "id": "conditionCall.condition",
     "href": "/detail/base/conditionCallsymbol11condition.html",
-    "funcname": "conditionCall.condition"
+    "funcname": "conditionCall.condition",
+    "tag": "system"
   },
   {
     "id": "conditionMessage",
     "href": "/detail/base/conditionMessage.html",
-    "funcname": "conditionMessage"
+    "funcname": "conditionMessage",
+    "tag": "system"
   },
   {
     "id": "conditionMessage.condition",
     "href": "/detail/base/conditionMessagesymbol11condition.html",
-    "funcname": "conditionMessage.condition"
+    "funcname": "conditionMessage.condition",
+    "tag": "system"
   },
   {
     "id": "conflictRules",
     "href": "/detail/base/conflictRules.html",
-    "funcname": "conflictRules"
+    "funcname": "conflictRules",
+    "tag": "system"
   },
   {
     "id": "conflicts",
     "href": "/detail/base/conflicts.html",
-    "funcname": "conflicts"
+    "funcname": "conflicts",
+    "tag": "system"
   },
-  { "id": "Conj", "href": "/detail/base/Conj.html", "funcname": "Conj" },
+  {
+    "id": "Conj",
+    "href": "/detail/base/Conj.html",
+    "funcname": "Conj",
+    "tag": "math"
+  },
   {
     "id": "contributors",
     "href": "/detail/base/contributors.html",
-    "funcname": "contributors"
+    "funcname": "contributors",
+    "tag": "system"
   },
-  { "id": "cos", "href": "/detail/base/cos.html", "funcname": "cos" },
-  { "id": "cosh", "href": "/detail/base/cosh.html", "funcname": "cosh" },
-  { "id": "cospi", "href": "/detail/base/cospi.html", "funcname": "cospi" },
+  {
+    "id": "cos",
+    "href": "/detail/base/cos.html",
+    "funcname": "cos",
+    "tag": "math"
+  },
+  {
+    "id": "cosh",
+    "href": "/detail/base/cosh.html",
+    "funcname": "cosh",
+    "tag": "math"
+  },
+  {
+    "id": "cospi",
+    "href": "/detail/base/cospi.html",
+    "funcname": "cospi",
+    "tag": "math"
+  },
   {
     "id": "crossprod",
     "href": "/detail/base/crossprod.html",
-    "funcname": "crossprod"
+    "funcname": "crossprod",
+    "tag": "math"
   },
   {
     "id": "Cstack_info",
     "href": "/detail/base/Cstack_info.html",
-    "funcname": "Cstack_info"
+    "funcname": "Cstack_info",
+    "tag": "system"
   },
-  { "id": "cummax", "href": "/detail/base/cummax.html", "funcname": "cummax" },
-  { "id": "cummin", "href": "/detail/base/cummin.html", "funcname": "cummin" },
+  {
+    "id": "cummax",
+    "href": "/detail/base/cummax.html",
+    "funcname": "cummax",
+    "tag": "math"
+  },
+  {
+    "id": "cummin",
+    "href": "/detail/base/cummin.html",
+    "funcname": "cummin",
+    "tag": "math"
+  },
   {
     "id": "cumprod",
     "href": "/detail/base/cumprod.html",
-    "funcname": "cumprod"
+    "funcname": "cumprod",
+    "tag": "math"
   },
-  { "id": "cumsum", "href": "/detail/base/cumsum.html", "funcname": "cumsum" },
+  {
+    "id": "cumsum",
+    "href": "/detail/base/cumsum.html",
+    "funcname": "cumsum",
+    "tag": "math"
+  },
   {
     "id": "curlGetHeaders",
     "href": "/detail/base/curlGetHeaders.html",
-    "funcname": "curlGetHeaders"
+    "funcname": "curlGetHeaders",
+    "tag": "system"
   },
-  { "id": "cut", "href": "/detail/base/cut.html", "funcname": "cut" },
+  {
+    "id": "cut",
+    "href": "/detail/base/cut.html",
+    "funcname": "cut",
+    "tag": "math"
+  },
   {
     "id": "cut.Date",
     "href": "/detail/base/cutsymbol11Date.html",
-    "funcname": "cut.Date"
+    "funcname": "cut.Date",
+    "tag": "date"
   },
   {
     "id": "cut.default",
     "href": "/detail/base/cutsymbol11default.html",
-    "funcname": "cut.default"
+    "funcname": "cut.default",
+    "tag": "math"
   },
   {
     "id": "cut.POSIXt",
     "href": "/detail/base/cutsymbol11POSIXt.html",
-    "funcname": "cut.POSIXt"
+    "funcname": "cut.POSIXt",
+    "tag": "date"
   },
   {
     "id": "data.class",
     "href": "/detail/base/datasymbol11class.html",
-    "funcname": "data.class"
+    "funcname": "data.class",
+    "tag": "dataframe"
   },
   {
     "id": "data.frame",
     "href": "/detail/base/datasymbol11frame.html",
-    "funcname": "data.frame"
+    "funcname": "data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "data.matrix",
     "href": "/detail/base/datasymbol11matrix.html",
-    "funcname": "data.matrix"
+    "funcname": "data.matrix",
+    "tag": "dataframe"
   },
   {
     "id": "date",
     "href": "/detail/base/date.html",
     "funcname": "date",
-    "svg": "calendar.svg"
+    "svg": "calendar.svg",
+    "tag": "date"
   },
   {
     "id": "debug",
     "href": "/detail/base/debug.html",
     "funcname": "debug",
+    "tag": "system",
     "svg": "bug.svg"
   },
   {
     "id": "debuggingState",
     "href": "/detail/base/debuggingState.html",
-    "funcname": "debuggingState"
+    "funcname": "debuggingState",
+    "tag": "system"
   },
   {
     "id": "debugonce",
     "href": "/detail/base/debugonce.html",
-    "funcname": "debugonce"
+    "funcname": "debugonce",
+    "tag": "system"
   },
   {
     "id": "default.stringsAsFactors",
     "href": "/detail/base/defaultsymbol11stringsAsFactors.html",
-    "funcname": "default.stringsAsFactors"
+    "funcname": "default.stringsAsFactors",
+    "tag": "dataframe"
   },
   {
     "id": "delayedAssign",
     "href": "/detail/base/delayedAssign.html",
-    "funcname": "delayedAssign"
+    "funcname": "delayedAssign",
+    "tag": "system"
   },
   {
     "id": "deparse",
     "href": "/detail/base/deparse.html",
-    "funcname": "deparse"
+    "funcname": "deparse",
+    "tag": "string"
   },
   {
     "id": "deparse1",
     "href": "/detail/base/deparse1.html",
-    "funcname": "deparse1"
+    "funcname": "deparse1",
+
+    "tag": "string"
   },
-  { "id": "det", "href": "/detail/base/det.html", "funcname": "det" },
-  { "id": "detach", "href": "/detail/base/detach.html", "funcname": "detach" },
+  {
+    "id": "det",
+    "href": "/detail/base/det.html",
+    "funcname": "det",
+    "tag": "math"
+  },
+  {
+    "id": "detach",
+    "href": "/detail/base/detach.html",
+    "funcname": "detach",
+    "tag": "system"
+  },
   {
     "id": "determinant",
     "href": "/detail/base/determinant.html",
-    "funcname": "determinant"
+    "funcname": "determinant",
+    "tag": "math"
   },
   {
     "id": "determinant.matrix",
     "href": "/detail/base/determinantsymbol11matrix.html",
-    "funcname": "determinant.matrix"
+    "funcname": "determinant.matrix",
+    "tag": "math"
   },
-  { "id": "dget", "href": "/detail/base/dget.html", "funcname": "dget" },
-  { "id": "diag", "href": "/detail/base/diag.html", "funcname": "diag" },
+  {
+    "id": "dget",
+    "href": "/detail/base/dget.html",
+    "funcname": "dget",
+    "tag": "system"
+  },
+  {
+    "id": "diag",
+    "href": "/detail/base/diag.html",
+    "funcname": "diag",
+    "tag": "math"
+  },
   {
     "id": "diag<-",
     "href": "/detail/base/diagsymbol9-.html",
-    "funcname": "diag<-"
+    "funcname": "diag<-",
+    "tag": "math"
   },
-  { "id": "diff", "href": "/detail/base/diff.html", "funcname": "diff" },
+  {
+    "id": "diff",
+    "href": "/detail/base/diff.html",
+    "funcname": "diff",
+    "tag": "math"
+  },
   {
     "id": "diff.Date",
     "href": "/detail/base/diffsymbol11Date.html",
-    "funcname": "diff.Date"
+    "funcname": "diff.Date",
+    "tag": "date"
   },
   {
     "id": "diff.default",
     "href": "/detail/base/diffsymbol11default.html",
-    "funcname": "diff.default"
+    "funcname": "diff.default",
+    "tag": "math"
   },
   {
     "id": "diff.difftime",
     "href": "/detail/base/diffsymbol11difftime.html",
-    "funcname": "diff.difftime"
+    "funcname": "diff.difftime",
+    "tag": "date"
   },
   {
     "id": "diff.POSIXt",
     "href": "/detail/base/diffsymbol11POSIXt.html",
-    "funcname": "diff.POSIXt"
+    "funcname": "diff.POSIXt",
+    "tag": "date"
   },
   {
     "id": "difftime",
     "href": "/detail/base/difftime.html",
-    "funcname": "difftime"
+    "funcname": "difftime",
+    "tag": "date"
   },
   {
     "id": "digamma",
     "href": "/detail/base/digamma.html",
-    "funcname": "digamma"
+    "funcname": "digamma",
+    "tag": "math"
   },
-  { "id": "dim", "href": "/detail/base/dim.html", "funcname": "dim" },
+  {
+    "id": "dim",
+    "href": "/detail/base/dim.html",
+    "funcname": "dim",
+    "tag": "math"
+  },
   {
     "id": "dim.data.frame",
     "href": "/detail/base/dimsymbol11datasymbol11frame.html",
-    "funcname": "dim.data.frame"
+    "funcname": "dim.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "dim<-",
     "href": "/detail/base/dimsymbol9-.html",
-    "funcname": "dim<-"
+    "funcname": "dim<-",
+    "tag": "math"
   },
   {
     "id": "dimnames",
     "href": "/detail/base/dimnames.html",
-    "funcname": "dimnames"
+    "funcname": "dimnames",
+    "tag": "dataframe"
   },
   {
     "id": "dimnames.data.frame",
     "href": "/detail/base/dimnamessymbol11datasymbol11frame.html",
-    "funcname": "dimnames.data.frame"
+    "funcname": "dimnames.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "dimnames<-",
     "href": "/detail/base/dimnamessymbol9-.html",
-    "funcname": "dimnames<-"
+    "funcname": "dimnames<-",
+    "tag": "dataframe"
   },
   {
     "id": "dimnames<-.data.frame",
     "href": "/detail/base/dimnamessymbol9-symbol11datasymbol11frame.html",
-    "funcname": "dimnames<-.data.frame"
+    "funcname": "dimnames<-.data.frame",
+    "tag": "dataframe"
   },
-  { "id": "dir", "href": "/detail/base/dir.html", "funcname": "dir" },
+  {
+    "id": "dir",
+    "href": "/detail/base/dir.html",
+    "funcname": "dir",
+    "tag": "system"
+  },
   {
     "id": "dir.create",
     "href": "/detail/base/dirsymbol11create.html",
-    "funcname": "dir.create"
+    "funcname": "dir.create",
+    "tag": "system"
   },
   {
     "id": "dir.exists",
     "href": "/detail/base/dirsymbol11exists.html",
-    "funcname": "dir.exists"
+    "funcname": "dir.exists",
+    "tag": "system"
   },
   {
     "id": "dirname",
     "href": "/detail/base/dirname.html",
-    "funcname": "dirname"
+    "funcname": "dirname",
+    "tag": "system"
   },
   {
     "id": "do.call",
     "href": "/detail/base/dosymbol11call.html",
-    "funcname": "do.call"
+    "funcname": "do.call",
+    "tag": "system"
   },
   {
     "id": "dontCheck",
     "href": "/detail/base/dontCheck.html",
-    "funcname": "dontCheck"
+    "funcname": "dontCheck",
+    "tag": "system"
   },
-  { "id": "double", "href": "/detail/base/double.html", "funcname": "double" },
-  { "id": "dput", "href": "/detail/base/dput.html", "funcname": "dput" },
-  { "id": "dQuote", "href": "/detail/base/dQuote.html", "funcname": "dQuote" },
-  { "id": "drop", "href": "/detail/base/drop.html", "funcname": "drop" },
+  {
+    "id": "double",
+    "href": "/detail/base/double.html",
+    "funcname": "double",
+    "tag": "math"
+  },
+  { "id": "dput", "href": "/detail/base/dput.html", "funcname": "dput",
+"tag":"write" },
+  { "id": "dQuote", "href": "/detail/base/dQuote.html", "funcname": "dQuote" ,
+"tag":"write"},
+  
+  { "id": "drop", "href": "/detail/base/drop.html", "funcname": "drop" ,
+"tag":"vector"},
   {
     "id": "droplevels",
     "href": "/detail/base/droplevels.html",
-    "funcname": "droplevels"
+    "funcname": "droplevels",
+    "tag": "dataframe"
   },
   {
     "id": "droplevels.data.frame",
     "href": "/detail/base/droplevelssymbol11datasymbol11frame.html",
-    "funcname": "droplevels.data.frame"
+    "funcname": "droplevels.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "droplevels.factor",
     "href": "/detail/base/droplevelssymbol11factor.html",
-    "funcname": "droplevels.factor"
+    "funcname": "droplevels.factor",
+    "tag": "vector"
   },
-  { "id": "dump", "href": "/detail/base/dump.html", "funcname": "dump" },
+  { "id": "dump", "href": "/detail/base/dump.html", "funcname": "dump" ,
+  "tag":"vector"},
   {
     "id": "duplicated",
     "href": "/detail/base/duplicated.html",
-    "funcname": "duplicated"
+    "funcname": "duplicated",
+    "tag": "vector"
   },
   {
     "id": "duplicated.array",
     "href": "/detail/base/duplicatedsymbol11array.html",
-    "funcname": "duplicated.array"
+    "funcname": "duplicated.array",
+    "tag": "vector"
   },
   {
     "id": "duplicated.data.frame",
     "href": "/detail/base/duplicatedsymbol11datasymbol11frame.html",
-    "funcname": "duplicated.data.frame"
+    "funcname": "duplicated.data.frame",
+    "tag": "vector"
   },
   {
     "id": "duplicated.default",
     "href": "/detail/base/duplicatedsymbol11default.html",
-    "funcname": "duplicated.default"
+    "funcname": "duplicated.default",
+    "tag": "vector"
   },
   {
     "id": "duplicated.matrix",
     "href": "/detail/base/duplicatedsymbol11matrix.html",
-    "funcname": "duplicated.matrix"
+    "funcname": "duplicated.matrix",
+    "tag": "vector"
   },
   {
     "id": "duplicated.numeric_version",
     "href": "/detail/base/duplicatedsymbol11numeric_version.html",
-    "funcname": "duplicated.numeric_version"
+    "funcname": "duplicated.numeric_version",
+    "tag": "vector"
   },
   {
     "id": "duplicated.POSIXlt",
     "href": "/detail/base/duplicatedsymbol11POSIXlt.html",
-    "funcname": "duplicated.POSIXlt"
+    "funcname": "duplicated.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "duplicated.warnings",
     "href": "/detail/base/duplicatedsymbol11warnings.html",
-    "funcname": "duplicated.warnings"
+    "funcname": "duplicated.warnings",
+    "tag": "vector"
   },
   {
     "id": "dyn.load",
     "href": "/detail/base/dynsymbol11load.html",
-    "funcname": "dyn.load"
+    "funcname": "dyn.load",
+    "tag": "system"
   },
   {
     "id": "dyn.unload",
     "href": "/detail/base/dynsymbol11unload.html",
-    "funcname": "dyn.unload"
+    "funcname": "dyn.unload",
+    "tag": "system"
   },
-  { "id": "dynGet", "href": "/detail/base/dynGet.html", "funcname": "dynGet" },
-  { "id": "eapply", "href": "/detail/base/eapply.html", "funcname": "eapply" },
-  { "id": "eigen", "href": "/detail/base/eigen.html", "funcname": "eigen" },
+  { "id": "dynGet", "href": "/detail/base/dynGet.html", "funcname": "dynGet" ,
+  "tag":"vector"},
+  { "id": "eapply", "href": "/detail/base/eapply.html", "funcname": "eapply" ,
+  "tag":"vector"},
+  {
+    "id": "eigen",
+    "href": "/detail/base/eigen.html",
+    "funcname": "eigen",
+    "tag": "math"
+  },
   {
     "id": "emptyenv",
     "href": "/detail/base/emptyenv.html",
-    "funcname": "emptyenv"
+    "funcname": "emptyenv",
+    "tag": "system"
   },
   {
     "id": "enc2native",
     "href": "/detail/base/enc2native.html",
-    "funcname": "enc2native"
+    "funcname": "enc2native",
+    "tag": "string"
   },
   {
     "id": "enc2utf8",
     "href": "/detail/base/enc2utf8.html",
-    "funcname": "enc2utf8"
+    "funcname": "enc2utf8",
+    "tag": "string"
   },
   {
     "id": "encodeString",
     "href": "/detail/base/encodeString.html",
-    "funcname": "encodeString"
+    "funcname": "encodeString",
+    "tag": "string"
   },
   {
     "id": "Encoding",
     "href": "/detail/base/Encoding.html",
-    "funcname": "Encoding"
+    "funcname": "Encoding",
+    "tag": "string"
   },
   {
     "id": "Encoding<-",
     "href": "/detail/base/Encodingsymbol9-.html",
-    "funcname": "Encoding<-"
+    "funcname": "Encoding<-",
+    "tag": "string"
   },
   {
     "id": "endsWith",
     "href": "/detail/base/endsWith.html",
-    "funcname": "endsWith"
+    "funcname": "endsWith",
+    "tag": "string"
   },
   {
     "id": "enquote",
     "href": "/detail/base/enquote.html",
-    "funcname": "enquote"
+    "funcname": "enquote",
+    "tag": "string"
   },
   {
     "id": "env.profile",
     "href": "/detail/base/envsymbol11profile.html",
-    "funcname": "env.profile"
+    "funcname": "env.profile",
+    "tag": "system"
   },
   {
     "id": "environment",
     "href": "/detail/base/environment.html",
-    "funcname": "environment"
+    "funcname": "environment",
+    "tag": "system"
   },
   {
     "id": "environment<-",
     "href": "/detail/base/environmentsymbol9-.html",
-    "funcname": "environment<-"
+    "funcname": "environment<-",
+    "tag": "system"
   },
   {
     "id": "environmentIsLocked",
     "href": "/detail/base/environmentIsLocked.html",
-    "funcname": "environmentIsLocked"
+    "funcname": "environmentIsLocked",
+    "tag": "system"
   },
   {
     "id": "environmentName",
     "href": "/detail/base/environmentName.html",
-    "funcname": "environmentName"
+    "funcname": "environmentName",
+    "tag": "system"
   },
   {
     "id": "errorCondition",
     "href": "/detail/base/errorCondition.html",
-    "funcname": "errorCondition"
+    "funcname": "errorCondition",
+    "tag": "system"
   },
-  { "id": "eval", "href": "/detail/base/eval.html", "funcname": "eval" },
+  { "id": "eval", "href": "/detail/base/eval.html", "funcname": "eval" ,
+"tag":"system"},
   {
     "id": "eval.parent",
     "href": "/detail/base/evalsymbol11parent.html",
-    "funcname": "eval.parent"
+    "funcname": "eval.parent",
+    "tag": "system"
   },
-  { "id": "evalq", "href": "/detail/base/evalq.html", "funcname": "evalq" },
-  { "id": "exists", "href": "/detail/base/exists.html", "funcname": "exists" },
-  { "id": "exp", "href": "/detail/base/exp.html", "funcname": "exp" },
+  { "id": "evalq", "href": "/detail/base/evalq.html", "funcname": "evalq" ,
+"tag":"system"},
+  { "id": "exists", "href": "/detail/base/exists.html", "funcname": "exists" x,
+"tag":"system"},
+  {
+    "id": "exp",
+    "href": "/detail/base/exp.html",
+    "funcname": "exp",
+    "tag": "math"
+  },
   {
     "id": "expand.grid",
-    "href": "/detail/base/expandsymbol11grid.html",
-    "funcname": "expand.grid"
+    "href": "/detail/base/expand.symbol11grid.html",
+    "funcname": "expand.grid",
+    "tag": "dataframe"
   },
-  { "id": "expm1", "href": "/detail/base/expm1.html", "funcname": "expm1" },
   {
+    "id": "expm1",
+    "href": "/detail/base/expm1.html",
+    "funcname": "expm1",
+    "tag": "math"},
+    {
     "id": "expression",
     "href": "/detail/base/expression.html",
-    "funcname": "expression"
+    "funcname": "expression",
+    "tag": "system"
   },
   {
     "id": "extSoftVersion",
     "href": "/detail/base/extSoftVersion.html",
-    "funcname": "extSoftVersion"
+    "funcname": "extSoftVersion",
+    "tag": "system"
   },
-  { "id": "F", "href": "/detail/base/F.html", "funcname": "F" },
-  { "id": "factor", "href": "/detail/base/factor.html", "funcname": "factor" },
+  { "id": "F", "href": "/detail/base/F.html", "funcname": "F" ,
+"tag":"math"},
+  {
+    "id": "factor",
+    "href": "/detail/base/factor.html",
+    "funcname": "factor",
+    "tag": "vector"
+  },
   {
     "id": "factorial",
     "href": "/detail/base/factorial.html",
-    "funcname": "factorial"
+    "funcname": "factorial",
+    "tag": "math"
   },
-  { "id": "fifo", "href": "/detail/base/fifo.html", "funcname": "fifo" },
-  { "id": "file", "href": "/detail/base/file.html", "funcname": "file" },
+  { "id": "fifo", "href": "/detail/base/fifo.html", "funcname": "fifo" ,
+"tag":"system"},
+  {
+    "id": "file",
+    "href": "/detail/base/file.html",
+    "funcname": "file",
+    "tag": "system"
+  },
   {
     "id": "file.access",
     "href": "/detail/base/filesymbol11access.html",
-    "funcname": "file.access"
+    "funcname": "file.access",
+    "tag": "system"
   },
+  
   {
     "id": "file.append",
     "href": "/detail/base/filesymbol11append.html",
-    "funcname": "file.append"
+    "funcname": "file.append",
+    "tag": "system"
   },
   {
     "id": "file.choose",
     "href": "/detail/base/filesymbol11choose.html",
-    "funcname": "file.choose"
+    "funcname": "file.choose",
+    "tag": "system"
   },
   {
     "id": "file.copy",
@@ -2272,7 +2682,8 @@
     "id": "for",
     "href": "/detail/base/for.html",
     "funcname": "for",
-    "svg": "arrows-clockwise-light.svg"
+    "svg": "arrows-clockwise-light.svg",
+    "tag": "operater"
   },
   { "id": "force", "href": "/detail/base/force.html", "funcname": "force" },
   {
@@ -5031,7 +5442,8 @@
   {
     "id": "Sys.which",
     "href": "/detail/base/Syssymbol11which.html",
-    "funcname": "Sys.which"
+    "funcname": "Sys.which",
+    "tag": "system"
   },
   {
     "id": "system",
@@ -5418,7 +5830,12 @@
     "href": "/detail/base/withVisible.html",
     "funcname": "withVisible"
   },
-  { "id": "write", "href": "/detail/base/write.html", "funcname": "write" },
+  {
+    "id": "write",
+    "href": "/detail/base/write.html",
+    "funcname": "write",
+    "tag": "write"
+  },
   {
     "id": "write.dcf",
     "href": "/detail/base/writesymbol11dcf.html",
