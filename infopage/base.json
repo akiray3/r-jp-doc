@@ -109,119 +109,127 @@
     "id": "[.factor",
     "href": "/detail/base/[symbol11factor.html",
     "funcname": "[.factor",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[.hexmode",
     "href": "/detail/base/[symbol11hexmode.html",
     "funcname": "[.hexmode",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[.listof",
     "href": "/detail/base/[symbol11listof.html",
     "funcname": "[.listof",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[.noquote",
     "href": "/detail/base/[symbol11noquote.html",
     "funcname": "[.noquote",
-    "tag":"string"
+    "tag": "string"
   },
   {
     "id": "[.numeric_version",
     "href": "/detail/base/[symbol11numeric_version.html",
     "funcname": "[.numeric_version",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[.octmode",
     "href": "/detail/base/[symbol11octmode.html",
     "funcname": "[.octmode",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[.POSIXct",
     "href": "/detail/base/[symbol11POSIXct.html",
     "funcname": "[.POSIXct",
-    "tag":"date"
+    "tag": "date"
   },
   {
     "id": "[.POSIXlt",
     "href": "/detail/base/[symbol11POSIXlt.html",
     "funcname": "[.POSIXlt",
-    "tag":"date"
+    "tag": "date"
   },
   {
     "id": "[.simple.list",
     "href": "/detail/base/[symbol11simplesymbol11list.html",
     "funcname": "[.simple.list",
-    "tag":"operater"
+    "tag": "operater"
   },
   {
     "id": "[.table",
     "href": "/detail/base/[symbol11table.html",
     "funcname": "[.table",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[.warnings",
     "href": "/detail/base/[symbol11warnings.html",
     "funcname": "[.warnings",
-    "tag":"system"
+    "tag": "system"
   },
-  { "id": "[[", "href": "/detail/base/[[.html", "funcname": "[[" ,
-"tag":"operater"},
+  {
+    "id": "[[",
+    "href": "/detail/base/[[.html",
+    "funcname": "[[",
+    "tag": "operater"
+  },
   {
     "id": "[[.data.frame",
     "href": "/detail/base/[[symbol11datasymbol11frame.html",
     "funcname": "[[.data.frame",
-    "tag":"dataframe"
+    "tag": "dataframe"
   },
   {
     "id": "[[.Date",
     "href": "/detail/base/[[symbol11Date.html",
     "funcname": "[[.Date",
-    "tag":"date"
+    "tag": "date"
   },
   {
     "id": "[[.factor",
     "href": "/detail/base/[[symbol11factor.html",
     "funcname": "[[.factor",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[[.numeric_version",
     "href": "/detail/base/[[symbol11numeric_version.html",
     "funcname": "[[.numeric_version",
-    "tag":"data"
+    "tag": "data"
   },
   {
     "id": "[[.POSIXct",
     "href": "/detail/base/[[symbol11POSIXct.html",
     "funcname": "[[.POSIXct",
-    "tag":"date"
+    "tag": "date"
   },
   {
     "id": "[[.POSIXlt",
     "href": "/detail/base/[[symbol11POSIXlt.html",
     "funcname": "[[.POSIXlt",
-    "tag":"date"
+    "tag": "date"
   },
-  { "id": "[[<-", "href": "/detail/base/[[symbol9-.html", "funcname": "[[<-" ,
-"tag":"operater"},
+  {
+    "id": "[[<-",
+    "href": "/detail/base/[[symbol9-.html",
+    "funcname": "[[<-",
+    "tag": "operater"
+  },
   {
     "id": "[[<-.data.frame",
     "href": "/detail/base/[[symbol9-symbol11datasymbol11frame.html",
     "funcname": "[[<-.data.frame",
-    "tag":"dataframe"
+    "tag": "dataframe"
   },
   {
     "id": "[[<-.factor",
     "href": "/detail/base/[[symbol9-symbol11factor.html",
     "funcname": "[[<-.factor",
-    "tag":"operater"
+    "tag": "operater"
   },
   {
     "id": "[[<-.numeric_version",
@@ -248,27 +256,32 @@
   {
     "id": "[<-.difftime",
     "href": "/detail/base/[symbol9-symbol11difftime.html",
-    "funcname": "[<-.difftime"
+    "funcname": "[<-.difftime",
+    "tag": "date"
   },
   {
     "id": "[<-.factor",
     "href": "/detail/base/[symbol9-symbol11factor.html",
-    "funcname": "[<-.factor"
+    "funcname": "[<-.factor",
+    "tag": "data"
   },
   {
     "id": "[<-.numeric_version",
     "href": "/detail/base/[symbol9-symbol11numeric_version.html",
-    "funcname": "[<-.numeric_version"
+    "funcname": "[<-.numeric_version",
+    "tag": "data"
   },
   {
     "id": "[<-.POSIXct",
     "href": "/detail/base/[symbol9-symbol11POSIXct.html",
-    "funcname": "[<-.POSIXct"
+    "funcname": "[<-.POSIXct",
+    "tag": "date"
   },
   {
     "id": "[<-.POSIXlt",
     "href": "/detail/base/[symbol9-symbol11POSIXlt.html",
-    "funcname": "[<-.POSIXlt"
+    "funcname": "[<-.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "{",
@@ -308,7 +321,8 @@
   {
     "id": "/.difftime",
     "href": "/detail/base/symbol1symbol11difftime.html",
-    "funcname": "/.difftime"
+    "funcname": "/.difftime",
+    "tag": "date"
   },
   {
     "id": "&",
@@ -319,12 +333,14 @@
   {
     "id": "&.hexmode",
     "href": "/detail/base/&symbol11hexmode.html",
-    "funcname": "&.hexmode"
+    "funcname": "&.hexmode",
+    "tag": "data"
   },
   {
     "id": "&.octmode",
     "href": "/detail/base/&symbol11octmode.html",
-    "funcname": "&.octmode"
+    "funcname": "&.octmode",
+    "tag": "data"
   },
   {
     "id": "&&",
@@ -383,12 +399,14 @@
   {
     "id": "+.Date",
     "href": "/detail/base/+symbol11Date.html",
-    "funcname": "+.Date"
+    "funcname": "+.Date",
+    "tag": "operater"
   },
   {
     "id": "+.POSIXt",
     "href": "/detail/base/+symbol11POSIXt.html",
-    "funcname": "+.POSIXt"
+    "funcname": "+.POSIXt",
+    "tag": "date"
   },
   {
     "id": "<",
@@ -447,12 +465,14 @@
   {
     "id": "|.hexmode",
     "href": "/detail/base/symbol7symbol11hexmode.html",
-    "funcname": "|.hexmode"
+    "funcname": "|.hexmode",
+    "tag": "data"
   },
   {
     "id": "|.octmode",
     "href": "/detail/base/symbol7symbol11octmode.html",
-    "funcname": "|.octmode"
+    "funcname": "|.octmode",
+    "tag": "data"
   },
   {
     "id": "||",
@@ -475,12 +495,14 @@
   {
     "id": "$.DLLInfo",
     "href": "/detail/base/$symbol11DLLInfo.html",
-    "funcname": "$.DLLInfo"
+    "funcname": "$.DLLInfo",
+    "tag": "system"
   },
   {
     "id": "$.package_version",
     "href": "/detail/base/$symbol11package_version.html",
-    "funcname": "$.package_version"
+    "funcname": "$.package_version",
+    "tag": "system"
   },
   {
     "id": "$<-",
@@ -497,136 +519,194 @@
   {
     "id": "abbreviate",
     "href": "/detail/base/abbreviate.html",
-    "funcname": "abbreviate"
+    "funcname": "abbreviate",
+    "tag": "string"
   },
-  { "id": "abs", "href": "/detail/base/abs.html", "funcname": "abs" },
-  { "id": "acos", "href": "/detail/base/acos.html", "funcname": "acos" },
-  { "id": "acosh", "href": "/detail/base/acosh.html", "funcname": "acosh" },
+  {
+    "id": "abs",
+    "href": "/detail/base/abs.html",
+    "funcname": "abs",
+    "tag": "data"
+  },
+  {
+    "id": "acos",
+    "href": "/detail/base/acos.html",
+    "funcname": "acos",
+    "tag": "data"
+  },
+  {
+    "id": "acosh",
+    "href": "/detail/base/acosh.html",
+    "funcname": "acosh",
+    "tag": "data"
+  },
   {
     "id": "activeBindingFunction",
     "href": "/detail/base/activeBindingFunction.html",
-    "funcname": "activeBindingFunction"
+    "funcname": "activeBindingFunction",
+    "tag": "operater"
   },
-  { "id": "addNA", "href": "/detail/base/addNA.html", "funcname": "addNA" },
+  {
+    "id": "addNA",
+    "href": "/detail/base/addNA.html",
+    "funcname": "addNA",
+    "tag": "operater"
+  },
   {
     "id": "addTaskCallback",
     "href": "/detail/base/addTaskCallback.html",
-    "funcname": "addTaskCallback"
+    "funcname": "addTaskCallback",
+    "tag": "system"
   },
   {
     "id": "agrep",
     "href": "/detail/base/agrep.html",
     "funcname": "agrep",
-    "tag": "conversion"
+    "tag": "string"
   },
   {
     "id": "agrepl",
     "href": "/detail/base/agrepl.html",
     "funcname": "agrepl",
-    "tag": "conversion"
+    "tag": "string"
   },
-  { "id": "alist", "href": "/detail/base/alist.html", "funcname": "alist" },
-  { "id": "all", "href": "/detail/base/all.html", "funcname": "all" },
+  {
+    "id": "alist",
+    "href": "/detail/base/alist.html",
+    "funcname": "alist",
+    "tag": "data"
+  },
+  {
+    "id": "all",
+    "href": "/detail/base/all.html",
+    "funcname": "all",
+    "tag": "data"
+  },
   {
     "id": "all.equal",
     "href": "/detail/base/allsymbol11equal.html",
-    "funcname": "all.equal"
+    "funcname": "all.equal",
+    "tag": "data"
   },
   {
     "id": "all.equal.character",
     "href": "/detail/base/allsymbol11equalsymbol11character.html",
-    "funcname": "all.equal.character"
+    "funcname": "all.equal.character",
+    "tag": "string"
   },
   {
     "id": "all.equal.default",
     "href": "/detail/base/allsymbol11equalsymbol11default.html",
-    "funcname": "all.equal.default"
+    "funcname": "all.equal.default",
+    "tag": "data"
   },
   {
     "id": "all.equal.environment",
     "href": "/detail/base/allsymbol11equalsymbol11environment.html",
-    "funcname": "all.equal.environment"
+    "funcname": "all.equal.environment",
+    "tag": "data"
   },
   {
     "id": "all.equal.envRefClass",
     "href": "/detail/base/allsymbol11equalsymbol11envRefClass.html",
-    "funcname": "all.equal.envRefClass"
+    "funcname": "all.equal.envRefClass",
+    "tag": "data"
   },
   {
     "id": "all.equal.factor",
     "href": "/detail/base/allsymbol11equalsymbol11factor.html",
-    "funcname": "all.equal.factor"
+    "funcname": "all.equal.factor",
+    "tag": "data"
   },
   {
     "id": "all.equal.formula",
     "href": "/detail/base/allsymbol11equalsymbol11formula.html",
-    "funcname": "all.equal.formula"
+    "funcname": "all.equal.formula",
+    "tag": "data"
   },
   {
     "id": "all.equal.function",
     "href": "/detail/base/allsymbol11equalsymbol11function.html",
-    "funcname": "all.equal.function"
+    "funcname": "all.equal.function",
+    "tag": "data"
   },
   {
     "id": "all.equal.language",
     "href": "/detail/base/allsymbol11equalsymbol11language.html",
-    "funcname": "all.equal.language"
+    "funcname": "all.equal.language",
+    "tag": "data"
   },
   {
     "id": "all.equal.list",
     "href": "/detail/base/allsymbol11equalsymbol11list.html",
-    "funcname": "all.equal.list"
+    "funcname": "all.equal.list",
+    "tag": "data"
   },
   {
     "id": "all.equal.numeric",
     "href": "/detail/base/allsymbol11equalsymbol11numeric.html",
-    "funcname": "all.equal.numeric"
+    "funcname": "all.equal.numeric",
+    "tag": "data"
   },
   {
     "id": "all.equal.POSIXt",
     "href": "/detail/base/allsymbol11equalsymbol11POSIXt.html",
-    "funcname": "all.equal.POSIXt"
+    "funcname": "all.equal.POSIXt",
+    "tag": "data"
   },
   {
     "id": "all.equal.raw",
     "href": "/detail/base/allsymbol11equalsymbol11raw.html",
-    "funcname": "all.equal.raw"
+    "funcname": "all.equal.raw",
+    "tag": "data"
   },
   {
     "id": "all.names",
     "href": "/detail/base/allsymbol11names.html",
-    "funcname": "all.names"
+    "funcname": "all.names",
+    "tag": "data"
   },
   {
     "id": "all.vars",
     "href": "/detail/base/allsymbol11vars.html",
-    "funcname": "all.vars"
+    "funcname": "all.vars",
+    "tag": "data"
   },
   {
     "id": "allowInterrupts",
     "href": "/detail/base/allowInterrupts.html",
-    "funcname": "allowInterrupts"
+    "funcname": "allowInterrupts",
+    "tag": "system"
   },
-  { "id": "any", "href": "/detail/base/any.html", "funcname": "any" },
+  {
+    "id": "any",
+    "href": "/detail/base/any.html",
+    "funcname": "any",
+    "tag": "data"
+  },
   {
     "id": "anyDuplicated",
     "href": "/detail/base/anyDuplicated.html",
-    "funcname": "anyDuplicated"
+    "funcname": "anyDuplicated",
+    "tag": "data"
   },
   {
     "id": "anyDuplicated.array",
     "href": "/detail/base/anyDuplicatedsymbol11array.html",
-    "funcname": "anyDuplicated.array"
+    "funcname": "anyDuplicated.array",
+    "tag": "dataframe"
   },
   {
     "id": "anyDuplicated.data.frame",
     "href": "/detail/base/anyDuplicatedsymbol11datasymbol11frame.html",
-    "funcname": "anyDuplicated.data.frame"
+    "funcname": "anyDuplicated.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "anyDuplicated.default",
     "href": "/detail/base/anyDuplicatedsymbol11default.html",
-    "funcname": "anyDuplicated.default"
+    "funcname": "anyDuplicated.default",
+    "tag": "dataframe"
   },
   {
     "id": "anyDuplicated.matrix",
@@ -634,110 +714,143 @@
     "funcname": "anyDuplicated.matrix",
     "tag": "dataframe"
   },
-  { "id": "anyNA", "href": "/detail/base/anyNA.html", "funcname": "anyNA" },
+  {
+    "id": "anyNA",
+    "href": "/detail/base/anyNA.html",
+    "funcname": "anyNA",
+    "tag": "data"
+  },
   {
     "id": "anyNA.data.frame",
     "href": "/detail/base/anyNAsymbol11datasymbol11frame.html",
-    "funcname": "anyNA.data.frame"
+    "funcname": "anyNA.data.frame",
+    "tag": "data"
   },
   {
     "id": "anyNA.numeric_version",
     "href": "/detail/base/anyNAsymbol11numeric_version.html",
-    "funcname": "anyNA.numeric_version"
+    "funcname": "anyNA.numeric_version",
+    "tag": "system"
   },
   {
     "id": "anyNA.POSIXlt",
     "href": "/detail/base/anyNAsymbol11POSIXlt.html",
-    "funcname": "anyNA.POSIXlt"
+    "funcname": "anyNA.POSIXlt",
+    "tag": "date"
   },
-  { "id": "aperm", "href": "/detail/base/aperm.html", "funcname": "aperm" },
+  {
+    "id": "aperm",
+    "href": "/detail/base/aperm.html",
+    "funcname": "aperm",
+    "tag": "data"
+  },
   {
     "id": "aperm.default",
     "href": "/detail/base/apermsymbol11default.html",
-    "funcname": "aperm.default"
+    "funcname": "aperm.default",
+    "tag": "data"
   },
   {
     "id": "aperm.table",
     "href": "/detail/base/apermsymbol11table.html",
-    "funcname": "aperm.table"
+    "funcname": "aperm.table",
+    "tag": "data"
   },
-  { "id": "append", "href": "/detail/base/append.html", "funcname": "append" },
+  {
+    "id": "append",
+    "href": "/detail/base/append.html",
+    "funcname": "append",
+    "tag": "data"
+  },
   {
     "id": "apply",
     "href": "/detail/base/apply.html",
     "funcname": "apply",
-    "tag": "manipulation"
+    "tag": "data"
   },
-  { "id": "Arg", "href": "/detail/base/Arg.html", "funcname": "Arg" },
-  { "id": "args", "href": "/detail/base/args.html", "funcname": "args" },
-  { "id": "array", "href": "/detail/base/array.html", "funcname": "array" },
+  {
+    "id": "Arg",
+    "href": "/detail/base/Arg.html",
+    "funcname": "Arg",
+    "tag": "operater"
+  },
+  { "id": "args", "href": "/detail/base/args.html", "funcname": "args" ,
+"tag":"data"},
+  { "id": "array", "href": "/detail/base/array.html", "funcname": "array" ,
+"tag":"data"},
   {
     "id": "arrayInd",
     "href": "/detail/base/arrayInd.html",
-    "funcname": "arrayInd"
+    "funcname": "arrayInd",
+    "tag":"data"
   },
   {
     "id": "as.array",
     "href": "/detail/base/assymbol11array.html",
     "funcname": "as.array",
-    "tag": "conversion"
+    "tag":"dataframe"
   },
   {
     "id": "as.array.default",
     "href": "/detail/base/assymbol11arraysymbol11default.html",
     "funcname": "as.array.default",
-    "tag": "conversion"
+    "tag":"data"
   },
   {
     "id": "as.call",
     "href": "/detail/base/assymbol11call.html",
     "funcname": "as.call",
     "svg": "megaphone-light.svg",
-    "tag": "conversion"
+    "tag": "data"
   },
   {
     "id": "as.character",
     "href": "/detail/base/assymbol11character.html",
     "funcname": "as.character",
     "svg": "text-aa-light.svg",
-    "tag": "conversion"
+    "tag": "string"
   },
   {
     "id": "as.character.condition",
     "href": "/detail/base/assymbol11charactersymbol11condition.html",
     "funcname": "as.character.condition",
-    "tag": "conversion"
+    "tag": "vector"
   },
   {
     "id": "as.character.Date",
     "href": "/detail/base/assymbol11charactersymbol11Date.html",
     "funcname": "as.character.Date",
-    "tag": "conversion"
+    "tag": "vector"
   },
   {
     "id": "as.character.default",
     "href": "/detail/base/assymbol11charactersymbol11default.html",
-    "funcname": "as.character.default"
+    "funcname": "as.character.default",
+    "tag":"system"
   },
   {
     "id": "as.character.error",
     "href": "/detail/base/assymbol11charactersymbol11error.html",
-    "funcname": "as.character.error"
+    "funcname": "as.character.error",
+    "tag":"system"
   },
   {
     "id": "as.character.factor",
     "href": "/detail/base/assymbol11charactersymbol11factor.html",
-    "funcname": "as.character.factor"
+    "funcname": "as.character.factor",
+    "tag":"vector"
   },
   {
     "id": "as.character.hexmode",
     "href": "/detail/base/assymbol11charactersymbol11hexmode.html",
-    "funcname": "as.character.hexmode"
+    "funcname": "as.character.hexmode",
+    "tag":"vector"
   },
   {
     "id": "as.character.numeric_version",
     "href": "/detail/base/assymbol11charactersymbol11numeric_version.html",
-    "funcname": "as.character.numeric_version"
+    "funcname": "as.character.numeric_version",
+    "tag":"system"
   },
   {
     "id": "as.character.octmode",
