@@ -3159,496 +3159,602 @@
   {
     "id": "interactive",
     "href": "/detail/base/interactive.html",
-    "funcname": "interactive"
+    "funcname": "interactive",
+    "tag": "system"
   },
   {
     "id": "intersect",
     "href": "/detail/base/intersect.html",
-    "funcname": "intersect"
+    "funcname": "intersect",
+    "tag": "vector"
   },
   {
     "id": "intToBits",
     "href": "/detail/base/intToBits.html",
-    "funcname": "intToBits"
+    "funcname": "intToBits",
+    "tag": "vector"
   },
   {
     "id": "intToUtf8",
     "href": "/detail/base/intToUtf8.html",
-    "funcname": "intToUtf8"
+    "funcname": "intToUtf8",
+    "tag": "string"
   },
   {
     "id": "inverse.rle",
     "href": "/detail/base/inversesymbol11rle.html",
-    "funcname": "inverse.rle"
+    "funcname": "inverse.rle",
+    "tag": "vector"
   },
   {
     "id": "invisible",
     "href": "/detail/base/invisible.html",
-    "funcname": "invisible"
+    "funcname": "invisible",
+    "tag": "system"
   },
   {
     "id": "invokeRestart",
     "href": "/detail/base/invokeRestart.html",
-    "funcname": "invokeRestart"
+    "funcname": "invokeRestart",
+    "tag": "system"
   },
   {
     "id": "invokeRestartInteractively",
     "href": "/detail/base/invokeRestartInteractively.html",
-    "funcname": "invokeRestartInteractively"
+    "funcname": "invokeRestartInteractively",
+    "tag": "system"
   },
   {
     "id": "is.array",
     "href": "/detail/base/issymbol11array.html",
-    "funcname": "is.array"
+    "funcname": "is.array",
+    "tag": "vector"
   },
   {
     "id": "is.atomic",
     "href": "/detail/base/issymbol11atomic.html",
-    "funcname": "is.atomic"
+    "funcname": "is.atomic",
+    "tag": "vector"
   },
   {
     "id": "is.call",
     "href": "/detail/base/issymbol11call.html",
-    "funcname": "is.call"
+    "funcname": "is.call",
+    "tag": "vector"
   },
   {
     "id": "is.character",
     "href": "/detail/base/issymbol11character.html",
-    "funcname": "is.character"
+    "funcname": "is.character",
+    "tag": "vector"
   },
   {
     "id": "is.complex",
     "href": "/detail/base/issymbol11complex.html",
-    "funcname": "is.complex"
+    "funcname": "is.complex",
+    "tag": "math"
   },
   {
     "id": "is.data.frame",
     "href": "/detail/base/issymbol11datasymbol11frame.html",
-    "funcname": "is.data.frame"
+    "funcname": "is.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "is.double",
     "href": "/detail/base/issymbol11double.html",
-    "funcname": "is.double"
+    "funcname": "is.double",
+    "tag": "vector"
   },
   {
     "id": "is.element",
     "href": "/detail/base/issymbol11element.html",
-    "funcname": "is.element"
+    "funcname": "is.element",
+    "tag": "vector"
   },
   {
     "id": "is.environment",
     "href": "/detail/base/issymbol11environment.html",
-    "funcname": "is.environment"
+    "funcname": "is.environment",
+    "tag": "system"
   },
   {
     "id": "is.expression",
     "href": "/detail/base/issymbol11expression.html",
-    "funcname": "is.expression"
+    "funcname": "is.expression",
+    "tag": "vector"
   },
   {
     "id": "is.factor",
     "href": "/detail/base/issymbol11factor.html",
-    "funcname": "is.factor"
+    "funcname": "is.factor",
+    "tag": "vector"
   },
   {
     "id": "is.finite",
     "href": "/detail/base/issymbol11finite.html",
-    "funcname": "is.finite"
+    "funcname": "is.finite",
+    "tag": "math"
   },
   {
     "id": "is.function",
     "href": "/detail/base/issymbol11function.html",
-    "funcname": "is.function"
+    "funcname": "is.function",
+    "tag": "operater"
   },
   {
     "id": "is.infinite",
     "href": "/detail/base/issymbol11infinite.html",
-    "funcname": "is.infinite"
+    "funcname": "is.infinite",
+"tag":"vector"
   },
   {
     "id": "is.integer",
     "href": "/detail/base/issymbol11integer.html",
-    "funcname": "is.integer"
+    "funcname": "is.integer",
+    "tag": "vector"
   },
   {
     "id": "is.language",
     "href": "/detail/base/issymbol11language.html",
-    "funcname": "is.language"
+    "funcname": "is.language",
+    "tag": "vector"
   },
   {
     "id": "is.list",
     "href": "/detail/base/issymbol11list.html",
-    "funcname": "is.list"
+    "funcname": "is.list",
+    "tag":"operater"
   },
   {
     "id": "is.loaded",
     "href": "/detail/base/issymbol11loaded.html",
-    "funcname": "is.loaded"
+    "funcname": "is.loaded",
+    "tag": "system"
   },
   {
     "id": "is.logical",
     "href": "/detail/base/issymbol11logical.html",
-    "funcname": "is.logical"
+    "funcname": "is.logical",
+    "tag": "vector"
   },
   {
     "id": "is.matrix",
     "href": "/detail/base/issymbol11matrix.html",
-    "funcname": "is.matrix"
+    "funcname": "is.matrix",
+    "tag": "vector"
   },
   {
     "id": "is.na",
     "href": "/detail/base/issymbol11na.html",
-    "funcname": "is.na"
+    "funcname": "is.na",
+    "tag": "vector"
   },
   {
     "id": "is.na.data.frame",
     "href": "/detail/base/issymbol11nasymbol11datasymbol11frame.html",
-    "funcname": "is.na.data.frame"
+    "funcname": "is.na.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "is.na.numeric_version",
     "href": "/detail/base/issymbol11nasymbol11numeric_version.html",
-    "funcname": "is.na.numeric_version"
+    "funcname": "is.na.numeric_version",
+    "tag": "vector"
   },
   {
     "id": "is.na.POSIXlt",
     "href": "/detail/base/issymbol11nasymbol11POSIXlt.html",
-    "funcname": "is.na.POSIXlt"
+    "funcname": "is.na.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "is.na<-",
     "href": "/detail/base/issymbol11nasymbol9-.html",
-    "funcname": "is.na<-"
+    "funcname": "is.na<-",
+    "tag": "vector"
   },
   {
     "id": "is.na<-.default",
     "href": "/detail/base/issymbol11nasymbol9-symbol11default.html",
-    "funcname": "is.na<-.default"
+    "funcname": "is.na<-.default",
+    "tag": "vector"
   },
   {
     "id": "is.na<-.factor",
     "href": "/detail/base/issymbol11nasymbol9-symbol11factor.html",
-    "funcname": "is.na<-.factor"
+    "funcname": "is.na<-.factor",
+    "tag": "vector"
   },
   {
     "id": "is.na<-.numeric_version",
     "href": "/detail/base/issymbol11nasymbol9-symbol11numeric_version.html",
-    "funcname": "is.na<-.numeric_version"
+    "funcname": "is.na<-.numeric_version",
+    "tag": "vector"
   },
   {
     "id": "is.name",
     "href": "/detail/base/issymbol11name.html",
-    "funcname": "is.name"
+    "funcname": "is.name",
+    "tag": "vector"
   },
   {
     "id": "is.nan",
     "href": "/detail/base/issymbol11nan.html",
-    "funcname": "is.nan"
+    "funcname": "is.nan",
+    "tag": "vector"
   },
   {
     "id": "is.null",
     "href": "/detail/base/issymbol11null.html",
-    "funcname": "is.null"
+    "funcname": "is.null",
+    "tag": "vector"
   },
   {
     "id": "is.numeric",
     "href": "/detail/base/issymbol11numeric.html",
-    "funcname": "is.numeric"
+    "funcname": "is.numeric",
+    "tag": "vector"
   },
   {
     "id": "is.numeric_version",
     "href": "/detail/base/issymbol11numeric_version.html",
-    "funcname": "is.numeric_version"
+    "funcname": "is.numeric_version",
+    "tag": "vector"
   },
   {
     "id": "is.numeric.Date",
     "href": "/detail/base/issymbol11numericsymbol11Date.html",
-    "funcname": "is.numeric.Date"
+    "funcname": "is.numeric.Date",
+    "tag": "date"
   },
   {
     "id": "is.numeric.difftime",
     "href": "/detail/base/issymbol11numericsymbol11difftime.html",
-    "funcname": "is.numeric.difftime"
+    "funcname": "is.numeric.difftime",
+    "tag": "date"
   },
   {
     "id": "is.numeric.POSIXt",
     "href": "/detail/base/issymbol11numericsymbol11POSIXt.html",
-    "funcname": "is.numeric.POSIXt"
+    "funcname": "is.numeric.POSIXt",
+    "tag": "date"
   },
   {
     "id": "is.object",
     "href": "/detail/base/issymbol11object.html",
-    "funcname": "is.object"
+    "funcname": "is.object",
+    "tag": "vector"
   },
   {
     "id": "is.ordered",
     "href": "/detail/base/issymbol11ordered.html",
-    "funcname": "is.ordered"
+    "funcname": "is.ordered",
+    "tag": "vector"
   },
   {
     "id": "is.package_version",
     "href": "/detail/base/issymbol11package_version.html",
-    "funcname": "is.package_version"
+    "funcname": "is.package_version",
+    "tag": "vector"
   },
   {
     "id": "is.pairlist",
     "href": "/detail/base/issymbol11pairlist.html",
-    "funcname": "is.pairlist"
+    "funcname": "is.pairlist",
+    "tag": "operater"
   },
   {
     "id": "is.primitive",
     "href": "/detail/base/issymbol11primitive.html",
-    "funcname": "is.primitive"
+    "funcname": "is.primitive",
+    "tag": "operater"
   },
   {
     "id": "is.qr",
     "href": "/detail/base/issymbol11qr.html",
-    "funcname": "is.qr"
+    "funcname": "is.qr",
+    "tag": "math"
   },
-  { "id": "is.R", "href": "/detail/base/issymbol11R.html", "funcname": "is.R" },
+  { "id": "is.R", "href": "/detail/base/issymbol11R.html", "funcname": "is.R" ,
+"tag":"system"},
   {
     "id": "is.raw",
     "href": "/detail/base/issymbol11raw.html",
-    "funcname": "is.raw"
+    "funcname": "is.raw",
+    "tag": "vector"
   },
   {
     "id": "is.recursive",
     "href": "/detail/base/issymbol11recursive.html",
-    "funcname": "is.recursive"
+    "funcname": "is.recursive",
+    "tag": "vector"
   },
   {
     "id": "is.single",
     "href": "/detail/base/issymbol11single.html",
-    "funcname": "is.single"
+    "funcname": "is.single",
+    "tag": "vector"
   },
   {
     "id": "is.symbol",
     "href": "/detail/base/issymbol11symbol.html",
-    "funcname": "is.symbol"
+    "funcname": "is.symbol",
+    "tag": "vector"
   },
   {
     "id": "is.table",
     "href": "/detail/base/issymbol11table.html",
-    "funcname": "is.table"
+    "funcname": "is.table",
+    "tag": "vector"
   },
   {
     "id": "is.unsorted",
     "href": "/detail/base/issymbol11unsorted.html",
-    "funcname": "is.unsorted"
+    "funcname": "is.unsorted",
+    "tag": "operater"
   },
   {
     "id": "is.vector",
     "href": "/detail/base/issymbol11vector.html",
-    "funcname": "is.vector"
+    "funcname": "is.vector",
+    "tag": "vector"
   },
-  { "id": "isa", "href": "/detail/base/isa.html", "funcname": "isa" },
-  { "id": "isatty", "href": "/detail/base/isatty.html", "funcname": "isatty" },
+  { "id": "isa", "href": "/detail/base/isa.html", "funcname": "isa",
+"tag":"operater" },
+  { "id": "isatty", "href": "/detail/base/isatty.html", "funcname": "isatty" ,
+"tag":"system"},
   {
     "id": "isBaseNamespace",
     "href": "/detail/base/isBaseNamespace.html",
-    "funcname": "isBaseNamespace"
+    "funcname": "isBaseNamespace",
+    "tag": "system"
   },
   {
     "id": "isdebugged",
     "href": "/detail/base/isdebugged.html",
-    "funcname": "isdebugged"
+    "funcname": "isdebugged",
+    "tag": "system"
   },
   {
     "id": "isFALSE",
     "href": "/detail/base/isFALSE.html",
-    "funcname": "isFALSE"
+    "funcname": "isFALSE",
+    "tag": "system"
   },
   {
     "id": "isIncomplete",
     "href": "/detail/base/isIncomplete.html",
-    "funcname": "isIncomplete"
+    "funcname": "isIncomplete",
+    "tag": "system"
   },
   {
     "id": "isNamespace",
     "href": "/detail/base/isNamespace.html",
-    "funcname": "isNamespace"
+    "funcname": "isNamespace",
+    "tag": "system"
   },
   {
     "id": "isNamespaceLoaded",
     "href": "/detail/base/isNamespaceLoaded.html",
-    "funcname": "isNamespaceLoaded"
+    "funcname": "isNamespaceLoaded",
+    "tag": "system"
   },
   {
     "id": "ISOdate",
     "href": "/detail/base/ISOdate.html",
-    "funcname": "ISOdate"
+    "funcname": "ISOdate",
+    "tag": "date"
   },
   {
     "id": "ISOdatetime",
     "href": "/detail/base/ISOdatetime.html",
-    "funcname": "ISOdatetime"
+    "funcname": "ISOdatetime",
+    "tag": "date"
   },
   { "id": "isOpen", "href": "/detail/base/isOpen.html", "funcname": "isOpen" },
   {
     "id": "isRestart",
     "href": "/detail/base/isRestart.html",
-    "funcname": "isRestart"
+    "funcname": "isRestart",
+    "tag": "system"
   },
-  { "id": "isS4", "href": "/detail/base/isS4.html", "funcname": "isS4" },
+  { "id": "isS4", "href": "/detail/base/isS4.html", "funcname": "isS4" ,
+"tag":"operater"},
   {
     "id": "isSeekable",
     "href": "/detail/base/isSeekable.html",
-    "funcname": "isSeekable"
+    "funcname": "isSeekable",
+    "tag": "system"
   },
   {
     "id": "isSymmetric",
     "href": "/detail/base/isSymmetric.html",
-    "funcname": "isSymmetric"
+    "funcname": "isSymmetric",
+    "tag": "math"
   },
   {
     "id": "isSymmetric.matrix",
     "href": "/detail/base/isSymmetricsymbol11matrix.html",
-    "funcname": "isSymmetric.matrix"
+    "funcname": "isSymmetric.matrix",
+    "tag": "dataframe"
   },
-  { "id": "isTRUE", "href": "/detail/base/isTRUE.html", "funcname": "isTRUE" },
-  { "id": "jitter", "href": "/detail/base/jitter.html", "funcname": "jitter" },
-  { "id": "julian", "href": "/detail/base/julian.html", "funcname": "julian" },
+  { "id": "isTRUE", "href": "/detail/base/isTRUE.html", "funcname": "isTRUE" ,
+"tag":"vector"},
+  { "id": "jitter", "href": "/detail/base/jitter.html", "funcname": "jitter" ,
+"tag":"math"},
+  { "id": "julian", "href": "/detail/base/julian.html", "funcname": "julian" ,
+  "tag":"date"},
   {
     "id": "julian.Date",
     "href": "/detail/base/juliansymbol11Date.html",
-    "funcname": "julian.Date"
+    "funcname": "julian.Date",
+    "tag": "date"
   },
   {
     "id": "julian.POSIXt",
     "href": "/detail/base/juliansymbol11POSIXt.html",
-    "funcname": "julian.POSIXt"
+    "funcname": "julian.POSIXt",
+    "tag": "date"
   },
-  { "id": "kappa", "href": "/detail/base/kappa.html", "funcname": "kappa" },
-  {
+  { "id": "kappa", "href": "/detail/base/kappa.html", "funcname": "kappa" ,
+  "tag":"math"},
+    {
     "id": "kappa.default",
     "href": "/detail/base/kappasymbol11default.html",
-    "funcname": "kappa.default"
+    "funcname": "kappa.default",
+    "tag": "math"
   },
   {
     "id": "kappa.lm",
     "href": "/detail/base/kappasymbol11lm.html",
-    "funcname": "kappa.lm"
+    "funcname": "kappa.lm",
+    "tag": "math"
   },
   {
     "id": "kappa.qr",
     "href": "/detail/base/kappasymbol11qr.html",
-    "funcname": "kappa.qr"
+    "funcname": "kappa.qr",
+    "tag": "math"
   },
   {
     "id": "kronecker",
     "href": "/detail/base/kronecker.html",
-    "funcname": "kronecker"
+    "funcname": "kronecker",
+    "tag": "math"
   },
   {
     "id": "l10n_info",
     "href": "/detail/base/l10n_info.html",
-    "funcname": "l10n_info"
+    "funcname": "l10n_info",
+    "tag": "system"
   },
   {
     "id": "La_library",
     "href": "/detail/base/La_library.html",
-    "funcname": "La_library"
+    "funcname": "La_library",
+    "tag": "system"
   },
   {
     "id": "La_version",
     "href": "/detail/base/La_version.html",
-    "funcname": "La_version"
+    "funcname": "La_version",
+    "tag": "system"
   },
   {
     "id": "La.svd",
     "href": "/detail/base/Lasymbol11svd.html",
-    "funcname": "La.svd"
+    "funcname": "La.svd",
+    "tag": "math"
   },
-  { "id": "labels", "href": "/detail/base/labels.html", "funcname": "labels" },
+  { "id": "labels", "href": "/detail/base/labels.html", "funcname": "labels" ,
+  "tag":"operater"},
   {
     "id": "labels.default",
     "href": "/detail/base/labelssymbol11default.html",
-    "funcname": "labels.default"
+    "funcname": "labels.default",
+    "tag": "operater"
   },
-  { "id": "lapply", "href": "/detail/base/lapply.html", "funcname": "lapply" },
+  { "id": "lapply", "href": "/detail/base/lapply.html", "funcname": "lapply" ,
+"tag":"vector"},
   {
     "id": "last.warning",
     "href": "/detail/base/lastsymbol11warning.html",
-    "funcname": "last.warning"
+    "funcname": "last.warning",
+    "tag": "system"
   },
   {
     "id": "lazyLoad",
     "href": "/detail/base/lazyLoad.html",
-    "funcname": "lazyLoad"
+    "funcname": "lazyLoad",
+    "tag": "system"
   },
   {
     "id": "lazyLoadDBexec",
     "href": "/detail/base/lazyLoadDBexec.html",
-    "funcname": "lazyLoadDBexec"
+    "funcname": "lazyLoadDBexec",
+    "tag": "system"
   },
   {
     "id": "lazyLoadDBfetch",
     "href": "/detail/base/lazyLoadDBfetch.html",
-    "funcname": "lazyLoadDBfetch"
+    "funcname": "lazyLoadDBfetch",
+    "tag": "system"
   },
-  { "id": "lbeta", "href": "/detail/base/lbeta.html", "funcname": "lbeta" },
-  {
-    "id": "lchoose",
-    "href": "/detail/base/lchoose.html",
-    "funcname": "lchoose"
-  },
-  { "id": "length", "href": "/detail/base/length.html", "funcname": "length" },
+  { "id": "lbeta", "href": "/detail/base/lbeta.html", "funcname": "lbeta" ,
+  "tag":"math"},
+  { "id": "lchoose", "href": "/detail/base/lchoose.html", "funcname": "lchoose" ,
+  "tag":"math"},
+  { "id": "length", "href": "/detail/base/length.html", "funcname": "length",
+"tag":"vector" },
   {
     "id": "length.POSIXlt",
     "href": "/detail/base/lengthsymbol11POSIXlt.html",
-    "funcname": "length.POSIXlt"
+    "funcname": "length.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "length<-",
     "href": "/detail/base/lengthsymbol9-.html",
-    "funcname": "length<-"
+    "funcname": "length<-",
+    "tag": "vector"
   },
   {
     "id": "length<-.Date",
     "href": "/detail/base/lengthsymbol9-symbol11Date.html",
-    "funcname": "length<-.Date"
+    "funcname": "length<-.Date",
+    "tag": "date"
   },
   {
     "id": "length<-.difftime",
     "href": "/detail/base/lengthsymbol9-symbol11difftime.html",
-    "funcname": "length<-.difftime"
+    "funcname": "length<-.difftime",
+    "tag": "date"
   },
   {
     "id": "length<-.factor",
     "href": "/detail/base/lengthsymbol9-symbol11factor.html",
-    "funcname": "length<-.factor"
+    "funcname": "length<-.factor",
+    "tag": "vector"
   },
   {
     "id": "length<-.POSIXct",
     "href": "/detail/base/lengthsymbol9-symbol11POSIXct.html",
-    "funcname": "length<-.POSIXct"
+    "funcname": "length<-.POSIXct",
+    "tag": "date"
   },
   {
     "id": "length<-.POSIXlt",
     "href": "/detail/base/lengthsymbol9-symbol11POSIXlt.html",
-    "funcname": "length<-.POSIXlt"
+    "funcname": "length<-.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "lengths",
     "href": "/detail/base/lengths.html",
-    "funcname": "lengths"
+    "funcname": "lengths",
+    "tag": "vector"
   },
   {
     "id": "letters",
     "href": "/detail/base/letters.html",
-    "funcname": "letters"
+    "funcname": "letters",
+    "tag": "string"
   },
   {
     "id": "LETTERS",
     "href": "/detail/base/LETTERS.html",
-    "funcname": "LETTERS"
+    "funcname": "LETTERS",
+
+    "tag": "string"
   },
-  { "id": "levels", "href": "/detail/base/levels.html", "funcname": "levels" },
+  { "id": "levels", "href": "/detail/base/levels.html", "funcname": "levels" ,
+"tag":"vector"},
   {
     "id": "levels.default",
     "href": "/detail/base/levelssymbol11default.html",
-    "funcname": "levels.default"
+    "funcname": "levels.default",
+    "tag": "vector"
   },
   {
     "id": "levels<-",
