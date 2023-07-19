@@ -5,8 +5,8 @@
 @media screen and (max-width: 395px) {
   .lineitem {
     display: inline-block;
-    width: 389px;
-    height: 160px;
+    width: 100%;
+    height: 120px;
   }
   .namebox {
     width: 345.045px;

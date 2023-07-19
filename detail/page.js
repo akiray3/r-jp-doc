@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const jsondata = JSON.parse(jsonfile.responseText);
 
     const returnfuncpage = document.querySelector(".rturnfunc");
-    const returnhref = document.createElement("a");
+    const returnhref = document.getElementById("funcListBack");
     const packname = jsondata.filter((item) => item.func === keyword);
     returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
-
+    returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
     //全体関数ブロック
     const div = document.createElement("div");
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     req.onload = function () {
       const json = JSON.parse(req.responseText);
       const arg = json.find((obj) => obj.func === keyword);
-      if (arg) {
+      if (arg["arguments1"]) {
         //関数名
         if (WindowSize <= 395) {
           const funcnametxt = document.createTextNode(keyword);
@@ -91,7 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
           funcstart.style.fontSize = "40px";
           funcstart.style.fontFamily =
             "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
-          funcstart.style.display = "flex: 0 0 auto; margin-right: 10px";
+          funcstart.style.display = "flex";
+          funcstart.style.marginRight = "10px";
           funcname.appendChild(funcnametxt);
           funcstart.appendChild(funcstarttxt);
           argcol.appendChild(funcstart);
@@ -103,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (WindowSize <= 395) {
           const funcnametxt = document.createTextNode(keyword);
           funcname.appendChild(funcnametxt);
-          argcol.appendChild(funcstart);
         } else if (WindowSize > 395) {
           const funcnametxt = document.createTextNode(keyword);
           funcname.appendChild(funcnametxt);
@@ -117,7 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
           const txt = document.createElement("text");
           txt.className = "txt";
           txt.style.flexGrow = "1";
-          txt.style.display = "flex: 0 0 auto; margin-right: 10px";
+          txt.style.flex = "0 0 auto";
+          txt.style.marginRight = "3px";
           const txtnode = document.createTextNode(arg["arguments" + b] + ",");
           txt.appendChild(txtnode);
           argcol.appendChild(txt);
@@ -175,18 +176,20 @@ document.addEventListener("DOMContentLoaded", function () {
         hovinfo[i].style.height = `${heightblock + 20}px`;
       }
 
-      if (arg) {
+      if (arg["arguments1"]) {
         const alltxt = document.querySelectorAll(".txt");
 
         if (WindowSize <= 395) {
-          const firsttxt = alltxt[0];
-          const abc = document.createElement("text");
-          abc.classList = "funcfirst";
-          const abctxt = document.createTextNode("(");
-          abc.append(abctxt);
-          abc.append(firsttxt);
-          argblock.appendChild(abc);
+          const firstarg = alltxt[1];
+          const abc = alltxt[0];
+          abc.appendChild(firstarg);
+          alltxt.forEach((element) => {
+            if (element !== alltxt[0] && element !== alltxt[1]) {
+              element.style.transform = "translate(40px,0px)";
+            }
+          });
         }
+
         const lasttxt = alltxt[alltxt.length - 1];
         for (let i = 0; i < alltxt.length; i++) {
           if (alltxt[i] == lasttxt) {
@@ -196,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const xyztxt = document.createTextNode(")");
             xyz.appendChild(xyztxt);
             alltxt[i].appendChild(xyz);
-          } else if (alltxt[1] !== lasttxt) {
+          } else if (alltxt[i] !== lasttxt) {
           }
         }
       } else {

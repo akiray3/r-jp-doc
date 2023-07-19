@@ -84,6 +84,7 @@ CSS記述の順番
     "Arial Narrow", Arial, sans-serif;
   margin: 14%;
 }
+
 /*タブ部分*/
 .tabcontents {
   margin-top: 54px;
@@ -95,7 +96,7 @@ CSS記述の順番
   font-size: 24.7px;
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
   background-color: #00000000;
-  margin: 1%;
+  margin: 0.5%;
   border: none;
   border-radius: 9px;
   cursor: pointer;

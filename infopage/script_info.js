@@ -1,6 +1,5 @@
 const titletag = document.getElementsByTagName("title")[0];
 const titleid = titletag.id;
-
 const WindowSize = window.innerWidth;
 console.log(WindowSize);
 
@@ -13,7 +12,6 @@ request.onload = function () {
   const jsondata = JSON.parse(request.responseText);
   const funcname = jsondata.map((item) => item.funcname);
   const href = jsondata.map((item) => item.href);
-
   var infocontent = document.getElementById(titleid + "info");
   for (let i = 0; i < funcname.length; i++) {
     const div = document.createElement("div");
