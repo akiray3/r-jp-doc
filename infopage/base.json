@@ -1271,100 +1271,117 @@
   {
     "id": "as.POSIXct.default",
     "href": "/detail/base/assymbol11POSIXctsymbol11default.html",
-    "funcname": "as.POSIXct.default"
+    "funcname": "as.POSIXct.default",
+    "tag": "date"
   },
   {
     "id": "as.POSIXct.numeric",
     "href": "/detail/base/assymbol11POSIXctsymbol11numeric.html",
-    "funcname": "as.POSIXct.numeric"
+    "funcname": "as.POSIXct.numeric",
+    "tag": "date"
   },
   {
     "id": "as.POSIXct.POSIXlt",
     "href": "/detail/base/assymbol11POSIXctsymbol11POSIXlt.html",
-    "funcname": "as.POSIXct.POSIXlt"
+    "funcname": "as.POSIXct.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "as.POSIXlt",
     "href": "/detail/base/assymbol11POSIXlt.html",
-    "funcname": "as.POSIXlt"
+    "funcname": "as.POSIXlt",
+    "tag": "date"
   },
   {
     "id": "as.POSIXlt.character",
     "href": "/detail/base/assymbol11POSIXltsymbol11character.html",
-    "funcname": "as.POSIXlt.character"
+    "funcname": "as.POSIXlt.character",
+    "tag": "date"
   },
   {
     "id": "as.POSIXlt.Date",
     "href": "/detail/base/assymbol11POSIXltsymbol11Date.html",
-    "funcname": "as.POSIXlt.Date"
+    "funcname": "as.POSIXlt.Date",
+    "tag": "date"
   },
   {
     "id": "as.POSIXlt.default",
     "href": "/detail/base/assymbol11POSIXltsymbol11default.html",
-    "funcname": "as.POSIXlt.default"
+    "funcname": "as.POSIXlt.default",
+    "tag": "date"
   },
   {
     "id": "as.POSIXlt.factor",
     "href": "/detail/base/assymbol11POSIXltsymbol11factor.html",
-    "funcname": "as.POSIXlt.factor"
+    "funcname": "as.POSIXlt.factor",
+    "tag": "date"
   },
   {
     "id": "as.POSIXlt.numeric",
     "href": "/detail/base/assymbol11POSIXltsymbol11numeric.html",
-    "funcname": "as.POSIXlt.numeric"
+    "funcname": "as.POSIXlt.numeric",
+    "tag": "date"
   },
   {
     "id": "as.POSIXlt.POSIXct",
     "href": "/detail/base/assymbol11POSIXltsymbol11POSIXct.html",
-    "funcname": "as.POSIXlt.POSIXct"
+    "funcname": "as.POSIXlt.POSIXct",
+    "tag": "date"
   },
   {
     "id": "as.qr",
     "href": "/detail/base/assymbol11qr.html",
-    "funcname": "as.qr"
+    "funcname": "as.qr",
+    "tag": "math"
   },
   {
     "id": "as.raw",
     "href": "/detail/base/assymbol11raw.html",
-    "funcname": "as.raw"
+    "funcname": "as.raw",
+    "tag": "data"
   },
   {
     "id": "as.single",
     "href": "/detail/base/assymbol11single.html",
-    "funcname": "as.single"
+    "funcname": "as.single",
+    "tag": "vector"
   },
   {
     "id": "as.single.default",
     "href": "/detail/base/assymbol11singlesymbol11default.html",
-    "funcname": "as.single.default"
+    "funcname": "as.single.default",
+    "tag": "vector"
   },
   {
     "id": "as.symbol",
     "href": "/detail/base/assymbol11symbol.html",
-    "funcname": "as.symbol"
+    "funcname": "as.symbol",
+    "tag": "string"
   },
   {
     "id": "as.table",
     "href": "/detail/base/assymbol11table.html",
     "funcname": "as.table",
-    "svg": "layout-light.svg"
+    "svg": "layout-light.svg",
+    "tag": "dataframe"
   },
   {
     "id": "as.table.default",
     "href": "/detail/base/assymbol11tablesymbol11default.html",
-    "funcname": "as.table.default"
+    "funcname": "as.table.default",
+    "tag": "dataframe"
   },
   {
     "id": "as.vector",
     "href": "/detail/base/assymbol11vector.html",
     "funcname": "as.vector",
-    "tag": "conversion"
+    "tag": "vector"
   },
   {
     "id": "as.vector.factor",
     "href": "/detail/base/assymbol11vectorsymbol11factor.html",
     "funcname": "as.vector.factor",
-    "tag": "conversion"
+    "tag": "vector"
   },
   {
     "id": "asin",

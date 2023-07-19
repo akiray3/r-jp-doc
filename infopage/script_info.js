@@ -22,13 +22,6 @@ request.onload = function () {
 
     const div2 = document.createElement("div");
     div2.className = "namebox";
-    div2.style.borderRadius = "9.194px";
-    div2.style.stroke = "#243D25";
-    div2.style.strokeMiterlimit = "10";
-    div2.style.strokeWidth = "1";
-    div2.style.fontSize = "27px";
-    div2.style.border = "1px solid #000";
-    div2.style.transform = "translate(21.529px ,57.832px)";
 
     const atag = document.createElement("a");
     atag.href = `../detail/detailpage.html`;

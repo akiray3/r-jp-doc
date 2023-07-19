@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       //hover size
-      heightblock = argblock.offsetHeight;
+       const heightblock = argblock.offsetHeight;
       const hovinfo = document.querySelectorAll(".hover");
       for (let i = 0; i < hovinfo.length; i++) {
         hovinfo[i].style.height = `${heightblock + 20}px`;
@@ -205,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
       }
       //関数名ボックスのサイズ
-      heightblock = argblock.offsetHeight;
       content.style.height = `${heightblock + 19}px`;
     };
     content.appendChild(div);
