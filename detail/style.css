@@ -5,12 +5,10 @@ CSS記述の順番
   - @media　PC向けの設定
 --------------------------------*/
 
-
 .menu {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
 }
-
 
 /* 関数*/
 /*関数全体ブロック*/
@@ -33,15 +31,15 @@ CSS記述の順番
 }
 
 /*関数名*/
-.funcFrame{
+.funcFrame {
   display: inline-block;
 }
-.funcName{
+.funcName {
   flex: 0 0 auto;
 }
 @media screen and (max-width: 395px) {
   .funcFrame {
-    flex-gr
+    flex-grow: 1;
     height: 100%;
     width: 100%;
   }
@@ -111,12 +109,12 @@ CSS記述の順番
   height: 190px;
   margin-top: -18px;
 }
-.funclast{
+.funclast {
   font-size: 48px;
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
-display: flex 0 0 auto;
-margin-right: 10px;
-margin-bottom: 4%;
+  display: flex 0 0 auto;
+  margin-right: 10px;
+  margin-bottom: 4%;
 }
 /*タブ*/
 .tab {
