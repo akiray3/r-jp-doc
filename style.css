@@ -1,4 +1,27 @@
-.librarylink{
+#search {
+  transform: translate(20%, 54px);
+}
+#keywordbox {
+  height: 70px;
+  width: 520px;
+  border-radius: 510.194px;
+  stroke: #000;
+  stroke-width: 1px;
+}
+#reserch {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(127, 255, 212, 0);
+  border-color: #00000000;
+  right: 0;
+  top: 0;
+  transform: translate(464px, -90px);
+}
+#magnifying-glass-duotone {
+  width: 60px;
+  height: 60px;
+}
+.librarylink {
   -webkit-user-select: none;
   user-select: none;
 }
@@ -18,4 +41,34 @@
   border: 2px solid rgb(0, 0, 0);
   transform: translate(21.529px, 57.832px);
   margin-top: 3%;
+}
+
+/*search*/
+.lineitem {
+  display: inline-block;
+  width: 289px;
+  width: 289px;
+  height: 125px;
+  fill: none;
+}
+
+.namebox {
+  width: 274.045px;
+  height: 100.124px;
+  border-radius: 9.194px;
+  stroke: #243d25;
+  stroke-miterlimit: 10;
+  stroke-width: 1;
+  font-size: 27px;
+  border: 1px solid #000;
+  transform: translate(21.529px, 57.832px);
+}
+.ToDetailButton {
+  width: 274.045px;
+  height: 100.124px;
+  background-color: #00000000;
+  border: none;
+}
+.namebox.none{
+  display: none;
 }

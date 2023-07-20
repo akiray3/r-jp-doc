@@ -10,7 +10,7 @@
     "id": "-.Date",
     "href": "/detail/base/-symbol11Date.html",
     "funcname": "-.Date",
-    "tag": "date"
+    "tag": "data"
   },
   {
     "id": "-.POSIXt",
@@ -28,13 +28,13 @@
     "id": "::",
     "href": "/detail/base/symbol6symbol6.html",
     "funcname": "::",
-    "tag": "system"
+    "tag": "operater"
   },
   {
     "id": ":::",
     "href": "/detail/base/symbol6symbol6symbol6.html",
     "funcname": ":::",
-    "tag": "system"
+    "tag": "operater"
   },
   {
     "id": "!",
@@ -46,13 +46,13 @@
     "id": "!.hexmode",
     "href": "/detail/base/!symbol11hexmode.html",
     "funcname": "!.hexmode",
-    "tag": "math"
+    "tag": "data"
   },
   {
     "id": "!.octmode",
     "href": "/detail/base/!symbol11octmode.html",
     "funcname": "!.octmode",
-    "tag": "math"
+    "tag": "data"
   },
   {
     "id": "!=",
@@ -60,8 +60,18 @@
     "funcname": "!=",
     "tag": "operator"
   },
-  { "id": "(", "href": "/detail/base/(.html", "funcname": "(", "tag": "sign" },
-  { "id": "[", "href": "/detail/base/[.html", "funcname": "[", "tag": "sign" },
+  {
+    "id": "(",
+    "href": "/detail/base/(.html",
+    "funcname": "(",
+    "tag": "operater"
+  },
+  {
+    "id": "[",
+    "href": "/detail/base/[.html",
+    "funcname": "[",
+    "tag": "operater"
+  },
   {
     "id": "[.AsIs",
     "href": "/detail/base/[symbol11AsIs.html",
@@ -71,12 +81,14 @@
     "id": "[.data.frame",
     "href": "/detail/base/[symbol11datasymbol11frame.html",
     "funcname": "[.data.frame",
-    "svg": "grid-nine-light.svg"
+    "svg": "grid-nine-light.svg",
+    "tag": "data"
   },
   {
     "id": "[.Date",
     "href": "/detail/base/[symbol11Date.html",
-    "funcname": "[.Date"
+    "funcname": "[.Date",
+    "tag": "data"
   },
   {
     "id": "[.difftime",
@@ -209,7 +221,8 @@
   {
     "id": "[<-.Date",
     "href": "/detail/base/[symbol9-symbol11Date.html",
-    "funcname": "[<-.Date"
+    "funcname": "[<-.Date",
+    "tag": "data"
   },
   {
     "id": "[<-.difftime",
@@ -236,22 +249,52 @@
     "href": "/detail/base/[symbol9-symbol11POSIXlt.html",
     "funcname": "[<-.POSIXlt"
   },
-  { "id": "{", "href": "/detail/base/{.html", "funcname": "{" },
-  { "id": "@", "href": "/detail/base/@.html", "funcname": "@" },
-  { "id": "@<-", "href": "/detail/base/@symbol9-.html", "funcname": "@<-" },
-  { "id": "*", "href": "/detail/base/symbol5.html", "funcname": "*" },
+  {
+    "id": "{",
+    "href": "/detail/base/{.html",
+    "funcname": "{",
+    "tag": "operater"
+  },
+  {
+    "id": "@",
+    "href": "/detail/base/@.html",
+    "funcname": "@",
+    "tag": "operater"
+  },
+  {
+    "id": "@<-",
+    "href": "/detail/base/@symbol9-.html",
+    "funcname": "@<-",
+    "tag": "operater"
+  },
+  {
+    "id": "*",
+    "href": "/detail/base/symbol5.html",
+    "funcname": "*",
+    "tag": "operater"
+  },
   {
     "id": "*.difftime",
     "href": "/detail/base/symbol5symbol11difftime.html",
     "funcname": "*.difftime"
   },
-  { "id": "/", "href": "/detail/base/symbol1.html", "funcname": "/" },
+  {
+    "id": "/",
+    "href": "/detail/base/symbol1.html",
+    "funcname": "/",
+    "tag": "operater"
+  },
   {
     "id": "/.difftime",
     "href": "/detail/base/symbol1symbol11difftime.html",
     "funcname": "/.difftime"
   },
-  { "id": "&", "href": "/detail/base/&.html", "funcname": "&" },
+  {
+    "id": "&",
+    "href": "/detail/base/&.html",
+    "funcname": "&",
+    "tag": "operater"
+  },
   {
     "id": "&.hexmode",
     "href": "/detail/base/&symbol11hexmode.html",
@@ -262,35 +305,60 @@
     "href": "/detail/base/&symbol11octmode.html",
     "funcname": "&.octmode"
   },
-  { "id": "&&", "href": "/detail/base/&&.html", "funcname": "&&" },
+  {
+    "id": "&&",
+    "href": "/detail/base/&&.html",
+    "funcname": "&&",
+    "tag": "operater"
+  },
   {
     "id": "%*%",
     "href": "/detail/base/symbol4symbol5symbol4.html",
-    "funcname": "%*%"
+    "funcname": "%*%",
+    "tag": "operater"
   },
   {
     "id": "%/%",
     "href": "/detail/base/symbol4symbol1symbol4.html",
-    "funcname": "%/%"
+    "funcname": "%/%",
+    "tag": "operater"
   },
-  { "id": "%%", "href": "/detail/base/symbol4symbol4.html", "funcname": "%%" },
+  {
+    "id": "%%",
+    "href": "/detail/base/symbol4symbol4.html",
+    "funcname": "%%",
+    "tag": "operater"
+  },
   {
     "id": "%in%",
     "href": "/detail/base/symbol4insymbol4.html",
-    "funcname": "%in%"
+    "funcname": "%in%",
+    "tag": "operater"
   },
   {
     "id": "%o%",
     "href": "/detail/base/symbol4osymbol4.html",
-    "funcname": "%o%"
+    "funcname": "%o%",
+    "tag": "operater"
   },
   {
     "id": "%x%",
     "href": "/detail/base/symbol4xsymbol4.html",
-    "funcname": "%x%"
+    "funcname": "%x%",
+    "tag": "operater"
   },
-  { "id": "^", "href": "/detail/base/^.html", "funcname": "^" },
-  { "id": "+", "href": "/detail/base/+.html", "funcname": "+" },
+  {
+    "id": "^",
+    "href": "/detail/base/^.html",
+    "funcname": "^",
+    "tag": "operater"
+  },
+  {
+    "id": "+",
+    "href": "/detail/base/+.html",
+    "funcname": "+",
+    "tag": "operater"
+  },
   {
     "id": "+.Date",
     "href": "/detail/base/+symbol11Date.html",
@@ -301,19 +369,60 @@
     "href": "/detail/base/+symbol11POSIXt.html",
     "funcname": "+.POSIXt"
   },
-  { "id": "<", "href": "/detail/base/symbol9.html", "funcname": "<" },
-  { "id": "<-", "href": "/detail/base/symbol9-.html", "funcname": "<-" },
+  {
+    "id": "<",
+    "href": "/detail/base/symbol9.html",
+    "funcname": "<",
+    "tag": "operater"
+  },
+  {
+    "id": "<-",
+    "href": "/detail/base/symbol9-.html",
+    "funcname": "<-",
+    "tag": "operater"
+  },
   {
     "id": "<<-",
     "href": "/detail/base/symbol9symbol9-.html",
-    "funcname": "<<-"
+    "funcname": "<<-",
+    "tag": "operater"
   },
-  { "id": "<=", "href": "/detail/base/symbol9=.html", "funcname": "<=" },
-  { "id": "=", "href": "/detail/base/=.html", "funcname": "=" },
-  { "id": "==", "href": "/detail/base/==.html", "funcname": "==" },
-  { "id": ">", "href": "/detail/base/symbol10.html", "funcname": ">" },
-  { "id": ">=", "href": "/detail/base/symbol10=.html", "funcname": ">=" },
-  { "id": "|", "href": "/detail/base/symbol7.html", "funcname": "|" },
+  {
+    "id": "<=",
+    "href": "/detail/base/symbol9=.html",
+    "funcname": "<=",
+    "tag": "operater"
+  },
+  {
+    "id": "=",
+    "href": "/detail/base/=.html",
+    "funcname": "=",
+    "tag": "operater"
+  },
+  {
+    "id": "==",
+    "href": "/detail/base/==.html",
+    "funcname": "==",
+    "tag": "operater"
+  },
+  {
+    "id": ">",
+    "href": "/detail/base/symbol10.html",
+    "funcname": ">",
+    "tag": "operater"
+  },
+  {
+    "id": ">=",
+    "href": "/detail/base/symbol10=.html",
+    "funcname": ">=",
+    "tag": "operater"
+  },
+  {
+    "id": "|",
+    "href": "/detail/base/symbol7.html",
+    "funcname": "|",
+    "tag": "operater"
+  },
   {
     "id": "|.hexmode",
     "href": "/detail/base/symbol7symbol11hexmode.html",
@@ -324,9 +433,24 @@
     "href": "/detail/base/symbol7symbol11octmode.html",
     "funcname": "|.octmode"
   },
-  { "id": "||", "href": "/detail/base/symbol7symbol7.html", "funcname": "||" },
-  { "id": "~", "href": "/detail/base/~.html", "funcname": "~" },
-  { "id": "$", "href": "/detail/base/$.html", "funcname": "$" },
+  {
+    "id": "||",
+    "href": "/detail/base/symbol7symbol7.html",
+    "funcname": "||",
+    "tag": "operater"
+  },
+  {
+    "id": "~",
+    "href": "/detail/base/~.html",
+    "funcname": "~",
+    "tag": "operater"
+  },
+  {
+    "id": "$",
+    "href": "/detail/base/$.html",
+    "funcname": "$",
+    "tag": "operater"
+  },
   {
     "id": "$.DLLInfo",
     "href": "/detail/base/$symbol11DLLInfo.html",
@@ -337,11 +461,17 @@
     "href": "/detail/base/$symbol11package_version.html",
     "funcname": "$.package_version"
   },
-  { "id": "$<-", "href": "/detail/base/$symbol9-.html", "funcname": "$<-" },
+  {
+    "id": "$<-",
+    "href": "/detail/base/$symbol9-.html",
+    "funcname": "$<-",
+    "tag": "operater"
+  },
   {
     "id": "$<-.data.frame",
     "href": "/detail/base/$symbol9-symbol11datasymbol11frame.html",
-    "funcname": "$<-.data.frame"
+    "funcname": "$<-.data.frame",
+    "tag": "dataframe"
   },
   {
     "id": "abbreviate",
@@ -362,8 +492,18 @@
     "href": "/detail/base/addTaskCallback.html",
     "funcname": "addTaskCallback"
   },
-  { "id": "agrep", "href": "/detail/base/agrep.html", "funcname": "agrep" },
-  { "id": "agrepl", "href": "/detail/base/agrepl.html", "funcname": "agrepl" },
+  {
+    "id": "agrep",
+    "href": "/detail/base/agrep.html",
+    "funcname": "agrep",
+    "tag": "conversion"
+  },
+  {
+    "id": "agrepl",
+    "href": "/detail/base/agrepl.html",
+    "funcname": "agrepl",
+    "tag": "conversion"
+  },
   { "id": "alist", "href": "/detail/base/alist.html", "funcname": "alist" },
   { "id": "all", "href": "/detail/base/all.html", "funcname": "all" },
   {
@@ -470,7 +610,8 @@
   {
     "id": "anyDuplicated.matrix",
     "href": "/detail/base/anyDuplicatedsymbol11matrix.html",
-    "funcname": "anyDuplicated.matrix"
+    "funcname": "anyDuplicated.matrix",
+    "tag": "dataframe"
   },
   { "id": "anyNA", "href": "/detail/base/anyNA.html", "funcname": "anyNA" },
   {
@@ -500,7 +641,12 @@
     "funcname": "aperm.table"
   },
   { "id": "append", "href": "/detail/base/append.html", "funcname": "append" },
-  { "id": "apply", "href": "/detail/base/apply.html", "funcname": "apply" },
+  {
+    "id": "apply",
+    "href": "/detail/base/apply.html",
+    "funcname": "apply",
+    "tag": "manipulation"
+  },
   { "id": "Arg", "href": "/detail/base/Arg.html", "funcname": "Arg" },
   { "id": "args", "href": "/detail/base/args.html", "funcname": "args" },
   { "id": "array", "href": "/detail/base/array.html", "funcname": "array" },
@@ -512,34 +658,40 @@
   {
     "id": "as.array",
     "href": "/detail/base/assymbol11array.html",
-    "funcname": "as.array"
+    "funcname": "as.array",
+    "tag": "conversion"
   },
   {
     "id": "as.array.default",
     "href": "/detail/base/assymbol11arraysymbol11default.html",
-    "funcname": "as.array.default"
+    "funcname": "as.array.default",
+    "tag": "conversion"
   },
   {
     "id": "as.call",
     "href": "/detail/base/assymbol11call.html",
     "funcname": "as.call",
-    "svg": "megaphone-light.svg"
+    "svg": "megaphone-light.svg",
+    "tag": "conversion"
   },
   {
     "id": "as.character",
     "href": "/detail/base/assymbol11character.html",
     "funcname": "as.character",
-    "svg": "text-aa-light.svg"
+    "svg": "text-aa-light.svg",
+    "tag": "conversion"
   },
   {
     "id": "as.character.condition",
     "href": "/detail/base/assymbol11charactersymbol11condition.html",
-    "funcname": "as.character.condition"
+    "funcname": "as.character.condition",
+    "tag": "conversion"
   },
   {
     "id": "as.character.Date",
     "href": "/detail/base/assymbol11charactersymbol11Date.html",
-    "funcname": "as.character.Date"
+    "funcname": "as.character.Date",
+    "tag": "conversion"
   },
   {
     "id": "as.character.default",
@@ -812,107 +964,115 @@
     "href": "/detail/base/assymbol11list.html",
     "funcname": "as.list",
     "svg": "list-bullets-light.svg",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.data.frame",
     "href": "/detail/base/assymbol11listsymbol11datasymbol11frame.html",
     "funcname": "as.list.data.frame",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.Date",
     "href": "/detail/base/assymbol11listsymbol11Date.html",
     "funcname": "as.list.Date",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.default",
     "href": "/detail/base/assymbol11listsymbol11default.html",
     "funcname": "as.list.default",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.difftime",
     "href": "/detail/base/assymbol11listsymbol11difftime.html",
     "funcname": "as.list.difftime",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.environment",
     "href": "/detail/base/assymbol11listsymbol11environment.html",
     "funcname": "as.list.environment",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.factor",
     "href": "/detail/base/assymbol11listsymbol11factor.html",
     "funcname": "as.list.factor",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.function",
     "href": "/detail/base/assymbol11listsymbol11function.html",
     "funcname": "as.list.function",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.numeric_version",
     "href": "/detail/base/assymbol11listsymbol11numeric_version.html",
     "funcname": "as.list.numeric_version",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.POSIXct",
     "href": "/detail/base/assymbol11listsymbol11POSIXct.html",
     "funcname": "as.list.POSIXct",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.list.POSIXlt",
     "href": "/detail/base/assymbol11listsymbol11POSIXlt.html",
     "funcname": "as.list.POSIXlt",
-"tag":"list"
+    "tag": "data"
   },
   {
     "id": "as.logical",
     "href": "/detail/base/assymbol11logical.html",
-    "funcname": "as.logical"
+    "funcname": "as.logical",
+    "tag": "data"
   },
   {
     "id": "as.logical.factor",
     "href": "/detail/base/assymbol11logicalsymbol11factor.html",
-    "funcname": "as.logical.factor"
+    "funcname": "as.logical.factor",
+    "tag": "data"
   },
   {
     "id": "as.matrix",
     "href": "/detail/base/assymbol11matrix.html",
-    "funcname": "as.matrix"
+    "funcname": "as.matrix",
+    "tag": "data"
   },
   {
     "id": "as.matrix.data.frame",
     "href": "/detail/base/assymbol11matrixsymbol11datasymbol11frame.html",
-    "funcname": "as.matrix.data.frame"
+    "funcname": "as.matrix.data.frame",
+    "tag": "data"
   },
   {
     "id": "as.matrix.default",
     "href": "/detail/base/assymbol11matrixsymbol11default.html",
-    "funcname": "as.matrix.default"
+    "funcname": "as.matrix.default",
+    "tag": "data"
   },
   {
     "id": "as.matrix.noquote",
     "href": "/detail/base/assymbol11matrixsymbol11noquote.html",
-    "funcname": "as.matrix.noquote"
+    "funcname": "as.matrix.noquote",
+    "tag": "data"
   },
   {
     "id": "as.matrix.POSIXlt",
     "href": "/detail/base/assymbol11matrixsymbol11POSIXlt.html",
-    "funcname": "as.matrix.POSIXlt"
+    "funcname": "as.matrix.POSIXlt",
+    "tag": "data"
   },
   {
     "id": "as.name",
     "href": "/detail/base/assymbol11name.html",
-    "funcname": "as.name"
+    "funcname": "as.name",
+    "tag": ""
   },
   {
     "id": "as.null",
@@ -949,8 +1109,7 @@
     "id": "as.package_version",
     "href": "/detail/base/assymbol11package_version.html",
     "funcname": "as.package_version",
-"tag":
-"system"
+    "tag": "system"
   },
   {
     "id": "as.pairlist",
@@ -1056,12 +1215,14 @@
   {
     "id": "as.vector",
     "href": "/detail/base/assymbol11vector.html",
-    "funcname": "as.vector"
+    "funcname": "as.vector",
+    "tag": "conversion"
   },
   {
     "id": "as.vector.factor",
     "href": "/detail/base/assymbol11vectorsymbol11factor.html",
-    "funcname": "as.vector.factor"
+    "funcname": "as.vector.factor",
+    "tag": "conversion"
   },
   { "id": "asin", "href": "/detail/base/asin.html", "funcname": "asin" },
   { "id": "asinh", "href": "/detail/base/asinh.html", "funcname": "asinh" },
@@ -1382,22 +1543,23 @@
     "href": "/detail/base/closeAllConnections.html",
     "funcname": "closeAllConnections"
   },
-  { "id": "col", "href": "/detail/base/col.html", "funcname": "col" ,
-"tag":
-"dataframe"},
+  {
+    "id": "col",
+    "href": "/detail/base/col.html",
+    "funcname": "col",
+    "tag": "dataframe"
+  },
   {
     "id": "colMeans",
     "href": "/detail/base/colMeans.html",
     "funcname": "colMeans",
-"tag":
-"dataframe"
+    "tag": "dataframe"
   },
   {
     "id": "colnames",
     "href": "/detail/base/colnames.html",
     "funcname": "colnames",
-"tag":
-"dataframe"
+    "tag": "dataframe"
   },
   {
     "id": "colnames<-",

@@ -14,19 +14,32 @@
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
   <script src="jquery.js"></script>
   <script src="slick-1.8.1/slick/slick.min.js"></script>
-  s
 </head>
 <body>
-  <form action="search.html" method="get">
-    <input type="text" name="keyword" placeholder="キーワードを入力" />
-    <button id="reserch"></button>
+  <form id="search" action="/r-jp-doc/search.html" method="get">
+    <input
+      type="text"
+      id="keywordbox"
+      name="keyword"
+      placeholder="キーワードを入力"
+    />
+    <div id="autocomplete">
+      <ul id="autocompletelist"></ul>
+    </div>
+    <button type="submit" id="reserch">
+      <img
+        src="www/magnifying-glass-duotone.svg"
+        alt="SVG"
+        id="magnifying-glass-duotone"
+      />
+    </button>
   </form>
 
   <div class="sec_inner">
     <div
       style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
     >
-      <h1 style="font-size: 50px">base</h1>
+      <h1 style="font-size: 50px; font-family: sans-serif">base</h1>
       <nav>
         <a
           href="/r-jp-doc/infopage/base.html"
@@ -42,7 +55,7 @@
   </div>
   <div class="sec_inner">
     <div style="position: fixed; top: 0; transform: translateX(12px)">
-      <h1 style="font-size: 50px">graphics</h1>
+      <h1 style="font-size: 50px; font-family: sans-serif">graphics</h1>
       <nav>
         <a
           href="/r-jp-doc/infopage/graphics.html"
@@ -52,7 +65,16 @@
         >
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translatex(314px)">
+    <div
+      class="border-box"
+      style="
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 70%;
+        transform: translatex(-35px);
+      "
+    >
       <div class="slick-slider" id="graphics_slider"></div>
     </div>
   </div>
@@ -60,7 +82,7 @@
     <div
       style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
     >
-      <h1 style="font-size: 50px">psych</h1>
+      <h1 style="font-size: 50px; font-family: sans-serif">psych</h1>
       <nav>
         <a
           href="/r-jp-doc/infopage/psych.html"
@@ -76,7 +98,7 @@
   </div>
   <div class="sec_inner">
     <div style="position: fixed; top: 0; transform: translateX(12px)">
-      <h1 style="font-size: 50px">stats</h1>
+      <h1 style="font-size: 50px; font-family: sans-serif">stats</h1>
       <nav>
         <a
           href="/r-jp-doc/infopage/stats.html"
@@ -86,7 +108,16 @@
         >
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translatex(314px)">
+    <div
+      class="border-box"
+      style="
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 70%;
+        transform: translatex(-35px);
+      "
+    >
       <div class="slick-slider" id="stats_slider"></div>
     </div>
   </div>
@@ -137,5 +168,64 @@
         });
       };
     }
+
+    const db_path = "help_db_raw.json";
+    const help_db_raw = new XMLHttpRequest();
+    help_db_raw.open("GET", db_path, true);
+    help_db_raw.send();
+    help_db_raw.onload = function () {
+      const help_db = JSON.parse(help_db_raw.responseText);
+      document
+        .getElementById("keywordbox")
+        .addEventListener("input", function (event) {
+          const input = event.target.value;
+          if (input === "") {
+            if (document.querySelector(".list")) {
+              const list = document.querySelectorAll(".list");
+              list.forEach(function (item) {
+                const autocompletelist =
+                  document.getElementById("autocompletelist");
+                autocompletelist.removeChild(item);
+              });
+            }
+          } else {
+            const result_autocomplete = getAutocompleteresults(input);
+            displayAutocomplete(result_autocomplete);
+          }
+        });
+      function getAutocompleteresults(input) {
+        const help_db_func = help_db.map((item) => item.func);
+        const results = help_db_func.filter(function (option) {
+          return option.toLowerCase().includes(input.toLowerCase());
+        });
+        return results;
+        console.log(results);
+      }
+      function displayAutocomplete(result) {
+        const autocompletelist = document.getElementById("autocompletelist");
+        autocompletelist.innerHTML = "";
+        result.forEach(function (item) {
+          const listItem = document.createElement("li");
+          listItem.className = "list";
+          listItem.textContent = item;
+          autocompletelist.appendChild(listItem);
+          listItem.addEventListener("click", function () {
+            document.getElementById("keywordbox").value = item;
+            autocompletelist.innerHTML = "";
+          });
+        });
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document
+        .getElementById("search")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const keyword = document.getElementById("keywordbox").value;
+          window.location.href =
+            "/r-jp-doc/search.html?keyword=" + encodeURIComponent(keyword);
+        });
+    });
   </script>
 </body>
