@@ -1,3 +1,23 @@
+#search {
+  transform: translate(20%, 54px);
+}
+#keywordbox {
+  height: 70px;
+  width: 520px;
+  border-radius: 510.194px;
+  stroke: #000;
+  stroke-width: 1px;
+}
+#reserch {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(127, 255, 212, 0);
+  border-color: #00000000;
+  right: 0;
+  top: 0;
+  transform: translate(-90px, 25px);
+}
+
 #magnifying-glass-duotone {
   width: 60px;
   height: 60px;
@@ -123,7 +143,6 @@
     position: fixed;
     right: 0;
     top: 0;
-    width: 70%;
     transform: translateX(-35px);
   }
 }
