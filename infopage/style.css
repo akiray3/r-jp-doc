@@ -11,6 +11,16 @@
   border: 1px solid #000;
   transform: translate(21.529px,57.832px);
 }
+.tagbutton{
+  border-radius: 9.194px;
+  stroke:#243D25;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5;
+  font-size: 17px;
+  background-color: #00000000;
+border: 0.5px solid #000;
+
+}
 @media screen and (max-width: 395px) {
   .lineitem {
     display: inline-block;
@@ -40,4 +50,9 @@
     width: 274.045px;
     height: 100.124px;
   }
+}
+
+
+.slidermenu_base.none{
+  display: none;
 }

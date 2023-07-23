@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="style_search.css" type="text/css" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
   <title>search</title>
@@ -29,8 +29,7 @@
           "検索結果はありませんでした。違う単語を入れてみてください。"
         );
         ptag.appendChild(message);
-        lineitem.appendChild(ptag);
-        namebox.classList.add("none");
+        body.appendChild(ptag);
       } else {
         const namelist = getAutocompleteresults(keyword);
         console.log(namelist);

@@ -28,13 +28,13 @@
     "id": "::",
     "href": "/detail/base/symbol6symbol6.html",
     "funcname": "::",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": ":::",
     "href": "/detail/base/symbol6symbol6symbol6.html",
     "funcname": ":::",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "!",
@@ -64,13 +64,13 @@
     "id": "(",
     "href": "/detail/base/(.html",
     "funcname": "(",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "[",
     "href": "/detail/base/[.html",
     "funcname": "[",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "[.AsIs",
@@ -157,7 +157,7 @@
     "id": "[.simple.list",
     "href": "/detail/base/[symbol11simplesymbol11list.html",
     "funcname": "[.simple.list",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "[.table",
@@ -175,7 +175,7 @@
     "id": "[[",
     "href": "/detail/base/[[.html",
     "funcname": "[[",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "[[.data.frame",
@@ -217,7 +217,7 @@
     "id": "[[<-",
     "href": "/detail/base/[[symbol9-.html",
     "funcname": "[[<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "[[<-.data.frame",
@@ -229,7 +229,7 @@
     "id": "[[<-.factor",
     "href": "/detail/base/[[symbol9-symbol11factor.html",
     "funcname": "[[<-.factor",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "[[<-.numeric_version",
@@ -287,25 +287,25 @@
     "id": "{",
     "href": "/detail/base/{.html",
     "funcname": "{",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "@",
     "href": "/detail/base/@.html",
     "funcname": "@",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "@<-",
     "href": "/detail/base/@symbol9-.html",
     "funcname": "@<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "*",
     "href": "/detail/base/symbol5.html",
     "funcname": "*",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "*.difftime",
@@ -316,7 +316,7 @@
     "id": "/",
     "href": "/detail/base/symbol1.html",
     "funcname": "/",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "/.difftime",
@@ -328,7 +328,7 @@
     "id": "&",
     "href": "/detail/base/&.html",
     "funcname": "&",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "&.hexmode",
@@ -346,61 +346,61 @@
     "id": "&&",
     "href": "/detail/base/&&.html",
     "funcname": "&&",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "%*%",
     "href": "/detail/base/symbol4symbol5symbol4.html",
     "funcname": "%*%",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "%/%",
     "href": "/detail/base/symbol4symbol1symbol4.html",
     "funcname": "%/%",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "%%",
     "href": "/detail/base/symbol4symbol4.html",
     "funcname": "%%",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "%in%",
     "href": "/detail/base/symbol4insymbol4.html",
     "funcname": "%in%",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "%o%",
     "href": "/detail/base/symbol4osymbol4.html",
     "funcname": "%o%",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "%x%",
     "href": "/detail/base/symbol4xsymbol4.html",
     "funcname": "%x%",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "^",
     "href": "/detail/base/^.html",
     "funcname": "^",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "+",
     "href": "/detail/base/+.html",
     "funcname": "+",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "+.Date",
     "href": "/detail/base/+symbol11Date.html",
     "funcname": "+.Date",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "+.POSIXt",
@@ -412,55 +412,55 @@
     "id": "<",
     "href": "/detail/base/symbol9.html",
     "funcname": "<",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "<-",
     "href": "/detail/base/symbol9-.html",
     "funcname": "<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "<<-",
     "href": "/detail/base/symbol9symbol9-.html",
     "funcname": "<<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "<=",
     "href": "/detail/base/symbol9=.html",
     "funcname": "<=",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "=",
     "href": "/detail/base/=.html",
     "funcname": "=",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "==",
     "href": "/detail/base/==.html",
     "funcname": "==",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": ">",
     "href": "/detail/base/symbol10.html",
     "funcname": ">",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": ">=",
     "href": "/detail/base/symbol10=.html",
     "funcname": ">=",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "|",
     "href": "/detail/base/symbol7.html",
     "funcname": "|",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "|.hexmode",
@@ -478,19 +478,19 @@
     "id": "||",
     "href": "/detail/base/symbol7symbol7.html",
     "funcname": "||",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "~",
     "href": "/detail/base/~.html",
     "funcname": "~",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "$",
     "href": "/detail/base/$.html",
     "funcname": "$",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "$.DLLInfo",
@@ -508,7 +508,7 @@
     "id": "$<-",
     "href": "/detail/base/$symbol9-.html",
     "funcname": "$<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "$<-.data.frame",
@@ -544,13 +544,13 @@
     "id": "activeBindingFunction",
     "href": "/detail/base/activeBindingFunction.html",
     "funcname": "activeBindingFunction",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "addNA",
     "href": "/detail/base/addNA.html",
     "funcname": "addNA",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "addTaskCallback",
@@ -772,7 +772,7 @@
     "id": "Arg",
     "href": "/detail/base/Arg.html",
     "funcname": "Arg",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "args",
@@ -1454,49 +1454,49 @@
     "id": "attachNamespace",
     "href": "/detail/base/attachNamespace.html",
     "funcname": "attachNamespace",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "attr",
     "href": "/detail/base/attr.html",
     "funcname": "attr",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "attr.all.equal",
     "href": "/detail/base/attrsymbol11allsymbol11equal.html",
     "funcname": "attr.all.equal",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "attr<-",
     "href": "/detail/base/attrsymbol9-.html",
     "funcname": "attr<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "attributes",
     "href": "/detail/base/attributes.html",
     "funcname": "attributes",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "attributes<-",
     "href": "/detail/base/attributessymbol9-.html",
     "funcname": "attributes<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "autoload",
     "href": "/detail/base/autoload.html",
     "funcname": "autoload",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "autoloader",
     "href": "/detail/base/autoloader.html",
     "funcname": "autoloader",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "backsolve",
@@ -1617,13 +1617,13 @@
     "id": "bquote",
     "href": "/detail/base/bquote.html",
     "funcname": "bquote",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "break",
     "href": "/detail/base/break.html",
     "funcname": "break",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "browser",
@@ -1653,37 +1653,37 @@
     "id": "builtins",
     "href": "/detail/base/builtins.html",
     "funcname": "builtins",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "by",
     "href": "/detail/base/by.html",
     "funcname": "by",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "by.data.frame",
     "href": "/detail/base/bysymbol11datasymbol11frame.html",
     "funcname": "by.data.frame",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "by.default",
     "href": "/detail/base/bysymbol11default.html",
     "funcname": "by.default",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "bzfile",
     "href": "/detail/base/bzfile.html",
     "funcname": "bzfile",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "c",
     "href": "/detail/base/c.html",
     "funcname": "c",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "c.Date",
@@ -1788,7 +1788,7 @@
     "id": "char.expand",
     "href": "/detail/base/charsymbol11expand.html",
     "funcname": "char.expand",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "character",
@@ -1801,13 +1801,13 @@
     "id": "charmatch",
     "href": "/detail/base/charmatch.html",
     "funcname": "charmatch",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "charToRaw",
     "href": "/detail/base/charToRaw.html",
     "funcname": "charToRaw",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "chartr",
@@ -1855,19 +1855,19 @@
     "id": "class",
     "href": "/detail/base/class.html",
     "funcname": "class",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "class<-",
     "href": "/detail/base/classsymbol9-.html",
     "funcname": "class<-",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "clearPushBack",
     "href": "/detail/base/clearPushBack.html",
     "funcname": "clearPushBack",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "close",
@@ -2774,7 +2774,7 @@
     "href": "/detail/base/for.html",
     "funcname": "for",
     "svg": "arrows-clockwise-light.svg",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "force",
@@ -2926,7 +2926,7 @@
     "href": "/detail/base/function.html",
     "funcname": "function",
     "svg": "code-block-light.svg",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "gamma",
@@ -3022,7 +3022,7 @@
     "id": "getElement",
     "href": "/detail/base/getElement.html",
     "funcname": "getElement",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "geterrmessage",
@@ -3244,31 +3244,31 @@
     "id": "identical",
     "href": "/detail/base/identical.html",
     "funcname": "identical",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "identity",
     "href": "/detail/base/identity.html",
     "funcname": "identity",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "if",
     "href": "/detail/base/if.html",
     "funcname": "if",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "ifelse",
     "href": "/detail/base/ifelse.html",
     "funcname": "ifelse",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "Im",
     "href": "/detail/base/Im.html",
     "funcname": "Im",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "importIntoEnv",
@@ -3424,7 +3424,7 @@
     "id": "is.function",
     "href": "/detail/base/issymbol11function.html",
     "funcname": "is.function",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "is.infinite",
@@ -3448,7 +3448,7 @@
     "id": "is.list",
     "href": "/detail/base/issymbol11list.html",
     "funcname": "is.list",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "is.loaded",
@@ -3586,13 +3586,13 @@
     "id": "is.pairlist",
     "href": "/detail/base/issymbol11pairlist.html",
     "funcname": "is.pairlist",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "is.primitive",
     "href": "/detail/base/issymbol11primitive.html",
     "funcname": "is.primitive",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "is.qr",
@@ -3640,7 +3640,7 @@
     "id": "is.unsorted",
     "href": "/detail/base/issymbol11unsorted.html",
     "funcname": "is.unsorted",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "is.vector",
@@ -3652,7 +3652,7 @@
     "id": "isa",
     "href": "/detail/base/isa.html",
     "funcname": "isa",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "isatty",
@@ -3719,7 +3719,7 @@
     "id": "isS4",
     "href": "/detail/base/isS4.html",
     "funcname": "isS4",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "isSeekable",
@@ -3827,13 +3827,13 @@
     "id": "labels",
     "href": "/detail/base/labels.html",
     "funcname": "labels",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "labels.default",
     "href": "/detail/base/labelssymbol11default.html",
     "funcname": "labels.default",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "lapply",
@@ -4020,7 +4020,7 @@
     "id": "list",
     "href": "/detail/base/list.html",
     "funcname": "list",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "list.dirs",
@@ -4584,14 +4584,14 @@
     "id": "numToBits",
     "href": "/detail/base/numToBits.html",
     "funcname": "numToBits",
-    "tag": "operater"
+    "tag": "operator"
   },
 
   {
     "id": "numToInts",
     "href": "/detail/base/numToInts.html",
     "funcname": "numToInts",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "nzchar",
@@ -4653,13 +4653,13 @@
     "id": "open.srcfilealias",
     "href": "/detail/base/opensymbol11srcfilealias.html",
     "funcname": "open.srcfilealias",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "open.srcfilecopy",
     "href": "/detail/base/opensymbol11srcfilecopy.html",
     "funcname": "open.srcfilecopy",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "Ops.data.frame",
@@ -4762,7 +4762,7 @@
     "id": "packBits",
     "href": "/detail/base/packBits.html",
     "funcname": "packBits",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "pairlist",
@@ -4927,7 +4927,7 @@
     "id": "print.AsIs",
     "href": "/detail/base/printsymbol11AsIs.html",
     "funcname": "print.AsIs",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "print.by",
@@ -5373,13 +5373,13 @@
     "id": "rawShift",
     "href": "/detail/base/rawShift.html",
     "funcname": "rawShift",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "rawToBits",
     "href": "/detail/base/rawToBits.html",
     "funcname": "rawToBits",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "rawToChar",
@@ -7298,7 +7298,7 @@
     "id": "which",
     "href": "/detail/base/which.html",
     "funcname": "which",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "which.max",
@@ -7316,13 +7316,13 @@
     "id": "while",
     "href": "/detail/base/while.html",
     "funcname": "while",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "with",
     "href": "/detail/base/with.html",
     "funcname": "with",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "with.default",
@@ -7346,7 +7346,7 @@
     "id": "within",
     "href": "/detail/base/within.html",
     "funcname": "within",
-    "tag": "operater"
+    "tag": "operator"
   },
   {
     "id": "within.data.frame",
