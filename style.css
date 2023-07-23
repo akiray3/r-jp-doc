@@ -1,47 +1,3 @@
-@media screen and (max-width: 395px) {
-  #search {
-    transform: translate(0%, 54px);
-  }
-  #keywordbox {
-    height: 70px;
-    width: 350px;
-    border-radius: 510.194px;
-    stroke: #000;
-    stroke-width: 1px;
-  }
-  #reserch {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(127, 255, 212, 0);
-    border-color: #00000000;
-    right: 0;
-    top: 0;
-    transform: translate(294px, -90px);
-  }
-}
-
-@media screen and (min-width: 395px) {
-  #search {
-    transform: translate(20%, 54px);
-  }
-  #keywordbox {
-    height: 70px;
-    width: 520px;
-    border-radius: 510.194px;
-    stroke: #000;
-    stroke-width: 1px;
-  }
-  #reserch {
-    width: 60px;
-    height: 60px;
-    background-color: rgba(127, 255, 212, 0);
-    border-color: #00000000;
-    right: 0;
-    top: 0;
-    transform: translate(464px, -90px);
-  }
-}
-
 #magnifying-glass-duotone {
   width: 60px;
   height: 60px;
@@ -56,22 +12,64 @@
   font-size: 24px;
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 420px) {
   .sec_inner {
     white-space: nrowrap;
     width: 100%;
-    height: 190px;
+    height: 370px;
     border-radius: 9.194px;
-    stroke: rgb(90, 255, 96);
+    stroke: rgba(21, 21, 21, 0);
     stroke-miterlimit: 10;
     stroke-width: 1;
     border: 2px solid rgb(0, 0, 0);
-    transform: translate(21.529px, 57.832px);
+    transform: translate(0px, 57.832px);
     margin-top: 3%;
+  }
+  #base_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-15px);
+  }
+  #base_borderbox {
+    position: fixed;
+    transform: translate(30px, 0px);
+    margin-top: 20%;
+  }
+  #graphics_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(10px);
+  }
+  #graphics_borderbox {
+    position: fixed;
+    transform: translate(92px, 0px);
+    margin-top: 30%;
+  }
+  #psych_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-15px);
+  }
+  #psych_borderbox {
+    position: fixed;
+    transform: translate(30px, 0px);
+    margin-top: 20%;
+  }
+  #stats_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(10px);
+  }
+  #stats_borderbox {
+    position: fixed;
+    transform: translate(92px, 0px);
+    margin-top: 30%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 420px) {
   .sec_inner {
     white-space: nrowrap;
     width: 100%;
@@ -82,22 +80,51 @@
     stroke-width: 1;
     border: 2px solid rgb(0, 0, 0);
     transform: translate(21.529px, 57.832px);
-
     margin-top: 3%;
   }
-}
-@media screen and (min-width: 768px) {
-  .sec_inner {
-    white-space: nrowrap;
-    width: 100%;
-    height: 250px;
-    border-radius: 9.194px;
-    stroke: rgb(36, 61, 37);
-    stroke-miterlimit: 10;
-    stroke-width: 1;
-    border: 2px solid rgb(0, 0, 0);
-    transform: translate(21.529px, 57.832px);
-    margin-top: 3%;
+  #base_borderbox {
+    width: 70%;
+    transform: translate(30px);
+  }
+  #base_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-35px);
+  }
+  #graphics_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(12px);
+  }
+  #graphics_borderbox {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70%;
+    transform: translateX(-35px);
+  }
+  #psych_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-35px);
+  }
+  #psych_borderbox {
+    width: 70%;
+    transform: translate(30px);
+  }
+  #stats_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(12px);
+  }
+  #stats_borderbox {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70%;
+    transform: translateX(-35px);
   }
 }
 

@@ -39,9 +39,7 @@
   </form>
 
   <div class="sec_inner">
-    <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
-    >
+    <div id="base_sec_inner">
       <h1 style="font-size: 50px; font-family: sans-serif">base</h1>
       <nav>
         <a
@@ -52,12 +50,12 @@
         >
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translate(30px)">
+    <div class="border-box" id="base_borderbox">
       <div class="slick-slider" id="base_slider"></div>
     </div>
   </div>
   <div class="sec_inner">
-    <div style="position: fixed; top: 0; transform: translateX(12px)">
+    <div id="graphics_sec_inner">
       <h1 style="font-size: 50px; font-family: sans-serif">graphics</h1>
       <nav>
         <a
@@ -68,23 +66,12 @@
         >
       </nav>
     </div>
-    <div
-      class="border-box"
-      style="
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 70%;
-        transform: translatex(-35px);
-      "
-    >
+    <div class="border-box" id="graphics_borderbox">
       <div class="slick-slider" id="graphics_slider"></div>
     </div>
   </div>
   <div class="sec_inner">
-    <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
-    >
+    <div id="psych_sec_inner">
       <h1 style="font-size: 50px; font-family: sans-serif">psych</h1>
       <nav>
         <a
@@ -95,12 +82,14 @@
         >
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translate(30px)">
+    <div class="border-box" id="psych_borderbox">
       <div class="slick-slider" id="psych_slider"></div>
     </div>
   </div>
   <div class="sec_inner">
-    <div style="position: fixed; top: 0; transform: translateX(12px)">
+    <div
+      id="stats_sec_inner"
+    >
       <h1 style="font-size: 50px; font-family: sans-serif">stats</h1>
       <nav>
         <a
@@ -111,22 +100,14 @@
         >
       </nav>
     </div>
-    <div
-      class="border-box"
-      style="
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 70%;
-        transform: translatex(-35px);
-      "
-    >
+    <div class="border-box" id="stats_borderbox">
       <div class="slick-slider" id="stats_slider"></div>
     </div>
   </div>
 
   <script>
     const list = ["base", "graphics", "psych", "stats"];
+    const windowSize = window.innerWidth;
 
     for (let b = 0; b < list.length; b++) {
       const path = `infopage/${list[b]}.json`;
@@ -162,9 +143,8 @@
           }
         }
 
-        const windowSize = window.innerWidth;
         console.log(windowSize);
-        if (windowSize <= 416) {
+        if (windowSize <= 420) {
           $("#" + list[b] + "_slider").slick({
             slidesToShow: 1,
             adaptiveHeight: true,
@@ -173,8 +153,10 @@
             preloadImages: true,
             lazyload: "ondemand",
             LoadBuffer: 0,
+            autoplay: true,
+            autoplaySpeed: 8000,
           });
-        } else if (windowSize <= 768) {
+        } else if (windowSize <= 768 && windowSize > 420) {
           $("#" + list[b] + "_slider").slick({
             slidesToShow: 2,
             adaptiveHeight: true,
@@ -183,8 +165,10 @@
             preloadImages: true,
             lazyload: "ondemand",
             LoadBuffer: 0,
+            autoplay: true,
+            autoplaySpeed: 8000,
           });
-        } else {
+        } else if (windowSize > 768) {
           $("#" + list[b] + "_slider").slick({
             slidesToShow: 3,
             adaptiveHeight: true,
@@ -193,6 +177,8 @@
             preloadImages: true,
             lazyload: "ondemand",
             LoadBuffer: 0,
+            autoplay: true,
+            autoplaySpeed: 8000,
           });
         }
         $(".lazyload").slick({
