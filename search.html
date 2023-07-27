@@ -57,11 +57,11 @@
 
           const funcname = help_db.filter((obj) => obj.func === item);
           const pack = funcname.pack;
-          atag.href = "detail/detailpage.html";
+          atag.href = "/r-jp-doc/detail/detailpage.html";
 
           button.addEventListener("click", (event) => {
             event.preventDefault();
-            window.location.href = `detail/detailpage.html?keyword=${item}`;
+            window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${item}`;
           });
         });
       }

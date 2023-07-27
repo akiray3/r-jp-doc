@@ -122,10 +122,10 @@
             slide.className = "slick-slide";
             slide.id = list[b] + "_slide_" + i;
             const slide_link = document.createElement("a");
-            slide_link.href = "detail/detailpage.html";
+            slide_link.href = "/r-jp-doc/detail/detailpage.html";
             slide.addEventListener("click", (event) => {
               event.preventDefault();
-              window.location.href = `detail/detailpage.html?keyword=${jsondata[i].funcname}`;
+              window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${jsondata[i].funcname}`;
             });
             const imgbox = document.createElement("img");
             imgbox.classList.add("lazyload");
@@ -239,7 +239,7 @@
         .addEventListener("submit", function (event) {
           event.preventDefault();
           const keyword = document.getElementById("keywordbox").value;
-          window.location.href = `search.html?keyword=${keyword}`;
+          window.location.href = `/r-jp-doc/search.html?keyword=${keyword}`;
         });
     });
   </script>
