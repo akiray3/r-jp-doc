@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentURL = window.location.search;
   const urlParams = new URLSearchParams(currentURL);
   const keyword = urlParams.get("keyword");
-  console.log(keyword);
 
   const path = "../../help_db_jpn_main.json";
   const jsonfile = new XMLHttpRequest();
@@ -160,6 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
           txt.addEventListener("touchstart", function () {
             if (hoverjudge()) {
               hovinfo.style.display = "block";
+
               if (document.querySelector(".funcimage")) {
                 const image = document.querySelector(".funcimage");
                 image.style.display = "none";
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       //hover size
-       const heightblock = argblock.offsetHeight;
+      const heightblock = argblock.offsetHeight;
       const hovinfo = document.querySelectorAll(".hover");
       for (let i = 0; i < hovinfo.length; i++) {
         hovinfo[i].style.height = `${heightblock + 20}px`;
@@ -223,73 +223,140 @@ function openTab(event, tabId) {
   const clicktab = event.currentTarget;
   const clickedcontent = document.querySelector("#" + tabId);
   clicktab.classList.add("active");
-
   clickedcontent.style.display = "block";
 }
+
 document.addEventListener("DOMContentLoaded", function () {
-  const currentURL = window.location.search;
-  const urlParams = new URLSearchParams(currentURL);
-  const keyword = urlParams.get("keyword");
+  if (window.innerWidth > 420 ) {
+    const currentURL = window.location.search;
+    const urlParams = new URLSearchParams(currentURL);
+    const keyword = urlParams.get("keyword");
+    const tabcontent = document.querySelector("#forPcTabContents");
 
-  const tabcontent = document.querySelector(".tabs");
+    const Descriptionbox = document.createElement("div");
+    Descriptionbox.classList.add("content");
+    Descriptionbox.setAttribute("id", "Description_forpc_cont");
 
-  const Descriptionbox = document.createElement("div");
-  Descriptionbox.classList.add("content");
-  Descriptionbox.setAttribute("id", "Description");
+    const Valuebox = document.createElement("div");
+    Valuebox.classList.add("content");
+    Valuebox.setAttribute("id", "Value_forpc_cont");
 
-  const Valuebox = document.createElement("div");
-  Valuebox.classList.add("content");
-  Valuebox.setAttribute("id", "Value");
+    const Detailsbox = document.createElement("div");
+    Detailsbox.classList.add("content");
+    Detailsbox.setAttribute("id", "Details_forpc_cont");
 
-  const Detailsbox = document.createElement("div");
-  Detailsbox.classList.add("content");
-  Detailsbox.setAttribute("id", "Details");
+    const Examplesbox = document.createElement("div");
+    Examplesbox.classList.add("content");
+    Examplesbox.setAttribute("id", "Examples_forpc_cont");
 
-  const Examplesbox = document.createElement("div");
-  Examplesbox.classList.add("content");
-  Examplesbox.setAttribute("id", "Examples");
+    const Referencesbox = document.createElement("div");
+    Referencesbox.classList.add("content");
+    Referencesbox.setAttribute("id", "Referrences_forpc_cont");
 
-  const Referencesbox = document.createElement("div");
-  Referencesbox.classList.add("content");
-  Referencesbox.setAttribute("id", "References");
+    const See_Alsobox = document.createElement("div");
+    See_Alsobox.classList.add("content");
+    See_Alsobox.setAttribute("id", "See_Also_forpc_cont");
 
-  const See_Alsobox = document.createElement("div");
-  See_Alsobox.classList.add("content");
-  See_Alsobox.setAttribute("id", "See_Also");
+    const path = "../../help_db_jpn_main.json";
+    const load = new XMLHttpRequest();
+    load.open("GET", path, true);
+    load.send();
+    load.onload = function () {
+      const jsondata = JSON.parse(load.responseText);
+      const findfunc = jsondata.find((obj) => obj.func === keyword);
+      const Descriptiontxt = document.createTextNode(
+        findfunc.Description.value
+      );
+      Descriptionbox.appendChild(Descriptiontxt);
+      tabcontent.appendChild(Descriptionbox);
 
-  const path = "../../help_db_jpn_main.json";
-  const load = new XMLHttpRequest();
-  load.open("GET", path, true);
-  load.send();
-  load.onload = function () {
-    const jsondata = JSON.parse(load.responseText);
-    const title = document.head.querySelector("title").textContent;
-    const findfunc = jsondata.find((obj) => obj.func === keyword);
+      const Valuetxt = document.createTextNode(findfunc.Value);
+      Valuebox.appendChild(Valuetxt);
+      tabcontent.appendChild(Valuebox);
 
-    const Descriptiontxt = document.createTextNode(findfunc.Description.value);
-    Descriptionbox.appendChild(Descriptiontxt);
-    tabcontent.appendChild(Descriptionbox);
+      const Detailstxt = document.createTextNode(findfunc.Details);
+      Detailsbox.appendChild(Detailstxt);
+      tabcontent.appendChild(Detailsbox);
 
-    const Valuetxt = document.createTextNode(findfunc.Value);
-    Valuebox.appendChild(Valuetxt);
-    tabcontent.appendChild(Valuebox);
+      const Examplestxt = document.createTextNode(findfunc.Examples);
+      Examplesbox.appendChild(Examplestxt);
+      tabcontent.appendChild(Examplesbox);
 
-    const Detailstxt = document.createTextNode(findfunc.Details);
-    Detailsbox.appendChild(Detailstxt);
-    tabcontent.appendChild(Detailsbox);
+      const Referencestxt = document.createTextNode(findfunc.References);
+      Referencesbox.appendChild(Referencestxt);
+      tabcontent.appendChild(Referencesbox);
 
-    const Examplestxt = document.createTextNode(findfunc.Examples);
-    Examplesbox.appendChild(Examplestxt);
-    tabcontent.appendChild(Examplesbox);
+      const See_Alsotxt = document.createTextNode(findfunc.See_Also);
+      See_Alsobox.appendChild(See_Alsotxt);
+      tabcontent.appendChild(See_Alsobox);
 
-    const Referencestxt = document.createTextNode(findfunc.References);
-    Referencesbox.appendChild(Referencestxt);
-    tabcontent.appendChild(Referencesbox);
+      //デフォルトでDescriptionを開く
+      document.querySelector("#Description_forpc").click();
+    };
+  } else if (window.innerWidth <= 420) {
+    const currentURL = window.location.search;
+    const urlParams = new URLSearchParams(currentURL);
+    const keyword = urlParams.get("keyword");
+    console.log(keyword);
+    //Mobile
+    const DesContent = document.querySelector("#Description_contents");
+    const ValContent = document.querySelector("#Value_contents");
+    const DetContent = document.querySelector("#Details_contents");
+    const ExaContent = document.querySelector("#Examples_contents");
+    const RefContent = document.querySelector("#Referrences_contents");
+    const SeeContent = document.querySelector("#See_Also_contents");
 
-    const See_Alsotxt = document.createTextNode(findfunc.See_Also);
-    See_Alsobox.appendChild(See_Alsotxt);
-    tabcontent.appendChild(See_Alsobox);
+    const path = "../../help_db_jpn_main.json";
+    const load = new XMLHttpRequest();
+    load.open("GET", path, true);
+    load.send();
 
-    document.querySelector("#default").click();
-  };
+    load.onload = function () {
+      const jsondata = JSON.parse(load.responseText);
+      console.log(keyword);
+      const findfunc = jsondata.find((obj) => obj.func === keyword);
+      console.log(findfunc);
+      if (findfunc.Description.value) {
+        const Descriptiontxt = document.createTextNode(
+          findfunc.Description.value
+        );
+        DesContent.appendChild(Descriptiontxt);
+      } else {
+      }
+
+      if (findfunc.Value) {
+        const Valuetxt = document.createTextNode(findfunc.Value);
+        ValContent.appendChild(Valuetxt);
+      } else {
+      }
+      if (findfunc.Details.value) {
+        const Detailstxt = document.createTextNode(findfunc.Details.value);
+        DetContent.appendChild(Detailstxt);
+      } else {
+      }
+      if (findfunc.Examples) {
+        const Examplestxt = document.createTextNode(findfunc.Examples);
+        ExaContent.appendChild(Examplestxt);
+      } else {
+      }
+      if (findfunc.References) {
+        const Referencestxt = document.createTextNode(findfunc.References);
+        RefContent.appendChild(Referencestxt);
+      } else {
+      }
+      if (findfunc.See_Also) {
+        const See_Alsotxt = document.createTextNode(findfunc.See_Also);
+        SeeContent.appendChild(See_Alsotxt);
+      } else {
+      }
+    };
+  }
+  $(document).ready(function () {
+    $(".slick-slider").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+    });
+  });
 });

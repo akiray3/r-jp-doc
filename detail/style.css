@@ -12,12 +12,12 @@ CSS記述の順番
 
 /* 関数*/
 /*関数全体ブロック*/
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 420px) {
   .funcblockall {
-    transform: translate(0px, 1px);
+    transform: translate(0px, 0px);
   }
 }
-@media screen and (min-width: 395px) {
+@media screen and (min-width: 420px) {
   .funcblockall {
     transform: translate(167px, 57px);
   }
@@ -37,7 +37,7 @@ CSS記述の順番
 .funcName {
   flex: 0 0 auto;
 }
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 420px) {
   .funcFrame {
     flex-grow: 1;
     height: 100%;
@@ -48,7 +48,7 @@ CSS記述の順番
     font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "sans-serif";
   }
 }
-@media screen and (min-width: 395px) {
+@media screen and (min-width: 420px) {
   .funcFrame {
     flex-grow: 1;
     height: 100%;
@@ -84,6 +84,28 @@ CSS記述の順番
 }
 
 /*タブ部分*/
+
+@media screen and (max-width: 420px) {
+  #forPcTabContents {
+    display: none;
+  }
+  #forMobileTabcontents {
+    display: block;
+    transform: translate(0%, 0px);
+  }
+}
+
+@media screen and (min-width: 420px) {
+  #forPcTabContents {
+    display: block;
+    transform: translate(20%, 0px);
+    margin-top: 10%;
+  }
+  #forMobileTabcontents {
+    display: none;
+  }
+}
+
 .tabcontents {
   margin-top: 54px;
 }
@@ -91,7 +113,7 @@ CSS記述の順番
   width: auto;
 }
 .tab {
-  font-size: 24.7px;
+  font-size: 22.7px;
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
   background-color: #00000000;
   margin: 0.5%;
@@ -120,4 +142,22 @@ CSS記述の順番
 .tab {
   -webkit-user-select: none;
   user-select: none;
+}
+
+.tabs {
+  -webkit-user-select: none;
+  user-select: none;
+  transform: translateX(430px);
+}
+.slider-conteiner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0%;
+}
+.slick-slide {
+  position: center;
+  transform: translateX(0%);
+  font-size: 23px;
+  width: fit-content;
 }

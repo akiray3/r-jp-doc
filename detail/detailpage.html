@@ -4,31 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="../../slick-1.8.1/slick/slick-theme.css"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="../../slick-1.8.1/slick/slick.css" type="text/css" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"
+    defer
+  ></script>
+  <script src="../jquery.js" defer></script>
+  <script src="../../slick-1.8.1/slick/slick.min.js" defer></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"
+    defer
+  ></script>
   <script src="page.js" defer></script>
 </head>
 <body>
   <div class="menu" style="display: flex; margin-left: 20px">
     <p>></p>
-    <p><a href="/r-jp-doc/index.html" class="returnlink">homeへ</a></p>
+    <p><a href="../r-jp-doc/index.html" class="returnlink">homeへ</a></p>
     <p>></p>
     <p class="rturnfunc">
-      <a class="returnlink" id = "funcListBack"></a>
+      <a class="returnlink" id="funcListBack"></a>
     </p>
   </div>
   <div class="block"></div>
-  <div class="tabcontents" style="display: block"></div>
-  <div class="tabs" style="display: block">
+  <div class="tabcontents"></div>
+  <div class="tabs" id="forPcTabContents">
     <div style="display: flex; flex-wrap: wrap; transform: translate(0, 0)">
-      <button class="tab" onclick="openTab(event,'Description')" id="default">
-        Description
+      <button class="tab" id="Description_forpc" onclick="openTab(event,'Description_forpc_cont')" >
+        説明
       </button>
-
-      <button class="tab" onclick="openTab(event,'Value')">Value</button
-      ><button class="tab" onclick="openTab(event,'Details')">Details</button>
-      <button class="tab" onclick="openTab(event,'Examples')">Examples</button
-      ><button class="tab" onclick="openTab(event,'Referrences')">
+      <button class="tab" id="Arguments_forpc" onclick="openTab(event,'Arguments_forpc_cont')" >
+      </button>      
+      <button class="tab" id="Value_forpc" onclick="openTab(event,'Value_forpc_cont')">Value</button
+      ><button class="tab" id="Details_forpc" onclick="openTab(event,'Details_forpc_cont')">詳細</button>
+      <button class="tab" id="Examples_forpc" onclick="openTab(event,'Examples_forpc_cont')">Examples</button
+      ><button class="tab" id="Referrences_forpc" onclick="openTab(event,'Referrences_forpc_cont')">
         Referrences</button
-      ><button class="tab" onclick="openTab(event,'See_Also')">See_Also</button>
+      ><button class="tab" id="See_Also_forpc" onclick="openTab(event,'See_Also_forpc_cont')">See_Also</button>
     </div>
   </div>
+  <div class="tabs" id="forMobileTabcontents">
+    <div class="slider-conteiner">
+      <div class="slick-slider" id="sliderForMobile">
+        <div class="slick-slide" id="Description_ForMobile">
+          <p>説明</p>
+          <p id="Description_contents"></p>
+        </div>
+        <div class="slick-slide" id="Value_ForMobile" >
+          <p>値</p>
+          <p id="Value_contents"></p>
+        </div>
+        <div class="slick-slide" id="Details_ForMobile" >
+          <p>詳細</p>
+          <p id="Details_contents"></p>
+        </div>
+        <div class="slick-slide" id="Examples_ForMobile">
+          <p>例</p>
+          <p id="Examples_contents"></p>
+        </div>
+        <div class="slick-slide" id="Referrences_ForMobile"style="width: fit-content;">
+          <p>参考文献</p>
+          <p id="Referrences_contents" ></p>
+        </div>
+        <div class="slick-slide" id="See_Also_ForMobile">
+          <p>関連</p>
+          <p id="See_Also_contents"></p>
+  
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  
 </body>
