@@ -1,12 +1,34 @@
-#search {
-  transform: translate(20%, 54px);
+/*================================
+	index.html
+=================================*/
+/*======　検索box ======*/
+@media screen and (max-width: 420px) {
+  #search {
+    left: 3%;
+    top: 2%;
+  }
+  #keywordbox {
+    height: 70px;
+    width: 80%;
+    left: 0;
+    transform: translateX(10%);
+    border-radius: 510.194px;
+    stroke: #000;
+    stroke-width: 1px;
+  }
 }
-#keywordbox {
-  height: 70px;
-  width: 520px;
-  border-radius: 510.194px;
-  stroke: #000;
-  stroke-width: 1px;
+
+@media screen and (min-width: 420px) {
+  #search {
+    transform: translate(20%, 54px);
+  }
+  #keywordbox {
+    height: 70px;
+    width: 520px;
+    border-radius: 510.194px;
+    stroke: #000;
+    stroke-width: 1px;
+  }
 }
 #reserch {
   width: 60px;
@@ -15,60 +37,137 @@
   border-color: #00000000;
   right: 0;
   top: 0;
-  transform: translate(464px, -90px);
+  transform: translate(-90px, 25px);
 }
+
 #magnifying-glass-duotone {
   width: 60px;
   height: 60px;
 }
+
+
+/*======　slick-slider ======*/
 .librarylink {
   -webkit-user-select: none;
   user-select: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .slick-list {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 24px;
 }
 
-.sec_inner {
-  white-space: nrowrap;
-  width: 100%;
-  height: 250px;
-  border-radius: 9.194px;
-  stroke: rgb(36, 61, 37);
-  stroke-miterlimit: 10;
-  stroke-width: 1;
-  border: 2px solid rgb(0, 0, 0);
-  transform: translate(21.529px, 57.832px);
-  margin-top: 3%;
+@media screen and (max-width: 420px) {
+  .sec_inner {
+    white-space: nrowrap;
+    width: 100%;
+    height: 370px;
+    border-radius: 9.194px;
+    stroke: rgba(21, 21, 21, 0);
+    stroke-miterlimit: 10;
+    stroke-width: 1;
+    border: 2px solid rgb(0, 0, 0);
+    transform: translate(0px, 57.832px);
+    margin-top: 3%;
+  }
+  #base_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-15px);
+  }
+  #base_borderbox {
+    position: fixed;
+    transform: translate(30px, 0px);
+    margin-top: 20%;
+  }
+  #graphics_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(10px);
+  }
+  #graphics_borderbox {
+    position: fixed;
+    transform: translate(92px, 0px);
+    margin-top: 30%;
+  }
+  #psych_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-15px);
+  }
+  #psych_borderbox {
+    position: fixed;
+    transform: translate(30px, 0px);
+    margin-top: 20%;
+  }
+  #stats_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(10px);
+  }
+  #stats_borderbox {
+    position: fixed;
+    transform: translate(92px, 0px);
+    margin-top: 30%;
+  }
 }
 
-/*search*/
-.lineitem {
-  display: inline-block;
-  width: 289px;
-  width: 289px;
-  height: 125px;
-  fill: none;
-}
-
-.namebox {
-  width: 274.045px;
-  height: 100.124px;
-  border-radius: 9.194px;
-  stroke: #243d25;
-  stroke-miterlimit: 10;
-  stroke-width: 1;
-  font-size: 27px;
-  border: 1px solid #000;
-  transform: translate(21.529px, 57.832px);
-}
-.ToDetailButton {
-  width: 274.045px;
-  height: 100.124px;
-  background-color: #00000000;
-  border: none;
-}
-.namebox.none{
-  display: none;
+@media screen and (min-width: 420px) {
+  .sec_inner {
+    white-space: nrowrap;
+    width: 100%;
+    height: 250px;
+    border-radius: 9.194px;
+    stroke: rgb(36, 61, 37);
+    stroke-miterlimit: 10;
+    stroke-width: 1;
+    border: 2px solid rgb(0, 0, 0);
+    transform: translate(21.529px, 57.832px);
+    margin-top: 3%;
+  }
+  #base_borderbox {
+    width: 70%;
+    transform: translate(30px);
+  }
+  #base_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-35px);
+  }
+  #graphics_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(12px);
+  }
+  #graphics_borderbox {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70%;
+    transform: translateX(-35px);
+  }
+  #psych_sec_inner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-35px);
+  }
+  #psych_borderbox {
+    width: 70%;
+    transform: translate(30px);
+  }
+  #stats_sec_inner {
+    position: fixed;
+    top: 0;
+    transform: translateX(12px);
+  }
+  #stats_borderbox {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(-35px);
+  }
 }

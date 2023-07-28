@@ -2,3 +2,57 @@
   -webkit-user-select: none;
   user-select: none;
 }
+.namebox{
+  border-radius: 9.194px;
+  stroke: #243D25;
+  stroke-miterlimit: 10;
+  stroke-width: 1;
+  font-size: 27px;
+  border: 1px solid #000;
+  transform: translate(21.529px,57.832px);
+}
+.tagbutton{
+  border-radius: 9.194px;
+  stroke:#243D25;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5;
+  font-size: 17px;
+  background-color: #00000000;
+border: 0.5px solid #000;
+
+}
+@media screen and (max-width: 395px) {
+  .lineitem {
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+  }
+  .namebox {
+    width: 345.045px;
+    height: 100.0124px;
+    stroke: rgb(66, 22, 104);
+  }
+  .ToDetailButton {
+    width: 274.045px;
+    height: 100.124px;
+  }
+}
+@media screen and (min-width: 395px) {
+  .lineitem {
+    width: 289px;
+    height: 125px;
+  }
+  .namebox {
+    width: 274.045px;
+    height: 100.124px;
+  }
+  .ToDetailButton {
+    width: 274.045px;
+    height: 100.124px;
+  }
+}
+
+
+.slidermenu_base.none{
+  display: none;
+}

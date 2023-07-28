@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="style_search.css" type="text/css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
   <title>search</title>
 </head>
 
@@ -27,8 +29,7 @@
           "検索結果はありませんでした。違う単語を入れてみてください。"
         );
         ptag.appendChild(message);
-        lineitem.appendChild(ptag);
-        namebox.classList.add("none");
+        body.appendChild(ptag);
       } else {
         const namelist = getAutocompleteresults(keyword);
         console.log(namelist);
@@ -54,11 +55,17 @@
           const txtnode = document.createTextNode(item);
           button.appendChild(txtnode);
 
-          const funcname = help_db.find((obj) => obj.func === item);
+          const funcname = help_db.filter((obj) => obj.func === item);
           const pack = funcname.pack;
-          atag.href = "/r-jp-doc/detail/" + pack + "/" + item + ".html";
+          atag.href = "/r-jp-doc/detail/detailpage.html";
+
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${item}`;
+          });
         });
       }
+
       function getAutocompleteresults(input) {
         const help_db_func = help_db.map((item) => item.func);
         const results = help_db_func.filter(function (option) {

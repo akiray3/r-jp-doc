@@ -1,6 +1,7 @@
 const titletag = document.getElementsByTagName("title")[0];
 const titleid = titletag.id;
-console.log(titleid);
+const WindowSize = window.innerWidth;
+console.log(WindowSize);
 
 const path = titleid + ".json";
 const request = new XMLHttpRequest();
@@ -11,44 +12,48 @@ request.onload = function () {
   const jsondata = JSON.parse(request.responseText);
   const funcname = jsondata.map((item) => item.funcname);
   const href = jsondata.map((item) => item.href);
-
   var infocontent = document.getElementById(titleid + "info");
   for (let i = 0; i < funcname.length; i++) {
     const div = document.createElement("div");
     div.className = "lineitem";
     div.id = funcname[i];
     div.style.display = "inline-block";
-    div.style.width = "289px";
-    div.style.height = "125px";
     div.style.fill = "none";
 
     const div2 = document.createElement("div");
-    div2.className = titleid + "namebox";
-    div2.style.width = "274.045px";
-    div2.style.height = "100.124px";
-    div2.style.borderRadius = "9.194px";
-    div2.style.stroke = "#243D25";
-    div2.style.strokeMiterlimit = "10";
-    div2.style.strokeWidth = "1";
-    div2.style.fontSize = "27px";
-    div2.style.border = "1px solid #000";
-    div2.style.transform = "translate(21.529px ,57.832px)";
+    div2.className = "namebox";
 
     const atag = document.createElement("a");
-    atag.href = "/r-jp-doc" + href[i];
+    atag.href = `../detail/detailpage.html`;
+    atag.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location.href = ` ../detail/detailpage.html?keyword=${funcname[i]}`;
+    });
 
     const txttag = document.createElement("button");
     txttag.className = "ToDetailButton";
-    txttag.style.width = "274.045px";
-    txttag.style.height = "100.124px";
+
     txttag.style.backgroundColor = "#00000000";
     txttag.style.border = "none";
 
-    if (funcname[i].length < 18) {
-      txttag.style.fontSize = "26px";
+    if (WindowSize <= 395) {
+      if (funcname[i].length < 15) {
+        txttag.style.fontSize = "39px";
+      } else if (funcname[i].length >= 15 && funcname[i].length < 20) {
+        txttag.style.fontSize = "35px";
+      } else if (funcname[i].length >= 20 && funcname[i].length < 35) {
+        txttag.style.fontSize = "30px";
+      } else {
+        txttag.style.fontSize = "25px";
+      }
     } else {
-      txttag.style.fontSize = "20px";
+      if (funcname[i].length < 18) {
+        txttag.style.fontSize = "26px";
+      } else {
+        txttag.style.fontSize = "20px";
+      }
     }
+
     txttag.style.fontFamily = "ArialRoundedMTBold";
 
     const txtnode = document.createTextNode(funcname[i]);
@@ -60,3 +65,69 @@ request.onload = function () {
     infocontent.appendChild(div);
   }
 };
+function selectFunction(event, tabId) {
+  const allFunc = document.querySelector(".slidermenu_base");
+  allFunc.classList.add("none");
+  request.open("GET", path, true);
+  request.send();
+  request.onload = function () {
+    const jsondata = JSON.parse(request.responseText);
+    const tagname = jsondata.filter((item) => item.tag === tabId);
+    const filtertag = tagname.map((item) => item.funcname);
+
+    const allMenu = document.querySelectorAll(".TagMenu");
+    allMenu.forEach((item) => (item.style.display = "none"));
+    const tagmenu = document.getElementById(`${tabId}Menu`);
+    tagmenu.style.display = "block";
+    
+    filtertag.forEach((element) => {
+      const div = document.createElement("div");
+      div.className = "lineitem";
+      div.id = element;
+      div.style.display = "inline-block";
+      div.style.fill = "none";
+
+      const div2 = document.createElement("div");
+      div2.className = "namebox";
+
+      const atag = document.createElement("a");
+      atag.href = `../detail/detailpage.html`;
+      atag.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = ` ../detail/detailpage.html?keyword=${element}`;
+      });
+
+      const txttag = document.createElement("button");
+      txttag.className = "ToDetailButton";
+
+      txttag.style.backgroundColor = "#00000000";
+      txttag.style.border = "none";
+
+      if (WindowSize <= 395) {
+        if (element.length < 15) {
+          txttag.style.fontSize = "39px";
+        } else if (element.length >= 15 && element.length < 20) {
+          txttag.style.fontSize = "35px";
+        } else if (element.length >= 20 && element.length < 35) {
+          txttag.style.fontSize = "30px";
+        } else {
+          txttag.style.fontSize = "25px";
+        }
+      } else {
+        if (element.length < 18) {
+          txttag.style.fontSize = "26px";
+        } else {
+          txttag.style.fontSize = "20px";
+        }
+      }
+
+      txttag.style.fontFamily = "ArialRoundedMTBold";
+      const txtnode = document.createTextNode(element);
+      txttag.appendChild(txtnode);
+      atag.appendChild(txttag);
+      div2.appendChild(atag);
+      div.appendChild(div2);
+      tagmenu.appendChild(div);
+    });
+  };
+}

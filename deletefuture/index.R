@@ -14,12 +14,3 @@ write(toJSON(table),file = "detail/argument.json")
 print(table,n = 40)
 
 
-#日本語訳のtxtと合わせてみる
-table_long <- table %>% pivot_longer(cols = 2:61,names_to = "num",values_to = "argments") %>% 
-  drop_na()
-line1 <- readLines("R/eng_jpn_1.txt") %>% as.tibble()
-line2 <- readLines("R/eng_jpn_2.txt") %>% as_tibble()
-jpn <- bind_rows(line1,line2)
-jpn <- filter(jpn,!grepl(pattern = "^\\s*$",jpn$value))
-
-bind_cols(table_long,jpn)

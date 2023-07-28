@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>home</title>
-
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" type="text/css" />
   <link
     rel="stylesheet"
@@ -11,9 +11,12 @@
   />
   <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" type="text/css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-  <script src="jquery.js"></script>
-  <script src="slick-1.8.1/slick/slick.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"
+    defer
+  ></script>
+  <script src="jquery.js" defer></script>
+  <script src="slick-1.8.1/slick/slick.min.js" defer></script>
 </head>
 <body>
   <form id="search" action="/r-jp-doc/search.html" method="get">
@@ -23,9 +26,6 @@
       name="keyword"
       placeholder="キーワードを入力"
     />
-    <div id="autocomplete">
-      <ul id="autocompletelist"></ul>
-    </div>
     <button type="submit" id="reserch">
       <img
         src="www/magnifying-glass-duotone.svg"
@@ -33,12 +33,13 @@
         id="magnifying-glass-duotone"
       />
     </button>
+    <div id="autocomplete">
+      <ul id="autocompletelist"></ul>
+    </div>
   </form>
 
   <div class="sec_inner">
-    <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
-    >
+    <div id="base_sec_inner">
       <h1 style="font-size: 50px; font-family: sans-serif">base</h1>
       <nav>
         <a
@@ -49,12 +50,12 @@
         >
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translate(30px)">
+    <div class="border-box" id="base_borderbox">
       <div class="slick-slider" id="base_slider"></div>
     </div>
   </div>
   <div class="sec_inner">
-    <div style="position: fixed; top: 0; transform: translateX(12px)">
+    <div id="graphics_sec_inner">
       <h1 style="font-size: 50px; font-family: sans-serif">graphics</h1>
       <nav>
         <a
@@ -65,23 +66,12 @@
         >
       </nav>
     </div>
-    <div
-      class="border-box"
-      style="
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 70%;
-        transform: translatex(-35px);
-      "
-    >
+    <div class="border-box" id="graphics_borderbox">
       <div class="slick-slider" id="graphics_slider"></div>
     </div>
   </div>
   <div class="sec_inner">
-    <div
-      style="position: fixed; right: 0; top: 0; transform: translateX(-35px)"
-    >
+    <div id="psych_sec_inner">
       <h1 style="font-size: 50px; font-family: sans-serif">psych</h1>
       <nav>
         <a
@@ -92,12 +82,12 @@
         >
       </nav>
     </div>
-    <div class="border-box" style="width: 70%; transform: translate(30px)">
+    <div class="border-box" id="psych_borderbox">
       <div class="slick-slider" id="psych_slider"></div>
     </div>
   </div>
   <div class="sec_inner">
-    <div style="position: fixed; top: 0; transform: translateX(12px)">
+    <div id="stats_sec_inner">
       <h1 style="font-size: 50px; font-family: sans-serif">stats</h1>
       <nav>
         <a
@@ -108,42 +98,38 @@
         >
       </nav>
     </div>
-    <div
-      class="border-box"
-      style="
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 70%;
-        transform: translatex(-35px);
-      "
-    >
+    <div class="border-box" id="stats_borderbox">
       <div class="slick-slider" id="stats_slider"></div>
     </div>
   </div>
 
   <script>
     const list = ["base", "graphics", "psych", "stats"];
+    const windowSize = window.innerWidth;
 
     for (let b = 0; b < list.length; b++) {
-      const path = "infopage/" + list[b] + ".json";
+      const path = `infopage/${list[b]}.json`;
       const jsonfile = new XMLHttpRequest();
       jsonfile.open("GET", path, true);
       jsonfile.send();
 
       jsonfile.onload = function () {
         const jsondata = JSON.parse(jsonfile.responseText);
-        const slideblock = document.querySelector("#" + list[b] + "_slider");
+        const slideblock = document.querySelector(`#${list[b]}_slider`);
         for (let i = 0; i < jsondata.length; i++) {
           if (jsondata[i].svg) {
             const slide = document.createElement("div");
             slide.className = "slick-slide";
             slide.id = list[b] + "_slide_" + i;
             const slide_link = document.createElement("a");
-            slide_link.href = "/r-jp-doc" + jsondata[i].href;
+            slide_link.href = "/r-jp-doc/detail/detailpage.html";
+            slide.addEventListener("click", (event) => {
+              event.preventDefault();
+              window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${jsondata[i].funcname}`;
+            });
             const imgbox = document.createElement("img");
             imgbox.classList.add("lazyload");
-            imgbox.setAttribute("data-lazy", "www/" + jsondata[i].svg);
+            imgbox.setAttribute("data-lazy", `www/${jsondata[i].svg}`);
             imgbox.style.height = "200px";
             const funcnametxt = document.createElement("p");
             const fnnametxt = document.createTextNode(jsondata[i].funcname);
@@ -154,15 +140,45 @@
             slideblock.appendChild(slide);
           }
         }
-        $("#" + list[b] + "_slider").slick({
-          slidesToShow: 3,
-          adaptiveHeight: true,
-          slidesToScroll: 1,
-          centerMode: false,
-          preloadImages: true,
-          lazyload: "ondemand",
-          LoadBuffer: 0,
-        });
+
+        console.log(windowSize);
+        if (windowSize <= 420) {
+          $("#" + list[b] + "_slider").slick({
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            slidesToScroll: 1,
+            centerMode: false,
+            preloadImages: true,
+            lazyload: "ondemand",
+            LoadBuffer: 0,
+            autoplay: true,
+            autoplaySpeed: 8000,
+          });
+        } else if (windowSize <= 768 && windowSize > 420) {
+          $("#" + list[b] + "_slider").slick({
+            slidesToShow: 2,
+            adaptiveHeight: true,
+            slidesToScroll: 1,
+            centerMode: false,
+            preloadImages: true,
+            lazyload: "ondemand",
+            LoadBuffer: 0,
+            autoplay: true,
+            autoplaySpeed: 8000,
+          });
+        } else if (windowSize > 768) {
+          $("#" + list[b] + "_slider").slick({
+            slidesToShow: 3,
+            adaptiveHeight: true,
+            slidesToScroll: 1,
+            centerMode: false,
+            preloadImages: true,
+            lazyload: "ondemand",
+            LoadBuffer: 0,
+            autoplay: true,
+            autoplaySpeed: 8000,
+          });
+        }
         $(".lazyload").slick({
           lazyload: "ondemand",
         });
@@ -223,8 +239,7 @@
         .addEventListener("submit", function (event) {
           event.preventDefault();
           const keyword = document.getElementById("keywordbox").value;
-          window.location.href =
-            "/r-jp-doc/search.html?keyword=" + encodeURIComponent(keyword);
+          window.location.href = `/r-jp-doc/search.html?keyword=${keyword}`;
         });
     });
   </script>
