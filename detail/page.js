@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const RefContent = document.querySelector("#Referrences_contents");
     const SeeContent = document.querySelector("#See_Also_contents");
 
-    const path = "../../help_db_jpn_main.json";
+    const path = "../help_db_jpn_main.json";
     const load = new XMLHttpRequest();
     load.open("GET", path, true);
     load.send();
