@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(currentURL);
   const keyword = urlParams.get("keyword");
 
-  const path = "../../help_db_jpn_main.json";
+  const path = "../help_db_jpn_main.json";
   const jsonfile = new XMLHttpRequest();
   jsonfile.open("GET", path, true);
   jsonfile.send();
@@ -227,7 +227,7 @@ function openTab(event, tabId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth > 420 ) {
+  if (window.innerWidth > 420) {
     const currentURL = window.location.search;
     const urlParams = new URLSearchParams(currentURL);
     const keyword = urlParams.get("keyword");
