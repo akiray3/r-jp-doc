@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(currentURL);
   const keyword = urlParams.get("keyword");
 
-  const path = "../help_db_jpn_main.json";
+  const path = "../r-jp-doc/help_db_jpn_main.json";
   const jsonfile = new XMLHttpRequest();
   jsonfile.open("GET", path, true);
   jsonfile.send();
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
     See_Alsobox.classList.add("content");
     See_Alsobox.setAttribute("id", "See_Also_forpc_cont");
 
-    const path = "../help_db_jpn_main.json";
+    const path = "../r-jp-doc/help_db_jpn_main.json";
     const load = new XMLHttpRequest();
     load.open("GET", path, true);
     load.send();
@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const RefContent = document.querySelector("#Referrences_contents");
     const SeeContent = document.querySelector("#See_Also_contents");
 
-    const path = "../help_db_jpn_main.json";
+    const path = "../r-jp-doc/help_db_jpn_main.json";
     const load = new XMLHttpRequest();
     load.open("GET", path, true);
     load.send();
