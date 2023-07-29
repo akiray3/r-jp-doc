@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const jsonfile = new XMLHttpRequest();
   jsonfile.open("GET", path, true);
   jsonfile.send();
-
   jsonfile.onload = function () {
     const jsondata = JSON.parse(jsonfile.responseText);
 
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const argframe = document.createElement("div");
     argframe.style.display = "inline-block";
     //svg
-    const svgpath = "../../infopage/" + packname[0].pack + ".json";
+    const svgpath = "../../r-jp-doc/infopage/" + packname[0].pack + ".json";
     const svgjson = new XMLHttpRequest();
     svgjson.open("GET", svgpath, true);
     svgjson.send();
