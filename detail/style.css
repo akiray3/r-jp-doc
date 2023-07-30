@@ -104,15 +104,27 @@ CSS記述の順番
   #forMobileTabcontents {
     display: none;
   }
+  button {
+    padding: 0;
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
   .tab {
     position: relative;
     display: flex;
-    color: #222;
     align-items: center;
     justify-content: center;
+    height: 64px;
+    padding: 0 24px;
     overflow: hidden;
-    overflow-wrap: anywhere;
+    font-size: 15px;
+    color: #222;
     text-align: center;
+    overflow-wrap: anywhere;
     background: transparent;
   }
   .tab::after {
@@ -122,8 +134,20 @@ CSS記述の順番
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #baff0b;
+    content: "";
+    background-color: #0a0e06;
     transform: scaleX(0);
+    transform-origin: right top;
+  }
+  @media (any-hover: hover) {
+    .tab:hover::after {
+      transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .tab:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
   }
 }
 
