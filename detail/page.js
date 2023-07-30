@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const funcnametxt = document.createTextNode(`${keyword}(`);
         funcname.appendChild(funcnametxt);
       }
-      arg.forEach((element,index) => {
+      arg.forEach((element, index) => {
         const txt = document.createElement("text");
         txt.className = "txt";
         txt.style.flexGrow = "1";
@@ -114,12 +114,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const argLast = document.createElement("text");
         const LastArgText = document.createTextNode(")");
         argLast.appendChild(LastArgText);
-        argLast.classList.add("funclast"); 
-        const elementArg = LastArg ? `${element.code})`:`${element.code},`
+        argLast.classList.add("funclast");
+        const elementArg = LastArg ? `${element.code}` : `${element.code},`;
         const txtnode = document.createTextNode(elementArg);
         txt.appendChild(txtnode);
         argcol.appendChild(txt);
-
+        if (LastArg) {
+          txt.appendChild(argLast);
+        } else {
+        }
         ///hover
         const hovinfo = document.createElement("div");
         hovinfo.classList.add("hover");
