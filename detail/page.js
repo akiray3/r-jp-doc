@@ -1,7 +1,7 @@
 /*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義。ローカルでテストするときには空にしておくこととする _______________________*/
 
 /*"../r-jp-doc"*/
-const path_for_github = "";
+const path_for_github = "../r-jp-doc";
 
 const WindowSize = window.innerWidth;
 console.log(WindowSize);
