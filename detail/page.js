@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         argLast.appendChild(LastArgText);
         argLast.classList.add("funclast"); 
         const elementArg = LastArg ? `${element.code})`:`${element.code},`
-        const txtnode = document.createTextNode(elemenz tArg);
+        const txtnode = document.createTextNode(elementArg);
         txt.appendChild(txtnode);
         argcol.appendChild(txt);
 
