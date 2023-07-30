@@ -1,4 +1,5 @@
 /*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義する。ローカルでテストするときには空にしておくこととする _______________________*/
+
 /*"../r-jp-doc"*/
 const path_for_github = "";
 
@@ -84,65 +85,28 @@ document.addEventListener("DOMContentLoaded", function () {
       const json = JSON.parse(req.responseText);
       console.log(keyword);
       const arg = json.filter((item) => item.func === keyword);
+
+      //関数名
+      if (WindowSize <= 395) {
+        const funcnametxt = document.createTextNode(keyword);
+        const funcstart = document.createElement("text");
+        funcstart.className = "txt";
+        const funcstarttxt = document.createTextNode("(");
+        funcstart.style.fontSize = "40px";
+        funcstart.style.fontFamily =
+          "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
+        funcstart.style.display = "flex";
+        funcstart.style.marginRight = "10px";
+        funcname.appendChild(funcnametxt);
+        funcstart.appendChild(funcstarttxt);
+        argcol.appendChild(funcstart);
+      } else if (WindowSize > 395) {
+        const funcnametxt = document.createTextNode(`${keyword}(`);
+        funcname.appendChild(funcnametxt);
+      }
       arg.forEach((element) => {
         console.log(element.code);
-        if (element[0]) {
-          //関数名
-          if (WindowSize <= 395) {
-            const funcnametxt = document.createTextNode(element.code);
-            const funcstart = document.createElement("text");
-            funcstart.className = "txt";
-            const funcstarttxt = document.createTextNode("(");
-            funcstart.style.fontSize = "40px";
-            funcstart.style.fontFamily =
-              "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
-            funcstart.style.display = "flex";
-            funcstart.style.marginRight = "10px";
-            funcname.appendChild(funcnametxt);
-            funcstart.appendChild(funcstarttxt);
-            argcol.appendChild(funcstart);
-          } else if (WindowSize > 395) {
-            const funcnametxt = document.createTextNode(element.code + "(");
-            funcname.appendChild(funcnametxt);
-          }
-        } else {
-          if (WindowSize <= 395) {
-            const funcnametxt = document.createTextNode(element.code);
-            funcname.appendChild(funcnametxt);
-          } else if (WindowSize > 395) {
-            const funcnametxt = document.createTextNode(element.code);
-            funcname.appendChild(funcnametxt);
-          }
-        }
       });
-      if (arg["arguments1"]) {
-        //関数名
-        if (WindowSize <= 395) {
-          const funcnametxt = document.createTextNode(keyword);
-          const funcstart = document.createElement("text");
-          funcstart.className = "txt";
-          const funcstarttxt = document.createTextNode("(");
-          funcstart.style.fontSize = "40px";
-          funcstart.style.fontFamily =
-            "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
-          funcstart.style.display = "flex";
-          funcstart.style.marginRight = "10px";
-          funcname.appendChild(funcnametxt);
-          funcstart.appendChild(funcstarttxt);
-          argcol.appendChild(funcstart);
-        } else if (WindowSize > 395) {
-          const funcnametxt = document.createTextNode(keyword + "(");
-          funcname.appendChild(funcnametxt);
-        }
-      } else {
-        if (WindowSize <= 395) {
-          const funcnametxt = document.createTextNode(keyword);
-          funcname.appendChild(funcnametxt);
-        } else if (WindowSize > 395) {
-          const funcnametxt = document.createTextNode(keyword);
-          funcname.appendChild(funcnametxt);
-        }
-      }
 
       funcframe.appendChild(funcname);
 
@@ -205,7 +169,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       //hover size
-      const heightblock = argblock.offsetHeight;
       const hovinfo = document.querySelectorAll(".hover");
       for (let i = 0; i < hovinfo.length; i++) {
         hovinfo[i].style.height = `${heightblock + 20}px`;
@@ -239,11 +202,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       } else {
       }
-      //関数名ボックスのサイズ
-      content.style.height = `${heightblock + 19}px`;
+      
     };
     content.appendChild(div);
   };
+
+  //関数名ボックスのサイズ
+  const argblock = document.querySelector(".argblock");
+  const heightblock = argblock.offsetHeight;
+  console.log(heightblock);
+        const FuncBoxAll = document.querySelector(".block");
+        FuncBoxAll.style.height = `${heightblock + 19}px`;
 });
 
 ///////////////////////////////////////////////////////
@@ -305,24 +274,20 @@ document.addEventListener("DOMContentLoaded", function () {
       Descriptionbox.appendChild(Descriptiontxt);
       tabcontent.appendChild(Descriptionbox);
 
-      const Valuetxt = document.createTextNode(findfunc.Value);
-      Valuebox.appendChild(Valuetxt);
+      Valuebox.innerHTML = findfunc.Value;
       tabcontent.appendChild(Valuebox);
 
       const Detailstxt = document.createTextNode(findfunc.Details);
       Detailsbox.appendChild(Detailstxt);
       tabcontent.appendChild(Detailsbox);
 
-      const Examplestxt = document.createTextNode(findfunc.Examples);
-      Examplesbox.appendChild(Examplestxt);
+      Examplesbox.innerHTML = findfunc.Examples;
       tabcontent.appendChild(Examplesbox);
 
-      const Referencestxt = document.createTextNode(findfunc.References);
-      Referencesbox.appendChild(Referencestxt);
+      Referencesbox.innerHTML = findfunc.References;
       tabcontent.appendChild(Referencesbox);
 
-      const See_Alsotxt = document.createTextNode(findfunc.See_Also);
-      See_Alsobox.appendChild(See_Alsotxt);
+      See_Alsobox.innerHTML = findfunc.See_Also;
       tabcontent.appendChild(See_Alsobox);
 
       //デフォルトでDescriptionを開く
@@ -360,8 +325,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (findfunc.Value) {
-        const Valuetxt = document.createTextNode(findfunc.Value);
-        ValContent.appendChild(Valuetxt);
+        ValContent.innerHTML = findfunc.Value;
       } else {
       }
       if (findfunc.Details.value) {
@@ -375,13 +339,11 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
       }
       if (findfunc.References) {
-        const Referencestxt = document.createTextNode(findfunc.References);
-        RefContent.appendChild(Referencestxt);
+        RefContent.innerHTML = findfunc.References;
       } else {
       }
       if (findfunc.See_Also) {
-        const See_Alsotxt = document.createTextNode(findfunc.See_Also);
-        SeeContent.appendChild(See_Alsotxt);
+        SeeContent.innerHTML = findfunc.See_Also;
       } else {
       }
     };
