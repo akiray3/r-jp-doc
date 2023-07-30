@@ -1,3 +1,7 @@
+/*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義する。ローカルでテストするときには空にしておくこととする _______________________*/
+/*"../r-jp-doc"*/
+const path_for_github = "";
+
 const WindowSize = window.innerWidth;
 console.log(WindowSize);
 
@@ -12,11 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
   jsonfile.send();
   jsonfile.onload = function () {
     const jsondata = JSON.parse(jsonfile.responseText);
-
     const returnfuncpage = document.querySelector(".rturnfunc");
     const returnhref = document.getElementById("funcListBack");
     const packname = jsondata.filter((item) => item.func === keyword);
-    returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
+    returnhref.href = `/r-jp-doc/infopage/${packname.pack}.html`;
     returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
     //全体関数ブロック
@@ -44,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     argblock.appendChild(argcol);
 
     //引数/////この辺に入れる
-    const path_arg = "argument.json";
+    const path_arg = "../help_db_jpn_arguments.json";
     const req = new XMLHttpRequest();
     req.open("GET", path_arg, true);
     req.send();
@@ -53,7 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const argframe = document.createElement("div");
     argframe.style.display = "inline-block";
     //svg
-    const svgpath = "../../r-jp-doc/infopage/" + packname[0].pack + ".json";
+    const svgpath =
+      `../${path_for_github}infopage/` + packname[0].pack + ".json";
     const svgjson = new XMLHttpRequest();
     svgjson.open("GET", svgpath, true);
     svgjson.send();
@@ -65,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const image = document.createElement("img");
         image.classList.add("image");
         image.classList.add("funcimage");
-        image.setAttribute("src", "../../www/" + svgdata.svg);
+        image.setAttribute("src", "../www/" + svgdata.svg);
         imgframe.appendChild(image);
         argframe.appendChild(imgframe);
       } else {
@@ -78,7 +82,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
     req.onload = function () {
       const json = JSON.parse(req.responseText);
-      const arg = json.find((obj) => obj.func === keyword);
+      console.log(keyword);
+      const arg = json.filter((item) => item.func === keyword);
+      arg.forEach((element) => {
+        console.log(element.code);
+        if (element[0]) {
+          //関数名
+          if (WindowSize <= 395) {
+            const funcnametxt = document.createTextNode(element.code);
+            const funcstart = document.createElement("text");
+            funcstart.className = "txt";
+            const funcstarttxt = document.createTextNode("(");
+            funcstart.style.fontSize = "40px";
+            funcstart.style.fontFamily =
+              "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
+            funcstart.style.display = "flex";
+            funcstart.style.marginRight = "10px";
+            funcname.appendChild(funcnametxt);
+            funcstart.appendChild(funcstarttxt);
+            argcol.appendChild(funcstart);
+          } else if (WindowSize > 395) {
+            const funcnametxt = document.createTextNode(element.code + "(");
+            funcname.appendChild(funcnametxt);
+          }
+        } else {
+          if (WindowSize <= 395) {
+            const funcnametxt = document.createTextNode(element.code);
+            funcname.appendChild(funcnametxt);
+          } else if (WindowSize > 395) {
+            const funcnametxt = document.createTextNode(element.code);
+            funcname.appendChild(funcnametxt);
+          }
+        }
+      });
       if (arg["arguments1"]) {
         //関数名
         if (WindowSize <= 395) {
