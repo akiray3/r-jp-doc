@@ -1,3 +1,8 @@
+/*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義する。ローカルでテストするときには空にしておくこととする _______________________*/
+
+/*"../r-jp-doc"*/
+const path_for_github = "../r-jp-doc";
+
 const WindowSize = window.innerWidth;
 console.log(WindowSize);
 
@@ -12,11 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
   jsonfile.send();
   jsonfile.onload = function () {
     const jsondata = JSON.parse(jsonfile.responseText);
-
     const returnfuncpage = document.querySelector(".rturnfunc");
     const returnhref = document.getElementById("funcListBack");
     const packname = jsondata.filter((item) => item.func === keyword);
-    returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
+    returnhref.href = `/r-jp-doc/infopage/${packname.pack}.html`;
     returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
     //全体関数ブロック
@@ -44,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     argblock.appendChild(argcol);
 
     //引数/////この辺に入れる
-    const path_arg = "argument.json";
+    const path_arg = "../help_db_jpn_arguments.json";
     const req = new XMLHttpRequest();
     req.open("GET", path_arg, true);
     req.send();
@@ -53,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const argframe = document.createElement("div");
     argframe.style.display = "inline-block";
     //svg
-    const svgpath = "../../r-jp-doc/infopage/" + packname[0].pack + ".json";
+    const svgpath =
+      `../${path_for_github}infopage/` + packname[0].pack + ".json";
     const svgjson = new XMLHttpRequest();
     svgjson.open("GET", svgpath, true);
     svgjson.send();
@@ -78,98 +83,97 @@ document.addEventListener("DOMContentLoaded", function () {
 
     req.onload = function () {
       const json = JSON.parse(req.responseText);
-      const arg = json.find((obj) => obj.func === keyword);
-      if (arg["arguments1"]) {
-        //関数名
-        if (WindowSize <= 395) {
-          const funcnametxt = document.createTextNode(keyword);
-          const funcstart = document.createElement("text");
-          funcstart.className = "txt";
-          const funcstarttxt = document.createTextNode("(");
-          funcstart.style.fontSize = "40px";
-          funcstart.style.fontFamily =
-            "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
-          funcstart.style.display = "flex";
-          funcstart.style.marginRight = "10px";
-          funcname.appendChild(funcnametxt);
-          funcstart.appendChild(funcstarttxt);
-          argcol.appendChild(funcstart);
-        } else if (WindowSize > 395) {
-          const funcnametxt = document.createTextNode(keyword + "(");
-          funcname.appendChild(funcnametxt);
-        }
-      } else {
-        if (WindowSize <= 395) {
-          const funcnametxt = document.createTextNode(keyword);
-          funcname.appendChild(funcnametxt);
-        } else if (WindowSize > 395) {
-          const funcnametxt = document.createTextNode(keyword);
-          funcname.appendChild(funcnametxt);
-        }
+      console.log(keyword);
+      const arg = json.filter((item) => item.func === keyword);
+
+      //関数名
+      if (WindowSize <= 395) {
+        const funcnametxt = document.createTextNode(keyword);
+        const funcstart = document.createElement("text");
+        funcstart.className = "txt";
+        const funcstarttxt = document.createTextNode("(");
+        funcstart.style.fontSize = "40px";
+        funcstart.style.fontFamily =
+          "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
+        funcstart.style.display = "flex";
+        funcstart.style.marginRight = "10px";
+        funcname.appendChild(funcnametxt);
+        funcstart.appendChild(funcstarttxt);
+        argcol.appendChild(funcstart);
+      } else if (WindowSize > 395) {
+        const funcnametxt = document.createTextNode(`${keyword}(`);
+        funcname.appendChild(funcnametxt);
       }
+      arg.forEach((element,index) => {
+        const txt = document.createElement("text");
+        txt.className = "txt";
+        txt.style.flexGrow = "1";
+        txt.style.flex = "0 0 auto";
+        txt.style.marginRight = "3px";
+        const LastArg = index === arg.length - 1;
+        const argLast = document.createElement("text");
+        const LastArgText = document.createTextNode(")");
+        argLast.appendChild(LastArgText);
+        argLast.classList.add("funclast"); 
+        const elementArg = LastArg ? `${element.code})`:`${element.code},`
+        const txtnode = document.createTextNode(elemenz tArg);
+        txt.appendChild(txtnode);
+        argcol.appendChild(txt);
 
-      funcframe.appendChild(funcname);
+        ///hover
+        const hovinfo = document.createElement("div");
+        hovinfo.classList.add("hover");
+        hovinfo.style.display = "none";
+        hovinfo.style.backgroundColor = "#00000000";
+        hovinfo.style.fontSize = "20px";
+        hovinfo.style.flexGrow = "1";
 
-      for (let b = 0; b <= 50; b++) {
-        if (arg["arguments" + b]) {
-          const txt = document.createElement("text");
-          txt.className = "txt";
-          txt.style.flexGrow = "1";
-          txt.style.flex = "0 0 auto";
-          txt.style.marginRight = "3px";
-          const txtnode = document.createTextNode(arg["arguments" + b] + ",");
-          txt.appendChild(txtnode);
-          argcol.appendChild(txt);
+        const hovtxt = document.createTextNode(element.desc);
+        hovinfo.appendChild(hovtxt);
+        argframe.appendChild(hovinfo);
 
-          ///hover
-          const hovinfo = document.createElement("div");
-          hovinfo.classList.add("hover");
+        //ホバー有効無効の判定
+        //ホバー有効
+        txt.addEventListener("mouseover", function () {
+          hovinfo.style.display = "block";
+          if (document.querySelector(".funcimage")) {
+            const image = document.querySelector(".funcimage");
+            image.style.display = "none";
+          } else {
+          }
+        });
+        txt.addEventListener("mouseout", function () {
           hovinfo.style.display = "none";
-          hovinfo.style.backgroundColor = "#00000000";
-          hovinfo.style.fontSize = "20px";
-          hovinfo.style.flexGrow = "1";
-
-          const hovtxt = document.createTextNode("引数１");
-          hovinfo.appendChild(hovtxt);
-          argframe.appendChild(hovinfo);
-
-          //ホバー有効無効の判定
-          //ホバー有効
-          txt.addEventListener("mouseover", function () {
+          if (document.querySelector(".funcimage")) {
+            const image = document.querySelector(".funcimage");
+            image.style.display = "block";
+          } else {
+          }
+        });
+        //ホバー無効
+        function hoverjudge() {
+          return window.matchMedia("(hover:none)").matches;
+        }
+        txt.addEventListener("touchstart", function () {
+          if (hoverjudge()) {
             hovinfo.style.display = "block";
+
             if (document.querySelector(".funcimage")) {
               const image = document.querySelector(".funcimage");
               image.style.display = "none";
             } else {
             }
-          });
-          txt.addEventListener("mouseout", function () {
-            hovinfo.style.display = "none";
-            if (document.querySelector(".funcimage")) {
-              const image = document.querySelector(".funcimage");
-              image.style.display = "block";
-            } else {
-            }
-          });
-          //ホバー無効
-          function hoverjudge() {
-            return window.matchMedia("(hover:none)").matches;
           }
-          txt.addEventListener("touchstart", function () {
-            if (hoverjudge()) {
-              hovinfo.style.display = "block";
+        });
+      });
 
-              if (document.querySelector(".funcimage")) {
-                const image = document.querySelector(".funcimage");
-                image.style.display = "none";
-              } else {
-              }
-            }
-          });
+      funcframe.appendChild(funcname);
+
+      for (let b = 0; b <= 50; b++) {
+        if (arg["arguments" + b]) {
         }
       }
       //hover size
-      const heightblock = argblock.offsetHeight;
       const hovinfo = document.querySelectorAll(".hover");
       for (let i = 0; i < hovinfo.length; i++) {
         hovinfo[i].style.height = `${heightblock + 20}px`;
@@ -203,11 +207,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       } else {
       }
-      //関数名ボックスのサイズ
-      content.style.height = `${heightblock + 19}px`;
     };
     content.appendChild(div);
   };
+
+  //関数名ボックスのサイズ
+  const argblock = document.querySelector(".argblock");
+  const heightblock = argblock.offsetHeight;
+  console.log(heightblock);
+  const FuncBoxAll = document.querySelector(".block");
+  FuncBoxAll.style.height = `${heightblock + 19}px`;
 });
 
 ///////////////////////////////////////////////////////
@@ -269,24 +278,20 @@ document.addEventListener("DOMContentLoaded", function () {
       Descriptionbox.appendChild(Descriptiontxt);
       tabcontent.appendChild(Descriptionbox);
 
-      const Valuetxt = document.createTextNode(findfunc.Value);
-      Valuebox.appendChild(Valuetxt);
+      Valuebox.innerHTML = findfunc.Value;
       tabcontent.appendChild(Valuebox);
 
       const Detailstxt = document.createTextNode(findfunc.Details);
       Detailsbox.appendChild(Detailstxt);
       tabcontent.appendChild(Detailsbox);
 
-      const Examplestxt = document.createTextNode(findfunc.Examples);
-      Examplesbox.appendChild(Examplestxt);
+      Examplesbox.innerHTML = findfunc.Examples;
       tabcontent.appendChild(Examplesbox);
 
-      const Referencestxt = document.createTextNode(findfunc.References);
-      Referencesbox.appendChild(Referencestxt);
+      Referencesbox.innerHTML = findfunc.References;
       tabcontent.appendChild(Referencesbox);
 
-      const See_Alsotxt = document.createTextNode(findfunc.See_Also);
-      See_Alsobox.appendChild(See_Alsotxt);
+      See_Alsobox.innerHTML = findfunc.See_Also;
       tabcontent.appendChild(See_Alsobox);
 
       //デフォルトでDescriptionを開く
@@ -324,8 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (findfunc.Value) {
-        const Valuetxt = document.createTextNode(findfunc.Value);
-        ValContent.appendChild(Valuetxt);
+        ValContent.innerHTML = findfunc.Value;
       } else {
       }
       if (findfunc.Details.value) {
@@ -339,13 +343,11 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
       }
       if (findfunc.References) {
-        const Referencestxt = document.createTextNode(findfunc.References);
-        RefContent.appendChild(Referencestxt);
+        RefContent.innerHTML = findfunc.References;
       } else {
       }
       if (findfunc.See_Also) {
-        const See_Alsotxt = document.createTextNode(findfunc.See_Also);
-        SeeContent.appendChild(See_Alsotxt);
+        SeeContent.innerHTML = findfunc.See_Also;
       } else {
       }
     };

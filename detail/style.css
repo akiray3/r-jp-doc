@@ -111,6 +111,8 @@ CSS記述の順番
 }
 .tabs {
   width: auto;
+  height: auto;
+  transform: translateY(-300px);
 }
 .tab {
   font-size: 22px;
