@@ -104,6 +104,27 @@ CSS記述の順番
   #forMobileTabcontents {
     display: none;
   }
+  .tab {
+    position: relative;
+    display: flex;
+    color: #222;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    text-align: center;
+    background: transparent;
+  }
+  .tab::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #baff0b;
+    transform: scaleX(0);
+  }
 }
 
 .tabcontents {
