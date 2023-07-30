@@ -104,68 +104,73 @@ document.addEventListener("DOMContentLoaded", function () {
         const funcnametxt = document.createTextNode(`${keyword}(`);
         funcname.appendChild(funcnametxt);
       }
-      arg.forEach((element) => {
-        console.log(element.code);
+      arg.forEach((element,index) => {
+        const txt = document.createElement("text");
+        txt.className = "txt";
+        txt.style.flexGrow = "1";
+        txt.style.flex = "0 0 auto";
+        txt.style.marginRight = "3px";
+        const LastArg = index === arg.length - 1;
+        const argLast = document.createElement("text");
+        const LastArgText = document.createTextNode(")");
+        argLast.appendChild(LastArgText);
+        argLast.classList.add("funclast"); 
+        const elementArg = LastArg ? `${element.code})`:`${element.code},`
+        const txtnode = document.createTextNode(elemenz tArg);
+        txt.appendChild(txtnode);
+        argcol.appendChild(txt);
+
+        ///hover
+        const hovinfo = document.createElement("div");
+        hovinfo.classList.add("hover");
+        hovinfo.style.display = "none";
+        hovinfo.style.backgroundColor = "#00000000";
+        hovinfo.style.fontSize = "20px";
+        hovinfo.style.flexGrow = "1";
+
+        const hovtxt = document.createTextNode(element.desc);
+        hovinfo.appendChild(hovtxt);
+        argframe.appendChild(hovinfo);
+
+        //ホバー有効無効の判定
+        //ホバー有効
+        txt.addEventListener("mouseover", function () {
+          hovinfo.style.display = "block";
+          if (document.querySelector(".funcimage")) {
+            const image = document.querySelector(".funcimage");
+            image.style.display = "none";
+          } else {
+          }
+        });
+        txt.addEventListener("mouseout", function () {
+          hovinfo.style.display = "none";
+          if (document.querySelector(".funcimage")) {
+            const image = document.querySelector(".funcimage");
+            image.style.display = "block";
+          } else {
+          }
+        });
+        //ホバー無効
+        function hoverjudge() {
+          return window.matchMedia("(hover:none)").matches;
+        }
+        txt.addEventListener("touchstart", function () {
+          if (hoverjudge()) {
+            hovinfo.style.display = "block";
+
+            if (document.querySelector(".funcimage")) {
+              const image = document.querySelector(".funcimage");
+              image.style.display = "none";
+            } else {
+            }
+          }
+        });
       });
 
       funcframe.appendChild(funcname);
 
       for (let b = 0; b <= 50; b++) {
         if (arg["arguments" + b]) {
-          const txt = document.createElement("text");
-          txt.className = "txt";
-          txt.style.flexGrow = "1";
-          txt.style.flex = "0 0 auto";
-          txt.style.marginRight = "3px";
-          const txtnode = document.createTextNode(arg["arguments" + b] + ",");
-          txt.appendChild(txtnode);
-          argcol.appendChild(txt);
-
-          ///hover
-          const hovinfo = document.createElement("div");
-          hovinfo.classList.add("hover");
-          hovinfo.style.display = "none";
-          hovinfo.style.backgroundColor = "#00000000";
-          hovinfo.style.fontSize = "20px";
-          hovinfo.style.flexGrow = "1";
-
-          const hovtxt = document.createTextNode("引数１");
-          hovinfo.appendChild(hovtxt);
-          argframe.appendChild(hovinfo);
-
-          //ホバー有効無効の判定
-          //ホバー有効
-          txt.addEventListener("mouseover", function () {
-            hovinfo.style.display = "block";
-            if (document.querySelector(".funcimage")) {
-              const image = document.querySelector(".funcimage");
-              image.style.display = "none";
-            } else {
-            }
-          });
-          txt.addEventListener("mouseout", function () {
-            hovinfo.style.display = "none";
-            if (document.querySelector(".funcimage")) {
-              const image = document.querySelector(".funcimage");
-              image.style.display = "block";
-            } else {
-            }
-          });
-          //ホバー無効
-          function hoverjudge() {
-            return window.matchMedia("(hover:none)").matches;
-          }
-          txt.addEventListener("touchstart", function () {
-            if (hoverjudge()) {
-              hovinfo.style.display = "block";
-
-              if (document.querySelector(".funcimage")) {
-                const image = document.querySelector(".funcimage");
-                image.style.display = "none";
-              } else {
-              }
-            }
-          });
         }
       }
       //hover size
@@ -202,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       } else {
       }
-      
     };
     content.appendChild(div);
   };
@@ -211,8 +215,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const argblock = document.querySelector(".argblock");
   const heightblock = argblock.offsetHeight;
   console.log(heightblock);
-        const FuncBoxAll = document.querySelector(".block");
-        FuncBoxAll.style.height = `${heightblock + 19}px`;
+  const FuncBoxAll = document.querySelector(".block");
+  FuncBoxAll.style.height = `${heightblock + 19}px`;
 });
 
 ///////////////////////////////////////////////////////
