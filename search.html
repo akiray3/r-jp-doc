@@ -25,14 +25,13 @@
       const help_db = JSON.parse(help_db_raw.responseText);
       if (keyword === null || keyword.trim() === "") {
         const ptag = document.createElement("p");
-        const message = document.createTextNode(
+        const message = document.createTextwNode(
           "検索結果はありませんでした。違う単語を入れてみてください。"
         );
         ptag.appendChild(message);
         body.appendChild(ptag);
       } else {
         const namelist = getAutocompleteresults(keyword);
-        console.log(namelist);
         namelist.forEach(function (item) {
           const lineitem = document.createElement("div");
           lineitem.classList = "lineitem";

@@ -1,7 +1,7 @@
-/*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義する。ローカルでテストするときには空にしておくこととする _______________________*/
+/*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義。ローカルでテストするときには空にしておくこととする _______________________*/
 
 /*"../r-jp-doc"*/
-const path_for_github = "../r-jp-doc";
+const path_for_github = "";
 
 const WindowSize = window.innerWidth;
 console.log(WindowSize);
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const funcnametxt = document.createTextNode(`${keyword}(`);
         funcname.appendChild(funcnametxt);
       }
-      arg.forEach((element,index) => {
+      arg.forEach((element, index) => {
         const txt = document.createElement("text");
         txt.className = "txt";
         txt.style.flexGrow = "1";
@@ -114,11 +114,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const argLast = document.createElement("text");
         const LastArgText = document.createTextNode(")");
         argLast.appendChild(LastArgText);
-        argLast.classList.add("funclast"); 
-        const elementArg = LastArg ? `${element.code})`:`${element.code},`
-        const txtnode = document.createTextNode(elemenz tArg);
+        argLast.classList.add("funclast");
+        const elementArg = LastArg ? `${element.code}` : `${element.code},`;
+        const txtnode = document.createTextNode(elementArg);
         txt.appendChild(txtnode);
         argcol.appendChild(txt);
+        if (LastArg) {
+          txt.appendChild(argLast);
+        } else {
+        }
 
         ///hover
         const hovinfo = document.createElement("div");
@@ -210,7 +214,6 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     content.appendChild(div);
   };
-
   //関数名ボックスのサイズ
   const argblock = document.querySelector(".argblock");
   const heightblock = argblock.offsetHeight;
@@ -302,6 +305,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(currentURL);
     const keyword = urlParams.get("keyword");
     console.log(keyword);
+
     //Mobile
     const DesContent = document.querySelector("#Description_contents");
     const ValContent = document.querySelector("#Value_contents");
@@ -319,7 +323,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const jsondata = JSON.parse(load.responseText);
       console.log(keyword);
       const findfunc = jsondata.find((obj) => obj.func === keyword);
-      console.log(findfunc);
       if (findfunc.Description.value) {
         const Descriptiontxt = document.createTextNode(
           findfunc.Description.value
