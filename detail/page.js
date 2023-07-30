@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const image = document.createElement("img");
         image.classList.add("image");
         image.classList.add("funcimage");
-        image.setAttribute("src", "../../www/" + svgdata.svg);
+        image.setAttribute("src", "../www/" + svgdata.svg);
         imgframe.appendChild(image);
         argframe.appendChild(imgframe);
       } else {
