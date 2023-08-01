@@ -24,28 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
     //全体関数ブロック
-    const div = document.createElement("div");
-    div.className = "funcblockall";
-    content.appendChild(div);
+    const div = document.querySelector(".funcblockall");
 
     //関数名
-    const funcframe = document.createElement("div");
-    funcframe.className = "funcFrame";
-    div.appendChild(funcframe);
-
-    const funcname = document.createElement("div");
-    funcname.className = "funcName";
+    const funcframe = document.querySelector(".funcFrame");
+    const funcname = document.querySelector(".funcName");
 
     //引数ブロック
-    const argblock = document.createElement("div");
-    argblock.style.display = "inline-block";
-    argblock.className = "argblock";
-    div.appendChild(argblock);
+    const argblock = document.querySelector(".argblock");
 
-    const argcol = document.createElement("div");
-    argcol.style.display = "flex";
-    argcol.style.flexDirection = "column";
-    argblock.appendChild(argcol);
+    const argcol = document.querySelector(".argcol");
 
     //引数/////この辺に入れる
     const path_arg = "../help_db_jpn_arguments.json";
@@ -54,8 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     req.send();
 
     //hoverframe
-    const argframe = document.createElement("div");
-    argframe.style.display = "inline-block";
+    const hoverFrame = document.querySelector(".hoverFrame");
     //svg
     const svgpath =
       `../${path_for_github}infopage/` + packname[0].pack + ".json";
@@ -72,14 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
         image.classList.add("funcimage");
         image.setAttribute("src", "../www/" + svgdata.svg);
         imgframe.appendChild(image);
-        argframe.appendChild(imgframe);
+        hoverFrame.appendChild(imgframe);
       } else {
       }
     };
 
-    argframe.style.position = "absolute";
-    argframe.style.transform = "translate(90px,10px)";
-    div.appendChild(argframe);
 
     req.onload = function () {
       const json = JSON.parse(req.responseText);
@@ -131,7 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const hovtxt = document.createTextNode(element.desc);
         hovinfo.appendChild(hovtxt);
-        argframe.appendChild(hovinfo);
+        hoverFrame.appendChild(hovinfo);
+        
 
         //ホバー有効無効の判定
         //ホバー有効
@@ -209,15 +194,9 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
       }
     };
-    content.appendChild(div);
   };
 
-  //関数名ボックスのサイズ
-  const argblock = document.querySelector(".argblock");
-  const heightblock = argblock.offsetHeight;
-  console.log(heightblock);
-  const FuncBoxAll = document.querySelector(".block");
-  FuncBoxAll.style.height = `${heightblock + 19}px`;
+  
 });
 
 ///////////////////////////////////////////////////////
