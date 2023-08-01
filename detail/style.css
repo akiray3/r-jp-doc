@@ -72,8 +72,9 @@ body {
 }
 .hoverFrame {
   margin-top: 24%;
-margin-right: 12%;
-font-size: var(--font-size-md);}
+  margin-right: 12%;
+  font-size: var(--font-size-md);
+}
 @media screen and (max-width: 420px) {
   .funcFrame {
     flex-grow: 1;
