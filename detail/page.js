@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const funcstart = document.createElement("text");
         funcstart.className = "txt";
         const funcstarttxt = document.createTextNode("(");
-        funcstart.style.fontSize = "40px";
         funcstart.style.fontFamily =
           "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
         funcstart.style.display = "flex";
@@ -128,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
         hovinfo.classList.add("hover");
         hovinfo.style.display = "none";
         hovinfo.style.backgroundColor = "#00000000";
-        hovinfo.style.fontSize = "20px";
         hovinfo.style.flexGrow = "1";
 
         const hovtxt = document.createTextNode(element.desc);

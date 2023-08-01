@@ -1,6 +1,16 @@
 /*================================
 	index.html
 =================================*/
+:root {
+  --font-size-sm: clamp(0.8rem, 0.59vw + 0.65rem, 1.13rem);
+  --font-size-base: clamp(1rem, 0.91vw + 0.77rem, 1.5rem);
+  --font-size-md: clamp(1.25rem, 1.36vw + 0.91rem, 2rem);
+  --font-size-lg: clamp(1.56rem, 2.01vw + 1.06rem, 2.67rem);
+  --font-size-xl: clamp(1.95rem, 2.91vw + 1.23rem, 3.55rem);
+  --font-size-xxl: clamp(2.44rem, 4.17vw + 1.4rem, 4.74rem);
+  --font-size-xxxl: clamp(3.05rem, 5.93vw + 1.57rem, 6.31rem);
+}
+
 /*======　検索box ======*/
 @media screen and (max-width: 420px) {
   #search {
@@ -45,16 +55,16 @@
   height: 60px;
 }
 
-
 /*======　slick-slider ======*/
 .librarylink {
   -webkit-user-select: none;
   user-select: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: var(--font-size-base);
 }
 .slick-list {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 24px;
+  font-size: var(--font-size-base);
 }
 
 @media screen and (max-width: 420px) {
@@ -130,6 +140,9 @@
   #base_borderbox {
     width: 70%;
     transform: translate(30px);
+  }
+  .packname {
+    font-size: var(--font-size-xxl);
   }
   #base_sec_inner {
     position: fixed;
