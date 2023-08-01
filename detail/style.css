@@ -60,21 +60,17 @@ body {
   display: grid;
   grid-template-columns: 3fr 5fr 6fr;
 }
+
 /*引数*/
 .argblock {
   display: inline-block;
-  font-size: var(--font-size-lg);
 }
 .argcol {
   display: flex;
   flex-direction: column;
   margin-left: 23%;
 }
-.hoverFrame {
-  margin-top: 24%;
-  margin-right: 12%;
-  font-size: var(--font-size-md);
-}
+
 @media screen and (max-width: 420px) {
   .funcFrame {
     flex-grow: 1;
@@ -98,12 +94,17 @@ body {
 }
 
 /*引数の説明ホバー*/
+.hoverFrame {
+  margin-top: 24%;
+  margin-right: 12%;
+}
+
 .hover {
   animation: fadein 1s ease 0s 1 normal forwards;
   height: fit-content;
   max-width: 100%;
   overflow-wrap: break-word;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
 }
@@ -117,7 +118,7 @@ body {
 }
 /*引数*/
 .txt {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
   margin-top: 7%;
