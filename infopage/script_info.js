@@ -1,3 +1,17 @@
+const allMenu = document.querySelector(".tagmenu");
+allMenu.style.display = "none";
+
+$(".openMenu").click(function () {
+  $(this).toggleClass("active");
+});
+function openTagmenu(event, tabId) {
+  if (allMenu.style.display === "block") {
+    allMenu.style.display = "none";
+  } else if ((allMenu.style.display = "none")) {
+    allMenu.style.display = "block";
+  }
+}
+
 const titletag = document.getElementsByTagName("title")[0];
 const titleid = titletag.id;
 const WindowSize = window.innerWidth;
@@ -12,7 +26,7 @@ request.onload = function () {
   const jsondata = JSON.parse(request.responseText);
   const funcname = jsondata.map((item) => item.funcname);
   const href = jsondata.map((item) => item.href);
-  var infocontent = document.getElementById(titleid + "info");
+  const infocontent = document.getElementById(titleid + "info");
   for (let i = 0; i < funcname.length; i++) {
     const div = document.createElement("div");
     div.className = "lineitem";
@@ -79,7 +93,7 @@ function selectFunction(event, tabId) {
     allMenu.forEach((item) => (item.style.display = "none"));
     const tagmenu = document.getElementById(`${tabId}Menu`);
     tagmenu.style.display = "block";
-    
+
     filtertag.forEach((element) => {
       const div = document.createElement("div");
       div.className = "lineitem";

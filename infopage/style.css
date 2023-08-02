@@ -1,25 +1,116 @@
+/*--------------------------------
+CSS記述の順番
+　-フォントサイズ
+　- メディアタイプに関わらない共通の設定
+  - @media　スマホ向けの設定
+  - @media　PC向けの設定
+--------------------------------*/
+
+:root {
+  --font-size-sm: clamp(0.8rem, 0.59vw + 0.65rem, 1.13rem);
+  --font-size-base: clamp(1rem, 0.91vw + 0.77rem, 1.5rem);
+  --font-size-md: clamp(1.25rem, 1.36vw + 0.91rem, 2rem);
+  --font-size-lg: clamp(1.56rem, 2.01vw + 1.06rem, 2.67rem);
+  --font-size-xl: clamp(1.95rem, 2.91vw + 1.23rem, 3.55rem);
+  --font-size-xxl: clamp(2.44rem, 4.17vw + 1.4rem, 4.74rem);
+  --font-size-xxxl: clamp(3.05rem, 5.93vw + 1.57rem, 6.31rem);
+}
+#TagmenuButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 80px;
+  background-color: #00000000;
+  border: 0.5px solid #00000000;
+}
+.TagMenu {
+  width: 90px;
+  display: flex;
+}
+.TagMenuBox {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.openMenutxt {
+  left: 40%;
+  right: 0%;
+  position: relative;
+  background: #00000000;
+  font-size: var(--font-size-sm);
+}
+.openMenu {
+  position: relative;
+  background: #57a2c700;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.openMenu span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: #070707;
+  width: 45%;
+}
+.openMenu span:nth-child(1) {
+  top: 15px;
+}
+.openMenu span:nth-child(2) {
+  top: 23px;
+}
+.openMenu span:nth-child(3) {
+  top: 31px;
+}
+.openMenu.active span:nth-child(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.openMenu.active span:nth-child(2) {
+  opacity: 0;
+}
+.openMenu.active span:nth-child(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
 .ToDetailButton {
   -webkit-user-select: none;
   user-select: none;
+  overflow-wrap: anywhere;
 }
-.namebox{
+.namebox {
   border-radius: 9.194px;
-  stroke: #243D25;
+  stroke: #243d25;
   stroke-miterlimit: 10;
   stroke-width: 1;
-  font-size: 27px;
+  font-size: var(--font-size-base);
   border: 1px solid #000;
-  transform: translate(21.529px,57.832px);
+  transform: translate(21.529px, 57.832px);
 }
-.tagbutton{
+.tagbutton {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  height: fit-content;
+  width: 90px;
   border-radius: 9.194px;
-  stroke:#243D25;
+  stroke: #243d25;
   stroke-miterlimit: 10;
   stroke-width: 0.5;
-  font-size: 17px;
+  font-size: var(--font-size-sm);
   background-color: #00000000;
-border: 0.5px solid #000;
-
+  border: 0.5px solid #000;
 }
 @media screen and (max-width: 395px) {
   .lineitem {
@@ -52,7 +143,6 @@ border: 0.5px solid #000;
   }
 }
 
-
-.slidermenu_base.none{
+.slidermenu_base.none {
   display: none;
 }

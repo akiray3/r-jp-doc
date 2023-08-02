@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="style.css" type="text/css" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <script src="script_info.js" defer></script>
+  <script src="../jquery.js"></script>
   <title id="base">base page</title>
 </head>
 <body>
@@ -11,62 +12,77 @@
     <p>></p>
     <p><a href="/r-jp-doc/index.html"> homeへ </a></p>
   </div>
+  <button id="TagmenuButton" onclick="openTagmenu(event,'Tagmenu')">
+    <div class="  "><span></span><span></span><span></span></div>
+    
+  </button>
   <div class="tagmenu">
-    <button>絞り込み
-      <img src="../www/caret-down-thin.svg" alt="SVG" />
-    </button>
-    <button
+    
+    <div class="TagMenuBox">
+      <button
       class="tagbutton"
       id="Vector"
       onclick="selectFunction(event,'vector')"
     >
       vector
     </button>
-    <button
-      class="tagbutton"
-      id="String"
-      onclick="selectFunction(event,'string')"
-    >
-      string
-    </button>
-    <button class="tagbutton" id="Data" onclick="selectFunction(event,'data')">
-      data
-    </button>
-    <button
-      class="tagbutton"
-      id="Operator"
-      onclick="selectFunction(event,'operator')"
-    >
-      operate
-    </button>
-    <button
-      class="tagbutton"
-      id="Dataframe"
-      onclick="selectFunction(event,'dataframe')"
-    >
-      dataframe
-    </button>
-    <button class="tagbutton" id="Math" onclick="selectFunction(event,'math')">
-      math
-    </button>
-    <button
-      class="tagbutton"
-      id="Summary"
-      onclick="selectFunction(event,'summary')"
-    >
-      summary
-    </button>
-    <button class="tagbutton" id="Date" onclick="selectFunction(event,'date')">
-      date
-    </button>
-
-    <button
-      class="tagbutton"
-      id="System"
-      onclick="selectFunction(event,'system')"
-    >
-      system
-    </button>
+      <button
+        class="tagbutton"
+        id="String"
+        onclick="selectFunction(event,'string')"
+      >
+        string
+      </button>
+      <button
+        class="tagbutton"
+        id="Data"
+        onclick="selectFunction(event,'data')"
+      >
+        data
+      </button>
+      <button
+        class="tagbutton"
+        id="Operator"
+        onclick="selectFunction(event,'operator')"
+      >
+        operate
+      </button>
+      <button
+        class="tagbutton"
+        id="Dataframe"
+        onclick="selectFunction(event,'dataframe')"
+      >
+        dataframe
+      </button>
+      <button
+        class="tagbutton"
+        id="Math"
+        onclick="selectFunction(event,'math')"
+      >
+        math
+      </button>
+      <button
+        class="tagbutton"
+        id="Summary"
+        onclick="selectFunction(event,'summary')"
+      >
+        summary
+      </button>
+      <button
+        class="tagbutton"
+        id="Date"
+        onclick="selectFunction(event,'date')"
+      >
+        date
+      </button>
+      <button
+        class="tagbutton"
+        id="System"
+        onclick="selectFunction(event,'system')"
+      >
+        system
+      </button>
+    </div>
   </div>
   <div class="slidermenu_base">
     <div class="sec_slide" id="baseinfo"></div>

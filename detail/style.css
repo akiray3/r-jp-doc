@@ -4,7 +4,18 @@ CSS記述の順番
   - @media　スマホ向けの設定
   - @media　PC向けの設定
 --------------------------------*/
-
+:root {
+  --font-size-sm: clamp(0.8rem, 0.59vw + 0.65rem, 1.13rem);
+  --font-size-base: clamp(1rem, 0.91vw + 0.77rem, 1.5rem);
+  --font-size-md: clamp(1.25rem, 1.36vw + 0.91rem, 2rem);
+  --font-size-lg: clamp(1.56rem, 2.01vw + 1.06rem, 2.67rem);
+  --font-size-xl: clamp(1.95rem, 2.91vw + 1.23rem, 3.55rem);
+  --font-size-xxl: clamp(2.44rem, 4.17vw + 1.4rem, 4.74rem);
+  --font-size-xxxl: clamp(3.05rem, 5.93vw + 1.57rem, 6.31rem);
+}
+body {
+  overflow-x: hidden;
+}
 .menu {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
@@ -14,12 +25,14 @@ CSS記述の順番
 /*関数全体ブロック*/
 @media screen and (max-width: 420px) {
   .funcblockall {
-    transform: translate(0px, 0px);
+    margin-top: 4%;
   }
 }
 @media screen and (min-width: 420px) {
   .funcblockall {
-    transform: translate(167px, 57px);
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 100%;
   }
 }
 .funcblockall {
@@ -27,16 +40,37 @@ CSS記述の順番
   flex-wrap: nowrap;
   width: 100%;
   overflow: visible;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 /*関数名*/
+
 .funcFrame {
   display: inline-block;
+  align-items: center;
 }
 .funcName {
+  margin-left: 2%;
   flex: 0 0 auto;
+  font-size: var(--font-size-xxxl);
 }
+
+.arg-hover-horizon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 5fr 6fr;
+}
+
+/*引数*/
+.argblock {
+  display: inline-block;
+}
+.argcol {
+  display: flex;
+  flex-direction: column;
+  margin-left: 23%;
+}
+
 @media screen and (max-width: 420px) {
   .funcFrame {
     flex-grow: 1;
@@ -44,7 +78,7 @@ CSS記述の順番
     width: 100%;
   }
   .funcName {
-    font-size: 30px;
+    font-size: var(--font-size-xxl);
     font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "sans-serif";
   }
 }
@@ -54,16 +88,23 @@ CSS記述の順番
     height: 100%;
   }
   .funcName {
-    font-size: 48px;
+    font-size: var(--font-size-xl);
     font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "sans-serif";
   }
 }
 
 /*引数の説明ホバー*/
+.hoverFrame {
+  margin-top: 24%;
+  margin-right: 12%;
+}
+
 .hover {
   animation: fadein 1s ease 0s 1 normal forwards;
-  height: 240px;
-  width: 240px;
+  height: fit-content;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  font-size: var(--font-size-base);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
 }
@@ -77,10 +118,12 @@ CSS記述の順番
 }
 /*引数*/
 .txt {
-  font-size: 30px;
+  font-size: var(--font-size-lg);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
-  margin: 14%;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  width: fit-content;
 }
 
 /*タブ部分*/
@@ -98,45 +141,86 @@ CSS記述の順番
 @media screen and (min-width: 420px) {
   #forPcTabContents {
     display: block;
-    transform: translate(20%, 0px);
     margin-top: 10%;
+    margin: 10%;
   }
   #forMobileTabcontents {
     display: none;
   }
+
+  button {
+    padding: 0;
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
   .tab {
-    position: relative;
+    position: static;
     display: flex;
-    color: #222;
     align-items: center;
     justify-content: center;
+    height: 64px;
+    padding: 0 24px;
     overflow: hidden;
-    overflow-wrap: anywhere;
+    font-size: var(--font-size-base);
+    color: #222;
     text-align: center;
+    overflow-wrap: anywhere;
     background: transparent;
   }
   .tab::after {
-    position: absolute;
+    position: static;
+
     bottom: 0;
     left: 0;
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #baff0b;
-  transform: scaleX(0);
+
+    content: "";
+    background-color: #0a0e06;
+    transform: scaleX(0);
+    transform-origin: right top;
+  }
+  @media (any-hover: hover) {
+    .tab:hover::after {
+      transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .tab:hover::after {
+      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+      transform: scaleX(1);
+      transform-origin: left top;
+    }
+  }
+  .content {
+    font-size: var(--font-size-sm);
+    overflow-wrap: break-word;
+    max-width: 100%;
+
   }
 }
 
+/*タブ*/
+
 .tabcontents {
   margin-top: 54px;
+  position: absolute;
 }
 .tabs {
-  width: auto;
+  max-width: 100%;
   height: auto;
-  transform: translateY(-300px);
+  margin-top: 103%;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .tab {
-  font-size: 22px;
+  -webkit-user-select: none;
+  user-select: none;
+
+  font-size: var(--font-size-base);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
   background-color: #00000000;
   margin: 0.5%;
@@ -146,7 +230,6 @@ CSS記述の順番
   display: block;
 }
 .content {
-  transform: translate(15px);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
 }
 
@@ -161,17 +244,6 @@ CSS記述の順番
   margin-right: 10px;
   margin-bottom: 4%;
 }
-/*タブ*/
-.tab {
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.tabs {
-  -webkit-user-select: none;
-  user-select: none;
-  transform: translateX(430px);
-}
 .slider-conteiner {
   width: 100%;
   height: 100%;
@@ -184,3 +256,5 @@ CSS記述の順番
   font-size: 23px;
   width: fit-content;
 }
+
+
