@@ -146,3 +146,59 @@ CSS記述の順番
 .slidermenu_base.none {
   display: none;
 }
+#pageTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #942d2f00;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: 0.3s;
+}
+
+#pageTop a:hover {
+  background: #777;
+}
+
+#pageTop {
+  position: fixed;
+  right: 10px;
+  bottom:10px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#pageTop.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#pageTop.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}

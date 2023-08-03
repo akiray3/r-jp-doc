@@ -145,3 +145,31 @@ function selectFunction(event, tabId) {
     });
   };
 }
+
+
+function pageTopAnime(){
+  let scroll = $(window).scrollTop();
+  if(scroll >= 300){
+    $('#pageTop').removeClass('DownMove');
+    $('#pageTop').addClass('UpMove');
+  }else{
+    if($('#pageTop').hasClass('UpMove')){
+      $('#pageTop').removeClass('UpMove');
+      $('#pageTop').addClass('DownMove');
+    }
+  }
+}
+$(window).scroll(function () {
+pageTopAnime();
+});
+
+$(window).on('load',function(){
+  pageTopAnime();
+})
+$('#pageTop a').click(function(){
+  $('body,html').animate({
+    scrollTop:0
+  },500);
+  return false;
+  }
+);
