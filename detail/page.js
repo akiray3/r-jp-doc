@@ -207,11 +207,41 @@ document.addEventListener("DOMContentLoaded", async function () {
     .then((jsondata) => {
       const findfunc = jsondata.find((obj) => obj.func === keyword);
       const des = document.querySelector("#Description_forpc");
+      const use = document.querySelector("#Usage_forpc");
+      const val = document.querySelector("#Value_forpc");
+      const det = document.querySelector("#Details_forpc");
+      const exa = document.querySelector("#Examples_forpc");
+      const ref = document.querySelector("#Referrences_forpc");
+      const see = document.querySelector("#See_Also_forpc");
+
       if (findfunc.Description) {
       } else {
         des.classList.add("Hide");
       }
-      ////////////////ここに残りのタブ分も設定
+      if (findfunc.Usage) {
+      } else {
+        use.classList.add("Hide");
+      }
+      if (findfunc.Value) {
+      } else {
+        val.classList.add("Hide");
+      }
+      if (findfunc.Details) {
+      } else {
+        det.classList.add("Hide");
+      }
+      if (findfunc.Examples) {
+      } else {
+        exa.classList.add("Hide");
+      }
+      if (findfunc.References) {
+      } else {
+        ref.classList.add("Hide");
+      }
+      if (findfunc.See_Also) {
+      } else {
+        see.classList.add("Hide");
+      }
     });
 });
 
