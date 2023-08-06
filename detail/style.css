@@ -185,16 +185,15 @@ body {
     transform: scaleX(0);
     transform-origin: right top;
   }
-  @media (any-hover: hover) {
-    .tab:hover::after {
+    .tab::after {
       transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     }
-    .tab:hover::after {
+    .tab.active::after {
       transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
       transform: scaleX(1);
       transform-origin: left top;
     }
-  }
+  
   .content {
     font-size: var(--font-size-sm);
     overflow-wrap: break-word;
@@ -228,6 +227,9 @@ body {
   border-radius: 9px;
   cursor: pointer;
   display: block;
+}
+.tab.Hide{
+  display: none;
 }
 .content {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
