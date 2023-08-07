@@ -15,6 +15,12 @@ CSS記述の順番
   --font-size-xxl: clamp(2.44rem, 4.17vw + 1.4rem, 4.74rem);
   --font-size-xxxl: clamp(3.05rem, 5.93vw + 1.57rem, 6.31rem);
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #192200;
+    color: #e6dcb6;
+  }
+}
 #TagmenuButton {
   display: flex;
   justify-content: flex-end;
@@ -23,6 +29,14 @@ CSS記述の順番
   background-color: #00000000;
   border: 0.5px solid #00000000;
 }
+@media (prefers-color-scheme: dark) {
+  #TagmenuButton {
+    background-color: #192200;
+    border: 0.5px solid #192200;
+    color: #e6dcb6;
+  }
+}
+
 .TagMenu {
   width: 90px;
   display: flex;
@@ -40,13 +54,25 @@ CSS記述の順番
   background: #00000000;
   font-size: var(--font-size-sm);
 }
+@media (prefers-color-scheme: dark) {
+  .openMenutxt {
+    background: #e6dcb6;
+    color: #192200;
+  }
+}
 .openMenu {
   position: relative;
-  background: #57a2c700;
+  background: #00000000;
   cursor: pointer;
   width: 50px;
   height: 50px;
   border-radius: 5px;
+}
+@media (prefers-color-scheme: dark) {
+  .openMenu {
+    background: #192200;
+    color: #e6dcb6;
+  }
 }
 .openMenu span {
   display: inline-block;
@@ -57,6 +83,11 @@ CSS記述の順番
   border-radius: 2px;
   background: #070707;
   width: 45%;
+}
+@media (prefers-color-scheme: dark) {
+  .openMenu span{
+    background: #e6dcb6;
+  }
 }
 .openMenu span:nth-child(1) {
   top: 15px;
@@ -86,6 +117,7 @@ CSS記述の順番
   -webkit-user-select: none;
   user-select: none;
   overflow-wrap: anywhere;
+  font-family: "ArialRoundedMTBold";
 }
 .namebox {
   border-radius: 9.194px;
@@ -96,6 +128,13 @@ CSS記述の順番
   border: 1px solid #000;
   transform: translate(21.529px, 57.832px);
 }
+@media (prefers-color-scheme: dark) {
+  .namebox {
+    stroke: #e6dcb6;
+    border: 1px solid #e6dcb6;
+  }
+}
+
 .tagbutton {
   position: relative;
   align-items: center;
@@ -112,6 +151,14 @@ CSS記述の順番
   background-color: #00000000;
   border: 0.5px solid #000;
 }
+@media (prefers-color-scheme: dark) {
+  .tagbutton {
+    color: #e6dcb6;
+    stroke: #e6dcb6;
+    background-color: #192200;
+    border: 0.5px solid #e6dcb6;
+  }
+}
 @media screen and (max-width: 395px) {
   .lineitem {
     display: inline-block;
@@ -123,11 +170,19 @@ CSS記述の順番
     height: 100.0124px;
     stroke: rgb(66, 22, 104);
   }
+  @media (prefers-color-scheme: dark) {
+    .namebox {
+      stroke: #e6dcb6;
+      color: #e6dcb6;
+    }
+  }
   .ToDetailButton {
     width: 274.045px;
     height: 100.124px;
   }
+  
 }
+
 @media screen and (min-width: 395px) {
   .lineitem {
     width: 289px;
@@ -140,6 +195,15 @@ CSS記述の順番
   .ToDetailButton {
     width: 274.045px;
     height: 100.124px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .namebox {
+      stroke: #e6dcb6;
+    }
+    .ToDetailButton{
+      color: #e6dcb6;
+      background-color: #192200;
+    }
   }
 }
 
@@ -169,7 +233,7 @@ CSS記述の順番
 #pageTop {
   position: fixed;
   right: 10px;
-  bottom:10px;
+  bottom: 10px;
   z-index: 2;
   opacity: 0;
   transform: translateY(100px);

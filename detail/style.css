@@ -16,6 +16,12 @@ CSS記述の順番
 body {
   overflow-x: hidden;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #192200;
+    color: #e6dcb6;
+  }
+}
 .menu {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
@@ -171,6 +177,14 @@ body {
     overflow-wrap: anywhere;
     background: transparent;
   }
+
+  @media (prefers-color-scheme: dark) {
+    .tab {
+      color: #e6dcb6;
+    }
+  }
+    
+  
   .tab::after {
     position: static;
 
@@ -185,20 +199,24 @@ body {
     transform: scaleX(0);
     transform-origin: right top;
   }
-    .tab::after {
-      transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  @media(prefers-color-scheme:dark){
+    .tab::after{
+      background-color:#e6dcb6;
     }
-    .tab.active::after {
-      transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
-      transform: scaleX(1);
-      transform-origin: left top;
-    }
-  
+  }
+  .tab::after {
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .tab.active::after {
+    transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+    transform: scaleX(1);
+    transform-origin: left top;
+  }
+
   .content {
     font-size: var(--font-size-sm);
     overflow-wrap: break-word;
     max-width: 100%;
-
   }
 }
 
@@ -228,7 +246,7 @@ body {
   cursor: pointer;
   display: block;
 }
-.tab.Hide{
+.tab.Hide {
   display: none;
 }
 .content {
@@ -258,5 +276,3 @@ body {
   font-size: 23px;
   width: fit-content;
 }
-
-

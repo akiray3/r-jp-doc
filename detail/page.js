@@ -198,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 ///////////////////////////////////////////////////////
+//各データがないときにはタブ自体を非表示
 document.addEventListener("DOMContentLoaded", async function () {
   const currentURL = window.location.search;
   const urlParams = new URLSearchParams(currentURL);
@@ -213,7 +214,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       const exa = document.querySelector("#Examples_forpc");
       const ref = document.querySelector("#Referrences_forpc");
       const see = document.querySelector("#See_Also_forpc");
-
       if (findfunc.Description) {
       } else {
         des.classList.add("Hide");
@@ -323,6 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tabcontent.appendChild(Referencesbox);
 
       See_Alsobox.innerHTML = findfunc.See_Also;
+      console.log(findfunc.See_Also);
       tabcontent.appendChild(See_Alsobox);
 
       //残ったタブボタンのうち、最初のものを表示する

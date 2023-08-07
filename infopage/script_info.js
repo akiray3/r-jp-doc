@@ -47,7 +47,6 @@ request.onload = function () {
     const txttag = document.createElement("button");
     txttag.className = "ToDetailButton";
 
-    txttag.style.backgroundColor = "#00000000";
     txttag.style.border = "none";
 
     if (WindowSize <= 395) {
@@ -67,9 +66,6 @@ request.onload = function () {
         txttag.style.fontSize = "20px";
       }
     }
-
-    txttag.style.fontFamily = "ArialRoundedMTBold";
-
     const txtnode = document.createTextNode(funcname[i]);
 
     txttag.appendChild(txtnode);
@@ -114,7 +110,6 @@ function selectFunction(event, tabId) {
       const txttag = document.createElement("button");
       txttag.className = "ToDetailButton";
 
-      txttag.style.backgroundColor = "#00000000";
       txttag.style.border = "none";
 
       if (WindowSize <= 395) {
