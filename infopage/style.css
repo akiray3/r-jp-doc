@@ -21,10 +21,23 @@ CSS記述の順番
     color: #e6dcb6;
   }
 }
+.TagMenu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.TagMenuBox {
+  width: 100%;
+  position: relative;
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+}
+
 #TagmenuButton {
   display: flex;
+  flex: 0 0 calc(10%-20px);
   justify-content: flex-end;
-  width: 100%;
+  width: fit-content;
   height: 80px;
   background-color: #00000000;
   border: 0.5px solid #00000000;
@@ -37,16 +50,6 @@ CSS記述の順番
   }
 }
 
-.TagMenu {
-  width: 90px;
-  display: flex;
-}
-.TagMenuBox {
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-}
 .openMenutxt {
   left: 40%;
   right: 0%;
@@ -85,7 +88,7 @@ CSS記述の順番
   width: 45%;
 }
 @media (prefers-color-scheme: dark) {
-  .openMenu span{
+  .openMenu span {
     background: #e6dcb6;
   }
 }
@@ -113,12 +116,7 @@ CSS記述の順番
   transform: translateY(-6px) rotate(45deg);
   width: 30%;
 }
-.ToDetailButton {
-  -webkit-user-select: none;
-  user-select: none;
-  overflow-wrap: anywhere;
-  font-family: "ArialRoundedMTBold";
-}
+
 .namebox {
   border-radius: 9.194px;
   stroke: #243d25;
@@ -127,6 +125,12 @@ CSS記述の順番
   font-size: var(--font-size-base);
   border: 1px solid #000;
   transform: translate(21.529px, 57.832px);
+}
+.ToDetailButton {
+  -webkit-user-select: none;
+  user-select: none;
+  overflow-wrap: anywhere;
+  font-family: "ArialRoundedMTBold";
 }
 @media (prefers-color-scheme: dark) {
   .namebox {
@@ -142,7 +146,8 @@ CSS記述の順番
   text-align: center;
   overflow: hidden;
   height: fit-content;
-  width: 90px;
+  width: 11%;
+  margin: 5px;
   border-radius: 9.194px;
   stroke: #243d25;
   stroke-miterlimit: 10;
@@ -180,7 +185,6 @@ CSS記述の順番
     width: 274.045px;
     height: 100.124px;
   }
-  
 }
 
 @media screen and (min-width: 395px) {
@@ -200,7 +204,7 @@ CSS記述の順番
     .namebox {
       stroke: #e6dcb6;
     }
-    .ToDetailButton{
+    .ToDetailButton {
       color: #e6dcb6;
       background-color: #192200;
     }
