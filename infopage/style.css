@@ -116,7 +116,6 @@ CSS記述の順番
   transform: translateY(-6px) rotate(45deg);
   width: 30%;
 }
-
 .namebox {
   border-radius: 9.194px;
   stroke: #243d25;
@@ -125,18 +124,25 @@ CSS記述の順番
   font-size: var(--font-size-base);
   border: 1px solid #000;
   transform: translate(21.529px, 57.832px);
+  position: relative;
 }
+
+@media (prefers-color-scheme: dark) {
+  .namebox {
+    stroke: #e6dcb6;
+    border: 1px solid #e6dcb6;
+    background-color: #afab93;
+  }
+}
+
 .ToDetailButton {
   -webkit-user-select: none;
   user-select: none;
   overflow-wrap: anywhere;
   font-family: "ArialRoundedMTBold";
-}
-@media (prefers-color-scheme: dark) {
-  .namebox {
-    stroke: #e6dcb6;
-    border: 1px solid #e6dcb6;
-  }
+  background-size: cover;
+  background-position: right;
+  position: absolute;
 }
 
 .tagbutton {
@@ -175,12 +181,6 @@ CSS記述の順番
     height: 100.0124px;
     stroke: rgb(66, 22, 104);
   }
-  @media (prefers-color-scheme: dark) {
-    .namebox {
-      stroke: #e6dcb6;
-      color: #e6dcb6;
-    }
-  }
   .ToDetailButton {
     width: 274.045px;
     height: 100.124px;
@@ -205,7 +205,8 @@ CSS記述の順番
       stroke: #e6dcb6;
     }
     .ToDetailButton {
-      color: #e6dcb6;
+      color: #E6DCB6;
+      -webkit-text-stroke: 1px #e6dcb6;
       background-color: #192200;
     }
   }
@@ -214,6 +215,11 @@ CSS記述の順番
 .slidermenu_base.none {
   display: none;
 }
+.svg {
+  width: 90%;
+  height: 90%;
+}
+
 #pageTop a {
   display: flex;
   justify-content: center;
