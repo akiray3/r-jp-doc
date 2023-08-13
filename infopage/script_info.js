@@ -15,6 +15,7 @@ if (allMenu) {
 } else {
 }
 
+//メニューをページ上部に固定
 function FixedMenu() {
   const menu = $("#TagmenuButton").outerHeight(true);
   const scroll = $(window).scrollTop();
@@ -28,6 +29,18 @@ $(window).scroll(function () {
   FixedMenu();
 });
 
+function fixedMenuButton() {
+  const button = $(".tagmenu").outerHeight(true);
+  const scroll = $(window).scrollTop();
+  if (scroll >= button) {
+    $(".tagmenu").addClass("fixed");
+  } else {
+    $(".tagmenu").removeClass("fixed");
+  }
+}
+$(window).scroll(function () {
+  fixedMenuButton();
+});
 const titletag = document.getElementsByTagName("title")[0];
 const titleid = titletag.id;
 const WindowSize = window.innerWidth;

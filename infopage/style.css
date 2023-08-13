@@ -21,18 +21,13 @@ CSS記述の順番
     color: #e6dcb6;
   }
 }
-.TagMenu {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .TagMenuBox {
   width: 100%;
   position: relative;
   flex: 0 0 calc(33.33% - 20px);
   margin: 10px;
 }
-
 #TagmenuButton {
   display: flex;
   justify-content: space-between;
@@ -126,6 +121,24 @@ CSS記述の順番
   width: 30%;
 }
 
+.TagMenu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.tagmenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.tagmenu.fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
 .namebox {
   border-radius: 9.194px;
   stroke: #243d25;
