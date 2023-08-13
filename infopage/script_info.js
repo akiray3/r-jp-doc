@@ -1,16 +1,32 @@
 const allMenu = document.querySelector(".tagmenu");
-allMenu.style.display = "none";
+if (allMenu) {
+  allMenu.style.display = "none";
 
-$(".openMenu").click(function () {
-  $(this).toggleClass("active");
-});
-function openTagmenu(event, tabId) {
-  if (allMenu.style.display === "block") {
-    allMenu.style.display = "none";
-  } else if ((allMenu.style.display = "none")) {
-    allMenu.style.display = "block";
+  $(".openMenu").click(function () {
+    $(this).toggleClass("active");
+  });
+  function openTagmenu(event, tabId) {
+    if (allMenu.style.display === "block") {
+      allMenu.style.display = "none";
+    } else if ((allMenu.style.display = "none")) {
+      allMenu.style.display = "block";
+    }
+  }
+} else {
+}
+
+function FixedMenu() {
+  const menu = $("#TagmenuButton").outerHeight(true);
+  const scroll = $(window).scrollTop();
+  if (scroll >= menu) {
+    $("#TagmenuButton").addClass("fixed");
+  } else {
+    $("#TagmenuButton").removeClass("fixed");
   }
 }
+$(window).scroll(function () {
+  FixedMenu();
+});
 
 const titletag = document.getElementsByTagName("title")[0];
 const titleid = titletag.id;
@@ -108,15 +124,12 @@ fetch("../help_db_jpn_main.json")
         keyframe.appendChild(div);
         const sec_slide = document.querySelector(".sec_slide");
         sec_slide.appendChild(keyframe);
-
-        
       });
       const descriptionBox = document.createElement("div");
-        descriptionBox.className = "descriptionBox";
-        descriptionBox.textContent = element;
-        keyframe.appendChild(descriptionBox);
+      descriptionBox.className = "descriptionBox";
+      descriptionBox.textContent = element;
+      keyframe.appendChild(descriptionBox);
     });
-
   });
 
 function pageTopAnime() {
