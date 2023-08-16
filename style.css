@@ -117,10 +117,12 @@
     top: 0;
     transform: translateX(10px);
   }
-  #stats_borderbox {
+  #stats_borderbox{
     position: fixed;
-    transform: translate(92px, 0px);
-    margin-top: 30%;
+        right: 0;
+        top: 0;
+        width: 70%;
+        transform: translatex(-35px);
   }
 }
 
@@ -143,6 +145,7 @@
   }
   .packname {
     font-size: var(--font-size-xxl);
+    font-family: sans-serif;
   }
   #base_sec_inner {
     position: fixed;

@@ -14,7 +14,12 @@
     "href": "/detail/graphics/assocplot.html",
     "funcname": "assocplot"
   },
-  { "id": "axis", "href": "/detail/graphics/axis.html", "funcname": "axis" },
+  {
+    "id": "axis",
+    "href": "/detail/graphics/axis.html",
+    "funcname": "axis",
+    "svg": "axis.svg"
+  },
   { "id": "Axis", "href": "/detail/graphics/Axis.html", "funcname": "Axis" },
   {
     "id": "axis.Date",
@@ -40,13 +45,15 @@
   {
     "id": "barplot.default",
     "href": "/detail/graphics/barplotsymbol11default.html",
-    "funcname": "barplot.default"
+    "funcname": "barplot.default",
+    "svg": "chart-bar-horizontal.svg"
   },
   { "id": "box", "href": "/detail/graphics/box.html", "funcname": "box" },
   {
     "id": "boxplot",
     "href": "/detail/graphics/boxplot.html",
-    "funcname": "boxplot"
+    "funcname": "boxplot",
+    "svg": "boxplot_default.svg"
   },
   {
     "id": "boxplot.default",
@@ -68,7 +75,7 @@
     "id": "clip",
     "href": "/detail/graphics/clip.html",
     "funcname": "clip",
-    "svg": "paperclip-light.svg"
+    "svg": "crop.svg"
   },
   {
     "id": "close.screen",
@@ -173,7 +180,8 @@
   {
     "id": "locator",
     "href": "/detail/graphics/locator.html",
-    "funcname": "locator"
+    "funcname": "locator",
+    "svg": "mouse.svg"
   },
   {
     "id": "matlines",
@@ -259,7 +267,8 @@
   {
     "id": "polygon",
     "href": "/detail/graphics/polygon.html",
-    "funcname": "polygon"
+    "funcname": "polygon",
+    "svg": "polygon.svg"
   },
   {
     "id": "polypath",
@@ -276,7 +285,8 @@
   {
     "id": "screen",
     "href": "/detail/graphics/screen.html",
-    "funcname": "screen"
+    "funcname": "screen",
+    "svg": "presentation-chart.svg"
   },
   {
     "id": "segments",

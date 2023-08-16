@@ -71,6 +71,7 @@ fetch("../help_db_jpn_main.json")
     keys.forEach((element) => {
       const keyframe = document.createElement("div");
       keyframe.className = "keyframe";
+
       const filterDes = packFilter.filter(
         (item) => item.Description === element
       );

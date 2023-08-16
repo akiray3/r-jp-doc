@@ -563,17 +563,20 @@
   {
     "id": "influence",
     "href": "/detail/stats/influence.html",
-    "funcname": "influence"
+    "funcname": "influence",
+    "svg": "square.svg"
   },
   {
     "id": "influence.measures",
     "href": "/detail/stats/influencesymbol11measures.html",
-    "funcname": "influence.measures"
+    "funcname": "influence.measures",
+    "svg": "square.svg"
   },
   {
     "id": "integrate",
     "href": "/detail/stats/integrate.html",
-    "funcname": "integrate"
+    "funcname": "integrate",
+    "svg": "integrate.svg"
   },
   {
     "id": "interaction.plot",
