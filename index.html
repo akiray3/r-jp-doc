@@ -13,99 +13,106 @@
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
   <script src="jquery.js"></script>
   <script src="slick-1.8.1/slick/slick.min.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
 </head>
 <body>
-  <form id="search" action="/r-jp-doc/search.html" method="get">
-    <input
-      type="text"
-      id="keywordbox"
-      name="keyword"
-      placeholder="キーワードを入力"
-    />
-    <button type="submit" id="reserch">
-      <img
-        src="www/magnifying-glass-duotone.svg"
-        alt="SVG"
-        id="magnifying-glass-duotone"
+  <div style="width: 100%">
+    <form id="search" action="/r-jp-doc/search.html" method="get">
+      <input
+        type="text"
+        id="keywordbox"
+        name="keyword"
+        placeholder="キーワードを入力"
       />
-    </button>
-    <div id="autocomplete">
-      <ul id="autocompletelist"></ul>
-    </div>
-  </form>
+      <button type="submit" id="reserch">
+        <img
+          src="www/magnifying-glass-duotone.svg"
+          alt="SVG"
+          id="magnifying-glass-duotone"
+        />
+      </button>
+      <div id="autocomplete">
+        <ul id="autocompletelist"></ul>
+      </div>
+    </form>
+  </div>
 
-  <div class="sec_inner">
-    <div id="base_sec_inner">
-      <h1 class="packname" >base</h1>
-      <nav>
-        <a
-          href="/r-jp-doc/infopage/base.html"
-          style="padding: 15px"
-          class="librarylink"
-          >一覧を見る</a
-        >
-      </nav>
+  <div style="width: 100%">
+    <div class="sec_inner">
+      <div id="base_sec_inner">
+        <h1 class="packname">base</h1>
+        <nav>
+          <a
+            href="/r-jp-doc/infopage/base.html"
+            style="padding: 15px"
+            class="librarylink"
+            >一覧を見る</a
+          >
+        </nav>
+      </div>
+      <div class="border-box" id="base_borderbox">
+        <div class="slick-slider" id="base_slider"></div>
+      </div>
     </div>
-    <div class="border-box" id="base_borderbox">
-      <div class="slick-slider" id="base_slider"></div>
+    <div class="sec_inner">
+      <div id="graphics_sec_inner">
+        <h1 class="packname">graphics</h1>
+        <nav>
+          <a
+            href="/r-jp-doc/infopage/graphics.html"
+            style="padding: 15px"
+            class="librarylink"
+            >一覧を見る</a
+          >
+        </nav>
+      </div>
+      <div class="border-box" id="graphics_borderbox">
+        <div class="slick-slider" id="graphics_slider"></div>
+      </div>
     </div>
-  </div>
-  <div class="sec_inner">
-    <div id="graphics_sec_inner">
-      <h1 class="packname" >graphics</h1>
-      <nav>
-        <a
-          href="/r-jp-doc/infopage/graphics.html"
-          style="padding: 15px"
-          class="librarylink"
-          >一覧を見る</a
-        >
-      </nav>
+    <div class="sec_inner">
+      <div id="psych_sec_inner">
+        <h1 class="packname">psych</h1>
+        <nav>
+          <a
+            href="/r-jp-doc/infopage/psych.html"
+            style="padding: 15px"
+            class="librarylink"
+            >一覧を見る</a
+          >
+        </nav>
+      </div>
+      <div class="border-box" id="psych_borderbox">
+        <div class="slick-slider" id="psych_slider"></div>
+      </div>
     </div>
-    <div class="border-box" id="graphics_borderbox">
-      <div class="slick-slider" id="graphics_slider"></div>
-    </div>
-  </div>
-  <div class="sec_inner">
-    <div id="psych_sec_inner">
-      <h1 class="packname" >psych</h1>
-      <nav>
-        <a
-          href="/r-jp-doc/infopage/psych.html"
-          style="padding: 15px"
-          class="librarylink"
-          >一覧を見る</a
-        >
-      </nav>
-    </div>
-    <div class="border-box" id="psych_borderbox">
-      <div class="slick-slider" id="psych_slider"></div>
-    </div>
-  </div>
-  <div class="sec_inner">
-    <div id="stats_sec_inner">
-      <h1 class="packname" >stats</h1>
-      <nav>
-        <a
-          href="/r-jp-doc/infopage/stats.html"
-          style="padding: 15px"
-          class="librarylink"
-          >一覧を見る</a
-        >
-      </nav>
-    </div>
-    <div
-      class="border-box"
-      style="
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 70%;
-        transform: translatex(-35px);
-      "
-    >
-      <div class="slick-slider" id="stats_slider"></div>
+    <div class="sec_inner">
+      <div id="stats_sec_inner">
+        <h1 class="packname">stats</h1>
+        <nav>
+          <a
+            href="/r-jp-doc/infopage/stats.html"
+            style="padding: 15px"
+            class="librarylink"
+            >一覧を見る</a
+          >
+        </nav>
+      </div>
+      <div
+        class="border-box"
+        style="
+          position: fixed;
+          right: 0;
+          top: 0;
+          width: 70%;
+          transform: translatex(-35px);
+        "
+      >
+        <div class="slick-slider" id="stats_slider"></div>
+      </div>
     </div>
   </div>
 
