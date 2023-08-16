@@ -19,6 +19,11 @@
   />
 </head>
 <body>
+  <!--ローディング-->
+  <div id="loading">
+    <div class="loader">Loading...</div>
+  </div>
+  <!--検索ボックス-->
   <div style="width: 100%">
     <form id="search" action="/r-jp-doc/search.html" method="get">
       <input
@@ -39,7 +44,7 @@
       </div>
     </form>
   </div>
-
+<!--コンテンツ本体-->
   <div style="width: 100%">
     <div class="sec_inner">
       <div id="base_sec_inner">
@@ -117,6 +122,10 @@
   </div>
 
   <script>
+    const loading = document.querySelector("#loading");
+    window.addEventListener("load",()=>{
+loading.classList.add("loaded");
+    })
     const list = ["base", "graphics", "psych", "stats"];
     const windowSize = window.innerWidth;
     list.forEach(function (item) {
