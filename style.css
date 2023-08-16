@@ -10,7 +10,9 @@
   --font-size-xxl: clamp(2.44rem, 4.17vw + 1.4rem, 4.74rem);
   --font-size-xxxl: clamp(3.05rem, 5.93vw + 1.57rem, 6.31rem);
 }
-
+body {
+  overflow-x: hidden;
+}
 /*======　検索box ======*/
 @media screen and (max-width: 420px) {
   #search {
@@ -30,11 +32,11 @@
 
 @media screen and (min-width: 420px) {
   #search {
-    transform: translate(20%, 54px);
+    transform: translate(10%, 10%);
   }
   #keywordbox {
     height: 70px;
-    width: 520px;
+    width: 80%;
     border-radius: 510.194px;
     stroke: #000;
     stroke-width: 1px;
@@ -69,7 +71,7 @@
 
 @media screen and (max-width: 420px) {
   .sec_inner {
-    white-space: nrowrap;
+    padding: 0%;
     width: 100%;
     height: 370px;
     border-radius: 9.194px;
@@ -126,8 +128,7 @@
 
 @media screen and (min-width: 420px) {
   .sec_inner {
-    white-space: nrowrap;
-    width: 100%;
+    width: 98%;
     height: 250px;
     border-radius: 9.194px;
     stroke: rgb(36, 61, 37);
@@ -143,6 +144,7 @@
   }
   .packname {
     font-size: var(--font-size-xxl);
+    font-family: sans-serif;
   }
   #base_sec_inner {
     position: fixed;
@@ -181,6 +183,7 @@
     position: fixed;
     right: 0;
     top: 0;
+    width: 70%;
     transform: translateX(-35px);
   }
 }

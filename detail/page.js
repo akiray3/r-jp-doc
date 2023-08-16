@@ -4,6 +4,8 @@
 const path_for_github = "../r-jp-doc";
 
 const WindowSize = window.innerWidth;
+const path = "../help_db_jpn_main.json";
+
 console.log(WindowSize);
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -11,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(currentURL);
   const keyword = urlParams.get("keyword");
 
-  const path = "../help_db_jpn_main.json";
   const jsonfile = new XMLHttpRequest();
   jsonfile.open("GET", path, true);
   jsonfile.send();
@@ -63,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
       }
     };
-
 
     req.onload = function () {
       const json = JSON.parse(req.responseText);
@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const hovtxt = document.createTextNode(element.desc);
         hovinfo.appendChild(hovtxt);
         hoverFrame.appendChild(hovinfo);
-        
 
         //ホバー有効無効の判定
         //ホバー有効
@@ -196,10 +195,56 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     };
   };
-
 });
 
 ///////////////////////////////////////////////////////
+//各データがないときにはタブ自体を非表示
+document.addEventListener("DOMContentLoaded", async function () {
+  const currentURL = window.location.search;
+  const urlParams = new URLSearchParams(currentURL);
+  const keyword = urlParams.get("keyword");
+  fetch("../help_db_jpn_main.json")
+    .then((response) => response.json())
+    .then((jsondata) => {
+      const findfunc = jsondata.find((obj) => obj.func === keyword);
+      const des = document.querySelector("#Description_forpc");
+      const use = document.querySelector("#Usage_forpc");
+      const val = document.querySelector("#Value_forpc");
+      const det = document.querySelector("#Details_forpc");
+      const exa = document.querySelector("#Examples_forpc");
+      const ref = document.querySelector("#Referrences_forpc");
+      const see = document.querySelector("#See_Also_forpc");
+      if (findfunc.Description) {
+      } else {
+        des.classList.add("Hide");
+      }
+      if (findfunc.Usage) {
+      } else {
+        use.classList.add("Hide");
+      }
+      if (findfunc.Value) {
+      } else {
+        val.classList.add("Hide");
+      }
+      if (findfunc.Details) {
+      } else {
+        det.classList.add("Hide");
+      }
+      if (findfunc.Examples) {
+      } else {
+        exa.classList.add("Hide");
+      }
+      if (findfunc.References) {
+      } else {
+        ref.classList.add("Hide");
+      }
+      if (findfunc.See_Also) {
+      } else {
+        see.classList.add("Hide");
+      }
+    });
+});
+
 //tabmenu
 function openTab(event, tabId) {
   const tabs = document.querySelectorAll(".tab");
@@ -210,7 +255,7 @@ function openTab(event, tabId) {
 
   const clicktab = event.currentTarget;
   const clickedcontent = document.querySelector("#" + tabId);
-  clicktab.classList.add("active");
+  clicktab.classList.toggle("active");
   clickedcontent.style.display = "block";
 }
 
@@ -224,6 +269,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const Descriptionbox = document.createElement("div");
     Descriptionbox.classList.add("content");
     Descriptionbox.setAttribute("id", "Description_forpc_cont");
+
+    const Usagebox = document.createElement("div");
+    Usagebox.classList.add("content");
+    Usagebox.setAttribute("id", "Usage_forpc_cont");
 
     const Valuebox = document.createElement("div");
     Valuebox.classList.add("content");
@@ -252,11 +301,13 @@ document.addEventListener("DOMContentLoaded", function () {
     load.onload = function () {
       const jsondata = JSON.parse(load.responseText);
       const findfunc = jsondata.find((obj) => obj.func === keyword);
-      const Descriptiontxt = document.createTextNode(
-        findfunc.Description.value
-      );
+      const Descriptiontxt = document.createTextNode(findfunc.Description);
       Descriptionbox.appendChild(Descriptiontxt);
       tabcontent.appendChild(Descriptionbox);
+
+      const Usagetxt = document.createTextNode(findfunc.Usage);
+      Usagebox.appendChild(Usagetxt);
+      tabcontent.appendChild(Usagebox);
 
       Valuebox.innerHTML = findfunc.Value;
       tabcontent.appendChild(Valuebox);
@@ -272,10 +323,15 @@ document.addEventListener("DOMContentLoaded", function () {
       tabcontent.appendChild(Referencesbox);
 
       See_Alsobox.innerHTML = findfunc.See_Also;
+      console.log(findfunc.See_Also);
       tabcontent.appendChild(See_Alsobox);
 
-      //デフォルトでDescriptionを開く
-      document.querySelector("#Description_forpc").click();
+      //残ったタブボタンのうち、最初のものを表示する
+      const tabs = document.querySelectorAll(".tab");
+      const visibleTab = Array.from(tabs).filter(
+        (tab) => !tab.classList.contains("Hide")
+      );
+      visibleTab[0].click();
     };
   } else if (window.innerWidth <= 420) {
     const currentURL = window.location.search;
@@ -285,6 +341,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Mobile
     const DesContent = document.querySelector("#Description_contents");
+    const UsageContent = document.querySelector("#Usage_contents");
     const ValContent = document.querySelector("#Value_contents");
     const DetContent = document.querySelector("#Details_contents");
     const ExaContent = document.querySelector("#Examples_contents");
@@ -300,14 +357,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const jsondata = JSON.parse(load.responseText);
       console.log(keyword);
       const findfunc = jsondata.find((obj) => obj.func === keyword);
-      if (findfunc.Description.value) {
-        const Descriptiontxt = document.createTextNode(
-          findfunc.Description.value
-        );
+      if (findfunc.Description) {
+        const Descriptiontxt = document.createTextNode(findfunc.Description);
         DesContent.appendChild(Descriptiontxt);
       } else {
       }
-
+      if (findfunc.Usage) {
+        const Usagetxt = document.createTextNode(findfunc.Usage);
+        UsageContent.appendChild(Usagetxt);
+      } else {
+      }
       if (findfunc.Value) {
         ValContent.innerHTML = findfunc.Value;
       } else {

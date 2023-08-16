@@ -538,7 +538,8 @@
     "id": "acosh",
     "href": "/detail/base/acosh.html",
     "funcname": "acosh",
-    "tag": "data"
+    "tag": "data",
+    "tag": "acosh.svg"
   },
   {
     "id": "activeBindingFunction",
@@ -574,6 +575,7 @@
     "id": "alist",
     "href": "/detail/base/alist.html",
     "funcname": "alist",
+    "svg": "checks.svg",
     "tag": "data"
   },
   {

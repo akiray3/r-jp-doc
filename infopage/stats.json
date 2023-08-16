@@ -573,7 +573,8 @@
   {
     "id": "integrate",
     "href": "/detail/stats/integrate.html",
-    "funcname": "integrate"
+    "funcname": "integrate",
+    "svg": "integrate.svg"
   },
   {
     "id": "interaction.plot",

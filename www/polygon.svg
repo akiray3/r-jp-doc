@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.73 181.79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <polygon class="cls-1" points="90.39 4.43 138.76 41.36 176.69 70.36 163.35 114.98 143.73 177.03 88.39 178.28 37.05 177.03 19.42 119.1 4.09 70.36 46.02 39.36 90.39 4.43"/>
+  </g>
+</svg>
