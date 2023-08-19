@@ -44,7 +44,7 @@
       </div>
     </form>
   </div>
-<!--コンテンツ本体-->
+  <!--コンテンツ本体-->
   <div style="width: 100%">
     <div class="sec_inner">
       <div id="base_sec_inner">
@@ -123,9 +123,9 @@
 
   <script>
     const loading = document.querySelector("#loading");
-    window.addEventListener("load",()=>{
-loading.classList.add("loaded");
-    })
+    window.addEventListener("load", () => {
+      loading.classList.add("loaded");
+    });
     const list = ["base", "graphics", "psych", "stats"];
     const windowSize = window.innerWidth;
     list.forEach(function (item) {
@@ -133,7 +133,6 @@ loading.classList.add("loaded");
         .then((response) => response.json())
         .then((jsondata) => {
           const slideblock = document.querySelector(`#${item}_slider`);
-          console.log(slideblock);
           for (let i = 0; i < jsondata.length; i++) {
             if (jsondata[i].svg) {
               const slide = document.createElement("div");

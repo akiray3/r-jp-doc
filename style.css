@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 /*====== ローディング ======*/
-#loading{
+#loading {
   transition: all 1s;
   background-color: #ddd;
   position: fixed;
@@ -36,7 +36,6 @@ body {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  
 }
 @-webkit-keyframes load5 {
   0%,
@@ -196,6 +195,13 @@ body {
 }
 
 /*======　検索box ======*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #192200;
+    color: #e6dce6;
+  }
+}
+
 @media screen and (max-width: 420px) {
   #search {
     left: 3%;
@@ -246,10 +252,16 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: var(--font-size-base);
 }
+@media (prefers-color-scheme: dark) {
+  .librarylink {
+    color: #afab93;
+  }
+}
 .slick-list {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: var(--font-size-base);
 }
+
 
 @media screen and (max-width: 420px) {
   .sec_inner {
@@ -263,6 +275,12 @@ body {
     border: 2px solid rgb(0, 0, 0);
     transform: translate(0px, 57.832px);
     margin-top: 3%;
+  }
+  @media (prefers-color-scheme:dark) {
+    .sec_inner{
+      stroke: #e6dce6;
+      border: 2px solid #e6dce6;
+    }
   }
   #base_sec_inner {
     position: fixed;
@@ -320,6 +338,12 @@ body {
     transform: translate(21.529px, 57.832px);
     margin-top: 3%;
   }
+  @media (prefers-color-scheme:dark) {
+    .sec_inner{
+      stroke: #e6dce6;
+      border: 2px solid #e6dce6;
+    }
+  }
   #base_borderbox {
     width: 70%;
     transform: translate(30px);
@@ -328,6 +352,7 @@ body {
     font-size: var(--font-size-xxl);
     font-family: sans-serif;
   }
+
   #base_sec_inner {
     position: fixed;
     right: 0;
