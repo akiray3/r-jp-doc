@@ -576,6 +576,7 @@
     "href": "/detail/base/alist.html",
     "funcname": "alist",
     "svg": "checks.svg",
+    "svg-white": "checks-white.svg",
     "tag": "data"
   },
   {
@@ -811,6 +812,7 @@
     "href": "/detail/base/assymbol11call.html",
     "funcname": "as.call",
     "svg": "megaphone-light.svg",
+    "svg-white": "megaphone-light-white.svg",
     "tag": "data"
   },
   {
@@ -818,6 +820,7 @@
     "href": "/detail/base/assymbol11character.html",
     "funcname": "as.character",
     "svg": "text-aa-light.svg",
+    "svg-white": "text-aa-light-white.svg",
     "tag": "string"
   },
   {
@@ -886,7 +889,8 @@
     "id": "as.data.frame",
     "href": "/detail/base/assymbol1,1datasymbol11frame.html",
     "funcname": "as.data.frame",
-    "svg": "grid-nine-light.svg"
+    "svg": "grid-nine-light.svg",
+    "svg-white": "grid-nine-light-white.svg"
   },
   {
     "id": "as.data.frame.array",
@@ -1108,6 +1112,7 @@
     "href": "/detail/base/assymbol11list.html",
     "funcname": "as.list",
     "svg": "list-bullets-light.svg",
+    "svg-white": "list-bullets-light-white.svg",
     "tag": "data"
   },
   {
@@ -1232,7 +1237,8 @@
     "id": "as.numeric",
     "href": "/detail/base/assymbol11numeric.html",
     "funcname": "as.numeric",
-    "svg": "list-numbers-light.svg"
+    "svg": "list-numbers-light.svg",
+    "svg-white
   },
   {
     "id": "as.numeric_version",

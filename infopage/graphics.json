@@ -18,7 +18,8 @@
     "id": "axis",
     "href": "/detail/graphics/axis.html",
     "funcname": "axis",
-    "svg": "axis.svg"
+    "svg": "axis.svg",
+    "svg-white": "axis-white.svg"
   },
   { "id": "Axis", "href": "/detail/graphics/Axis.html", "funcname": "Axis" },
   {
@@ -40,20 +41,23 @@
     "id": "barplot",
     "href": "/detail/graphics/barplot.html",
     "funcname": "barplot",
-    "svg": "chart-bar-light.svg"
+    "svg": "chart-bar-light.svg",
+    "svg-white": "chart-bar-light-white.svg"
   },
   {
     "id": "barplot.default",
     "href": "/detail/graphics/barplotsymbol11default.html",
     "funcname": "barplot.default",
-    "svg": "chart-bar-horizontal.svg"
+    "svg": "chart-bar-horizontal.svg",
+    "svg-white": "chart-bar-horizontal-white.svg"
   },
   { "id": "box", "href": "/detail/graphics/box.html", "funcname": "box" },
   {
     "id": "boxplot",
     "href": "/detail/graphics/boxplot.html",
     "funcname": "boxplot",
-    "svg": "boxplot_default.svg"
+    "svg": "boxplot_default.svg",
+    "svg-white": "boxplot_default-white.svg"
   },
   {
     "id": "boxplot.default",
@@ -75,13 +79,15 @@
     "id": "clip",
     "href": "/detail/graphics/clip.html",
     "funcname": "clip",
-    "svg": "crop.svg"
+    "svg": "crip.svg",
+    "svg-white":"crip-white.svg"
   },
   {
     "id": "close.screen",
     "href": "/detail/graphics/closesymbol11screen.html",
     "funcname": "close.screen",
-    "svg": "x-circle-light.svg"
+    "svg": "x-circle-light.svg",
+    "svg-white": "x-circle-light-white.svg"
   },
   {
     "id": "co.intervals",
@@ -108,13 +114,15 @@
     "id": "dotchart",
     "href": "/detail/graphics/dotchart.html",
     "funcname": "dotchart",
-    "svg": "chart-scatter-light.svg"
+    "svg": "chart-scatter-light.svg",
+    "svg-white": "chart-scatter-light-white.svg"
   },
   {
     "id": "erase.screen",
     "href": "/detail/graphics/erasesymbol11screen.html",
     "funcname": "erase.screen",
-    "svg": "eraser-light.svg"
+    "svg": "eraser-light.svg",
+    "svg-white": "eraser-light-white.svg"
   },
   {
     "id": "filled.contour",
@@ -181,7 +189,8 @@
     "id": "locator",
     "href": "/detail/graphics/locator.html",
     "funcname": "locator",
-    "svg": "mouse.svg"
+    "svg": "mouse.svg",
+    "svg-white": "mouse-white.svg"
   },
   {
     "id": "matlines",
@@ -221,7 +230,8 @@
     "id": "pie",
     "href": "/detail/graphics/pie.html",
     "funcname": "pie",
-    "svg": "chart-pie-light.svg"
+    "svg": "chart-pie-light.svg",
+    "svg-white":"chart-pie-light-white.svg"
   },
   { "id": "plot", "href": "/detail/graphics/plot.html", "funcname": "plot" },
   {
@@ -268,7 +278,8 @@
     "id": "polygon",
     "href": "/detail/graphics/polygon.html",
     "funcname": "polygon",
-    "svg": "polygon.svg"
+    "svg": "polygon.svg",
+    "svg-white": "polygon-white.svg"
   },
   {
     "id": "polypath",
@@ -286,7 +297,8 @@
     "id": "screen",
     "href": "/detail/graphics/screen.html",
     "funcname": "screen",
-    "svg": "presentation-chart.svg"
+    "svg": "presentation-chart.svg",
+    "svg-white": "presentation-chart-white.svg"
   },
   {
     "id": "segments",
