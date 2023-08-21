@@ -502,7 +502,8 @@
     "id": "Gamma",
     "href": "/detail/stats/Gamma.html",
     "funcname": "Gamma",
-    "svg": "chart-polar-light.svg"
+    "svg": "chart-polar-light.svg",
+    "svg_white": "chart-polar-light-white.svg"
   },
   {
     "id": "gaussian",
@@ -546,19 +547,22 @@
     "id": "hclust",
     "href": "/detail/stats/hclust.html",
     "funcname": "hclust",
-    "svg": "tree-structure-light.svg"
+    "svg": "tree-structure-light.svg",
+    "svg_white": "tree-structure-light-white.svg"
   },
   {
     "id": "heatmap",
     "href": "/detail/stats/heatmap.html",
     "funcname": "heatmap",
-    "svg": "heatmap.svg"
+    "svg": "heatmap.svg",
+    "svg_white": "heatmap-white.svg"
   },
   {
     "id": "HoltWinters",
     "href": "/detail/stats/HoltWinters.html",
     "funcname": "HoltWinters",
-    "svg": "chart-line-up-light.svg"
+    "svg": "chart-line-up-light.svg",
+    "svg_white": "chart-line-up-light-white.svg"
   },
   {
     "id": "influence",
@@ -574,7 +578,8 @@
     "id": "integrate",
     "href": "/detail/stats/integrate.html",
     "funcname": "integrate",
-    "svg": "integrate.svg"
+    "svg": "integrate.svg",
+    "svg_white": "integrate-white.svg"
   },
   {
     "id": "interaction.plot",
@@ -1545,7 +1550,8 @@
     "id": "update",
     "href": "/detail/stats/update.html",
     "funcname": "update",
-    "svg": "arrow-fat-line-up-light.svg"
+    "svg": "arrow-fat-line-up-light.svg",
+    "svg_white": "arrow-fat-line-up-light-white.svg"
   },
   {
     "id": "update.default",

@@ -1503,7 +1503,7 @@
     "href": "/detail/psych/scattersymbol11hist.html",
     "funcname": "scatter.hist",
     "svg": "chart-scatter-light.svg",
-    "svg-white": "chart-scatter-white.svg"
+    "svg_white": "chart-scatter-light-white.svg"
   },
   {
     "id": "scatterHist",
@@ -1626,7 +1626,7 @@
     "href": "/detail/psych/setCorLookup.html",
     "funcname": "setCorLookup",
     "svg": "magnifying-glass-light.svg",
-    "svg-white": "magnifying-glass-white.svg"
+    "svg_white": "magnifying-glass-light-white.svg"
   },
   {
     "id": "shannon",
@@ -1882,7 +1882,7 @@
     "href": "/detail/psych/TargetQ.html",
     "funcname": "TargetQ",
     "svg": "spiral-light.svg",
-    "svg-white": "spiral-white.svg"
+    "svg_white": "spiral-light-white.svg"
   },
   {
     "id": "TargetT",
@@ -1899,7 +1899,7 @@
     "href": "/detail/psych/testsymbol11all.html",
     "funcname": "test.all",
     "svg": "test-tube-light.svg",
-    "svg-white": "test-tube-white.svg"
+    "svg_white": "test-tube-light-white.svg"
   },
   {
     "id": "test.irt",

@@ -3,7 +3,8 @@
     "id": "-",
     "href": "/detail/base/-.html",
     "funcname": "-",
-    "svg": "math-operations.svg",
+    "svg": "math-operations-light.svg",
+    "svg_white": "math-operations-light-white.svg",
     "tag": "operator"
   },
   {
@@ -82,6 +83,7 @@
     "href": "/detail/base/[symbol11datasymbol11frame.html",
     "funcname": "[.data.frame",
     "svg": "grid-nine-light.svg",
+    "svg_white": "grid-nine-light-white.svg",
     "tag": "data"
   },
   {
@@ -576,7 +578,7 @@
     "href": "/detail/base/alist.html",
     "funcname": "alist",
     "svg": "checks.svg",
-    "svg-white": "checks-white.svg",
+    "svg_white": "checks-light-white.svg",
     "tag": "data"
   },
   {
@@ -812,7 +814,7 @@
     "href": "/detail/base/assymbol11call.html",
     "funcname": "as.call",
     "svg": "megaphone-light.svg",
-    "svg-white": "megaphone-light-white.svg",
+    "svg_white": "megaphone-light-white.svg",
     "tag": "data"
   },
   {
@@ -820,7 +822,7 @@
     "href": "/detail/base/assymbol11character.html",
     "funcname": "as.character",
     "svg": "text-aa-light.svg",
-    "svg-white": "text-aa-light-white.svg",
+    "svg_white": "text-aa-light-white.svg",
     "tag": "string"
   },
   {
@@ -890,7 +892,7 @@
     "href": "/detail/base/assymbol1,1datasymbol11frame.html",
     "funcname": "as.data.frame",
     "svg": "grid-nine-light.svg",
-    "svg-white": "grid-nine-light-white.svg"
+    "svg_white": "grid-nine-light-white.svg"
   },
   {
     "id": "as.data.frame.array",
@@ -1112,7 +1114,7 @@
     "href": "/detail/base/assymbol11list.html",
     "funcname": "as.list",
     "svg": "list-bullets-light.svg",
-    "svg-white": "list-bullets-light-white.svg",
+    "svg_white": "list-bullets-light-white.svg",
     "tag": "data"
   },
   {
@@ -1238,7 +1240,7 @@
     "href": "/detail/base/assymbol11numeric.html",
     "funcname": "as.numeric",
     "svg": "list-numbers-light.svg",
-    "svg-white
+    "svg_white": "list-numbers-light-white.svg"
   },
   {
     "id": "as.numeric_version",
@@ -1371,6 +1373,7 @@
     "href": "/detail/base/assymbol11table.html",
     "funcname": "as.table",
     "svg": "layout-light.svg",
+    "svg_white": "layout-light-white.svg",
     "tag": "dataframe"
   },
   {
@@ -1746,6 +1749,7 @@
     "href": "/detail/base/call.html",
     "funcname": "call",
     "svg": "megaphone-simple-light.svg",
+    "svg_white": "megaphone-simple-light-white.svg",
     "tag": "system"
   },
   {
@@ -1803,6 +1807,7 @@
     "href": "/detail/base/character.html",
     "funcname": "character",
     "svg": "text-t-light.svg",
+    "svg_white": "text-t-light-white.svg",
     "tag": "string"
   },
   {
@@ -2122,6 +2127,7 @@
     "href": "/detail/base/date.html",
     "funcname": "date",
     "svg": "calendar.svg",
+    "svg_white": "calendar-light-white.svg",
     "tag": "date"
   },
   {
@@ -2129,7 +2135,8 @@
     "href": "/detail/base/debug.html",
     "funcname": "debug",
     "tag": "system",
-    "svg": "bug.svg"
+    "svg": "bug.svg",
+    "svg_white": "bug-light-white.svg"
   },
   {
     "id": "debuggingState",
@@ -2686,28 +2693,32 @@
     "href": "/detail/base/filesymbol11path.html",
     "funcname": "file.path",
     "tag": "system",
-    "svg": "path-light.svg"
+    "svg": "path-light.svg",
+    "svg_white": "path-light-white.svg"
   },
   {
     "id": "file.remove",
     "href": "/detail/base/filesymbol11remove.html",
     "funcname": "file.remove",
     "tag": "system",
-    "svg": "archive-light.svg"
+    "svg": "archive-light.svg",
+    "svg_white": "archive-light-white.svg"
   },
   {
     "id": "file.rename",
     "href": "/detail/base/filesymbol11rename.html",
     "funcname": "file.rename",
     "tag": "system",
-    "svg": "textbox-light.svg"
+    "svg": "textbox-light.svg",
+    "svg_white": "textbox-light-white.svg"
   },
   {
     "id": "file.show",
     "href": "/detail/base/filesymbol11show.html",
     "funcname": "file.show",
     "tag": "system",
-    "svg": "files-light.svg"
+    "svg": "files-light.svg",
+    "svg_white": "files-light-white.svg"
   },
   {
     "id": "file.size",
@@ -2732,14 +2743,16 @@
     "href": "/detail/base/Find.html",
     "funcname": "Find",
     "tag": "vector",
-    "svg": "list-magnifying-glass-light.svg"
+    "svg": "list-magnifying-glass-light.svg",
+    "svg_white": "list-magnifying-glass-light-white.svg"
   },
   {
     "id": "find.package",
     "href": "/detail/base/findsymbol11package.html",
     "funcname": "find.package",
     "tag": "system",
-    "svg": "binoculars-light.svg"
+    "svg": "binoculars-light.svg",
+    "svg_white": "binoculars-light-white.svg"
   },
   {
     "id": "findInterval",
@@ -2782,6 +2795,7 @@
     "href": "/detail/base/for.html",
     "funcname": "for",
     "svg": "arrows-clockwise-light.svg",
+    "svg_white": "arrows-clockwise-light-white.svg",
     "tag": "operator"
   },
   {
@@ -2934,6 +2948,7 @@
     "href": "/detail/base/function.html",
     "funcname": "function",
     "svg": "code-block-light.svg",
+    "svg_white": "code-block-light-white.svg",
     "tag": "operator"
   },
   {
@@ -5308,6 +5323,7 @@
     "href": "/detail/base/R_system_version.html",
     "funcname": "R_system_version",
     "svg": "git-merge-light.svg",
+    "svg_white": "git-merge-light-white.svg",
     "tag": "system"
   },
   {
@@ -5315,6 +5331,7 @@
     "href": "/detail/base/Rsymbol11home.html",
     "funcname": "R.home",
     "svg": "house-line-light.svg",
+    "svg_white": "house-line-light-white.svg",
     "tag": "system"
   },
   {
@@ -5443,6 +5460,7 @@
     "href": "/detail/base/readline.html",
     "funcname": "readline",
     "svg": "text-align-justify-light.svg",
+    "svg_white": "text-align-justify-light-white.svg",
     "tag": "system"
   },
   {
@@ -6746,6 +6764,7 @@
     "href": "/detail/base/Syssymbol11sleep.html",
     "funcname": "Sys.sleep",
     "svg": "bell-simple-z-light.svg",
+    "svg_white": "bell-simple-z-light-white.svg",
     "tag": "system"
   },
   {
@@ -6765,6 +6784,7 @@
     "href": "/detail/base/Syssymbol11time.html",
     "funcname": "Sys.time",
     "svg": "clock-light.svg",
+    "svg_white": "clock-light-white.svg",
     "tag": "system"
   },
   {
@@ -6790,13 +6810,15 @@
     "href": "/detail/base/Syssymbol11which.html",
     "funcname": "Sys.which",
     "tag": "system",
-    "svg": "search-light.svg"
+    "svg": "file-search-light.svg",
+    "svg_white": "file-search-light-white.svg"
   },
   {
     "id": "system",
     "href": "/detail/base/system.html",
     "funcname": "system",
     "svg": "wrench-light.svg",
+    "svg_white": "wrench-light-white.svg",
     "tag": "system"
   },
   {
@@ -6804,6 +6826,7 @@
     "href": "/detail/base/systemsymbol11file.html",
     "funcname": "system.file",
     "svg": "file-light.svg",
+    "svg_white": "file-light-white.svg",
     "tag": "system"
   },
   {
@@ -6811,6 +6834,7 @@
     "href": "/detail/base/systemsymbol11time.html",
     "funcname": "system.time",
     "svg": "hourglass-light.svg",
+    "svg_white": "hourglass-light-white.svg",
     "tag": "system"
   },
   {

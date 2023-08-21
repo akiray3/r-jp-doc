@@ -1,3 +1,8 @@
+const loading = document.querySelector("#loading");
+window.addEventListener("load", () => {
+  loading.classList.add("loaded");
+});
+
 /*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義。ローカルでテストするときには空にしておくこととする _______________________*/
 
 /*"../r-jp-doc"*/
@@ -160,10 +165,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       //hover size
-      const hovinfo = document.querySelectorAll(".hover");
-      for (let i = 0; i < hovinfo.length; i++) {
-        hovinfo[i].style.height = `${heightblock + 20}px`;
-      }
+      const heightblock = argblock.clientHeight;
+      const hovinfo = document.querySelectorAll(".hoverFrame");
+      hovinfo.style.height = `${heightblock + 20}px`;
 
       if (arg["arguments1"]) {
         const alltxt = document.querySelectorAll(".txt");

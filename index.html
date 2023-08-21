@@ -146,7 +146,23 @@
               });
               const imgbox = document.createElement("img");
               imgbox.classList.add("lazyload");
-              imgbox.setAttribute("data-lazy", `www/` + jsondata[i].svg);
+              const darkMode = window.matchMedia("(prefers-color-scheme:dark)");
+              console.log(jsondata[i].svg_white);
+              function changeDarkMode(d) {
+                if (d.matches) {
+                  imgbox.setAttribute(
+                    "data-lazy",
+                    `www/${jsondata[i].svg_white}`
+                  );
+                } else {
+                  imgbox.setAttribute(
+                    "data-lazy",
+                    `www/${jsondata[i].svg}`
+                  );
+                }
+              }
+              darkMode.addEventListener("change", changeDarkMode);
+              changeDarkMode(darkMode);
               imgbox.style.height = "200px";
               const funcnametxt = document.createElement("p");
               const fnnametxt = document.createTextNode(jsondata[i].funcname);

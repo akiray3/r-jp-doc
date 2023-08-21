@@ -296,6 +296,8 @@ body {
   font-size: var(--font-size-base);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
+  position: sticky;
+  top: 1rem;
 }
 @keyframes fadein {
   from {
