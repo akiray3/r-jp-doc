@@ -24,7 +24,7 @@
     <div class="loader">Loading...</div>
   </div>
   <!--検索ボックス-->
-  <div style="width: 100%">
+  <div style="width: 100%; margin: 2%; margin-top: 3%">
     <form id="search" action="/r-jp-doc/search.html" method="get">
       <input
         type="text"
@@ -106,16 +106,7 @@
           >
         </nav>
       </div>
-      <div
-        class="border-box"
-        style="
-          position: fixed;
-          right: 0;
-          top: 0;
-          width: 70%;
-          transform: translatex(-35px);
-        "
-      >
+      <div class="border-box" id="stats_borderbox">
         <div class="slick-slider" id="stats_slider"></div>
       </div>
     </div>
@@ -139,6 +130,7 @@
               slide.className = "slick-slide";
               slide.id = item + "_slide_" + i;
               const slide_link = document.createElement("a");
+              slide_link.className = "slide_link_href";
               slide_link.href = "/r-jp-doc/detail/detailpage.html";
               slide.addEventListener("click", (event) => {
                 event.preventDefault();
@@ -155,15 +147,11 @@
                     `www/${jsondata[i].svg_white}`
                   );
                 } else {
-                  imgbox.setAttribute(
-                    "data-lazy",
-                    `www/${jsondata[i].svg}`
-                  );
+                  imgbox.setAttribute("data-lazy", `www/${jsondata[i].svg}`);
                 }
               }
               darkMode.addEventListener("change", changeDarkMode);
               changeDarkMode(darkMode);
-              imgbox.style.height = "200px";
               const funcnametxt = document.createElement("p");
               const fnnametxt = document.createTextNode(jsondata[i].funcname);
               funcnametxt.appendChild(fnnametxt);

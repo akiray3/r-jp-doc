@@ -205,6 +205,9 @@ body {
     color: #e6dcb6;
   }
 }
+.returnlink {
+  color: #afab93;
+}
 .menu {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
@@ -246,14 +249,37 @@ body {
 
 .arg-hover-horizon {
   width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 5fr 6fr;
+}
+
+@media screen and (max-width: 420px) {
+  .arg-hover-horizon {
+    display: block;
+  }
+}
+@media screen and (min-width: 420px) {
+  .arg-hover-horizon {
+    display: grid;
+    grid-template-columns: 3fr 5fr 6fr;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #arg-hoverblock {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 420px) {
+  #arg-hoverblock {
+    display: flex;
+  }
 }
 
 /*引数*/
 .argblock {
   display: inline-block;
 }
+
 .argcol {
   display: flex;
   flex-direction: column;
@@ -297,7 +323,7 @@ body {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
   position: sticky;
-  top: 1rem;
+  top: 5rem;
 }
 @keyframes fadein {
   from {
