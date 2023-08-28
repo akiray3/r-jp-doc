@@ -10,11 +10,10 @@ org <- jsonlite::fromJSON(txt = "help_db_raw.json") %>%
     dplyr::mutate(
       Value = str_remove_all(string = Value, pattern = "<h3>Values</h3>"),
       Details = str_remove_all(string = Details, pattern = "<h3>Details</h3>"),
-      Example = str_remove_all(string = Example, pattern = "<h3>Examples</h3>"),
+      Examples = str_remove_all(string = Examples, pattern = "<h3>Examples</h3>"),
       References = str_remove_all(string = References, pattern = "<h3>Referencess</h3>"),
-       = str_remove_all(string = , pattern = "<h3>s</h3>"),
-      Example = str_remove_all(string = Example, pattern = "<h3>Examples</h3>"),
-    )
+      See_Also = str_remove_all(string = See_Also, pattern = "<h3>See Also</h3>")
+    ) %>%
     print()
 org_sub <- org_jpn <- org %>%
   dplyr::select(-Arguments)
@@ -109,5 +108,6 @@ arg_desc_jpn <- c(
   )
 arguments_jpn <- arguments_eng
 arguments_jpn$desc <- arg_desc_jpn
+print(arguments_jpn)
 jsonlite::write_json(arguments_jpn, "help_db_jpn_arguments.json")
 openxlsx::write.xlsx(x = arguments_jpn, file = "help_db_jpn_arguments_確認用.xlsx")
