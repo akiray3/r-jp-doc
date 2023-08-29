@@ -16,7 +16,7 @@ if (inherits(result, "error")) {
 
 
 #-
-result <-tryCatch({
+result_fn <- tryCatch({
   7-(-9)
 },error = function(e){
   e
@@ -33,8 +33,9 @@ result <-tryCatch({
 #!=
 #(
 #[
+  test <- matrix(1:12, nrow = 3, ncol = 4)
   result <- tryCatch({
-    [1,]
+    test[e]
   },error = function(e){
     e
   })
@@ -127,16 +128,16 @@ result <-tryCatch({
 #all
 #all.equal
 result <- tryCatch({
-  base::all.equal(4,[2,])
+  base::all.equal(4,test[2,])
 },error = function(e){
   e
 })
 #all.equal.character
-result <- tryCatch{
+result <- tryCatch({
   base::all.equal("eset","taturo")
 },error = function(e){
   e
-}
+})
 #all.equal.default
 
 #all.equal.environment
@@ -150,7 +151,9 @@ env2$b <- 0
 
 result <- tryCatch({
   base::all.equal.encvironment(env1,env2)
-},error <- )
+},error = function(e){
+  e
+})
 #all.equal.envRefClass
 
 #all.equal.factor
@@ -175,18 +178,66 @@ result <- tryCatch({
 #anyNA.numeric_version
 #anyNA.POSIXlt
 #aperm
+originaldf <- matrix(1:12, nrow = 3, ncol = 4)
+change <- c(2)
+result <- tryCatch({
+originaldf <- aperm(originaldf,change)
+},function(e){
+  e
+})
 #aperm.default
+
 #aperm.table
 #append
+aptest <- c(1,2,3,4)
+appendValue <- 5
+result <- tryCatch({
+  base::append(aptest,after = ６,value = appendValue)
+},error = function(e){
+  e
+})
 #apply
+applyTest <- c(1,2,3,5)
+result <- tryCatch({
+  base::apply(applyTest,c(4,6),FUN = mean)
+},function(e){
+  e
+})
+
 #Arg
 #args
+args(f1)
 #array
+array(1:13,dim = 3:4,dimnames = list(c("a","b","c"),c("d","e","f","g")))
+
+result <- tryCatch({
+  array(1:13,dimnames = list(c("x","y")))
+},error = function(e){
+  e
+})
+
 #arrayInd
+result <- tryCatch({
+arrayInd(1:12,dim = c(3,4))
+},error = function(e){
+  e
+})
+result <- tryCatch({
+arrayInd(1:12,dim = c(3,4),dims = c(3,4))
+},error = function(e){
+  e
+})
+
 #as.array
+arrayTest <- matrix(1:12, nrow = 3, ncol = 4)
+result <- tryCatch({as.array()},error = function(e){e})
 #as.array.default
+
 #as.call
+result <- tryCatch({as.call()},error = function(e){e})
+result <- tryCatch({as.call(92)},error = function(e){e})
 #as.character
+result <- tryCatch({as.character(abc)},error =function(e){e})
 #as.character.condition
 #as.character.Date
 #as.character.default
@@ -198,7 +249,13 @@ result <- tryCatch({
 #as.character.POSIXt
 #as.character.srcref
 #as.complex
+result <- tryCatch({as.complex(abc)},error =function(e){e})
+
 #as.data.frame
+list <- list(a = 1:3, b = 4:9)
+result <- tryCatch({as.data.frame(
+ abc
+)},error = function(e){e})
 #as.data.frame.array
 #as.data.frame.AsIs
 #as.data.frame.character
