@@ -16,15 +16,10 @@ if (inherits(result, "error")) {
 
 
 #-
-result_fn <- tryCatch({
-  7-(-9)
-},error = function(e){
-  e
-})
-#-.Date
 
-#-.POSIXt
-#:
+#-.Date 
+#-.POSIXt 
+#: 
 #::
 #:::
 #!
@@ -125,7 +120,11 @@ result_fn <- tryCatch({
 #agrep
 #agrepl
 #alist
+alist(5)
 #all
+all(4,na.rm = true)
+all(5)
+
 #all.equal
 result <- tryCatch({
   base::all.equal(4,test[2,])
@@ -139,7 +138,7 @@ result <- tryCatch({
   e
 })
 #all.equal.default
-
+all.equal.default()
 #all.equal.environment
 env1 <- new.env()
 env1$a <- 1
@@ -155,29 +154,54 @@ result <- tryCatch({
   e
 })
 #all.equal.envRefClass
-
+all.equal.envRefClass()
 #all.equal.factor
+all.equal.factor()
 #all.equal.formula
+all.equal.formula()
 #all.equal.function
+all.equal.function()
 #all.equal.language
+all.equal.language()
 #all.equal.list
+result <- tryCatch({all.equal.list(5)},error = function(e){
+  e
+})
+
 #all.equal.numeric
+all.equal.numeric(target = ,current = ,tolerance = ,scale = ,countEQ = ,formatFUN = ,format(),check.attributes = )
 #all.equal.POSIXt
+all.equal.POSIXt(target = ,current = ,tolerance = ,scale = ,check.tzone = )
 #all.equal.raw
+all.equal.raw(target = ,current = ,check.attributes = )
 #all.names
+all.names(expr = ,functions = ,max.names = ,unique = )
 #all.vars
+all.vars(expr = ,functions = ,max.names = ,unique = )
 #allowInterrupts
+allowInterrupts(expr = )
 #any
+any( ,na.rm = )
 #anyDuplicated
+anyDuplicated(x = ,incomparables = )
 #anyDuplicated.array
+anyDuplicated.array(x = ,incomparables = ,MARGIN = ,fromLast = )
 #anyDuplicated.data.frame
+anyDuplicated.data.frame(x = ,incomparables = ,fromLast = )
 #anyDuplicated.default
+anyDuplicated.default(x = ,incomparables = ,fromLast = )
 #anyDuplicated.matrix
+anyDuplicated.matrix(x = ,incomparables = ,MARGIN = ,fromLast = )
 #anyNA
+anyNA(x = ,recursive = )
 #anyNA.data.frame
+anyNA.data.frame(x = ,recursive = )
 #anyNA.numeric_version
+anyNA.numeric_version(x = ,recursive = )
 #anyNA.POSIXlt
+anyNA.POSIXlt(x = ,recursive = )
 #aperm
+aperm(a = ,perm = )
 originaldf <- matrix(1:12, nrow = 3, ncol = 4)
 change <- c(2)
 result <- tryCatch({
@@ -186,9 +210,12 @@ originaldf <- aperm(originaldf,change)
   e
 })
 #aperm.default
+aperm.default(a = ,perm = ,resize = )
 
 #aperm.table
+aperm.table(a = ,perm = ,resize =,keep.class = )
 #append
+append(x = ,values = ,after = )
 aptest <- c(1,2,3,4)
 appendValue <- 5
 result <- tryCatch({
@@ -205,6 +232,7 @@ result <- tryCatch({
 })
 
 #Arg
+Arg(z = )
 #args
 args(f1)
 #array
@@ -229,206 +257,425 @@ arrayInd(1:12,dim = c(3,4),dims = c(3,4))
 })
 
 #as.array
+as.array(x = )
 arrayTest <- matrix(1:12, nrow = 3, ncol = 4)
 result <- tryCatch({as.array()},error = function(e){e})
 #as.array.default
-
+as.array.default(x = )
 #as.call
+as.call(x = )
 result <- tryCatch({as.call()},error = function(e){e})
 result <- tryCatch({as.call(92)},error = function(e){e})
 #as.character
+as.character(x = )
 result <- tryCatch({as.character(abc)},error =function(e){e})
 #as.character.condition
-#as.character.Date
+as.character.condition(x = )
+result <- tryCatch({as.character(condition)},error =function(e){e})
+#as.character.Date 
+as.character.Date(x = )
+result <- tryCatch({as.character(Date(abc))},error =function(e){e})
+
 #as.character.default
-#as.character.error
-#as.character.factor
-#as.character.hexmode
+as.character.default(x = )
+result <- tryCatch({as.character.default(abc)},error =function(e){e})
+#as.character.error 
+as.character.error(x = )
+result <- tryCatch({as.character.error(abc)},error =function(e){e})
+#as.character.factor 
+as.character.factor(x = )
+result <- tryCatch({as.character.factor(abc)},error =function(e){e})
+#as.character.hexmode 
+as.character.hexmode(x = )
+result <- tryCatch({as.character.hexmode(abc)},error =function(e){e})
 #as.character.numeric_version
+as.character.numeric_version(x = )
 #as.character.octmode
+as.character.octmode(x = )
 #as.character.POSIXt
+as.character.POSIXt(x = )
 #as.character.srcref
+as.character.srcref(x = ,useSource = ,to = )
 #as.complex
+as.complex(x = )
 result <- tryCatch({as.complex(abc)},error =function(e){e})
 
 #as.data.frame
+as.data.frame(x = ,row.names = ,optional = )
 list <- list(a = 1:3, b = 4:9)
 result <- tryCatch({as.data.frame(
  abc
 )},error = function(e){e})
 #as.data.frame.array
-#as.data.frame.AsIs
-#as.data.frame.character
+as.data.frame.array(x = ,row.names = ,optional = )
+#as.data.frame()  
+as.data.frame(x = ,row.names = ,optional = )
+result <- tryCatch({as.data.frame(arrayTest)},error = function(e){e})
+
+#as.data.frame.AsIs 
+as.data.frame.AsIs(x = ,row.names = ,optional = )
+result <- tryCatch({as.data.frame(AsIs(abc))},error = function(e){e})
+#as.data.frame.character 
+as.data.frame.character(x = ,stringsAsFactors = )
+result <- tryCatch({as.data.frame(character(abc))},error = function(e){e})
 #as.data.frame.complex
-#as.data.frame.data.frame
-#as.data.frame.Date
+as.data.frame.complex(x = ,row.names = ,optional = ,nm = )
+result <- tryCatch({as.data.frame(complex(abc))},error = function(e){e})
+#as.data.frame.data.frame 
+as.data.frame.data.frame(x = ,row.names = )
+result <- tryCatch({as.data.frame(data.frame(abc))},error = function(e){e})
+#as.data.frame.Date 
+as.data.frame.Date(x = ,row.names = ,optional = ,nm = )
+result <- tryCatch({as.data.frame(Date(abc))},error = function(e){e})
 #as.data.frame.default
+as.data.frame.default(x = )
 #as.data.frame.difftime
+as.data.frame.difftime(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.factor
+as.data.frame.factor(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.integer
+as.data.frame.integer(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.list
+as.data.frame.list(x = ,row.names = ,optional = ,cut.names = ,col.names = ,fix.empty.names = ,check.names = ,stringsAsFactors = )
 #as.data.frame.logical
+as.data.frame.logical(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.matrix
+as.data.frame.matrix(x = ,row.names = ,optional = ,make.names = ,stringsAsFactors = )
 #as.data.frame.model.matrix
+as.data.frame.model.matrix(x = ,row.names = ,optional = ,make.names = )
 #as.data.frame.noquote
+as.data.frame.noquote(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.numeric
+as.data.frame.numeric(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.numeric_version
+as.data.frame.numeric_version(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.ordered
+as.data.frame.ordered(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.POSIXct
+as.data.frame.POSIXct(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.POSIXlt
+as.data.frame.POSIXlt(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.raw
+as.data.frame.raw(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.table
+as.data.frame.table(x = ,row.names = ,optional = ,responseName = ,stringsAsFactors = )
 #as.data.frame.ts
+as.data.frame.ts(x = ,row.names = ,optional = ,nm = )
 #as.data.frame.vector
-#as.Date
+as.data.frame.vector(x = ,row.names = ,optional = ,nm = )
+#as.Date 
+as.Date(x = ,format = ,tz = )
+result <- tryCatch({as.Date(abc)},error = function(e){e})
+
 #as.Date.character
+as.Date.character(x = ,format = ,tz = )
 #as.Date.default
+as.Date.default(x = ,format = ,tz = )
 #as.Date.factor
+as.Date.factor(x = )
 #as.Date.numeric
+as.Date.numeric(x = ,origin = )
 #as.Date.POSIXct
+as.Date.POSIXct(x = ,tz = )
+
 #as.Date.POSIXlt
-#as.difftime
-#as.double
+as.Date.POSIXlt(x = ,tz = )
+#as.difftime 
+as.difftime(x = ,units = )
+result <- tryCatch({as.difftime(abc)},error = function(e){e})
+#as.double 
+as.double(x = )
+result <- tryCatch({as.double(abc)},error = function(e){e})
+
 #as.double.difftime
+as.double.difftime(x = ,units = )
 #as.double.POSIXlt
-#as.environment
-#as.expression
+as.double.POSIXlt(x = )
+#as.environment 
+as.environment(x = )
+result <- tryCatch({as.environment(abc)},error = function(e){e})
+#as.expression 
+as.expression(x = )
+result <- tryCatch({as.expression(abc)},error = function(e){e})
 #as.expression.default
+as.expression.default(x = )
 #as.factor
+as.factor(x = )
 #as.function
+as.function(x = )
 #as.function.default
+as.function.default(x = )
 #as.hexmode
+as.hexmode(x = )
 #as.integer
+as.integer(x = )
 #as.list
+as.list(x = )
+
 #as.list.data.frame
+as.list.data.frame(x = ,row.names = ,optional = )
 #as.list.Date
+as.list.Date(x = )
 #as.list.default
+as.list.default(x = )
 #as.list.difftime
+as.list.difftime(x = )
 #as.list.environment
+as.list.environment(x = )
 #as.list.factor
+as.list.factor(x = )
 #as.list.function
+as.list.function(x = )
 #as.list.numeric_version
+as.list.numeric_version(x = )
+
 #as.list.POSIXct
+as.list.POSIXct(x = )
 #as.list.POSIXlt
+as.list.POSIXlt(x = )
 #as.logical
+as.logical(x = )
 #as.logical.factor
+as.logical.factor(x = )
 #as.matrix
+as.matrix(x = ,rownames.force = )
 #as.matrix.data.frame
+as.matrix.data.frame(x = ,row.names = )
 #as.matrix.default
+as.matrix.default(x = )
 #as.matrix.noquote
+as.matrix.noquote(x = ,rownames.force = )
 #as.matrix.POSIXlt
+as.matrix.POSIXlt(x = )
 #as.name
+as.name(x = )
 #as.null
+as.null(x = )
 #as.null.default
+as.null.default(x = )
 #as.numeric
+as.numeric(x = )
 #as.numeric_version
+as.numeric_version(x = )
 #as.octmode
+as.octmode(x = )
 #as.ordered
+as.ordered(x = )
 #as.package_version
+as.package_version(x = )
 #as.pairlist
+as.pairlist(x = )
 #as.POSIXct
+as.POSIXct(x = ,tz = ,format = ,tryFormats = )
 #as.POSIXct.Date
+as.POSIXct.Date(x = ,tz = )
 #as.POSIXct.default
+as.POSIXct.default(x = ,tz = ,format = ,tryFormats = )
 #as.POSIXct.numeric
+as.POSIXct.numeric(x = ,tz = )
 #as.POSIXct.POSIXlt
+as.POSIXct.POSIXlt(x = ,tz = )
 #as.POSIXlt
+as.POSIXlt(x = ,tz = ,format = ,tryFormats = )
 #as.POSIXlt.character
+as.POSIXlt.character(x = ,tz = )
 #as.POSIXlt.Date
+as.POSIXlt.Date(x = ,tz = )
+
 #as.POSIXlt.default
+as.POSIXlt.default(x = ,tz = ,format = ,tryFormats = )
 #as.POSIXlt.factor
+as.POSIXlt.factor(x = ,tz = )
 #as.POSIXlt.numeric
+as.POSIXlt.numeric(x = ,tz = )
 #as.POSIXlt.POSIXct
+as.POSIXlt.POSIXct(x = ,tz = )
 #as.qr
+as.qr(x = ,pivot = )
 #as.raw
+as.raw(x = )
 #as.single
+as.single(x = )
+
 #as.single.default
+as.single.default(x = )
 #as.symbol
+as.symbol(x = )
 #as.table
+as.table(x = )
 #as.table.default
+as.table.default(x = )
 #as.vector
+as.vector(x = ,mode = )
 #as.vector.factor
+as.vector.factor(x = )
 #asin
+asin(x = )
 #asinh
+asinh(x = )
 #asNamespace
+asNamespace(ns = )
 #asplit
+asplit(x = ,dims = ,drop = )
 #asS3
+asS3(object = ,class = )
 #asS4
+asS4(object = ,class = )
 #assign
+assign(x = ,value = ,pos = ,envir = ,inherits = )
 #atan
+atan(x = )
 #atan2
+atan2(y = ,x = )
 #atanh
+atanh(x = )
 #attach
+attach(pos = ,name = ,warn.conflicts = ,pos = ,name = ,warn.conflicts = )
 #attachNamespace
+attachNamespace(package = ,pos = )
 #attr
+attr(x = ,which = ,exact = )
 #attr.all.equal
+attr.all.equal(x = ,y = ,tolerance = ,scale = ,check.attributes = )
 #attr<-
+`attr<-`()
 #attributes
+attributes(object = )
 #attributes<-
+`attributes<-`()
 #autoload
+autoload(pkgname = ,file = ,character.only = )
 #autoloader
+autoloader(pkgname = ,file = ,character.only = )
 #backsolve
+backsolve(r = ,x = ,k = ,upper.tri = )
 #baseenv
+baseenv()
 #basename
+basename(path = ,suffix = )
 #besselI
+besselI(x = ,nu = )
 #besselJ
+besselJ(x = ,nu = )
 #besselK
+besselK(x = ,nu = )
 #besselY
+besselY(x = ,nu = )
 #beta
+beta(x = ,y = )
 #bindingIsActive
+bindingIsActive(x = )
 #bindingIsLocked
+bindingIsLocked(x = )
 #bindtextdomain
+bindtextdomain(domain = ,dirname = )
 #bitwAnd
+bitwAnd(x = ,y = )
 #bitwNot
+bitwNot(x = )
 #bitwOr
+bitwOr(x = ,y = )
 #bitwShiftL
+bitwShiftL(x = ,n = )
 #bitwShiftR
+bitwShiftR(x = ,n = )
 #bitwXor
-#body
+bitwXor(a = ,b = )
+#body 
+body(x = )
 #body<-
+`body<-`()
 #bquote
+bquote(expr = )
 #break
+break()
 #browser
+browser(expr = )
 #browserCondition
+browserCondition(expr = )
 #browserSetDebug
+browserSetDebug(flag = )
 #browserText
+browserText(expr = )
 #builtins
+builtins()
 #by
+by(data = ,INDICES = ,FUN = ,...,simplify = )
 #by.data.frame
+by.data.frame(data = ,INDICES = ,FUN = ,...,simplify = )
 #by.default
+by.default(data = ,INDICES = ,FUN = ,...,simplify = )
 #bzfile
+bzfile(description = ,open = ,encoding = ,compression = ,close = )
 #c
+c(...)
 #c.Date
+c.Date(...)
+
 #c.difftime
+c.difftime(...)
 #c.factor
+c.factor(...)
 #c.noquote
+c.noquote(...)
 #c.numeric_version
+c.numeric_version(...)
 #c.POSIXct
+c.POSIXct(...)
 #c.POSIXlt
+c.POSIXlt(...)
 #c.warnings
+c.warnings(...)
 #call
+call(name = ,...)
+
 #callCC
+callCC(fun = )
 #capabilities
+capabilities()
 #casefold
+casefold(x = ,upper = )
 #cat
+cat(...,file = ,sep = ,fill = ,labels = ,append = )
 #cbind
+cbind(...)
 #cbind.data.frame
+cbind.data.frame(...)
 #ceiling
+ceiling(x = )
 #char.expand
+char.expand(x = )
 #character
+character(length = )
 #charmatch
+charmatch(x = ,table = ,nomatch = )
 #charToRaw
+charToRaw(x = )
 #chartr
+chartr(old = ,new = ,x = )
 #check_tzones
+check_tzones(tz1 = ,tz2 = )
 #chkDots
+chkDots(...)
 #chol
+chol(x = ,pivot = ,LINPACK = )
 #chol.default
+chol.default(x = ,pivot = ,LINPACK = )
+
 #chol2inv
+chol2inv(x = ,size = ,LINPACK = )
 #choose
+choose(n = ,k = )
 #class
+class(x = )
 #class<-
+`class<-`(x = ,value = )
 #clearPushBack
+clearPushBack(connection = )
 #close
+close(con = )
 #close.connection
+
 #close.srcfile
 #close.srcfilealias
 #closeAllConnections
