@@ -675,219 +675,480 @@ clearPushBack(connection = )
 #close
 close(con = )
 #close.connection
+close.connection(con = )
 
 #close.srcfile
+close.srcfile(con = )
 #close.srcfilealias
+close.srcfilealias(con = )
 #closeAllConnections
+closeAllConnections(all = )
 #col
+col(x = )
 #colMeans
+colMeans(x = ,na.rm = )
 #colnames
+colnames(x = )
 #colnames<-
+`colnames<-`(x = ,value = )
 #colSums
+colSums(x = ,na.rm = )
 #commandArgs
+commandArgs(trailingOnly = )
 #comment
+comment(object = )
 #comment<-
+`comment<-`(object = ,value = )
 #complex
+complex(real = ,imag = ,length.out = ,imaginary = ,modulus = ,argument = )
 #computeRestarts
+computeRestarts(cond = )
 #conditionCall
+conditionCall(condition = ,c = )
+
 #conditionCall.condition
+conditionCall.condition(condition = ,c = )
+
 #conditionMessage
+conditionMessage(condition = ,c = )
 #conditionMessage.condition
+conditionMessage.condition(condition = ,c = )
 #conflictRules
+conflictRules(pkg = ,mask.ok = ,exclude = )
 #conflicts
+conflicts(pkg = ,mask.ok = ,exclude = )
+
 #Conj
+Conj(x = ,z = )
+
 #contributors
+contributors(pkg = ,file = )
 #cos
+cos(x = )
 #cosh
+cosh(x = )
 #cospi
+cospi(x = )
 #crossprod
+crossprod(x = ,y = )
 #Cstack_info
+Cstack_info()
 #cummax
+cummax(x = )
+
 #cummin
+cummin(x = )
 #cumprod
+cumprod(x = )
 #cumsum
+tryCatch({
+  cumsum(x = "abc")
+  
+},error = function(e){
+  e
+})
+tryCatch({
+  cumsum(x = abc)
+  
+},error = function(e){
+  e
+})
 #curlGetHeaders
+curlGetHeaders(url = ,handle = ,.opts = )
 #cut
+tryCatch({
+  cut(x = ,breaks = 1,labels = ,include.lowest = ,right = ,dig.lab = ,ordered_result = )},error = function(e){
+    e
+  })
+tryCatch({cut(x= 2 )},error = function(e){e})
+tryCatch({cut(x = 1,breaks = 2,labels = test,include.lowest = ,right = ,dig.lab = ,ordered_result = )
+},error = function(e){e})
+tryCatch({cut(x = 1,breaks = 2,labels = "test",include.lowest = ,right = ,dig.lab = ,ordered_result = )
+},error = function(e){e})
+cut(x = 1,2,include.lowest = "TRUE")
+cut(x = 1,2,right = ,dig.lab = "test",ordered_result = )
+cut(x = 1,2,right = ,dig.lab = ,ordered_result = TEST)
+
 #cut.Date
+cut.Date(x = ,breaks = ,labels = ,start.on.monday = ,include.lowest = )
+cut.Date(x = 1,breaks = ,labels = ,start.on.monday = ,include.lowest = )
+cut.Date(x = "2023-9-3",breaks = ,labels = ,start.on.monday = ,include.lowest = )
+
 #cut.default
+cut.default(x = ,breaks = ,labels = ,include.lowest = ,right = ,dig.lab = ,ordered_result = )
 #cut.POSIXt
+cut.POSIXt(x = ,breaks = ,labels = ,start.on.monday = ,include.lowest = )
 #data.class
+data.class(x = )
 #data.frame
+data.frame(...,row.names = ,check.rows = ,check.names = ,stringsAsFactors = ,fix.empty.names = )
 #data.matrix
+data.matrix(x = ,rownames.force = )
 #date
+date()
 #debug
+debug(fun = )
 #debuggingState
+debuggingState(fun = )
 #debugonce
+debugonce(fun = )
 #default.stringsAsFactors
+default.stringsAsFactors()
 #delayedAssign
+delayedAssign(x = ,value = ,assign.env = ,eval.env = )
 #deparse
+deparse(x = ,nlines = ,width.cutoff = ,backtick = )
 #deparse1
+deparse1(x = ,nlines = ,width.cutoff = ,backtick = )
 #det
+det(x = ,method = )
 #detach
+detach(pos = ,name = ,unload = )
 #determinant
+determinant(x = ,log = ,method = )
 #determinant.matrix
+determinant.matrix(x = ,log = ,method = )
 #dget
+dget(file = ,srcfile = )
 #diag
+diag(x = ,nrow = ,ncol = )
 #diag<-
+`diag<-`(x = ,value = )
 #diff
+diff(x = ,lag = ,differences = ,... = )
 #diff.Date
+diff.Date(x = ,lag = ,differences = ,... = )
 #diff.default
+diff.default(x = ,lag = ,differences = ,... = )
 #diff.difftime
+diff.difftime(x = ,lag = ,differences = ,... = )
 #diff.POSIXt
+diff.POSIXt(x = ,lag = ,differences = ,... = )
 #difftime
+difftime(time1 = ,time2 = ,units = )
 #digamma
+digamma(x = )
 #dim
+dim(x = )
 #dim.data.frame
+dim.data.frame(x = )
 #dim<-
-#dimnames
+`dim<-`(x = ,value = )
+#dimnames 
+dimnames(x = )
 #dimnames.data.frame
+dimnames.data.frame(x = )
 #dimnames<-
+`dimnames<-`(x = ,value = )
 #dimnames<-.data.frame
+dimnames<-.data.frame(x = ,value = )
 #dir
+dir(path = ,pattern = ,all.files = ,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
 #dir.create
+dir.create(path = ,showWarnings = ,recursive = ,mode = )
+
 #dir.exists
+dir.exists(path = )
 #dirname
+dirname(path = )
 #do.call
+do.call(what = ,args = ,quote = )
 #dontCheck
+dontCheck(pkg = )
 #double
+double(length = )
 #dput
+dput(x = ,file = ,control = )
 #dQuote
+dQuote(x = )
 #drop
+drop(x = )
 #droplevels
+droplevels(x = )
 #droplevels.data.frame
+droplevels.data.frame(x = )
 #droplevels.factor
+droplevels.factor(x = )
 #dump
+dump(object = ,file = ,...)
 #duplicated
+duplicated(x = ,fromLast = )
 #duplicated.array
+duplicated.array(x = ,fromLast = )
 #duplicated.data.frame
+duplicated.data.frame(x = ,fromLast = )
 #duplicated.default
+duplicated.default(x = ,fromLast = )
 #duplicated.matrix
+duplicated.matrix(x = ,fromLast = )
 #duplicated.numeric_version
+duplicated.numeric_version(x = ,fromLast = )
 #duplicated.POSIXlt
+duplicated.POSIXlt(x = ,fromLast = )
 #duplicated.warnings
+duplicated.warnings(x = ,fromLast = )
 #dyn.load
+dyn.load(file = ,local = )
 #dyn.unload
+dyn.unload(file = )
 #dynGet
+dynGet(x = ,envir = )
 #eapply
+eapply(env = ,FUN = ,...,inherits = )
 #eigen
+eigen(x = ,only.values = ,EISPACK = )
 #emptyenv
+emptyenv()
 #enc2native
+enc2native(x = )
 #enc2utf8
+enc2utf8(x = )
 #encodeString
+encodeString(x = ,to = ,sub = )
 #Encoding
+Encoding(x = )
+
 #Encoding<-
+`Encoding<-`(x = ,value = )
 #endsWith
+endsWith(x = ,suffix = ,ignore.case = )
 #enquote
+enquote(x = )
 #env.profile
+env.profile(env = ,all.names = ,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = ,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
 #environment
+environment(fun = )
 #environment<-
+`environment<-`(fun = ,value = )
 #environmentIsLocked
+environmentIsLocked(fun = )
 #environmentName
+environmentName(fun = )
 #errorCondition
+errorCondition(condition = ,c = )
+
 #eval
+eval(expr = ,envir = ,enclos = )
 #eval.parent
+eval.parent(expr = ,n = )
 #evalq
+evalq(expr = ,envir = ,enclos = )
 #exists
+exists(x = ,where = ,frame = )
 #exp
+exp(x = )
 #expand.grid
+expand.grid(...)
 #expm1
+expm1(x = )
 #expression
+expression(...)
 #extSoftVersion
+extSoftVersion(pkg = )
 #F
+F()
 #factor
+factor(x = ,levels = ,labels = ,exclude = )
 #factorial
+factorial(x = )
 #fifo
+fifo(path = )
 #file
+file(description = ,open = ,encoding = ,compression = ,close = )
 #file.access
+file.access(path = ,mode = )
 #file.append
+file.append(file = ,text = )
 #file.choose
+file.choose(new = )
 #file.copy
+file.copy(from = ,to = ,overwrite = ,recursive = ,copy.mode = ,copy.date = )
 #file.create
+file.create(...)
 #file.exists
+file.exists(file = )
 #file.info
+file.info(file = )
 #file.link
+file.link(from = ,to = )
 #file.mode
+file.mode(file = )
 #file.mtime
+file.mtime(file = )
 #file.path
+file.path(...)
+
 #file.remove
+file.remove(...)
 #file.rename
+file.rename(from = ,to = )
 #file.show
+file.show(file = ,header = ,delete.file = )
 #file.size
+file.size(file = )
 #file.symlink
+file.symlink(from = ,to = )
 #Filter
+Filter(f = ,x = )
 #Find
+Find(f = ,x = )
 #find.package
+find.package(package = ,quiet = ,verbose = ,lib.loc = )
 #findInterval
+findInterval(x = ,vec = ,rightmost.closed = ,all.inside = )
 #findPackageEnv
+findPackageEnv(pkg = ,lib.loc = )
+
 #findRestart
+findRestart(name = ,where = )
 #floor
+floor(x = )
 #flush
+flush(con = )
 #flush.connection
+flush.connection(con = )
 #for
+for(i in 1:10){
+  print(i)
+}
 #force
+force(x = )
 #forceAndCall
+forceAndCall(call = ,env = )
 #formals
+formals(fun = )
 #formals<-
+`formals<-`(fun = ,value = )
 #format
+format(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 #format.AsIs
+format.AsIs(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 #format.data.frame
+format.data.frame(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 #format.Date
+format.Date(x = ,format = ,tz = )
 #format.default
+format.default(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 #format.difftime
+format.difftime(x = ,units = ,...)
 #format.factor
+format.factor(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 #format.hexmode
+format.hexmode(x = ,width = )
 #format.info
+format.info(x = ,digits = ,nsmall = )
 #format.libraryIQR
+format.libraryIQR(x = ,digits = ,nsmall = )
 #format.numeric_version
+format.numeric_version(x = ,...)
 #format.octmode
+format.octmode(x = ,width = )
 #format.packageInfo
+format.packageInfo(x = ,digits = ,nsmall = )
 #format.POSIXct
+format.POSIXct(x = ,format = ,tz = ,usetz = )
 #format.POSIXlt
+format.POSIXlt(x = ,format = ,tz = ,usetz = )
 #format.pval
+format.pval(x = ,eps = ,digits = ,nsmall = ,...)
 #format.summaryDefault
+format.summaryDefault(x = ,digits = ,nsmall = )
 #formatC
+formatC(x = ,format = ,digits = ,nsmall = ,width = ,flag = ,digits.secs = ,...)
 #formatDL
+formatDL(x = ,quote = ,na.encode = ,row.names = ,col.names = ,sep = ,eol = ,na = ,...)
 #forwardsolve
+forwardsolve(r = ,x = ,k = ,upper.tri = )
 #function
+function(...)
 #gamma
+gamma(x = )
 #gc
+gc(verbose = )
 #gc.time
+gc.time(on = )
 #gcinfo
+gcinfo(verbose = )
+
 #gctorture
+gctorture(verbose = )
 #gctorture2
+gctorture2(verbose = )
 #get
+get(x = ,pos = ,envir = )
 #get0
+get0(x = ,envir = )
 #getAllConnections
+getAllConnections()
 #getCallingDLL
+getCallingDLL(f = ,doStop = )
 #getCallingDLLe
+getCallingDLLe(e = )
 #getConnection
+getConnection(con = )
 #getDLLRegisteredRoutines
+getDLLRegisteredRoutines(DLLInfo = ,name = ,type = ,allNames = )
+
 #getDLLRegisteredRoutines.character
+getDLLRegisteredRoutines.character(DLLInfo = ,name = ,type = ,allNames = )
 #getDLLRegisteredRoutines.DLLInfo
+getDLLRegisteredRoutines.DLLInfo(DLLInfo = ,name = ,type = ,allNames = )
 #getElement
+getElement(x = ,name = ,exact = )
 #geterrmessage
+geterrmessage()
 #getExportedValue
+getExportedValue(pkg = ,name = )
 #getHook
+getHook(which = )
+
 #getLoadedDLLs
+getLoadedDLLs()
 #getNamespace
+getNamespace(name = ,which.lib.loc = )
 #getNamespaceExports
+getNamespaceExports(ns = ,all.names = )
 #getNamespaceImports
+getNamespaceImports(ns = ,all.names = )
 #getNamespaceInfo
+getNamespaceInfo(ns = ,what = )
 #getNamespaceName
+getNamespaceName(ns = )
 #getNamespaceUsers
+getNamespaceUsers(ns = ,all.names = )
 #getNamespaceVersion
+getNamespaceVersion(ns = )
 #getNativeSymbolInfo
+getNativeSymbolInfo(sym = ,where = )
 #getOption
+getOption(x = ,default = ,complete = ,help = ,recursive = ,no.deparse = ,no.defaults = ,no.warn = ,keep.source = ,skip.silent = ,width = )
 #getRversion
+getRversion()
 #getSrcLines
+getSrcLines(con = ,offset = ,n = )
 #getTaskCallbackNames
+getTaskCallbackNames()
 #gettext
+gettext(x = )
 #gettextf
+gettextf(...)
 #getwd
+getwd(e)
 #gl
+gl(n = 1,k = ,length = ,labels = ,ordered = )
+gl(n = 1,k = 3,length = 4,labels = test,ordered = )
+gl(n = 1,k = 3,length = ,labels = ,ordered = TEST)
+gl(n = 1,k = 3,length = TEST,labels = ,ordered = )
+
 #globalCallingHandlers
+globalCallingHandlers(4)
+globalCallingHandlers(TEST)
 #globalenv
+globalenv(5)
+globalenv(test)
+globalenv("test")
 #gregexec
+gregexec(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #gregexpr
 #grep
 #grepl
