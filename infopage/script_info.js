@@ -50,11 +50,6 @@ const titleid = titletag.id;
 const WindowSize = window.innerWidth;
 console.log(WindowSize);
 
-const path = titleid + ".json";
-const request = new XMLHttpRequest();
-request.open("GET", path, true);
-request.send();
-
 function groupBy(obj, key) {
   return obj.reduce((abc, xyz) => {
     const match = xyz[key];
@@ -69,7 +64,6 @@ fetch("../help_db_jpn_main.json")
   .then((jsondata) => {
     const packFilter = jsondata.filter((item) => item.pack === titleid);
     const groupbyDes = groupBy(packFilter, "Description");
-
     const keys = Object.keys(groupbyDes);
 
     keys.forEach((element) => {
@@ -79,6 +73,7 @@ fetch("../help_db_jpn_main.json")
       const filterDes = packFilter.filter(
         (item) => item.Description === element
       );
+
       const FilterDesFunclist = filterDes.map((item) => item.func);
       FilterDesFunclist.forEach((element) => {
         const div = document.createElement("div");
@@ -145,6 +140,8 @@ fetch("../help_db_jpn_main.json")
       });
       const descriptionBox = document.createElement("div");
       descriptionBox.className = "descriptionBox";
+      descriptionBox.classList.add(element.tag);
+
       descriptionBox.textContent = element;
       keyframe.appendChild(descriptionBox);
     });
