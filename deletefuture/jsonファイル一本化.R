@@ -13,5 +13,8 @@ psych <- jsonlite::fromJSON("infopage/psych.json")
 stat <- jsonlite::fromJSON("infopage/stats.json")
 
 bind2 <-rbind(graphic,psych,stat)
-addResult <- dplyr::bind_rows(base,bind2)
+addResult <- dplyr::bind_rows(base,bind2) %>% 
+  select(-href)
 head(addResult)
+writejson <- toJSON(addResult,pretty = TRUE)
+writeLines(writejson,"infopage/SvgAndTagList.json")

@@ -1119,7 +1119,11 @@ getNamespaceUsers(ns = ,all.names = )
 #getNamespaceVersion
 getNamespaceVersion(ns = )
 #getNativeSymbolInfo
-getNativeSymbolInfo(sym = ,where = )
+getNativeSymbolInfo(sym = d,where = )
+getNativeSymbolInfo(sym = ,where = r)
+getNativeSymbolInfo(sym = ,where = ,name = test,PACKAGE = ,unlist = ,withRegistrationInfo = )
+getNativeSymbolInfo(sym = ,where = ,name = "sum",PACKAGE = "base",unlist = ,withRegistrationInfo = )
+
 #getOption
 getOption(x = ,default = ,complete = ,help = ,recursive = ,no.deparse = ,no.defaults = ,no.warn = ,keep.source = ,skip.silent = ,width = )
 #getRversion

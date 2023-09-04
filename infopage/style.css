@@ -384,6 +384,7 @@ CSS記述の順番
     width: 100%;
     height: 120px;
   }
+
   .namebox {
     width: 345.045px;
     height: 100.0124px;
@@ -397,9 +398,11 @@ CSS記述の順番
 
 @media screen and (min-width: 395px) {
   .lineitem {
+    display: inline-block;
     width: 289px;
     height: 125px;
   }
+
   .namebox {
     width: 274.045px;
     height: 100.124px;
@@ -490,3 +493,4 @@ CSS記述の順番
     transform: translateY(100px);
   }
 }
+

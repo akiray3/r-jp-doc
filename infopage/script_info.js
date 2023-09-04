@@ -59,7 +59,7 @@ function groupBy(obj, key) {
   }, {});
 }
 
-fetch("../help_db_jpn_main.json")
+fetch("db_main_add.json")
   .then((response) => response.json())
   .then((jsondata) => {
     const packFilter = jsondata.filter((item) => item.pack === titleid);
@@ -78,7 +78,10 @@ fetch("../help_db_jpn_main.json")
       FilterDesFunclist.forEach((element) => {
         const div = document.createElement("div");
         div.className = "lineitem";
-        div.id = element;
+        if (filterDes[0].tag) {
+          div.classList.add(filterDes[0].tag);
+        }
+
         div.style.display = "inline-block";
         div.style.fill = "none";
 
@@ -94,6 +97,7 @@ fetch("../help_db_jpn_main.json")
 
         const txttag = document.createElement("button");
         txttag.className = "ToDetailButton";
+        txttag.id = filterDes[0].tag;
 
         txttag.style.border = "none";
 
@@ -140,9 +144,9 @@ fetch("../help_db_jpn_main.json")
       });
       const descriptionBox = document.createElement("div");
       descriptionBox.className = "descriptionBox";
-      descriptionBox.classList.add(element.tag);
 
       descriptionBox.textContent = element;
+      descriptionBox.classList.add(filterDes[0].tag);
       keyframe.appendChild(descriptionBox);
     });
   });
@@ -175,3 +179,25 @@ $("#pageTop a").click(function () {
   );
   return false;
 });
+
+//絞り込み機能
+function selectFunction(event, tagid) {
+  const notTag = document.querySelectorAll(`.lineitem:not(.${tagid})`);
+  notTag.forEach((element) => {
+    element.style.display = "none";
+  });
+  const Tag = document.querySelectorAll(`.lineitem.${tagid}`);
+  Tag.forEach((element) => {
+    element.style.display = "inline-block";
+  });
+  const notDescription = document.querySelectorAll(
+    `.descriptionBox:not(.${tagid})`
+  );
+  notDescription.forEach((element) => {
+    element.style.display = "none";
+  });
+  const Description = document.querySelectorAll(`.descriptionBox.${tagid}`);
+  Description.forEach((element) => {
+    element.style.display = "block";
+  });
+}
