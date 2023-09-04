@@ -1,3 +1,7 @@
+const loaddingGrey = document.querySelector("#loading");
+window.addEventListener("load", () => {
+  loaddingGrey.classList.add("loaded");
+});
 const allMenu = document.querySelector(".tagmenu");
 if (allMenu) {
   allMenu.style.display = "none";

@@ -1131,7 +1131,14 @@ getTaskCallbackNames()
 #gettext
 gettext(x = )
 #gettextf
-gettextf(...)
+gettextf(...,fmt ="Hello,%$",domain = ,trim = )
+gettextf(g)
+gettextf("world",fmt ="Hello,%$",domain = ,trim = )
+
+gettextf("world",fmt ="Hello,%s",domain = ,trim = false)
+
+gettextf("world",fmt ="Hello,%$",domain = true,trim = )
+
 #getwd
 getwd(e)
 #gl
@@ -1148,50 +1155,100 @@ globalenv(5)
 globalenv(test)
 globalenv("test")
 #gregexec
-gregexec(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
+gregexec(pattern = 4,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
+gregexec(pattern = "4",text = test,ignore.case = ,perl = ,fixed = ,useBytes = )
+gregexec(pattern = 4,text = "test",ignore.case = false,perl = ,fixed = ,useBytes = )
+gregexec(pattern = 4,text = "test",ignore.case = ,perl = true,fixed = ,useBytes = )
+gregexec(pattern = 4,text = "test",ignore.case = ,perl = ,fixed = test,useBytes = )
+gregexec(pattern = 4,text = "test",ignore.case = ,perl = ,fixed = ,useBytes = test)
+
 #gregexpr
+gregexpr(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
+
 #grep
+grep(pattern = ,x = ,ignore.case = ,perl = ,value = ,fixed = ,useBytes = )
 #grepl
+grepl(pattern = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #grepRaw
+grepRaw(pattern = ,x = ,ignore.case = ,perl = ,value = ,fixed = ,useBytes = )
 #grouping
+grouping(x = )
 #gsub
+gsub(pattern = ,replacement = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #gzcon
+gzcon(con = ,open = ,encoding = ,compression = ,close = )
 #gzfile
+gzfile(description = ,open = ,encoding = ,compression = ,close = )
 #I
+I(x = )
 #iconv
+iconv(x = ,from = ,to = ,sub = )
 #iconvlist
+iconvlist()
 #icuGetCollate
+icuGetCollate(locale = )
 #icuSetCollate
+icuSetCollate(locale = )
 #identical
+identical(x = ,y = )
 #identity
+identity(x = )
 #if
+if(test = ,yes = ,no = )
 #ifelse
+ifelse(test = ,yes = ,no = )
 #Im
+Im(x = ,z = )
 #importIntoEnv
+importIntoEnv(from = ,to = ,env = ,keep.source = )
 #infoRDS
+infoRDS(file = )
 #inherits
+inherits(x = ,what = )
 #integer
+integer(length = )
 #interaction
+interaction(...,sep = ,lex.order = ,decreasing = )
 #interactive
+interactive()
 #intersect
+intersect(x = ,y = )
 #intToBits
+intToBits(x = )
 #intToUtf8
+intToUtf8(x = )
 #inverse.rle
+inverse.rle(x = )
 #invisible
+invisible(x = )
 #invokeRestart
+invokeRestart(restart = ,...)
 #invokeRestartInteractively
+invokeRestartInteractively(restart = ,...)
 #is.array
+is.array(x = )
 #is.atomic
+is.atomic(x = )
 #is.call
+is.call(x = )
 #is.character
+is.character(x = )
 #is.complex
+is.complex(x = )
 #is.data.frame
+is.data.frame(x = )
 #is.double
+is.double(x = )
 #is.element
+is.element(el = ,set = )
 #is.environment
+is.environment(x = )
 #is.expression
+is.expression(x = )
 #is.factor
+is.factor(x = )
 #is.finite
+is.finite(x = )
 #is.function
 #is.infinite
 #is.integer
