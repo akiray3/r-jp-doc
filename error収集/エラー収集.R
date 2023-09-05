@@ -1254,70 +1254,138 @@ is.factor(x = )
 #is.finite
 is.finite(x = )
 #is.function
+is.function(x = )
 #is.infinite
+is.infinite(x = )
 #is.integer
+is.integer(x = )
 #is.language
+is.language(x = )
 #is.list
+is.list(x = )
 #is.loaded
+is.loaded(name = ,where = )
 #is.logical
+is.logical(x = )
 #is.matrix
+is.matrix(x = )
 #is.na
+is.na(x = )
 #is.na.data.frame
+is.na.data.frame(x = )
 #is.na.numeric_version
+is.na.numeric_version(x = )
+
 #is.na.POSIXlt
+is.na.POSIXlt(x = )
 #is.na<-
+`is.na<-`(x = ,value = )
 #is.na<-.default
+`is.na<-.default`(x = ,value = )
 #is.na<-.factor
+`is.na<-.factor`(x = ,value = )
 #is.na<-.numeric_version
+`is.na<-.numeric_version`(x = ,value = )
 #is.name
+is.name(x = )
 #is.nan
+is.nan(x = )
 #is.null
+is.null(x = )
 #is.numeric
+is.numeric(x = )
 #is.numeric_version
+is.numeric_version(x = )
 #is.numeric.Date
+is.numeric.Date(x = )
 #is.numeric.difftime
+is.numeric.difftime(x = )
 #is.numeric.POSIXt
+is.numeric.POSIXt(x = )
 #is.object
+is.object(x = )
 #is.ordered
+is.ordered(x = )
 #is.package_version
+is.package_version(x = )
 #is.pairlist
+is.pairlist(x = )
 #is.primitive
+is.primitive(x = )
 #is.qr
+is.qr(x = )
 #is.R
+is.R()
 #is.raw
+is.raw(x = )
 #is.recursive
+is.recursive(x = )
 #is.single
+is.single(x = )
 #is.symbol
+is.symbol(x = )
 #is.table
+is.table(x = )
 #is.unsorted
+is.unsorted(x = )
 #is.vector
+is.vector(x = ,mode = )
 #isa
+isa(x = ,class1 = ,class2 = )
 #isatty
+isatty(con = )
 #isBaseNamespace
+isBaseNamespace(ns = )
 #isdebugged
+isdebugged(fun = )
 #isFALSE
+isFALSE(x = )
 #isIncomplete
+isIncomplete(x = )
 #isNamespace
+isNamespace(ns = ,which = )
 #isNamespaceLoaded
+isNamespaceLoaded(pkg = ,quiet = )
 #ISOdate
+ISOdate(year = ,month = ,day = ,hour = ,min = ,sec = ,tz = )
 #ISOdatetime
+ISOdatetime(year = ,month = ,day = ,hour = ,min = ,sec = ,tz = )
 #isOpen
+isOpen(con = )
 #isRestart
+isRestart(restart = )
+
 #isS4
+isS4(x = )
 #isSeekable
+isSeekable(con = )
 #isSymmetric
+isSymmetric(x = ,tol = )
 #isSymmetric.matrix
+isSymmetric.matrix(x = ,tol = )
 #isTRUE
+isTRUE(x = )
 #jitter
+jitter(x = ,factor = )
 #julian
+julian(x = )
 #julian.Date
+julian.Date(x = )
 #julian.POSIXt
+julian.POSIXt(x = )
 #kappa
+kappa(x = )
 #kappa.default
+kappa.default(x = )
 #kappa.lm
+kappa.lm(x = )
 #kappa.qr
+kappa.qr(x = )
+
 #kronecker
+kronecker(X = ,Y = )
 #l10n_info
+l10n_info()
 #La_library
 #La_version
 #La.svd

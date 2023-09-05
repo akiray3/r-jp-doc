@@ -7,9 +7,17 @@
 </head>
 
 <body>
+  <!--ローディング-->
+  <div id="loading">
+    <div class="loader">Loading...</div>
+  </div>
   <div class="body"></div>
 </body>
 <script>
+  const loading = document.querySelector("#loading");
+    window.addEventListener("load", () => {
+      loading.classList.add("loaded");
+    });
   document.addEventListener("DOMContentLoaded", function () {
     const currentURL = window.location.search;
     const urlParams = new URLSearchParams(currentURL);

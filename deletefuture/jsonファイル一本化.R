@@ -14,7 +14,16 @@ stat <- jsonlite::fromJSON("infopage/stats.json")
 
 bind2 <-rbind(graphic,psych,stat)
 addResult <- dplyr::bind_rows(base,bind2) %>% 
-  select(-href)
+  select(-href) %>% 
+  select(-id) %>% 
+  rename(func = funcname)
 head(addResult)
 writejson <- toJSON(addResult,pretty = TRUE)
 writeLines(writejson,"infopage/SvgAndTagList.json")
+
+
+original <- jsonlite::fromJSON("help_db_jpn_main.json")
+head(original)
+join <- left_join(original,addResult,by = "func")
+writejoin <- toJSON(join,pretty = TRUE)
+writeLines(writejoin,"infopage/db_main_add.json")
