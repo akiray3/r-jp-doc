@@ -1,3 +1,5 @@
+(x <- c(-1:1, (-1:1)/0))
+
 df <- data.frame(x = 1:10, y = 11:20)
 
 result <- tryCatch({
@@ -658,16 +660,18 @@ check_tzones(tz1 = ,tz2 = )
 #chkDots
 chkDots(...)
 #chol
-chol(x = ,pivot = ,LINPACK = )
+chol(x = x,pivot = true,LINPACK = true,tol = x)
+chol(x = test)
 #chol.default
-chol.default(x = ,pivot = ,LINPACK = )
+chol.default(x = x,pivot = true,LINPACK = true)
 
 #chol2inv
-chol2inv(x = ,size = ,LINPACK = )
+chol2inv(x = x,size = NCOL(x),LINPACK = true)
+
 #choose
-choose(n = ,k = )
+choose(n =x,k = x)
 #class
-class(x = )
+class(x = x)
 #class<-
 `class<-`(x = ,value = )
 #clearPushBack
@@ -1387,55 +1391,106 @@ kronecker(X = ,Y = )
 #l10n_info
 l10n_info()
 #La_library
+La_library()
 #La_version
+La_version()
 #La.svd
+La.svd(x = ,nu = ,nv = ,LINPACK = )
 #labels
+labels(x = )
 #labels.default
+labels.default(x = )
 #lapply
+lapply(X = ,FUN = ,...)
 #lazyLoad
+lazyLoad(name = ,lib = ,keep.source = ,compress = ,envhook = )
 #lazyLoadDBexec
+lazyLoadDBexec(con = ,statement = ,...)
 #lazyLoadDBfetch
+lazyLoadDBfetch(con = ,statement = ,...)
 #lbeta
+lbeta(x = ,y = )
 #lchoose
+lchoose(n = ,k = )
 #length
-#length.POSIXlt
+length(x = )
+#length.POSIXlt 
+length.POSIXlt(x = )
 #length<-
+`length<-`(x = ,value = )
 #length<-.Date
+`length<-.Date`(x = ,value = )
 #length<-.difftime
+`length<-.difftime`(x = ,value = )
 #length<-.factor
+`length<-.factor`(x = ,value = )
 #length<-.POSIXct
+`length<-.POSIXct`(x = ,value = )
+
 #length<-.POSIXlt
+`length<-.POSIXlt`(x = ,value = )
 #lengths
+lengths(x = )
 #letters
+letters
 #LETTERS
+LETTERS
 #levels
+levels(x = )
 #levels.default
+levels.default(x = )
 #levels<-
+`levels<-`(x = ,value = )
 #levels<-.factor
+`levels<-.factor`(x = ,value = )
 #lfactorial
+lfactorial(x = )
 #lgamma
+lgamma(x = )
 #libcurlVersion
+libcurlVersion()
 #library
+library(package = ,help = ,pos = ,lib.loc = ,character.only = ,logical.return = ,warn.conflicts = ,quietly = ,verbose = ,deparse.level = ,unload = )
 #library.dynam
+library.dynam(file = ,package = ,local = )
 #library.dynam.unload
+library.dynam.unload(package = ,local = )
 #licence
+licence()
 #license
+license()
 #list
+list(...)
 #list.dirs
+list.dirs(path = ,full.names = ,recursive = ,ignore.case = )
 #list.files
+list.files(path = ,pattern = ,all.files = ,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
 #list2DF
+list2DF(x = ,row.names = ,keep.row.names = ,stringsAsFactors = )
 #list2env
+list2env(x = ,envir = ,parent = )
 #load
+load(file = ,envir = ,verbose = )
 #loadedNamespaces
+loadedNamespaces()
 #loadingNamespaceInfo
+loadingNamespaceInfo(pkg = )
 #loadNamespace
+loadNamespace(pkg = ,lib.loc = )
 #local
+local({...})
 #lockBinding
+lockBinding(sym = ,env = )
 #lockEnvironment
+lockEnvironment(env = )
 #log
+log(x = ,base = )
 #log10
+log10(x = )
 #log1p
+log1p(x = )
 #log2
+log2(x = )
 #logb
 #logical
 #lower.tri
