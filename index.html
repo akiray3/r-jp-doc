@@ -120,12 +120,13 @@
     const list = ["base", "graphics", "psych", "stats"];
     const windowSize = window.innerWidth;
     list.forEach(function (item) {
-      fetch(`infopage/${item}.json`)
+      fetch(`infopage/db_main_add.json`)
         .then((response) => response.json())
         .then((jsondata) => {
           const slideblock = document.querySelector(`#${item}_slider`);
-          for (let i = 0; i < jsondata.length; i++) {
-            if (jsondata[i].svg) {
+          const matchData = jsondata.filter((data) => data.pack === item);
+          for (let i = 0; i < matchData.length; i++) {
+            if (matchData[i].svg) {
               const slide = document.createElement("div");
               slide.className = "slick-slide";
               slide.id = item + "_slide_" + i;
@@ -134,26 +135,26 @@
               slide_link.href = "/r-jp-doc/detail/detailpage.html";
               slide.addEventListener("click", (event) => {
                 event.preventDefault();
-                window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${jsondata[i].funcname}`;
+                window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${matchData[i].funcname}`;
               });
               const imgbox = document.createElement("img");
               imgbox.classList.add("lazyload");
               const darkMode = window.matchMedia("(prefers-color-scheme:dark)");
-              console.log(jsondata[i].svg_white);
+              console.log(matchData[i].svg_white);
               function changeDarkMode(d) {
                 if (d.matches) {
                   imgbox.setAttribute(
                     "data-lazy",
-                    `www/${jsondata[i].svg_white}`
+                    `www/${matchData[i].svg_white}`
                   );
                 } else {
-                  imgbox.setAttribute("data-lazy", `www/${jsondata[i].svg}`);
+                  imgbox.setAttribute("data-lazy", `www/${matchData[i].svg}`);
                 }
               }
               darkMode.addEventListener("change", changeDarkMode);
               changeDarkMode(darkMode);
               const funcnametxt = document.createElement("p");
-              const fnnametxt = document.createTextNode(jsondata[i].funcname);
+              const fnnametxt = document.createTextNode(matchData[i].func);
               funcnametxt.appendChild(fnnametxt);
               slide_link.appendChild(imgbox);
               slide.appendChild(slide_link);
