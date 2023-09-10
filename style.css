@@ -213,12 +213,17 @@ body {
     left: 0;
     transform: translateX(10%);
     border-radius: 510.194px;
-    stroke: #000;
     stroke-width: 1px;
+  }
+  @media (prefers-color-scheme: light) {
+    #keywordbox {
+      border: 2px solid #000;
+    }
   }
   @media (prefers-color-scheme: dark) {
     #keywordbox {
-      stroke: #e6dce6;
+      background-color: #192200;
+      border: 2px solid #e6dce6;
     }
   }
 }
@@ -236,12 +241,6 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  #keywordbox {
-    background-color: #192200;
-    color: #afab93;
-  }
-}
 #reserch {
   width: 60px;
   height: 60px;
@@ -249,7 +248,7 @@ body {
   border-color: #00000000;
   right: 0;
   top: 0;
-  transform: translate(-90px, 25px);
+  transform: translate(60vw,-20vw);
 }
 
 #magnifying-glass-duotone {

@@ -34,7 +34,6 @@
       />
       <button type="submit" id="reserch">
         <img
-          src="www/magnifying-glass-duotone.svg"
           alt="SVG"
           id="magnifying-glass-duotone"
         />
@@ -113,6 +112,18 @@
   </div>
 
   <script>
+    const magnifyingGlass = document.querySelector("#magnifying-glass-duotone");
+    const dark = window.matchMedia("(prefers-color-scheme:dark)");
+    function changeGlass(d){
+      if (d.matches){
+        magnifyingGlass.setAttribute("src","www/magnifying-glass-duotone-white.svg");
+
+      }else{
+        magnifyingGlass.setAttribute("src","www/magnifying-glass-duotone.svg");
+      }
+    }
+    dark.addEventListener("change",changeGlass);
+    changeGlass(dark);
     const loading = document.querySelector("#loading");
     window.addEventListener("load", () => {
       loading.classList.add("loaded");
@@ -135,7 +146,7 @@
               slide_link.href = "/r-jp-doc/detail/detailpage.html";
               slide.addEventListener("click", (event) => {
                 event.preventDefault();
-                window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${matchData[i].funcname}`;
+                window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${matchData[i].func}`;
               });
               const imgbox = document.createElement("img");
               imgbox.classList.add("lazyload");

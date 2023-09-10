@@ -204,6 +204,16 @@ CSS記述の順番
     color: #e6dcb6;
   }
 }
+@media (prefers-color-scheme: light) {
+  .returnlink {
+    color: #243d25;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .returnlink {
+    color: #e6dcb6;
+  }
+}
 
 .TagMenuBox {
   width: 100%;

@@ -205,9 +205,17 @@ body {
     color: #e6dcb6;
   }
 }
-.returnlink {
-  color: #afab93;
+@media (prefers-color-scheme: light) {
+  .returnlink {
+    color: #192200;
+  }
 }
+@media (prefers-color-scheme: dark) {
+  .returnlink {
+    color: #e6dcb6;
+  }
+}
+
 .menu {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
