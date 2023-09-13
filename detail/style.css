@@ -288,10 +288,19 @@ body {
   display: inline-block;
 }
 
-.argcol {
-  display: flex;
-  flex-direction: column;
-  margin-left: 3%;
+@media screen and (max-width: 420px) {
+  .argcol {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 420px) {
+  .argcol {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -343,6 +352,11 @@ body {
   }
 }
 /*引数*/
+.FuncstartTxt {
+  font-size: var(--font-size-xxl);
+  font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+}
 .txt {
   font-size: var(--font-size-lg);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
@@ -477,7 +491,7 @@ body {
   margin-top: -18px;
 }
 .funclast {
-  font-size: 48px;
+  font-size: var(--font-size-xxl);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
   display: flex 0 0 auto;
   margin-right: 10px;
