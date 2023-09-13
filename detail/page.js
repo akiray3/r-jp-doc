@@ -79,10 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (WindowSize <= 395) {
         const funcnametxt = document.createTextNode(keyword);
         const funcstart = document.createElement("text");
-        funcstart.className = "txt";
+        funcstart.className = "FuncstartTxt";
         const funcstarttxt = document.createTextNode("(");
-        funcstart.style.fontFamily =
-          "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
         funcstart.style.display = "flex";
         funcstart.style.marginRight = "10px";
         funcname.appendChild(funcnametxt);
@@ -160,10 +158,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       funcframe.appendChild(funcname);
 
-      for (let b = 0; b <= 50; b++) {
-        if (arg["arguments" + b]) {
-        }
-      }
       //hover size
       const heightblock = argblock.clientHeight;
       const hovinfo = document.querySelectorAll(".hoverFrame");
