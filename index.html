@@ -21,7 +21,7 @@
 <body>
   <!--ローディング-->
   <div id="loading">
-    <div class="loader">Loading...</div>
+    <div class="loader"></div>
   </div>
   <!--検索ボックス-->
   <div style="width: 100%; margin: 2%; margin-top: 3%">
@@ -33,10 +33,7 @@
         placeholder="キーワードを入力"
       />
       <button type="submit" id="reserch">
-        <img
-          alt="SVG"
-          id="magnifying-glass-duotone"
-        />
+        <img alt="SVG" id="magnifying-glass-duotone" />
       </button>
       <div id="autocomplete">
         <ul id="autocompletelist"></ul>
@@ -114,15 +111,17 @@
   <script>
     const magnifyingGlass = document.querySelector("#magnifying-glass-duotone");
     const dark = window.matchMedia("(prefers-color-scheme:dark)");
-    function changeGlass(d){
-      if (d.matches){
-        magnifyingGlass.setAttribute("src","www/magnifying-glass-duotone-white.svg");
-
-      }else{
-        magnifyingGlass.setAttribute("src","www/magnifying-glass-duotone.svg");
+    function changeGlass(d) {
+      if (d.matches) {
+        magnifyingGlass.setAttribute(
+          "src",
+          "www/magnifying-glass-duotone-white.svg"
+        );
+      } else {
+        magnifyingGlass.setAttribute("src", "www/magnifying-glass-duotone.svg");
       }
     }
-    dark.addEventListener("change",changeGlass);
+    dark.addEventListener("change", changeGlass);
     changeGlass(dark);
     const loading = document.querySelector("#loading");
     window.addEventListener("load", () => {

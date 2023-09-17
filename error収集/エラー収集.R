@@ -31,11 +31,7 @@ if (inherits(result, "error")) {
 #(
 #[
   test <- matrix(1:12, nrow = 3, ncol = 4)
-  result <- tryCatch({
     test[e]
-  },error = function(e){
-    e
-  })
 #[.AsIs
 #[.data.frame
 #[.Date
@@ -113,14 +109,28 @@ if (inherits(result, "error")) {
 #$<-
 #$<-.data.frame
 #abbreviate
+  abbreviate(names.arg = ,minlength = ,use.classes = ,dot = ,strict = ,method = ,named = )
+  abbreviate(names.arg = x,minlength = ,use.classes = ,dot = ,strict = ,method = ,named = )
+    abbreviate(names.arg = x,minlength = x,use.classes = ,dot = ,strict = ,method = ,named = )
+
+
+  
 #abs
+  abs(x = )
 #acos
+  acos(x = )
 #acosh
+  acosh(x = )
 #activeBindingFunction
+  activeBindingFunction(sym = ,env = )
 #addNA
+  addNA(x = ,ifany = )
 #addTaskCallback
+  addTaskCallback(f = ,data = ,name = )
 #agrep
+  agrep(pattern = ,x = ,max.distance = ,costs = ,ignore.case = ,value = ,fixed = ,useBytes = )
 #agrepl
+  agrepl(pattern = ,x = ,max.distance = ,costs = ,ignore.case = ,fixed = ,useBytes = )
 #alist
 alist(5)
 #all
@@ -128,17 +138,11 @@ all(4,na.rm = true)
 all(5)
 
 #all.equal
-result <- tryCatch({
   base::all.equal(4,test[2,])
-},error = function(e){
-  e
-})
+
 #all.equal.character
-result <- tryCatch({
+  
   base::all.equal("eset","taturo")
-},error = function(e){
-  e
-})
 #all.equal.default
 all.equal.default()
 #all.equal.environment
@@ -149,12 +153,8 @@ env1$b <- 2
 env2 <- new.env()
 env2$a <- 4
 env2$b <- 0
-
-result <- tryCatch({
   base::all.equal.encvironment(env1,env2)
-},error = function(e){
-  e
-})
+
 #all.equal.envRefClass
 all.equal.envRefClass()
 #all.equal.factor
@@ -166,10 +166,7 @@ all.equal.function()
 #all.equal.language
 all.equal.language()
 #all.equal.list
-result <- tryCatch({all.equal.list(5)},error = function(e){
-  e
-})
-
+  all.equal.list(5)
 #all.equal.numeric
 all.equal.numeric(target = ,current = ,tolerance = ,scale = ,countEQ = ,formatFUN = ,format(),check.attributes = )
 #all.equal.POSIXt
@@ -183,7 +180,7 @@ all.vars(expr = ,functions = ,max.names = ,unique = )
 #allowInterrupts
 allowInterrupts(expr = )
 #any
-any( ,na.rm = )
+any(na.rm = )
 #anyDuplicated
 anyDuplicated(x = ,incomparables = )
 #anyDuplicated.array
@@ -196,6 +193,7 @@ anyDuplicated.default(x = ,incomparables = ,fromLast = )
 anyDuplicated.matrix(x = ,incomparables = ,MARGIN = ,fromLast = )
 #anyNA
 anyNA(x = ,recursive = )
+anyNA(x = ,recursive = )
 #anyNA.data.frame
 anyNA.data.frame(x = ,recursive = )
 #anyNA.numeric_version
@@ -206,12 +204,9 @@ anyNA.POSIXlt(x = ,recursive = )
 aperm(a = ,perm = )
 originaldf <- matrix(1:12, nrow = 3, ncol = 4)
 change <- c(2)
-result <- tryCatch({
 originaldf <- aperm(originaldf,change)
-},function(e){
-  e
-})
 #aperm.default
+aperm.default(a = ,perm = ,resize = )
 aperm.default(a = ,perm = ,resize = )
 
 #aperm.table
@@ -220,76 +215,52 @@ aperm.table(a = ,perm = ,resize =,keep.class = )
 append(x = ,values = ,after = )
 aptest <- c(1,2,3,4)
 appendValue <- 5
-result <- tryCatch({
   base::append(aptest,after = ６,value = appendValue)
-},error = function(e){
-  e
-})
 #apply
 applyTest <- c(1,2,3,5)
-result <- tryCatch({
   base::apply(applyTest,c(4,6),FUN = mean)
-},function(e){
-  e
-})
-
+apply(X = ,MARGIN = ,FUN = result,simplify = )
 #Arg
+Arg(z = )
 Arg(z = )
 #args
 args(f1)
+args(name = )
 #array
 array(1:13,dim = 3:4,dimnames = list(c("a","b","c"),c("d","e","f","g")))
+array(data = ,dim = ,dimnames = )
 
-result <- tryCatch({
   array(1:13,dimnames = list(c("x","y")))
-},error = function(e){
-  e
-})
 
 #arrayInd
-result <- tryCatch({
 arrayInd(1:12,dim = c(3,4))
-},error = function(e){
-  e
-})
-result <- tryCatch({
 arrayInd(1:12,dim = c(3,4),dims = c(3,4))
-},error = function(e){
-  e
-})
-
+arrayInd(ind = ,.dim = ,.dimnames = ,useNames = )
 #as.array
 as.array(x = )
+as.array(x = )
 arrayTest <- matrix(1:12, nrow = 3, ncol = 4)
-result <- tryCatch({as.array()},error = function(e){e})
 #as.array.default
+as.array.default(x = )
 as.array.default(x = )
 #as.call
 as.call(x = )
-result <- tryCatch({as.call()},error = function(e){e})
-result <- tryCatch({as.call(92)},error = function(e){e})
 #as.character
 as.character(x = )
-result <- tryCatch({as.character(abc)},error =function(e){e})
 #as.character.condition
 as.character.condition(x = )
-result <- tryCatch({as.character(condition)},error =function(e){e})
 #as.character.Date 
 as.character.Date(x = )
-result <- tryCatch({as.character(Date(abc))},error =function(e){e})
+as.character.Date(x = )
 
 #as.character.default
 as.character.default(x = )
-result <- tryCatch({as.character.default(abc)},error =function(e){e})
 #as.character.error 
 as.character.error(x = )
-result <- tryCatch({as.character.error(abc)},error =function(e){e})
 #as.character.factor 
 as.character.factor(x = )
-result <- tryCatch({as.character.factor(abc)},error =function(e){e})
 #as.character.hexmode 
 as.character.hexmode(x = )
-result <- tryCatch({as.character.hexmode(abc)},error =function(e){e})
 #as.character.numeric_version
 as.character.numeric_version(x = )
 #as.character.octmode
@@ -300,35 +271,25 @@ as.character.POSIXt(x = )
 as.character.srcref(x = ,useSource = ,to = )
 #as.complex
 as.complex(x = )
-result <- tryCatch({as.complex(abc)},error =function(e){e})
 
 #as.data.frame
 as.data.frame(x = ,row.names = ,optional = )
 list <- list(a = 1:3, b = 4:9)
-result <- tryCatch({as.data.frame(
- abc
-)},error = function(e){e})
 #as.data.frame.array
 as.data.frame.array(x = ,row.names = ,optional = )
 #as.data.frame()  
 as.data.frame(x = ,row.names = ,optional = )
-result <- tryCatch({as.data.frame(arrayTest)},error = function(e){e})
 
 #as.data.frame.AsIs 
 as.data.frame.AsIs(x = ,row.names = ,optional = )
-result <- tryCatch({as.data.frame(AsIs(abc))},error = function(e){e})
 #as.data.frame.character 
 as.data.frame.character(x = ,stringsAsFactors = )
-result <- tryCatch({as.data.frame(character(abc))},error = function(e){e})
 #as.data.frame.complex
 as.data.frame.complex(x = ,row.names = ,optional = ,nm = )
-result <- tryCatch({as.data.frame(complex(abc))},error = function(e){e})
 #as.data.frame.data.frame 
 as.data.frame.data.frame(x = ,row.names = )
-result <- tryCatch({as.data.frame(data.frame(abc))},error = function(e){e})
 #as.data.frame.Date 
 as.data.frame.Date(x = ,row.names = ,optional = ,nm = )
-result <- tryCatch({as.data.frame(Date(abc))},error = function(e){e})
 #as.data.frame.default
 as.data.frame.default(x = )
 #as.data.frame.difftime
@@ -367,7 +328,6 @@ as.data.frame.ts(x = ,row.names = ,optional = ,nm = )
 as.data.frame.vector(x = ,row.names = ,optional = ,nm = )
 #as.Date 
 as.Date(x = ,format = ,tz = )
-result <- tryCatch({as.Date(abc)},error = function(e){e})
 
 #as.Date.character
 as.Date.character(x = ,format = ,tz = )
@@ -384,10 +344,8 @@ as.Date.POSIXct(x = ,tz = )
 as.Date.POSIXlt(x = ,tz = )
 #as.difftime 
 as.difftime(x = ,units = )
-result <- tryCatch({as.difftime(abc)},error = function(e){e})
 #as.double 
 as.double(x = )
-result <- tryCatch({as.double(abc)},error = function(e){e})
 
 #as.double.difftime
 as.double.difftime(x = ,units = )
@@ -395,176 +353,255 @@ as.double.difftime(x = ,units = )
 as.double.POSIXlt(x = )
 #as.environment 
 as.environment(x = )
-result <- tryCatch({as.environment(abc)},error = function(e){e})
+as.environment(x = )
 #as.expression 
 as.expression(x = )
-result <- tryCatch({as.expression(abc)},error = function(e){e})
+as.expression(x = )
 #as.expression.default
+as.expression.default(x = )
 as.expression.default(x = )
 #as.factor
 as.factor(x = )
+as.factor(x = )
 #as.function
+as.function(x = )
 as.function(x = )
 #as.function.default
 as.function.default(x = )
+as.function.default(x = ,envir = )
 #as.hexmode
+as.hexmode(x = )
 as.hexmode(x = )
 #as.integer
 as.integer(x = )
+as.integer(x = )
 #as.list
+as.list(x = )
 as.list(x = )
 
 #as.list.data.frame
 as.list.data.frame(x = ,row.names = ,optional = )
+as.list.data.frame(x = )
 #as.list.Date
+as.list.Date(x = )
 as.list.Date(x = )
 #as.list.default
 as.list.default(x = )
+as.list.default(x = )
 #as.list.difftime
+as.list.difftime(x = )
 as.list.difftime(x = )
 #as.list.environment
 as.list.environment(x = )
+as.list.environment(x = ,all.names = ,sorted = )
 #as.list.factor
+as.list.factor(x = )
 as.list.factor(x = )
 #as.list.function
 as.list.function(x = )
+as.list.function(x = )
 #as.list.numeric_version
+as.list.numeric_version(x = )
 as.list.numeric_version(x = )
 
 #as.list.POSIXct
 as.list.POSIXct(x = )
+as.list.POSIXct(x = )
 #as.list.POSIXlt
+as.list.POSIXlt(x = )
 as.list.POSIXlt(x = )
 #as.logical
 as.logical(x = )
+as.logical(x = )
 #as.logical.factor
+as.logical.factor(x = )
 as.logical.factor(x = )
 #as.matrix
 as.matrix(x = ,rownames.force = )
+as.matrix(x = )
 #as.matrix.data.frame
 as.matrix.data.frame(x = ,row.names = )
+as.matrix.data.frame(x = ,rownames.force = )
 #as.matrix.default
+as.matrix.default(x = )
 as.matrix.default(x = )
 #as.matrix.noquote
 as.matrix.noquote(x = ,rownames.force = )
+as.matrix.noquote(x = )
 #as.matrix.POSIXlt
+as.matrix.POSIXlt(x = )
 as.matrix.POSIXlt(x = )
 #as.name
 as.name(x = )
+as.name(x = )
 #as.null
+as.null(x = )
 as.null(x = )
 #as.null.default
 as.null.default(x = )
+as.null.default(x = )
 #as.numeric
+as.numeric(x = )
 as.numeric(x = )
 #as.numeric_version
 as.numeric_version(x = )
+as.numeric_version(x = )
 #as.octmode
+as.octmode(x = )
 as.octmode(x = )
 #as.ordered
 as.ordered(x = )
+as.ordered(x = )
 #as.package_version
+as.package_version(x = )
 as.package_version(x = )
 #as.pairlist
 as.pairlist(x = )
+as.pairlist(x = )
 #as.POSIXct
 as.POSIXct(x = ,tz = ,format = ,tryFormats = )
+as.POSIXct(x = ,tz = )
 #as.POSIXct.Date
 as.POSIXct.Date(x = ,tz = )
+as.POSIXct.Date(x = )
 #as.POSIXct.default
 as.POSIXct.default(x = ,tz = ,format = ,tryFormats = )
+as.POSIXct.default(x = ,tz = )
 #as.POSIXct.numeric
 as.POSIXct.numeric(x = ,tz = )
+as.POSIXct.numeric(x = ,tz = ,origin = )
 #as.POSIXct.POSIXlt
+as.POSIXct.POSIXlt(x = ,tz = )
 as.POSIXct.POSIXlt(x = ,tz = )
 #as.POSIXlt
 as.POSIXlt(x = ,tz = ,format = ,tryFormats = )
+as.POSIXlt(x = ,tz = )
 #as.POSIXlt.character
 as.POSIXlt.character(x = ,tz = )
+as.POSIXlt.Date(x = )
 #as.POSIXlt.Date
 as.POSIXlt.Date(x = ,tz = )
+as.POSIXlt.Date(x = )
 
 #as.POSIXlt.default
 as.POSIXlt.default(x = ,tz = ,format = ,tryFormats = )
+as.POSIXlt.default(x = ,tz = ,optional = )
 #as.POSIXlt.factor
 as.POSIXlt.factor(x = ,tz = )
+as.POSIXlt.factor(x = )
 #as.POSIXlt.numeric
 as.POSIXlt.numeric(x = ,tz = )
+as.POSIXlt.numeric(x = ,tz = ,origin = )
 #as.POSIXlt.POSIXct
+as.POSIXlt.POSIXct(x = ,tz = )
 as.POSIXlt.POSIXct(x = ,tz = )
 #as.qr
 as.qr(x = ,pivot = )
+as.qr(x = )
 #as.raw
 as.raw(x = )
+as.raw(x = )
 #as.single
+as.single(x = )
 as.single(x = )
 
 #as.single.default
 as.single.default(x = )
+as.single.default(x = )
 #as.symbol
+as.symbol(x = )
 as.symbol(x = )
 #as.table
 as.table(x = )
+as.table(x = )
 #as.table.default
+as.table.default(x = )
 as.table.default(x = )
 #as.vector
 as.vector(x = ,mode = )
+as.vector(x = ,mode = )
 #as.vector.factor
 as.vector.factor(x = )
+as.vector.factor(x = ,mode = )
 #asin
+asin(x = )
 asin(x = )
 #asinh
 asinh(x = )
+asinh(x = )
 #asNamespace
 asNamespace(ns = )
+asNamespace(ns = ,base.OK = )
 #asplit
 asplit(x = ,dims = ,drop = )
+asplit(x = ,MARGIN = )
 #asS3
 asS3(object = ,class = )
+asS3(object = ,flag = ,complete = )
 #asS4
 asS4(object = ,class = )
+asS4(object = ,flag = ,complete = )
 #assign
 assign(x = ,value = ,pos = ,envir = ,inherits = )
+assign(x = ,value = ,pos = ,envir = ,inherits = ,immediate = )
 #atan
+atan(x = )
 atan(x = )
 #atan2
 atan2(y = ,x = )
+atan2(y = ,x = )
 #atanh
+atanh(x = )
 atanh(x = )
 #attach
 attach(pos = ,name = ,warn.conflicts = ,pos = ,name = ,warn.conflicts = )
+attach(what = ,pos = ,name = ,warn.conflicts = )
 #attachNamespace
 attachNamespace(package = ,pos = )
+attachNamespace(ns = ,pos = ,depends = ,exclude = ,include.only = )
 #attr
+attr(x = ,which = ,exact = )
 attr(x = ,which = ,exact = )
 #attr.all.equal
 attr.all.equal(x = ,y = ,tolerance = ,scale = ,check.attributes = )
+attr.all.equal(target = ,current = ,check.attributes = ,check.names = )
 #attr<-
 `attr<-`()
 #attributes
 attributes(object = )
+attributes(x = )
 #attributes<-
 `attributes<-`()
 #autoload
 autoload(pkgname = ,file = ,character.only = )
+autoload(name = ,package = ,reset = )
 #autoloader
 autoloader(pkgname = ,file = ,character.only = )
+autoloader(name = ,package = )
 #backsolve
 backsolve(r = ,x = ,k = ,upper.tri = )
+backsolve(r = ,x = ,k = ,upper.tri = ,transpose = )
 #baseenv
+baseennv()
 baseenv()
 #basename
 basename(path = ,suffix = )
+basename(path = )
 #besselI
 besselI(x = ,nu = )
+besselI(x = ,nu = ,expon.scaled = )
 #besselJ
+besselJ(x = ,nu = )
 besselJ(x = ,nu = )
 #besselK
 besselK(x = ,nu = )
+besselK(x = ,nu = ,expon.scaled = )
 #besselY
+besselY(x = ,nu = )
 besselY(x = ,nu = )
 #beta
 beta(x = ,y = )
+beta(a = ,b = )
 #bindingIsActive
 bindingIsActive(x = )
 #bindingIsLocked
@@ -585,7 +622,9 @@ bitwShiftR(x = ,n = )
 bitwXor(a = ,b = )
 #body 
 body(x = )
+body(fun = )
 #body<-
+`body<-`()
 `body<-`()
 #bquote
 bquote(expr = )
@@ -597,39 +636,56 @@ browser(expr = )
 browserCondition(expr = )
 #browserSetDebug
 browserSetDebug(flag = )
+browserSetDebug(n = )
 #browserText
 browserText(expr = )
+browserText(n = )
 #builtins
 builtins()
+builtins(internal = )
 #by
 by(data = ,INDICES = ,FUN = ,...,simplify = )
+by(data = ,INDICES = ,FUN = ,simplify = )
 #by.data.frame
 by.data.frame(data = ,INDICES = ,FUN = ,...,simplify = )
+by.data.frame(data = ,INDICES = ,FUN = ,simplify = )
 #by.default
 by.default(data = ,INDICES = ,FUN = ,...,simplify = )
+by.default(data = ,INDICES = ,FUN = ,simplify = )
 #bzfile
 bzfile(description = ,open = ,encoding = ,compression = ,close = )
+bzfile(description = ,open = ,encoding = ,compression = )
 #c
 c(...)
+c()
 #c.Date
 c.Date(...)
+c.Date(recursive = )
 
 #c.difftime
 c.difftime(...)
+c.difftime(recursive = )
 #c.factor
 c.factor(...)
+c.factor(recursive = )
 #c.noquote
 c.noquote(...)
+c.noquote(recursive = )
 #c.numeric_version
 c.numeric_version(...)
+c.numeric_version(recursive = )
 #c.POSIXct
 c.POSIXct(...)
+c.POSIXct(recursive = )
 #c.POSIXlt
 c.POSIXlt(...)
+c.POSIXlt(recursive = )
 #c.warnings
 c.warnings(...)
+c.warnings(recursive = )
 #call
 call(name = ,...)
+call(name = )
 
 #callCC
 callCC(fun = )
@@ -639,26 +695,35 @@ capabilities()
 casefold(x = ,upper = )
 #cat
 cat(...,file = ,sep = ,fill = ,labels = ,append = )
+cat(file = ,sep = ,fill = ,labels = ,append = )
 #cbind
 cbind(...)
+cbind(deparse.level = )
 #cbind.data.frame
 cbind.data.frame(...)
+cbind.data.frame(deparse.level =)
 #ceiling
 ceiling(x = )
 #char.expand
 char.expand(x = )
 #character
 character(length = )
+character(length = )
 #charmatch
+charmatch(x = ,table = ,nomatch = )
 charmatch(x = ,table = ,nomatch = )
 #charToRaw
 charToRaw(x = )
+charToRaw(x = )
 #chartr
+chartr(old = ,new = ,x = )
 chartr(old = ,new = ,x = )
 #check_tzones
 check_tzones(tz1 = ,tz2 = )
+check_tzones()
 #chkDots
 chkDots(...)
+chkDots(which.call = ,allowed = )
 #chol
 chol(x = x,pivot = true,LINPACK = true,tol = x)
 chol(x = test)
@@ -672,8 +737,10 @@ chol2inv(x = x,size = NCOL(x),LINPACK = true)
 choose(n =x,k = x)
 #class
 class(x = x)
+class(x = )
 #class<-
 `class<-`(x = ,value = )
+`class<-`()
 #clearPushBack
 clearPushBack(connection = )
 #close
@@ -719,11 +786,13 @@ conditionMessage(condition = ,c = )
 conditionMessage.condition(condition = ,c = )
 #conflictRules
 conflictRules(pkg = ,mask.ok = ,exclude = )
+conflictRules(pkg = ,mask.ok = ,exclude = )
 #conflicts
 conflicts(pkg = ,mask.ok = ,exclude = )
 
 #Conj
 Conj(x = ,z = )
+Conj(z = )
 
 #contributors
 contributors(pkg = ,file = )
@@ -867,6 +936,7 @@ dput(x = ,file = ,control = )
 dQuote(x = )
 #drop
 drop(x = )
+drop(x = )
 #droplevels
 droplevels(x = )
 #droplevels.data.frame
@@ -875,6 +945,7 @@ droplevels.data.frame(x = )
 droplevels.factor(x = )
 #dump
 dump(object = ,file = ,...)
+dump(list = ,file = ,append = ,control = ,envir = ,evaluate = )
 #duplicated
 duplicated(x = ,fromLast = )
 #duplicated.array
@@ -981,9 +1052,11 @@ file.mode(file = )
 file.mtime(file = )
 #file.path
 file.path(...)
+file.path(fsep = )
 
 #file.remove
 file.remove(...)
+file.remove()
 #file.rename
 file.rename(from = ,to = )
 #file.show
@@ -1023,6 +1096,7 @@ forceAndCall(call = ,env = )
 formals(fun = )
 #formals<-
 `formals<-`(fun = ,value = )
+`formals<-`()
 #format
 format(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 #format.AsIs
@@ -1203,6 +1277,7 @@ identical(x = ,y = )
 identity(x = )
 #if
 if(test = ,yes = ,no = )
+  if()
 #ifelse
 ifelse(test = ,yes = ,no = )
 #Im
@@ -1229,10 +1304,13 @@ intToUtf8(x = )
 inverse.rle(x = )
 #invisible
 invisible(x = )
+invisible(x = )
 #invokeRestart
 invokeRestart(restart = ,...)
+invokeRestart(r = )
 #invokeRestartInteractively
 invokeRestartInteractively(restart = ,...)
+invokeRestartInteractively(r = )
 #is.array
 is.array(x = )
 #is.atomic
@@ -1461,6 +1539,7 @@ licence()
 license()
 #list
 list(...)
+list()
 #list.dirs
 list.dirs(path = ,full.names = ,recursive = ,ignore.case = )
 #list.files
@@ -1479,6 +1558,7 @@ loadingNamespaceInfo(pkg = )
 loadNamespace(pkg = ,lib.loc = )
 #local
 local({...})
+local(expr = ,envir = )
 #lockBinding
 lockBinding(sym = ,env = )
 #lockEnvironment
@@ -1537,10 +1617,12 @@ Math.POSIXt(x = )
 matrix(data = ,nrow = ,ncol = ,byrow = ,dimnames = )
 #max
 max(...)
+max(na.rm = )
 #max.col
 max.col(x = ,ties.method = )
 #mean
 mean(x = ,...)
+mean(x = )
 #mean.Date
 mean.Date(x = ,na.rm = )
 #mean.default
@@ -1563,16 +1645,21 @@ memDecompress(from = ,type = )
 memory.profile()
 #merge
 merge(x = ,y = ,...)
+merge(x = ,y = )
 #merge.data.frame
 merge.data.frame(x = ,y = ,...)
+merge.data.frame(x = ,y = ,by = ,by.x = ,by.y = ,all = ,all.x = ,all.y = ,sort = ,suffixes = ,no.dups = ,incomparables = )
 #merge.default
 merge.default(x = ,y = ,...)
+merge.default(x = ,y = )
 #message
 message(...)
+message(domain = ,appendLF = )
 #mget
 mget(x = ,envir = ,inherits = ,mode = )
 #min
 min(...)
+min(na.rm = )
 #missing
 missing(x = )
 #Mod
@@ -1581,11 +1668,14 @@ Mod(x = ,y = )
 mode(x = )
 #mode<-
 `mode<-`(x = ,value = )
+`mode<-`()
 #month.abb
 month.abb
+
 #month.name
 month.name
 #months
+months(x = ,abbreviate = )
 months(x = ,abbreviate = )
 #months.Date
 months.Date(x = ,abbreviate = )
@@ -1593,6 +1683,7 @@ months.Date(x = ,abbreviate = )
 months.POSIXt(x = ,abbreviate = )
 #mostattributes<-
 `mostattributes<-`(x = ,value = )
+`mostattributes<-`()
 #names
 names(x = )     
 #names.POSIXlt
@@ -1623,18 +1714,22 @@ NCOL(x = )
 Negate(f = )
 #new.env
 new.env(hash = ,parent = ,size = )
+new.env(hash = ,parent = ,size = )
 #next
 next(n = )  
 #NextMethod
 NextMethod(...)
+NextMethod(generic = ,object = )
 #ngettext
 ngettext(msgid = ,msgid_plural = ,n = )
+ngettext(n = ,msg1 = ,msg2 = ,domain = )
 #nlevels
 nlevels(x = )
 #noquote
 noquote(x = )
 #norm
 norm(x = ,type = ,...)
+norm(x = ,type = )
 #normalizePath
 normalizePath(path = ,winslash = ,mustWork = )
 #nrow
@@ -1681,20 +1776,27 @@ Ops.Date(e1 = ,e2 = )
 Ops.difftime(e1 = ,e2 = )
 #Ops.factor
 Ops.factor(e1 = ,e2 = )
+Ops.factor(e1 = ,e2 = )
 #Ops.numeric_version
+Ops.numeric_version(e1 = ,e2 = )
 Ops.numeric_version(e1 = ,e2 = )
 #Ops.ordered
 Ops.ordered(e1 = ,e2 = )
+Ops.ordered(e1 = ,e2 = )
 #Ops.POSIXt
+Ops.POSIXt(e1 = ,e2 = )
 Ops.POSIXt(e1 = ,e2 = )
 #options
 options(...)
+options(add.smooth = ,askpass = ,asksecret = ,bitmapType = ,browser = ,browserNLdisabled = ,buildtools.check = ,buildtools.with = ,CBoundsCheck = ,check.bounds = ,citation.bibtex.max = ,connectionObserver = ,continue = ,contrasts = ,defaultPackages = ,demo.ask = ,deparse.cutoff = ,deparse.max.lines = ,device = ,device.ask.default = ,digits = ,download.file.method = ,dvipscmd = ,echo = ,editor = ,encoding = ,example.ask = ,expressions = ,ggvis.renderer = ,help_type = ,help.search.types = ,help.try.all.packages = ,)
 #order
 order(...)
+order(na.last = ,decreasing = ,method = )
 #ordered
 ordered(x = ,levels = ,labels = ,exclude = )
 #outer
 outer(X = ,Y = ,FUN = ,...)
+outer(X = ,Y = ,FUN = )
 #package_version
 package_version(x = )
 #packageEvent
@@ -1705,10 +1807,12 @@ packageHasNamespace(pkg = ,lib.loc = )
 packageNotFoundError(pkg = ,lib.loc = )
 #packageStartupMessage
 packageStartupMessage(...)
+packageStartupMessage(domain = ,appendLF = )
 #packBits
 packBits(x = )
 #pairlist
 pairlist(...)
+pairlist()
 #parent.env
 parent.env(envir = )
 #parent.env<-
@@ -1719,33 +1823,45 @@ parent.frame(n = )
 parse(text = ,srcfile = ,keep.source = )
 #parseNamespaceFile
 parseNamespaceFile(file = ,env = )
+parseNamespaceFile(package = ,package.lib = ,mustExist = )
 #paste
 paste(...,sep = ,collapse = ,sep = ,collapse = )
+paste(sep = ,collapse = ,recycle0 = )
 #paste0
 paste0(...,sep = ,collapse = ,sep = ,collapse = )
+paste0(collapse = ,recycle0 = )
 #path.expand
+path.expand(path = )
 path.expand(path = )
 #path.package
 path.package(package = ,quiet = ,verbose = ,lib.loc = )
+path.package(package = ,quiet = )
 #pcre_config
+pcre_config()
 pcre_config()
 
 #pi
 pi
+
 #pipe
 pipe(command = ,open = ,encoding = ,text = )
 #plot
 plot(x = ,y = ,...)
+plot(x = ,y = )
 #pmatch
 pmatch(x = ,table = ,nomatch = )
 #pmax
 pmax(...)
+pmax(na.rm = )
 #pmax.int
 pmax.int(...)
+pmax.int(na.rm = )
 #pmin
 pmin(...)
+pmin(na.rm = )
 #pmin.int
 pmin.int(...)
+pmin.int(na.rm = )
 #polyroot
 polyroot(x = )
 #pos.to.env
@@ -1754,107 +1870,154 @@ pos.to.env(pos = ,envir = )
 Position(f = ,x = )
 #pretty
 pretty(x = ,n = ,min.n = ,max.n = ,...)
+pretty(x = )
 #pretty.default
 pretty.default(x = ,n = ,min.n = ,max.n = ,...)
+pretty.default(x = ,n = ,min.n = ,shrink.sml = ,high.u.bias = ,u5.bias = ,eps.correct = ,f.min = )
 #prettyNum
 prettyNum(x = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,scientific = ,drop0trailing = )
 #print
 print(x = ,...)
+print(x = )
 #print.AsIs
 print.AsIs(x = ,...)
+print.AsIs(x = )
 #print.by
 print.by(x = ,...)
+print.by(x = ,vsep = )
 #print.condition
 print.condition(x = ,...)
+print.condition(x = )
 #print.connection
 print.connection(x = ,...)
+print.connection(x = )
 #print.data.frame
 print.data.frame(x = ,...)
+print.data.frame(x = ,digits = ,quote = ,right = ,row.names = ,max = )
 #print.Date
 print.Date(x = ,...)
+print.Date(x = ,max = )
 #print.default
 print.default(x = ,...)
+print.default(x = ,digits = ,quote = ,na.print = ,print.gap = ,right = ,max = ,width = ,useSource = )
 #print.difftime
 print.difftime(x = ,...)
+print.difftime(x = ,digits = )
 #print.Dlist
 print.Dlist(x = ,...)
+print.Dlist(x = )
 #print.DLLInfo
 print.DLLInfo(x = ,...)
+print.DLLInfo(x = )
 #print.DLLInfoList
 print.DLLInfoList(x = ,...)
+print.DLLInfoList(x = )
 #print.DLLRegisteredRoutines
 print.DLLRegisteredRoutines(x = ,...)
+print.DLLRegisteredRoutines(x = )
 #print.eigen
 print.eigen(x = ,...)
+print.eigen(x = )
 #print.factor
 print.factor(x = ,...)
+print.factor(x = ,quote = ,max.levels = ,width = ,)
 #print.function
 print.function(x = ,...)
+print.function(x = ,useSource = )
 #print.hexmode
 print.hexmode(x = ,...)
+print.hexmode(x = )
 #print.libraryIQR
 print.libraryIQR(x = ,...)
+print.libraryIQR(x = )
 #print.listof
 print.listof(x = ,...)    
 #print.NativeRoutineList
 print.NativeRoutineList(x = ,...)
+print.NativeRoutineList(x = )
 #print.noquote
 print.noquote(x = ,...)
+print.noquote(x = ,quote = ,right = )
 #print.numeric_version
 print.numeric_version(x = ,...)
+print.numeric_version(x = ,quote = )
 
 #print.octmode
 print.octmode(x = ,...) 
+print.octmode(x = )
 #print.packageInfo
 print.packageInfo(x = ,...)
+print.packageInfo(x = )
 #print.POSIXct
 print.POSIXct(x = ,...)
+print.POSIXct(x = ,tz = ,usetz = ,max = )
 #print.POSIXlt
 print.POSIXlt(x = ,...)
+print.POSIXlt(x = ,tz = ,usetz = ,max = )
 #print.proc_time
 print.proc_time(x = ,...)
+print.proc_time(x = )
 #print.restart
 print.restart(x = ,...)
+print.restart(x = )
 #print.rle
 print.rle(x = ,...)
+print.rle(x = ,digits = ,prefix = )
 #print.simple.list
 print.simple.list(x = ,...)
+print.simple.list(x = )
 #print.srcfile
 print.srcfile(x = ,...)
+print.srcfile(x = )
 #print.srcref
 print.srcref(x = ,...)
+print.srcfile(x = )
 #print.summary.table
 print.summary.table(x = ,...)
+print.summary.table(x = ,digits = )
 #print.summary.warnings
 print.summary.warnings(x = ,...)
+print.summary.warnings(x = )
 #print.summaryDefault
 print.summaryDefault(x = ,...)
+print.summaryDefault(x = ,digits = )
 #print.table
 print.table(x = ,...)
+print.table(x = ,digits = ,quote = ,na.print = ,zero.print = ,right = ,justify = )
 #print.warnings
 print.warnings(x = ,...)
+print.warnings(x = ,tags = ,header = )
 #prmatrix
 prmatrix(x = ,quote = ,right = ,max = ,...)
+prmatrix(x = ,rowlab = ,collab = ,quote = ,right = ,na.print = )
 #proc.time
 proc.time()
 #prod
 prod(...)   
+prod(na.rm = )
 #prop.table
 prop.table(x = ,margin = ,...)
+prop.table(x = ,margin = )
 #proportions
 proportions(x = ,margin = ,...)
+proportions(x = ,margin = )
 #provideDimnames
 provideDimnames(x = ,value = )
+provideDimnames(x = ,sep = ,base = ,unique = )
 #psigamma
+psigamma(x = ,deriv = )
 psigamma(x = ,deriv = )
 #pushBack
 pushBack(x = ,value = )
+pushBack(data = ,connection = ,newLine = ,encoding = )
 #pushBackLength
 pushBackLength(x = ,value = )
 #q
 q(...)
+q(save = ,status = ,runLast = )
 #qr
 qr(x = ,...)
+qr(x = )
 #qr.coef
 qr.coef(qr = ,y = )
 #qr.default
@@ -1883,24 +2046,34 @@ quarters.Date(x = ,abbreviate = )
 quarters.POSIXt(x = ,abbreviate = )
 #quit
 quit(save = ,status = ,runLast = )
+quit(save = ,status = ,runLast = )
 #quote
 quote(...)
+quote(expr = )
 #R_system_version
 R_system_version()
+R_system_version(x = ,strict = )
 #R.home
+R.home(component = )
 R.home(component = )
 #R.version
 R.version()
+R.version
 #R.Version
+R.Version()
 R.Version()
 #R.version.string
 R.version.string()
+R.version.string
 #range
 range(...)
+range(na.rm = )
 #range.default
 range.default(...)
+range.default(na.rm = ,finite = )
 #rank
 rank(x = ,ties.method = ,...)
+rank(x = ,na.last = ,ties.method = )
 #rapply
 rapply(object = ,f = ,...,how = ,classes = ,deflt = )
 #raw
@@ -1913,12 +2086,15 @@ rawConnectionValue(con = )
 rawShift(con = ,n = )
 #rawToBits
 rawToBits(x = )
+rawToBits(x = )
 #rawToChar
 rawToChar(x = ,multiple = )
 #rbind
 rbind(...)
+rbind(deparse.level = )
 #rbind.data.frame
 rbind.data.frame(...)
+rbind.data.frame(deparse.level = ,make.row.names = ,stringsAsFactors = ,factor.exclude =)
 #rcond
 rcond(x = ,norm = )
 #Re
@@ -1931,6 +2107,7 @@ readBin(con = ,what = ,n = ,size = ,signed = ,endian = )
 readChar(con = ,nchars = ,useBytes = ,encoding = )
 #readline
 readline(prompt = ,default = ,...)
+readline(prompt = )
 #readLines
   readLines(con = ,n = ,ok = ,warn = ,encoding = ,skipNul = )
 #readRDS
@@ -1939,6 +2116,7 @@ readRDS(file = )
 readRenviron(file = )
 #Recall
 Recall(...)
+Recall()
 #Reduce
 Reduce(f = ,x = ,init = ,right = ,accumulate = )
 #reg.finalizer
@@ -1955,12 +2133,14 @@ registerS3methods(generic = ,classes = ,methods = )
 regmatches(x = ,m = ,invert = )
 #regmatches<-
 `regmatches<-`(x = ,m = ,value = )
+`regmatches<-`()
 #remove
 remove(...)
+remove(list = ,pos = ,envir = ,inherits = )
 #removeTask
-
 #rep
 rep(x = ,...)
+rep(x = )
 #rep_len
 rep_len(x = ,length.out = )
 #rep.Date
@@ -1969,12 +2149,16 @@ rep.Date(x = ,times = )
 rep.difftime(x = ,times = )
 #rep.factor
 rep.factor(x = ,times = )
+rep.factor(x = )
 #rep.int
+rep.int(x = ,times = )
 rep.int(x = ,times = )
 #rep.numeric_version
 rep.numeric_version(x = ,times = )
+rep.numeric_version(x = )
 #rep.POSIXct
 rep.POSIXct(x = ,times = )
+rep.POSIXct(x = )
 #rep.POSIXlt
 rep.POSIXlt(x = ,times = )
 #repeat
@@ -2005,6 +2189,7 @@ rev.default(x = )
 rle(x = )
 #rm
 rm(...)
+rm(list = ,pos = ,envir = ,inherits = )
 #RNGkind
 RNGkind(kind = ,normal.kind = )
 #RNGversion
@@ -2025,22 +2210,31 @@ row.names.data.frame(x = )
 row.names.default(x = )
 #row.names<-
 `row.names<-`(x = ,value = )
+`rownames<-`()
 #row.names<-.data.frame
 `row.names<-.data.frame`(x = ,value = )
+`row.names<-.data.frame`()
 #row.names<-.default
 `row.names<-.default`(x = ,value = )
+`row.names<-.default`()
 #rowMeans
 rowMeans(x = ,na.rm = )
+rowMeans(x = ,na.rm = ,dims = )
 #rownames
 rownames(x = )
+rownames(x = ,do.NULL = ,prefix = )
 #rownames<-
 `rownames<-`(x = ,value = )
+`rownames<-`()
 #rowsum
 rowsum(x = ,group = ,reorder = ,...)
+rowsum(x = ,group = ,reorder = )
 #rowsum.data.frame
 rowsum.data.frame(x = ,group = ,reorder = ,...)
+rowsum.data.frame(x = ,group = ,reorder = ,na.rm = )
 #rowsum.default
 rowsum.default(x = ,group = ,reorder = ,...)
+rowsum.default(x = ,group = ,reorder = ,na.rm = )
 #rowSums
 rowSums(x = ,na.rm = )
 #sample
@@ -2071,6 +2265,7 @@ seek(con = ,where = ,origin = )
 seek.connection(con = ,where = ,origin = )
 #seq
 seq(...)
+seq()
 #seq_aloeng
 seq_along(along.with = )
 #seq_len
@@ -2109,6 +2304,7 @@ setTimeLimit(elapsed = )
 setwd(dir = )
 #showConnections
 showConnections(all = ,...)
+showConnections(all = )
 #shQuote
 shQuote(x = )
 #sign
@@ -2135,6 +2331,7 @@ single(length = )
 sinh(x = )
 #sink
 sink(file = ,append = ,type = ,split = ,...)
+sink(file = ,append = ,type = ,split = )
 #sink.number
 sink.number()
 #sinpi
@@ -2151,8 +2348,10 @@ socketSelect(con = ,timeout = ,blocking = ,encoding = ,text = )
 socketTimeout(con = ,timeout = ,blocking = ,encoding = ,text = )
 #solve
 solve(a = ,b = ,tol = ,LINPACK = ,...)
+solve(a = ,b = )
 #solve.default
 solve.default(a = ,b = ,tol = ,LINPACK = ,...)
+solve.default(a = ,b = ,tol = ,LINPACK = )
 #solve.qr
 solve.qr(qr = ,b = ,tol = )
 #sort
@@ -2167,24 +2366,34 @@ sort.list(x = ,decreasing = )
 sort.POSIXlt(x = ,decreasing = )
 #source
   source(file = ,local = ,echo = ,print.eval = ,exprs = ,spaced = ,verbose = ,prompt.echo = ,max.deparse.length = ,width.cutoff = ,deparseCtrl = ,chdir = ,encoding = ,continue.echo = ,skip.echo = ,keep.source = )
+source(file = ,local = ,echo = ,print.eval = ,exprs = ,spaced = ,verbose = ,prompt.echo = ,max.deparse.length = ,width.cutoff = ,deparseCtrl = ,chdir = ,encoding = ,continue.echo = ,skip.echo = ,keep.source = )
 #split
 split(x = ,f = ,drop = ,...)
+split(x = ,f = ,drop = )
 #split.data.frame
 split.data.frame(x = ,f = ,drop = ,...)
+split.data.frame(x = ,f = ,drop = )
 #split.Date
 split.Date(x = ,f = ,drop = ,...)
+split.Date(x = ,f = ,drop = )
 #split.default
 split.default(x = ,f = ,drop = ,...)
+split.default(x = ,f = ,drop = ,sep = ,lex.order = )
 #split.POSIXct
 split.POSIXct(x = ,f = ,drop = ,...)
+split.POSIXct(x = ,f = ,drop = )
 #split<-
 `split<-`(x = ,f = ,drop = ,...)
+`split<-`()
 #split<-.data.frame
 `split<-.data.frame`(x = ,f = ,drop = ,...)
+`split<-.data.frame`()
 #split<-.default
 `split<-.default`(x = ,f = ,drop = ,...)
+`split<-.default`()
 #sprintf
 sprintf(fmt = ,...)
+sprintf(fmt = )
 #sqrt
 sqrt(x = )
 #sQuote
@@ -2203,14 +2412,19 @@ standardGeneric(f = ,def = ,group = ,valueClass = ,signature = ,package = ,useAs
 startsWith(x = ,prefix = ,ignore.case = )
 #stderr
 stderr()
+stderr()
 #stdin
+stdin()
 stdin()
 #stdout
 stdout()
+stdout()
 #stop
 stop(...)
+stop(call. = ,domain = )
 #stopifnot
 stopifnot(...)
+stopifnot(exprs = ,exprObject = ,local = )
 #storage.mode
 storage.mode(x = )
 #storage.mode<-
@@ -2233,6 +2447,7 @@ strtoi(x = ,base = ,strict = )
 strtrim(str = ,width = )
 #structure
 structure(.Data = ,class = ,...)
+structure(.Data = )
 #strwrap
 strwrap(str = ,width = ,indent = ,exdent = ,prefix = ,initial = ,strict = )
 #sub
@@ -2251,78 +2466,112 @@ substitute(expr = ,env = )
 substr(x = ,start = ,stop = )
 #substr<-
 `substr<-`(x = ,start = ,stop = ,value = )
+`substr<-`()
 #substring
+substring(text = ,first = ,last = )
 substring(text = ,first = ,last = )
 #substring<-
 `substring<-`(text = ,first = ,last = ,value = )
+`substring<-`()
 #sum
 sum(...)
+sum(na.rm = )
 #summary
 summary(object = ,...)
+summary(object = )
 #summary.connection
 summary.connection(con = ,...)
+summary.connection(object = )
 #summary.data.frame
 summary.data.frame(object = ,...)
+summary.data.frame(object = ,maxsum = ,digits = )
 #Summary.data.frame
 Summary.data.frame(object = ,...)
+Summary.data.frame(na.rm = )
 #summary.Date
 summary.Date(object = ,...)
+summary.Date(object = ,digits = )
 #Summary.Date
 Summary.Date(object = ,...)
+Summary.Date(na.rm = )
 #summary.default
 summary.default(object = ,...)
+summary.default(object = ,digits = ,quantile.type = )
 #Summary.difftime
 Summary.difftime(object = ,...)
+Summary.difftime(na.rm = )
 #summary.factor
 summary.factor(object = ,...)
+summary.factor(object = ,maxsum = )
 #Summary.factor
 Summary.factor(object = ,...)
+Summary.factor(na.rm = )
 #summary.matrix
 summary.matrix(object = ,...)
+summary.matrix(object = )
 #Summary.numeric_version
 Summary.numeric_version(object = ,...)
+Summary.numeric_version(na.rm = )
 #Summary.ordered
 Summary.ordered(object = ,...)
+Summary.ordered(na.rm = )
 #summary.POSIXct
 summary.POSIXct(object = ,...)
+Summary.POSIXct(na.rm = )
 #Summary.POSIXct
 Summary.POSIXct(object = ,...)
+Summary.POSIXct(na.rm = )
 #summary.POSIXlt
 summary.POSIXlt(object = ,...)
+summary.POSIXlt(object = ,digits = )
 #Summary.POSIXlt
 Summary.POSIXlt(object = ,...)
+Summary.POSIXlt(na.rm = )
 #summary.proc_time
 summary.proc_time(object = ,...)
+summary.proc_time(object = )
 
 #summary.srcfile
 summary.srcfile(object = ,...)
+summary.srcfile(object = )
 
 #summary.srcref
 summary.srcref(object = ,...)
+summary.srcref(object = ,useSource = )
 #summary.table
 summary.table(object = ,...)
+summary.table(object = )
 
 #summary.warnings
 summary.warnings(object = ,...)
+summary.warnings(object = )
 
 #suppressMessages
 suppressMessages(expr = )
 #suppressPackageStartupMessages
 suppressPackageStartupMessages(expr = )
+suppressPackageStartupMessages(expr = )
 #suppressWarnings
 suppressWarnings(expr = )
+suppressWarnings(expr = ,classes = )
 #suspendInterrupts
 suspendInterrupts()
+suspendInterrupts(expr = )
 #svd
 svd(x = ,nu = ,nv = ,LINPACK = ,...)
+svd(x = ,nu = ,nv = ,LINPACK = )
 #sweep
 sweep(x = ,MARGIN = ,STATS = ,FUN = ,...)
+sweep(x = ,MARGIN = ,STATS = ,FUN = ,check.margin = )
 
 #switch
 switch(expr = ,...)
+switch(EXPR = )
 #sys.call
 sys.call(which = )
+sys.call(which = )
 #sys.calls
+sys.calls()
 sys.calls()
 
 #Sys.chmod
@@ -2364,6 +2613,7 @@ Sys.readlink(path = )
 sys.save.image(file = )
 #Sys.setenv
 Sys.setenv(...)
+Sys.setenv()
 #Sys.setFileTime
 Sys.setFileTime(path = ,times = )
 #Sys.setlocale
@@ -2372,6 +2622,7 @@ Sys.setlocale(category = ,locale = )
 Sys.sleep(secs = )
 #sys.source
 sys.source(file = ,envir = ,...)
+sys.source(file = ,envir = ,chdir = ,keep.source = ,keep.parse.data = ,toplevel.env = )
 #sys.status
 sys.status()
 #Sys.time
@@ -2387,12 +2638,15 @@ Sys.unsetenv(x = )
 Sys.which(names = ,all = ,path = )
 #system
 system(command = ,intern = ,ignore.stderr = ,ignore.stdout = ,wait = ,input = ,show.output.on.console = ,minimized = ,invisible = ,...)
+system(command = ,intern = ,ignore.stdout = ,ignore.stderr = ,wait = ,input = ,show.output.on.console = ,minimized = ,invisible = ,timeout = )
 #system.file
 system.file(package = ,...)
+system.file(package = ,lib.loc = ,mustWork = )
 #system.time
 system.time(expr = )
 #system2
 system2(command = ,args = ,stdout = ,stderr = ,stdin = ,input = ,env = ,wait = ,show.output.on.console = ,minimized = ,invisible = ,...)
+system2(command = ,args = ,stdout = ,stderr = ,stdin = ,input = ,env = ,wait = ,minimized = ,invisible = ,timeout = )
 #t
 t(x = )
 #T
@@ -2403,9 +2657,11 @@ t.data.frame(x = )
 t.default(x = )
 #table
 table(...)
+table(exclude = ,useNA = ,dnn = ,deparse.level = )
 #tabulate
 tabulate(x = ,nbins = )
 #tan
+tan(x = )
 tan(x = )
 #tanh
 tanh(x = )
@@ -2446,10 +2702,13 @@ tracingState(on = )
 
 #transform
 transform(x = ,...)
+transform(`_data` = )
 #transform.data.frame
 transform.data.frame(x = ,...)
+transform.data.frame(`_data` = )
 #transform.default
 transform.default(x = ,...)
+transform.default(`_data` = )
 
 #trigamma
 trigamma(x = )
@@ -2471,6 +2730,7 @@ try(expr = ,silent = )
 tryCatch(expr = ,...,finally = ,silent = )
 #tryInvokeRestart
 tryInvokeRestart(what = ,...)
+tryInvokeRestart(r = )
 #typeof
 typeof(x = )
 #unclass
@@ -2481,20 +2741,28 @@ undebug(f = )
 union(x = ,y = )
 #unique
 unique(x = ,...)
+unique(x = ,incomparables = )
 #unique.array
 unique.array(x = ,...)
+unique.array(x = ,incomparables = ,MARGIN = ,fromLast = )
 #unique.data.frame
 unique.data.frame(x = ,...)
+unique.data.frame(x = ,incomparables = ,fromLast = )
 #unique.default
 unique.default(x = ,...)
+unique.default(x = ,incomparables = ,fromLast = ,nmax = )
 #unique.matrix
 unique.matrix(x = ,...)
+unique.matrix(x = ,incomparables = ,MARGIN = ,fromLast = )
 #unique.numeric_version
 unique.numeric_version(x = ,...)
+unique.numeric_version(x = ,incomparables = )
 #unique.POSIXlt
 unique.POSIXlt(x = ,...)
+unique.POSIXlt(x = ,incomparables = )
 #unique.warnings
 unique.warnings(x = ,...)
+unique.warnings(x = ,incomparables = )
 #units
 units(x = )
 #units.difftime
@@ -2547,10 +2815,12 @@ Vectorize(f = ,SIMPLIFY = ,USE.NAMES = )
 version()
 #warning
 warning(...)
+warning(call. = ,immediate. = ,noBreaks. = ,domain = )
 #warningCondition
 warningCondition(message = ,call = )
 #warnings
 warnings(...)
+warnings()
 #weekdays
 weekdays(x = ,abbreviate = )
 #weekdays.Date
@@ -2563,40 +2833,58 @@ which(x = ,arr.ind = ,useNames = )
 which.max(x = )
 #which.min
 which.min(x = )
+which.min(x = )
 #while
 while(test = ,expr = )
-#with
+while()
+  #with
 with(data = ,expr = ,...)
+with(data = ,expr = )
 #with.default
 with.default(data = ,expr = ,...)
+with.default(data = ,expr = )
+
 #withAutoprint
 withAutoprint(expr = )
+
 #withCallingHandlers
 withCallingHandlers(expr = ,...)
+withCallingHandlers(expr = )
 #within
 within(data = ,expr = ,...)
+within(data = ,expr = )
 #within.data.frame
 within.data.frame(data = ,expr = ,...)
+within.data.frame(data = ,expr = )
+
 #within.list
 within.list(data = ,expr = ,...)
+within.list(data = ,expr = ,keepAttrs = )
 #withRestarts
 withRestarts(expr = ,...)
+withRestarts(expr = )
 #withVisible
 withVisible(expr = )
 #write
 write(x = ,file = ,nmax = ,append = ,sep = ,na = ,...)
+write(x = ,file = ,ncolumns = ,append = ,sep = )
 #write.dcf
 write.dcf(x = ,file = ,...)
+write.dcf(x = ,file = ,append = ,useBytes = ,indent = ,width = ,keep.white = )
 #writeBin
 writeBin(object = ,con = ,size = ,...)
+writeBin(object = ,con = ,size = ,endian = ,useBytes = )
 #writeChar
 writeChar(object = ,con = ,eos = ,useBytes = )
+writeChar(object = ,con = ,nchars = ,eos = ,useBytes = )
 #writeLines
+writeLines(text = ,con = ,sep = ,useBytes = )
 writeLines(text = ,con = ,sep = ,useBytes = )
 #xor
 xor(x = ,y = )
 #xpdrows.data.frame
 xpdrows.data.frame(x = ,...)
+xpdrows.data.frame(x = ,old.rows = ,new.rows = )
 #xtfrm
 xtfrm(x = )
 #xtfrm.AsIs
@@ -2621,100 +2909,145 @@ xtfrm.POSIXlt(x = )
 xzfile(description = ,open = ,encoding = ,text = )
 #zapsmall
 zapsmall(x = ,digits = )
+zapsmall(x = ,digits = )
 #abline
+abline(a = ,b = ,h = ,v = ,reg = ,coef = ,untf = )
 abline(a = ,b = ,h = ,v = ,reg = ,coef = ,untf = )
 #arrows
 arrows(x0 = ,y0 = ,x1 = ,y1 = ,angle = ,code = ,length = ,...)
+arrows(x0 = ,y0 = ,x1 = ,y1 = ,length = ,angle = ,code = ,col = ,lty = ,lwd = )
 #assocplot
 assocplot(x = ,...)
+assocplot(x = ,col = ,space = ,main = ,xlab = ,ylab = )
 #axis
 axis(side = ,at = ,labels = ,tick = ,line = ,pos = ,outer = ,font = ,lty = ,lwd = ,lwd.ticks = ,col = ,col.ticks = ,hadj = ,padj = ,...)
+axis(side = ,at = ,labels = ,tick = ,line = ,pos = ,outer = ,font = ,lty = ,lwd = ,lwd.ticks = ,col = ,col.ticks = ,hadj = ,padj = ,gap.axis = )
 #Axis
 Axis(side = ,at = ,labels = ,tick = ,line = ,pos = ,outer = ,font = ,lty = ,lwd = ,lwd.ticks = ,col = ,col.ticks = ,hadj = ,padj = ,...)
+Axis(x = ,at = ,side = ,labels = )
 #axis.Date
 axis.Date(side = ,at = ,labels = ,tick = ,line = ,pos = ,outer = ,font = ,lty = ,lwd = ,lwd.ticks = ,col = ,col.ticks = ,format = ,digits = ,cex.axis = ,tcl = ,mgp = ,las = ,...)
+axis.Date(side = ,x = ,at = ,format = ,labels = )
 #axis.POSIXct
 axis.POSIXct(side = ,at = ,labels = ,tick = ,line = ,pos = ,outer = ,font = ,lty = ,lwd = ,lwd.ticks = ,col = ,col.ticks = ,format = ,digits = ,cex.axis = ,tcl = ,mgp = ,las = ,...)
+axis.POSIXct(side = ,x = ,at = ,format = ,labels = )
 #axTicks
 axTicks(side = ,...)
+axTicks(side = ,axp = ,usr = ,log = ,nintLog = )
 #barplot
 barplot(...)
+barplot(height = )
 #barplot.default
 barplot.default(...)
+barplot.default(height = ,width = ,space = ,names.arg = ,legend.text = ,beside = ,horiz = ,density = ,angle = ,col = ,border = ,main = ,sub = ,xlab = ,ylab = ,xlim = ,ylim = ,xpd = ,log = ,axes = ,axisnames = ,cex.axis = ,cex.names = ,inside = ,plot = ,axis.lty = ,offset = ,add = ,ann = ,args.legend = )
 #box
 boxplot(x = ,...)
+boxplot(x = )
 #boxplot
 boxplot(...)
+boxplot(x = )
 #boxplot.default
 boxplot.default(...)
+boxplot.default(x = ,range = ,width = ,varwidth = ,notch = ,outline = ,names = ,plot = ,border = ,col = ,log = ,pars = ,ann = ,horizontal = ,add = ,at = )
 #boxplot.matrix
 boxplot.matrix(x = ,...)
+boxplot.matrix(x = ,use.cols = )
 #bxp
 bxp(list = ,horizontal = ,...)
+bxp(z = ,notch = ,width = ,varwidth = ,outline = ,notch.frac = ,log = ,border = ,pars = ,frame.plot = ,horizontal = ,ann = ,add = ,at = ,show.names = )
 #cdplot
 cdplot(x = ,...)
+cdplot(x = )
 #clip
 clip(x = ,y = )
+clip(x1 = ,x2 = ,y1 = ,y2 = )
 #close.screen
 close.screen(which = )
 #co.intervals
 co.intervals(x = ,...)
+co.intervals(x = ,number = ,overlap = )
 #contour
 contour(x = ,y = ,z = ,nlevels = ,levels = ,labels = ,xlim = ,ylim = ,zlim = ,zlab = ,main = ,sub = ,xlab = ,ylab = ,asp = ,axes = ,frame.plot = ,...)
+contour(x = )
 #contour.default
 contour.default(x = ,y = ,z = ,nlevels = ,levels = ,labels = ,xlim = ,ylim = ,zlim = ,zlab = ,main = ,sub = ,xlab = ,ylab = ,asp = ,axes = ,frame.plot = ,...)
+contour.default(x = ,y = ,z = ,nlevels = ,levels = ,labels = ,xlim = ,ylim = ,zlim = ,labcex = ,drawlabels = ,method = ,vfont = ,axes = ,frame.plot = ,col = ,lty = ,lwd = ,add = )
 #coplot
 coplot(formula = ,data = ,...)
+coplot(formula = ,data = ,given.values = ,panel = ,rows = ,columns = ,show.given = ,col = ,pch = ,bar.bg = ,xlab = ,ylab = ,subscripts = ,axlabels = ,number = ,overlap = ,xlim = ,ylim = )
 #curve
 curve(expr = ,from = ,to = ,n = ,add = ,type = ,xname = ,xaxs = ,yaxs = ,...)
+curve(expr = ,from = ,to = ,n = ,add = ,type = ,xname = ,xlab = ,ylab = ,log = ,xlim = )
 #dotchart
 dotchart(x = ,labels = ,groups = ,gcolor = ,color = ,cex = ,pch = ,pt.cex = ,bg = ,main = ,xlab = ,ylab = ,...)
+dotchart(x = ,labels = ,groups = ,gdata = ,offset = ,ann = ,xaxt = ,frame.plot = ,log = ,cex = ,pt.cex = ,pch = ,gpch = ,bg = ,color = ,gcolor = ,lcolor = ,xlim = ,main = ,xlab = ,ylab = )
 #erase.screen
 erase.screen(which = )
 #filled.contour
 filled.contour(x = ,y = ,z = ,levels = ,color.palette = ,color = ,plot.title = ,plot.axes = ,key.title = ,key.axes = ,asp = ,xaxs = ,yaxs = ,...)
+filled.contour(x = ,y = ,z = ,xlim = ,ylim = ,zlim = ,levels = ,nlevels = ,color.palette = ,col = ,plot.title = ,plot.axes = ,key.title = ,key.axes = ,asp = ,xaxs = ,yaxs = ,las = ,axes = ,frame.plot = )
 #fourfoldplot
 fourfoldplot(x = ,color = ,conf.level = ,margin = ,main = ,...)
+fourfoldplot(x = ,color = ,conf.level = ,std = ,margin = ,space = ,main = ,mfrow = ,mfcol = )
 #frame
 frame()
 #grconvertX
 grconvertX(x = ,from = ,to = )
 #grconvertY
 grconvertY(y = ,from = ,to = )
+grconvertY(y = ,from = ,to = )
 #grid
 grid(nx = ,ny = ,col = ,lty = ,lwd = ,equilogs = ,...)
+grid(nx = ,ny = ,col = ,lty = ,lwd = ,equilogs = )
 #hist
 hist(x = ,breaks = ,freq = ,probability = ,include.lowest = ,right = ,density = ,angle = ,col = ,border = ,main = ,xlim = ,ylim = ,xlab = ,ylab = ,axes = ,plot = ,labels = ,nclass = ,warn.unused = ,offset = ,...)
+hist(x = )
 #hist.default
 hist.default(x = ,breaks = ,freq = ,probability = ,include.lowest = ,right = ,density = ,angle = ,col = ,border = ,main = ,xlim = ,ylim = ,xlab = ,ylab = ,axes = ,plot = ,labels = ,nclass = ,warn.unused = ,offset = ,...)
+hist.default(x = ,breaks = ,freq = ,probability = ,include.lowest = ,right = ,fuzz = ,density = ,angle = ,col = ,border = ,main = ,xlim = ,ylim = ,xlab = ,ylab = ,axes = ,plot = ,labels = ,nclass = ,warn.unused = )
 #identify
 identify(x = ,n = ,plot = ,labels = ,offset = ,...)
+identify(x = )
 #image
 image(x = ,y = ,z = ,xlim = ,ylim = ,zlim = ,axes = ,xlab = ,ylab = ,breaks = ,col = ,col.axis = ,col.lab = ,...)
+image(x = )
 #image.default
 image.default(x = ,y = ,z = ,xlim = ,ylim = ,zlim = ,axes = ,xlab = ,ylab = ,breaks = ,col = ,col.axis = ,col.lab = ,...)
+image.default(x = ,y = ,z = ,zlim = ,xlim = ,ylim = ,col = ,add = ,xaxs = ,yaxs = ,xlab = ,ylab = ,breaks = ,oldstyle = ,useRaster = )
 #layout
 layout(...)
+layout(mat = ,widths = ,heights = ,respect = )
 #layout.show
 layout.show(n = ,...)
+layout.show(n = )
 #lcm
 lcm(x = )
+
 #legend
 legend(x = ,y = ,legend = ,fill = ,col = ,border = ,lty = ,lwd = ,pch = ,angle = ,density = ,bty = ,bg = ,box.lwd = ,box.lty = ,box.col = ,pt.bg = ,cex = ,pt.cex = ,pt.lwd = ,xjust = ,yjust = ,x.intersp = ,y.intersp = ,adj = ,text.width = ,text.col = ,text.font = ,merge = ,trace = ,plot = ,ncol = ,horiz = ,title = ,inset = ,xpd = ,title.col = ,title.adj = ,seg.len = ,...)
+legend(x = ,y = ,legend = ,fill = ,col = ,border = ,lty = ,lwd = ,pch = ,angle = ,density = ,bty = ,bg = ,box.lwd = ,box.lty = ,box.col = ,pt.bg = ,cex = ,pt.cex = ,pt.lwd = ,xjust = ,yjust = ,x.intersp = ,y.intersp = ,adj = ,text.width = ,text.col = ,text.font = ,merge = ,trace = ,plot = ,ncol = ,horiz = ,title = ,inset = ,xpd = ,title.col = ,title.adj = ,title.cex = ,title.font = ,seg.len = )
 #lines
 lines(x = ,y = ,type = ,...)
+lines(x = )
 #lines.default
 lines.default(x = ,y = ,type = ,...)
+lines.default(x = ,y = ,type = )
 #locator
 locator(n = ,type = ,...)
+locator(n = ,type = )
+
 #matlines
 matlines(x = ,y = ,type = ,...)
+matlines(x = ,y = ,type = ,lty = ,lwd = ,pch = ,col = )
 #matplot
 matplot(x = ,y = ,type = ,...)
+matplot(x = ,y = ,type = ,lty = ,lwd = ,lend = ,pch = ,col = ,cex = ,bg = ,xlab = ,ylab = ,xlim = ,ylim = ,log = ,add = ,verbose = )
 #matpoints
 matpoints(x = ,y = ,type = ,...)
+matpoints(x = ,y = ,type = ,lty = ,lwd = ,pch = ,col = )
 #mosaicplot
 mosaicplot(x = ,...)
+mosaicplot(x = )
 #mtext
 mtext(text = ,side = ,line = ,outer = ,at = ,adj = ,padj = ,cex = ,col = ,font = ,...)
 #pairs
@@ -2725,40 +3058,55 @@ pairs.default(x = ,labels = ,panel = ,lower.panel = ,upper.panel = ,diag.panel =
 panel.smooth(x = ,y = ,col = ,bg = ,pch = ,cex = ,col.smooth = ,span = ,iter = ,family = ,...)
 #par
 par(...)
+par(no.readonly = )
 #persp
 persp(x = ,y = ,z = ,theta = ,phi = ,expand = ,col = ,border = ,ticktype = ,nticks = ,...)
 #pie
 pie(x = ,labels = ,edges = ,radius = ,clockwise = ,init.angle = ,density = ,angle = ,col = ,border = ,lty = ,main = ,...)
 #plot
 plot(x = ,y = ,type = ,...)
+plot(x = ,y = )
 #plot.default
 plot.default(x = ,y = ,type = ,...)
+plot.default(x = ,y = ,type = ,xlim = ,ylim = ,log = ,main = ,sub = ,xlab = ,ylab = ,ann = ,axes = ,frame.plot = ,panel.first = ,panel.last = ,asp = ,xgap.axis = ,ygap.axis = )
 #plot.design
 plot.design(x = ,...)
+plot.design(x = ,y = ,fun = ,data = ,ylim = ,xlab = ,ylab = ,main = ,ask = ,xaxt = ,axes = ,xtick = )
 #plot.function
 plot.function(x = ,from = ,to = ,add = ,...)
+plot.function(x = ,y = ,to = ,from = ,xlim = ,ylab = )
 #plot.new
 plot.new()
 #plot.window
 plot.window(xlim = ,ylim = ,log = ,asp = ,...)
+plot.window(xlim = ,ylim = ,log = ,asp = )
 #plot.xy
 plot.xy(xy = ,type = ,...)
+plot.xy(xy = ,type = ,pch = ,lty = ,col = ,bg = ,cex = ,lwd = )
 #points
 points(x = ,y = ,...)
+points(x = )
 #points.default
 points.default(x = ,y = ,...)
+points.default(x = ,y = ,type = )
 #polygon
 polygon(x = ,y = ,...)
+polygon(x = ,y = ,density = ,angle = ,border = ,col = ,lty = ,fillOddEven = )
 #polypath
 polypath(x = ,y = ,...)
+polypath(x = ,y = ,border = ,col = ,lty = ,rule = )
 #rasterImage
 rasterImage(x = ,y = ,image = ,col = ,...)
+rasterImage(image = ,xleft = ,ybottom = ,xright = ,ytop = ,angle = ,interpolate = )
 #rect
 rect(xleft = ,ybottom = ,xright = ,ytop = ,...)
+rect(xleft = ,ybottom = ,xright = ,ytop = ,density = ,angle = ,col = ,border = ,lty = ,lwd = )
 #rug
 rug(x = ,side = ,ticksize = ,line.col = ,...)
+rug(x = ,ticksize = ,side = ,lwd = ,col = ,quiet = )
 #screen
 screen(...)
+screen(n = ,new = )
 #segments
 segments(x0 = ,y0 = ,x1 = ,y1 = ,...)
 #smoothScatter
@@ -3302,6 +3650,7 @@ interp.values(x = ,...)
   m2d(x = ,...)
 #m2t
   m2t(x = ,...) 
+
 #make.congeneric
   make.congeneric(x = ,...)
 #make.hierarchical
@@ -3665,20 +4014,25 @@ interp.values(x = ,...)
   summary.psych(x = ,...)
 #super.matrix
   super.matrix(x = ,...)
+  
 #superCor
   superCor(x = ,...)
+  
 #superMatrix
   superMatrix(x = ,...)
 #t2d
   t2d(x = ,...)
+  
 #t2r
   t2r(x = ,...)
 #table2df
   table2df(x = ,...)
 #table2matrix
   table2matrix(x = ,...)
+  
 #tableF
   tableF(x = ,...)
+  
 #Tal_Or
   Tal_Or(x = ,...)  
 #Tal.Or
@@ -3689,16 +4043,22 @@ interp.values(x = ,...)
   TargetQ(x = ,...)
 #TargetT
   TargetT(x = ,...) 
+  
 #tenberge
   tenberge(x = ,...)
+  
 #test.all
   test.all(x = ,...)
+  
 #test.irt
   test.irt(x = ,...)
+
 #test.psych
   test.psych(x = ,...)
+  
 #testRetest
   testRetest(x = ,...)
+  
 #tetrachoric
   tetrachoric(x = ,...)
 #thurstone
@@ -3707,32 +4067,42 @@ interp.values(x = ,...)
   Thurstone(x = ,...)
 #Thurstone.33
   Thurstone.33(x = ,...)
+  
 #Thurstone.9
   Thurstone.9(x = ,...)
+  
 #topBottom
   topBottom(x = ,...)
+  
 #tr
   tr(x = ,...)
 #Tucker
   Tucker(x = ,...)
+
 #unidim
   unidim(x = ,...)
+  
 #varimin
   varimin(x = ,...)
+  
 #vgQ.bimin
   vgQ.bimin(x = ,...)
 #vgQ.targetQ
   vgQ.targetQ(x = ,...)
 #vgQ.varimin
   vgQ.varimin(x = ,...)
+  
 #violin
   violin(x = ,...)
+  
 #violinBy
   violinBy(x = ,...)
 #vss
   vss(x = ,...)
+  
 #VSS
   VSS(x = ,...)
+  
 #VSS.parallel
   VSS.parallel(x = ,...)
 #VSS.plot
@@ -3743,202 +4113,288 @@ interp.values(x = ,...)
   VSS.sim(x = ,...)
 #VSS.simulate
   VSS.simulate(x = ,...)
+  
 #West
   West(x = ,...)
+  
 #winsor
   winsor(x = ,...)
 #winsor.mean
   winsor.mean(x = ,...)
 #winsor.means
   winsor.means(x = ,...)
+  
 #winsor.sd
   winsor.sd(x = ,...)
+  
 #winsor.var
   winsor.var(x = ,...)
 #withinBetween
   withinBetween(x = ,...)
+
 #wkappa
   wkappa(x = ,...)
+  
 #Yule
   Yule(x = ,...)
 #Yule.inv
   Yule.inv(x = ,...)
 #Yule2phi
   Yule2phi(x = ,...)
+
 #Yule2phi.matrix
   Yule2phi.matrix(x = ,...)
 #Yule2poly
   Yule2poly(x = ,...)
+  
 #Yule2poly.matrix
   Yule2poly.matrix(x = ,...)
 #Yule2tetra
   Yule2tetra(x = ,...)
 #YuleBonett
   YuleBonett(x = ,...)
+  
 #YuleCor
   YuleCor(x = ,...)
+　
 #acf
 acf(x = ,lag.max = ,type = ,plot = ,na.action = ,demean = )
 #acf2AR
 acf2AR(x = ,lag.max = ,type = ,plot = ,na.action = ,demean = )
 #add.scope
 add.scope(x = ,...)
+add.scope(terms1 = ,terms2 = )
 #add1
 add1(x = ,...)
+add1(object = ,scope = )
 #addmargins
 addmargins(x = ,...)
+addmargins(A = ,margin = ,FUN = ,quiet = )
 #aggregate
 aggregate(x = ,...)
+aggregate(x = )
 #aggregate.data.frame
 aggregate.data.frame(x = ,...)
+aggregate.data.frame(x = ,by = ,FUN = ,simplify = ,drop = )
 
 #aggregate.ts
 aggregate.ts(x = ,...)
+aggregate.ts(x = ,nfrequency = ,FUN = ,ndeltat = ,ts.eps = )
 #AIC
 AIC(x = ,...)
+AIC(object = ,k = )
 #alias
 alias(x = ,...)
+alias(object = )
 #anova
 anova(x = ,...)
+anova(object = )
 #ansari.test
 ansari.test(x = ,...)
+ansari.test(x = )
 #aov
 aov(x = ,...)
+aov(formula = ,data = ,projections = ,qr = ,contrasts = )
 #approx
 approx(x = ,...)
+approx(x = ,y = ,xout = ,method = ,n = ,yleft = ,yright = ,rule = ,f = ,ties = ,na.rm = )
 #approxfun
 approxfun(x = ,...)
+approxfun(x = ,y = ,method = ,yleft = ,yright = ,rule = ,f = ,ties = ,na.rm = )
 #ar
 ar(x = ,...)
+ar(x = ,aic = ,order.max = ,method = ,na.action = ,series = )
 #ar.burg
 ar.burg(x = ,...)
+ar.burg(x = )
 #ar.mle
 ar.mle(x = ,...)
+ar.mle(x = ,aic = ,order.max = ,na.action = ,demean = ,series = )
 #ar.ols
 ar.ols(x = ,...)
+ar.ols(x = ,aic = ,order.max = ,na.action = ,demean = ,intercept = ,series = )
 #ar.yw
 ar.yw(x = ,...)
+ar.yw(x = )
 #arima
 arima(x = ,...)
+arima(x = ,order = ,seasonal = ,xreg = ,include.mean = ,transform.pars = ,fixed = ,init = ,method = ,n.cond = ,SSinit = ,optim.method = ,optim.control = ,kappa = )
 #arima.sim
 arima.sim(x = ,...)
+arima.sim(model = ,n = ,rand.gen = ,innov = ,n.start = ,start.innov = )
 #arima0
 arima0(x = ,...)
+arima0(x = ,order = ,seasonal = ,xreg = ,include.mean = ,delta = ,transform.pars = ,fixed = ,init = ,method = ,n.cond = ,optim.control = )
 #arima0.diag
 arima0.diag(x = ,...)
+arima0.diag()
 #ARMAacf
 ARMAacf(x = ,...)
+ARMAacf(ar = ,ma = ,lag.max = ,pacf = )
 #ARMAtoMA
 ARMAtoMA(x = ,...)
+ARMAtoMA(ar = ,ma = ,lag.max = )
 #as.dendrogram
 as.dendrogram(x = ,...)
+as.dendrogram(object = )
 #as.dist
 as.dist(x = ,...)
+as.dist(m = ,diag = ,upper = )
 #as.formula
 as.formula(x = ,...)
+as.formula(object = ,env = )
 #as.hclust
 as.hclust(x = ,...)
+as.hclust(x = )
 #as.stepfun
 as.stepfun(x = ,...)
+as.stepfun(x = )
 #as.ts
 as.ts(x = ,...)
+as.ts(x = )
 #asOneSidedFormula
 asOneSidedFormula(x = ,...)
+asOneSidedFormula(object = )
 #ave
 ave(x = ,...)
+ave(x = ,FUN = )
 #bandwidth.kernel
 bandwidth.kernel(x = ,...)
+bandwidth.kernel(k = )
 #bartlett.test
 bartlett.test(x = ,...)
+bartlett.test(x = )
 #BIC
 BIC(x = ,...)
+BIC(object = )
 #binom.test
 binom.test(x = ,...)
+binom.test(x = ,n = ,p = ,alternative = ,conf.level = )
 #binomial
 binomial(x = ,...)
+binomial(link = )
 #biplot
 biplot(x = ,...)
+biplot(x = )
 #Box.test
 Box.test(x = ,...)
+Box.test(x = ,lag = ,type = ,fitdf = )
 
 #bw.bcv
 bw.bcv(x = ,nb = ,lower = ,upper = ,tol = )
 #bw.nrd
 bw.nrd(x = ,...)
+bw.nrd(x = )
 #bw.nrd0
 bw.nrd0(x = ,...)
+bw.nrd0(x = )
 #bw.SJ
 bw.SJ(x = ,...)
+bw.SJ(x = ,nb = ,lower = ,upper = ,method = ,tol = )
 #bw.ucv
 bw.ucv(x = ,...)
+bw.ucv(x = ,nb = ,lower = ,upper = ,tol = )
 #C
 C(x = ,...)
+C(object =,contr = ,how.many = )
 #cancor
 cancor(x = ,...)
+concor
 #case.names
 case.names(x = ,...)
+case.names(object = )
 #ccf
 ccf(x = ,...)
+ccf(x = ,y = ,lag.max = ,type = ,plot = ,na.action = )
 #chisq.test
 chisq.test(x = ,...)
+chisq.test(x = ,y = ,correct = ,p = ,rescale.p = ,simulate.p.value = ,B = )
 #cmdscale
 cmdscale(x = ,...)
+cmdscale(d = ,k = ,eig = ,add = ,x.ret = ,list. = )
 #coef
 coef(x = ,...)
+coef(object = )
 #coefficients
 coefficients(x = ,...)
+coefficients(object = )
 #complete.cases
 complete.cases(x = ,...)
+complete.cases()
 #confint
 confint(x = ,...)
+confint(object = ,parm = ,level = )
 #confint.default
 confint.default(x = ,...)
+confint.default(object = ,parm = ,level = )
 #confint.lm
 confint.lm(x = ,...)
+confint.lm(object = ,parm = ,level = )
 #constrOptim
 constrOptim(x = ,...)
+constrOptim(theta = ,f = ,grad = ,ui = ,ci = ,mu = ,control = ,method = ,outer.iterations = ,outer.eps = ,hessian = )
 #contr.helmert
 contr.helmert(x = ,...)
+contr.helmert(n = ,contrasts = ,sparse = )
 #contr.poly
 contr.poly(x = ,...)
+contr.poly(n = ,scores = ,contrasts = ,sparse = )
 #contr.SAS
 contr.SAS(x = ,...)
+contr.SAS(n = ,contrasts = ,sparse = )
 #contr.sum
 contr.sum(x = ,...)
+contr.sum(n = ,contrasts = ,sparse = )
 #contr.treatment
 contr.treatment(x = ,...)
+contr.treatment(n = ,base = ,contrasts = ,sparse = )
 #contrasts
 contrasts(x = ,...)
+contrasts(x = ,contrasts = ,sparse = )
 #contrasts<-
 `contrasts<-`(x = ,...)
+`contrasts<-`()
 #convolve
 convolve(x = ,...)
+convolve(x = ,y = ,conj = ,type = )
 #cooks.distance
-cooks.distance(x = ,...)
+cooks.distanceks.distance(x = ,...)
+cooks.distance(model = )
 #cophenetic
 cophenetic(x = ,...)
+cophenetic(x = )
 #cor
 cor(x = ,...)
+cor(x = ,y = ,use = ,method = )
 #cor.test
 cor.test(x = ,...)
+cor.test(x = )
 #cov
 cov(x = ,...)
+cov(x = ,y = ,use = ,method = )
 #cov.wt
 cov.wt(x = ,...)
+cov.wt(x = ,wt = ,cor = ,center = ,method = )
 #cov2cor
 cov2cor(x = ,...)
+cov2cor(V = )
 
 #covratio
 covratio(x = ,...)
+covratio(model = ,infl = ,res = )
 #cpgram
 cpgram(x = ,...)
+cpgram(ts = ,taper = ,main = ,ci.col = )
 
 #cutree
 cutree(x = ,...)
+cutree(tree = ,k = ,h = )
 #cycle
 cycle(x = ,...)
+cycle(x = )
 #D
 D(x = ,...)
+D(expr = ,name = )
 #dbeta
   dbeta(x = ,shape1 = ,shape2 = ,ncp = ,log = )
 #dbinom
@@ -3947,40 +4403,58 @@ D(x = ,...)
   dcauchy(x = ,location = ,scale = ,log = )
 #dchisq
   dchisq(x = ,df = ,ncp = ,log = )
+  dchisq(x = ,df = ,ncp = ,log = )
 #decompose
   decompose(x = ,...)
+  decompose(x = ,type = ,filter = )
 #delete.response
   delete.response(x = ,...)
+  delete.response(termobj = )
 #deltat
   deltat(x = ,...)
+  deltat(x = )
 #dendrapply
   dendrapply(x = ,...)
+  dendrapply(X = ,FUN = )
 #density
   density(x = ,...)
+  density(x = )
 #density.default
   density.default(x = ,...)
+  density.default(x = ,bw = ,adjust = ,kernel = ,weights = ,window = ,width = ,give.Rkern = ,subdensity = ,n = ,from = ,to = ,cut = ,na.rm = )
 #deriv
   deriv(x = ,...)
+  deriv(expr = )
 #deriv3
   deriv3(x = ,...)
+  deriv(expr = )
 #deviance
   deviance(x = ,...)
+  deviance(object = )
 #dexp
+  dexp(x = ,rate = ,log = )
   dexp(x = ,rate = ,log = )
 #df
   df(x = ,...)
+  
 #df.kernel
   df.kernel(x = ,...)
+  df.kernel(k = )
 #df.residual
   df.residual(x = ,...)
+  df.residual(object = )
 #DF2formula
   DF2formula(x = ,...)
+  DF2formula(x = ,env = )
 #dfbeta
   dfbeta(x = ,...)
+  dfbeta(model = )
 #dfbetas
   dfbetas(x = ,...)
+  dfbetas(model = )
 #dffits
   dffits(x = ,...)
+  dffits(model = ,infl = ,res =)
 #dgamma
   dgamma(x = ,shape = ,rate = ,log = )
 #dgeom
@@ -3989,541 +4463,1059 @@ D(x = ,...)
   dhyper(x = ,m = ,n = ,k = ,log = )
 #diffinv
   diffinv(x = ,...)
+  diffinv(x = )
 #dist
   dist(x = ,...)
+  dist(x = ,method = ,diag = ,upper = ,p = )
 #dlnorm
+  dlnorm(x = ,meanlog = ,sdlog = ,log = )
   dlnorm(x = ,meanlog = ,sdlog = ,log = )
 #dlogis
   dlogis(x = ,location = ,scale = ,log = )
+  dlogis(x = ,location = ,scale = ,log = )
 #dmultinom
-  dmultinom(x = ,size = ,prob = ,log = )  
+  dmultinom(x = ,size = ,prob = ,log = )
+  dmultinom(x = ,size = ,prob = ,log = )
 #dnbinom
   dnbinom(x = ,size = ,prob = ,log = )
+  dnbinom(x = ,size = ,prob = ,mu = ,log = )
 #dnorm
+  dnorm(x = ,mean = ,sd = ,log = )
   dnorm(x = ,mean = ,sd = ,log = )
 #dpois
   dpois(x = ,lambda = ,log = )
+  dpois(x = ,lambda = ,log = )
 #drop.scope
   drop.scope(x = ,...)
+  drop.scope(terms1 = ,terms2 = )
 #drop.terms
   drop.terms(x = ,...)
+  drop.terms(termobj = ,dropx = ,keep.response = )
 #drop1
   drop1(x = ,...)
+  drop1(object = ,scope = )
 #dsignrank
-  dsignrank(x = ,n = ,log = ) 
+  dsignrank(x = ,n = ,log = )
+  dsignrank(x = ,n = ,log = )
 #dt
+  dt(x = ,df = ,ncp = ,log = )
   dt(x = ,df = ,ncp = ,log = )
 #dummy.coef
   dummy.coef(x = ,...)
+  dummy.coef(object = )
 #dummy.coef.lm
   dummy.coef.lm(x = ,...)
+  dummy.coef.lm(object = ,use.na = )
 #dunif
   dunif(x = ,min = ,max = ,log = )  
+  dunif(x = ,min = ,max = ,log = )
 #dweibull
+  dweibull(x = ,shape = ,scale = ,log = )
   dweibull(x = ,shape = ,scale = ,log = )
 #dwilcox
   dwilcox(x = ,m = ,n = ,log = )
+  dwilcox(x = ,m = ,n = ,log = )
 #ecdf
   ecdf(x = ,...)
+  ecdf(x = )
 #eff.aovlist
   eff.aovlist(x = ,...)
+  eff.aovlist(aovlist = )
 #effects
   effects(x = ,...)
+  effects(object = )
 #embed
   embed(x = ,...)
+  embed(x = ,dimension = )
 #end
   end(x = ,...)
+  end(x = )
 #estVar
   estVar(x = ,...)
+  estVar(object = )
 #expand.model.frame
   expand.model.frame(x = ,...)
+  expand.model.frame(model = ,extras = ,envir = ,na.expand = )
 #extractAIC
   extractAIC(x = ,...)
+  extractAIC(fit = ,scale = ,k = )
 #factanal
   factanal(x = ,...)
+  factanal(x = ,factors = ,data = ,covmat = ,n.obs = ,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
 #factor.scope
   factor.scope(x = ,...)
+  factor.scope(factor = ,scope = )
 #family
   family(x = ,...)
+  family(object = )
 #fft
   fft(x = ,...)
+  fft(z = ,inverse = )
 #filter
   filter(x = ,...)
+  filter(x = ,filter = ,method = ,sides = ,circular = ,init = )
 #fisher.test
   fisher.test(x = ,...)
+  fisher.test(x = ,y = ,workspace = ,hybrid = ,hybridPars = ,control = ,or = ,alternative = ,conf.int = ,conf.level = ,simulate.p.value = ,B = )
 #fitted
   fitted(x = ,...)
+  fitted(object = )
 #fitted.values
   fitted.values(x = ,...)
+  fitted.values(object = )
 #fivenum
   fivenum(x = ,...)
+  fivenum(x = ,na.rm = )
 #fligner.test
   fligner.test(x = ,...)
+  fligner.test(x = )
 #formula
   formula(x = ,...)
+  formula(x = )
 #frequency
   frequency(x = ,...)
+  frequency(x = )
 #friedman.test
   friedman.test(x = ,...)
+  friedman.test(y = )
 #ftable
   ftable(x = ,...)
+  ftable(x = )
 #Gamma
   Gamma(x = ,...)
+  Gamma(link = )
 #gaussian
   gaussian(x = ,...)
+  gaussian(link = )
 #get_all_vars
   get_all_vars(x = ,...)
+  get_all_vars(formula = ,data = )
 #getCall
   getCall(x = ,...)
+  getCall(x = )
 #getInitial
   getInitial(x = ,...)
+  getInitial(object = ,data = )
 #glm
   glm(x = ,...)
+  glm(formula = ,family = ,data = ,weights = ,subset = ,na.action = ,start = ,etastart = ,mustart = ,offset = ,control = ,model = ,method = ,x = ,y = ,singular.ok = ,contrasts = )
 #glm.control
   glm.control(x = ,...)
+  glm.control(epsilon = ,maxit = ,trace = )
 #glm.fit
   glm.fit(x = ,...)
+  glm.fit(x = ,y = ,weights = ,start = ,etastart = ,mustart = ,offset = ,family = ,control = ,intercept = ,singular.ok = )
 #hasTsp
   hasTsp(x = ,...)
+  hasTsp(x = )
 #hat
   hat(x = ,...)
+  hat(x = ,intercept = )
 #hatvalues
   hatvalues(x = ,...)
+  hatvalues(model = )
 #hclust
   hclust(x = ,...)
+  hclust(d = ,method = ,members = )
 #heatmap
   heatmap(x = ,...)
+  heatmap(x = ,Rowv = ,Colv = ,distfun = ,hclustfun = ,reorderfun = ,add.expr = ,symm = ,revC = ,scale = ,na.rm = ,margins = ,ColSideColors = ,RowSideColors = ,cexRow = ,cexCol = ,labRow = ,labCol = ,main = ,xlab = ,ylab = ,keep.dendro = ,verbose = )
 #HoltWinters
   HoltWinters(x = ,...)
+  HoltWinters(x = ,alpha = ,beta = ,gamma = ,seasonal = ,start.periods = ,l.start = ,b.start = ,s.start = ,optim.start = ,optim.control = )
 #influence
   influence(x = ,...)
+  influence(model = )
 #influence.measures
   influence.measures(x = ,...)
+  influence.measures(model = ,infl = )
+  
 #integrate
   integrate(x = ,...)
+  integrate(f = ,lower = ,upper = ,subdivisions = ,rel.tol = ,abs.tol = ,stop.on.error = ,keep.xy = ,aux = )
 #interaction.plot
   interaction.plot(x = ,...)
+  interaction.plot(x.factor = ,trace.factor = ,response = ,fun = ,type = ,legend = ,trace.label = ,fixed = ,xlab = ,ylab = ,ylim = ,lty = ,col = ,pch = ,xpd = ,leg.bg = ,leg.bty = ,xtick = ,xaxt = ,axes = )
 #inverse.gaussian
   inverse.gaussian(x = ,...)
+  inverse.gaussian(link = )
 #IQR
   IQR(x = ,...)
+  IQR(x = ,na.rm = ,type = )
 #is.empty.model
   is.empty.model(x = ,...)
+  is.empty.model(x = )
 #is.leaf
   is.leaf(x = ,...)
+  is.leaf(object = )
 #is.mts
   is.mts(x = ,...)
+  is.mts(x =)
 #is.stepfun
   is.stepfun(x = ,...)
+  is.stepfun(x = )
 #is.ts
   is.ts(x = ,...)
+  is.ts(x = )
 #is.tskernel
   is.tskernel(x = ,...)
+  is.tskernel(k = )
 #isoreg
   isoreg(x = ,...)
+  isoreg(x = ,y = )
 #KalmanForecast
   KalmanForecast(x = ,...)
+  KalmanForecast(n.ahead = ,mod = ,update = )
 #KalmanLike
   KalmanLike(x = ,...)
+  KalmanLike(y = ,mod =,nit =)
 #KalmanRun
   KalmanRun(x = ,...)
+  KalmanRun(y = ,mod = ,nit = ,update = )
 #KalmanSmooth
   KalmanSmooth(x = ,...)
+  KalmanSmooth(y = ,mod = ,nit = )
 #kernapply
   kernapply(x = ,...)
+  kernapply(x = )
 #kernel
   kernel(x = ,...)
+  kernel(coef = ,m = ,r = ,name = )
 #kmeans
   kmeans(x = ,...)
+  kmeans(x = ,centers = ,iter.max = ,nstart = ,algorithm = ,trace = )
 #knots
   knots(x = ,...)
+  knots(Fn = )
 #kruskal.test
   kruskal.test(x = ,...)
+  kruskal.test(x = )
 #ks.test
   ks.test(x = ,...)
+  ks.test(x = )
 #ksmooth
   ksmooth(x = ,...)
+  ksmooth(x = ,y = ,kernel = ,bandwidth = ,range.x = ,n.points = ,x.points = )
 #lag
   lag(x = ,...)
+  log(x = ,base = )
 #lag.plot
   lag.plot(x = ,...)
+  lag.plot(x = ,lags = ,layout = ,set.lags = ,main = ,asp = ,diag = ,diag.col = ,type = ,oma = ,ask = ,do.lines = ,labels = )
 #line
   line(x = ,...)
+  line(x = ,y = ,iter = )
 #lm
   lm(x = ,...)
+  lm(formula = ,data = ,subset = ,weights = ,na.action = ,method = ,model = ,x = ,y = ,qr = ,singular.ok = ,contrasts = ,offset = )
 #lm.fit
   lm.fit(x = ,...)
+  lm.fit(x = ,y = ,offset = ,method = ,tol = ,singular.ok = )
 #lm.influence
   lm.influence(x = ,...)
+  lm.influence(model = ,do.coef = )
 
 #lm.wfit
   lm.wfit(x = ,...)
+  lm.wfit(x = ,y = ,w = ,offset = ,method = ,tol = ,singular.ok = )
 #loadings
   loadings(x = ,...)
+  loadings(x = )
 
 #loess
   loess(x = ,...)
+  loess(formula = ,data = ,weights = ,subset = ,na.action = ,model = ,span = ,enp.target = ,degree = ,parametric = ,drop.square = ,normalize = ,family = ,method = ,control = )
+  
 #loess.control
   loess.control(x = ,...)
+  loess.control(surface = ,statistics = ,trace.hat = ,cell = ,iterations = ,iterTrace = )
 
 #loess.smooth
   loess.smooth(x = ,...)
+  loess.smooth(x = ,y = ,span = ,degree = ,family = ,evaluation = )
 #logLik
   logLik(x = ,...)
+  logLik(object = )
 #loglin
   loglin(x = ,...)
+  loglin(table = ,margin = ,start = ,fit = ,eps = ,iter = ,param = ,print = )
 #lowess
   lowess(x = ,...)
+  lowess(x = ,y = ,f = ,iter = ,delta = )
 #ls.diag
   ls.diag(x = ,...)
+  ls.diag(ls.out = )
 #ls.print
   ls.print(x = ,...)
+  ls.print(ls.out = ,digits = ,print.it = )
 #lsfit
   lsfit(x = ,...)
+  lsfit(x = ,y = ,wt = ,intercept = ,tolerance = ,yname = )
 #mad
   mad(x = ,...)
+  mad(x = ,center = ,constant = ,na.rm = ,low = ,high = )
 #mahalanobis
   mahalanobis(x = ,...)
+  mahalanobis(x = ,center = ,cov = ,inverted = )
 #make.link
   make.link(x = ,...)
+  make.link(link = )
 #makeARIMA
   makeARIMA(x = ,...)
+  makeARIMA(phi = ,theta = ,Delta = ,kappa = ,SSinit = ,tol = )
 #makepredictcall
   makepredictcall(x = ,...)
+  makepredictcall(var = ,call = )
 #manova
   manova(x = ,...)
+  manova()
 #mantelhaen.test
   mantelhaen.test(x = ,...)
+  mantelhaen.test(x = ,y = ,z = ,alternative = ,correct = ,exact = ,conf.level = )
 #mauchly.test
   mauchly.test(x = ,...)
+  mauchly.test(object = )
 #mcnemar.test
   mcnemar.test(x = ,...)
+  mcnemar.test(x = ,y = ,correct = )
 #median
   median(x = ,...)
+  median(x = ,na.rm = )
 #median.default
   median.default(x = ,...)
+  median.default(x = ,na.rm = )
 #medpolish
   medpolish(x = ,...)
+  medpolish(x = ,eps = ,maxiter = ,trace.iter = ,na.rm = )
 #model.extract
   model.extract(x = ,...)
+  model.extract(frame = ,component = )
 #model.frame
   model.frame(x = ,...) 
+  model.frame(formula = )
 #model.frame.default
   model.frame.default(x = ,...)
+  model.frame.default(formula = ,data = ,subset = ,na.action = ,drop.unused.levels = ,xlev = )
 #model.matrix
   model.matrix(x = ,...)
+  model.matrix(object = )
 #model.matrix.default
   model.matrix.default(x = ,...)
+  model.matrix.default(object = ,data = ,contrasts.arg = ,xlev = )
 #model.matrix.lm
   model.matrix.lm(x = ,...)
+  model.matrix(object = )
 #model.offset
   model.offset(x = ,...)
+  model.offset(x = )
 #model.response
   model.response(x = ,...)  
+  model.response(data = ,type = )
 #model.tables
   model.tables(x = ,...)
+  model.tables(x = )
 #model.weights
   model.weights(x = ,...) 
+  model.weights(x = )
 #monthplot
   monthplot(x = ,...)
+  monthplot(x = )
 #mood.test
   mood.test(x = ,...)
+  mood.test(x = )
 #mvfft
   mvfft(x = ,...)
+  mvfft(z = ,inverse = )
 #na.action
   na.action(x = ,...)
+  na.action(object = )
 #na.contiguous
   na.contiguous(x = ,...)
+  na.contiguous(object = )
 #na.exclude
   na.exclude(x = ,...)
+  na.exclude(object = )
 #na.fail
   na.fail(x = ,...)
+  na.fail(object = )
 #na.omit
   na.omit(x = ,...)
+  na.omit(object = )
 #na.pass
   na.pass(x = ,...)
+  na.pass(object = )
 #napredict
   napredict(x = ,...)
+  napredict(omit = ,x = )
 #naprint
   naprint(x = ,...)
+  naprint(x = )
 #naresid
   naresid(x = ,...)
+  naresid(omit = ,x = )
 #nextn
   nextn(x = ,...)
+  nextn(n = ,factors = )
 #nlm
   nlm(x = ,...)
+  nlm(f = ,p = ,hessian = ,typsize = ,fscale = ,print.level = ,ndigit = ,gradtol = ,stepmax = ,steptol = ,iterlim = ,check.analyticals = )
 #nlminb
   nlminb(x = ,...)
+  nlminb(start = ,objective = ,gradient = ,hessian = ,scale = ,control = ,lower = ,upper = )
 #nls
   nls(x = ,...)
+  nls(formula = ,data = ,start = ,control = ,algorithm = ,trace = ,subset = ,weights = ,na.action = ,model = ,lower = ,upper = )
 #nls.control
   nls.control(x = ,...)
+  nls.control(maxiter = ,tol = ,minFactor = ,printEval = ,warnOnly = ,scaleOffset = ,nDcentral = )
 #NLSstAsymptotic
   NLSstAsymptotic(x = ,...)
+  NLSstAsymptotic(xy = )
 #NLSstClosestX
-  NLSstClosestX(x = ,...)
+  NLSstClosestX(x = ,...ar)
+  NLSstClosestX(xy = ,yval = )
 #NLSstLfAsymptote
   NLSstLfAsymptote(x = ,...)
+  NLSstLfAsymptote(xy = )
 #NLSstRtAsymptote
   NLSstRtAsymptote(x = ,...)
+  NLSstRtAsymptote(xy = )
 #nobs
   nobs(x = ,...)
+  nobs(object = )
 #numericDeriv
   numericDeriv(x = ,...)
+  numericDeriv(expr = ,theta = ,rho = ,dir = ,eps = ,central = )
 #offset
   offset(x = ,...)
+  offset(object = )
 #oneway.test
   oneway.test(x = ,...)
+  oneway.test(formula = ,data = ,subset = ,na.action = ,var.equal = )
 #optim
   optim(x = ,...)
+  optim(par = ,fn = ,gr = ,method = ,lower = ,upper = ,control = ,hessian = )
 #optimHess
   optimHess(x = ,...)
+  optimHess(par = ,fn = ,gr = ,control = )
 #optimise
   optimise(x = ,...)
+  optimise(f = ,interval = ,lower = ,upper = ,maximum = ,tol = )
 #optimize
   optimize(x = ,...)
+  optimize(f = ,interval = ,lower = ,upper = ,maximum = ,tol = )
 #order.dendrogram
   order.dendrogram(x = ,...)
+  order.dendrogram(x = )
 #p.adjust
   p.adjust(x = ,...)
+  p.adjust(p = ,method = ,n = )
 #p.adjust.methods
   p.adjust.methods(x = ,...)
+  p.adjust.methods
 #pacf
   pacf(x = ,...)
+  pacf(x = ,lag.max = ,plot = ,na.action = )
 #Pair
   Pair(x = ,...)    
+  Pair(x = ,y = )
 #pairwise.prop.test
+pairwise.prop.test(x = ,n = ,p.adjust.method = )
 pairwise.prop.test(x = ,n = ,p.adjust.method = )
 #pairwise.t.test
 pairwise.t.test(x = ,g = ,p.adjust.method = )
+pairwise.t.test(x = ,g = ,p.adjust.method = ,pool.sd = ,paired = ,alternative = )
 #pairwise.table
 pairwise.table(x = ,g = ,p.adjust.method = )
+pairwise.table(compare.levels = ,level.names = ,p.adjust.method = )
 #pairwise.wilcox.test
 pairwise.wilcox.test(x = ,g = ,p.adjust.method = )
+pairwise.wilcox.test(x = ,g = ,p.adjust.method = ,paired = )
 #pbeta
   pbeta(x = ,shape1 = ,shape2 = ,ncp = ,log.p = ) 
+  pbeta(q = ,shape1 = ,shape2 = ,ncp = ,lower.tail = ,log.p = )
 #pbinom
   pbinom(x = ,size = ,prob = ,lower.tail = ,log.p = )
+  pbinom(q = ,size = ,prob = ,lower.tail = ,log.p = )
 #pbirthday
   pbirthday(x = ,n = ,classes = ,lower.tail = ,log.p = )
+  pbirthday(n = ,classes = ,coincident = )
 #pcauchy
   pcauchy(x = ,location = ,scale = ,lower.tail = ,log.p = )
+  pcauchy(q = ,location = ,scale = ,lower.tail = ,log.p = )
 #pchisq
   pchisq(x = ,df = ,ncp = ,lower.tail = ,log.p = )
+  pchisq(q = ,df = ,ncp = ,lower.tail = ,log.p = )
 #pexp
   pexp(x = ,rate = ,lower.tail = ,log.p = )
+  pexp(q = ,rate = ,lower.tail = ,log.p = )
 #pf
   pf(x = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
+  pf(q = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
 #pgamma
   pgamma(x = ,shape = ,rate = ,lower.tail = ,log.p = )
+  pgamma(q = ,shape = ,rate = ,scale = ,lower.tail = ,log.p = )
 #pgeom
   pgeom(x = ,prob = ,lower.tail = ,log.p = )
+  pgeom(q = ,prob = ,lower.tail = ,log.p = )
 #phyper
   phyper(x = ,m = ,n = ,k = ,lower.tail = ,log.p = )
+  phyper(q = ,m = ,n = ,k = ,lower.tail = ,log.p =)
 #plclust
   plclust(x = ,...)
+  plclust(tree = ,hang = ,unit = ,level = ,hmin = ,square = ,labels = ,plot. = ,axes = ,frame.plot = ,ann = ,main = ,sub = ,xlab = ,ylab = )
 #plnorm
   plnorm(x = ,meanlog = ,sdlog = ,lower.tail = ,log.p = )
+  plnorm(q = ,meanlog = ,sdlog = ,lower.tail = ,log.p = )
 #plogis
   plogis(x = ,location = ,scale = ,lower.tail = ,log.p = )
+  plogis(q = ,location = ,scale = ,lower.tail = ,log.p = )
 #plot.ecdf
   plot.ecdf(x = ,...)
+  plot.ecdf(x = ,ylab = ,verticals = ,col.01line = ,pch = )
 #plot.spec.coherency
   plot.spec.coherency(x = ,...)
+  plot.spec.coherency(x = ,ci = ,xlab = ,ylab = ,ylim = ,type = ,main = ,ci.col = ,ci.lty = )
 #plot.spec.phase
   plot.spec.phase(x = ,...)
+  plot.spec.phase(x = ,ci = ,xlab = ,ylab = ,ylim = ,type = ,main = ,ci.col = ,ci.lty = )
 #plot.stepfun
   plot.stepfun(x = ,...)
+  plot.stepfun(x = ,xval = ,xlim = ,ylim = ,xlab = ,ylab = ,main = ,add = ,verticals = ,do.points = ,pch = ,col = ,col.points = ,cex.points = ,col.hor = ,col.vert = ,lty = ,lwd = )
 #plot.ts
   plot.ts(x = ,...)
+  plot.ts(x = ,y = ,plot.type = ,xy.labels = ,xy.lines = ,panel = ,nc = ,yax.flip = ,mar.multi = ,oma.multi = ,axes = )
 #pnbinom
   pnbinom(x = ,size = ,prob = ,lower.tail = ,log.p = )  
+  pnbinom(q = ,size = ,prob = ,mu = ,lower.tail = ,log.p = )
 #pnorm
   pnorm(x = ,mean = ,sd = ,lower.tail = ,log.p = )
+  pnorm(q = ,mean = ,sd = ,lower.tail = ,log.p = )
 #poisson
   poisson(x = ,...)
+  poisson(link = )
 #poisson.test
   poisson.test(x = ,...)
+  poisson.test(x = ,T = ,r = ,alternative = ,conf.level = )
 #poly
   poly(x = ,...)
+  poly(x = ,degree = ,coefs = ,raw = ,simple = )
 #polym
   polym(x = ,...)
+  polym(degree = ,coefs = ,raw = )
 #power
   power(x = ,...)
+  power(lambda = )
 #power.anova.test
   power.anova.test(x = ,...)
+  power.anova.test(groups = ,n = ,between.var = ,within.var = ,sig.level = ,power = )
 #power.prop.test
   power.prop.test(x = ,...)
+  power.prop.test(n = ,p1 = ,p2 = ,sig.level = ,power = ,alternative = ,strict = ,tol = )
 #power.t.test
   power.t.test(x = ,...)
+  power.t.test(n = ,delta = ,sd = ,sig.level = ,power = ,type = ,alternative = ,strict = ,tol = )
 #PP.test
   PP.test(x = ,...)
+  PP.test(x = ,lshort = )
 #ppoints
   ppoints(x = ,...)
+  ppoints(n = ,a = )
 #ppois
   ppois(x = ,lambda = ,lower.tail = ,log.p = )
+  ppois(q = ,lambda = ,lower.tail = ,log.p = )
 #ppr
   ppr(x = ,...)
+  ppr(x = )
 #prcomp
   prcomp(x = ,...)
+  prcomp(x = )
 #predict
   predict(x = ,...)
+  predict(object = )
 #predict.glm
   predict.glm(x = ,...)
+  predict.lm(object = ,newdata = ,se.fit = ,scale = ,df = ,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
 #predict.lm
   predict.lm(x = ,...)  
+  predict.lm(object = ,newdata = ,se.fit = ,scale = ,df = ,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
 #preplot
   preplot(x = ,...)
+  preplot(object = )
 #princomp
   princomp(x = ,...)
+  princomp(x = )
 #printCoefmat
   printCoefmat(x = ,...)
+  printCoefmat(x = ,digits = ,signif.stars = ,signif.legend = ,dig.tst = ,cs.ind = ,tst.ind = ,zap.ind = ,P.values = ,has.Pvalue = ,eps.Pvalue = ,na.print = ,quote = ,right = )
 #profile
   profile(x = ,...)
+  profile(fitted = )
 #proj
   proj(x = ,...)
+  proj(object = )
 #promax
   promax(x = ,...)
+  promax(x = ,m = )
 #prop.test
   prop.test(x = ,...)
+  prop.test(x = ,n = ,p = ,alternative = ,conf.level = ,correct = )
 #prop.trend.test
   prop.trend.test(x = ,...)
+  prop.trend.test(x = ,n = ,score = )
 #psignrank
   psignrank(x = ,n = ,lower.tail = ,log.p = ) 
+  psignrank(q = ,n = ,lower.tail = ,log.p = )
 #pt
   pt(x = ,df = ,ncp = ,lower.tail = ,log.p = )
+  pt(q = ,df = ,ncp = ,lower.tail = ,log.p = )
 #ptukey
   ptukey(x = ,q = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
+  ptukey(q = ,nmeans = ,df = ,nranges = ,lower.tail = ,log.p = )
 #punif
   punif(x = ,min = ,max = ,lower.tail = ,log.p = )
+  punif(q = ,min = ,max = ,lower.tail = ,log.p = )
 #pweibull
   pweibull(x = ,shape = ,scale = ,lower.tail = ,log.p = )
+  pweibull(q = ,shape = ,scale = ,lower.tail = ,log.p = )
 #pwilcox
   pwilcox(x = ,m = ,n = ,lower.tail = ,log.p = )
+  pwilcox(q = ,m = ,n = ,lower.tail = ,log.p = )
 #qbeta
   qbeta(x = ,shape1 = ,shape2 = ,ncp = ,lower.tail = ,log.p = )
+  qbeta(p = ,shape1 = ,shape2 = ,ncp = ,lower.tail = ,log.p = )
 #qbinom
   qbinom(x = ,size = ,prob = ,lower.tail = ,log.p = )
+  qbinom(p = ,size = ,prob = ,lower.tail = ,log.p = )
 #qbirthday
-  qbirthday(x = ,n = ,classes = ,lower.tail = ,log.p = )  
+  qbirthday(x = ,n = ,classes = ,lower.tail = ,log.p = )
+  qbirthday(prob = ,classes = ,coincident = )
 #qcauchy
   qcauchy(x = ,location = ,scale = ,lower.tail = ,log.p = )
+  qcauchy(p = ,location = ,scale = ,lower.tail = ,log.p = )
 #qchisq
   qchisq(x = ,df = ,ncp = ,lower.tail = ,log.p = )
+  qchisq(p = ,df = ,ncp = ,lower.tail = ,log.p = )
 #qexp
   qexp(x = ,rate = ,lower.tail = ,log.p = )
+  qexp(p = ,rate = ,lower.tail = ,log.p = )
 #qf
   qf(x = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )  
+  qf(p = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
 #qgamma
   qgamma(x = ,shape = ,rate = ,lower.tail = ,log.p = )
+  qgamma(p = ,shape = ,rate = ,scale = ,lower.tail = ,log.p = )
 #qgeom
   qgeom(x = ,prob = ,lower.tail = ,log.p = )
+  qgeom(p = ,prob = ,lower.tail = ,log.p = )
 #qhyper
   qhyper(x = ,m = ,n = ,k = ,lower.tail = ,log.p = )
+  qhyper(p = ,m = ,n = ,k = ,lower.tail = ,log.p = )
 #qlnorm
   qlnorm(x = ,meanlog = ,sdlog = ,lower.tail = ,log.p = )
+  qlnorm(p = ,meanlog = ,sdlog = ,lower.tail = ,log.p = )
 #qlogis
   qlogis(x = ,location = ,scale = ,lower.tail = ,log.p = )  
+  qlogis(p = ,location = ,scale = ,lower.tail = ,log.p = )
 #qnbinom
   qnbinom(x = ,size = ,prob = ,lower.tail = ,log.p = )
+  qnbinom(p = ,size = ,prob = ,mu = ,lower.tail = ,log.p = )
 #qnorm
   qnorm(x = ,mean = ,sd = ,lower.tail = ,log.p = )
+  qnorm(p = ,mean = ,sd = ,lower.tail = ,log.p = )
 #qpois
   qpois(x = ,lambda = ,lower.tail = ,log.p = )
+  qpois(p = ,lambda = ,lower.tail = ,log.p = )
 #qqline
   qqline(x = ,...)
+  qqline(y = ,datax = ,distribution = ,probs = ,qtype = )
+  
 #qqnorm
   qqnorm(x = ,...)
+  qqnorm(y = )
+  qqnorm(y = x)
+  qqnorm(y = "x")
+  qqnorm(y = df)
+
 #qqplot
   qqplot(x = ,...)
+  qqplot(x = ,y = ,plot.it = ,xlab = ,ylab = )
+  qqplot(x = x,y = ,plot.it = ,xlab = ,ylab = )
+    qqplot(x = x,y = x,plot.it = ,xlab = ,ylab = )
+  qqplot(x = x,y = x,plot.it = x,xlab = ,ylab = )
+    qqplot(x = x,y = x,plot.it = x,xlab = x,ylab = )
+      qqplot(x = x,y = x,plot.it = x,xlab = x,ylab = x)
+
+
 #qsignrank
   qsignrank(x = ,n = ,lower.tail = ,log.p = )
+  qsignrank(p = ,n = ,lower.tail = ,log.p = )
+  qsignrank(p = x,n = ,lower.tail = ,log.p = )
+  qsignrank(p = x,n = x,lower.tail = ,log.p = )
+  qsignrank(p = x,n = x,lower.tail = x,log.p = )
+  qsignrank(p = x,n = x,lower.tail = x,log.p = x)
+  qsignrank(p = "x",n = x,lower.tail = x,log.p = x)
+  qsignrank(p = df,n = x,lower.tail = x,log.p = x)
 #qt
   qt(x = ,df = ,ncp = ,lower.tail = ,log.p = )  
+  qt(p = ,df = ,ncp = ,lower.tail = ,log.p = )
+  qt(p = x,df = ,ncp = ,lower.tail = ,log.p = )
+  qt(p = x,df = x,ncp = ,lower.tail = ,log.p = )
+  qt(p = x,df = x,ncp = x,lower.tail = ,log.p = )
+  qt(p = x,df = x,ncp = x,lower.tail = x,log.p = )
+  qt(p = x,df = x,ncp = x,lower.tail = x,log.p = x)
+  qt(p = "x",df = x,ncp = x,lower.tail = x,log.p = x)
+  qt(p = df,df = x,ncp = x,lower.tail = x,log.p = x)
+  
 #qtukey
   qtukey(x = ,q = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
+  qtukey(p = ,nmeans = ,df = ,nranges = ,lower.tail = ,log.p = )
+  qtukey(p = x,nmeans = ,df = ,nranges = ,lower.tail = ,log.p = )
+    qtukey(p = x,nmeans = x,df = ,nranges = ,lower.tail = ,log.p = )
+    qtukey(p = x,nmeans = x,df = x,nranges = ,lower.tail = ,log.p = )
+    qtukey(p = x,nmeans = x,df = x,nranges = x,lower.tail = ,log.p = )
+    qtukey(p = x,nmeans = x,df = x,nranges = x,lower.tail = x,log.p = )
+    qtukey(p = x,nmeans = x,df = x,nranges = x,lower.tail = x,log.p = x)
+
 #quade.test
   quade.test(x = ,...)
+  quade.test(y = )
+  quade.test(y = x)
+  quade.test(y = "x")
+  quade.test(y = df)
 #quantile
   quantile(x = ,...)
+  quantile(x = )
+  quantile(x = x)
+  quantile(x = "x")
+  quantile(x = df)
 #quasi
   quasi(x = ,...)
+  quasi(link = ,variance = )
+  quasi(link = x,variance = )
+  quasi(link = x,variance = x)
+
+  quasi(link = "x",variance = )
+  quasi(link = df,variance = )
+
 #quasibinomial
   quasibinomial(x = ,...) 
+  quasibinomial(link = )
+  quasibinomial(link = x)
+  quasibinomial(link = "x")
+  quasibinomial(link = df)
 #quasipoisson
   quasipoisson(x = ,...)
+  quasipoisson(link = )
+  quasipoisson(link = x)
+  quasipoisson(link = "x")
+    quasipoisson(link = df)
+
+
+  
 #qunif
   qunif(x = ,min = ,max = ,lower.tail = ,log.p = )
+  qunif(p = ,min = ,max = ,lower.tail = ,log.p = )
+  qunif(p = x,min = ,max = ,lower.tail = ,log.p = )
+  qunif(p = x,min = x,max = ,lower.tail = ,log.p = )
+  qunif(p = x,min = x,max = x,lower.tail = ,log.p = )
+  qunif(p = x,min = x,max = x,lower.tail = x,log.p = )
+  qunif(p = x,min = x,max = x,lower.tail = x,log.p = x)
+  qunif(p = "x",min = ,max = ,lower.tail = ,log.p = )
+  qunif(p = df,min = ,max = ,lower.tail = ,log.p = )
+
 #qweibull
   qweibull(x = ,shape = ,scale = ,lower.tail = ,log.p = )
+  qweibull(p = ,shape = ,scale = ,lower.tail = ,log.p = )
+  qweibull(p = x,shape = ,scale = ,lower.tail = ,log.p = )
+  qweibull(p = x,shape = x,scale = ,lower.tail = ,log.p = )
+  qweibull(p = x,shape = x,scale = x,lower.tail = ,log.p = )
+  qweibull(p = x,shape = x,scale = x,lower.tail = x,log.p = )
+  qweibull(p = x,shape = x,scale = x,lower.tail = x,log.p = x)
+  qweibull(p = "x",shape = x,scale = x,lower.tail = x,log.p = x)
+  qweibull(p = df,shape = x,scale = x,lower.tail = x,log.p = x)
+  
 #qwilcox
   qwilcox(x = ,m = ,n = ,lower.tail = ,log.p = )
+  qwilcox(p = ,m = ,n = ,lower.tail = ,log.p = )
+  qwilcox(p = x,m = ,n = ,lower.tail = ,log.p = )
+  qwilcox(p = x,m = x,n = ,lower.tail = ,log.p = )
+  qwilcox(p = x,m = x,n = x,lower.tail = ,log.p = )
+  qwilcox(p = x,m = x,n = x,lower.tail = x,log.p = )
+  qwilcox(p = x,m = x,n = x,lower.tail = x,log.p = x)
+  qwilcox(p = "x",m = x,n = x,lower.tail = x,log.p =  x)
+  qwilcox(p = df,m = x,n = x,lower.tail = x,log.p =  x)
 #r2dtable
   r2dtable(x = ,...)
+  r2dtable(n = ,r = ,c = )
+  r2dtable(n = x,r = ,c = )
+  r2dtable(n = x,r = x,c = )
+  r2dtable(n = x,r = x,c = x)
+  r2dtable(n = "x",r = x,c = x)
+  r2dtable(n = df,r = x,c = x)
+  
 #rbeta
   rbeta(x = ,shape1 = ,shape2 = ,ncp = )
+  rbeta(n = ,shape1 = ,shape2 = ,ncp = )
+  rbeta(n = x,shape1 = ,shape2 = ,ncp = )
+  rbeta(n = x,shape1 =x ,shape2 = ,ncp = )
+  rbeta(n = x,shape1 =x ,shape2 =x ,ncp = )
+  rbeta(n = x,shape1 =x ,shape2 =x ,ncp = x)
+  rbeta(n = "x",shape1 =x ,shape2 =x ,ncp = x)
+  rbeta(n = df,shape1 =x ,shape2 =x ,ncp = x)
+  
 #rbinom
   rbinom(x = ,size = ,prob = )
+  rbinom(n = ,size = ,prob = )
+  rbinom(n = x,size = ,prob = )
+  rbinom(n = x,size = x,prob = )
+  rbinom(n = x,size = x,prob = x)
+  rbinom(n = "x",size = x,prob = x)
+  rbinom(n = df,size = x,prob = x)
 #rcauchy
   rcauchy(x = ,location = ,scale = )
+  rcauchy(n = ,location = ,scale = )
+  rcauchy(n = x,location = ,scale = )
+  rcauchy(n = x,location = x,scale = )
+  rcauchy(n = x,location = x,scale = x)
+  rcauchy(n = "x",location = x,scale = x)
+  rcauchy(n = df,location = x,scale = x)
 #rchisq
   rchisq(x = ,df = ,ncp = )
+  rchisq(n = ,df = ,ncp = x)
+  rchisq(n = x,df = ,ncp = x)
+  rchisq(n = x,df = x,ncp = x)
+  rchisq(n = x,df = df,ncp = x)
+  rchisq(n = df,df = df,ncp = x)
+  rchisq(n = "df",df = df,ncp = x)
 #read.ftable
   read.ftable(x = ,...)
-#rect.hclust
+  read.ftable(file = ,sep = ,quote = ,row.var.names = ,col.vars = ,skip = )
+  read.ftable(file = x,sep = ,quote = ,row.var.names = ,col.vars = ,skip = )
+  read.ftable(file = "/Users/aizawaharuka/Documents/GitHub",sep = x,quote = ,row.var.names = ,col.vars = ,skip = )
+  read.ftable(file = "/Users/aizawaharuka/Documents/GitHub",sep = x,quote = x,row.var.names = ,col.vars = ,skip = )
+  read.ftable(file = "/Users/aizawaharuka/Documents/GitHub",sep = x,quote = x,row.var.names = x,col.vars = ,skip = )
+  read.ftable(file = "/Users/aizawaharuka/Documents/GitHub",sep = x,quote = x,row.var.names = x,col.vars = x,skip = )
+  read.ftable(file = "/Users/aizawaharuka/Documents/GitHub",sep = x,quote = x,row.var.names = x,col.vars = x,skip = x)
+  read.ftable(file = "/Users/aizawaharuka/Documents/GitHub",sep = x,quote = x,row.var.names = true,col.vars = x,skip = x)
+
+  #rect.hclust
   rect.hclust(x = ,...)
+  rect.hclust(tree = ,k = ,which = ,x = ,h = ,border = ,cluster = )
+  rect.hclust(tree =x ,k = ,which = ,x = ,h = ,border = ,cluster = )
+  rect.hclust(tree =x ,k = ,which = ,x = ,h = ,border = ,cluster = )
+  rect.hclust(tree =x ,k = x,which = ,x = ,h = ,border = ,cluster = )
+  rect.hclust(tree =x ,k = ,which = x,x = ,h = ,border = ,cluster = )
+  rect.hclust(tree =x ,k = ,which = ,x = x,h = ,border = ,cluster = )
+  rect.hclust(tree =x ,k = ,which = ,x = ,h = x,border = ,cluster = )
+  rect.hclust(tree =x ,k = ,which = ,x = ,h = ,border = x,cluster = )
+  rect.hclust(tree =x ,k = ,which = ,x = ,h = ,border = ,cluster = x)
+  rect.hclust(tree ="x" ,k = ,which = ,x = ,h = ,border = ,cluster = )
+  rect.hclust(tree =df ,k = ,which = ,x = ,h = ,border = ,cluster = )
+  
 #reformulate
   reformulate(x = ,...)
+  reformulate(termlabels = ,response = ,intercept = ,env = )
+  reformulate(termlabels =x ,response = ,intercept = ,env = )
+  reformulate(termlabels =x ,response = x,intercept = ,env = )
+  reformulate(termlabels =x ,response = x,intercept = x,env = )
+  reformulate(termlabels =x ,response = x,intercept = x,env = x)
+  reformulate(termlabels ="x" ,response = x,intercept = x,env = x)
+  reformulate(termlabels =df ,response = x,intercept = x,env = x)
 #relevel
   relevel(x = ,...)
+  relevel(x = ,ref = )
+  relevel(x = x,ref = )
+  relevel(x = x,ref = x)
+  relevel(x = df,ref = x)
+  relevel(x = "df",ref = x)
 #reorder
   reorder(x = ,...)
+  reorder(x = x)
+  reorder(x = df)
+  reorder(x = "df")
 #replications
   replications(x = ,...)
+  replications(formula = ,data = ,na.action = )
+  replications(formula = x,data = ,na.action = )
+  replications(formula = x,data = x,na.action = )
+  replications(formula = x,data = x,na.action = x)
+  replications(formula = "x",data = x,na.action = "na.fail")
+  replications(formula = df,data = x,na.action = "na.fail")
 #reshape
   reshape(x = ,...)
+  reshape(data = ,varying = ,v.names = ,timevar = ,idvar = ,ids = ,times = ,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = ,v.names = ,timevar = ,idvar = ,ids = ,times = ,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = ,timevar = ,idvar = ,ids = ,times = ,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = ,idvar = ,ids = ,times = ,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = ,ids = ,times = ,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = ,times = ,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = ,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = ,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = x,direction = ,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = x,direction = x,new.row.names = ,sep = ,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = x,direction = x,new.row.names = x,sep = ,split = )  
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = x,direction = x,new.row.names = x,sep = x,split = )
+  reshape(data = x,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = x,direction = x,new.row.names = x,sep = x,split = x)
+  reshape(data = "x",varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = x,direction = x,new.row.names = x,sep = x,split = x)
+  reshape(data = df,varying = x,v.names = x,timevar = x,idvar = x,ids = x,times = x,drop = x,direction = x,new.row.names = x,sep = x,split = x)
+  
 #resid
   resid(x = ,...)
+  resid(object = x)
+  resid(object = df)
+  resid(object = "x")
+  
 #residuals
   residuals(x = ,...)
+  residuals(object = x)
+  residuals(object = df)
+  residuals(object = "df")
 #residuals.glm
   residuals.glm(x = ,...)
+  residuals.glm(object = ,type = )
+  residuals.glm(object = x,type = )
+  residuals.glm(object = x,type = "df")
+  residuals.glm(object = x,type = x)
+  residuals.glm(object = df,type = x)
+  residuals.glm(object = "df",type = x)
+
 #residuals.lm
   residuals.lm(x = ,...)
+  residuals.lm(object = ,type = )
+  residuals.lm(object = x,type = )
+  residuals.lm(object = x,type = "df")
+  residuals.lm(object = x,type = x)
+  residuals.lm(object = df,type = x)
 #rexp
   rexp(x = ,rate = )
+  rexp(n = ,rate = )
+  rexp(n = x,rate = )
+  rexp(n = x,rate = x)
+  rexp(n = "x",rate = x)
+  rexp(n = df,rate = x)
+
 #rf
   rf(x = ,df1 = ,df2 = ,ncp = ) 
+  rf(n = ,df1 = ,df2 = ,ncp = )
+  rf(n=x,df1 = ,df2 = ,ncp = )
+  rf(n=x,df1 = x,df2 = ,ncp = )
+  rf(n=x,df1 = x,df2 = x,ncp = )
+  rf(n=x,df1 = x,df2 = x,ncp = x)
+  rf(n="x",df1 = x,df2 = x,ncp = x)
+  rf(n=df,df1 = x,df2 = x,ncp = x)
+  
 #rgamma
   rgamma(x = ,shape = ,rate = )
+  rgamma(n = ,shape = ,rate = ,scale = )
+  rgamma(n = x,shape = ,rate = ,scale = )
+  rgamma(n = x,shape = x,rate = ,scale = )
+  rgamma(n = x,shape = x,rate = x,scale = )
+  rgamma(n = x,shape = x,rate = ,scale = x)
+  rgamma(n = "x",shape = x,rate = ,scale = x)
+  rgamma(n = df,shape = x,rate = ,scale = x)
+
 #rgeom
   rgeom(x = ,prob = )
+  rgeom(n = ,prob = )
 #rhyper
   rhyper(x = ,m = ,n = ,k = )
+  rhyper(nn = ,m = ,n = ,k =)
 #rlnorm
   rlnorm(x = ,meanlog = ,sdlog = )
+  rlnorm(n = ,meanlog = ,sdlog = )
+  rlnorm(n = x,meanlog = ,sdlog = )
+  rlnorm(n = x,meanlog = x,sdlog = )
+  rlnorm(n = x,meanlog = x,sdlog = x)
+  rlnorm(n = "x",meanlog = x,sdlog = x)
+  rlnorm(n = df,meanlog = x,sdlog = x)
 #rlogis
-rlogis(n = ,location = ,scale = )
+  rlogis(n = ,location = ,scale = )
+  rlogis(n = ,location = ,scale = )
+  rlogis(n = x,location = ,scale = )
+  rlogis(n = x,location = x,scale = )
+  rlogis(n = df,location = x,scale = )
+  rlogis(n = "df",location = x,scale = )
 #rmultinom
   rmultinom(x = ,size = ,prob = )
+  rmultinom(n = ,size = ,prob = )
+  rmultinom(n =x ,size = ,prob = )
+  rmultinom(n =x ,size = x,prob = )
+  rmultinom(n =x ,size = x,prob = x)
+  rmultinom(n =x ,size = x,prob = )
+  rmultinom(n =x ,size = x,prob = x)
+  rmultinom(n ="x" ,size = x,prob = x)
+  rmultinom(n =df ,size = x,prob = x)
 #rnbinom
   rnbinom(x = ,size = ,prob = ) 
-#rnorm
+  rnbinom(n = ,size = ,prob = ,mu = )
+  rnbinom(n = x,size = ,prob = ,mu = )
+  rnbinom(n = x,size = x,prob = ,mu = )
+  rnbinom(n = x,size = x,prob = x,mu = )
+  rnbinom(n = x,size = x,prob = ,mu = x)
+  rnbinom(n = "x",size = x,prob = ,mu = x)
+  rnbinom(n = df,size = x,prob = ,mu = x)
+
+  #rnorm
   rnorm(x = ,mean = ,sd = )
+  rnorm(n = ,mean = ,sd = )
+  rnorm(n = "x",mean = ,sd = )
+  rnorm(n = x,mean = x,sd = )
+  rnorm(n = x,mean = ,sd = x)
+  rnorm(n = df,mean = ,sd = x)
+  rnorm(n = df,mean = df,sd = x)
+  rnorm(n = x,mean = df,sd = df)
+  
 #rpois
   rpois(x = ,lambda = )
+  rpois(n = ,lambda = x)
+  rpois(n = x,lambda = )
+  rpois(n = x,lambda = x)
+  rpois(n = "x",lambda = x)
+  rpois(n = "x",lambda = "x")
+  rpois(n = df,lambda = "x")
+
+  
 #rsignrank
   rsignrank(x = ,n = )
-#rstandard
+  rsignrank(nn = ,n = x)
+  rsignrank(nn = x,n = x)
+  rsignrank(nn = "x",n = x)
+  rsignrank(nn = x,n = "x")
+  rsignrank(nn = x,n = df)
+  rsignrank(nn = df,n = df)
+
+  #rstandard
   rstandard(x = ,...) 
+  rstandard(model = x)
+rstandard(model = df)
+rstandard("x")  
 #rstudent
   rstudent(x = ,...)
+  rstudent(model = x)
+  rstudent(model = df)
+  rstudent(model = "x")
 #rt
   rt(x = ,df = ,ncp = ) 
+  rt(n = ,df = ,ncp = )
+  rt(n = x,df = ,ncp = )
+  rt(n = ,df = x,ncp = )
+  rt(n = ,df = ,ncp = x)
 #runif
   runif(x = ,min = ,max = )
+  runif(n = x,min = ,max = )
+  runif(n = x,min = x,max = )
+  runif(n = x,min = ,max = x)
 #runmed
   runmed(x = ,...)
+  runmed(x = ,k = ,endrule = ,algorithm = ,na.action = ,print.level = )  
+  runmed(x = x ,k = ,endrule = ,algorithm = ,na.action = ,print.level = )
+  runmed(x = x ,k = 3,endrule = ,algorithm = ,na.action = ,print.level = )
+  runmed(x = x ,k = ,endrule = "test",algorithm = ,na.action = ,print.level = )
+  runmed(x = x ,k = ,endrule = ,algorithm = "test",na.action = ,print.level = )
+  runmed(x = x ,k = ,endrule = ,algorithm = ,na.action = "test",print.level = )
+  runmed(x = x ,k = ,endrule = ,algorithm = ,na.action = ,print.level = "test")
+
 #rweibull
   rweibull(x = x,shape = ,scale = )
   rweibull(x = ,shape = x,scale = )
@@ -4609,14 +5601,14 @@ rlogis(n = ,location = ,scale = )
   
 #spec.pgram
   spec.pgram(x = ,...)
-spec.pgram(x = x,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = ,plot = ,na.action = )
-spec.pgram(x = 4,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = ,plot = ,na.action = )
-spec.pgram(x = x,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = ,plot = ,na.action = 4)
-spec.pgram(x = x,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = 4,plot = ,na.action = )
+  spec.pgram(x = x,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = ,plot = ,na.action = )
+  spec.pgram(x = 4,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = ,plot = ,na.action = )
+  spec.pgram(x = x,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = ,plot = ,na.action = 4)
+  spec.pgram(x = x,spans = ,kernel = ,taper = ,pad = ,fast = ,demean = ,detrend = 4,plot = ,na.action = )
 #spec.taper
   spec.taper(x = ,...)
-spec.taper(x = ,p = x)  
-spec.taper(x = ,p = 0)  
+  spec.taper(x = ,p = x)  
+  spec.taper(x = ,p = 0)  
 ##spec.taper(x = x,p = 0)  
 
 #spectrum
@@ -4641,13 +5633,13 @@ spec.taper(x = ,p = 0)
   splinefun(x = "x",y = ,method = ,ties = x)
   #splinefunH
   splinefunH(x = ,...)
-splinefunH(x = x,y = ,m = )  
-splinefunH(x = x,y = x,m = )  
-splinefunH(x = x,y = x,m = x)  
-splinefunH(x = x,y = x,m = true)  
-splinefunH(x = x,y = x,m = TRUE)  
-splinefunH(x = TRUE,y = x,m = x)  
-splinefunH(x = x,y = TRUE,m = )  
+  splinefunH(x = x,y = ,m = )  
+  splinefunH(x = x,y = x,m = )  
+  splinefunH(x = x,y = x,m = x)  
+  splinefunH(x = x,y = x,m = true)  
+  splinefunH(x = x,y = x,m = TRUE)  
+  splinefunH(x = TRUE,y = x,m = x)  
+  splinefunH(x = x,y = TRUE,m = )  
 
 #SSasymp
   SSasymp(x = ,...)
@@ -4687,7 +5679,7 @@ splinefunH(x = x,y = TRUE,m = )
   SSbiexp(input = "test",A1 = x,lrc1 = x,A2 = x,lrc2 = x)
   SSbiexp(input = x,A1 = x,lrc1 = "test",A2 = x,lrc2 = x)
   SSbiexp(input = x,A1 = "test",lrc1 = x,A2 = x,lrc2 = x)
-    SSbiexp(input = x,A1 = x,lrc1 = "test",A2 = x,lrc2 = x)
+  SSbiexp(input = x,A1 = x,lrc1 = "test",A2 = x,lrc2 = x)
   SSbiexp(input = x,A1 = x,lrc1 = x,A2 = "test",lrc2 = x)
   SSbiexp(input = x,A1 = x,lrc1 = x,A2 = x,lrc2 = "test")
 
@@ -4696,46 +5688,156 @@ splinefunH(x = x,y = TRUE,m = )
   SSbiexp(input = x,A1 = ,lrc1 = x,A2 =,lrc2 = )
   SSbiexp(input = ,A1 = ,lrc1 = x,A2 = ,lrc2 = )
   SSbiexp(input =x ,A1 = ,lrc1 = ,A2 = ,lrc2 = )
-SSbiexp(x = 3)
+  SSbiexp(x = 3)
   SSbiexp(x = f,...)
 #SSD
-SSD(x = 4)
+  SSD(x = 4)
   SSD(x =x)
   SSD(x = x,...)
+
 #SSfol
   SSfol(x = ,...)
+  SSfol(Dose = ,input = ,lKe = ,lKa = ,lCl = )
+  SSfol(Dose = x,input = ,lKe = ,lKa = ,lCl = )
+  SSfol(Dose = x,input = x,lKe = ,lKa = ,lCl = )
+  SSfol(Dose = x,input = x,lKe = x,lKa = ,lCl = )
+  SSfol(Dose = x,input = x,lKe = x,lKa = x,lCl = )
+  SSfol(Dose = x,input = x,lKe = x,lKa = x,lCl = x)
+
 #SSfpl
   SSfpl(x = ,...)
-#SSgompertz
+SSfpl(input = ,A = ,B = ,xmid = ,scal = x)
+SSfpl(input = ,A = ,B = x,xmid = ,scal = x)
+SSfpl(input = ,A =x,B = x,xmid = ,scal = x)
+SSfpl(input = ,A = ,B = ,xmid = x,scal = x)
+SSfpl(input = ,A = ,B = ,xmid = ,scal = x)
+SSfpl(input = ,A = ,B = ,xmid = ,scal = "x")
+SSfpl(input = ,A = ,B = ,xmid = "x",scal = x)
+
+  #SSgompertz
   SSgompertz(x = ,...)
+  SSgompertz(x = ,Asym = ,b2 = ,b3 = )
+  SSgompertz(x = ,Asym = ,b2 = ,b3 = x)
+  SSgompertz(x = x,Asym = ,b2 = ,b3 = x)
+  SSgompertz(x = x,Asym = ,b2 = x,b3 = x)
+  SSgompertz(x = x,Asym = "x",b2 = x,b3 = x)
 #SSlogis
   SSlogis(x = ,...)
-#SSmicmen
+  SSlogis(input = ,Asym = ,xmid = ,scal = x)
+  SSlogis(input = ,Asym = ,xmid = x,scal = x)
+  SSlogis(input = x,Asym = ,xmid = x,scal = x)
+  SSlogis(input = x,Asym = "x",xmid = x,scal = x)
+  
+  #SSmicmen
   SSmicmen(x = ,...)
-#SSweibull
+  SSmicmen(input = ,Vm = ,K = x)
+  SSmicmen(input = ,Vm =x,K = x)
+  SSmicmen(input ="x" ,Vm =x ,K = x)
+  SSmicmen(input = df,Vm = x,K = x)
+  SSmicmen(input = x,Vm = df,K = x)
+  
+  #SSweibull
   SSweibull(x = ,...)
+SSweibull(x = ,Asym = ,Drop = ,lrc = ,pwr = x)
+SSweibull(x = x,Asym = ,Drop = ,lrc = x,pwr = )
+SSweibull(x = ,Asym = ,Drop = x,lrc = x,pwr = x)
+SSweibull(x = x,Asym = x,Drop = x,lrc = x,pwr = x)
+SSweibull(x = x,Asym = x,Drop = x,lrc = x,pwr = "x")
+SSweibull(x = x,Asym = x,Drop = x,lrc = "x",pwr = x)
+SSweibull(x = x,Asym = x,Drop = "x",lrc = x,pwr = x)
+SSweibull(x = x,Asym = "x",Drop = x,lrc = x,pwr = x)
+SSweibull(x = "x",Asym = x,Drop = x,lrc = x,pwr = x)
+
+  
 #start
   start(x = ,...) 
-#stat.anova
+start(df)
+  #stat.anova
   stat.anova(x = ,...)
-#step
+  stat.anova(table = ,test = ,scale = ,df.scale = ,n = )
+  stat.anova(table = x,test = ,scale = ,df.scale = ,n = )
+  stat.anova(table = df,test = x,scale = ,df.scale = ,n = )
+  
+
+  #step
   step(x = ,...)
+  step(object = ,scope = ,scale = ,direction = ,trace = ,keep = ,steps = ,k = )
+  step(object = x,scope = ,scale = ,direction = ,trace = ,keep = ,steps = ,k = )
+  step(object = x,scope = x,scale = ,direction = ,trace = ,keep = ,steps = ,k = )
+  step(object = x,scope = ,scale = x,direction = ,trace = ,keep = ,steps = ,k = )
+  step(object = x,scope = ,scale = ,direction = x,trace = ,keep = ,steps = ,k = )
+  step(object = x,scope = ,scale = ,direction = ,trace = x,keep = ,steps = ,k = )
+  step(object = x,scope = ,scale = ,direction = ,trace = ,keep = x,steps = ,k = )
+  step(object = x,scope = ,scale = ,direction = ,trace = ,keep = ,steps = x,k = )
+  step(object = x,scope = ,scale = ,direction = ,trace = ,keep = ,steps = ,k = x)
+  
 #stepfun
   stepfun(x = ,...)
+  stepfun(x = ,y = ,f = ,ties = ,right = )
+  stepfun(x = x,y = ,f = ,ties = ,right = )
+  stepfun(x = x,y = x,f = ,ties = ,right = )
+  stepfun(x = x,y = x,f = x,ties = ,right = )
+  stepfun(x = x,y = x,f = ,ties = "test",right = )
+  stepfun(x = x,y = x,f = ,ties = ,right = "test")
+  stepfun(x = x,y = x,f = ,ties = ,right = x)
+  stepfun(x = x,y = x,f = ,ties = x,right = )
+  stepfun(x = x,y = x,f = ,ties = ,right = x)
+
 #stl
   stl(x = ,...)
+  stl(x = ,s.window = ,s.degree = ,t.window = ,t.degree = ,l.window = ,l.degree = ,s.jump = ,t.jump = ,l.jump = ,robust = ,inner = ,outer = )
+  stl(x = x,s.window = ,s.degree = ,t.window = ,t.degree = ,l.window = ,l.degree = ,s.jump = ,t.jump = ,l.jump = ,robust = ,inner = ,outer = )
+  stl(x = x,s.window = x,s.degree = ,t.window = ,t.degree = ,l.window = ,l.degree = ,s.jump = ,t.jump = ,l.jump = ,robust = ,inner = ,outer = )
+  stl(x = 1,s.window = ,s.degree = ,t.window = ,t.degree = ,l.window = ,l.degree = ,s.jump = ,t.jump = ,l.jump = ,robust = ,inner = ,outer = x)
 #StructTS
   StructTS(x = ,...)
-#summary.aov
+  StructTS(x = ,type = ,init = ,fixed = ,optim.control = x)
+  StructTS(x =x ,type = ,init = ,fixed = ,optim.control = x)
+  StructTS(x =x ,type = x,init = ,fixed = ,optim.control = x)
+  StructTS(x =x ,type = ,init = x,fixed = ,optim.control = x)
+  StructTS(x =x ,type = ,init = ,fixed = x,optim.control = x)
+  
+  #summary.aov
   summary.aov(x = ,...)
-#summary.glm
+  summary.aov(object = ,intercept = ,split = ,expand.split = ,keep.zero.df = x)
+  summary.aov(object = x,intercept = ,split = ,expand.split = ,keep.zero.df = x)
+  summary.aov(object = x,intercept = x,split = ,expand.split = ,keep.zero.df = x)
+  summary.aov(object = x,intercept = x,split = x,expand.split = ,keep.zero.df = x)
+  summary.aov(object = x,intercept = x,split = x,expand.split = x,keep.zero.df = x)
+
+  
+  #summary.glm
   summary.glm(x = ,...)
-#summary.lm
+  summary.glm(object = ,dispersion = ,correlation = ,symbolic.cor = x)
+  summary.glm(object = x,dispersion = ,correlation = ,symbolic.cor = "x")
+  summary.glm(object = x,dispersion = x,correlation = ,symbolic.cor = x)
+  summary.glm(object = x,dispersion = x,correlation = x,symbolic.cor = x)
+
+
+  #summary.lm
 summary.lm(object = ,correlation = ,symbolic.cor = )
+summary.lm(object = ,correlation = ,symbolic.cor = x)
+summary.lm(object = x,correlation = ,symbolic.cor = "x")
+summary.lm(object = x,correlation = x,symbolic.cor = )
+summary.lm(object = x,correlation = x,symbolic.cor = x)
+summary.lm(object = x,correlation = x,symbolic.cor = "x")
+summary.lm(object = x,correlation = "x",symbolic.cor = )
+summary.lm(object = x,correlation = "x",symbolic.cor = x)
+summary.lm(object = x,correlation = "x",symbolic.cor = "x")
+summary.lm(object = "x",correlation = x,symbolic.cor = )
+
 #summary.manova
 summary.manova(object = ,test = ,intercept = ,tol = )
+summary.manova(object = x,test = ,intercept = ,tol = )
+summary.manova(object = x,test = x,intercept = ,tol = )
+summary.manova(object = x,test = ,intercept = x,tol = )
+summary.manova( object = x,test = ,intercept = ,tol = x)
+
 #summary.stepfun
 summary.stepfun(x = ,...)
+summary.stepfun(object = x)
+summary.stepfun(df)
+summary.stepfun("x")
 #supsmu
 supsmu(x = ,...)
 supsmu(x = ,y = ,wt = ,span = ,periodic = ,bass = ,trace = x)
@@ -4752,7 +5854,7 @@ supsmu(x = x,y = df,wt = x,span = x,periodic = x,bass = x,trace = x)
 supsmu(x = x,y = x,wt = df,span = x,periodic = x,bass = x,trace = x)
 supsmu(x = x,y = x,wt = x,span = df,periodic = x,bass = x,trace = x)
 
-#symnum
+  #symnum
 symnum(x = ,...)
 symnum(x = x,cutpoints = ,symbols = ,legend = ,na = ,eps = ,numeric.x = ,corr = ,show.max = ,show.min = ,abbr.colnames = ,lower.triangular = ,diag.lower.tri = )
 symnum(x = x,cutpoints = x,symbols = ,legend = ,na = ,eps = ,numeric.x = ,corr = ,show.max = ,show.min = ,abbr.colnames = ,lower.triangular = ,diag.lower.tri = )
