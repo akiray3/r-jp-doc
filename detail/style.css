@@ -256,18 +256,23 @@ body {
 }
 
 .arg-hover-horizon {
-  width: 100%;
+  width: fit-content;
 }
 
 @media screen and (max-width: 420px) {
   .arg-hover-horizon {
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+
+
   }
 }
 @media screen and (min-width: 420px) {
   .arg-hover-horizon {
-    display: grid;
-    grid-template-columns: 3fr 4fr 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
   }
 }
 
@@ -275,29 +280,34 @@ body {
   #arg-hoverblock {
     display: flex;
     flex-wrap: nowrap;
+    width: fit-content;
   }
 }
 @media screen and (min-width: 420px) {
   #arg-hoverblock {
     display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
   }
 }
 
 /*引数*/
 .argblock {
   display: inline-block;
+
 }
 
 @media screen and (max-width: 420px) {
   .argcol {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-left: 0%;
   }
 }
 @media screen and (min-width: 420px) {
   .argcol {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     margin-left: 3%;
   }
@@ -305,9 +315,8 @@ body {
 
 @media screen and (max-width: 420px) {
   .funcFrame {
-    flex-grow: 1;
     height: 100%;
-    width: 100%;
+    width: fit-content;
   }
   .funcName {
     font-size: var(--font-size-xxl);
@@ -316,8 +325,8 @@ body {
 }
 @media screen and (min-width: 420px) {
   .funcFrame {
-    flex-grow: 1;
     height: 100%;
+    width: fit-content;
   }
   .funcName {
     font-size: var(--font-size-xl);
@@ -327,7 +336,7 @@ body {
 
 /*引数の説明ホバー*/
 .hoverFrame {
-  width: 100%;
+  width: fit-content;
   margin-top: 24%;
   margin-right: 1%;
 }
@@ -508,4 +517,9 @@ body {
   transform: translateX(0%);
   font-size: 23px;
   width: fit-content;
+}
+
+/*error入力*/
+.errorInput {
+  background-color: #7a5940;
 }
