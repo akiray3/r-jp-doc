@@ -398,3 +398,47 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//error検索
+const errorFilePath = "../errorlist.json";
+fetch(errorFilePath)
+  .then((response) => response.json())
+  .then((jsondata) => {
+    
+    document
+      .getElementById("errorCopy")
+      .addEventListener("input", function (event) {
+        const text = event.target.value;
+        if (text === "") {
+          if (document.querySelector(".option")) {
+            const completeErrorList = document.querySelectorAll(".option");
+            completeErrorList.forEach(function (item) {
+              const completeList = document.getElementById("autoCompleteError");
+              completeList.removeChild(item);
+            });
+          }
+        } else {
+          const resultError = getCompleteError(text);
+          displayMatchError(resultError);
+        }
+      });
+
+      function getCompleteError(input) {
+        const ErrorList = jsondata.map((item) => item.error);
+        const Error = ErrorList.filter(function (option) {
+          return option.toLowerCase().includes(input.toLowerCase());
+        });
+        return Error;
+        console.log(Error);
+      }
+      function displayMatchError(result) {
+        const completeErrorList = document.getElementById("autoCompleteError");
+        completeErrorList.innerHTML = "";
+        result.forEach(function (item) {
+          const option = document.createElement("li");
+          option.className = "option";
+          option.textContent = item;
+          completeErrorList.appendChild(option);
+        });
+      }
+  });

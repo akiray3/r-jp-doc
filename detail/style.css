@@ -257,6 +257,7 @@ body {
 
 .arg-hover-horizon {
   width: fit-content;
+  margin: 6%;
 }
 
 @media screen and (max-width: 420px) {
