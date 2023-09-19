@@ -2,20 +2,6 @@
 
 df <- data.frame(x = 1:10, y = 11:20)
 
-result <- tryCatch({
-  base::lm(y ~ x, data = df)
-}, error = function(e) {
-  e
-})
-
-if (inherits(result, "error")) {
-  error_message <- as.character(result)
-  error_df <- data.frame(Error_Message = error_message)
-  write.csv(error_df, file = "/Users/aizawaharuka/Documents/GitHub/名称未設定/deletefuture/エラーの内容.csv", row.names = FALSE)
-} else {
-  # エラーが発生しなかった場合の処理
-}
-
 
 #-
 
@@ -4823,33 +4809,80 @@ class(x = df)
 `class<-`(df)
 #clearPushBack
 clearPushBack(connection = )
+clearPushBack(connection = x)
+clearPushBack(connection = "x")
+clearPushBack(connection = df)
 #close
 close(con = )
+close(con = x)
+close(con = "x")
+close(con = df)
 #close.connection
 close.connection(con = )
+close.connection(con = x)
+close.connection(con = "x")
+close.connection(con = df)
 
 #close.srcfile
 close.srcfile(con = )
+close.srcfile(con = x)
+close.srcfile(con = "x")
+close.srcfile(con = df)
 #close.srcfilealias
 close.srcfilealias(con = )
+close.srcfilealias(con = x)
+close.srcfilealias(con = "x")
+close.srcfilealias(con = df)
 #closeAllConnections
 closeAllConnections(all = )
+closeAllConnections(all = x)
+closeAllConnections(all = "x")
+closeAllConnections(all = df)
 #col
 col(x = )
+col(x = x)
+col(x = "x")
+col(x = df)
 #colMeans
 colMeans(x = ,na.rm = )
+colMeans(x = x,na.rm = )
+colMeans(x = x,na.rm = x)
+colMeans(x = x,na.rm = df)
+colMeans(x = df,na.rm = df)
+colMeans(x = "df",na.rm = df)
+
 #colnames
 colnames(x = )
+colnames(x = x)
+colnames(x = "x")
+colnames(x = df)
 #colnames<-
 `colnames<-`(x = ,value = )
+`colnames<-`(x)
+`colnames<-`("x")
+`colnames<-`(df)
 #colSums
 colSums(x = ,na.rm = )
+colSums(x = x,na.rm = )
+colSums(x = x,na.rm = x)
+colSums(x = x,na.rm = df)
+colSums(x = df,na.rm = df)
+colSums(x = "df",na.rm = df)
 #commandArgs
 commandArgs(trailingOnly = )
+commandArgs(trailingOnly = x)
+commandArgs(trailingOnly = "x")
+commandArgs(trailingOnly = df)
 #comment
 comment(object = )
+comment(x = )
+comment(x = x)
+comment(x = "x")
+comment(x = df)
 #comment<-
 `comment<-`(object = ,value = )
+`comment<-`(x)
+
 #complex
 complex(real = ,imag = ,length.out = ,imaginary = ,modulus = ,argument = )
 #computeRestarts

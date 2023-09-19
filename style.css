@@ -28,7 +28,8 @@ body {
 .loaded {
   opacity: 0;
   visibility: hidden;
-} /* HTML: <div class="loader"></div> */
+} 
+/* HTML: <div class="loader"></div> */
 .loader {
   width: 30px;
   aspect-ratio: 0.577;

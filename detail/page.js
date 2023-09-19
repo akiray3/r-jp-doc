@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const returnfuncpage = document.querySelector(".rturnfunc");
     const returnhref = document.getElementById("funcListBack");
     const packname = jsondata.filter((item) => item.func === keyword);
-    returnhref.href = `/r-jp-doc/infopage/${packname.pack}.html`;
+    returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
     returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
     //全体関数ブロック
@@ -442,3 +442,4 @@ fetch(errorFilePath)
         });
       }
   });
+
