@@ -1,3 +1,7 @@
+const loaddingGrey = document.querySelector("#loading");
+window.addEventListener("load", () => {
+  loaddingGrey.classList.add("loaded");
+});
 const allMenu = document.querySelector(".tagmenu");
 if (allMenu) {
   allMenu.style.display = "none";
@@ -46,11 +50,6 @@ const titleid = titletag.id;
 const WindowSize = window.innerWidth;
 console.log(WindowSize);
 
-const path = titleid + ".json";
-const request = new XMLHttpRequest();
-request.open("GET", path, true);
-request.send();
-
 function groupBy(obj, key) {
   return obj.reduce((abc, xyz) => {
     const match = xyz[key];
@@ -60,12 +59,11 @@ function groupBy(obj, key) {
   }, {});
 }
 
-fetch("../help_db_jpn_main.json")
+fetch("db_main_add.json")
   .then((response) => response.json())
   .then((jsondata) => {
     const packFilter = jsondata.filter((item) => item.pack === titleid);
     const groupbyDes = groupBy(packFilter, "Description");
-
     const keys = Object.keys(groupbyDes);
 
     keys.forEach((element) => {
@@ -75,11 +73,15 @@ fetch("../help_db_jpn_main.json")
       const filterDes = packFilter.filter(
         (item) => item.Description === element
       );
+
       const FilterDesFunclist = filterDes.map((item) => item.func);
       FilterDesFunclist.forEach((element) => {
         const div = document.createElement("div");
         div.className = "lineitem";
-        div.id = element;
+        if (filterDes[0].tag) {
+          div.classList.add(filterDes[0].tag);
+        }
+
         div.style.display = "inline-block";
         div.style.fill = "none";
 
@@ -95,6 +97,7 @@ fetch("../help_db_jpn_main.json")
 
         const txttag = document.createElement("button");
         txttag.className = "ToDetailButton";
+        txttag.id = filterDes[0].tag;
 
         txttag.style.border = "none";
 
@@ -141,7 +144,9 @@ fetch("../help_db_jpn_main.json")
       });
       const descriptionBox = document.createElement("div");
       descriptionBox.className = "descriptionBox";
+
       descriptionBox.textContent = element;
+      descriptionBox.classList.add(filterDes[0].tag);
       keyframe.appendChild(descriptionBox);
     });
   });
@@ -174,3 +179,25 @@ $("#pageTop a").click(function () {
   );
   return false;
 });
+
+//絞り込み機能
+function selectFunction(event, tagid) {
+  const notTag = document.querySelectorAll(`.lineitem:not(.${tagid})`);
+  notTag.forEach((element) => {
+    element.style.display = "none";
+  });
+  const Tag = document.querySelectorAll(`.lineitem.${tagid}`);
+  Tag.forEach((element) => {
+    element.style.display = "inline-block";
+  });
+  const notDescription = document.querySelectorAll(
+    `.descriptionBox:not(.${tagid})`
+  );
+  notDescription.forEach((element) => {
+    element.style.display = "none";
+  });
+  const Description = document.querySelectorAll(`.descriptionBox.${tagid}`);
+  Description.forEach((element) => {
+    element.style.display = "block";
+  });
+}

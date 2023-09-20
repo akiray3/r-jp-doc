@@ -1,3 +1,8 @@
+const loading = document.querySelector("#loading");
+window.addEventListener("load", () => {
+  loading.classList.add("loaded");
+});
+
 /*__ githubサーバー上と、ローカル上で必要なパスが異なる。githubサーバー上でのみ必要になるパスをここに定義。ローカルでテストするときには空にしておくこととする _______________________*/
 
 /*"../r-jp-doc"*/
@@ -21,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const returnfuncpage = document.querySelector(".rturnfunc");
     const returnhref = document.getElementById("funcListBack");
     const packname = jsondata.filter((item) => item.func === keyword);
-    returnhref.href = `/r-jp-doc/infopage/${packname.pack}.html`;
+    returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
     returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
     //全体関数ブロック
@@ -74,10 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (WindowSize <= 395) {
         const funcnametxt = document.createTextNode(keyword);
         const funcstart = document.createElement("text");
-        funcstart.className = "txt";
+        funcstart.className = "FuncstartTxt";
         const funcstarttxt = document.createTextNode("(");
-        funcstart.style.fontFamily =
-          "Hiragino Maru Gothic ProN, YuGoshic,sans-serif";
         funcstart.style.display = "flex";
         funcstart.style.marginRight = "10px";
         funcname.appendChild(funcnametxt);
@@ -155,15 +158,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       funcframe.appendChild(funcname);
 
-      for (let b = 0; b <= 50; b++) {
-        if (arg["arguments" + b]) {
-        }
-      }
       //hover size
-      const hovinfo = document.querySelectorAll(".hover");
-      for (let i = 0; i < hovinfo.length; i++) {
-        hovinfo[i].style.height = `${heightblock + 20}px`;
-      }
+      const heightblock = argblock.clientHeight;
+      const hovinfo = document.querySelectorAll(".hoverFrame");
+      hovinfo.style.height = `${heightblock + 20}px`;
 
       if (arg["arguments1"]) {
         const alltxt = document.querySelectorAll(".txt");
@@ -400,3 +398,48 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//error検索
+const errorFilePath = "../errorlist.json";
+fetch(errorFilePath)
+  .then((response) => response.json())
+  .then((jsondata) => {
+    
+    document
+      .getElementById("errorCopy")
+      .addEventListener("input", function (event) {
+        const text = event.target.value;
+        if (text === "") {
+          if (document.querySelector(".option")) {
+            const completeErrorList = document.querySelectorAll(".option");
+            completeErrorList.forEach(function (item) {
+              const completeList = document.getElementById("autoCompleteError");
+              completeList.removeChild(item);
+            });
+          }
+        } else {
+          const resultError = getCompleteError(text);
+          displayMatchError(resultError);
+        }
+      });
+
+      function getCompleteError(input) {
+        const ErrorList = jsondata.map((item) => item.error);
+        const Error = ErrorList.filter(function (option) {
+          return option.toLowerCase().includes(input.toLowerCase());
+        });
+        return Error;
+        console.log(Error);
+      }
+      function displayMatchError(result) {
+        const completeErrorList = document.getElementById("autoCompleteError");
+        completeErrorList.innerHTML = "";
+        result.forEach(function (item) {
+          const option = document.createElement("li");
+          option.className = "option";
+          option.textContent = item;
+          completeErrorList.appendChild(option);
+        });
+      }
+  });
+

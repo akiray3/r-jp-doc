@@ -19,7 +19,12 @@
   />
 </head>
 <body>
-  <div style="width: 100%">
+  <!--ローディング-->
+  <div id="loading">
+    <div class="loader"></div>
+  </div>
+  <!--検索ボックス-->
+  <div style="width: 100%; margin: 2%; margin-top: 3%">
     <form id="search" action="/r-jp-doc/search.html" method="get">
       <input
         type="text"
@@ -28,18 +33,14 @@
         placeholder="キーワードを入力"
       />
       <button type="submit" id="reserch">
-        <img
-          src="www/magnifying-glass-duotone.svg"
-          alt="SVG"
-          id="magnifying-glass-duotone"
-        />
+        <img alt="SVG" id="magnifying-glass-duotone" />
       </button>
       <div id="autocomplete">
         <ul id="autocompletelist"></ul>
       </div>
     </form>
   </div>
-
+  <!--コンテンツ本体-->
   <div style="width: 100%">
     <div class="sec_inner">
       <div id="base_sec_inner">
@@ -101,47 +102,69 @@
           >
         </nav>
       </div>
-      <div
-        class="border-box"
-        style="
-          position: fixed;
-          right: 0;
-          top: 0;
-          width: 70%;
-          transform: translatex(-35px);
-        "
-      >
+      <div class="border-box" id="stats_borderbox">
         <div class="slick-slider" id="stats_slider"></div>
       </div>
     </div>
   </div>
 
   <script>
+    const magnifyingGlass = document.querySelector("#magnifying-glass-duotone");
+    const dark = window.matchMedia("(prefers-color-scheme:dark)");
+    function changeGlass(d) {
+      if (d.matches) {
+        magnifyingGlass.setAttribute(
+          "src",
+          "www/magnifying-glass-duotone-white.svg"
+        );
+      } else {
+        magnifyingGlass.setAttribute("src", "www/magnifying-glass-duotone.svg");
+      }
+    }
+    dark.addEventListener("change", changeGlass);
+    changeGlass(dark);
+    const loading = document.querySelector("#loading");
+    window.addEventListener("load", () => {
+      loading.classList.add("loaded");
+    });
     const list = ["base", "graphics", "psych", "stats"];
     const windowSize = window.innerWidth;
     list.forEach(function (item) {
-      fetch(`infopage/${item}.json`)
+      fetch(`infopage/db_main_add.json`)
         .then((response) => response.json())
         .then((jsondata) => {
           const slideblock = document.querySelector(`#${item}_slider`);
-          console.log(slideblock);
-          for (let i = 0; i < jsondata.length; i++) {
-            if (jsondata[i].svg) {
+          const matchData = jsondata.filter((data) => data.pack === item);
+          for (let i = 0; i < matchData.length; i++) {
+            if (matchData[i].svg) {
               const slide = document.createElement("div");
               slide.className = "slick-slide";
               slide.id = item + "_slide_" + i;
               const slide_link = document.createElement("a");
+              slide_link.className = "slide_link_href";
               slide_link.href = "/r-jp-doc/detail/detailpage.html";
               slide.addEventListener("click", (event) => {
                 event.preventDefault();
-                window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${jsondata[i].funcname}`;
+                window.location.href = `/r-jp-doc/detail/detailpage.html?keyword=${matchData[i].func}`;
               });
               const imgbox = document.createElement("img");
               imgbox.classList.add("lazyload");
-              imgbox.setAttribute("data-lazy", `www/` + jsondata[i].svg);
-              imgbox.style.height = "200px";
+              const darkMode = window.matchMedia("(prefers-color-scheme:dark)");
+              console.log(matchData[i].svg_white);
+              function changeDarkMode(d) {
+                if (d.matches) {
+                  imgbox.setAttribute(
+                    "data-lazy",
+                    `www/${matchData[i].svg_white}`
+                  );
+                } else {
+                  imgbox.setAttribute("data-lazy", `www/${matchData[i].svg}`);
+                }
+              }
+              darkMode.addEventListener("change", changeDarkMode);
+              changeDarkMode(darkMode);
               const funcnametxt = document.createElement("p");
-              const fnnametxt = document.createTextNode(jsondata[i].funcname);
+              const fnnametxt = document.createTextNode(matchData[i].func);
               funcnametxt.appendChild(fnnametxt);
               slide_link.appendChild(imgbox);
               slide.appendChild(slide_link);

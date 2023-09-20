@@ -15,9 +15,77 @@ CSS記述の順番
   --font-size-xxl: clamp(2.44rem, 4.17vw + 1.4rem, 4.74rem);
   --font-size-xxxl: clamp(3.05rem, 5.93vw + 1.57rem, 6.31rem);
 }
+
+/*====== ローディング ======*/
+#loading {
+  transition: all 1s;
+  background-color: #ddd;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+} /* HTML: <div class="loader"></div> */
+.loader {
+  width: 30px;
+  aspect-ratio: 0.577;
+  color: #000;
+  display: grid;
+  background: linear-gradient(currentColor 0 0) top / 100% 1px,
+    linear-gradient(currentColor 0 0) bottom/100% 1px,
+    linear-gradient(
+        to bottom right,
+        #0000 calc(50% - 2px),
+        currentColor calc(50% - 1px),
+        #0000 50%
+      )
+      top/100% calc(100% + 2px),
+    linear-gradient(
+        to bottom left,
+        #0000 calc(50% - 2px),
+        currentColor calc(50% - 1px),
+        #0000 50%
+      )
+      top/100% calc(100% + 2px);
+  background-repeat: no-repeat;
+  animation: l17 4s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: inherit;
+  border: inherit;
+  animation: inherit;
+}
+.loader::after {
+  animation-duration: 2s;
+}
+@keyframes l17 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*====== 本体 ======*/
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #192200;
+    color: #e6dcb6;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .returnlink {
+    color: #243d25;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .returnlink {
     color: #e6dcb6;
   }
 }
@@ -125,9 +193,8 @@ CSS記述の順番
   width: 100%;
   display: flex;
   flex-wrap: wrap;
- 
 }
-.tagmenu{
+.tagmenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,10 +211,19 @@ CSS記述の順番
   stroke: #243d25;
   stroke-miterlimit: 10;
   stroke-width: 1;
-  font-size: var(--font-size-base);
   border: 1px solid #00000000;
-  transform: translate(21.529px, 57.832px);
   position: relative;
+}
+@media screen and (max-width: 395px) {
+  .namebox {
+    font-size: var(--font-size-sm);
+  }
+}
+@media screen and (min-width: 395px) {
+  .namebox {
+    font-size: var(--font-size-lg);
+    transform: translate(21.529px, 57.832px);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -163,9 +239,23 @@ CSS記述の順番
   user-select: none;
   overflow-wrap: anywhere;
   font-family: "ArialRoundedMTBold";
-  background-size: cover;
-  background-position: right;
-  position: absolute;
+}
+
+@media screen and (max-width: 395px) {
+  .ToDetailButton {
+    background-size: 10rem;
+    background-position: center;
+    position: inline-block;
+    height: fit-content;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 395px) {
+  .ToDetailButton {
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+  }
 }
 .ToDetailButton:hover {
   background-color: #afab93;
@@ -178,13 +268,13 @@ CSS記述の順番
   text-align: center;
   overflow: hidden;
   height: fit-content;
-  width: 10vw;
+  width: fit-content;
   margin: 5px;
   border-radius: 9.194px;
   stroke: #243d25;
   stroke-miterlimit: 10;
   stroke-width: 0.5;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   background-color: #00000000;
   border: 0.5px solid #000;
 }
@@ -200,24 +290,31 @@ CSS記述の順番
   .lineitem {
     display: inline-block;
     width: 100%;
-    height: 120px;
   }
+
   .namebox {
-    width: 345.045px;
-    height: 100.0124px;
     stroke: rgb(66, 22, 104);
   }
-  .ToDetailButton {
-    width: 274.045px;
-    height: 100.124px;
+  @media (prefers-color-scheme: dark) {
+    .namebox {
+      stroke: #e6dcb6;
+    }
+    .ToDetailButton {
+      color: #e6dcb6;
+      -webkit-text-stroke: 0px #e6dcb6;
+      border: 1px solid #00000000;
+      background-color: #e6dcb61f;
+    }
   }
 }
 
 @media screen and (min-width: 395px) {
   .lineitem {
+    display: inline-block;
     width: 289px;
     height: 125px;
   }
+
   .namebox {
     width: 274.045px;
     height: 100.124px;
@@ -248,8 +345,19 @@ CSS記述の順番
 }
 .descriptionBox {
   margin: 4%;
-  font-size: var(--font-size-sm);
   text-align: center;
+}
+@media screen and (max-width: 395px) {
+  .descriptionBox {
+    font-size: var(--font-size-bese);
+    margin-bottom: 12%;
+  }
+}
+
+@media screen and (min-width: 395px) {
+  .descriptionBox {
+    font-size: var(--font-size-sm);
+  }
 }
 
 #pageTop a {

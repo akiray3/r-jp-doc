@@ -23,6 +23,11 @@
   <script src="page.js" defer></script>
 </head>
 <body>
+<!--ローディング-->
+<div id="loading">
+  <div class="loader"></div>
+</div>
+
   <div class="menu" style="display: flex; margin-left: 20px">
     <p>></p>
     <p><a href="../../r-jp-doc/index.html" class="returnlink">homeへ</a></p>
@@ -38,10 +43,14 @@
         <div class="funcFrame">
           <div class="funcName"></div>
         </div>
-        <div class="argblock" >
-          <div class="argcol"></div>
+        <div id = "arg-hoverblock">
+          <div class="argblock" >
+            <div class="argcol"></div>
+          </div>
+          <div class="hoverFrame"></div>
         </div>
-        <div class="hoverFrame"></div>
+        
+        
       </div>
     </div>
   </div>
@@ -99,6 +108,13 @@
     
   </div>
 
-
+<div>
+  <div class = "errorInput">
+    <input type="text" id="errorCopy" name="errorをコピペしてください">
+  <div id = "errorAutocomplete">
+    <ul id="autoCompleteError"></ul>
+  </div>
+  </div>
+</div>
   
 </body>

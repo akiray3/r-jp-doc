@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.28 203.27">
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.13 107.05">
   <defs>
     <style>
       .cls-1 {
         font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
-        font-size: 166.75px;
+        font-size: 87px;
+        stroke: #fff;
+        stroke-miterlimit: 10;
       }
     </style>
   </defs>
   <g id="_レイヤー_1-2" data-name="レイヤー 1">
-    <text class="cls-1" transform="translate(38.27 146.74)"><tspan x="0" y="0">∮</tspan></text>
+    <text class="cls-1" transform="translate(4.56 77.06)"><tspan x="0" y="0">∮</tspan></text>
   </g>
 </svg>

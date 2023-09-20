@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.07 191.67">
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.07 202.17">
   <defs>
     <style>
       .cls-1 {
-        stroke-width: 5px;
-      }
-
-      .cls-1, .cls-2 {
         fill: none;
         stroke: #000;
         stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        stroke-width: 4px;
+        stroke-width: 13px;
       }
     </style>
   </defs>
   <g id="_レイヤー_1-2" data-name="レイヤー 1">
-    <rect class="cls-2" x="5.54" y="35.1" width="82" height="112.79"/>
-    <line class="cls-1" x1="46.54" y1="147.89" x2="46.54" y2="191.67"/>
-    <line class="cls-1" x1="46.54" y1="35.1" x2="46.54" y2="3.46"/>
-    <line class="cls-1" y1="2.5" x2="93.07" y2="2.5"/>
-    <line class="cls-1" x1="5.54" y1="101.44" x2="87.53" y2="101.44"/>
+    <text/>
+    <rect class="cls-1" x="9.57" y="39.1" width="82" height="112.79"/>
+    <line class="cls-1" x1="50.57" y1="151.89" x2="50.57" y2="195.67"/>
+    <line class="cls-1" x1="50.57" y1="39.1" x2="50.57" y2="7.46"/>
+    <line class="cls-1" x1="4.03" y1="6.5" x2="97.1" y2="6.5"/>
+    <line class="cls-1" x1="4.03" y1="195.67" x2="97.1" y2="195.67"/>
+    <line class="cls-1" x1="9.57" y1="105.44" x2="91.57" y2="105.44"/>
   </g>
 </svg>

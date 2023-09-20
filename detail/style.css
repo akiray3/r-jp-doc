@@ -13,6 +13,64 @@ CSS記述の順番
   --font-size-xxl: clamp(2.44rem, 4.17vw + 1.4rem, 4.74rem);
   --font-size-xxxl: clamp(3.05rem, 5.93vw + 1.57rem, 6.31rem);
 }
+
+/*====== ローディング ======*/
+#loading {
+  transition: all 1s;
+  background-color: #ddd;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+} /* HTML: <div class="loader"></div> */
+.loader {
+  width: 30px;
+  aspect-ratio: 0.577;
+  color: #000;
+  display: grid;
+  background: linear-gradient(currentColor 0 0) top / 100% 1px,
+    linear-gradient(currentColor 0 0) bottom/100% 1px,
+    linear-gradient(
+        to bottom right,
+        #0000 calc(50% - 2px),
+        currentColor calc(50% - 1px),
+        #0000 50%
+      )
+      top/100% calc(100% + 2px),
+    linear-gradient(
+        to bottom left,
+        #0000 calc(50% - 2px),
+        currentColor calc(50% - 1px),
+        #0000 50%
+      )
+      top/100% calc(100% + 2px);
+  background-repeat: no-repeat;
+  animation: l17 4s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: inherit;
+  border: inherit;
+  animation: inherit;
+}
+.loader::after {
+  animation-duration: 2s;
+}
+@keyframes l17 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*======　本体　=======*/
 body {
   overflow-x: hidden;
 }
@@ -22,6 +80,17 @@ body {
     color: #e6dcb6;
   }
 }
+@media (prefers-color-scheme: light) {
+  .returnlink {
+    color: #192200;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .returnlink {
+    color: #e6dcb6;
+  }
+}
+
 .menu {
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
@@ -56,32 +125,72 @@ body {
   align-items: center;
 }
 .funcName {
-  margin-left: 2%;
+  margin: 2%;
   flex: 0 0 auto;
   font-size: var(--font-size-xxxl);
+  position: sticky;
+  top: 5rem;
 }
 
 .arg-hover-horizon {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 5fr 6fr;
+  width: fit-content;
+  margin: 6%;
+}
+
+@media screen and (max-width: 420px) {
+  .arg-hover-horizon {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 420px) {
+  .arg-hover-horizon {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #arg-hoverblock {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 420px) {
+  #arg-hoverblock {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+  }
 }
 
 /*引数*/
 .argblock {
   display: inline-block;
 }
-.argcol {
-  display: flex;
-  flex-direction: column;
-  margin-left: 23%;
+
+@media screen and (max-width: 420px) {
+  .argcol {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 420px) {
+  .argcol {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin:6%;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .funcFrame {
-    flex-grow: 1;
-    height: 100%;
-    width: 100%;
+    width: fit-content;
   }
   .funcName {
     font-size: var(--font-size-xxl);
@@ -90,8 +199,7 @@ body {
 }
 @media screen and (min-width: 420px) {
   .funcFrame {
-    flex-grow: 1;
-    height: 100%;
+    width: fit-content;
   }
   .funcName {
     font-size: var(--font-size-xl);
@@ -101,8 +209,9 @@ body {
 
 /*引数の説明ホバー*/
 .hoverFrame {
+  width: fit-content;
   margin-top: 24%;
-  margin-right: 12%;
+  margin-right: 1%;
 }
 
 .hover {
@@ -113,6 +222,8 @@ body {
   font-size: var(--font-size-base);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
+  position: sticky;
+  top: 5rem;
 }
 @keyframes fadein {
   from {
@@ -123,6 +234,11 @@ body {
   }
 }
 /*引数*/
+.FuncstartTxt {
+  font-size: var(--font-size-xxl);
+  font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+}
 .txt {
   font-size: var(--font-size-lg);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "Franklin Gothic Medium",
@@ -183,8 +299,7 @@ body {
       color: #e6dcb6;
     }
   }
-    
-  
+
   .tab::after {
     position: static;
 
@@ -199,9 +314,9 @@ body {
     transform: scaleX(0);
     transform-origin: right top;
   }
-  @media(prefers-color-scheme:dark){
-    .tab::after{
-      background-color:#e6dcb6;
+  @media (prefers-color-scheme: dark) {
+    .tab::after {
+      background-color: #e6dcb6;
     }
   }
   .tab::after {
@@ -258,7 +373,7 @@ body {
   margin-top: -18px;
 }
 .funclast {
-  font-size: 48px;
+  font-size: var(--font-size-xxl);
   font-family: "Hiragino Maru Gothic ProN", "YuGoshic", sans-serif;
   display: flex 0 0 auto;
   margin-right: 10px;
@@ -275,4 +390,29 @@ body {
   transform: translateX(0%);
   font-size: 23px;
   width: fit-content;
+}
+
+/*error入力*/
+@media screen and (prefers-color-scheme: light) {
+  .errorInput {
+    background-color: #2a5249;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .errorInput {
+    background-color: #611f1c;
+  }
+}
+@media screen and (prefers-color-scheme: light) {
+  #errorCopy {
+    background-color: #e6dcb6;
+    border: #611f1c;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  #errorCopy {
+    background-color: #e6dcb6;
+    border: #611f1c;
+  }
 }
