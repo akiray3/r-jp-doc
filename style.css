@@ -12,6 +12,9 @@
 }
 body {
   overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 /*====== ローディング ======*/
 
@@ -28,7 +31,7 @@ body {
 .loaded {
   opacity: 0;
   visibility: hidden;
-} 
+}
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 30px;
@@ -71,6 +74,22 @@ body {
   }
 }
 
+header {
+  margin: 2, 5rem auto 0;
+}
+
+.page-title {
+  font-family: "Martian Mono";
+  font-size: 2rem;
+  text-align: center;
+  margin: 3.2%;
+  position: center;
+}
+.page-desc {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
 /*======　検索box ======*/
 @media (prefers-color-scheme: dark) {
   body {
@@ -94,6 +113,7 @@ body {
   }
   @media (prefers-color-scheme: light) {
     #keywordbox {
+      background-color: #e6dce6;
       border: 2px solid #000;
     }
   }
@@ -101,6 +121,7 @@ body {
     #keywordbox {
       background-color: #192200;
       border: 2px solid #e6dce6;
+      color: #e6dce6;
     }
   }
 }
@@ -113,8 +134,20 @@ body {
     height: 70px;
     width: 80%;
     border-radius: 510.194px;
-    stroke: #000;
     stroke-width: 1px;
+  }
+  @media (prefers-color-scheme: light) {
+    #keywordbox {
+      background-color: #e6dce6;
+      border: 2px solid #000;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    #keywordbox {
+      background-color: #192200;
+      border: 2px solid #e6dce6;
+      color: #e6dce6;
+    }
   }
 }
 
@@ -134,12 +167,16 @@ body {
 }
 
 /*======　slick-slider ======*/
+.contents {
+  flex: 1;
+}
 .librarylink {
   -webkit-user-select: none;
   user-select: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: var(--font-size-base);
 }
+
 @media (prefers-color-scheme: dark) {
   .librarylink {
     color: #afab93;
@@ -256,7 +293,7 @@ body {
   }
   .packname {
     font-size: var(--font-size-xxl);
-    font-family: sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
   #base_sec_inner {
@@ -319,4 +356,34 @@ body {
     height: 200px;
     width: 200px;
   }
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  background-color: #afab93;
+}
+
+
+.fotter-title {
+  font-family: "Martian Mono";
+  font-size: 1.2rem;
+  margin: 4rem;
+  color: #192200;
+}
+
+.fotter-menu-title{
+  font-family:  Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 2.3rem;
+  color: #192200;
+  margin-left: 3.2rem;
+}
+.footer-nav {
+  margin-top: 0.24rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+  color: #192200;
 }

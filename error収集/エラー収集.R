@@ -4882,65 +4882,156 @@ comment(x = df)
 #comment<-
 `comment<-`(object = ,value = )
 `comment<-`(x)
+`comment<-`("x")
+`comment<-`(df)
 
 #complex
 complex(real = ,imag = ,length.out = ,imaginary = ,modulus = ,argument = )
+complex(real = x,imag = ,length.out = ,imaginary = ,modulus = ,argument = )
+complex(real = x,imag = x,length.out = ,imaginary = ,modulus = ,argument = )
+complex(real = x,imag = x,length.out = x,imaginary = ,modulus = ,argument = )
+complex(real = x,imag = x,length.out = x,imaginary = x,modulus = ,argument = )
+complex(real = x,imag = x,length.out = x,imaginary = x,modulus = x,argument = )
+complex(real = x,imag = x,length.out = x,imaginary = x,modulus = x,argument = x)
+complex(real = x,imag = x,length.out = x,imaginary = x,modulus = x,argument = df)
+complex(real = x,imag = x,length.out = x,imaginary = x,modulus = df,argument = df)
+complex(real = x,imag = x,length.out = x,imaginary = df,modulus = df,argument = df)
+complex(real = x,imag = df,length.out = x,imaginary = df,modulus = df,argument = df)
+complex(real = df,imag = df,length.out = x,imaginary = df,modulus = df,argument = df)
+complex(real = "df",imag = df,length.out = x,imaginary = df,modulus = df,argument = df)
 #computeRestarts
 computeRestarts(cond = )
+computeRestarts(cond = x)
+computeRestarts(cond = "x")
+computeRestarts(cond = df)
+
 #conditionCall
 conditionCall(condition = ,c = )
+conditionCall(c = x)
+conditionCall(c = "x")
+conditionCall(c = df)
 
 #conditionCall.condition
 conditionCall.condition(condition = ,c = )
+conditionCall.condition(c = x)
+conditionCall.condition(c = "x")
+conditionCall.condition(c = df)
 
 #conditionMessage
 conditionMessage(condition = ,c = )
+conditionMessage(c = )
+conditionMessage(c = x)
+conditionMessage(c = "x")
+conditionMessage(c = df)
+  
 #conditionMessage.condition
 conditionMessage.condition(condition = ,c = )
+conditionMessage.condition(c = )
+conditionMessage.condition(c = x)
+conditionMessage.condition(c = "x")
+conditionMessage.condition(c = df)
 #conflictRules
 conflictRules(pkg = ,mask.ok = ,exclude = )
-conflictRules(pkg = ,mask.ok = ,exclude = )
+conflictRules(pkg = x,mask.ok = ,exclude = )
+conflictRules(pkg = x,mask.ok = x,exclude = )
+conflictRules(pkg = x,mask.ok = x,exclude = x)
+conflictRules(pkg = x,mask.ok = x,exclude = df)
+conflictRules(pkg = x,mask.ok = df,exclude = df)
+conflictRules(pkg = x,mask.ok = "df",exclude = df)
+conflictRules(pkg = df,mask.ok = "df",exclude = df)
+conflictRules(pkg = "df",mask.ok = "df",exclude = df)
+
 #conflicts
 conflicts(pkg = ,mask.ok = ,exclude = )
+conflicts(where = ,detail = )
+conflicts(pkg = x,mask.ok = ,exclude = )
+conflicts(pkg = x,mask.ok = x,exclude = )
+conflicts(pkg = x,mask.ok = x,exclude = x)
+conflicts(pkg = x,mask.ok = x,exclude = df)
+conflicts(pkg = x,mask.ok = df,exclude = df)
+conflicts(pkg = x,mask.ok = "df",exclude = df)
+conflicts(pkg = df,mask.ok = "df",exclude = df)
 
 #Conj
 Conj(x = ,z = )
 Conj(z = )
+Conj(z = x)
+Conj(z = "x")
+Conj(z = df)
 
 #contributors
 contributors(pkg = ,file = )
+contributors()
+contributors(x)
+contributors("x")
+contributors(df)
 #cos
 cos(x = )
+cos(x = x)
+cos(x = "x")
+cos(x = df)
+
 #cosh
 cosh(x = )
+cosh(x = x)
+cosh(x = "x")
+cosh(x = df)
+
 #cospi
 cospi(x = )
+cospi(x = x)
+cospi(x = "x")
+cospi(x = df)
 #crossprod
 crossprod(x = ,y = )
+crossprod(x = x,y = )
+crossprod(x = x,y = x)
+crossprod(x = x,y = df)
+crossprod(x = df,y = df)
+crossprod(x = "df",y = df)
+
 #Cstack_info
 Cstack_info()
+Cstack_info(x)
+Cstack_info("x")
+Cstack_info(df)
 #cummax
 cummax(x = )
+cummax(x = x)
+cummax(x = "x")
+cummax(x = df)
 
 #cummin
 cummin(x = )
+cummin(x = x)
+cummin(x = "x")
+cummin(x = df)
+
 #cumprod
 cumprod(x = )
+cumprod(x = x)
+cumprod(x = "x")
+cumprod(x = df)
 #cumsum
-tryCatch({
-  cumsum(x = "abc")
-  
-},error = function(e){
-  e
-})
-tryCatch({
-  cumsum(x = abc)
-  
-},error = function(e){
-  e
-})
+cumsum(x = x)
+cumsum(x = )
+cumsum(x = "x")
+cumsum(x = df)
+
 #curlGetHeaders
 curlGetHeaders(url = ,handle = ,.opts = )
+curlGetHeaders(url = x,redirect = ,verify = ,timeout = ,TLS = )
+curlGetHeaders(url = x,redirect = x,verify = ,timeout = ,TLS = )
+curlGetHeaders(url = x,redirect = x,verify = x,timeout = ,TLS = )
+curlGetHeaders(url = x,redirect = x,verify = x,timeout = x,TLS = )
+curlGetHeaders(url = x,redirect = x,verify = x,timeout = x,TLS = x)
+curlGetHeaders(url = x,redirect = x,verify = x,timeout = x,TLS = df)
+curlGetHeaders(url = x,redirect = x,verify = x,timeout = df,TLS = df)
+curlGetHeaders(url = x,redirect = x,verify = df,timeout = df,TLS = df)
+curlGetHeaders(url = x,redirect = df,verify = df,timeout = df,TLS = df)
+curlGetHeaders(url = df,redirect = df,verify = df,timeout = df,TLS = df)
+curlGetHeaders(url = "df",redirect = df,verify = df,timeout = df,TLS = df)
+
 #cut
 tryCatch({
   cut(x = ,breaks = 1,labels = ,include.lowest = ,right = ,dig.lab = ,ordered_result = )},error = function(e){
@@ -4954,217 +5045,677 @@ tryCatch({cut(x = 1,breaks = 2,labels = "test",include.lowest = ,right = ,dig.la
 cut(x = 1,2,include.lowest = "TRUE")
 cut(x = 1,2,right = ,dig.lab = "test",ordered_result = )
 cut(x = 1,2,right = ,dig.lab = ,ordered_result = TEST)
+cut(x = x)
+cut(x = "x")
+cut(x = df)
 
 #cut.Date
 cut.Date(x = ,breaks = ,labels = ,start.on.monday = ,include.lowest = )
 cut.Date(x = 1,breaks = ,labels = ,start.on.monday = ,include.lowest = )
 cut.Date(x = "2023-9-3",breaks = ,labels = ,start.on.monday = ,include.lowest = )
+cut.Date(x = "2023-9-3",breaks = ,labels = ,start.on.monday = ,right = )
+cut.Date(x = "2023-9-3",breaks = x,labels = ,start.on.monday = ,right = )
+cut.Date(x = "2023-9-3",breaks = x,labels = x,start.on.monday = ,right = )
+cut.Date(x = "2023-9-3",breaks = x,labels = x,start.on.monday = x,right = )
+cut.Date(x = "2023-9-3",breaks = x,labels = x,start.on.monday = x,right = x)
+cut.Date(x = "2023-9-3",breaks = x,labels = x,start.on.monday = x,right = df)
+cut.Date(x = "2023-9-3",breaks = x,labels = x,start.on.monday = df,right = df)
+cut.Date(x = "2023-9-3",breaks = x,labels = df,start.on.monday = df,right = df)
+cut.Date(x = "2023-9-3",breaks = df,labels = df,start.on.monday = df,right = df)
+cut.Date(x = "2023-9-3",breaks = "df",labels = df,start.on.monday = df,right = df)
 
 #cut.default
 cut.default(x = ,breaks = ,labels = ,include.lowest = ,right = ,dig.lab = ,ordered_result = )
+cut.default(x = x,breaks = ,labels = ,include.lowest = ,right = ,dig.lab = ,ordered_result = )
+cut.default(x = x,breaks = x,labels = ,include.lowest = ,right = ,dig.lab = ,ordered_result = )
+cut.default(x = x,breaks = x,labels = x,include.lowest = ,right = ,dig.lab = ,ordered_result = )
+cut.default(x = x,breaks = x,labels = x,include.lowest = x,right = ,dig.lab = ,ordered_result = )
+cut.default(x = x,breaks = x,labels = x,include.lowest = x,right = x,dig.lab = ,ordered_result = )
+cut.default(x = x,breaks = x,labels = x,include.lowest = x,right = x,dig.lab = x,ordered_result = )
+cut.default(x = x,breaks = x,labels = x,include.lowest = x,right = x,dig.lab = x,ordered_result = x)
+cut.default(x = x,breaks = x,labels = x,include.lowest = x,right = x,dig.lab = x,ordered_result = df)
+cut.default(x = x,breaks = x,labels = x,include.lowest = x,right = x,dig.lab = df,ordered_result = df)
+cut.default(x = x,breaks = x,labels = x,include.lowest = x,right = x,dig.lab = df,ordered_result = TEST)
 #cut.POSIXt
 cut.POSIXt(x = ,breaks = ,labels = ,start.on.monday = ,include.lowest = )
+cut.POSIXt(x = ,breaks = ,labels = ,start.on.monday = ,right = )
+cut.POSIXt(x = x,breaks = x,labels = ,start.on.monday = ,right = )
+cut.POSIXt(x = x,breaks = x,labels = x,start.on.monday = ,right = )
+cut.POSIXt(x = x,breaks = x,labels = x,start.on.monday = x,right = )
+cut.POSIXt(x = x,breaks = x,labels = x,start.on.monday = x,right = x)
+cut.POSIXt(x = x,breaks = x,labels = x,start.on.monday = x,right = df)
+cut.POSIXt(x = x,breaks = x,labels = x,start.on.monday = df,right = df)
+cut.POSIXt(x = x,breaks = x,labels = df,start.on.monday = df,right = df)
+cut.POSIXt(x = x,breaks = df,labels = df,start.on.monday = df,right = df)
+cut.POSIXt(x = x,breaks = "df",labels = df,start.on.monday = df,right = df)
+
+
 #data.class
 data.class(x = )
+data.class(x = x)
+data.class(x = "x")
+data.class(x = df)
 #data.frame
 data.frame(...,row.names = ,check.rows = ,check.names = ,stringsAsFactors = ,fix.empty.names = )
+data.frame(row.names = x,check.rows = ,check.names = ,fix.empty.names = ,stringsAsFactors = )
+data.frame(row.names = x,check.rows = x,check.names = ,fix.empty.names = ,stringsAsFactors = )
+data.frame(row.names = x,check.rows = x,check.names = x,fix.empty.names = ,stringsAsFactors = )
+data.frame(row.names = x,check.rows = x,check.names = x,fix.empty.names = x,stringsAsFactors = )
+data.frame(row.names = x,check.rows = x,check.names = x,fix.empty.names = x,stringsAsFactors = x)
+data.frame(row.names = x,check.rows = x,check.names = x,fix.empty.names = x,stringsAsFactors = df)
+data.frame(row.names = x,check.rows = x,check.names = x,fix.empty.names = df,stringsAsFactors = df)
+data.frame(row.names = x,check.rows = x,check.names = df,fix.empty.names = df,stringsAsFactors = df)
+data.frame(row.names = x,check.rows = df,check.names = df,fix.empty.names = df,stringsAsFactors = df)
+data.frame(row.names = df,check.rows = df,check.names = df,fix.empty.names = df,stringsAsFactors = df)
+data.frame(row.names = "df",check.rows = df,check.names = df,fix.empty.names = df,stringsAsFactors = df)
+
+
 #data.matrix
 data.matrix(x = ,rownames.force = )
+data.matrix(frame = ,rownames.force = )
 #date
 date()
+date(x)
+date("x")
+date(df)
+
 #debug
 debug(fun = )
+debug(fun = x,text = ,condition = ,signature = )
+debug(fun = x,text = x,condition = ,signature = )
+debug(fun = x,text = x,condition = x,signature = )
+debug(fun = x,text = x,condition = x,signature = x)
+debug(fun = x,text = x,condition = x,signature = df)
+debug(fun = x,text = x,condition = df,signature = df)
+debug(fun = x,text = df,condition = df,signature = df)
+debug(fun = df,text = df,condition = df,signature = df)
+debug(fun = "df",text = df,condition = df,signature = df)
+
 #debuggingState
 debuggingState(fun = )
+debuggingState(on = x)
+debuggingState(on = "x")
+debuggingState(on = df)
 #debugonce
 debugonce(fun = )
+debugonce(fun = x,text = ,condition = ,signature = )
+debugonce(fun = x,text = x,condition = ,signature = )
+debugonce(fun = x,text = x,condition = x,signature = )
+debugonce(fun = x,text = x,condition = x,signature = x)
+debugonce(fun = x,text = x,condition = x,signature = df)
+debugonce(fun = x,text = x,condition = df,signature = df)
+debugonce(fun = x,text = df,condition = df,signature = df)
+debugonce(fun = df,text = df,condition = df,signature = df)
+debugonce(fun = "df",text = df,condition = df,signature = df)
 #default.stringsAsFactors
 default.stringsAsFactors()
+default.stringsAsFactors(x)
+default.stringsAsFactors("x")
+default.stringsAsFactors(df)
+
 #delayedAssign
 delayedAssign(x = ,value = ,assign.env = ,eval.env = )
+delayedAssign(x = x,value = ,eval.env = ,assign.env = )
+delayedAssign(x = x,value = x,eval.env = ,assign.env = )
+delayedAssign(x = x,value = x,eval.env = x,assign.env = )
+delayedAssign(x = x,value = x,eval.env = x,assign.env = x)
+delayedAssign(x = x,value = x,eval.env = x,assign.env = df)
+delayedAssign(x = x,value = x,eval.env = df,assign.env = df)
+delayedAssign(x = x,value = df,eval.env = df,assign.env = df)
+delayedAssign(x = df,value = df,eval.env = df,assign.env = df)
+delayedAssign(x = "df",value = df,eval.env = df,assign.env = df)
 #deparse
 deparse(x = ,nlines = ,width.cutoff = ,backtick = )
+deparse(expr =x ,width.cutoff = ,backtick = ,control = ,nlines = )
+deparse(expr =x ,width.cutoff = x,backtick = ,control = ,nlines = )
+deparse(expr =x ,width.cutoff = x,backtick = x,control = ,nlines = )
+deparse(expr =x ,width.cutoff = x,backtick = x,control = x,nlines = )
+deparse(expr =x ,width.cutoff = x,backtick = x,control = x,nlines = x)
+deparse(expr =x ,width.cutoff = x,backtick = x,control = x,nlines = df)
+deparse(expr =x ,width.cutoff = x,backtick = x,control = df,nlines = df)
+deparse(expr =x ,width.cutoff = x,backtick = df,control = df,nlines = df)
+deparse(expr =x ,width.cutoff = df,backtick = df,control = df,nlines = df)
+deparse(expr =x ,width.cutoff = "df",backtick = df,control = df,nlines = df)
+deparse(expr ="x" ,width.cutoff = "df",backtick = df,control = df,nlines = df)
+
+
 #deparse1
 deparse1(x = ,nlines = ,width.cutoff = ,backtick = )
+deparse1(expr = x,collapse = ,width.cutoff = )
+deparse1(expr = x,collapse = x,width.cutoff = )
+deparse1(expr = x,collapse = x,width.cutoff = x)
+deparse1(expr = x,collapse = x,width.cutoff = df)
+deparse1(expr = x,collapse = df,width.cutoff = df)
+deparse1(expr = x,collapse = "df",width.cutoff = df)
+deparse1(expr = "x",collapse = "df",width.cutoff = df)
 #det
 det(x = ,method = )
+det(x = )
+det(x = x)
+det(x = "x")
+det(x = df)
+
 #detach
 detach(pos = ,name = ,unload = )
+detach(name = x,pos = ,unload = ,character.only = ,force = )
+detach(name = x,pos = x,unload = ,character.only = ,force = )
+detach(name = x,pos = x,unload = x,character.only = ,force = )
+detach(name = x,pos = x,unload = x,character.only = x,force = )
+detach(name = x,pos = x,unload = x,character.only = x,force = x)
+detach(name = x,pos = x,unload = x,character.only = x,force = df)
+detach(name = x,pos = x,unload = x,character.only = df,force = df)
+detach(name = x,pos = x,unload = df,character.only = df,force = df)
+detach(name = x,pos = df,unload = df,character.only = df,force = df)
+detach(name = df,pos = df,unload = df,character.only = df,force = df)
+detach(name = "df",pos = df,unload = df,character.only = df,force = df)
 #determinant
 determinant(x = ,log = ,method = )
+determinant(x = x,logarithm = )
+determinant(x = x,logarithm = x)
+determinant(x = x,logarithm = df)
+determinant(x = df,logarithm = df)
+determinant(x = "df",logarithm = df)
+
 #determinant.matrix
 determinant.matrix(x = ,log = ,method = )
+determinant.matrix(x = x,logarithm = )
+determinant.matrix(x = x,logarithm = x)
+determinant.matrix(x = x,logarithm = df)
+determinant.matrix(x = df,logarithm = df)
+determinant.matrix(x = "df",logarithm = df)
 #dget
 dget(file = ,srcfile = )
+dget(file = x)
+dget(file = "x")
+dget(file = df)
 #diag
 diag(x = ,nrow = ,ncol = )
+diag(x = x,nrow = ,ncol = ,names = )
+diag(x = x,nrow = x,ncol = ,names = )
+diag(x = x,nrow = x,ncol = x,names = )
+diag(x = x,nrow = x,ncol = x,names = x)
+diag(x = x,nrow = x,ncol = x,names = df)
+diag(x = x,nrow = x,ncol = df,names = df)
+diag(x = x,nrow = df,ncol = df,names = df)
+diag(x = df,nrow = df,ncol = df,names = df)
+diag(x = "df",nrow = df,ncol = df,names = df)
 #diag<-
 `diag<-`(x = ,value = )
+`diag<-`()
+`diag<-`(x)
+`diag<-`("x")
+`diag<-`(df)
 #diff
 diff(x = ,lag = ,differences = ,... = )
+diff(x = x)
+diff(x = "x")
+diff(x = df)
+
+
 #diff.Date
 diff.Date(x = ,lag = ,differences = ,... = )
+diff.Date(x = x,lag = ,differences = )
+diff.Date(x = x,lag = x,differences = )
+diff.Date(x = x,lag = x,differences = x)
+diff.Date(x = x,lag = x,differences = df)
+diff.Date(x = x,lag = df,differences = df)
+diff.Date(x = x,lag = "df",differences = df)
+diff.Date(x = "df",lag = "df",differences = df)
+
 #diff.default
 diff.default(x = ,lag = ,differences = ,... = )
+diff.default(x = x,lag = ,differences = )
+diff.default(x = x,lag = x,differences = )
+diff.default(x = x,lag = x,differences = x)
+diff.default(x = x,lag = x,differences = df)
+diff.default(x = x,lag = df,differences = df)
+diff.default(x = x,lag = "df",differences = df)
+diff.default(x = "df",lag = "df",differences = df)
 #diff.difftime
 diff.difftime(x = ,lag = ,differences = ,... = )
+diff.difftime(x =x )
+diff.difftime(x ="x" )
+diff.difftime(x =df )
+
+
 #diff.POSIXt
 diff.POSIXt(x = ,lag = ,differences = ,... = )
+diff.POSIXt(x = x,lag = ,differences = )
+diff.POSIXt(x = x,lag = x,differences = )
+diff.POSIXt(x = x,lag = x,differences = x)
+diff.POSIXt(x = x,lag = x,differences = df)
+diff.POSIXt(x = x,lag = df,differences = df)
+diff.POSIXt(x = x,lag = "df",differences = df)
+diff.POSIXt(x = "df",lag = "df",differences = df)
 #difftime
 difftime(time1 = ,time2 = ,units = )
+difftime(time1 = x,time2 = ,tz = ,units = )
+difftime(time1 = x,time2 = x,tz = ,units = )
+difftime(time1 = x,time2 = x,tz = x,units = )
+difftime(time1 = x,time2 = x,tz = x,units = x)
+difftime(time1 = x,time2 = x,tz = x,units = df)
+difftime(time1 = x,time2 = x,tz = df,units = df)
+difftime(time1 = x,time2 = df,tz = df,units = df)
+difftime(time1 = x,time2 = "df",tz = df,units = df)
+difftime(time1 = "x",time2 = "df",tz = df,units = df)
+
 #digamma
 digamma(x = )
+digamma(x = x)
+digamma(x = "x")
+digamma(x = df)
 #dim
 dim(x = )
+dim(x = x)
+dim(x = "x")
+dim(x = df)
 #dim.data.frame
 dim.data.frame(x = )
+dim.data.frame(x = x)
+dim.data.frame(x = "x")
+dim.data.frame(x = df)
 #dim<-
 `dim<-`(x = ,value = )
+`dim<-`(x)
+`dim<-`("x")
+`dim<-`(df)
 #dimnames 
 dimnames(x = )
+dimnames(x = x)
+dimnames(x = "x")
+dimnames(x = df)
 #dimnames.data.frame
 dimnames.data.frame(x = )
+dimnames.data.frame(x = x)
+dimnames.data.frame(x = "x")
+dimnames.data.frame(x = df)
 #dimnames<-
 `dimnames<-`(x = ,value = )
+`dimnames<-`(x)
+`dimnames<-`("x")
+`dimnames<-`(df)
 #dimnames<-.data.frame
 dimnames<-.data.frame(x = ,value = )
+`dimnames<-.data.frame`(x)
+`dimnames<-.data.frame`("x")
+`dimnames<-.data.frame`(df)
 #dir
 dir(path = ,pattern = ,all.files = ,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
+dir(path = x,pattern = ,all.files = ,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
+dir(path = x,pattern = x,all.files = ,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
+dir(path = x,pattern = x,all.files = x,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = ,ignore.case = ,include.dirs = ,no.. = )
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = x,ignore.case = ,include.dirs = ,no.. = )
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = x,ignore.case = x,include.dirs = ,no.. = )
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = x,ignore.case = x,include.dirs = x,no.. = )
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = x,ignore.case = x,include.dirs = x,no.. = x)
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = x,ignore.case = x,include.dirs = x,no.. = df)
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = x,ignore.case = x,include.dirs = df,no.. = df)
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = x,ignore.case = df,include.dirs = df,no.. = df)
+dir(path = x,pattern = x,all.files = x,full.names = x,recursive = df,ignore.case = df,include.dirs = df,no.. = df)
+dir(path = x,pattern = x,all.files = x,full.names = df,recursive = df,ignore.case = df,include.dirs = df,no.. = df)
+dir(path = x,pattern = x,all.files = df,full.names = df,recursive = df,ignore.case = df,include.dirs = df,no.. = df)
+dir(path = x,pattern = df,all.files = df,full.names = df,recursive = df,ignore.case = df,include.dirs = df,no.. = df)
+dir(path = df,pattern = df,all.files = df,full.names = df,recursive = df,ignore.case = df,include.dirs = df,no.. = df)
+dir(path = "df",pattern = df,all.files = df,full.names = df,recursive = df,ignore.case = df,include.dirs = df,no.. = df)
 #dir.create
 dir.create(path = ,showWarnings = ,recursive = ,mode = )
+dir.create(path = x,showWarnings = ,recursive = ,mode = )
+dir.create(path = x,showWarnings = x,recursive = ,mode = )
+dir.create(path = x,showWarnings = x,recursive = x,mode = )
+dir.create(path = x,showWarnings = x,recursive = x,mode = x)
+dir.create(path = x,showWarnings = x,recursive = x,mode = df)
+dir.create(path = x,showWarnings = x,recursive = df,mode = df)
+dir.create(path = x,showWarnings = df,recursive = df,mode = df)
+dir.create(path = x,showWarnings = "df",recursive = df,mode = df)
+dir.create(path = "x",showWarnings = "df",recursive = df,mode = df)
 
 #dir.exists
 dir.exists(path = )
+dir.exists(paths = x)
+dir.exists(paths = "x")
+dir.exists(paths = df)
+
 #dirname
 dirname(path = )
+dirname(path = x)
+dirname(path = "x")
+dirname(path = df)
+
 #do.call
 do.call(what = ,args = ,quote = )
+do.call(what = x,args = ,quote = ,envir = )
+do.call(what = x,args = x,quote = ,envir = )
+do.call(what = x,args = x,quote = x,envir = )
+do.call(what = x,args = x,quote = x,envir = x)
+do.call(what = x,args = x,quote = x,envir = df)
+do.call(what = x,args = x,quote = df,envir = df)
+do.call(what = x,args = df,quote = df,envir = df)
+do.call(what = df,args = df,quote = df,envir = df)
+do.call(what = "df",args = df,quote = df,envir = df)
+
 #dontCheck
 dontCheck(pkg = )
+dontCheck(x = x)
+dontCheck(x = "x")
+dontCheck(x = df)
 #double
 double(length = )
+double(length = x)
+double(length = "x")
+double(length = df)
 #dput
 dput(x = ,file = ,control = )
+dput(x = x,file = ,control = )
+dput(x = x,file = x,control = )
+dput(x = x,file = x,control = x)
+dput(x = x,file = x,control = df)
+dput(x = x,file = df,control = df)
+dput(x = x,file = "df",control = df)
+dput(x = "x",file = "df",control = df)
 #dQuote
 dQuote(x = )
+dQuote(x = x,q = )
+dQuote(x = x,q = x)
+dQuote(x = x,q = df)
+dQuote(x = df,q = df)
+dQuote(x = "df",q = df)
 #drop
 drop(x = )
-drop(x = )
+drop(x = x)
+drop(x = "x")
+drop(x = df)
 #droplevels
 droplevels(x = )
+droplevels(x = x)
+droplevels(x = "x")
+droplevels(x = df)
 #droplevels.data.frame
 droplevels.data.frame(x = )
+droplevels.data.frame(x = x,except = ,exclude = )
+droplevels.data.frame(x = x,except = x,exclude = )
+droplevels.data.frame(x = x,except = x,exclude = x)
+droplevels.data.frame(x = x,except = x,exclude = df)
+droplevels.data.frame(x = x,except = df,exclude = df)
+droplevels.data.frame(x = x,except = "df",exclude = df)
+droplevels.data.frame(x = "x",except = "df",exclude = df)
+
 #droplevels.factor
 droplevels.factor(x = )
+droplevels.factor(x = ,exclude = )
+droplevels.factor(x = x,exclude = )
+droplevels.factor(x = x,exclude = x)
+droplevels.factor(x = x,exclude = df)
+droplevels.factor(x = df,exclude = df)
+droplevels.factor(x = "df",exclude = df)
 #dump
 dump(object = ,file = ,...)
 dump(list = ,file = ,append = ,control = ,envir = ,evaluate = )
+dump(list = x,file = ,append = ,control = ,envir = ,evaluate = )
+dump(list = x,file = x,append = ,control = ,envir = ,evaluate = )
+dump(list = x,file = x,append = x,control = ,envir = ,evaluate = )
+dump(list = x,file = x,append = x,control = x,envir = ,evaluate = )
+dump(list = x,file = x,append = x,control = x,envir = x,evaluate = )
+dump(list = x,file = x,append = x,control = x,envir = x,evaluate = x)
+dump(list = x,file = x,append = x,control = x,envir = df,evaluate = x)
+dump(list = x,file = x,append = x,control = df,envir = df,evaluate = x)
+dump(list = x,file = x,append = x,control = df,envir = df,evaluate = df)
+dump(list = x,file = x,append = x,control = df,envir = "df",evaluate = df)
+dump(list = x,file = x,append = x,control = "df",envir = "df",evaluate = df)
+dump(list = "x",file = x,append = x,control = "df",envir = "df",evaluate = "df")
+
 #duplicated
 duplicated(x = ,fromLast = )
+duplicated(x = ,incomparables = )
+duplicated(x = x,fromLast = )
+duplicated(x = x,incomparables = )
+duplicated(x = x,fromLast = x)
+duplicated(x = x,incomparables = x)
+duplicated(x = x,fromLast = df)
+duplicated(x = x,incomparables = df)
+duplicated(x = df,fromLast = df)
+duplicated(x = df,incomparables = df)
+duplicated(x = "df",fromLast = df)
+duplicated(x = "df",incomparables = df)
 #duplicated.array
 duplicated.array(x = ,fromLast = )
+duplicated.array(x = ,incomparables = ,MARGIN = ,fromLast = )
+duplicated.array(x = x,incomparables = ,MARGIN = ,fromLast = )
+duplicated.array(x = x,incomparables = x,MARGIN = ,fromLast = )
+duplicated.array(x = x,incomparables = x,MARGIN = x,fromLast = )
+duplicated.array(x = x,incomparables = x,MARGIN = x,fromLast = x)
+duplicated.array(x = x,incomparables = x,MARGIN = x,fromLast = df)
+duplicated.array(x = x,incomparables = x,MARGIN = df,fromLast = df)
+duplicated.array(x = x,incomparables = df,MARGIN = df,fromLast = df)
+duplicated.array(x = x,incomparables = "df",MARGIN = df,fromLast = df)
+duplicated.array(x = "x",incomparables = "df",MARGIN = df,fromLast = df)
 #duplicated.data.frame
 duplicated.data.frame(x = ,fromLast = )
+duplicated.data.frame(x = ,incomparables = ,fromLast = )
+duplicated.data.frame(x = x,fromLast = )
+duplicated.data.frame(x = x,incomparables = ,fromLast = )
+duplicated.data.frame(x = x,fromLast = x)
+duplicated.data.frame(x = x,incomparables = x,fromLast = x)
+duplicated.data.frame(x = x,fromLast = df)
+duplicated.data.frame(x = x,incomparables = df,fromLast = df)
+duplicated.data.frame(x = df,fromLast = df)
+duplicated.data.frame(x = df,incomparables = df,fromLast = df)
+duplicated.data.frame(x = "df",fromLast = df)
+duplicated.data.frame(x = "df",incomparables = df,fromLast = df)
 #duplicated.default
 duplicated.default(x = ,fromLast = )
+duplicated.default(x = ,incomparables = ,fromLast = ,nmax = )
+duplicated.default(x = x,fromLast = )
+duplicated.default(x = x,incomparables = ,fromLast = ,nmax = )
+duplicated.default(x = x,fromLast = x)
+duplicated.default(x = x,incomparables = x,fromLast = x,nmax = )
+duplicated.default(x = x,fromLast = df)
+duplicated.default(x = x,incomparables = df,fromLast = df,nmax = )
+duplicated.default(x = df,fromLast = df)
+duplicated.default(x = df,incomparables = df,fromLast = df,nmax = )
+duplicated.default(x = "df",fromLast = df)
+duplicated.default(x = "df",incomparables = df,fromLast = df,nmax = )
+
 #duplicated.matrix
 duplicated.matrix(x = ,fromLast = )
+duplicated.matrix(x = ,incomparables = ,MARGIN = ,fromLast = )
+duplicated.matrix(x = x,fromLast = )
+duplicated.matrix(x = x,incomparables = ,MARGIN = ,fromLast = )
+duplicated.matrix(x = x,fromLast = x)
+duplicated.matrix(x = x,incomparables = x,MARGIN = ,fromLast = )
+duplicated.matrix(x = x,incomparables = x,MARGIN = x,fromLast = )
+duplicated.matrix(x = x,incomparables = x,MARGIN = x,fromLast = x)
+duplicated.matrix(x = x,incomparables = x,MARGIN = x,fromLast = df)
+duplicated.matrix(x = x,incomparables = x,MARGIN = df,fromLast = df)
+duplicated.matrix(x = x,incomparables = df,MARGIN = df,fromLast = df)
+duplicated.matrix(x = x,incomparables = "df",MARGIN = df,fromLast = df)
+duplicated.matrix(x = "x",incomparables = "df",MARGIN = df,fromLast = df)
 #duplicated.numeric_version
 duplicated.numeric_version(x = ,fromLast = )
+duplicated.numeric_version(x = ,incomparables = )
+duplicated.numeric_version(x = x,fromLast = )
+duplicated.numeric_version(x = x,incomparables = )
+duplicated.numeric_version(x = x,fromLast = x)
+duplicated.numeric_version(x = x,incomparables = x)
+duplicated.numeric_version(x = x,fromLast = df)
+duplicated.numeric_version(x = x,incomparables = df)
+duplicated.numeric_version(x = df,fromLast = df)
+duplicated.numeric_version(x = df,incomparables = df)
+duplicated.numeric_version(x = "df",fromLast = df)
+duplicated.numeric_version(x = "df",incomparables = df)
 #duplicated.POSIXlt
 duplicated.POSIXlt(x = ,fromLast = )
+duplicated.POSIXlt(x = ,incomparables = )
+duplicated.POSIXlt(x = x,fromLast = )
+duplicated.POSIXlt(x = x,incomparables = )
+duplicated.POSIXlt(x = x,fromLast = x)
+duplicated.POSIXlt(x = x,incomparables = x)
+duplicated.POSIXlt(x = x,fromLast = df)
+duplicated.POSIXlt(x = x,incomparables = df)
+duplicated.POSIXlt(x = df,fromLast = df)
+duplicated.POSIXlt(x = df,incomparables = df)
+duplicated.POSIXlt(x = "df",fromLast = df)
+duplicated.POSIXlt(x = "df",incomparables = df)
+
 #duplicated.warnings
 duplicated.warnings(x = ,fromLast = )
+duplicated.warnings(x = ,incomparables = )
+duplicated.warnings(x = x,fromLast = )
+duplicated.warnings(x = x,incomparables = )
+duplicated.warnings(x = x,fromLast = x)
+duplicated.warnings(x = x,incomparables = x)
+duplicated.warnings(x = x,fromLast = df)
+duplicated.warnings(x = x,incomparables = df)
+duplicated.warnings(x = df,fromLast = df)
+duplicated.warnings(x = df,incomparables = df)
+duplicated.warnings(x = "df",fromLast = df)
+duplicated.warnings(x = "df",incomparables = df)
 #dyn.load
 dyn.load(file = ,local = )
+dyn.load(x = ,local = ,now = )
+dyn.load(file = x,local = )
+dyn.load(file = x,local = x,now = )
+dyn.load(file = x,local = x,now = x)
+dyn.load(file = x,local = x,now = df)
+dyn.load(file = x,local = df,now = df)
+dyn.load(file = df,local = df,now = df)
+dyn.load(file = "df",local = df,now = df)
+
 #dyn.unload
 dyn.unload(file = )
+dyn.unload(x = )
+dyn.unload(file = x)
+dyn.unload(file = "x")
+dyn.unload(file = df)
+
 #dynGet
 dynGet(x = ,envir = )
+dynGet(x = ,ifnotfound = ,minframe = ,inherits = )
 #eapply
 eapply(env = ,FUN = ,...,inherits = )
+eapply(env = ,FUN = ,all.names = ,USE.NAMES = )
 #eigen
 eigen(x = ,only.values = ,EISPACK = )
+eigen(x = ,symmetric = ,only.values = ,EISPACK = )
 #emptyenv
+emptyenv()
 emptyenv()
 #enc2native
 enc2native(x = )
+enc2native(x = )
 #enc2utf8
+enc2utf8(x = )
 enc2utf8(x = )
 #encodeString
 encodeString(x = ,to = ,sub = )
+encodeString(x = ,width = ,quote = ,na.encode = ,justify = )
 #Encoding
+Encoding(x = )
 Encoding(x = )
 
 #Encoding<-
 `Encoding<-`(x = ,value = )
+`Encoding<-`()
 #endsWith
 endsWith(x = ,suffix = ,ignore.case = )
+endsWith(x = ,suffix = )
 #enquote
 enquote(x = )
+enquote(cl = )
 #env.profile
 env.profile(env = ,all.names = ,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = ,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = )
 #environment
+environment(fun = )
 environment(fun = )
 #environment<-
 `environment<-`(fun = ,value = )
+`environment<-`()
 #environmentIsLocked
 environmentIsLocked(fun = )
+environmentIsLocked(env = )
 #environmentName
 environmentName(fun = )
+environmentName(env = )
 #errorCondition
 errorCondition(condition = ,c = )
+errorCondition(message = ,class = ,call = )
 
 #eval
 eval(expr = ,envir = ,enclos = )
+eval(expr = ,envir = ,enclos = )
 #eval.parent
+eval.parent(expr = ,n = )
 eval.parent(expr = ,n = )
 #evalq
 evalq(expr = ,envir = ,enclos = )
+evalq(expr = ,envir = ,enclos = )
 #exists
 exists(x = ,where = ,frame = )
+exists(x = ,where = ,envir = ,frame = ,mode = ,inherits = )
 #exp
+exp(x = )
 exp(x = )
 #expand.grid
 expand.grid(...)
+expand.grid(KEEP.OUT.ATTRS = ,stringsAsFactors = )
 #expm1
+expm1(x = )
 expm1(x = )
 #expression
 expression(...)
+expression()
 #extSoftVersion
 extSoftVersion(pkg = )
+extSoftVersion()
 #F
 F()
+F
 #factor
 factor(x = ,levels = ,labels = ,exclude = )
+factor(x = ,levels = ,labels = ,exclude = ,ordered = ,nmax = )
 #factorial
 factorial(x = )
+factanal(x = ,factors = ,data = ,covmat = ,n.obs = ,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
 #fifo
 fifo(path = )
+fifo(description = ,open = ,blocking = ,encoding = )
 #file
 file(description = ,open = ,encoding = ,compression = ,close = )
+file(description = ,open = ,blocking = ,encoding = ,raw = ,method = )
 #file.access
 file.access(path = ,mode = )
+file.access(names = ,mode = )
 #file.append
 file.append(file = ,text = )
+file.append(file1 = ,file2 = )
 #file.choose
+file.choose(new = )
 file.choose(new = )
 #file.copy
 file.copy(from = ,to = ,overwrite = ,recursive = ,copy.mode = ,copy.date = )
+file.copy(from = ,to = ,overwrite = ,recursive = ,copy.mode = ,copy.date = )
 #file.create
 file.create(...)
+file.create(showWarnings = )
 #file.exists
 file.exists(file = )
+file.exists()
 #file.info
 file.info(file = )
+file.info(extra_cols = )
 #file.link
+file.link(from = ,to = )
 file.link(from = ,to = )
 #file.mode
 file.mode(file = )
+file.mode()
 #file.mtime
 file.mtime(file = )
+file.mtime()
 #file.path
 file.path(...)
+file.path(fsep = )
 file.path(fsep = )
 
 #file.remove
@@ -5172,30 +5723,41 @@ file.remove(...)
 file.remove()
 #file.rename
 file.rename(from = ,to = )
+file.rename(from = ,to = )
 #file.show
 file.show(file = ,header = ,delete.file = )
+file.show(header = ,title = ,delete.file = ,pager = ,encoding = )
 #file.size
 file.size(file = )
+file.size()
 #file.symlink
+file.symlink(from = ,to = )
 file.symlink(from = ,to = )
 #Filter
 Filter(f = ,x = )
+Filter(f = ,x = )
 #Find
 Find(f = ,x = )
+Find(f = ,x = ,right = ,nomatch = )
 #find.package
 find.package(package = ,quiet = ,verbose = ,lib.loc = )
+find.package(package = ,lib.loc = ,quiet = ,verbose = )
 #findInterval
 findInterval(x = ,vec = ,rightmost.closed = ,all.inside = )
 #findPackageEnv
 findPackageEnv(pkg = ,lib.loc = )
-
+findPackageEnv(info = )
 #findRestart
 findRestart(name = ,where = )
+findRestart(name = ,cond = )
 #floor
+floor(x = )
 floor(x = )
 #flush
 flush(con = )
+flush(con = )
 #flush.connection
+flush.connection(con = )
 flush.connection(con = )
 #for
 for(i in 1:10){
@@ -5203,111 +5765,163 @@ for(i in 1:10){
 }
 #force
 force(x = )
+force(x = )
 #forceAndCall
 forceAndCall(call = ,env = )
+forceAndCall(n = ,FUN = )
 #formals
 formals(fun = )
+formals(fun = ,envir = )
 #formals<-
 `formals<-`(fun = ,value = )
 `formals<-`()
+
 #format
 format(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format(x = )
 #format.AsIs
 format.AsIs(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.AsIs(x = ,width = )
 #format.data.frame
 format.data.frame(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.data.frame(x = ,justify = )
 #format.Date
 format.Date(x = ,format = ,tz = )
+format.Date(x = )
 #format.default
 format.default(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = ,trim = ,digits = ,nsmall = ,justify = ,width = ,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 #format.difftime
 format.difftime(x = ,units = ,...)
+format.difftime(x = )
 #format.factor
 format.factor(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.factor(x = )
 #format.hexmode
 format.hexmode(x = ,width = )
+format.hexmode(x = ,width = ,upper.case = )
 #format.info
+format.info(x = ,digits = ,nsmall = )
 format.info(x = ,digits = ,nsmall = )
 #format.libraryIQR
 format.libraryIQR(x = ,digits = ,nsmall = )
+format.libraryIQR(x = )
 #format.numeric_version
 format.numeric_version(x = ,...)
+format.numeric_version(x = )
 #format.octmode
+format.octmode(x = ,width = )
 format.octmode(x = ,width = )
 #format.packageInfo
 format.packageInfo(x = ,digits = ,nsmall = )
+format.packageInfo(x = )
 #format.POSIXct
+format.POSIXct(x = ,format = ,tz = ,usetz = )
 format.POSIXct(x = ,format = ,tz = ,usetz = )
 #format.POSIXlt
 format.POSIXlt(x = ,format = ,tz = ,usetz = )
+format.POSIXlt(x = ,format = ,usetz = ,digits = )
 #format.pval
 format.pval(x = ,eps = ,digits = ,nsmall = ,...)
+format.pval(pv = ,digits = ,eps = ,na.form = )
 #format.summaryDefault
 format.summaryDefault(x = ,digits = ,nsmall = )
+format.summaryDefault(x = ,digits = )
 #formatC
 formatC(x = ,format = ,digits = ,nsmall = ,width = ,flag = ,digits.secs = ,...)
+formatC(x = ,digits = ,width = ,format = ,flag = ,mode = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,preserve.width = ,zero.print = ,replace.zero = ,drop0trailing = )
 #formatDL
 formatDL(x = ,quote = ,na.encode = ,row.names = ,col.names = ,sep = ,eol = ,na = ,...)
+formatDL(x = ,y = ,style = ,width = ,indent = )
 #forwardsolve
 forwardsolve(r = ,x = ,k = ,upper.tri = )
+forwardsolve(l = ,x = ,k = ,upper.tri = ,transpose =)
 #function
 function(...)
+  function()
 #gamma
+gamma(x = )
 gamma(x = )
 #gc
 gc(verbose = )
+gc(verbose = ,reset = ,full = )
 #gc.time
 gc.time(on = )
+gc.time(on = )
 #gcinfo
+gcinfo(verbose = )
 gcinfo(verbose = )
 
 #gctorture
 gctorture(verbose = )
+gctorture(on = )
 #gctorture2
 gctorture2(verbose = )
+gctorture2(step = ,wait = ,inhibit_release = )
 #get
 get(x = ,pos = ,envir = )
+get(x = ,pos = ,envir = ,mode = ,inherits = )
 #get0
 get0(x = ,envir = )
+get0(x = ,envir = ,mode = ,inherits = ,ifnotfound = )
 #getAllConnections
+getAllConnections()
 getAllConnections()
 #getCallingDLL
 getCallingDLL(f = ,doStop = )
+getCallingDLL(f = ,doStop = )
 #getCallingDLLe
+getCallingDLLe(e = )
 getCallingDLLe(e = )
 #getConnection
 getConnection(con = )
+getConnection(what = )
 #getDLLRegisteredRoutines
 getDLLRegisteredRoutines(DLLInfo = ,name = ,type = ,allNames = )
+getDLLRegisteredRoutines(dll = ,addNames = )
 
 #getDLLRegisteredRoutines.character
 getDLLRegisteredRoutines.character(DLLInfo = ,name = ,type = ,allNames = )
+getDLLRegisteredRoutines.character(dll = ,addNames = )
 #getDLLRegisteredRoutines.DLLInfo
 getDLLRegisteredRoutines.DLLInfo(DLLInfo = ,name = ,type = ,allNames = )
+getDLLRegisteredRoutines.DLLInfo(dll = ,addNames = )
 #getElement
 getElement(x = ,name = ,exact = )
+getElement(object = ,name = )
 #geterrmessage
+geterrmessage()
 geterrmessage()
 #getExportedValue
 getExportedValue(pkg = ,name = )
+getExportedValue(ns = ,name = )
 #getHook
 getHook(which = )
+getHook(hookName = )
 
 #getLoadedDLLs
 getLoadedDLLs()
+getLoadedDLLs()
 #getNamespace
 getNamespace(name = ,which.lib.loc = )
+getNamespace(name = )
 #getNamespaceExports
 getNamespaceExports(ns = ,all.names = )
+getNamespaceExports(ns = )
 #getNamespaceImports
 getNamespaceImports(ns = ,all.names = )
+getNamespaceImports(ns = )
 #getNamespaceInfo
 getNamespaceInfo(ns = ,what = )
+getNamespaceInfo(ns = ,which = )
 #getNamespaceName
+getNamespaceName(ns = )
 getNamespaceName(ns = )
 #getNamespaceUsers
 getNamespaceUsers(ns = ,all.names = )
+getNamespaceUsers(ns = )
 #getNamespaceVersion
+getNamespaceVersion(ns = )
 getNamespaceVersion(ns = )
 #getNativeSymbolInfo
 getNativeSymbolInfo(sym = d,where = )
@@ -5317,16 +5931,22 @@ getNativeSymbolInfo(sym = ,where = ,name = "sum",PACKAGE = "base",unlist = ,with
 
 #getOption
 getOption(x = ,default = ,complete = ,help = ,recursive = ,no.deparse = ,no.defaults = ,no.warn = ,keep.source = ,skip.silent = ,width = )
+getOption(x = ,default = )
 #getRversion
+getRversion()
 getRversion()
 #getSrcLines
 getSrcLines(con = ,offset = ,n = )
+getSrcLines(srcfile = ,first = ,last = )
 #getTaskCallbackNames
+getTaskCallbackNames()
 getTaskCallbackNames()
 #gettext
 gettext(x = )
+gettext(domain = ,trim = )
 #gettextf
 gettextf(...,fmt ="Hello,%$",domain = ,trim = )
+gettextf(fmt = ,domain = ,trim = )
 gettextf(g)
 gettextf("world",fmt ="Hello,%$",domain = ,trim = )
 
@@ -5336,8 +5956,10 @@ gettextf("world",fmt ="Hello,%$",domain = true,trim = )
 
 #getwd
 getwd(e)
+getwd()
 #gl
 gl(n = 1,k = ,length = ,labels = ,ordered = )
+gl(n = ,k = ,length = ,labels = ,ordered = )
 gl(n = 1,k = 3,length = 4,labels = test,ordered = )
 gl(n = 1,k = 3,length = ,labels = ,ordered = TEST)
 gl(n = 1,k = 3,length = TEST,labels = ,ordered = )
@@ -5359,64 +5981,93 @@ gregexec(pattern = 4,text = "test",ignore.case = ,perl = ,fixed = ,useBytes = te
 
 #gregexpr
 gregexpr(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
-
+gregexpr(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #grep
 grep(pattern = ,x = ,ignore.case = ,perl = ,value = ,fixed = ,useBytes = )
+grep(pattern = ,x = ,ignore.case = ,perl = ,value = ,fixed = ,useBytes = ,invert = )
 #grepl
+grepl(pattern = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 grepl(pattern = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #grepRaw
 grepRaw(pattern = ,x = ,ignore.case = ,perl = ,value = ,fixed = ,useBytes = )
+grepRaw(pattern = ,x = ,offset = ,ignore.case = ,value = ,fixed = ,all = ,invert = )
 #grouping
 grouping(x = )
+grouping()
 #gsub
+gsub(pattern = ,replacement = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 gsub(pattern = ,replacement = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #gzcon
 gzcon(con = ,open = ,encoding = ,compression = ,close = )
+gzcon(con = ,level = ,allowNonCompressed = ,text = )
 #gzfile
 gzfile(description = ,open = ,encoding = ,compression = ,close = )
+gzfile(description = ,open = ,encoding = ,compression = )
 #I
+I(x = )
 I(x = )
 #iconv
 iconv(x = ,from = ,to = ,sub = )
+iconv(x = ,from = ,to = ,sub = ,mark = ,toRaw = )
 #iconvlist
+iconvlist()
 iconvlist()
 #icuGetCollate
 icuGetCollate(locale = )
+icuGetCollate(type = )
 #icuSetCollate
 icuSetCollate(locale = )
+icuSetCollate()
 #identical
 identical(x = ,y = )
+identical(x = ,y = ,num.eq = ,single.NA = ,attrib.as.set = ,ignore.bytecode = ,ignore.environment = ,ignore.srcref = ,extptr.as.ref = )
 #identity
+identity(x = )
 identity(x = )
 #if
 if(test = ,yes = ,no = )
-  if()
+  if (condition) {
+    
+  }
 #ifelse
+ifelse(test = ,yes = ,no = )
 ifelse(test = ,yes = ,no = )
 #Im
 Im(x = ,z = )
+Im(z = )
 #importIntoEnv
 importIntoEnv(from = ,to = ,env = ,keep.source = )
+importIntoEnv(impenv = ,impnames = ,expenv = ,expnames = )
 #infoRDS
+infoRDS(file = )
 infoRDS(file = )
 #inherits
 inherits(x = ,what = )
+inherits(x = ,what = ,which = )
 #integer
+integer(length = )
 integer(length = )
 #interaction
 interaction(...,sep = ,lex.order = ,decreasing = )
+interaction(drop = ,sep = ,lex.order = )
 #interactive
+interactive()
 interactive()
 #intersect
 intersect(x = ,y = )
+intersect(x = ,y = )
 #intToBits
+intToBits(x = )
 intToBits(x = )
 #intToUtf8
 intToUtf8(x = )
+intToUtf8(x = ,multiple = ,allow_surrogate_pairs = )
 #inverse.rle
+inverse.rle(x = )
 inverse.rle(x = )
 #invisible
 invisible(x = )
+
 invisible(x = )
 #invokeRestart
 invokeRestart(restart = ,...)
@@ -5426,468 +6077,689 @@ invokeRestartInteractively(restart = ,...)
 invokeRestartInteractively(r = )
 #is.array
 is.array(x = )
+is.array(x = )
 #is.atomic
+is.atomic(x = )
 is.atomic(x = )
 #is.call
 is.call(x = )
+is.call(x = )
 #is.character
+is.character(x = )
 is.character(x = )
 #is.complex
 is.complex(x = )
+is.complex(x = )
 #is.data.frame
+is.data.frame(x = )
 is.data.frame(x = )
 #is.double
 is.double(x = )
+is.double(x = )
 #is.element
+is.element(el = ,set = )
 is.element(el = ,set = )
 #is.environment
 is.environment(x = )
+is.environment(x = )
 #is.expression
+is.expression(x = )
 is.expression(x = )
 #is.factor
 is.factor(x = )
+is.factor(x = )
 #is.finite
+is.finite(x = )
 is.finite(x = )
 #is.function
 is.function(x = )
+is.function(x = )
 #is.infinite
+is.infinite(x = )
 is.infinite(x = )
 #is.integer
 is.integer(x = )
+is.integer(x = )
 #is.language
+is.language(x = )
 is.language(x = )
 #is.list
 is.list(x = )
+is.list(x = )
 #is.loaded
 is.loaded(name = ,where = )
+is.loaded(symbol = ,PACKAGE = ,type = )
 #is.logical
+is.logical(x = )
 is.logical(x = )
 #is.matrix
 is.matrix(x = )
+is.matrix(x = )
 #is.na
+is.na(x = )
 is.na(x = )
 #is.na.data.frame
 is.na.data.frame(x = )
+is.na.data.frame(x = )
 #is.na.numeric_version
+is.na.numeric_version(x = )
 is.na.numeric_version(x = )
 
 #is.na.POSIXlt
 is.na.POSIXlt(x = )
+is.na.POSIXlt(x = )
 #is.na<-
 `is.na<-`(x = ,value = )
+`is.na<-`()
 #is.na<-.default
 `is.na<-.default`(x = ,value = )
+`is.na<-.default`()
 #is.na<-.factor
 `is.na<-.factor`(x = ,value = )
+`is.na<-.factor`()
 #is.na<-.numeric_version
 `is.na<-.numeric_version`(x = ,value = )
+`is.na<-.numeric_version`()
 #is.name
+is.name(x = )
 is.name(x = )
 #is.nan
 is.nan(x = )
+is.nan(x = )
 #is.null
+is.null(x = )
 is.null(x = )
 #is.numeric
 is.numeric(x = )
+is.numeric(x = )
 #is.numeric_version
+is.numeric_version(x = )
 is.numeric_version(x = )
 #is.numeric.Date
 is.numeric.Date(x = )
+is.numeric.Date(x = )
 #is.numeric.difftime
+is.numeric.difftime(x = )
 is.numeric.difftime(x = )
 #is.numeric.POSIXt
 is.numeric.POSIXt(x = )
+is.numeric.POSIXt(x = )
 #is.object
+is.object(x = )
 is.object(x = )
 #is.ordered
 is.ordered(x = )
+is.ordered(x = )
 #is.package_version
+is.package_version(x = )
 is.package_version(x = )
 #is.pairlist
 is.pairlist(x = )
+is.pairlist(x = )
 #is.primitive
+is.primitive(x = )
 is.primitive(x = )
 #is.qr
 is.qr(x = )
+is.qr(x = )
 #is.R
+is.R()
 is.R()
 #is.raw
 is.raw(x = )
+is.raw(x = )
 #is.recursive
+is.recursive(x = )
 is.recursive(x = )
 #is.single
 is.single(x = )
+is.single(x = )
 #is.symbol
+is.symbol(x = )
 is.symbol(x = )
 #is.table
 is.table(x = )
+is.table(x = )
 #is.unsorted
 is.unsorted(x = )
+is.unsorted(x = ,na.rm = ,strictly = )
 #is.vector
+is.vector(x = ,mode = )
 is.vector(x = ,mode = )
 #isa
 isa(x = ,class1 = ,class2 = )
+isa(x = ,what = )
 #isatty
+isatty(con = )
 isatty(con = )
 #isBaseNamespace
 isBaseNamespace(ns = )
+isBaseNamespace(ns = )
 #isdebugged
 isdebugged(fun = )
+isdebugged(fun = ,signature = )
 #isFALSE
+isFALSE(x = )
 isFALSE(x = )
 #isIncomplete
 isIncomplete(x = )
+isIncomplete(con = )
 #isNamespace
 isNamespace(ns = ,which = )
+isNamespace(ns = )
 #isNamespaceLoaded
 isNamespaceLoaded(pkg = ,quiet = )
+isNamespaceLoaded(name = )
 #ISOdate
+ISOdate(year = ,month = ,day = ,hour = ,min = ,sec = ,tz = )
 ISOdate(year = ,month = ,day = ,hour = ,min = ,sec = ,tz = )
 #ISOdatetime
 ISOdatetime(year = ,month = ,day = ,hour = ,min = ,sec = ,tz = )
+ISOdatetime(year = ,month = ,day = ,hour = ,min = ,sec = ,tz = )
 #isOpen
 isOpen(con = )
+isOpen(con = ,rw = )
 #isRestart
 isRestart(restart = )
+isRestart(x = )
 
 #isS4
 isS4(x = )
+isS4(object = )
 #isSeekable
+isSeekable(con = )
 isSeekable(con = )
 #isSymmetric
 isSymmetric(x = ,tol = )
+isSymmetric(object = )
 #isSymmetric.matrix
 isSymmetric.matrix(x = ,tol = )
+isSymmetric.matrix(object = ,tol = ,tol1 = )
 #isTRUE
+isTRUE(x = )
 isTRUE(x = )
 #jitter
 jitter(x = ,factor = )
+jitter(x = ,factor = ,amount = )
 #julian
+julian(x = )
 julian(x = )
 #julian.Date
 julian.Date(x = )
+julian.Date(x = ,origin = )
 #julian.POSIXt
 julian.POSIXt(x = )
+julian.POSIXt(x = ,origin = )
 #kappa
 kappa(x = )
+kappa(z = )
 #kappa.default
 kappa.default(x = )
+kappa.default(z = ,exact = ,norm = ,method = )
 #kappa.lm
 kappa.lm(x = )
+kappa.lm(z = )
 #kappa.qr
 kappa.qr(x = )
+kappa.qr(z = )
 
 #kronecker
 kronecker(X = ,Y = )
+kronecker(X = ,Y = ,FUN = ,make.dimnames = )
 #l10n_info
+l10n_info()
 l10n_info()
 #La_library
 La_library()
+La_library()
 #La_version
+La_version()
 La_version()
 #La.svd
 La.svd(x = ,nu = ,nv = ,LINPACK = )
+La.svd(x = ,nu = ,nv = )
 #labels
 labels(x = )
+labels(object = )
 #labels.default
 labels.default(x = )
+labels.default(object = )
 #lapply
 lapply(X = ,FUN = ,...)
+lapply(X = ,FUN = )
+
 #lazyLoad
 lazyLoad(name = ,lib = ,keep.source = ,compress = ,envhook = )
+lazyLoad(filebase = ,envir = ,filter = )
 #lazyLoadDBexec
 lazyLoadDBexec(con = ,statement = ,...)
+lazyLoadDBexec(filebase = ,fun = ,filter = )
 #lazyLoadDBfetch
 lazyLoadDBfetch(con = ,statement = ,...)
+lazyLoadDBfetch(key = ,file = ,compressed = ,hook = )
 #lbeta
 lbeta(x = ,y = )
+lbeta(a = ,b = )
 #lchoose
+lchoose(n = ,k = )
 lchoose(n = ,k = )
 #length
 length(x = )
+length(x = )
 #length.POSIXlt 
+length.POSIXlt(x = )
 length.POSIXlt(x = )
 #length<-
 `length<-`(x = ,value = )
+`length<-`()
 #length<-.Date
 `length<-.Date`(x = ,value = )
+`length<-.Date`(xx = ,cl = )
 #length<-.difftime
 `length<-.difftime`(x = ,value = )
+`length<-.difftime`(xx = ,units = ,cl = )
 #length<-.factor
 `length<-.factor`(x = ,value = )
+`length<-.factor`()
 #length<-.POSIXct
 `length<-.POSIXct`(x = ,value = )
-
+`length<-.POSIXct`(xx = ,tz = ,cl = )
 #length<-.POSIXlt
 `length<-.POSIXlt`(x = ,value = )
+`length<-.POSIXlt`(xx = ,tz = ,cl = )
 #lengths
 lengths(x = )
+lengths(x = ,use.names = )
 #letters
 letters
+lettrs
 #LETTERS
+LETTERS
 LETTERS
 #levels
 levels(x = )
+levels(x = )
 #levels.default
+levels.default(x = )
 levels.default(x = )
 #levels<-
 `levels<-`(x = ,value = )
+`levels<-`()
 #levels<-.factor
 `levels<-.factor`(x = ,value = )
+`levels<-.factor`()
 #lfactorial
+lfactorial(x = )
 lfactorial(x = )
 #lgamma
 lgamma(x = )
+lgamma(x = )
 #libcurlVersion
+libcurlVersion()
 libcurlVersion()
 #library
 library(package = ,help = ,pos = ,lib.loc = ,character.only = ,logical.return = ,warn.conflicts = ,quietly = ,verbose = ,deparse.level = ,unload = )
+library(abind,help = ,pos = ,lib.loc = ,character.only = ,logical.return = ,warn.conflicts = ,quietly = ,verbose = ,mask.ok = ,exclude = ,include.only = ,attach.required = )
 #library.dynam
 library.dynam(file = ,package = ,local = )
+library.dynam(chname = ,package = ,lib.loc = ,verbose = ,file.ext = )
 #library.dynam.unload
 library.dynam.unload(package = ,local = )
+library.dynam.unload(chname = ,libpath = ,verbose = ,file.ext = )
 #licence
 licence()
+licence()
 #license
+license()
 license()
 #list
 list(...)
 list()
+list()
 #list.dirs
 list.dirs(path = ,full.names = ,recursive = ,ignore.case = )
+list.dirs(path = ,full.names = ,recursive = )
 #list.files
+list.files(path = ,pattern = ,all.files = ,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
 list.files(path = ,pattern = ,all.files = ,full.names = ,recursive = ,ignore.case = ,include.dirs = ,no.. = )
 #list2DF
 list2DF(x = ,row.names = ,keep.row.names = ,stringsAsFactors = )
+list2DF(x = ,nrow = )
 #list2env
 list2env(x = ,envir = ,parent = )
+list2env(x = ,envir = ,parent = ,hash = ,size = )
 #load
+load(file = ,envir = ,verbose = )
 load(file = ,envir = ,verbose = )
 #loadedNamespaces
 loadedNamespaces()
+loadedNamespaces()
 #loadingNamespaceInfo
 loadingNamespaceInfo(pkg = )
+loadingNamespaceInfo()
 #loadNamespace
 loadNamespace(pkg = ,lib.loc = )
+loadNamespace(package = ,lib.loc = ,keep.source = ,partial = ,versionCheck = ,keep.parse.data = )
 #local
 local({...})
 local(expr = ,envir = )
+local(expr = ,envir = )
 #lockBinding
+lockBinding(sym = ,env = )
 lockBinding(sym = ,env = )
 #lockEnvironment
 lockEnvironment(env = )
+lockEnvironment(env = ,bindings = )
 #log
+log(x = ,base = )
 log(x = ,base = )
 #log10
 log10(x = )
+log10(x = )
 #log1p
+log1p(x = )
 log1p(x = )
 #log2
 log2(x = )
+log2(x = )
 #logb
+logb(x = ,base = )
 logb(x = ,base = )
 #logical
 logical(length = )
+logical(length = )
 #lower.tri
+lower.tri(x = ,diag = )
 lower.tri(x = ,diag = )
 #ls
 ls(name = ,pos = ,envir = )
+ls(name = ,pos = ,envir = ,all.names = ,pattern = ,sorted = )
 #make.names
 make.names(x = ,unique = )
+make.names(names = ,unique = ,allow_ = )
 #make.unique
 make.unique(names = )
+make.unique(names = ,sep = )
 #makeActiveBinding
+makeActiveBinding(sym = ,fun = ,env = )
 makeActiveBinding(sym = ,fun = ,env = )
 #Map
 Map(f = ,...)
+Map(f = )
 #mapply
 mapply(FUN = ,...,MoreArgs = ,SIMPLIFY = ,USE.NAMES = )
+mapply(FUN = ,MoreArgs = ,SIMPLIFY = ,USE.NAMES = )
 #margin.table
 margin.table(x = ,margin = ,FUN = )
+margin.table(x = ,margin = )
 #marginSums
+marginSums(x = ,margin = )
 marginSums(x = ,margin = )
 #mat.or.vec
 mat.or.vec(nrow = ,ncol = )
+mat.or.vec(nr = ,nc = )
 #match
+match(x = ,table = ,nomatch = ,incomparables = )
 match(x = ,table = ,nomatch = ,incomparables = )
 #match.arg
 match.arg(arg = ,choices = ,several.ok = )
+match.arg(arg = ,choices = ,several.ok = )
 #match.call
 match.call(substitute = ,envir = )
+match.call(definition = ,call = ,expand.dots = ,envir = )
 #match.fun
 match.fun(FUN = )
+match.fun(FUN = ,descend = )
 #Math.data.frame
+Math.data.frame(x = )
 Math.data.frame(x = )
 #Math.Date
 Math.Date(x = )
+Math.Date(x = )
 #Math.difftime
+Math.difftime(x = )
 Math.difftime(x = )
 #Math.factor
 Math.factor(x = )
+Math.factor(x = )
 #Math.POSIXt
 Math.POSIXt(x = )
+Math.POSIXt(x = )
 #matrix
+matrix(data = ,nrow = ,ncol = ,byrow = ,dimnames = )
 matrix(data = ,nrow = ,ncol = ,byrow = ,dimnames = )
 #max
 max(...)
 max(na.rm = )
+max(na.rm = )
 #max.col
 max.col(x = ,ties.method = )
+max.col(m = ,ties.method = )
 #mean
 mean(x = ,...)
 mean(x = )
+mean(x = )
 #mean.Date
 mean.Date(x = ,na.rm = )
+mean.Date(x = )
 #mean.default
 mean.default(x = ,na.rm = )
+mean.default(x = ,trim = ,na.rm = )
 #mean.difftime
 mean.difftime(x = ,na.rm = )
+mean.difftime(x = )
 #mean.POSIXct
 mean.POSIXct(x = ,na.rm = )
+mean.POSIXct(x = )
 #mean.POSIXlt
 mean.POSIXlt(x = ,na.rm = )
+mean.POSIXlt(x = )
 #mem.maxNSize
+mem.maxNSize(nsize = )
 mem.maxNSize(nsize = )
 #mem.maxVSize
 mem.maxVSize(vsize = )
+mem.maxVSize(vsize = )
 #memCompress
+memCompress(from = ,type = )
 memCompress(from = ,type = )
 #memDecompress
 memDecompress(from = ,type = )
+memDecompress(from = ,type = ,asChar = )
 #memory.profile
+memory.profile()
 memory.profile()
 #merge
 merge(x = ,y = ,...)
 merge(x = ,y = )
+merge(x = ,y = )
 #merge.data.frame
 merge.data.frame(x = ,y = ,...)
+merge.data.frame(x = ,y = ,by = ,by.x = ,by.y = ,all = ,all.x = ,all.y = ,sort = ,suffixes = ,no.dups = ,incomparables = )
 merge.data.frame(x = ,y = ,by = ,by.x = ,by.y = ,all = ,all.x = ,all.y = ,sort = ,suffixes = ,no.dups = ,incomparables = )
 #merge.default
 merge.default(x = ,y = ,...)
 merge.default(x = ,y = )
+merge.default(x = ,y = )
 #message
 message(...)
+message(domain = ,appenedLF = )
 message(domain = ,appendLF = )
 #mget
 mget(x = ,envir = ,inherits = ,mode = )
+mget(x = ,envir = ,mode = ,ifnotfound = ,inherits = )
 #min
 min(...)
 min(na.rm = )
+min(na.rm = )
 #missing
+missing(x = )
 missing(x = )
 #Mod
 Mod(x = ,y = )
+Mod(z = )
 #mode
+mode(x = )
 mode(x = )
 #mode<-
 `mode<-`(x = ,value = )
 `mode<-`()
+`mode<-`()
 #month.abb
+month.abb
 month.abb
 
 #month.name
 month.name
+month.name
 #months
 months(x = ,abbreviate = )
 months(x = ,abbreviate = )
+manths()
 #months.Date
+months.Date(x = ,abbreviate = )
 months.Date(x = ,abbreviate = )
 #months.POSIXt
 months.POSIXt(x = ,abbreviate = )
+months.POSIXt(x = ,abbreviate = ,)
 #mostattributes<-
 `mostattributes<-`(x = ,value = )
 `mostattributes<-`()
+`mostattributes<-`()
 #names
 names(x = )     
+names(x = )
 #names.POSIXlt
+names.POSIXlt(x = )
 names.POSIXlt(x = )
 #names<-
 `names<-`(x = ,value = )
+`names<-`()
 #names<-.POSIXlt
 `names<-.POSIXlt`(x = ,value = )
+`names<-.POSIXlt`(xx = ,tz = ,cl = )
 #namespaceExport
 namespaceExport(ns = ,exports = )
+namespaceExport(ns = ,vars = )
 #namespaceImport
 namespaceImport(ns = ,imports = ,from = )
+namespaceImport(self = ,from = ,except = )
 #namespaceImportClasses
 namespaceImportClasses(ns = ,classes = ,from = )
+namespaceImportClasses(self = ,ns = ,vars = ,from = )
 #namespaceImportFrom
 namespaceImportFrom(ns = ,imports = ,from = )
+namespaceImportFrom(self = ,ns = ,vars = ,generics = ,packages = ,from = ,except = )
 #namespaceImportMethods
 namespaceImportMethods(ns = ,methods = ,from = )
+namespaceImportMethods(self = ,ns = ,vars = ,from = )
 #nargs
+nargs()
 nargs()
 #nchar
 nchar(x = ,type = )
+nchar(x = ,type = ,allowNA = ,keepNA = )
 #ncol
+ncol(x = )
 ncol(x = )
 #NCOL
 NCOL(x = )
+NCOL(x = )
 #Negate
+Negate(f = )
 Negate(f = )
 #new.env
 new.env(hash = ,parent = ,size = )
 new.env(hash = ,parent = ,size = )
 #next
 next(n = )  
+next
 #NextMethod
 NextMethod(...)
+NextMethod(generic = ,object = )
 NextMethod(generic = ,object = )
 #ngettext
 ngettext(msgid = ,msgid_plural = ,n = )
 ngettext(n = ,msg1 = ,msg2 = ,domain = )
+ngettext(n = ,msg1 = ,msg2 = ,domain = )
 #nlevels
+nlevels(x = )
 nlevels(x = )
 #noquote
 noquote(x = )
+noquote(obj = ,right = )
 #norm
 norm(x = ,type = ,...)
 norm(x = ,type = )
+norm(x = ,type = )
 #normalizePath
+normalizePath(path = ,winslash = ,mustWork = )
 normalizePath(path = ,winslash = ,mustWork = )
 #nrow
 nrow(x = )
+nrow(x = )
 #NROW
+NROW(x = )
 NROW(x = )
 #nullfile
 nullfile()
+nullfile()
 #numeric
+numeric(length = )
 numeric(length = )
 #numeric_version
 numeric_version(x = )
+numeric_version(x = ,strict = )
 #numToBits
+numToBits(x = )
 numToBits(x = )
 #numToInts
 numToInts(x = )
+numToInts(x = )
 #nzchar
 nzchar(x = )
+nzchar(x = ,keepNA = )
 #objects
 objects(name = ,pos = ,envir = )
+objects(name = ,pos = ,envir = ,all.names = ,pattern = ,sorted = )
 #oldClass
+oldClass(x = )
 oldClass(x = )
 #oldClass<-
 `oldClass<-`(x = ,value = )
+`oldClass<-`()
 #OlsonNames
 OlsonNames()
+OlsonNames(tzdir = )
 #on.exit
 on.exit(expr = ,add = )
+on.exit(expr = ,add = ,after = )
 #open
 open(con = ,open = ,encoding = ,compression = ,text = )
+open(con = )
 #open.connection
 open.connection(con = ,open = ,encoding = ,compression = ,text = )
+open.connection(con = ,open = ,blocking = )
 #open.srcfile
 open.srcfile(file = ,encoding = )
+open.srcfile(con = ,line = )
 #open.srcfilealias
 open.srcfilealias(file = ,encoding = )
+open.srcfilealias(con = ,line = )
 #open.srcfilecopy
 open.srcfilecopy(file = ,encoding = )
+open.srcfilecopy(con = ,line = )
 #Ops.data.frame
+Ops.data.frame(e1 = ,e2 = )
 Ops.data.frame(e1 = ,e2 = )
 #Ops.Date
 Ops.Date(e1 = ,e2 = )
+Ops.Date(e1 = ,e2 = )
 #Ops.difftime
 Ops.difftime(e1 = ,e2 = )
+Ops.difftime(e1 = ,e2 = )
 #Ops.factor
+Ops.factor(e1 = ,e2 = )
 Ops.factor(e1 = ,e2 = )
 Ops.factor(e1 = ,e2 = )
 #Ops.numeric_version
@@ -5907,33 +6779,43 @@ order(...)
 order(na.last = ,decreasing = ,method = )
 #ordered
 ordered(x = ,levels = ,labels = ,exclude = )
+ordered(x = )
 #outer
 outer(X = ,Y = ,FUN = ,...)
 outer(X = ,Y = ,FUN = )
 #package_version
 package_version(x = )
+package_version(x = ,strict = )
 #packageEvent
 packageEvent(pkg = ,event = ,lib.loc = )
+packageEvent(pkgname = ,event = )
 #packageHasNamespace
 packageHasNamespace(pkg = ,lib.loc = )
+packageHasNamespace(package = ,package.lib = )
 #packageNotFoundError
 packageNotFoundError(pkg = ,lib.loc = )
+packageNotFoundError(package = ,lib.loc = ,call = )
 #packageStartupMessage
 packageStartupMessage(...)
 packageStartupMessage(domain = ,appendLF = )
 #packBits
 packBits(x = )
+packBits(x = ,type = )
 #pairlist
 pairlist(...)
 pairlist()
 #parent.env
 parent.env(envir = )
+parent.env(env = )
 #parent.env<-
 `parent.env<-`(envir = ,value = )
+`parent.env<-`()
 #parent.frame
+parent.frame(n = )
 parent.frame(n = )
 #parse
 parse(text = ,srcfile = ,keep.source = )
+parse(file = ,n = ,text = ,prompt = ,keep.source = ,srcfile = ,encoding = )
 #parseNamespaceFile
 parseNamespaceFile(file = ,env = )
 parseNamespaceFile(package = ,package.lib = ,mustExist = )
@@ -5955,14 +6837,16 @@ pcre_config()
 
 #pi
 pi
-
+pi
 #pipe
 pipe(command = ,open = ,encoding = ,text = )
+pipe(description = ,open = ,encoding = )
 #plot
 plot(x = ,y = ,...)
 plot(x = ,y = )
 #pmatch
 pmatch(x = ,table = ,nomatch = )
+pmatch(x = ,table = ,nomatch = ,duplicates.ok = )
 #pmax
 pmax(...)
 pmax(na.rm = )
@@ -5977,10 +6861,13 @@ pmin.int(...)
 pmin.int(na.rm = )
 #polyroot
 polyroot(x = )
+polyroot(z = )
 #pos.to.env
 pos.to.env(pos = ,envir = )
+pos.to.env(x = )
 #Position
 Position(f = ,x = )
+Position(f = ,x = ,right = ,nomatch = )
 #pretty
 pretty(x = ,n = ,min.n = ,max.n = ,...)
 pretty(x = )
@@ -5989,6 +6876,7 @@ pretty.default(x = ,n = ,min.n = ,max.n = ,...)
 pretty.default(x = ,n = ,min.n = ,shrink.sml = ,high.u.bias = ,u5.bias = ,eps.correct = ,f.min = )
 #prettyNum
 prettyNum(x = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,scientific = ,drop0trailing = )
+prettyNum(x = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,input.d.mark = ,preserve.width = ,zero.print = ,replace.zero = ,drop0trailing = ,is.cmplx = )
 #print
 print(x = ,...)
 print(x = )
@@ -6045,6 +6933,7 @@ print.libraryIQR(x = ,...)
 print.libraryIQR(x = )
 #print.listof
 print.listof(x = ,...)    
+print.listof(x = )
 #print.NativeRoutineList
 print.NativeRoutineList(x = ,...)
 print.NativeRoutineList(x = )
@@ -6105,6 +6994,7 @@ prmatrix(x = ,quote = ,right = ,max = ,...)
 prmatrix(x = ,rowlab = ,collab = ,quote = ,right = ,na.print = )
 #proc.time
 proc.time()
+proc.time()
 #prod
 prod(...)   
 prod(na.rm = )
@@ -6125,6 +7015,7 @@ pushBack(x = ,value = )
 pushBack(data = ,connection = ,newLine = ,encoding = )
 #pushBackLength
 pushBackLength(x = ,value = )
+pushBackLength(connection = )
 #q
 q(...)
 q(save = ,status = ,runLast = )
@@ -6133,30 +7024,43 @@ qr(x = ,...)
 qr(x = )
 #qr.coef
 qr.coef(qr = ,y = )
+qr.coef(qr = ,y = )
 #qr.default
 qr.default(x = ,tol = )
+qr.default(x = ,tol = ,LAPACK = )
 #qr.fitted
 qr.fitted(qr = ,y = )
+qr.fitted(qr = ,y = ,k = )
 #qr.Q
 qr.Q(qr = )
+qr.Q(qr = ,complete = ,Dvec = )
 #qr.qty
 qr.qty(qr = ,y = ) 
+qr.qty(qr = ,y = )
 #qr.qy
+qr.qy(qr = ,y = )
 qr.qy(qr = ,y = )
 #qr.R
 qr.R(qr = )
+qr.R(qr = ,complete = )
 #qr.resid
+qr.resid(qr = ,y = )
 qr.resid(qr = ,y = )
 #qr.solve
 qr.solve(qr = ,y = )
+qr.solve(a = ,b = ,tol = )
 #qr.X
 qr.X(qr = )
+qr.X(qr = ,complete = ,ncol = )
 #quarters
+quarters(x = ,abbreviate = )
 quarters(x = ,abbreviate = )
 #quarters.Date
 quarters.Date(x = ,abbreviate = )
+quarters.Date(x = )
 #quarters.POSIXt
 quarters.POSIXt(x = ,abbreviate = )
+quarters.POSIXt(x = )
 #quit
 quit(save = ,status = ,runLast = )
 quit(save = ,status = ,runLast = )
@@ -6189,18 +7093,24 @@ rank(x = ,ties.method = ,...)
 rank(x = ,na.last = ,ties.method = )
 #rapply
 rapply(object = ,f = ,...,how = ,classes = ,deflt = )
+rapply(object = ,f = ,classes = ,deflt = ,how = )
 #raw
+raw(length = )
 raw(length = )
 #rawConnection
 rawConnection(con = ,open = ,blocking = ,encoding = ,text = ,raw = ,local = )
+rawConnection(object = ,open = )
 #rawConnectionValue
+rawConnectionValue(con = )
 rawConnectionValue(con = )
 #rawShift
 rawShift(con = ,n = )
+rawShift(x = ,n = )
 #rawToBits
 rawToBits(x = )
 rawToBits(x = )
 #rawToChar
+rawToChar(x = ,multiple = )
 rawToChar(x = ,multiple = )
 #rbind
 rbind(...)
@@ -6210,39 +7120,54 @@ rbind.data.frame(...)
 rbind.data.frame(deparse.level = ,make.row.names = ,stringsAsFactors = ,factor.exclude =)
 #rcond
 rcond(x = ,norm = )
+rcond(x = ,norm = ,triangular = )
 #Re
 Re(x = )
+Re(z = )
 #read.dcf
 read.dcf(file = ,fields = ,all = ,sub = ,encoding = )
+read.dcf(file = ,fields = ,all = ,keep.white = )
 #readBin
+readBin(con = ,what = ,n = ,size = ,signed = ,endian = )
 readBin(con = ,what = ,n = ,size = ,signed = ,endian = )
 #readChar
 readChar(con = ,nchars = ,useBytes = ,encoding = )
+readChar(con = ,nchars = ,useBytes = )
 #readline
 readline(prompt = ,default = ,...)
 readline(prompt = )
 #readLines
   readLines(con = ,n = ,ok = ,warn = ,encoding = ,skipNul = )
+  readLines(con = ,n = ,ok = ,warn = ,encoding = ,skipNul = )
 #readRDS
 readRDS(file = )
+readRDS(file = ,refhook = )
 #readRenviron
 readRenviron(file = )
+readRenviron(path = )
 #Recall
 Recall(...)
 Recall()
 #Reduce
 Reduce(f = ,x = ,init = ,right = ,accumulate = )
+Reduce(f = ,x = ,init = ,right = ,accumulate = )
 #reg.finalizer
 reg.finalizer(x = ,f = ,onexit = ,weak = )
+reg.finalizer(e = ,f = ,onexit = )
 #regexec
+regexec(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 regexec(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #regexpr
 regexpr(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
+regexpr(pattern = ,text = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #registerS3method
 registerS3method(generic = ,class = ,method = )
+registerS3method(genname = ,class = ,method = ,envir = )
 #registerS3methods
 registerS3methods(generic = ,classes = ,methods = )
+registerS3methods(info = ,package = ,env = )
 #regmatches
+regmatches(x = ,m = ,invert = )
 regmatches(x = ,m = ,invert = )
 #regmatches<-
 `regmatches<-`(x = ,m = ,value = )
@@ -6256,10 +7181,13 @@ rep(x = ,...)
 rep(x = )
 #rep_len
 rep_len(x = ,length.out = )
+rep_len(x = ,length.out = )
 #rep.Date
 rep.Date(x = ,times = )
+rep.Date(x = )
 #rep.difftime
 rep.difftime(x = ,times = )
+rep.difftime(x = )
 #rep.factor
 rep.factor(x = ,times = )
 rep.factor(x = )
@@ -6274,52 +7202,75 @@ rep.POSIXct(x = ,times = )
 rep.POSIXct(x = )
 #rep.POSIXlt
 rep.POSIXlt(x = ,times = )
+rep.POSIXlt(x = )
 #repeat
 repeat
 #replace
 replace(x = ,list = ,values = )
+replace(x = ,list = ,values = )
 #replicate
+replicate(n = ,expr = ,simplify = )
 replicate(n = ,expr = ,simplify = )
 #require
 require(package = ,lib.loc = ,quietly = ,warn.conflicts = ,character.only = )
+require(abind,lib.loc = ,quietly = ,warn.conflicts = ,character.only = ,mask.ok = ,exclude = ,include.only = ,attach.required = )
 #requireNamespace
 requireNamespace(package = ,lib.loc = ,quietly = )
+requireNamespace("abind",quietly = )
+requireNamespace("grDevices",quietly = )
 #restartDescription
 restartDescription(restart = )
+restartDescription(r = )
 #restartFormals
 restartFormals(restart = )
+restartFormals(r = )
 #retracemem
 retracemem(x = )
+retracemem(x = ,previous = )
 #return
 return(value = )
+return()
 #returnValue
 returnValue(expr = )
+returnValue(default = )
 #rev
+rev(x = )
 rev(x = )
 #rev.default
 rev.default(x = )
+rev.default(x = )
 #rle
+rle(x = )
 rle(x = )
 #rm
 rm(...)
 rm(list = ,pos = ,envir = ,inherits = )
 #RNGkind
 RNGkind(kind = ,normal.kind = )
+RNGkind(kind = ,normal.kind = ,sample.kind = )
 #RNGversion
 RNGversion()
+RNGversion(vstr = )
 #round
+round(x = ,digits = )
 round(x = ,digits = )
 #round.Date
 round.Date(x = ,digits = )
+round.Date(x = )
 #round.POSIXt
 round.POSIXt(x = ,digits = )
+round.POSIXt(x = ,units = )
 #row
 row(x = )
+row(x = ,as.factor = )
 #row.names
+row.names(x = )
 row.names(x = )
 #row.names.data.frame
 row.names.data.frame(x = )
+row.names.data.frame(x = )
 #row.names.default
+row.names.default(x = )
 row.names.default(x = )
 #row.names<-
 `row.names<-`(x = ,value = )
@@ -6350,115 +7301,166 @@ rowsum.default(x = ,group = ,reorder = ,...)
 rowsum.default(x = ,group = ,reorder = ,na.rm = )
 #rowSums
 rowSums(x = ,na.rm = )
+rowSums(x = ,na.rm = ,dims = )
 #sample
+sample(x = ,size = ,replace = ,prob = )
 sample(x = ,size = ,replace = ,prob = )
 #sample.int
 sample.int(n = ,size = ,replace = ,prob = )
+sample.int(n = ,size = ,replace = ,prob = ,useHash = )
 #sapply
 sapply(X = ,FUN = ,...,simplify = ,USE.NAMES = )
+sapply(X = ,FUN = ,simplify = ,USE.NAMES = )
 #save
 save(...,list = ,file = ,ascii = ,version = ,envir = ,compress = ,compression_level = )
+save(list = ,file = ,ascii = ,version = ,envir = ,compress = ,compression_level = ,eval.promises = ,precheck = )
 #save.image
 save.image(file = ,compress = ,compression_level = )
+save.image(file = ,version = ,ascii = ,compress = ,safe = )
 #saveRDS
 saveRDS(object = ,file = ,compress = ,compression_level = )
+saveRDS(object = ,file = ,ascii = ,version = ,compress = ,refhook = )
 #scale
+scale(x = ,center = ,scale = )
 scale(x = ,center = ,scale = )
 #scale.default
 scale.default(x = ,center = ,scale = )
+scale.default(x = ,center = ,scale = )
 #scan
 scan(file = ,what = ,nmax = ,n = ,sep = ,quote = ,dec = ,skip = ,nlines = ,na.strings = ,flush = ,fill = ,strip.white = ,quiet = ,blank.lines.skip = ,multi.line = ,comment.char = ,allowEscapes = ,encoding = ,skipNul = )
+scan(file = ,what = ,nmax = ,n = ,sep = ,quote = ,dec = ,skip = ,nlines = ,na.strings = ,flush = ,fill = ,strip.white = ,quiet = ,blank.lines.skip = ,multi.line = ,comment.char = ,allowEscapes = ,fileEncoding = ,encoding = ,text = ,skipNul = )
 #search
+search()
 search()
 #searchpaths
 searchpaths(which = )
+searchpaths()
 #seek
 seek(con = ,where = ,origin = )
+seek(con = )
 #seek.connection
 seek.connection(con = ,where = ,origin = )
+seek.connection(con = ,where = ,origin = ,rw = )
 #seq
 seq(...)
 seq()
 #seq_aloeng
 seq_along(along.with = )
+seq_along(along.with = )
 #seq_len
+seq_len(length.out = )
 seq_len(length.out = )
 #seq.Date
 seq.Date(from = ,to = ,by = )
+seq.Date(from = ,to = ,by = ,length.out = ,along.with = )
 #seq.default
 seq.default(from = ,to = ,by = )
+seq.default(from = ,to = ,by = ,length.out = ,along.with = )
 #seq.int
 seq.int(from = ,to = ,by = )
+seq.int(from = ,to = ,by = ,length.out = ,along.with = )
 #seq.POSIXt
 seq.POSIXt(from = ,to = ,by = )
+seq.POSIXt(from = ,to = ,by = ,length.out = ,along.with = )
 #sequence
+sequence(nvec = )
 sequence(nvec = )
 #sequence.default
 sequence.default(nvec = )
+sequence.default(nvec = ,from = ,by = )
 #serialize
 serialize(object = ,connection = ,ascii = ,xdr = )
+serialize(object = ,connection = ,ascii = ,xdr = ,version = ,refhook = )
 #serverSocket
 serverSocket(port = ,host = ,backlog = ,blocking = ,timeout = ,reuse = ,encoding = ,text = )
+serverSocket(port = )
 #set.seed
 set.seed(seed = )
+set.seed(seed = ,kind = ,normal.kind = ,sample.kind = )
 #setdiff
+setdiff(x = ,y = )
 setdiff(x = ,y = )
 #setequal
 setequal(x = ,y = )
+setequal(x = ,y = )
 #setHook
 setHook(which = ,fun = ,package = ,lib.loc = )
+setHook(hookName = ,value = ,action = )
 #setNamespaceInfo
 setNamespaceInfo(ns = ,info = ,field = ,value = )
+setNamespaceInfo(ns = ,which = ,val = )
 #setSessionTimeLimit
 setSessionTimeLimit(elapsed = )
+setSessionTimeLimit(cpu = ,elapsed = )
 #setTimeLimit
 setTimeLimit(elapsed = )
+setTimeLimit(cpu = ,elapsed = ,transient = )
 #setwd
+setwd(dir = )
 setwd(dir = )
 #showConnections
 showConnections(all = ,...)
 showConnections(all = )
 #shQuote
 shQuote(x = )
+shQuote(string = ,type = )
 #sign
+sign(x = )
 sign(x = )
 #signalCondition
 signalCondition(cond = )
+signalCondition(cond = )
 #signif
+signif(x = ,digits = )
 signif(x = ,digits = )
 #simpleCondition
 simpleCondition(message = ,call = )
+simpleCondition(message = ,call = )
 #simpleError
 simpleError(message = )
+simpleError(message = ,call = )
 #simpleMessage
 simpleMessage(message = )
+simpleMessage(message = ,call = )
 #simpleWarning
 simpleWarning(message = )
+simpleWarning(message = ,call = )
 #simplify2array
 simplify2array(x = ,higher = )
+simplify2array(x = ,higher = ,except = )
 #sin
+sin(x = )
 sin(x = )
 #single
 single(length = )
+single(length = )
 #sinh
+sinh(x = )
 sinh(x = )
 #sink
 sink(file = ,append = ,type = ,split = ,...)
 sink(file = ,append = ,type = ,split = )
 #sink.number
 sink.number()
+sink.number(type = )
 #sinpi
+sinpi(x = )
 sinpi(x = )
 #slice.index
 slice.index(x = ,drop = )
+slice.index(x = ,MARGIN = )
 #socketAccept
 socketAccept(con = ,server = ,timeout = ,blocking = ,encoding = ,text = )
+socketAccept(socket = ,blocking = ,open = ,encoding = ,timeout = ,options = )
 #socketConnection
 socketConnection(host = ,port = ,server = ,blocking = ,open = ,timeout = ,encoding = ,text = )
+socketConnection(host = ,port = ,server = ,blocking = ,open = ,encoding = ,timeout = ,options = )
 #socketSelect
 socketSelect(con = ,timeout = ,blocking = ,encoding = ,text = )
+socketSelect(socklist = ,write = ,timeout = )
 #socketTimeout
 socketTimeout(con = ,timeout = ,blocking = ,encoding = ,text = )
+socketTimeout(socket = ,timeout = )
 #solve
 solve(a = ,b = ,tol = ,LINPACK = ,...)
 solve(a = ,b = )
@@ -6467,16 +7469,22 @@ solve.default(a = ,b = ,tol = ,LINPACK = ,...)
 solve.default(a = ,b = ,tol = ,LINPACK = )
 #solve.qr
 solve.qr(qr = ,b = ,tol = )
+solve.qr(a = ,b = )
 #sort
 sort(x = ,decreasing = ,method = )
+sort(x = ,decreasing = )
 #sort.default
 sort.default(x = ,decreasing = ,method = )
+sort.default(x = ,decreasing = ,na.last = )
 #sort.int
 sort.int(x = ,decreasing = )
+sort.int(x = ,partial = ,na.last = ,decreasing = ,method = ,index.return = )
 #sort.list
 sort.list(x = ,decreasing = )
+sort.list(x = ,partial = ,na.last = ,decreasing = ,method = )
 #sort.POSIXlt
 sort.POSIXlt(x = ,decreasing = )
+sort.POSIXlt(x = ,decreasing = ,na.last = )
 #source
   source(file = ,local = ,echo = ,print.eval = ,exprs = ,spaced = ,verbose = ,prompt.echo = ,max.deparse.length = ,width.cutoff = ,deparseCtrl = ,chdir = ,encoding = ,continue.echo = ,skip.echo = ,keep.source = )
 source(file = ,local = ,echo = ,print.eval = ,exprs = ,spaced = ,verbose = ,prompt.echo = ,max.deparse.length = ,width.cutoff = ,deparseCtrl = ,chdir = ,encoding = ,continue.echo = ,skip.echo = ,keep.source = )
@@ -6509,20 +7517,28 @@ sprintf(fmt = ,...)
 sprintf(fmt = )
 #sqrt
 sqrt(x = )
+sqrt(x = )
 #sQuote
 sQuote(x = )
+sQuote(x = ,q = )
 #srcfile
 srcfile(file = ,encoding = )
+srcfile(filename = ,encoding = ,Enc = )
 #srcfilealias
 srcfilealias(file = ,encoding = )
+srcfilealias(filename = ,srcfile = )
 #srcfilecopy
 srcfilecopy(file = ,encoding = )
+srcfilecopy(filename = ,lines = ,timestamp = ,isFile = )
 #srcref
 srcref(file = ,srcfile = ,wholeSrcref = )
+srcref(srcfile = ,lloc = )
 #standardGeneric
 standardGeneric(f = ,def = ,group = ,valueClass = ,signature = ,package = ,useAsDefault = )
+standardGeneric(f = ,fdef = )
 #startsWith
 startsWith(x = ,prefix = ,ignore.case = )
+startsWith(x = ,prefix = )
 #stderr
 stderr()
 stderr()
@@ -6540,42 +7556,60 @@ stopifnot(...)
 stopifnot(exprs = ,exprObject = ,local = )
 #storage.mode
 storage.mode(x = )
+storage.mode(x = )
 #storage.mode<-
 `storage.mode<-`(x = ,value = )
+`storage.mode<-`()
 #str2expression
 str2expression(x = )
+str2expression(text = )
 #str2lang
 str2lang(x = )
+str2lang(s = )
 #strftime
+strftime(x = ,format = ,tz = ,usetz = )
 strftime(x = ,format = ,tz = ,usetz = )
 #strptime
 strptime(x = ,format = ,tz = ,usetz = )
+strptime(x = ,format = ,tz = )
 #strrep
 strrep(str = ,times = )
+strrep(x = ,times = )
 #strsplit
+strsplit(x = ,split = ,fixed = ,perl = ,useBytes = )
 strsplit(x = ,split = ,fixed = ,perl = ,useBytes = )
 #strtoi
 strtoi(x = ,base = ,strict = )
+strtoi(x = ,base = )
 #strtrim
 strtrim(str = ,width = )
+strtrim(x = ,width = )
 #structure
 structure(.Data = ,class = ,...)
 structure(.Data = )
 #strwrap
 strwrap(str = ,width = ,indent = ,exdent = ,prefix = ,initial = ,strict = )
+strwrap(x = ,width = ,indent = ,exdent = ,prefix = ,simplify = ,initial = )
 #sub
+sub(pattern = ,replacement = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 sub(pattern = ,replacement = ,x = ,ignore.case = ,perl = ,fixed = ,useBytes = )
 #subset
 subset(x = ,subset = ,select = ,drop = )
+subset(x = )
 #subset.data.frame
+subset.data.frame(x = ,subset = ,select = ,drop = )
 subset.data.frame(x = ,subset = ,select = ,drop = )
 #subset.default
 subset.default(x = ,subset = ,select = ,drop = )
+subset.default(x = ,subset = )
 #subset.matrix
+subset.matrix(x = ,subset = ,select = ,drop = )
 subset.matrix(x = ,subset = ,select = ,drop = )
 #substitute
 substitute(expr = ,env = )
+substitute(expr = ,env = )
 #substr
+substr(x = ,start = ,stop = )
 substr(x = ,start = ,stop = )
 #substr<-
 `substr<-`(x = ,start = ,stop = ,value = )
@@ -6661,6 +7695,7 @@ summary.warnings(object = )
 
 #suppressMessages
 suppressMessages(expr = )
+suppressMessages(expr = ,classes = )
 #suppressPackageStartupMessages
 suppressPackageStartupMessages(expr = )
 suppressPackageStartupMessages(expr = )
@@ -6691,64 +7726,88 @@ sys.calls()
 Sys.chmod(file = ,mode = ,use_umask = )
 #Sys.Date
 Sys.Date()
+Sys.Date()
 #sys.frame
+sys.frame(which = )
 sys.frame(which = )
 #sys.frames
 sys.frames()
+sys.frames()
 #sys.function
 sys.function(which = )
-
+sys.function(which = )
 #Sys.getenv
 Sys.getenv(x = )
+Sys.getenv()
 #Sys.getlocale
+Sys.getlocale(category = )
 Sys.getlocale(category = )
 #Sys.getpid
 Sys.getpid()
+Sys.getpid()
 #Sys.glob
 Sys.glob(pattern = ,recursive = ,full.names = )
+Sys.glob(paths = ,dirmark = )
 #Sys.info
+Sys.info()
 Sys.info()
 #sys.load.image
 sys.load.image(file = )
+sys.load.image(name = ,quiet = )
 #Sys.localeconv
+Sys.localeconv()
 Sys.localeconv()
 #sys.nframe
 sys.nframe()
+sys.nframe()
 #sys.on.exit
 sys.on.exit(expr = ,add = )
+sys.on.exit()
 #sys.parent
 sys.parent(which = )
+sys.parent(n = )
 #sys.parents
+sys.parents()
 sys.parents()
 #Sys.readlink
 Sys.readlink(path = )
+Sys.readlink(paths = )
 #sys.save.image
 sys.save.image(file = )
+sys.save.image(name = )
 #Sys.setenv
 Sys.setenv(...)
 Sys.setenv()
 #Sys.setFileTime
 Sys.setFileTime(path = ,times = )
+Sys.setFileTime(path = ,time = )
 #Sys.setlocale
+Sys.setlocale(category = ,locale = )
 Sys.setlocale(category = ,locale = )
 #Sys.sleep
 Sys.sleep(secs = )
+Sys.sleep(time = )
 #sys.source
 sys.source(file = ,envir = ,...)
 sys.source(file = ,envir = ,chdir = ,keep.source = ,keep.parse.data = ,toplevel.env = )
 #sys.status
 sys.status()
+sys.status()
 #Sys.time
+Sys.time()
 Sys.time()
 #Sys.timezone
 Sys.timezone(location = )
-
+Sys.timezone(location = )
 #Sys.umask
+Sys.umask(mode = )
 Sys.umask(mode = )
 #Sys.unsetenv
 Sys.unsetenv(x = )
+Sys.unsetenv(x = )
 #Sys.which
 Sys.which(names = ,all = ,path = )
+Sys.which(names = )
 #system
 system(command = ,intern = ,ignore.stderr = ,ignore.stdout = ,wait = ,input = ,show.output.on.console = ,minimized = ,invisible = ,...)
 system(command = ,intern = ,ignore.stdout = ,ignore.stderr = ,wait = ,input = ,show.output.on.console = ,minimized = ,invisible = ,timeout = )
@@ -6757,16 +7816,21 @@ system.file(package = ,...)
 system.file(package = ,lib.loc = ,mustWork = )
 #system.time
 system.time(expr = )
+system.time(expr = ,gcFirst = )
 #system2
 system2(command = ,args = ,stdout = ,stderr = ,stdin = ,input = ,env = ,wait = ,show.output.on.console = ,minimized = ,invisible = ,...)
 system2(command = ,args = ,stdout = ,stderr = ,stdin = ,input = ,env = ,wait = ,minimized = ,invisible = ,timeout = )
 #t
 t(x = )
+t(x = )
 #T
 T(x = )
+T
 #t.data.frame
 t.data.frame(x = )
+t.data.frame(x = )
 #t.default
+t.default(x = )
 t.default(x = )
 #table
 table(...)
@@ -6778,41 +7842,58 @@ tan(x = )
 tan(x = )
 #tanh
 tanh(x = )
+tanh(x = )
 #tanpi
+tanpi(x = )
 tanpi(x = )
 #tapply
 tapply(X = ,INDEX = ,FUN = ,...,simplify = ,default = )
+tapply(X = ,INDEX = ,FUN = ,default = ,simplify = )
 #taskCallbackManager
 taskCallbackManager()
+taskCallbackManager(handlers = ,registered = ,verbose = )
 #tcrossprod
+tcrossprod(x = ,y = )
 tcrossprod(x = ,y = )
 #tempdir
 tempdir()
+tempdir(check = )
 #tempfile
 tempfile(pattern = ,tmpdir = )
+tempfile(pattern = ,tmpdir = ,fileext = )
 #textConnection
 textConnection(value = ,encoding = ,local = )
+textConnection(object = ,open = ,local = ,name = ,encoding = )
 #textConnectionValue
+textConnectionValue(con = )
 textConnectionValue(con = )
 #tolower
 tolower(x = )
+tolower(x = )
 #topenv
 topenv(env = )
+topenv(envir = ,matchThisEnv = )
 #toString
+toString(x = )
 toString(x = )
 #toString.default
 toString.default(x = )
+toString.default(x = ,width = )
 #toupper
+toupper(x = )
 toupper(x = )
 #trace
 trace(what = ,tracer = ,exit = ,at = ,print = ,signature = ,where = ,edit = )
+trace(what = ,tracer = ,exit = ,at = ,print = ,signature = ,where = ,edit = )
 #traceback
+traceback(x = ,max.lines = )
 traceback(x = ,max.lines = )
 #tracemem
 tracemem(x = )
+tracemem(x = )
 #tracingState
 tracingState(on = )
-
+tracingState(on = )
 #transform
 transform(x = ,...)
 transform(`_data` = )
@@ -6825,32 +7906,45 @@ transform.default(`_data` = )
 
 #trigamma
 trigamma(x = )
+trigamma(x = )
 #trimws
 trimws(x = ,which = c("both","left","right"))
+trimws(x = ,which = ,whitespace = )
 #trunc
+trunc(x = )
 trunc(x = )
 #trunc.Date
 trunc.Date(x = )
+trunc.Date(x = ,units = )
 #trunc.POSIXt
 trunc.POSIXt(x = )
+trunc.POSIXt(x = ,units = )
 #truncate
 truncate(x = )
+truncate(con = )
 #truncate.connection
+truncate.connection(con = )
 truncate.connection(con = )
 #try
 try(expr = ,silent = )
+try(expr = ,silent = ,outFile = )
 #tryCatch
 tryCatch(expr = ,...,finally = ,silent = )
+tryCatch(expr = ,finally = )
 #tryInvokeRestart
 tryInvokeRestart(what = ,...)
 tryInvokeRestart(r = )
 #typeof
 typeof(x = )
+typeof(x = )
 #unclass
+unclass(x = )
 unclass(x = )
 #undebug
 undebug(f = )
+undebug(fun = ,signature = )
 #union
+union(x = ,y = )
 union(x = ,y = )
 #unique
 unique(x = ,...)
@@ -6878,71 +7972,101 @@ unique.warnings(x = ,...)
 unique.warnings(x = ,incomparables = )
 #units
 units(x = )
+units(x = )
 #units.difftime
+units.difftime(x = )
 units.difftime(x = )
 #units<-
 `units<-`(x = ,value = )
+`units<-`()
 #units<-.difftime
 `units<-.difftime`(x = ,value = )
+`units<-.difftime`(xx = ,units = ,cl = )
 #unix.time
+unix.time()
 unix.time()
 #unlink
 unlink(x = ,recursive = ,force = )
+unlink(x = ,recursive = ,force = ,expand = )
 #unlist
+unlist(x = ,recursive = ,use.names = )
 unlist(x = ,recursive = ,use.names = )
 #unloadNamespace
 unloadNamespace(package = )
+unloadNamespace(ns = )
 #unlockBinding
+unlockBinding(sym = ,env = )
 unlockBinding(sym = ,env = )
 #unname
 unname(x = )
+unname(obj = ,force = )
 #unserialize
 unserialize(x = ,refhook = )
+unserialize(connection = ,refhook = )
 #unsplit
+unsplit(value = ,f = ,drop = )
 unsplit(value = ,f = ,drop = )
 #untrace
 untrace(what = ,signature = ,where = )
+untrace(what = ,signature = ,where = )
 #untracemem
+untracemem(x = )
 untracemem(x = )
 #unz
 unz(description = ,filename = ,open = ,encoding = ,text = )
+unz(description = ,filename = ,open = ,encoding = )
 #upper.tri
+upper.tri(x = ,diag = )
 upper.tri(x = ,diag = )
 #url
 url(description = ,open = ,encoding = ,text = )
+url(description = ,open = ,blocking = ,encoding = ,method = ,headers = )
 #UseMethod
+UseMethod(generic = ,object = )
 UseMethod(generic = ,object = )
 #utf8ToInt
 utf8ToInt(x = )
+utf8ToInt(x = )
 #validEnc
+validEnc(x = )
 validEnc(x = )
 #validUTF8
 validUTF8(x = )
+validUTF8(x = )
 #vapply
 vapply(X = ,FUN = ,FUN.VALUE = ,...,USE.NAMES = )
+vapply(X = ,FUN = ,FUN.VALUE = ,USE.NAMES = )
 #vector
+vector(mode = ,length = )
 vector(mode = ,length = )
 #Vectorize
 Vectorize(f = ,SIMPLIFY = ,USE.NAMES = )
 #version
 version()
+version
 #warning
 warning(...)
 warning(call. = ,immediate. = ,noBreaks. = ,domain = )
 #warningCondition
 warningCondition(message = ,call = )
+warningCondition(message = ,class = ,call = )
 #warnings
 warnings(...)
 warnings()
 #weekdays
 weekdays(x = ,abbreviate = )
+weekdays(x = ,abbreviate = )
 #weekdays.Date
+weekdays.Date(x = ,abbreviate = )
 weekdays.Date(x = ,abbreviate = )
 #weekdays.POSIXt
 weekdays.POSIXt(x = ,abbreviate = )
+weekdays.POSIXt(x = ,abbreviate = )
 #which
 which(x = ,arr.ind = ,useNames = )
+which(x = ,arr.ind = ,useNames = )
 #which.max
+which.max(x = )
 which.max(x = )
 #which.min
 which.min(x = )
@@ -6950,7 +8074,7 @@ which.min(x = )
 #while
 while(test = ,expr = )
 while()
-  #with
+    #with
 with(data = ,expr = ,...)
 with(data = ,expr = )
 #with.default
@@ -6959,7 +8083,7 @@ with.default(data = ,expr = )
 
 #withAutoprint
 withAutoprint(expr = )
-
+withAutoprint(exprs = ,evaluated = ,local = ,print. = ,echo = ,max.deparse.length = ,width.cutoff = ,deparseCtrl = )
 #withCallingHandlers
 withCallingHandlers(expr = ,...)
 withCallingHandlers(expr = )
@@ -6978,6 +8102,7 @@ withRestarts(expr = ,...)
 withRestarts(expr = )
 #withVisible
 withVisible(expr = )
+withVisible(x = )
 #write
 write(x = ,file = ,nmax = ,append = ,sep = ,na = ,...)
 write(x = ,file = ,ncolumns = ,append = ,sep = )
@@ -6995,31 +8120,43 @@ writeLines(text = ,con = ,sep = ,useBytes = )
 writeLines(text = ,con = ,sep = ,useBytes = )
 #xor
 xor(x = ,y = )
+xor(x = ,y = )
 #xpdrows.data.frame
 xpdrows.data.frame(x = ,...)
 xpdrows.data.frame(x = ,old.rows = ,new.rows = )
 #xtfrm
 xtfrm(x = )
+xtfrm(x = )
 #xtfrm.AsIs
 xtfrm.AsIs(x = )
+xtfrm(x = )
 #xtfrm.data.frame
+xtfrm.data.frame(x = )
 xtfrm.data.frame(x = )
 #xtfrm.Date
 xtfrm.Date(x = )
+xtfrm.Date(x = )
 #xtfrm.default
+xtfrm.default(x = )
 xtfrm.default(x = )
 #xtfrm.difftime
 xtfrm.difftime(x = )
+xtfrm.difftime(x = )
 #xtfrm.factor
+xtfrm.factor(x = )
 xtfrm.factor(x = )
 #xtfrm.numeric_version
 xtfrm.numeric_version(x = )
+xtfrm.numeric_version(x = )
 #xtfrm.POSIXct
+xtfrm.POSIXct(x = )
 xtfrm.POSIXct(x = )
 #xtfrm.POSIXlt
 xtfrm.POSIXlt(x = )
+xtfrm.POSIXlt(x = )
 #xzfile
 xzfile(description = ,open = ,encoding = ,text = )
+xzfile(description = ,open = ,encoding = ,compression = )
 #zapsmall
 zapsmall(x = ,digits = )
 zapsmall(x = ,digits = )
@@ -7096,6 +8233,7 @@ dotchart(x = ,labels = ,groups = ,gcolor = ,color = ,cex = ,pch = ,pt.cex = ,bg 
 dotchart(x = ,labels = ,groups = ,gdata = ,offset = ,ann = ,xaxt = ,frame.plot = ,log = ,cex = ,pt.cex = ,pch = ,gpch = ,bg = ,color = ,gcolor = ,lcolor = ,xlim = ,main = ,xlab = ,ylab = )
 #erase.screen
 erase.screen(which = )
+erase.screen(n = )
 #filled.contour
 filled.contour(x = ,y = ,z = ,levels = ,color.palette = ,color = ,plot.title = ,plot.axes = ,key.title = ,key.axes = ,asp = ,xaxs = ,yaxs = ,...)
 filled.contour(x = ,y = ,z = ,xlim = ,ylim = ,zlim = ,levels = ,nlevels = ,color.palette = ,col = ,plot.title = ,plot.axes = ,key.title = ,key.axes = ,asp = ,xaxs = ,yaxs = ,las = ,axes = ,frame.plot = )
@@ -7104,7 +8242,9 @@ fourfoldplot(x = ,color = ,conf.level = ,margin = ,main = ,...)
 fourfoldplot(x = ,color = ,conf.level = ,std = ,margin = ,space = ,main = ,mfrow = ,mfcol = )
 #frame
 frame()
+frame()
 #grconvertX
+grconvertX(x = ,from = ,to = )
 grconvertX(x = ,from = ,to = )
 #grconvertY
 grconvertY(y = ,from = ,to = )
@@ -7135,7 +8275,7 @@ layout.show(n = ,...)
 layout.show(n = )
 #lcm
 lcm(x = )
-
+lcm(x = )
 #legend
 legend(x = ,y = ,legend = ,fill = ,col = ,border = ,lty = ,lwd = ,pch = ,angle = ,density = ,bty = ,bg = ,box.lwd = ,box.lty = ,box.col = ,pt.bg = ,cex = ,pt.cex = ,pt.lwd = ,xjust = ,yjust = ,x.intersp = ,y.intersp = ,adj = ,text.width = ,text.col = ,text.font = ,merge = ,trace = ,plot = ,ncol = ,horiz = ,title = ,inset = ,xpd = ,title.col = ,title.adj = ,seg.len = ,...)
 legend(x = ,y = ,legend = ,fill = ,col = ,border = ,lty = ,lwd = ,pch = ,angle = ,density = ,bty = ,bg = ,box.lwd = ,box.lty = ,box.col = ,pt.bg = ,cex = ,pt.cex = ,pt.lwd = ,xjust = ,yjust = ,x.intersp = ,y.intersp = ,adj = ,text.width = ,text.col = ,text.font = ,merge = ,trace = ,plot = ,ncol = ,horiz = ,title = ,inset = ,xpd = ,title.col = ,title.adj = ,title.cex = ,title.font = ,seg.len = )
@@ -7163,19 +8303,25 @@ mosaicplot(x = ,...)
 mosaicplot(x = )
 #mtext
 mtext(text = ,side = ,line = ,outer = ,at = ,adj = ,padj = ,cex = ,col = ,font = ,...)
+mtext(text = ,side = ,line = ,outer = ,at = ,adj = ,padj = ,cex = ,col = ,font = )
 #pairs
 pairs(x = ,labels = ,panel = ,lower.panel = ,upper.panel = ,diag.panel = ,text.panel = ,label.pos = ,cex.labels = ,font.labels = ,...)
+pairs(x = )
 #pairs.default
 pairs.default(x = ,labels = ,panel = ,lower.panel = ,upper.panel = ,diag.panel = ,text.panel = ,label.pos = ,cex.labels = ,font.labels = ,...)
+pairs.default(x = ,labels = ,panel = ,horInd = ,verInd = ,lower.panel = ,upper.panel = ,diag.panel = ,text.panel = ,label.pos = ,line.main = ,cex.labels = ,font.labels = ,row1attop = ,gap = ,log = ,horOdd = ,verOdd = )
 #panel.smooth
 panel.smooth(x = ,y = ,col = ,bg = ,pch = ,cex = ,col.smooth = ,span = ,iter = ,family = ,...)
+panel.smooth(x = ,y = ,col = ,bg = ,pch = ,cex = ,col.smooth = ,span = ,iter = )
 #par
 par(...)
 par(no.readonly = )
 #persp
 persp(x = ,y = ,z = ,theta = ,phi = ,expand = ,col = ,border = ,ticktype = ,nticks = ,...)
+persp(x = )
 #pie
 pie(x = ,labels = ,edges = ,radius = ,clockwise = ,init.angle = ,density = ,angle = ,col = ,border = ,lty = ,main = ,...)
+pie(x = ,labels = ,edges = ,radius = ,clockwise = ,init.angle = ,density = ,angle = ,col = ,border = ,lty = ,main = )
 #plot
 plot(x = ,y = ,type = ,...)
 plot(x = ,y = )
@@ -7189,6 +8335,7 @@ plot.design(x = ,y = ,fun = ,data = ,ylim = ,xlab = ,ylab = ,main = ,ask = ,xaxt
 plot.function(x = ,from = ,to = ,add = ,...)
 plot.function(x = ,y = ,to = ,from = ,xlim = ,ylab = )
 #plot.new
+plot.new()
 plot.new()
 #plot.window
 plot.window(xlim = ,ylim = ,log = ,asp = ,...)
@@ -7222,24 +8369,34 @@ screen(...)
 screen(n = ,new = )
 #segments
 segments(x0 = ,y0 = ,x1 = ,y1 = ,...)
+segments(x0 = ,y0 = ,x1 = ,y1 = ,col = ,lty = ,lwd = )
 #smoothScatter
 smoothScatter(x = ,y = ,nbin = ,xlab = ,ylab = ,main = ,sub = ,xlim = ,ylim = ,...)
+smoothScatter(x = ,y = ,nbin = ,bandwidth = ,colramp = ,nrpoints = ,ret.selection = ,pch = ,cex = ,col = ,transformation = ,postPlotHook = ,xlab = ,ylab = ,xlim = ,ylim = ,xaxs = ,yaxs = )
 #spineplot
 spineplot(x = ,...)
+spineplot(x = )
 #split.screen
 split.screen(figs = ,...)
+split.screen(figs = ,screen = ,erase = )
 #stars
 stars(x = ,...)
+stars(x = ,full = ,scale = ,radius = ,labels = ,locations = ,nrow = ,ncol = ,len = ,key.loc = ,key.labels = ,key.xpd = ,xlim = ,ylim = ,flip.labels = ,draw.segments = ,col.segments = ,col.stars = ,col.lines = ,axes = ,frame.plot = ,main = ,sub = ,xlab = ,ylab = ,cex = ,lwd = ,lty = ,xpd = ,mar = ,add = ,plot = )
 #stem
 stem(x = ,scale = ,width = ,at = ,axes = ,...)
+stem(x = ,scale = ,width = ,atom = )
 #strheight
 strheight(x = ,units = ,...)
+strheight(s = ,units = ,cex = ,font = ,vfont = )
 #stripchart
 stripchart(x = ,...)
+stripchart(x = )
 #strwidth
 strwidth(x = ,units = ,...)
+strwidth(s = ,units = ,cex = ,font = ,vfont = )
 #sunflowerplot
 sunflowerplot(x = ,...)
+sunflowerplot(x = )
 #symbols
 symbols(x = ,y = ,...)
 #text

@@ -92,7 +92,8 @@ fetch("db_main_add.json")
         atag.href = `../detail/detailpage.html`;
         atag.addEventListener("click", (event) => {
           event.preventDefault();
-          window.location.href = ` ../detail/detailpage.html?keyword=${element}`;
+          const EncodeElement =  encodeURIComponent(element);
+          window.location.href = ` ../detail/detailpage.html?keyword=${EncodeElement}`;
         });
 
         const txttag = document.createElement("button");

@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const returnfuncpage = document.querySelector(".rturnfunc");
     const returnhref = document.getElementById("funcListBack");
     const packname = jsondata.filter((item) => item.func === keyword);
+    console.log(keyword);
     returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
     returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
@@ -69,12 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
       }
     };
-
     req.onload = function () {
       const json = JSON.parse(req.responseText);
-      console.log(keyword);
       const arg = json.filter((item) => item.func === keyword);
-
       //関数名
       if (WindowSize <= 395) {
         const funcnametxt = document.createTextNode(keyword);
@@ -321,7 +319,6 @@ document.addEventListener("DOMContentLoaded", function () {
       tabcontent.appendChild(Referencesbox);
 
       See_Alsobox.innerHTML = findfunc.See_Also;
-      console.log(findfunc.See_Also);
       tabcontent.appendChild(See_Alsobox);
 
       //残ったタブボタンのうち、最初のものを表示する
@@ -404,7 +401,6 @@ const errorFilePath = "../errorlist.json";
 fetch(errorFilePath)
   .then((response) => response.json())
   .then((jsondata) => {
-    
     document
       .getElementById("errorCopy")
       .addEventListener("input", function (event) {
@@ -423,23 +419,22 @@ fetch(errorFilePath)
         }
       });
 
-      function getCompleteError(input) {
-        const ErrorList = jsondata.map((item) => item.error);
-        const Error = ErrorList.filter(function (option) {
-          return option.toLowerCase().includes(input.toLowerCase());
-        });
-        return Error;
-        console.log(Error);
-      }
-      function displayMatchError(result) {
-        const completeErrorList = document.getElementById("autoCompleteError");
-        completeErrorList.innerHTML = "";
-        result.forEach(function (item) {
-          const option = document.createElement("li");
-          option.className = "option";
-          option.textContent = item;
-          completeErrorList.appendChild(option);
-        });
-      }
+    function getCompleteError(input) {
+      const ErrorList = jsondata.map((item) => item.error);
+      const Error = ErrorList.filter(function (option) {
+        return option.toLowerCase().includes(input.toLowerCase());
+      });
+      return Error;
+      console.log(Error);
+    }
+    function displayMatchError(result) {
+      const completeErrorList = document.getElementById("autoCompleteError");
+      completeErrorList.innerHTML = "";
+      result.forEach(function (item) {
+        const option = document.createElement("li");
+        option.className = "option";
+        option.textContent = item;
+        completeErrorList.appendChild(option);
+      });
+    }
   });
-
