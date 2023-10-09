@@ -8399,147 +8399,218 @@ sunflowerplot(x = ,...)
 sunflowerplot(x = )
 #symbols
 symbols(x = ,y = ,...)
+symbols(x = ,y = ,circles = ,squares = ,rectangles = ,stars = ,thermometers = ,boxplots = ,inches = ,add = ,fg = ,bg = ,xlab = ,ylab = ,main = ,xlim = ,ylim = )
 #text
 text(x = ,y = ,labels = ,adj = ,pos = ,offset = ,vfont = ,cex = ,col = ,font = ,...)
+text(x = )
 #text.default
 text.default(x = ,y = ,labels = ,adj = ,pos = ,offset = ,vfont = ,cex = ,col = ,font = ,...)
+text.default(x = ,y = ,labels = ,adj = ,pos = ,offset = ,vfont = ,cex = ,col = ,font = )
 #title
 title(main = ,sub = ,xlab = ,ylab = ,line = ,outer = ,...)
+title(main = ,sub = ,xlab = ,ylab = ,line = ,outer = )
 #xinch
 xinch(x = )
+xinch(x = ,warn.log = )
 #xspline
 xspline(x = ,y = ,shape = ,open = ,...)
+xspline(x = ,y = ,shape = ,open = ,repEnds = ,draw = ,border = ,col = )
 #xyinch
 xyinch(x = ,y = )
+xyinch(xy = ,warn.log = )
 #yinch
 yinch(y = )
+yinch(y = ,warn.log = )
 #%+%
 `%+%`(e1 = ,e2 = )
 #acs
 acs(x = ,...)
+psych::acs()
 #alpha
 alpha(x = ,...)
+psych::alpha(x = ,keys = ,cumulative = ,title = ,max = ,na.rm = ,check.keys = ,n.iter = ,delete = ,use = ,warnings = ,n.obs = ,impute = )
 #alpha.ci
 alpha.ci(x = ,...)
+psych::alpha.ci(alpha = ,n.obs = ,n.var = ,p.val = ,digits = )
+
 #anova.psych
 anova.psych(x = ,...)
+psych::anova.psych()
 #AUC
 AUC(x = ,...)
+psych::AUC(t = ,BR = ,SR = ,Phi = ,VP = ,labels = ,plot = ,zero = ,correct = ,col = )
 #autoR
 autoR(x = ,...)
+psych::autoR(x = ,group = ,lag = ,na.rm = ,use = )
 #bassAckward
 bassAckward(x = ,...)
+psych::bassAckward(r = ,nfactors = ,fm = ,rotate = ,scores = ,adjust = ,plot = ,cut = ,use = ,cor = ,weight = ,correct = )
 #bassAckward.diagram
 bassAckward.diagram(x = ,...)
-
+psych::bassAckward.diagram(x = ,digits = ,cut = ,labels = ,marg = ,main = ,items = ,sort = ,lr = ,curves = ,organize = ,values = )
 #Bechtoldt
 Bechtoldt(x = ,...)
+psych::Bechtoldt
 #Bechtoldt.1
 Bechtoldt.1(x = ,...)
+psych::Bechtoldt.1
 #Bechtoldt.2
 Bechtoldt.2(x = ,...)
+psych::Bechtoldt.2
 #bestItems
 bestItems(x = ,...)
+psych::bestItems(x = ,criteria = ,cut = ,n.item = ,abs = ,dictionary = ,check = ,digits = ,use = ,method = )
 #bestScales
 bestScales(x = ,...)
+psych::bestScales(x = ,criteria = ,min.item = ,max.item = ,delta = ,cut = ,n.item = ,wtd.cut = ,wtd.n = ,n.iter = ,folds = ,p.keyed = ,overlap = ,dictionary = ,check = ,impute = ,log.p = ,digits = )
 #bfi
 bfi(x = ,...)
+psych::bfi
+
 #bfi.keys
 bfi.keys(x = ,...)
+psych::bfi.keys
 #bi.bars
 bi.bars(x = ,...)
+psych::bi.bars(x = ,var = ,grp = ,horiz = ,color = ,label = ,zero = ,xlab = ,ylab = )
 #bifactor
 bifactor(x = ,...)
+psych::bifactor(L = ,Tmat = ,normalize = ,eps = ,maxit = )
 #bigCor
 bigCor(x = ,...)
+psych::bigCor(x = ,size = ,use = ,cor = )
 #biplot.psych
 biplot.psych(x = ,...)
+psych::biplot.psych(x = ,labels = ,cex = ,main = ,hist.col = ,xlim.s = ,ylim.s = ,xlim.f = ,ylim.f = ,maxpoints = ,adjust = ,col = ,pos = ,arrow.len = ,pch = ,choose = ,cuts = ,cutl = ,group = ,smoother = ,vars = )
 #biquartimin
 biquartimin(x = ,...)
+psych::biquartimin(L = ,Tmat = ,normalize = ,eps = ,maxit = )
 #biserial
 biserial(x = ,...)
+psych::biserial(x = ,y = )
 #block.random
 block.random(x = ,...)
+psych::block.random(n = ,ncond = )
 #bock.table
 bock.table(x = ,...)
+psych::bock.table
 #cattell
 cattell(x = ,...)
+psych::cattell
 #char2numeric
 char2numeric(x = ,...)
+psych::char2numeric(x = ,flag = )
 #Chen
 Chen(x = ,...)
+psych::Chen
 #chi2r
 chi2r(x = ,...)
+psych::chi2r(chi2 = ,n = )
 #circ.sim
 circ.sim(x = ,...)
+psych::circ.sim(nvar = ,nsub = ,circum = ,xloading = ,yloading = ,gloading = ,xbias = ,ybias = ,categorical = ,low = ,high = ,truncate = ,cutpoint = )
 #circ.sim.plot
 circ.sim.plot(x = ,...)
+psych::circ.sim.plot(x.df = )
 #circ.simulation
 circ.simulation(x = ,...)
+psych::circ.simulation(samplesize = ,numberofvariables = )
 #circ.tests
 circ.tests(x = ,...)
+psych::circ.tests(loads = ,loading = ,sorting = )
 #circadian.cor
 circadian.cor(x = ,...)
+psych::circadian.cor(angle = ,data = ,hours = ,na.rm = )
 #circadian.F
 circadian.F(x = ,...)
+psych::circadian.F(angle = ,group = ,data = ,hours = ,na.rm = )
 #circadian.linear.cor
 circadian.linear.cor(x = ,...)
+psych::circadian.linear.cor(angle = ,x = ,data = ,hours = )
 #circadian.mean
 circadian.mean(x = ,...)
+psych::circadian.mean(angle = ,data = ,hours = ,na.rm = )
 #circadian.phase
 circadian.phase(x = ,...)
+psych::circadian.phase(angle = ,x = ,code = ,data = ,hours = ,period = ,plot = ,opti = ,na.rm = )
 #circadian.reliability
 circadian.reliability(x = ,...)
+psych::circadian.reliability(angle = ,x = ,code = ,data = ,min = ,oddeven = ,hours = ,period = ,plot = ,opti = ,na.rm = )
 #circadian.sd
 circadian.sd(x = ,...)
+psych::circadian.sd(angle = ,data = ,hours = ,na.rm = )
 #circadian.stats
 circadian.stats(x = ,...)
+psych::circadian.stats(angle = ,data = ,hours = ,na.rm = )
 #circular.cor
 circular.cor(x = ,...)
+psych::circular.cor(angle = ,na.rm = )
 #circular.mean
 circular.mean()
+psych::circular.mean(angle = ,na.rm = )
 #cluster.cor
 cluster.cor(x = ,...)
+psych::cluster.cor(keys = ,r.mat = ,correct = ,SMC = ,item.smc = ,impute = )
 #cluster.fit
 cluster.fit(x = ,...)
+psych::cluster.fit(original = ,load = ,clusters = ,diagonal = )
 #cluster.loadings
 cluster.loadings(x = ,...)
+psych::cluster.loadings(keys = ,r.mat = ,correct = ,SMC = )
 #cluster.plot
 cluster.plot(x = ,...)
+psych::cluster.plot(ic.results = ,cluster = ,cut = ,labels = ,title = ,pch = ,pos = ,show.points = ,choose = )
 #cluster2keys
 cluster2keys(x = ,...)
+psych::cluster2keys(c = )
 #cohen.d
 cohen.d(x = ,...)
+psych::cohen.d(x = ,group = ,alpha = ,std = ,sort = ,dictionary = ,MD = ,data = )
 #cohen.d.by
 cohen.d.by(x = ,...)
+psych::cohen.d.by(x = ,group = ,group2 = ,alpha = ,MD = )
 #cohen.d.ci
 cohen.d.ci(x = ,...)
+psych::cohen.d.ci(d = ,n = ,n2 = ,n1 = ,alpha = )
 #cohen.kappa
 cohen.kappa(x = ,...)
+psych::cohen.kappa(x = ,w = ,n.obs = ,alpha = ,levels = )
 #cohen.profile
 cohen.profile(x = ,...)
+psych::cohen.profile(x = ,y = ,M = )
 #comorbidity
 comorbidity(x = ,...)
+psych::comorbidity(d1 = ,d2 = ,com = ,labels = )
 #con2cat
 con2cat(x = ,...)
+psych::con2cat(old = ,cuts = ,where = )
 #congeneric.sim
 congeneric.sim(x = ,...)
+psych::congeneric.sim(loads = ,N = ,err = ,short = )
 #congruence
 congruence(x = ,...)
+psych::congruence(x = ,y = )
 #cor.ci
 cor.ci(x = ,...)
+psych::cor.ci(x = ,keys = ,n.iter = ,p = ,overlap = ,poly = ,method = ,plot = ,minlength = ,n = )
 #cor.plot
 cor.plot(x = ,...)
+psych::cor.plot(r = ,numbers = ,colors = ,n = ,main = ,zlim = ,show.legend = ,labels = ,n.legend = ,keep.par = ,select = ,pval = ,digits = ,trailing = ,cuts = ,scale = ,cex = ,MAR = ,upper = ,diag = ,symmetric = ,stars = ,adjust = ,xaxis = ,xlas = ,ylas = ,ysrt = ,xsrt = ,gr = ,alpha = ,min.length = ,sort = ,n.obs = )
 #cor.plot.upperLowerCi
 cor.plot.upperLowerCi(x = ,...)
+psych::cor.plot.upperLowerCi(R = ,numbers = ,cuts = ,select = ,main = ,adjust = )
 #cor.smooth
 cor.smooth(x = ,...)
+psych::cor.smooth(x = ,eig.tol = )
 #cor.smoother
 cor.smoother(x = ,...)
+psych::cor.smoother(x = ,cut = )
 #cor.wt
 cor.wt(x = ,...)
+psych::cor.wt(data = ,vars = ,w = ,sds = ,cor = )
 #cor2
 cor2(x = ,...)
+psych::cor2(x = ,y = ,digits = ,use = ,method = )
 #cor2cov
 cor2cov(x = ,...)
 #cor2dist
@@ -8737,6 +8808,7 @@ factor.residuals(x = ,...)
 
 #factor.rotate
 factor.rotate(x = ,...)
+psych::factor.rotate(f = ,angle = ,col1 = ,col2 = ,plot = )
 #factor.scores
 factor.scores(x = ,...)
 #factor.stats
