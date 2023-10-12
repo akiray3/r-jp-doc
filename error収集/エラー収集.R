@@ -8613,62 +8613,92 @@ cor2(x = ,...)
 psych::cor2(x = ,y = ,digits = ,use = ,method = )
 #cor2cov
 cor2cov(x = ,...)
+psych::cor2cov(rho = ,sigma = )
 #cor2dist
 cor2dist(x = ,...)
+psych::cor2dist(x = )
 #corCi
 corCi(x = ,...)
+psych::corCi(x = ,keys = ,n.iter = ,p = ,overlap = ,poly = ,method = ,plot = ,minlength = ,n = )
 #corFiml
 corFiml(x = ,...)
+psych::corFiml(x = ,covar = ,show = )
 #corPlot
 corPlot(x = ,...)
+psych::corPlot(r = ,numbers = ,colors = ,n = ,main = ,zlim = ,show.legend = ,labels = ,n.legend = ,keep.par = ,select = ,pval = ,digits = ,trailing = ,cuts = ,scale = ,cex = ,MAR = ,upper = ,diag = ,symmetric = ,stars = ,adjust = ,xaxis = ,xlas = ,ylas = ,ysrt = ,xsrt = ,gr = ,alpha = ,min.length = ,sort = ,n.obs = )
 #corPlotUpperLowerCi
 corPlotUpperLowerCi(x = ,...)
+psych::corPlotUpperLowerCi(R = ,numbers = ,cuts = ,select = ,main = ,adjust = )
 #corr.p
 corr.p(x = ,...)
+psych::corr.p(r = ,n = ,adjust = ,alpha = ,minlength = ,ci = )
 #corr.test
 corr.test(x = ,...)
+psych::corr.test(x = ,y = ,use = ,method = ,adjust = ,alpha = ,ci = ,minlength = ,normal = )
 #correct.cor
 correct.cor(x = ,...)
+psych::correct.cor(x = ,y = )
 #cortest
 cortest(x = ,...)
+psych::cortest(R1 = ,R2 = ,n1 = ,n2 = ,fisher = ,cor = ,method = ,use = )
 #cortest.bartlett
 cortest.bartlett(x = ,...)
+psych::cortest.bartlett(R = ,n = ,diag = )
 #cortest.jennrich
 cortest.jennrich(x = ,...)
+psych::cortest.jennrich(R1 = ,R2 = ,n1 = ,n2 = )
 #cortest.mat
 cortest.mat(x = ,...)
+psych::cortest.mat(R1 = ,R2 = ,n1 = ,n2 = )
 #cortest.normal
 cortest.normal(x = ,...)
+psych::cortest.normal(R1 = ,R2 = ,n1 = ,n2 = ,fisher = )
 #cosinor
 cosinor(x = ,...)
+psych::cosinor(angle = ,x = ,code = ,data = ,hours = ,period = ,plot = ,opti = ,na.rm = )
 #cosinor.period
 cosinor.period(x = ,...)
+psych::cosinor.period(angle = ,x = ,code = ,data =)
 #cosinor.plot
 cosinor.plot(x = ,...)
+psych::cosinor.plot(angle = ,x = ,data = ,IDloc = ,ID = ,hours = ,period = ,na.rm = ,ylim = ,ylab = ,xlab = ,main = ,add = ,multi = ,typ = )
 #count.pairwise
 count.pairwise(x = ,...)
+psych::count.pairwise(x = ,y = ,diagonal = )
 #crossValidation
 crossValidation(x = ,...)
+psych::crossValidation(model = ,data = ,options = ,select = )
 #cs
 cs(x = ,...)
+psych::cs()
 #cta
 cta(x = ,...)
+psych::cta(n = ,t = ,cues = ,act = ,inhibit = ,expect = ,consume = ,tendency = ,tstrength = ,type = ,fast = ,compare = ,learn = ,reward = )
 #cta.15
 cta.15(x = ,...)
+psych::cta.15(n = ,t = ,cues = ,stim = ,act = ,inhibit = )
 #d.ci
 d.ci(x = ,...)
+psych::d.ci(d = ,n = ,n2 = ,n1 = ,alpha = )
 #d.robust
 d.robust(x = ,...)
+psych::d.robust(x = ,group = ,trim = )
 #d2CL
 d2CL
+psych::d2CL(d = )
 #d2OVL
+
 d2OVL
-#d2OVL2
-d2OVL2
+psych::d2CL(d = )
+#q  d2OVL2
+d2OVL
+psych::d2OVLL(i)
 #d2r
 d2r
+psych::d2r(d = )
 #d2t
 d2t
+psych::d2t(d = ,n = ,n2 = ,n1 = a)
 #d2U3
 d2U3
 #densityBy
