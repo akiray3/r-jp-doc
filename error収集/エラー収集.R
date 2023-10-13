@@ -8701,653 +8701,969 @@ d2t
 psych::d2t(d = ,n = ,n2 = ,n1 = a)
 #d2U3
 d2U3
+psych::d2U3(d = )
 #densityBy
 densityBy(x = ,...)
+psych::densityBy(x = ,var = ,grp = ,data = ,freq = ,col = ,alpha = ,adjust = ,ylim = ,xlim = ,xlab = ,ylab = ,main = ,legend = )
 #describe
 describe(x = ,...)
+psych::describe(x = ,na.rm = ,interp = ,skew = ,ranges = ,trim = ,type = ,check = ,fast = ,quant = ,IQR = ,omit = ,data = )
 #describe.by
 describe.by(x = ,...)
+psych::describe(x = ,na.rm = ,interp = ,skew = ,ranges = ,trim = ,type = ,check = ,fast = ,quant = ,IQR = ,omit = ,data = )
 #describeBy
 describeBy(x = ,...)
+psych::describeBy(x = ,group = ,mat = ,type = ,digits = ,data = )
 #describeData
 describeData(x = ,...)
+psych::describeData(x = ,head = ,tail = )
 #describeFast
 describeFast(x = ,...)
+psych::describeFast(x = )
 #dia.arrow
 dia.arrow(x = ,...)
+psych::dia.arrow(from = ,to = ,labels = ,scale = ,cex = ,adj = ,both = ,pos = ,l.cex = ,gap.size = ,draw = ,col = ,lty = )
 #dia.cone
 dia.cone(x = ,...)
+psych::dia.cone(x = ,y = ,theta = ,arrow = ,curves = ,add = ,labels = ,xlim = ,ylim = )
 #dia.curve
 dia.curve(x = ,...)
+psych::dia.curve(from = ,to = ,labels = ,scale = )
 #dia.curved.arrow
 dia.curved.arrow(x = ,...)
+psych::dia.curved.arrow(from = ,to = ,labels = ,scale = ,both = ,dir = ,draw = )
 #dia.ellipse
 dia.ellipse(x = ,...)
+psych::dia.ellipse(x = ,y = ,labels = ,cex = ,e.size = ,xlim = ,ylim = ,draw = )
 #dia.ellipse1
 dia.ellipse1(x = ,...)
+psych::ellipses(x = ,y = ,add = ,smooth = ,lm = ,data = ,n = ,span = ,iter = ,col = ,xlab = ,ylab = ,size = )
 #dia.rect
 dia.rect(x = ,...)
+psych::dia.rect(x = ,y = ,labels = ,cex = ,xlim = ,ylim = ,draw = )
 #dia.self
 dia.self(x = ,...)
+psych::dia.self(location = ,labels = ,scale = ,side = ,draw = )
 #dia.shape
 dia.shape(x = ,...)
+psych::dia.shape(x = ,y = ,labels = ,cex = ,e.size = ,xlim = ,ylim = ,shape = )
 #dia.triangle
 dia.triangle(x = ,...)
+psych::dia.triangle(x = ,y = ,labels = ,cex = ,xlim = ,ylim = )
 #diagram
 diagram(x = ,...)
+psych::diagram(fit = ,)
 #directSl
 directSl(x = ,...)
-
+psych::directSl(m = ,nfactors = ,fm = ,rotate = ,cut = )
 #distance 
 distance(x = ,...)
+psych::distance(x = ,y = ,r = )
 #draw.cor
 draw.cor(x = ,...)
+psych::draw.cor(r = ,expand = ,theta = ,phi = ,N = ,nbcol = ,box = ,main = ,cuts = ,all = ,ellipses = ,ze = )
+
+
 #draw.tetr
 draw.tetr(x = ,...)
+psych::draw.tetra(r = ,t1 = ,t2 = ,shade = )
 #dummy.code
 dummy.code(x = ,...)
+psych::dummy.code(x = ,group = ,na.rm = ,top = ,min = )
 #Dwyer
 Dwyer(x = ,...)
+psych:Dwyer
 #eigen.loadings
 eigen.loadings(x = ,...)
+psych::eigen.loadings(x = )
 #ellipses
 ellipses(x = ,...)
+psych::ellipses(x = ,y = ,add = ,smooth = ,lm = ,data = ,n = ,span = ,iter = ,col = ,xlab = ,ylab = ,size = )
 #equamax
 equamax(x = ,...)
+psych::equamax(L = ,Tmat = ,eps = ,maxit = )
 #error.bars
 error.bars(x = ,...)
+psych::error.bars(x = ,stats = ,data = ,group = ,ylab = ,xlab = ,main = ,eyes = ,ylim = ,xlim = ,alpha = ,sd = ,labels = ,pos = ,arrow.len = ,arrow.col = ,add = ,bars = ,within = ,col = ,density = )
 #error.bars.by
 error.bars.by(x = ,...)
+psych::error.bars.by(x = ,group = ,data = ,by.var = ,x.cat = ,ylab = ,xlab = ,main = ,ylim = ,xlim = ,eyes = ,alpha = ,sd = ,labels = ,v.labels = ,v2.labels = ,add.labels = ,pos = ,arrow.len = ,min.size = ,add = ,bars = ,within = ,colors = ,lty = ,lines = ,legend = ,pch = ,density = ,stats = )
 #error.bars.tab
 error.bars.tab(x = ,...)
+psych::error.bars.tab(t = ,way = ,raw = ,col = )
 #error.crosses
 error.crosses(x = ,...)
+psych::error.crosses(x = ,y = ,labels = ,main = ,xlim = ,ylim = ,xlab = ,ylab = ,pos = ,offset = ,arrow.len = ,alpha = ,sd = ,add = ,colors = ,col.arrows = ,col.text = )
 #error.dots
 error.dots(x = ,...)
+psych::error.dots(x = ,var = ,se = ,group = ,sd = ,effect = ,stats = ,head = ,tail = ,sort = ,decreasing = ,main = ,alpha = ,eyes = ,items = ,min.n = ,max.labels = ,labels = ,label.width = ,select = ,groups = ,gdata = ,cex = ,pt.cex = ,pch = ,gpch = ,bg = ,fg = ,color = ,gcolor = ,lcolor = ,xlab = ,ylab = ,xlim = ,add = ,order = )
 #errorCircles
 errorCircles(x = ,...)
+psych::errorCircles(x = ,y = ,data = ,ydata = ,group = ,paired = ,labels = ,main = ,xlim = ,ylim = ,xlab = ,ylab = ,add = ,pos = ,offset = ,arrow.len = ,alpha = ,sd = ,bars = ,circles = ,colors = ,col.arrows = ,col.text = ,circle.size = )
 #esem
 esem(x = ,...)
+psych::esem(r = ,varsX = ,varsY = ,nfX = ,nfY = ,n.obs = ,fm = ,rotate = ,rotateY = ,plot = ,cor = ,use = ,weight = )
 #esem.diagram
 esem.diagram(x = ,...)
+psych::esem.diagram(esem = ,labels = ,cut = ,errors = ,simple = ,regression = ,lr = ,digits = ,e.size = ,adj = ,main = ,i)
 #extension.diagram
 extension.diagram(x = ,...)
+psych::extension.diagram(fa.results = ,Phi = ,fe.results = ,sort = ,labels = ,cut = ,f.cut = ,e.cut = ,simple = ,e.simple = ,errors = ,g = ,digits = ,e.size = ,rsize = ,side = ,main = ,cex = ,e.cex = ,marg = ,adj = ,ic = )
 #fa
 fa(x = ,...)
+psych::fa(r = ,nfactors = ,n.obs = ,n.iter = ,rotate = ,scores = ,residuals = ,SMC = ,covar = ,missing = ,impute = ,min.err = ,max.iter = ,symmetric = ,warnings = ,fm = ,alpha = ,p = ,oblique.scores = ,np.obs = ,use = ,cor = ,correct = ,weight = ,n.rotations = ,hyper = ,smooth = )
 #fa.congruence
 fa.congruence(x = ,...)
+psych::fa.congruence(x = ,y = ,digits = ,use = ,structure = )
 #fa.diagram
 fa.diagram(x = ,...)
+psych::fa.diagram(fa.results = ,Phi = ,fe.results = ,sort = ,labels = ,cut = ,simple = ,errors = ,g = ,digits = ,e.size = ,rsize = ,side = ,main = ,cex = ,l.cex = ,marg = ,adj = ,ic = )
 #fa.extend
 fa.extend(x = ,...)
+psych::fa.extend(r = ,nfactors = ,ov = ,ev = ,n.obs = ,np.obs = ,correct = ,rotate = ,SMC = ,warnings = ,fm = ,alpha = ,omega = ,cor = ,use = ,cor.correct = ,weight = ,smooth = )
 #fa.extension
 fa.extension(x = ,...)
+psych::fa.extension(Roe = ,fo = ,correct = )
 #fa.graph
 fa.graph(x = ,...)
+psych::fa.graph(fa.results = ,out.file = ,labels = ,cut = ,simple = ,size = ,node.font = ,edge.font = ,rank.direction = ,digits = ,main = )
 #fa.lookup
 fa.lookup(x = ,...)
+psych::fa.lookup(f = ,dictionary = ,digits = ,cut = ,n = ,sort = )
 #fa.multi
 fa.multi(x = ,...)
+psych::fa.multi(r = ,nfactors = ,nfact2 = ,n.obs = ,n.iter = ,rotate = ,scores = ,residuals = ,SMC = ,covar = ,missing = ,impute = ,min.err = ,max.iter = ,symmetric = ,warnings = ,fm = ,alpha = ,p = ,oblique.scores = ,np.obs = ,use = ,cor = )
 #fa.multi.diagram
 fa.multi.diagram(x = ,...)
+psych::fa.multi.diagram(multi.results = ,sort = ,labels = ,flabels = ,f2labels = ,cut = ,gcut = ,simple = ,errors = ,digits = ,e.size = ,rsize = ,side = ,main = ,cex = ,color.lines = ,marg = ,adj = )
 #fa.organize
 fa.organize(x = ,...)
+psych::fa.organize(fa.results = ,o = ,i = ,cn = ,echelon = ,flip = )
 #fa.parallel
 fa.parallel(x = ,...)
+psych::fa.parallel(x = ,n.obs = ,fm = ,fa = ,nfactors = ,main = ,n.iter = ,error.bars = ,se.bars = ,SMC = ,ylabel = ,show.legend = ,sim = ,quant = ,cor = ,use = ,plot = ,correct = ,sqrt = )
 #fa.parallel.poly
 fa.parallel.poly(x = ,...)
+psych::fa.parallel.poly(x = ,n.iter = ,SMC = ,fm = ,correct = ,sim = ,fa = ,global = )
 #fa.plot
 fa.plot(x = ,...)
+psych::fa.plot(ic.results = ,cluster = ,cut = ,labels = ,title = ,jiggle = ,amount = ,pch = ,pos = ,show.points = ,choose = ,main = )
 #fa.poly
 fa.poly(x = ,...)
+psych::fa.poly(x = ,nfactors = ,n.obs = ,n.iter = ,rotate = ,SMC = ,missing = ,impute = ,min.err = ,max.iter = ,symmetric = ,warnings = ,fm = ,alpha = ,p = ,scores = ,oblique.scores = ,weight = ,global = )
 #fa.pooled
 fa.pooled(x = ,...)
+psych::fa.pooled(datasets = ,nfactors = ,rotate = ,scores = ,residuals = ,SMC = ,covar = ,missing = ,impute = ,min.err = ,max.iter = ,symmetric = ,warnings = ,fm = ,alpha = ,p = ,oblique.scores = ,np.obs = ,use = ,cor = ,correct = ,weight = )
 #fa.random
 fa.random(x = ,...)
+psych::fa.random(data = ,nfactors = ,fix = ,n.obs = ,n.iter = ,rotate = ,scores = ,residuals = ,SMC = ,covar = ,missing = ,impute = ,min.err = ,max.iter = ,symmetric = ,warnings = ,fm = ,alpha = ,p = ,oblique.scores = ,np.obs = ,use = ,cor = ,weight = )
 #fa.rgraph
 fa.rgraph(x = ,...)
+psych::fa.rgraph(fa.results = ,out.file = ,labels = ,cut = ,simple = ,size = ,node.font = ,edge.font = ,rank.direction = ,digits = ,main = ,graphviz = )
 #fa.sapa
 fa.sapa(x = ,...)
+psych::fa.sapa(r = ,nfactors = ,n.obs = ,n.iter = ,rotate = ,scores = ,residuals = ,SMC = ,covar = ,missing = ,impute = ,min.err = ,max.iter = ,symmetric = ,warnings = ,fm = ,alpha = ,p = ,oblique.scores = ,np.obs = ,use = ,cor = ,correct = ,weight = ,frac = )
 #fa.sort
 fa.sort(x = ,...)
-
+psych::fa.sort(fa.results = ,polar = )
 #fa.stats
 fa.stats(x = ,...)
+psych::fa.stats(r = ,f = ,phi = ,n.obs = ,np.obs = ,alpha = ,fm = ,smooth = ,coarse = )
 #fa2irt
 fa2irt(x = ,...)
+psych::fa2irt(f = ,rho = ,plot = ,n.obs = )
 #faBy
 faBy(x = ,...)
+psych::faBy(stats = ,nfactors = ,rotate = ,fm = ,free = ,all = ,min.n = ,quant = )
 #fac
 fac(x = ,...)
+psych::fac(r = ,nfactors = ,n.obs = ,rotate = ,scores = ,residuals = ,SMC = ,covar = ,missing = ,impute = ,min.err = ,max.iter = ,symmetric = ,warnings = ,fm = ,alpha = ,oblique.scores = ,np.obs = ,use = ,cor = ,correct = ,weight = ,n.rotations = ,hyper = ,smooth = )
 #faCor
 faCor(x = ,...)
+psych::faCor(r = ,nfactors = ,fm = ,rotate = ,scores = ,adjust = ,use = ,cor = ,weight = ,correct = ,Target = )
 #factor.congruence
 factor.congruence(x = ,...)
+psych::factor.congruence(x = ,y = ,digits = ,use = ,structure = )
 #factor.fit
 factor.fit(x = ,...)
+psych::factor.fit(r = ,f = )
 #factor.minres
 factor.minres(x = ,...)
+psych::factor.minres(r = ,nfactors = ,residuals = ,rotate = ,n.obs = ,scores = ,SMC = ,missing = ,impute = ,min.err = ,digits = ,max.iter = ,symmetric = ,warnings = ,fm = )
 #factor.model
 factor.model(x = ,...)
+psych::factor.model(f = ,Phi = ,U2 = )
 #factor.pa
 factor.pa(x = ,...)
+psych::factor.pa(r = ,nfactors = ,residuals = ,rotate = ,n.obs = ,scores = ,SMC = ,missing = ,impute = ,min.err = ,digits = ,max.iter = ,symmetric = ,warnings = ,fm = )
 #factor.plot
 factor.plot(x = ,...)
+psych::factor.plot(ic.results = ,cluster = ,cut = ,labels = ,title = ,jiggle = ,amount = ,pch = ,pos = ,show.points = )
 #factor.residuals
 factor.residuals(x = ,...)
+psych::factor.residuals(r = ,f = )
 
 #factor.rotate
 factor.rotate(x = ,...)
 psych::factor.rotate(f = ,angle = ,col1 = ,col2 = ,plot = )
 #factor.scores
 factor.scores(x = ,...)
+psych::factor.scores(x = ,f = ,Phi = ,method = ,rho = ,missing = ,impute = )
 #factor.stats
 factor.stats(x = ,...)
+psych::factor.stats(r = ,f = ,phi = ,n.obs = ,np.obs = ,alpha = ,fm = ,smooth = ,coarse = )
 #factor.wls
 factor.wls(x = ,...)
+psych::factor.wls(r = ,nfactors = ,resyiduals = ,rotate = ,n.obs = ,scores = ,SMC = ,missing = ,impute = ,min.err = ,digits = ,max.iter = ,symmetric = ,warnings = ,fm = )
 #factor2cluster
 factor2cluster(x = ,...)
+psych::factor2cluster(loads = ,cut = ,aslist = )
 #faRotate
 faRotate(x = ,...)
+psych::faRotate(loadings = ,rotate = )
 #faRotations
 faRotations(x = ,...)
+psych::faRotations(loadings = ,r = ,rotate = ,hyper = ,n.rotations = )
 #fisherz
 fisherz(x = ,...)
+psych::fisherz(rho = )
 #fisherz2r
 fisherz2r(x = ,...)
+psych::fisherz2r(z = )
 #fparse
 fparse(x = ,...)
+psych::fparse(expr = )
 #fromTo
 fromTo(x = ,...)
+psych::fromTo(data = ,from = ,to = )
 #g2r
 g2r(x = ,...)
+psych::g2r(g = ,df = ,n = )
 #Garcia
 Garcia(x = ,...)
+psych::Garcia
 #geometric.mean
 geometric.mean(x = ,...)
+psych::geometric.mean(x = ,na.rm = )
 
 #glb
 glb(x = ,...)
+psych::glb(r = ,key = )
 #glb.algebraic
 glb.algebraic(x = ,...)
+psych::glb.algebraic(Cov = ,LoBounds = ,UpBounds = )
 #glb.fa
 glb.fa(x = ,...)
+psych::glb.fa(r = ,key = )
 
 #Gleser
 Gleser(x = ,...)
+psych::Gleser
 #Gorsuch
 Gorsuch(x = ,...)
+psych::Gorsuch
 #guttman
 guttman(x = ,...)
+psych::guttman(r = ,key = )
 #Harman.5
 Harman.5(x = ,...)
+psych::Harman.5
 #Harman.8
 Harman.8(x = ,...)
+psych::Harman.8
 #Harman.Burt
 Harman.Burt(x = ,...)
+psych::Harman.Burt
 
 #Harman.Holzinger
 Harman.Holzinger(x = ,...)
+psych::Harman.Holzinger
 
 #Harman.political
 Harman.political(x = ,...)
+psych::Harman.political
 
 #harmonic.mean
 harmonic.mean(x = ,...)
+psych::harmonic.mean(x = ,na.rm = ,zero = )
 #headtail
 headtail(x = ,...)
+psych::headtail(x = ,hlength = ,tlength = ,digits = ,ellipsis = ,from = ,to = )
 #headTail
 headTail(x = ,...)
+psych::headTail(x = ,top = ,bottom = ,from = ,to = ,digits = ,hlength = ,tlength = ,ellipsis = )
 #het.diagram
 het.diagram(x = ,...)
+psych::het.diagram(r = ,levels = ,cut = ,digits = ,both = ,main = ,l.cex = ,gap.size = )
 #histBy
 histBy(x = ,...)
+psych::histBy(x = ,var = ,group = ,data = ,density = ,alpha = ,breaks = ,col = ,xlab = ,main = ,freq = )
 #Holzinger
 Holzinger(x = ,...)
+psych::Holzinger
 
 #Holzinger.9
 Holzinger.9(x = ,...)
+psych::Holzinger.9
 #ICC
 ICC(x = ,...)
+psych::ICC(x = ,missing = ,alpha = ,lmer = ,check.keys = )
 #iclust
 iclust(x = ,...)
+psych::iclust(r.mat = ,nclusters = ,alpha = ,beta = ,beta.size = ,alpha.size = ,correct = ,correct.cluster = ,reverse = ,beta.min = ,output = ,digits = ,labels = ,cut = ,n.iterations = ,title = ,plot = ,weighted = ,cor.gen = ,SMC = ,purify = ,diagonal = )
  #ICLUST
 ICLUST(x = ,...)
+psych::ICLUST(r.mat = ,nclusters = ,alpha = ,beta = ,beta.size = ,alpha.size = ,correct = ,correct.cluster = ,reverse = ,beta.min = ,output = ,digits = ,labels = ,cut = ,n.iterations = ,title = ,plot = ,weighted = ,cor.gen = ,SMC = ,purify = ,diagonal = )
 #ICLUST.cluster
 ICLUST.cluster(x = ,...)
+psych::ICLUST.cluster(r.mat = ,ICLUST.options = ,smc.items = )
 
 #iclust.diagram
 iclust.diagram(x = ,...)
+psych::iclust.diagram(ic = ,labels = ,short = ,digits = ,cex = ,min.size = ,e.size = ,colors = ,main = ,cluster.names = ,marg = ,plot = ,bottomup = )
 #ICLUST.graph
 ICLUST.graph(x = ,...)
+psych::ICLUST.graph(ic.results = ,out.file = ,min.size = ,short = ,labels = ,size = ,node.font = ,edge.font = ,rank.direction = ,digits = ,title = )
 #ICLUST.rgraph
 ICLUST.rgraph(x = ,...)
+psych::ICLUST.rgraph(ic.results = ,out.file = ,min.size = ,short = ,labels = ,size = ,node.font = ,edge.font = ,rank.direction = ,digits = ,title = ,label.font = )
 #iclust.sort
 iclust.sort(x = ,...)
+psych::iclust.sort(ic.load = ,cut = ,labels = ,keys = ,clustsort = )
 #ICLUST.sort
 ICLUST.sort(x = ,...)
+psych::ICLUST.sort(ic.load = ,cut = ,labels = ,keys = ,clustsort = )
 #interbattery
 interbattery(x = ,...)
+psych::interbattery(r = ,varsX = ,varsY = ,nfX = ,nfY = ,n.obs = ,cor = ,use = ,weight = )
 #interp.boxplot
 interp.boxplot(x = ,...)
+psych::interp.boxplot(x = ,w = ,na.rm = )
 #interp.median
 interp.median(x = ,...)
+psych::interp.median(x = ,w = ,na.rm = )
 #interp.q
 interp.q(x = ,...)
+psych::interp.q(x = ,q = ,w = ,na.rm = )
 #interp.qplot.by
 interp.qplot.by(x = ,...)
+psych::interp.qplot.by(y = ,x = ,w = ,na.rm = ,xlab = ,ylab = ,ylim = ,arrow.len = ,typ = ,add = )
 #interp.quantiles
 interp.quantiles(x = ,...)
+psych::interp.quantiles(x = ,q = ,w = ,na.rm = )
 #interp.quart
 interp.quart(x = ,...)
+psych::interp.quart(x = ,w = ,na.rm = )
 #interp.quartiles
 interp.quartiles(x = ,...)
+psych::interp.quantiles(x = ,q = ,w = ,na.rm = )
 #interp.values
 interp.values(x = ,...)
+psych::interp.values(x = ,w = ,na.rm = )
 #irt.0p
   irt.0p
+  psych::irt.0p(items = )
 #irt.1p
   irt.1p
+  psych::irt.1p(delta = ,items = )
 #irt.2p
   irt.2p
 #irt.discrim
   irt.discrim(x = ,...)
+  psych::irt.discrim(item.diff = ,theta = ,items = )
 #irt.fa
   irt.fa(x = ,...)
+  psych::irt.fa(x = ,nfactors = ,correct = ,plot = ,n.obs = ,rotate = ,fm = ,sort = )
 #irt.item.diff.rasch  
   irt.item.diff.rasch(x = ,...)
+  psych::irt.item.diff.rasch(items = )
 #irt.person.rasch
   irt.person.rasch(x = ,...)
+  psych::irt.person.rasch(diff = ,items = )
 #irt.responses
   irt.responses(x = ,...)
+  psych::irt.responses(theta = ,items = ,breaks = ,show.missing = ,show.legend = ,legend.location = ,colors = )
 #irt.se
   irt.se(x = ,...)
+  psych::irt.se(stats = ,scores = ,D = )
 #irt.select
   irt.select(x = ,...)
+  psych::irt.select(x = ,y = )
 #irt.stats.like
   irt.stats.like(x = ,...)
+  psych::irt.stats.like(items = ,stats = ,keys = ,cut = )
 #irt.tau
   irt.tau(x = ,...)
+  psych::irt.tau(x = )
 #isCorrelation
   isCorrelation(x = ,...)
+  psych::isCorrelation(x = ,na.rm = )
 #isCovariance
   isCovariance(x = ,...)
+  psych::isCovariance(x = )
 #item.dichot
   item.dichot(x = ,...)
+  psych::item.dichot(nvar = ,nsub = ,circum = ,xloading = ,yloading = ,gloading = ,xbias = ,ybias = ,low = ,high = )
 #item.lookup
   item.lookup(x = ,...)
+  psych::item.lookup(f = ,m = ,dictionary = ,cut = ,digits = )
 #item.sim
   item.sim(x = ,...)
+  psych::item.sim(nvar = ,nsub = ,circum = ,xloading = ,yloading = ,gloading = ,xbias = ,ybias = ,categorical = ,low = ,high = ,truncate = ,cutpoint = )
 #item.validity
   item.validity(x = ,...)
+  psych::item.validity(x = ,criteria = ,keys = )
 #kaiser
   kaiser(x = ,...)
+  psych::kaiser(f = ,rotate = ,m = ,pro.m = )
 #keys.lookup
   keys.lookup(x = ,...)
+  psych::keys.lookup(keys.list = ,dictionary = )
 #keys2list
   keys2list(x = ,...)
+  psych::keys2list(keys = ,sign = )
 #keysort
   keysort(x = ,...)
+  psych::keysort(keys = )
 #KMO
   KMO(x = ,...)
+  psych::KMO(r = )
 #kurtosi
   kurtosi(x = ,...)
+  psych::kurtosi(x = ,na.rm = ,type = )
 #lavaan.diagram
   lavaan.diagram(x = ,...)
+  psych::lavaan.diagram(fit = ,main = ,e.size = )
 #levels2numeric
   levels2numeric(x = ,...)  
+  psych::levels2numeric(x = )
 #logistic
   logistic(x = ,...)
+  psych::logistic(x = ,d = ,a = ,c = ,z = )
 #logistic.grm
   logistic.grm(x = ,...)
+  psych::logistic.grm(x = ,d = ,a = ,c = ,z = ,r = ,s = )
 #logit
   logit(x = ,...)
+  psych::logit(p = )
 #lookup
   lookup(x = ,...)
+  psych::lookup(x = ,y = ,criteria = )
 #lookupFromKeys
   lookupFromKeys(x = ,...)
+  psych::lookupFromKeys(keys.list = ,dictionary = ,n = ,cors = ,sort = ,suppress.names = ,digits = )
 #lookupItems
   lookupItems(x = ,...)
+  psych::lookupItems(content = ,dictionary = ,search = )
 #lowerCor
   lowerCor(x = ,...)
+  psych::lowerCor(x = ,digits = ,use = ,method = ,minlength = ,show = )
 #lowerMat
   lowerMat(x = ,...)
+  psych::lowerMat(R = ,digits = ,minlength = )
 #lowerUpper
   lowerUpper(x = ,...)
+  psych::lowerUpper(lower = ,upper = ,diff = )
 #lsat6
   lsat6(x = ,...)
+  psych::lsat6
 #lsat7
   lsat7(x = ,...)
+  psych::lsat7
 #m2d
   m2d(x = ,...)
+  psych::m2d(m1 = ,m2 = ,s1 = ,s2 = ,n1 = ,n2 = ,n = ,pooled = )
 #m2t
   m2t(x = ,...) 
+  psych::m2t(m1 = ,m2 = ,s1 = ,s2 = ,n1 = ,n2 = ,n = ,pooled = )
 
 #make.congeneric
   make.congeneric(x = ,...)
+  psych::make.congeneric(loads = ,N = ,err = ,short = )
 #make.hierarchical
   make.hierarchical(x = ,...)
+  psych::make.hierarchical(gload = ,fload = ,n = ,raw = )
 #make.irt.stats
   make.irt.stats(x = ,...)
+  psych::make.irt.stats(difficulty = ,discrimination = )
 #make.keys
   make.keys(x = ,...)
+  psych::make.keys(nvars = ,keys.list = ,item.labels = ,key.labels = )
 #makePositiveKeys
   makePositiveKeys(x = ,...)  
+  psych::makePositiveKeys(keys.list = ,sign = )
 #manhattan
   manhattan(x = ,...)
+  psych::manhattan(x = ,criteria = ,keys = ,raw = ,n.obs = ,abs = ,ylab = ,labels = ,log.p = ,ci = ,pch = ,main = ,adjust = ,ylim = ,digits = ,dictionary = )
 #mardia
   mardia(x = ,...)
+  psych::mardia(x = ,na.rm = ,plot = )
 #mat.regress
   mat.regress(x = ,...)
+  psych::mat.regress(y = ,x = ,data = ,z = ,n.obs = ,use = ,square = )
 #mat.sort
   mat.sort(x = ,...)
+  psych::mat.sort(m = ,f = )
 #matPlot
   matPlot(x = ,...)
+  psych::matPlot(x = ,type = ,minlength = ,xlas = ,legend = ,lab = ,pch = ,col = ,lty = )
 #matReg
   matReg(x = ,...)
+  psych::matReg(x = ,y = ,C = ,m = ,z = ,n.obs = ,means = ,std = ,raw = ,part = )
 #matSort
   matSort(x = ,...)
+  psych::matSort(m = ,f = )
 #mediate
   mediate(x = ,...)
+  psych::mediate(y = ,x = ,m = ,data = ,mod = ,z = ,n.obs = ,use = ,n.iter = ,alpha = ,std = ,plot = ,zero = ,part = ,main = )
 #mediate.diagram
   mediate.diagram(x = ,...)
+  psych::mediate.diagram(medi = ,digits = ,ylim = ,xlim = ,show.c = ,main = ,cex = ,l.cex = )
 #minkowski
   minkowski(x = ,...)
+  psych::minkowski(r = ,add = ,main = ,xl = ,yl = )
 #mixed.cor
   mixed.cor(x = ,...)
+  psych::mixed.cor(x = ,p = ,d = ,smooth = ,correct = ,global = ,ncat = ,use = ,method = ,weight = )
 #mixedCor
   mixedCor(x = ,...)
+  psych::mixedCor(data = ,c = ,p = ,d = ,smooth = ,correct = ,global = ,ncat = ,use = ,method = ,weight = )
 #mlArrange
   mlArrange(x = ,...)
+  psych::mlArrange(x = ,grp = ,Time = ,items = ,extra = )
 #mlPlot
   mlPlot(x = ,...)
+  psych::mlPlot(x = ,grp = ,Time = ,items = ,extra = ,col = ,type = ,main = )
 #mlr
   mlr(x = ,...)
+  psych::mlr(x = ,grp = ,Time = ,items = ,alpha = ,icc = ,aov = ,lmer = ,lme = ,long = ,values = ,na.action = ,plot = ,main = )
 #moderate.diagram
   moderate.diagram(x = ,...)
+  psych::moderate.diagram(medi = ,digits = ,ylim = ,main = ,cex = ,l.cex = )
 #mssd
   mssd(x = ,...)
+  psych::mssd(x = ,group = ,lag = ,na.rm = )
 #multi.arrow
   multi.arrow(x = ,...)
+  psych::multi.arrow(arrows.list = )
 #multi.curved.arrow
   multi.curved.arrow(x = ,...)
+  psych::multi.curved.arrow(curved.list = ,l.cex = )
 #multi.hist
   multi.hist(x = ,...)
+  psych::multi.hist(x = ,nrow = ,ncol = ,density = ,freq = ,bcol = ,dcol = ,dlty = ,main = ,mar = ,breaks = ,global = )
 #multi.rect
   multi.rect(x = ,...)
+  psych::multi.rect(rect.list = )
 #multi.self
   multi.self(x = ,...)
+  psych::multi.self(self.list = )
 #multilevel.reliability
   multilevel.reliability(x = ,...)
+  psych::multilevel.reliability(x = ,grp = ,Time = ,items = ,alpha = ,icc = ,aov = ,lmer = ,lme = ,long = ,values = ,na.action = ,plot = ,main = )
 #nchar2numeric
   nchar2numeric(x = ,...)
+  psych::nchar2numeric(x = ,flag = )
 #nfactors
   nfactors(x = ,...)
+  psych::nfactors(x = ,n = ,rotate = ,diagonal = ,fm = ,n.obs = ,title = ,pch = ,use = ,cor = )
 #omega
   omega(x = ,...)
+  psych::omega(m = ,nfactors = ,fm = ,n.iter = ,p = ,poly = ,key = ,flip = ,digits = ,title = ,sl = ,labels = ,plot = ,n.obs = ,rotate = ,Phi = ,option = ,covar = )
 #omega.diagram
   omega.diagram(x = ,...)
+  psych::omega.diagram(om.results = ,sl = ,sort = ,labels = ,flabels = ,cut = ,gcut = ,simple = ,errors = ,digits = ,e.size = ,rsize = ,side = ,main = ,cex = ,color.lines = ,marg = ,adj = )
 #omega.graph
   omega.graph(x = ,...)
+  psych::omega.graph(om.results = ,out.file = ,sl = ,labels = ,size = ,node.font = ,edge.font = ,rank.direction = ,digits = ,title = )
 #omegaDirect
   omegaDirect(x = ,...)
+  psych::omegaDirect(m = ,nfactors = ,fm = ,rotate = ,cut = ,plot = ,main = )
 #omegaFromSem
   omegaFromSem(x = ,...)
+  psych::omegaFromSem(fit = ,m = ,flip = ,plot = )
 #omegah
   omegah(x = ,...)
+  psych::omegah(m = ,nfactors = ,fm = ,key = ,flip = ,digits = ,title = ,sl = ,labels = ,plot = ,n.obs = ,rotate = ,Phi = ,option = ,covar = ,two.ok = )
 #omegaSem
   omegaSem(x = ,...)
+  psych::omegaSem(m = ,nfactors = ,fm = ,key = ,flip = ,digits = ,title = ,sl = ,labels = ,plot = ,n.obs = ,rotate = ,Phi = ,option = ,lavaan = )
 #outlier
   outlier(x = ,...) 
+  psych::outlier(x = ,plot = ,bad = ,na.rm = ,xlab = ,ylab = )
 #p.rep
   p.rep(x = ,...)
+  psych::p.rep(p = ,n = ,twotailed = )
 #p.rep.f
   p.rep.f(x = ,...)
+  psych::p.rep.f(F = ,df2 = ,twotailed = )
 #p.rep.r
   p.rep.r(x = ,...) 
+  psych::p.rep.r(r = ,n = ,twotailed = )
 #p.rep.t
   p.rep.t(x = ,...)
+  psych::p.rep.t(t = ,df = ,df2 = ,twotailed = )
 #paired.r
   paired.r(x = ,...)
+  psych::paired.r(xy = ,xz = ,yz = ,n = ,n2 = ,twotailed = )
 #pairs.panels
   pairs.panels(x = ,...)  
+  psych::pairs.panels(x = ,smooth = ,scale = ,density = ,ellipses = ,digits = ,method = ,pch = ,lm = ,cor = ,jiggle = ,factor = ,hist.col = ,show.points = ,rug = ,breaks = ,cex.cor = ,wt = ,smoother = ,stars = ,ci = ,alpha = )
 #pairwiseCount
   pairwiseCount(x = ,...)
+  psych::pairwiseCount(x = ,y = ,diagonal = )
 #pairwiseCountBig
   pairwiseCountBig(x = ,...)
+  psych::pairwiseCountBig(x = ,size = )
 #pairwiseDescribe
   pairwiseDescribe(x = ,...)
+  psych::pairwiseDescribe(x = ,y = ,diagonal = )
 #pairwiseImpute
   pairwiseImpute(x = ,...)
+  psych::pairwiseImpute(keys = ,R = ,fix = )
 #pairwisePlot
   pairwisePlot(x = ,...)
+  psych::pairwisePlot(x = ,y = ,upper = ,diagonal = ,labels = ,show.legend = ,n.legend = ,colors = ,gr = ,minlength = ,xlas = ,ylas = ,main = ,count = )
 #pairwiseReport
   pairwiseReport(x = ,...)
+  psych::pairwiseReport(x = ,y = ,cut = ,diagonal = )
 #pairwiseSample
   pairwiseSample(x = ,...)
+  psych::pairwiseSample(x = ,y = ,diagonal = ,size = )
 #pairwiseZero
   pairwiseZero(x = ,...)
+  psych::pairwiseZero(x = ,y = ,min = ,short = )
 #parcels
   parcels(x = ,...)
+  psych::parcels(x = ,size = ,max = ,flip = ,congruence = )
 #partial.r
   partial.r(x = ,...)
+  psych::partial.r(data = ,x = ,y = ,use = ,method = )
 #pca
   pca(x = ,...)
+  psych::pca(r = ,nfactors = ,residuals = ,rotate = ,n.obs = ,covar = ,scores = ,missing = ,impute = ,oblique.scores = ,method = ,use = ,cor = ,correct = ,weight = )
 #phi
   phi(x = ,...)
+  psych::phi(t = ,digits = )
 #phi.demo
   phi.demo(x = ,...)
+  psych::phi.demo(n = ,r = ,cuts = )
 #phi.list
   phi.list(x = ,...)
+  psych::phi.list(nf = ,f.list = ,f.labels = )
 #phi2poly
   phi2poly(x = ,...)
+  psych::phi2poly(ph = ,cp = ,cc = ,n = ,correct = )
 #phi2poly.matrix
   phi2poly.matrix(x = ,...)
+  psych::phi2poly.matrix(x = ,v = )
 #phi2tetra
   phi2tetra(x = ,...)
+  psych::phi2tetra(ph = ,m = ,n = ,correct = )
 #Pinv
   Pinv(x = ,...)
+  psych::Pinv(X = ,tol = )
 #plot.irt
   plot.irt(x = ,...)  
+  psych::plot.irt(x = ,xlab = ,ylab = ,main = ,D = ,type = ,cut = ,labels = ,keys = ,xlim = ,ylim = ,y2lab = ,lncol = )
 #plot.poly
   plot.poly(x = ,...)
+  psych::plot.poly(x = ,D = ,xlab = ,ylab = ,xlim = ,ylim = ,main = ,type = ,cut = ,labels = ,keys = ,y2lab = ,lncol = )
 #plot.poly.parallel
   plot.poly.parallel(x = ,...)
+  psych::plot.poly.parallel(x = ,show.legend = ,fa = )
 #plot.psych
   plot.psych(x = ,...)
+  psych::plot.psych(x = ,labels = )
 #plot.reliability
   plot.reliability(x = ,...)
+  psych::plot.reliability(x = ,omega = ,alpha = ,split = ,uni = ,add = ,xlim = ,main = )
 #plot.residuals
   plot.residuals(x = ,...)
+  psych::plot.residuals(x = ,main = ,type = ,std = ,bad = ,numbers = ,upper = ,diag = )
 #polar
   polar(x = ,...)
+  psych::polar(f = ,sort = )
 #poly.mat
   poly.mat(x = ,...)
+  psych::poly.mat(x = ,short = ,std.err = ,ML = )
 #polychoric
   polychoric(x = ,...)
+  psych::polychoric(x = ,y = ,smooth = ,global = ,polycor = ,ML = ,std.err = ,weight = ,correct = ,progress = ,na.rm = ,delete = ,max.cat = )
 #polydi
   polydi(x = ,...)
+  psych::polydi(p = ,d = ,taup = ,taud = ,global = ,ML = ,std.err = ,weight = ,progress = ,na.rm = ,delete = ,correct = )
 #polyserial
   polyserial(x = ,...)
+  psych::polyserial(x = ,y = )
 #predict.psych
   predict.psych(x = ,...) 
+  psych::predict.psych(object = ,data = ,old.data = ,options = ,missing = ,impute = )
 #predicted.validity
   predicted.validity(x = ,...)
+  psych::predicted.validity(x = ,criteria = ,keys = ,scale.rel = ,item.val = )
 #principal
   principal(x = ,...)
+  psych::principal(r = ,nfactors = ,residuals = ,rotate = ,n.obs = ,covar = ,scores = ,missing = ,impute = ,oblique.scores = ,method = ,use = ,cor = ,correct = ,weight = )
 #print.psych
   print.psych(x = ,...)
+  psych::print.psych(x = ,digits = ,all = ,cut = ,sort = ,short = ,lower = ,signif = )
 #Procrustes
   Procrustes(x = ,...)
+  psych::Procrustes(L = ,Target = )
 #progressBar
   progressBar(x = ,...)
+  psych::progressBar(value = ,max = ,label = )
 #Promax
   Promax(x = ,...)
+  psych::Promax(x = ,m = ,normalize = ,pro.m = )
 #psych
   psych(x = ,...)
+  psych::psych()
 #psych.misc
   psych.misc(x = ,...)
+  psych::psych.misc()
 #quickView
   quickView(x = ,...)
+  psych::quickView(x = ,top = ,bottom = ,from = ,to = )
 #r.con
   r.con(x = ,...) 
+  psych::r.con(rho = ,n = ,p = ,twotailed = )
 #r.test
   r.test(x = ,...)
+  psych::r.test(n = ,r12 = ,r34 = ,r23 = ,r13 = ,r14 = ,r24 = ,n2 = ,pooled = ,twotailed = )
 #r2c
   r2c(x = ,...)
+  psych::r2c(rho = ,sigma = )
 #r2chi
   r2chi(x = ,...)
+  psych::r2chi(rho = ,n = )
 
 #r2d
   r2d(x = ,...)
+  psych::r2d(rho = )
 #r2t
   r2t(x = ,...)
+  psych::r2t(rho = ,n = )
 #radar
   radar(x = ,...)
+  psych::radar(x = ,labels = ,keys = ,center = ,connect = ,scale = ,ncolors = ,fill = ,add = ,linetyp = ,main = ,angle = ,absolute = ,show = ,digits = ,cut = ,circles = ,shape = ,clockwise = ,delta = ,label.pos = ,position = ,xlim = ,ylim = )
 #rangeCorrection
   rangeCorrection(x = ,...)
+  psych::rangeCorrection(r = ,sdu = ,sdr = ,sdxu = ,sdxr = ,case = )
 #reflect
   reflect(x = ,...)
+  psych::reflect(f = ,flip = )
 #Reise
   Reise(x = ,...)
+  psych::Reise
 #reliability
   reliability(x = ,...)
+  psych::reliability(keys = ,items = ,nfactors = ,split = ,raw = ,plot = ,hist = ,n.sample = ,brute = ,check.keys = )
 #rescale
   rescale(x = ,...)
+  psych::rescale(x = ,mean = ,sd = ,df = )
 #resid.psych
   resid.psych(x = ,...)
+  psych::resid.psych(object = ,diag = )
 #residuals.psych
   residuals.psych(x = ,...) 
+  psych::residuals.psych(object = ,diag = )
 #response.frequencies
   response.frequencies(x = ,...)
+  psych::response.frequencies(items = ,max = ,uniqueitems = )
 
 #responseFrequency
   responseFrequency(x = ,...)
+  psych::responseFrequency(items = ,max = ,uniqueitems = )
 #reverse.code
   reverse.code(x = ,...)  
+  psych::reverse.code(keys = ,items = ,mini = ,maxi = )
 #rmssd
   rmssd(x = ,...)
+  psych::rmssd(x = ,group = ,lag = ,na.rm = )
 #sat.act
   sat.act(x = ,...)
+  psych::sat.act
 #scaling.fits
   scaling.fits(x = ,...)
+  psych::scaling.fits(model = ,data = ,test = ,digits = ,rowwise = )
 #scatter.hist
   scatter.hist(x = ,...)
+  psych::scatter.hist(x = ,y = ,smooth = ,ab = ,correl = ,data = ,density = ,means = ,ellipse = ,digits = ,method = ,cex.cor = ,cex.point = ,title = ,xlab = ,ylab = ,smoother = ,nrpoints = ,xlab.hist = ,ylab.hist = ,grid = ,xlim = ,ylim = ,x.breaks = ,y.breaks = ,x.space = ,y.space = ,freq = ,x.axes = ,y.axes = ,size = ,col = ,legend = ,alpha = ,pch = ,show.d = ,x.arrow = ,y.arrow = ,d.arrow = ,cex.arrow = )
 #scatterHist
   scatterHist(x = ,...)
+  psych::scatterHist(x = ,y = ,smooth = ,ab = ,correl = ,data = ,density = ,means = ,ellipse = ,digits = ,method = ,cex.cor = ,cex.point = ,title = ,xlab = ,ylab = ,smoother = ,nrpoints = ,xlab.hist = ,ylab.hist = ,grid = ,xlim = ,ylim = ,x.breaks = ,y.breaks = ,x.space = ,y.space = ,freq = ,x.axes = ,y.axes = ,size = ,col = ,legend = ,alpha = ,pch = ,show.d = ,x.arrow = ,y.arrow = ,d.arrow = ,cex.arrow = )
 #schmid
   schmid(x = ,...)
+  psych::schmid(model = ,nfactors = ,fm = ,digits = ,rotate = ,n.obs = ,option = ,Phi = ,covar = ,two.ok = )
 #Schmid
   Schmid(x = ,...)
+  psych::Schmid
 #schmid.leiman
   schmid.leiman(x = ,...)
+  psych::schmid.leiman
 #score.alpha
   score.alpha(x = ,...) 
+  psych::score.alpha(keys = ,items = ,labels = ,totals = ,digits = )
 #score.irt
   score.irt(x = ,...)
+  psych::score.irt(stats = ,items = ,keys = ,cut = ,bounds = ,mod = )
 #score.irt.2
   score.irt.2(x = ,...)
+  psych::score.irt.2(stats = ,items = ,keys = ,cut = ,bounds = ,mod = )
 #score.irt.poly
   score.irt.poly(x = ,...)
+  psych::score.irt.poly(stats = ,items = ,keys = ,cut = ,bounds = ,mod = )
 #score.items
   score.items(x = ,...)
+  psych::score.items(keys = ,items = ,totals = ,ilabels = ,missing = ,impute = ,delete = ,min = ,max = ,digits = ,select = )
 #score.multiple.choice
   score.multiple.choice(x = ,...)
+  psych::score.multiple.choice(key = ,data = ,score = ,totals = ,ilabels = ,missing = ,impute = ,digits = ,short = ,skew = )
 #scoreBy
   scoreBy(x = ,...)
+  psych::scoreBy(keys = ,stats = ,correct = ,SMC = ,av.r = ,item.smc = ,impute = ,select = ,min.n = ,smooth = )
 #scoreFast
   scoreFast(x = ,...)
+  psych::scoreFast(keys = ,items = ,totals = ,ilabels = ,missing = ,impute = ,delete = ,min = ,max = ,count.responses = ,digits = )
 #scoreIrt
   scoreIrt(x = ,...)
+  psych::scoreIrt(stats = ,items = ,keys = ,cut = ,bounds = ,mod = )
 #scoreIrt.1pl
   scoreIrt.1pl(x = ,...)
+  psych::scoreIrt.1pl(keys.list = ,items = ,correct = ,messages = ,cut = ,bounds = ,mod = )
 #scoreIrt.2pl
   scoreIrt.2pl(x = ,...)
+  psych::scoreIrt.2pl(itemLists = ,items = ,correct = ,messages = ,cut = ,bounds = ,mod = )
 #scoreItems
   scoreItems(x = ,...)
+  psych::scoreItems(keys = ,items = ,totals = ,ilabels = ,missing = ,impute = ,delete = ,min = ,max = ,digits = ,n.obs = ,select = )
 #scoreOverlap
   scoreOverlap(x = ,...)
+  psych::scoreOverlap(keys = ,r = ,correct = ,SMC = ,av.r = ,item.smc = ,impute = ,select = )
 #scoreVeryFast
   scoreVeryFast(x = ,...) 
+  psych::scoreVeryFast(keys = ,items = ,totals = ,min = ,max = ,count.responses = )
 #scoreWtd
   scoreWtd(x = ,...)
+  psych::scoreWtd(weights = ,items = ,std = ,sums = ,impute = )
 #scree
   scree(x = ,...)
+  psych::scree(rx = ,factors = ,pc = ,main = ,hline = ,add = ,sqrt = )
 #scrub
   scrub(x = ,...)
+  psych::scrub(x = ,where = ,min = ,max = ,isvalue = ,newvalue = ,cuts = )
 #SD
   SD(x = ,...)
+  psych::SD(x = ,na.rm = )
 #selectFromKeys
   selectFromKeys(x = ,...)  
+  psych::selectFromKeys(keys.list = )
 #sem.diagram
   sem.diagram(x = ,...)
+  psych::sem.diagram(fit = ,main = )
 #sem.graph
   sem.graph(x = ,...)
+  psych::sem.graph(fit = ,out.file = ,main = )
 #set.cor
   set.cor(x = ,...)
+  psych::set.cor(y = ,x = ,data = ,z = ,n.obs = ,use = ,std = ,square = ,main = ,plot = ,show = ,zero = ,part = )
 #setCor
   setCor(x = ,...)
+  psych::setCor(y = ,x = ,data = ,z = ,n.obs = ,use = ,std = ,square = ,main = ,plot = ,show = ,zero = ,alpha = ,part = )
 #setCor.diagram
   setCor.diagram(x = ,...)
+  psych::setCor.diagram(sc = ,main = ,digits = ,show = ,cex = ,l.cex = )
 #setCorLookup
   setCorLookup(x = ,...)
+  psych::setCorLookup(x = ,dictionary = ,cut = ,digits = ,p = )
 #shannon
   shannon(x = ,...)
+  psych::shannon(x = ,correct = ,base = )
 #sim
   sim(x = ,...)
+  psych::sim(fx = ,Phi = ,fy = ,alpha = ,lambda = ,n = ,mu = ,raw = ,threshold = )
 #sim.anova
   sim.anova(x = ,...)
+  psych::sim.anova(es1 = ,es2 = ,es3 = ,es12 = ,es13 = ,es23 = ,es123 = ,es11 = ,es22 = ,es33 = ,n = ,n1 = ,n2 = ,n3 = ,within = ,r = ,factors = ,center = ,std = )
 #sim.bonds
   sim.bonds(x = ,...)
+  psych::sim.bonds(nvar = ,nf = ,loads = ,validity = )
 #sim.circ
   sim.circ(x = ,...)
+  psych::sim.circ(nvar = ,nsub = ,circum = ,xloading = ,yloading = ,gloading = ,xbias = ,ybias = ,categorical = ,low = ,high = ,truncate = ,cutpoint = )
 #sim.congeneric
   sim.congeneric(x = ,...)
+  psych::sim.congeneric(loads = ,N = ,err = ,short = ,categorical = ,low = ,high = ,cuts = ,minor = ,fsmall = )
 #sim.correlation
   sim.correlation(x = ,...) 
+  psych::sim.correlation(R = ,n = ,data = ,scale = ,skew = ,vars = ,latent = ,quant = )
 #sim.dichot
   sim.dichot(x = ,...)
+  psych::sim.dichot(nvar = ,nsub = ,circum = ,xloading = ,yloading = ,gloading = ,xbias = ,ybias = ,low = ,high = )
 #sim.general
   sim.general(x = ,...)
+  psych::sim.general(nvar = ,nfact = ,g = ,r = ,n = )
 #sim.hierarchical
   sim.hierarchical(x = ,...)
+  psych::sim.hierarchical(gload = ,fload = ,n = ,raw = ,mu = ,categorical = ,low = ,high = ,threshold = )
 
 #sim.irt
   sim.irt(x = ,...)
+  psych::sim.irt(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,mod = ,theta = )
 #sim.item
   sim.item(x = ,...)
+  psych::sim.item(nvar = ,nsub = ,circum = ,xloading = ,yloading = ,gloading = ,xbias = ,ybias = ,categorical = ,low = ,high = ,truncate = ,threshold = )
 #sim.minor
   sim.minor(x = ,...)
+  psych::sim.minor(nvar = ,nfact = ,n = ,g = ,fbig = ,fsmall = ,n.small = ,bipolar = ,threshold = )
 #sim.multi
   sim.multi(x = ,...)
+  psych::sim.multi(n.obs = ,nvar = ,nfact = ,ntrials = ,days = ,mu = ,sigma = ,fact = ,loading = ,phi = ,phi.i = ,beta.i = ,mu.i = ,sigma.i = ,sin.i = ,cos.i = ,AR1 = ,f.i = ,plot = )
 #sim.multilevel
   sim.multilevel(x = ,...)
+  psych::sim.multilevel(nvar = ,ngroups = ,ncases = ,rwg = ,rbg = ,eta = )
 #sim.npl
   sim.npl(x = ,...)
+  psych::sim.npl(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,theta = )
 #sim.npn
   sim.npn(x = ,...)
+  psych::sim.npn(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,theta = )
 #sim.omega
   sim.omega(x = ,...)
+  psych::sim.omega(nvar = ,nfact = ,n = ,g = ,sem = ,fbig = ,fsmall = ,bipolar = ,om.fact = ,flip = ,option = ,ntrials = ,threshold = )
 #sim.parallel
   sim.parallel(x = ,...)  
+  psych::sim.parallel(ntrials = ,nvar = ,nfact = ,n = )
 #sim.poly
   sim.poly(x = ,...)  
+  psych::sim.poly(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,cat = ,mod = ,theta = )
 #sim.poly.ideal
   sim.poly.ideal(x = ,...)
+  psych::sim.poly.ideal(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,cat = ,mod = )
 #sim.poly.ideal.npl
   sim.poly.ideal.npl(x = ,...)
+  psych::sim.poly.ideal.npl(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,cat = ,theta = )
 #sim.poly.ideal.npn
   sim.poly.ideal.npn(x = ,...)
+  psych::sim.poly.ideal.npn(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,cat = )
 #sim.poly.mat
   sim.poly.mat(x = ,...)
+  psych::sim.poly.mat(R = ,m = ,n = )
 #sim.poly.npl
   sim.poly.npl(x = ,...)
+  psych::sim.poly.npl(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,cat = ,theta = )
 #sim.poly.npn
   sim.poly.npn(x = ,...)
+  psych::sim.poly.npn(nvar = ,n = ,low = ,high = ,a = ,c = ,z = ,d = ,mu = ,sd = ,cat = ,theta = )
+  
 #sim.rasch
   sim.rasch(x = ,...)
+  psych::sim.rasch(nvar = ,n = ,low = ,high = ,d = ,a = ,mu = ,sd = )
 #sim.simplex
   sim.simplex(x = ,...)
+  psych::sim.simplex(nvar = ,alpha = ,lambda = ,beta = ,mu = ,n = ,threshold = )
 #sim.spherical
   sim.spherical(x = ,...)
 #sim.structural
