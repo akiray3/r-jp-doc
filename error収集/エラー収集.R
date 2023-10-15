@@ -5591,215 +5591,670 @@ dyn.unload(file = df)
 #dynGet
 dynGet(x = ,envir = )
 dynGet(x = ,ifnotfound = ,minframe = ,inherits = )
+dynGet(x = x,envir = ,ifnotfound = ,minframe = ,inherits = )
+dynGet(x = x,envir = x,ifnotfound = ,minframe = ,inherits = )
+dynGet(x = x,envir = x,ifnotfound = x,minframe = ,inherits = )
+dynGet(x = x,envir = x,ifnotfound = x,minframe = x,inherits = )
+dynGet(x = x,envir = x,ifnotfound = x,minframe = x,inherits = x)
+dynGet(x = x,envir = x,ifnotfound = x,minframe = df,inherits = x) 
+dynGet(x = x,envir = x,ifnotfound = df,minframe = df,inherits = x)
+dynGet(x = x,envir = df,ifnotfound = df,minframe = df,inherits = x)
+dynGet(x = x,envir = "df",ifnotfound = df,minframe = df,inherits = x)
+dynGet(x = "x",envir = "df",ifnotfound = df,minframe = df,inherits = x)
+
 #eapply
 eapply(env = ,FUN = ,...,inherits = )
 eapply(env = ,FUN = ,all.names = ,USE.NAMES = )
+eapply(env = x,FUN = ,all.names = ,USE.NAMES = )
+eapply(env = x,FUN = x,all.names = ,USE.NAMES = )
+eapply(env = x,FUN = x,all.names = x,USE.NAMES = )
+eapply(env = x,FUN = x,all.names = x,USE.NAMES = x)
+eapply(env = x,FUN = x,all.names = x,USE.NAMES = df)
+eapply(env = x,FUN = x,all.names = df,USE.NAMES = df)
+eapply(env = x,FUN = df,all.names = df,USE.NAMES = df)
+eapply(env = df,FUN = df,all.names = df,USE.NAMES = df)
+eapply(env = "df",FUN = df,all.names = df,USE.NAMES = df)
 #eigen
 eigen(x = ,only.values = ,EISPACK = )
 eigen(x = ,symmetric = ,only.values = ,EISPACK = )
+eigen(x = x,only.values = ,EISPACK = )
+eigen(x = x,symmetric = ,only.values = ,EISPACK = )
+eigen(x = x,only.values = x,EISPACK = )
+eigen(x = x,symmetric = x,only.values = x,EISPACK = )
+eigen(x = x,only.values = df,EISPACK = )
+eigen(x = x,symmetric = df,only.values = df,EISPACK = )
+eigen(x = df,only.values = df,EISPACK = )
+eigen(x = df,symmetric = df,only.values = df,EISPACK = )
+eigen(x = "df",only.values = df,EISPACK = )
+eigen(x = "df",symmetric = df,only.values = df,EISPACK = )
+
 #emptyenv
 emptyenv()
-emptyenv()
+emptyenv(x)
+emptyenv("x")
+emptyenv(df)
 #enc2native
 enc2native(x = )
-enc2native(x = )
+enc2native(x = x)
+enc2native(x = "x")
+enc2native(x = df)
 #enc2utf8
 enc2utf8(x = )
-enc2utf8(x = )
+enc2utf8(x = x)
+enc2utf8(x = "x")
+enc2utf8(x = df)
+
 #encodeString
 encodeString(x = ,to = ,sub = )
-encodeString(x = ,width = ,quote = ,na.encode = ,justify = )
+encodeString(x = x,width = ,quote = ,na.encode = ,justify = )
+encodeString(x = x,width = x,quote = ,na.encode = ,justify = )
+encodeString(x = x,width = x,quote = x,na.encode = ,justify = )
+encodeString(x = x,width = x,quote = x,na.encode = x,justify = )
+encodeString(x = x,width = x,quote = x,na.encode = x,justify = x)
+encodeString(x = x,width = x,quote = x,na.encode = df,justify = x)
+encodeString(x = x,width = x,quote = x,na.encode = df,justify = df)
+encodeString(x = x,width = x,quote = df,na.encode = df,justify = df)
+encodeString(x = x,width = x,quote = "df",na.encode = df,justify = df)
+encodeString(x = x,width = "x",quote = "df",na.encode = df,justify = df)
+encodeString(x = "x",width = "x",quote = "df",na.encode = df,justify = df)
+
 #Encoding
 Encoding(x = )
-Encoding(x = )
+Encoding(x = x)
+Encoding(x = "x")
+Encoding(x = df)
+
 
 #Encoding<-
 `Encoding<-`(x = ,value = )
-`Encoding<-`()
+`Encoding<-`(x)
+`Encoding<-`("x")
+`Encoding<-`(df)
+
 #endsWith
 endsWith(x = ,suffix = ,ignore.case = )
 endsWith(x = ,suffix = )
+endsWith(x = x,suffix = ,ignore.case = )
+endsWith(x = x,suffix = x,ignore.case = )
+endsWith(x = x,suffix = x,ignore.case = x)
+endsWith(x = x,suffix = x,ignore.case = df)
+endsWith(x = x,suffix = df,ignore.case = df)
+endsWith(x = df,suffix = df,ignore.case = df)
+endsWith(x = "df",suffix = df,ignore.case = df)
+
 #enquote
 enquote(x = )
 enquote(cl = )
+enquote(x = x)
+enquote(cl = x)
+enquote(x = "x")
+enquote(cl = "x")
+enquote(x = df)
+enquote(cl = df)
+
+
 #env.profile
 env.profile(env = ,all.names = ,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = ,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
 env.profile(env = )
+env.profile(env = x,all.names = ,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = ,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = ,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = ,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = ,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = ,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = ,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = ,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = x,includeGlobals = )
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = x,includeGlobals = x)
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = df,includeGlobals = x)
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = df,includeGlobals = df)
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = df,includeGlobals = "df")
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = "df",includeGlobals = "df")
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = "df",includeGlobals = df)
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = df,includeGlobals = df)
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = df,includeGlobals = df)
+env.profile(env = x,all.names = x,includeBase = x,includeInternals = x,includeEmpty = x,includeFunctions = x,includeSpecials = x,includeObjects = x,includeSearch = df,includeGlobals = df)
+
 #environment
 environment(fun = )
-environment(fun = )
+environment(fun =x )
+environment(fun = "x")
+environment(fun = df)
+
 #environment<-
 `environment<-`(fun = ,value = )
-`environment<-`()
+`environment<-`(x)
+`environment<-`("x")
+`environment<-`(df)
 #environmentIsLocked
 environmentIsLocked(fun = )
 environmentIsLocked(env = )
+  environmentIsLocked(fun = x)
+environmentIsLocked(env = x)
+environmentIsLocked(fun = "x")
+environmentIsLocked(env = "x")
+environmentIsLocked(fun = df)
+environmentIsLocked(env = df)
+
 #environmentName
 environmentName(fun = )
-environmentName(env = )
+environmentName(env = x)
+environmentName(fun = x)
+environmentName(env = "x")
+environmentName(fun = "x")
+environmentName(env = df)
+environmentName(fun = df)
 #errorCondition
 errorCondition(condition = ,c = )
 errorCondition(message = ,class = ,call = )
+errorCondition(message = x,class = ,call = )
+errorCondition(message = x,class = x,call = )
+errorCondition(message = x,class = x,call = x)
+errorCondition(message = x,class = x,call = df)
+errorCondition(message = x,class = df,call = df)
+errorCondition(message = df,class = df,call = df)
+errorCondition(message = "df",class = df,call = df)
+
+
 
 #eval
 eval(expr = ,envir = ,enclos = )
-eval(expr = ,envir = ,enclos = )
+eval(expr = x,envir = ,enclos = )
+eval(expr = x,envir = x,enclos = )
+    eval(expr = x,envir = x,enclos = x)
+eval(expr = x,envir = x,enclos = df)
+eval(expr = x,envir = df,enclos = df)
+eval(expr = df,envir = df,enclos = df)
+eval(expr = "df",envir = df,enclos = df)
+
+
+
 #eval.parent
 eval.parent(expr = ,n = )
 eval.parent(expr = ,n = )
+eval.parent(expr = x,n = )
+eval.parent(expr = x,n = x)
+eval.parent(expr = x,n = df)
+eval.parent(expr = df,n = df)
+eval.parent(expr = "df",n = df)
 #evalq
 evalq(expr = ,envir = ,enclos = )
-evalq(expr = ,envir = ,enclos = )
+evalq(expr = x,envir = ,enclos = )
+evalq( expr = x,envir = x,enclos = )
+evalq(expr = x,envir = x,enclos = x)
+evalq(expr = x,envir = x,enclos = df)
+evalq(expr = x,envir = df,enclos = df)
+evalq(expr = df,envir = df,enclos = df)
+evalq(expr = "df",envir = df,enclos = df)
 #exists
 exists(x = ,where = ,frame = )
 exists(x = ,where = ,envir = ,frame = ,mode = ,inherits = )
+exists(x = x,where = ,envir = ,frame = ,mode = ,inherits = )
+exists(x = x,where = x,envir = ,frame = ,mode = ,inherits = )
+exists(x = x,where = x,envir = x,frame = ,mode = ,inherits = )
+exists(x = x,where = x,envir = x,frame = x,mode = ,inherits = )
+exists(x = x,where = x,envir = x,frame = x,mode = x,inherits = )
+exists(x = x,where = x,envir = x,frame = x,mode = x,inherits = x)
+exists(x = x,where = x,envir = x,frame = x,mode = df,inherits = x)
+exists(x = x,where = x,envir = x,frame = df,mode = df,inherits = x)
+exists(x = x,where = x,envir = df,frame = df,mode = df,inherits = x)
+exists(x = x,where = df,envir = df,frame = df,mode = df,inherits = x)
+exists(x = x,where = "df",envir = df,frame = df,mode = df,inherits = x)
+exists(x = "x",where = "df",envir = df,frame = df,mode = df,inherits = x)
+
+
 #exp
 exp(x = )
-exp(x = )
+exp(x = x)
+exp(x = "x")
+exp(x = df)
 #expand.grid
 expand.grid(...)
-expand.grid(KEEP.OUT.ATTRS = ,stringsAsFactors = )
+expand.grid(KEEP.OUT.ATTRS = x,stringsAsFactors = )
+expand.grid(KEEP.OUT.ATTRS = x,stringsAsFactors = x)
+expand.grid(KEEP.OUT.ATTRS = x,stringsAsFactors = df)
+expand.grid(KEEP.OUT.ATTRS = df,stringsAsFactors = df)
+expand.grid(KEEP.OUT.ATTRS = "df",stringsAsFactors = df)
 #expm1
 expm1(x = )
-expm1(x = )
+expm1(x = x)
+expm1(x = "x")
+expm1(x = df)
 #expression
 expression(...)
-expression()
+expression(x)
+expression(x = )
+expression(x = x)
+expression(x = "x")
+expression(x = df)
 #extSoftVersion
 extSoftVersion(pkg = )
 extSoftVersion()
+extSoftVersion(x)
+extSoftVersion("x")
+extSoftVersion(df)
+  
+
 #F
 F()
 F
 #factor
 factor(x = ,levels = ,labels = ,exclude = )
 factor(x = ,levels = ,labels = ,exclude = ,ordered = ,nmax = )
+factor(x = x,levels = ,labels = ,exclude = ,ordered = ,nmax = )
+factor(x = x,levels = x,labels = ,exclude = ,ordered = ,nmax = )
+factor(x = x,levels = x,labels = x,exclude = ,ordered = ,nmax = )
+factor(x = x,levels = x,labels = x,exclude = x,ordered = ,nmax = )
+factor(x = x,levels = x,labels = x,exclude = x,ordered = x,nmax = )
+factor(x = x,levels = x,labels = x,exclude = x,ordered = x,nmax = x)
+factor(x = x,levels = x,labels = x,exclude = x,ordered = x,nmax = df)
+factor(x = x,levels = x,labels = x,exclude = x,ordered = df,nmax = df)
+factor(x = x,levels = x,labels = x,exclude = df,ordered = df,nmax = df)
+factor(x = x,levels = x,labels = "x",exclude = df,ordered = df,nmax = df)
+factor(x = x,levels = "x",labels = "x",exclude = df,ordered = df,nmax = df)
+factor(x = "x",levels = "x",labels = "x",exclude = df,ordered = df,nmax = df)
 #factorial
 factorial(x = )
 factanal(x = ,factors = ,data = ,covmat = ,n.obs = ,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = ,data = ,covmat = ,n.obs = ,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = ,covmat = ,n.obs = ,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = ,n.obs = ,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = ,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = ,na.action = ,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = ,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = ,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = ,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = x,rotation = ,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = x,rotation = x,control = )
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = x,rotation = x,control = x)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = x,rotation = x,control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = x,rotation = df,control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = x,rotation = "df",control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = x,scores = "x",rotation = "df",control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = "x",scores = "x",rotation = "df",control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = "x",scores = "x",rotation = "df",control = "df")
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = "x",scores = "x",rotation = "df",control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = "x",scores = "x",rotation = df,control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = "x",scores = "x",rotation = "df",control = df)
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = "x",scores = "x",rotation = "df",control = "df")
+factanal(x = x,factors = x,data = x,covmat = x,n.obs = x,subset = x,na.action = x,start = "x",scores = "x",rotation = "df",control = df)
+
 #fifo
 fifo(path = )
 fifo(description = ,open = ,blocking = ,encoding = )
+fifo(description = x,open = ,blocking = ,encoding = )
+fifo(description = x,open = x,blocking = ,encoding = )
+fifo(description = x,open = x,blocking = x,encoding = )
+fifo(description = x,open = x,blocking = x,encoding = x)
+fifo(description = x,open = x,blocking = x,encoding = df)
+fifo(description = x,open = x,blocking = df,encoding = df)
+fifo(description = x,open = df,blocking = df,encoding = df)
+fifo(description = df,open = df,blocking = df,encoding = df)
+fifo(description = "df",open = df,blocking = df,encoding = df)
 #file
 file(description = ,open = ,encoding = ,compression = ,close = )
 file(description = ,open = ,blocking = ,encoding = ,raw = ,method = )
+file(description = x,open = ,blocking = ,encoding = ,raw = ,method = )
+file(description = x,open = x,blocking = ,encoding = ,raw = ,method = )
+file(description = x,open = x,blocking = x,encoding = ,raw = ,method = )
+file(description = x,open = x,blocking = x,encoding = x,raw = ,method = )
+file(description = x,open = x,blocking = x,encoding = x,raw = x,method = )
+file(description = x,open = x,blocking = x,encoding = x,raw = x,method = x)
+file(description = x,open = x,blocking = x,encoding = x,raw = x,method = df)
+file(description = x,open = x,blocking = x,encoding = x,raw = df,method = df)
+file(description = x,open = x,blocking = x,encoding = x,raw = df,method = "df")
+file(description = x,open = x,blocking = x,encoding = x,raw = "df",method = df)
+file(description = x,open = x,blocking = x,encoding = "x",raw = "df",method = df)
+file(description = x,open = x,blocking = "x",encoding = "x",raw = "df",method = df)
+file(description = x,open = "x",blocking = "x",encoding = "x",raw = "df",method = df)
+file(description = "x",open = "x",blocking = "x",encoding = "x",raw = "df",method = df)
+
 #file.access
 file.access(path = ,mode = )
 file.access(names = ,mode = )
+file.access(path = x,mode = )
+file.access(path = x,mode = x)
+file.access(path = x,mode = df)
+file.access(path = df,mode = df)
+file.access(path = "df",mode = df)
 #file.append
 file.append(file = ,text = )
 file.append(file1 = ,file2 = )
+file.append(file1 = x,file2 = ,n = )
+file.append(file1 = x,file2 = x,n = )
+file.append(file1 = x,file2 = x,n = x)
+file.append(file1 = x,file2 = x,n = df)
+file.append(file1 = x,file2 = df,n = df)
+file.append(file1 = df,file2 = df,n = df)
+file.append(file1 = "df",file2 = df,n = df)
+
 #file.choose
 file.choose(new = )
-file.choose(new = )
+file.choose(new = x)
+file.choose(new = "x")
+file.choose(new = df)
+
 #file.copy
 file.copy(from = ,to = ,overwrite = ,recursive = ,copy.mode = ,copy.date = )
-file.copy(from = ,to = ,overwrite = ,recursive = ,copy.mode = ,copy.date = )
+file.copy(from = x,to = ,overwrite = ,recursive = ,copy.mode = ,copy.date = )
+file.copy(from = x,to = x,overwrite = ,recursive = ,copy.mode = ,copy.date = )
+file.copy(from = x,to = x,overwrite = x,recursive = ,copy.mode = ,copy.date = )
+file.copy(from = x,to = x,overwrite = x,recursive = x,copy.mode = ,copy.date = )
+file.copy(from = x,to = x,overwrite = x,recursive = x,copy.mode = x,copy.date = )
+file.copy(from = x,to = x,overwrite = x,recursive = x,copy.mode = x,copy.date = x)
+file.copy(from = x,to = x,overwrite = x,recursive = x,copy.mode = x,copy.date = df)
+file.copy(from = x,to = x,overwrite = x,recursive = x,copy.mode = df,copy.date = df)
+file.copy(from = x,to = x,overwrite = x,recursive = x,copy.mode = df,copy.date = "df")
+file.copy(from = x,to = x,overwrite = x,recursive = x,copy.mode = "df",copy.date = df)
+file.copy(from = x,to = x,overwrite = x,recursive = "x",copy.mode = "df",copy.date = df)
+file.copy(from = x,to = x,overwrite = "x",recursive = "x",copy.mode = "df",copy.date = df)
+file.copy(from = x,to = "x",overwrite = "x",recursive = "x",copy.mode = "df",copy.date = df)
+file.copy(from = "x",to = "x",overwrite = "x",recursive = "x",copy.mode = "df",copy.date = df)
 #file.create
 file.create(...)
 file.create(showWarnings = )
+file.create(showWarnings = x)
+file.create(showWarnings = "x")
+file.create(showWarnings = df)
 #file.exists
 file.exists(file = )
 file.exists()
+file.exists(x)
+file.exists("x")
+file.exists(df)
+
 #file.info
 file.info(file = )
 file.info(extra_cols = )
+file.info(extra_cols = x)
+file.info(extra_cols = "x")
+file.info(extra_cols = df)
+
 #file.link
 file.link(from = ,to = )
-file.link(from = ,to = )
+file.link(from = x,to = )
+file.link(from = x,to = x)
+file.link(from = x,to = df)
+file.link(from = df,to = df)
+file.link(from = "df",to = df)
+
 #file.mode
 file.mode(file = )
 file.mode()
+file.mode(x)
+file.mode("x")
+file.mode(df)
+
 #file.mtime
 file.mtime(file = )
 file.mtime()
+file.mtime(x)
+file.mtime("x")
+file.mtime(df)
 #file.path
 file.path(...)
 file.path(fsep = )
-file.path(fsep = )
+file.path(fsep = x)
+file.path(fsep = "x")
+file.path(fsep = df)
 
 #file.remove
 file.remove(...)
 file.remove()
+file.remove(x)
+file.remove("x")
+file.remove(df)
 #file.rename
 file.rename(from = ,to = )
-file.rename(from = ,to = )
+file.rename(from = x,to = )
+file.rename(from = x,to = x)
+file.rename(from = x,to = df)
+file.rename(from = df,to = df)
+file.rename(from = "df",to = df)
 #file.show
 file.show(file = ,header = ,delete.file = )
 file.show(header = ,title = ,delete.file = ,pager = ,encoding = )
+file.show(header = x,title = ,delete.file = ,pager = ,encoding = )
+file.show(header = x,title = x,delete.file = ,pager = ,encoding = )
+file.show(header = x,title = x,delete.file = x,pager = ,encoding = )
+file.show(header = x,title = x,delete.file = x,pager = x,encoding = )
+file.show(header = x,title = x,delete.file = x,pager = x,encoding = x)
+file.show(header = x,title = x,delete.file = x,pager = x,encoding = df)
+file.show(header = x,title = x,delete.file = x,pager = df,encoding = df)
+file.show(header = x,title = x,delete.file = df,pager = df,encoding = df)
+file.show(header = x,title = "x",delete.file = df,pager = df,encoding = df)
+file.show(header = x,title = df,delete.file = df,pager = df,encoding = df)
+file.show(header = "x",title = df,delete.file = df,pager = df,encoding = df)
+
 #file.size
 file.size(file = )
 file.size()
+file.size(x)
+file.size("x")
+file.size(df)
 #file.symlink
 file.symlink(from = ,to = )
-file.symlink(from = ,to = )
+file.symlink(from = x,to = )
+file.symlink(from = x,to = x)
+file.symlink(from = x,to = df)
+file.symlink(from = df,to = df)
+file.symlink(from = "df",to = df)
+
 #Filter
 Filter(f = ,x = )
-Filter(f = ,x = )
+Filter(f = x,x = )
+Filter(f = x,x = x)
+Filter(f = x,x = df)
+Filter(f = df,x = df)
+Filter(f = "df",x = df)
+
 #Find
 Find(f = ,x = )
-Find(f = ,x = ,right = ,nomatch = )
+Find(f = x,x = ,right = ,nomatch = )
+Find(f = x,x = x,right = ,nomatch = )
+Find(f = x,x = x,right = x,nomatch = )
+Find(f = x,x = x,right = x,nomatch = x)
+Find(f = x,x = x,right = x,nomatch = df)
+Find(f = x,x = x,right = df,nomatch = df)
+Find(f = x,x = df,right = df,nomatch = df)
+Find(f = x,x = "df",right = df,nomatch = df)
+Find(f = x,x = "df",right = "df",nomatch = df)
+Find(f = x,x = "df",right = "df",nomatch = "df")
+Find(f = x,x = "df",right = "df",nomatch = df)
+Find(f = x,x = "df",right = df,nomatch = df)
+Find(f = "x",x = df,right = df,nomatch = df)
 #find.package
 find.package(package = ,quiet = ,verbose = ,lib.loc = )
 find.package(package = ,lib.loc = ,quiet = ,verbose = )
+find.package(package = x,lib.loc = ,quiet = ,verbose = )
+find.package(package = x,lib.loc = x,quiet = ,verbose = )
+find.package(package = x,lib.loc = x,quiet = x,verbose = )
+find.package(package = x,lib.loc = x,quiet = x,verbose = x)
+find.package(package = x,lib.loc = x,quiet = x,verbose = df)
+find.package(package = x,lib.loc = x,quiet = df,verbose = df)
+find.package(package = x,lib.loc = df,quiet = df,verbose = df)
+find.package(package = x,lib.loc = "df",quiet = df,verbose = df)
+find.package(package = x,lib.loc = df,quiet = "df",verbose = df)
+find.package(package = x,lib.loc = df,quiet = "df",verbose = "df")
+find.package(package = x,lib.loc = df,quiet = "df",verbose = df)
+  find.package(package = df,lib.loc = df,quiet = df,verbose = df)
+find.package(package = "x",lib.loc = df,quiet = df,verbose = df)
+
 #findInterval
 findInterval(x = ,vec = ,rightmost.closed = ,all.inside = )
+findInterval(x = x,vec = ,rightmost.closed = ,all.inside = )
+findInterval(x = x,vec = x,rightmost.closed = ,all.inside = )
+findInterval(x = x,vec = x,rightmost.closed = x,all.inside = )
+findInterval(x = x,vec = x,rightmost.closed = x,all.inside = x)
+findInterval(x = x,vec = x,rightmost.closed = x,all.inside = df)
+findInterval(x = x,vec = x,rightmost.closed = df,all.inside = df)
+findInterval(x = x,vec = df,rightmost.closed = df,all.inside = df)
+findInterval(x = x,vec = "df",rightmost.closed = df,all.inside = df)
+findInterval(x = x,vec = "df",rightmost.closed = "df",all.inside = df)
+findInterval(x = x,vec = "df",rightmost.closed = "df",all.inside = "df")
+findInterval(x = x,vec = "df",rightmost.closed = "df",all.inside = df)
+findInterval(x = x,vec = "df",rightmost.closed = df,all.inside = df)
+findInterval(x = "x",vec = df,rightmost.closed = df,all.inside = df)
+
 #findPackageEnv
 findPackageEnv(pkg = ,lib.loc = )
 findPackageEnv(info = )
+findPackageEnv(info = x)
+findPackageEnv(info = "x")
+findPackageEnv(info = df)
+
 #findRestart
 findRestart(name = ,where = )
 findRestart(name = ,cond = )
+findRestart(name = x,where = )
+findRestart(name = x,cond = )
+findRestart(name = x,where = x)
+findRestart(name = x,cond = x)
+findRestart(name = x,where = df)
+findRestart(name = x,cond = df)
+findRestart(name = df,where = df)
+findRestart(name = df,cond = df)
+findRestart(name = "df",where = df)
+findRestart(name = "df",cond = df)
+
 #floor
 floor(x = )
-floor(x = )
+floor(x = x)
+floor(x = "x")
+floor(x = df)
 #flush
 flush(con = )
-flush(con = )
+flush(con = x)
+flush(con = "x")
+flush(con = df)
 #flush.connection
 flush.connection(con = )
-flush.connection(con = )
+flush.connection(con = x)
+flush.connection(con = "x")
+flush.connection(con = df)
+
 #for
 for(i in 1:10){
   print(i)
 }
 #force
 force(x = )
-force(x = )
+force(x = x)
+force(x = "x")
+force(x = df)
 #forceAndCall
 forceAndCall(call = ,env = )
 forceAndCall(n = ,FUN = )
+forceAndCall(n = x,FUN = )
+forceAndCall(n = x,FUN = x)
+forceAndCall(n = x,FUN = df)
+forceAndCall(n = df,FUN = df)
+forceAndCall(n = "df",FUN = df)
+
 #formals
 formals(fun = )
 formals(fun = ,envir = )
+formals(fun = ,envir = x)
+formals(fun = ,envir = df)
+formals(fun = ,envir = df)
+formals(fun = ,envir = "df")
+formals(fun = df,envir = "df")
+formals(fun = x,envir = "df")
+formals(fun = "df",envir = "df")
+  
 #formals<-
 `formals<-`(fun = ,value = )
 `formals<-`()
+`formals<-`(x)
+`formals<-`("x")
+`formals<-`(df)
+`formals<-`(fun = x,value = )
+`formals<-`(fun = x,value = x)
+`formals<-`(fun = x,value = df)
+`formals<-`(fun = df,value = df)
+`formals<-`(fun = "df",value = df)
 
 #format
 format(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 format(x = )
+format(x = x)
+format(x = "x")
+format(x = df)
 #format.AsIs
 format.AsIs(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 format.AsIs(x = ,width = )
+format.AsIs(x = x)
+format.AsIs(x = "x")
+format.AsIs(x = df)
+
 #format.data.frame
 format.data.frame(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 format.data.frame(x = ,justify = )
+format.data.frame(x = x)
+format.data.frame(x = "x")
+format.data.frame(x = df)
+
 #format.Date
 format.Date(x = ,format = ,tz = )
 format.Date(x = )
+format.Date(x = x)
+format.Date(x = "x")
+format.Date(x = df)
+
 #format.default
 format.default(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 format.default(x = ,trim = ,digits = ,nsmall = ,justify = ,width = ,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = ,digits = ,nsmall = ,justify = ,width = ,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = ,nsmall = ,justify = ,width = ,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = ,justify = ,width = ,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = ,width = ,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = ,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = ,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = ,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = ,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = x,drop0trailing = )
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = x,drop0trailing = x)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = x,drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = df,drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = df,drop0trailing = "df")
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = x,big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = x,scientific = "x",big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = x,width = x,na.encode = "x",scientific = "x",big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = "x",width = x,na.encode = "x",scientific = "x",big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = "x",width = "x",na.encode = "x",scientific = "x",big.mark = x,big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = "x",width = "x",na.encode = "x",scientific = "x",big.mark = "x",big.interval = x,small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = x,trim = x,digits = x,nsmall = x,justify = "x",width = "x",na.encode = "x",scientific = "x",big.mark = "x",big.interval = "x",small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = df,trim = x,digits = x,nsmall = x,justify = "x",width = "x",na.encode = "x",scientific = "x",big.mark = "x",big.interval = "x",small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+format.default(x = "df",trim = x,digits = x,nsmall = x,justify = "x",width = "x",na.encode = "x",scientific = "x",big.mark = "x",big.interval = "x",small.mark = x,small.interval = x,decimal.mark = x,zero.print = "df",drop0trailing = df)
+
 #format.difftime
 format.difftime(x = ,units = ,...)
 format.difftime(x = )
+format.difftime(x = x)
+format.difftime(x = "x")
+format.difftime(x = df)
 #format.factor
 format.factor(x = ,trim = ,digits = ,nsmall = ,scientific = ,width = ,justify = ,exponent = ,big.mark = ,big.interval = ,small.mark = ,small.interval = ,decimal.mark = ,zero.print = ,drop0trailing = )
 format.factor(x = )
+format.factor(x = x)
+format.factor(x = "x")
+format.factor(x = df)
 #format.hexmode
 format.hexmode(x = ,width = )
 format.hexmode(x = ,width = ,upper.case = )
+format.hexmode(x = x,width = ,upper.case = )
+format.hexmode(x = x,width = x,upper.case = )
+format.hexmode(x = x,width = x,upper.case = x)
+format.hexmode(x = x,width = x,upper.case = df)
+format.hexmode(x = x,width = df,upper.case = df)
+format.hexmode(x = df,width = df,upper.case = df)
+format.hexmode(x = "df",width = df,upper.case = df)
+
 #format.info
 format.info(x = ,digits = ,nsmall = )
 format.info(x = ,digits = ,nsmall = )
@@ -9666,189 +10121,265 @@ psych::interp.values(x = ,w = ,na.rm = )
   psych::sim.simplex(nvar = ,alpha = ,lambda = ,beta = ,mu = ,n = ,threshold = )
 #sim.spherical
   sim.spherical(x = ,...)
+  psych::sim.spherical(simple = ,nx = ,ny = ,nsub = ,xloading = ,yloading = ,zloading = ,gloading = ,xbias = ,ybias = ,zbias = ,categorical = ,low = ,high = ,truncate = ,threshold = )
 #sim.structural
   sim.structural(x = ,...)
+  psych::sim.structural(fx = ,Phi = ,fy = ,f = ,n = ,uniq = ,raw = ,items = ,low = ,high = ,d = ,cat = ,mu = )
 #sim.structure
   sim.structure(x = ,...) 
+  psych::sim.structure(fx = ,Phi = ,fy = ,f = ,n = ,uniq = ,raw = ,items = ,low = ,high = ,d = ,cat = ,mu = )
 #sim.VSS
   sim.VSS(x = ,...)
+  psych::sim.VSS(ncases = ,nvariables = ,nfactors = ,meanloading = ,dichot = ,cut = )
 #simCor
   simCor(x = ,...)
+  psych::simCor(R = ,n = ,data = ,scale = ,skew = ,vars = ,latent = ,quant = )
 #simulation.circ
   simulation.circ(x = ,...)
+  psych::simulation.circ(samplesize = ,numberofvariables = )
 #skew
   skew(x = ,...)
+  psych::skew(x = ,na.rm = ,type = )
 #smc
   smc(x = ,...) 
+  psych::smc(R = ,covar = )
 #spider
   spider(x = ,...)
+  psych::spider(y = ,x = ,data = ,labels = ,rescale = ,center = ,connect = ,overlay = ,scale = ,ncolors = ,fill = ,main = )
 #splitHalf
   splitHalf(x = ,...)
+  psych::splitHalf(r = ,raw = ,brute = ,n.sample = ,covar = ,check.keys = ,key = ,ci = ,use = )
 #statsBy
   statsBy(x = ,...)
+  psych::statsBy(data = ,group = ,cors = ,cor = ,method = ,use = ,poly = ,na.rm = ,alpha = ,minlength = ,weights = )
 #statsBy.boot
   statsBy.boot(x = ,...)
+  psych::statsBy.boot(data = ,group = ,ntrials = ,cors = ,replace = ,method = )
 #statsBy.boot.summary
   statsBy.boot.summary(x = ,...)
+  psych::statsBy.boot.summary(res.list = ,var = )
 #structure.diagram
   structure.diagram(x = ,...)
+  psych::structure.diagram(fx = ,Phi = ,fy = ,labels = ,cut = ,errors = ,simple = ,regression = ,lr = ,Rx = ,Ry = ,digits = ,e.size = ,main = )
 #structure.graph
   structure.graph(x = ,...)
+  psych::structure.graph(fx = ,Phi = ,fy = ,out.file = ,labels = ,cut = ,errors = ,simple = ,regression = ,size = ,node.font = ,edge.font = ,rank.direction = ,digits = ,title = )
 #structure.list
   structure.list(x = ,...)
+  psych::structure.list(nvars = ,f.list = ,f = ,f.labels = ,item.labels = )
 #structure.sem
   structure.sem(x = ,...)
+  psych::structure.sem(fx = ,Phi = ,fy = ,out.file = ,labels = ,cut = ,errors = ,simple = ,regression = )
 #summary.psych
   summary.psych(x = ,...)
+  psych::summary.psych(object = ,digits = ,items = )
 #super.matrix
   super.matrix(x = ,...)
-  
+  psych::super.matrix(x = ,y = )
 #superCor
   superCor(x = ,...)
+  psych::superCor(x = ,y = ,xy = )
   
 #superMatrix
   superMatrix(x = ,...)
+  psych::superMatrix(x = ,y = )
 #t2d
   t2d(x = ,...)
+  psych::t2d(t = ,n = ,n2 = ,n1 = )
   
 #t2r
   t2r(x = ,...)
+  psych::t2r(t = ,df = )
 #table2df
   table2df(x = ,...)
+  psych::table2df(x = ,count = ,labs = )
 #table2matrix
   table2matrix(x = ,...)
+  psych::table2matrix(x = ,labs = )
   
 #tableF
   tableF(x = ,...)
+  psych::tableF(x = ,y = )
   
 #Tal_Or
   Tal_Or(x = ,...)  
+  psych::Tal_Or
 #Tal.Or
   Tal.Or(x = ,...)
+  psych::Tal.Or
 #target.rot
   target.rot(x = ,...)
+  psych::target.rot(x = ,keys = )
 #TargetQ
   TargetQ(x = ,...)
+  psych::TargetQ(L = ,Tmat = ,normalize = ,eps = ,maxit = ,Target = )
 #TargetT
   TargetT(x = ,...) 
+  psych::TargetT(L = ,Tmat = ,normalize = ,eps = ,maxit = ,Target = )
   
 #tenberge
   tenberge(x = ,...)
+  psych::tenberge(r = )
   
 #test.all
   test.all(x = ,...)
+  psych::test.all(pl = ,package = ,dependencies = ,find = ,skip = )
   
 #test.irt
   test.irt(x = ,...)
+  psych::test.irt(nvar = ,n.obs = ,mod = ,type = ,low = ,high = ,seed = )
 
 #test.psych
   test.psych(x = ,...)
+  psych::test.psych(first = ,last = ,short = ,all = ,fapc = )
   
 #testRetest
   testRetest(x = ,...)
+  psych::testRetest(t1 = ,t2 = ,keys = ,id = ,time = ,select = ,check.keys = ,warnings = ,lmer = ,sort = )
   
 #tetrachoric
   tetrachoric(x = ,...)
+  psych::tetrachoric(x = ,y = ,correct = ,smooth = ,global = ,weight = ,na.rm = ,delete = )
 #thurstone
   thurstone(x = ,...)
+  psych::thurstone(x = ,ranks = ,digits = )
 #Thurstone
   Thurstone(x = ,...)
+  psych::Thurstone
 #Thurstone.33
   Thurstone.33(x = ,...)
+  psych::Thurstone.33
   
 #Thurstone.9
   Thurstone.9(x = ,...)
+  psych::Thurstone.9
   
 #topBottom
   topBottom(x = ,...)
+  psych::topBottom(x = ,top = ,bottom = ,from = ,to = ,digits = ,hlength = ,tlength = )
   
 #tr
   tr(x = ,...)
+  psych::tr(m = )
 #Tucker
   Tucker(x = ,...)
+  psych::Tucker
 
 #unidim
   unidim(x = ,...)
+  psych::unidim(keys = ,x = ,cor = ,correct = ,check.keys = )
   
 #varimin
   varimin(x = ,...)
+  psych::varimin(L = ,Tmat = ,normalize = ,eps = ,maxit = )
   
 #vgQ.bimin
   vgQ.bimin(x = ,...)
+  psych::vgQ.bimin(L = )
 #vgQ.targetQ
   vgQ.targetQ(x = ,...)
+  psych::vgQ.targetQ(L = ,Target = )
 #vgQ.varimin
   vgQ.varimin(x = ,...)
+  psych::vgQ.varimin(L = )
   
 #violin
   violin(x = ,...)
+  psych::violin(x = ,data = ,var = ,grp = ,grp.name = ,xlab = ,ylab = ,main = ,vertical = ,dots = ,rain = ,jitter = ,alpha = ,errors = ,eyes = ,adjust = ,restrict = ,xlim = ,add = ,col = ,pch = ,scale = )
   
 #violinBy
   violinBy(x = ,...)
+  psych::violinBy(x = ,var = ,grp = ,data = ,grp.name = ,xlab = ,ylab = ,main = ,vertical = ,dots = ,rain = ,jitter = ,alpha = ,errors = ,eyes = ,adjust = ,restrict = ,xlim = ,add = ,col = ,pch = ,scale = )
 #vss
   vss(x = ,...)
+  psych::vss(x = ,n = ,rotate = ,diagonal = ,fm = ,n.obs = ,plot = ,title = ,use = ,cor = )
   
 #VSS
   VSS(x = ,...)
+  psych::VSS(x = ,n = ,rotate = ,diagonal = ,fm = ,n.obs = ,plot = ,title = ,use = ,cor = )
   
 #VSS.parallel
   VSS.parallel(x = ,...)
+  psych::VSS.parallel(ncases = ,nvariables = ,scree = ,rotate = )
 #VSS.plot
   VSS.plot(x = ,...)  
+  psych::VSS.plot(x = ,title = ,line = )
 #VSS.scree
   VSS.scree(x = ,...)
+  psych::VSS.scree(rx = ,main = ,sqrt = )
 #VSS.sim
   VSS.sim(x = ,...)
+  psych::VSS.sim(ncases = ,nvariables = ,nfactors = ,meanloading = ,dichot = ,cut = )
 #VSS.simulate
   VSS.simulate(x = ,...)
+  psych::VSS.simulate(ncases = ,nvariables = ,nfactors = ,meanloading = ,dichot = ,cut = )
   
 #West
   West(x = ,...)
+  psych::West
   
 #winsor
   winsor(x = ,...)
+  psych::winsor(x = ,trim = ,na.rm = )
 #winsor.mean
   winsor.mean(x = ,...)
+  psych::winsor.mean(x = ,trim = ,na.rm = )
 #winsor.means
   winsor.means(x = ,...)
+  psych::winsor.means(x = ,trim = ,na.rm = )
   
 #winsor.sd
   winsor.sd(x = ,...)
+  psych::winsor.sd(x = ,trim = ,na.rm = )
   
 #winsor.var
   winsor.var(x = ,...)
+  psych::winsor.var(x = ,trim = ,na.rm = )
 #withinBetween
   withinBetween(x = ,...)
+  psych::withinBetween
 
 #wkappa
   wkappa(x = ,...)
+  psych::wkappa(x = ,w = )
   
 #Yule
   Yule(x = ,...)
+  psych::Yule(x = ,Y = )
 #Yule.inv
   Yule.inv(x = ,...)
+  psych::Yule.inv(Q = ,m = ,n = )
 #Yule2phi
   Yule2phi(x = ,...)
+  psych::Yule2phi(Q = ,m = ,n = )
 
 #Yule2phi.matrix
   Yule2phi.matrix(x = ,...)
+  psych::Yule2phi.matrix(x = ,v = )
 #Yule2poly
   Yule2poly(x = ,...)
+  psych::Yule2poly(Q = ,m = ,n = ,correct = )
   
 #Yule2poly.matrix
   Yule2poly.matrix(x = ,...)
+  psych::Yule2poly.matrix(x = ,v = )
 #Yule2tetra
   Yule2tetra(x = ,...)
+  psych::Yule2tetra(Q = ,m = ,n = ,correct = )
 #YuleBonett
   YuleBonett(x = ,...)
+  psych::YuleBonett(x = ,c = ,bonett = ,alpha = )
   
 #YuleCor
   YuleCor(x = ,...)
+  psych::YuleCor(x = ,c = ,bonett = ,alpha = )
 　
 #acf
 acf(x = ,lag.max = ,type = ,plot = ,na.action = ,demean = )
+acf(x = ,lag.max = ,type = ,plot = ,na.action = ,demean = )
 #acf2AR
 acf2AR(x = ,lag.max = ,type = ,plot = ,na.action = ,demean = )
+acf2AR(acf = )
 #add.scope
 add.scope(x = ,...)
 add.scope(terms1 = ,terms2 = )
@@ -9970,6 +10501,7 @@ Box.test(x = ,lag = ,type = ,fitdf = )
 
 #bw.bcv
 bw.bcv(x = ,nb = ,lower = ,upper = ,tol = )
+stats::bw.bcv(x = ,nb = ,lower = ,upper = ,tol = )
 #bw.nrd
 bw.nrd(x = ,...)
 bw.nrd(x = )
@@ -9987,7 +10519,7 @@ C(x = ,...)
 C(object =,contr = ,how.many = )
 #cancor
 cancor(x = ,...)
-concor
+stats::cancor(x = ,y = ,xcenter = ,ycenter = )
 #case.names
 case.names(x = ,...)
 case.names(object = )
@@ -10085,10 +10617,13 @@ D(x = ,...)
 D(expr = ,name = )
 #dbeta
   dbeta(x = ,shape1 = ,shape2 = ,ncp = ,log = )
+  stats::dbeta(x = ,shape1 = ,shape2 = ,ncp = ,log = )
 #dbinom
   dbinom(x = ,size = ,prob = ,log = )
+  stats::dbinom(x = ,size = ,prob = ,log = )
 #dcauchy
   dcauchy(x = ,location = ,scale = ,log = )
+  stats::dcauchy(x = ,location = ,scale = ,log = )
 #dchisq
   dchisq(x = ,df = ,ncp = ,log = )
   dchisq(x = ,df = ,ncp = ,log = )
@@ -10124,7 +10659,7 @@ D(expr = ,name = )
   dexp(x = ,rate = ,log = )
 #df
   df(x = ,...)
-  
+  stats::df(x = ,df1 = ,df2 = ,ncp = ,log = )
 #df.kernel
   df.kernel(x = ,...)
   df.kernel(k = )
@@ -10145,10 +10680,13 @@ D(expr = ,name = )
   dffits(model = ,infl = ,res =)
 #dgamma
   dgamma(x = ,shape = ,rate = ,log = )
+  stats::dgamma(x = ,shape = ,rate = ,scale = ,log = )
 #dgeom
   dgeom(x = ,prob = ,log = )
+  stats::dgeom(x = ,prob = ,log = )
 #dhyper
   dhyper(x = ,m = ,n = ,k = ,log = )
+  stats::dhyper(x = ,m = ,n = ,k = ,log = )
 #diffinv
   diffinv(x = ,...)
   diffinv(x = )
@@ -10493,6 +11031,12 @@ D(expr = ,name = )
 #model.matrix.lm
   model.matrix.lm(x = ,...)
   model.matrix(object = )
+  model.matrix(object = x)
+    model.matrix(object = "x")
+      model.matrix(object = df)
+
+
+  
 #model.offset
   model.offset(x = ,...)
   model.offset(x = )
@@ -10728,90 +11272,327 @@ pairwise.wilcox.test(x = ,g = ,p.adjust.method = ,paired = )
 #predict.lm
   predict.lm(x = ,...)  
   predict.lm(object = ,newdata = ,se.fit = ,scale = ,df = ,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = ,se.fit = ,scale = ,df = ,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = ,scale = ,df = ,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = ,df = ,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = ,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = ,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = ,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = x,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = x,terms = x,na.action = ,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = x,terms = x,na.action = x,pred.var = ,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = x,terms = x,na.action = x,pred.var = x,weights = )
+  predict.lm(object = x,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = x,terms = x,na.action = x,pred.var = x,weights = x)
+  predict.lm(object = "x",newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = ,terms = ,na.action = ,pred.var = ,weights = )
+  predict.lm(object = df,newdata = x,se.fit = x,scale = x,df = x,interval = x,level = x,type = x,terms = ,na.action = ,pred.var = ,weights = )
+
+
 #preplot
   preplot(x = ,...)
   preplot(object = )
+  preplot(object = x)
+    preplot(object = "x")
+      preplot(object = df)
 #princomp
   princomp(x = ,...)
   princomp(x = )
+  princomp(x = x)
+    princomp(x = "x")
+      princomp(x = df)
+  princomp(x = ,cor = ,scores = ,subset = ,na.action = )
+
 #printCoefmat
   printCoefmat(x = ,...)
   printCoefmat(x = ,digits = ,signif.stars = ,signif.legend = ,dig.tst = ,cs.ind = ,tst.ind = ,zap.ind = ,P.values = ,has.Pvalue = ,eps.Pvalue = ,na.print = ,quote = ,right = )
+  printCoefmat(x = x,digits = ,signif.stars = ,signif.legend = ,dig.tst = ,cs.ind = ,tst.ind = ,zap.ind = ,P.values = ,has.Pvalue = ,eps.Pvalue = ,na.print = ,quote = ,right = )
+    printCoefmat(x = "x",digits = ,signif.stars = ,signif.legend = ,dig.tst = ,cs.ind = ,tst.ind = ,zap.ind = ,P.values = ,has.Pvalue = ,eps.Pvalue = ,na.print = ,quote = ,right = )
+      printCoefmat(x = df,digits = ,signif.stars = ,signif.legend = ,dig.tst = ,cs.ind = ,tst.ind = ,zap.ind = ,P.values = ,has.Pvalue = ,eps.Pvalue = ,na.print = ,quote = ,right = )
+      
 #profile
   profile(x = ,...)
   profile(fitted = )
+  profile(fitted = x)
+    profile(fitted = "x")
+      profile(fitted = df)
 #proj
   proj(x = ,...)
   proj(object = )
+  proj(object = x)
+    proj(object = "x")
+      proj(object = df)
 #promax
   promax(x = ,...)
   promax(x = ,m = )
+  promax(x = x,m = ,normalize = )
+  promax(x = x,m = x)
+  promax(x = x,m = x,normalize = x)
+  promax(x = x,m = x,normalize = x,eps = )
+  promax(x = x,m = x,normalize = x,eps = x)
+  promax(x = x,m = x,normalize = x,eps = x,control = )
+  promax(x = x,m = x,normalize = x,eps = x,control = x)
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = )
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x)
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = )
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x)
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = )
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x)
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = )
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = x)
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = x,oblique.scores = )
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = x,oblique.scores = x)
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = x,oblique.scores = x,oblique.scores = )
+  promax(x = x,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = x,oblique.scores = x,oblique.scores = x)
+  promax(x = "x",m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = x,oblique.scores = x,oblique.scores = x)
+  promax(x = df,m = x,normalize = x,eps = x,control = x,trace = x,orthogonal = x,rotate = x,oblique.scores = x,oblique.scores = x,oblique.scores = x)
 #prop.test
   prop.test(x = ,...)
-  prop.test(x = ,n = ,p = ,alternative = ,conf.level = ,correct = )
+  prop.test(x = ,n = ,p = ,alternative = ,conf.level = ,correct = ) 
+  prop.test(x = x,n = ,p = ,alternative = ,conf.level = ,correct = ) 
+  prop.test(x = x,n = x,p = ,alternative = ,conf.level = ,correct = )
+  prop.test(x = x,n = x,p = x,alternative = ,conf.level = ,correct = )
+  prop.test(x = x,n = x,p = x,alternative = x,conf.level = ,correct = )
+  prop.test(x = x,n = x,p = x,alternative = x,conf.level = x,correct = )
+  prop.test(x = x,n = x,p = x,alternative = x,conf.level = x,correct = x)
+  prop.test(x = "x",n = x,p = x,alternative = x,conf.level = x,correct = x)
+  prop.test(x = df,n = x,p = x,alternative = x,conf.level = x,correct = x)
+  prop.test(x = ,n = ,p = ,alternative = ,conf.level = ,correct = ,p.adjust.method = )
+
 #prop.trend.test
   prop.trend.test(x = ,...)
   prop.trend.test(x = ,n = ,score = )
+  prop.trend.test(x = x,n = ,score = )
+  prop.trend.test(x = x,n = x,score = )
+  prop.trend.test(x = x,n = x,score = x)
+  prop.trend.test(x = x,n = x,score = x,alternative = )
+  prop.trend.test(x = x,n = x,score = x,alternative = x)
+  prop.trend.test(x = x,n = x,score = x,alternative = x,correct = )
+  prop.trend.test(x = x,n = x,score = x,alternative = x,correct = x)
+  prop.trend.test(x = x,n = x,score = x,alternative = x,correct = x,conf.level = )
+  prop.trend.test(x = "x",n = x,score = x,alternative = x,correct = x,conf.level = x)
+  prop.trend.test(x = df,n = x,score = x,alternative = x,correct = x,conf.level = x)
+
 #psignrank
   psignrank(x = ,n = ,lower.tail = ,log.p = ) 
   psignrank(q = ,n = ,lower.tail = ,log.p = )
+  psignrank(q = x,n = ,lower.tail = ,log.p = )
+  psignrank(q = x,n = x,lower.tail = ,log.p = )
+  psignrank(q = x,n = x,lower.tail = x,log.p = )
+  psignrank(q = x,n = x,lower.tail = x,log.p = x)
+  psignrank(q = "x",n = x,lower.tail = x,log.p = x)
+  psignrank(q = df,n = x,lower.tail = x,log.p = x)
 #pt
   pt(x = ,df = ,ncp = ,lower.tail = ,log.p = )
   pt(q = ,df = ,ncp = ,lower.tail = ,log.p = )
+  pt(q = x,df = ,ncp = ,lower.tail = ,log.p =)
+  pt(q = x,df = x,ncp = ,lower.tail = ,log.p = )
+  pt(q = x,df = x,ncp = x,lower.tail = ,log.p = )
+  pt(q = x,df = x,ncp = x,lower.tail = x,log.p = )
+  pt(q = x,df = x,ncp = x,lower.tail = x,log.p = x)
+
+  pt(q = "x",df = ,ncp = ,lower.tail = ,log.p = )
+  pt(q = df,df = ,ncp = ,lower.tail = ,log.p = )
+
 #ptukey
   ptukey(x = ,q = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
   ptukey(q = ,nmeans = ,df = ,nranges = ,lower.tail = ,log.p = )
+  ptukey(q = x,nmeans = ,df = ,nranges = ,lower.tail = ,log.p = )
+  ptukey(q = x,nmeans = x,df = ,nranges = ,lower.tail = ,log.p = )
+  ptukey(q = x,nmeans = x,df = x,nranges = ,lower.tail = ,log.p = )
+  ptukey(q = x,nmeans = x,df = x,nranges = x,lower.tail = ,log.p = )
+  ptukey(q = x,nmeans = x,df = x,nranges = x,lower.tail = x,log.p = )
+  ptukey(q = x,nmeans = x,df = x,nranges = x,lower.tail = x,log.p = x)
+  ptukey(q = "x",nmeans = x,df = x,nranges = x,lower.tail = x,log.p = x)
+  ptukey(q = df,nmeans = x,df = x,nranges = x,lower.tail = x,log.p = x)
+  
 #punif
   punif(x = ,min = ,max = ,lower.tail = ,log.p = )
   punif(q = ,min = ,max = ,lower.tail = ,log.p = )
+  punif(q = x,min = ,max = ,lower.tail = ,log.p = )
+  punif(q = x,min = x,max = ,lower.tail = ,log.p = )
+  punif(q = x,min = x,max = x,lower.tail = ,log.p = )
+  punif(q = x,min = x,max = x,lower.tail = x,log.p = )
+  punif(q = x,min = x,max = x,lower.tail = x,log.p = x)
+  punif(q = "x",min = x,max = x,lower.tail = x,log.p = x)
+  punif(q = df,min = x,max = x,lower.tail = x,log.p = x)
 #pweibull
   pweibull(x = ,shape = ,scale = ,lower.tail = ,log.p = )
   pweibull(q = ,shape = ,scale = ,lower.tail = ,log.p = )
+  pweibull(q = x,shape = ,scale = ,lower.tail = ,log.p = )
+  pweibull(q = x,shape = x,scale = ,lower.tail = ,log.p = )
+  pweibull(q = x,shape = x,scale = x,lower.tail = ,log.p = )
+  pweibull(q = x,shape = x,scale = x,lower.tail = x,log.p = )
+  pweibull(q = x,shape = x,scale = x,lower.tail = x,log.p = x)
+  pweibull(q = "x",shape = x,scale = x,lower.tail = x,log.p = x)
+  pweibull(q = df,shape = x,scale = x,lower.tail = x,log.p = x)
+
 #pwilcox
   pwilcox(x = ,m = ,n = ,lower.tail = ,log.p = )
   pwilcox(q = ,m = ,n = ,lower.tail = ,log.p = )
+  pwilcox(q = x,m = ,n = ,lower.tail = ,log.p = )
+  pwilcox(q = x,m = x,n = ,lower.tail = ,log.p = )
+  pwilcox(q = x,m = x,n = x,lower.tail = ,log.p = )
+  pwilcox(q = x,m = x,n = x,lower.tail = x,log.p = )
+  pwilcox(q = x,m = x,n = x,lower.tail = x,log.p = x)
+  pwilcox(q = "x",m = x,n = x,lower.tail = x,log.p = x)
+  pwilcox(q = df,m = x,n = x,lower.tail = x,log.p = x)
+  pwilcox(x = x,m = ,n = ,lower.tail = ,log.p = )
+  pwilcox(x = x,m = x,n = ,lower.tail = ,log.p = )
+  pwilcox(x = x,m = x,n = x,lower.tail = ,log.p = )
+  pwilcox(x = x,m = x,n = x,lower.tail = x,log.p = )
+  pwilcox(x = x,m = x,n = x,lower.tail = x,log.p = x)
+  pwilcox(x = "x",m = x,n = x,lower.tail = x,log.p = x)
 #qbeta
   qbeta(x = ,shape1 = ,shape2 = ,ncp = ,lower.tail = ,log.p = )
   qbeta(p = ,shape1 = ,shape2 = ,ncp = ,lower.tail = ,log.p = )
+  qbeta(p = x,shape1 = ,shape2 = ,ncp = ,lower.tail = ,log.p = )
+  qbeta(p = x,shape1 = x,shape2 = ,ncp = ,lower.tail = ,log.p = )
+  qbeta(p = x,shape1 = x,shape2 = x,ncp = ,lower.tail = ,log.p = )
+  qbeta(p = x,shape1 = x,shape2 = x,ncp = x,lower.tail = ,log.p = )
+  qbeta(p = x,shape1 = x,shape2 = x,ncp = x,lower.tail = x,log.p = )
+  qbeta(p = x,shape1 = x,shape2 = x,ncp = x,lower.tail = x,log.p = x)
+  qbeta(p = "x",shape1 = x,shape2 = x,ncp = x,lower.tail = x,log.p = x)
+  qbeta(p = df,shape1 = x,shape2 = x,ncp = x,lower.tail = x,log.p = x)
+
 #qbinom
   qbinom(x = ,size = ,prob = ,lower.tail = ,log.p = )
   qbinom(p = ,size = ,prob = ,lower.tail = ,log.p = )
+  qbinom(p = x,size = ,prob = ,lower.tail = ,log.p = )
+  qbinom(p = x,size = x,prob = ,lower.tail = ,log.p = )
+  qbinom(p = x,size = x,prob = x,lower.tail = ,log.p = )
+  qbinom(p = x,size = x,prob = x,lower.tail = x,log.p = )
+  qbinom(p = x,size = x,prob = x,lower.tail = x,log.p = x)
+  qbinom(p = "x",size = x,prob = x,lower.tail = x,log.p = x)
+  qbinom(p = df,size = x,prob = x,lower.tail = x,log.p = x)
 #qbirthday
   qbirthday(x = ,n = ,classes = ,lower.tail = ,log.p = )
   qbirthday(prob = ,classes = ,coincident = )
+  qbirthday(prob = x,classes = ,coincident = )
+  qbirthday(prob = x,classes = x,coincident = )
+  qbirthday(prob = x,classes = x,coincident = x)
+  qbirthday(prob = "x",classes = x,coincident = x)
+  qbirthday(prob = df,classes = x,coincident = x)
+  
 #qcauchy
   qcauchy(x = ,location = ,scale = ,lower.tail = ,log.p = )
   qcauchy(p = ,location = ,scale = ,lower.tail = ,log.p = )
+  qcauchy(p = x,location = ,scale = ,lower.tail = ,log.p = )
+  qcauchy(p = x,location = x,scale = ,lower.tail = ,log.p = )
+  qcauchy(p = x,location = x,scale = x,lower.tail = ,log.p = )
+  qcauchy(p = x,location = x,scale = x,lower.tail = x,log.p = )
+  qcauchy(p = x,location = x,scale = x,lower.tail = x,log.p = x)
+  qcauchy(p = "x",location = x,scale = x,lower.tail = x,log.p = x)
+  qcauchy(p = df,location = x,scale = x,lower.tail = x,log.p = x)
+  
 #qchisq
   qchisq(x = ,df = ,ncp = ,lower.tail = ,log.p = )
-  qchisq(p = ,df = ,ncp = ,lower.tail = ,log.p = )
+  qchisq(p = ,df = ,ncp = ,lower.tail = ,log.p =  )
+  qchisq(p = x,df = ,ncp = ,lower.tail = ,log.p =  )
+  qchisq(p = x,df = x,ncp = ,lower.tail = ,log.p =  )
+  qchisq(p = x,df = x,ncp = x,lower.tail = ,log.p =  )
+  qchisq(p = x,df = x,ncp = x,lower.tail = x,log.p =  )
+  qchisq(p = x,df = x,ncp = x,lower.tail = x,log.p = x )
+  qchisq(p = "x",df = x,ncp = x,lower.tail = x,log.p = x )
+  qchisq(p = df,df = x,ncp = x,lower.tail = x,log.p = x )
+  
 #qexp
   qexp(x = ,rate = ,lower.tail = ,log.p = )
   qexp(p = ,rate = ,lower.tail = ,log.p = )
+  qexp(p = x,rate = ,lower.tail = ,log.p = )
+  qexp(p = x,rate = x,lower.tail = ,log.p = )
+  qexp(p = x,rate = x,lower.tail = x,log.p = )
+  qexp(p = x,rate = x,lower.tail = x,log.p = x)
+  qexp(p = "x",rate = x,lower.tail = x,log.p = x)
+  qexp(p = df,rate = x,lower.tail = x,log.p = x)
+  
 #qf
   qf(x = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )  
   qf(p = ,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
+  qf(p = x,df1 = ,df2 = ,ncp = ,lower.tail = ,log.p = )
+  qf(p = x,df1 = x,df2 = ,ncp = ,lower.tail = ,log.p = )
+  qf(p = x,df1 = x,df2 = x,ncp = ,lower.tail = ,log.p = )
+  qf(p = x,df1 = x,df2 = x,ncp = x,lower.tail = ,log.p = )
+  qf(p = x,df1 = x,df2 = x,ncp = x,lower.tail = x,log.p = )
+  qf(p = x,df1 = x,df2 = x,ncp = x,lower.tail = x,log.p = x)
+  qf(p = "x",df1 = x,df2 = x,ncp = x,lower.tail = x,log.p = x)
+  qf(p = df,df1 = x,df2 = x,ncp = x,lower.tail = x,log.p = x)
+
 #qgamma
   qgamma(x = ,shape = ,rate = ,lower.tail = ,log.p = )
   qgamma(p = ,shape = ,rate = ,scale = ,lower.tail = ,log.p = )
+  qgamma(p =x ,shape = ,rate = ,scale = ,lower.tail = ,log.p = )
+  qgamma(p =x ,shape = x,rate = ,scale = ,lower.tail = ,log.p = )
+  qgamma(p =x ,shape = x,rate = x,scale = ,lower.tail = ,log.p = )
+  qgamma(p =x ,shape = x,rate = x,scale = x,lower.tail = ,log.p = )
+  qgamma(p =x ,shape = x,rate = x,scale = x,lower.tail = x,log.p = )
+  qgamma(p =x ,shape = x,rate = x,scale = x,lower.tail = x,log.p = x)
+  qgamma(p ="x" ,shape = x,rate = x,scale = x,lower.tail = x,log.p = x)
+  qgamma(p =df ,shape = x,rate = x,scale = x,lower.tail = x,log.p = x)
 #qgeom
   qgeom(x = ,prob = ,lower.tail = ,log.p = )
   qgeom(p = ,prob = ,lower.tail = ,log.p = )
+  qgeom(p = x,prob = ,lower.tail = ,log.p = )
+  qgeom(p = x,prob = x,lower.tail = ,log.p = )
+  qgeom(p = x,prob = x,lower.tail = x,log.p = )
+  qgeom(p = x,prob = x,lower.tail = x,log.p = x)
+  qgeom(p = "x",prob = x,lower.tail = x,log.p = x)
+  qgeom(p = df,prob = x,lower.tail = x,log.p = x)
+  
 #qhyper
   qhyper(x = ,m = ,n = ,k = ,lower.tail = ,log.p = )
   qhyper(p = ,m = ,n = ,k = ,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = ,sdlog = ,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = ,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = x,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = x,lower.tail = x,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = x,lower.tail = x,log.p = x)
+  qlnorm(p = "x",meanlog = x,sdlog = x,lower.tail = x,log.p = x)
+  qlnorm(p = df,meanlog = x,sdlog = x,lower.tail = x,log.p = x)
+
 #qlnorm
   qlnorm(x = ,meanlog = ,sdlog = ,lower.tail = ,log.p = )
   qlnorm(p = ,meanlog = ,sdlog = ,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = ,sdlog = ,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = ,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = x,lower.tail = ,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = x,lower.tail = x,log.p = )
+  qlnorm(p = x,meanlog = x,sdlog = x,lower.tail = x,log.p = x)
+  qlnorm(p = "x",meanlog = x,sdlog = x,lower.tail = x,log.p = x)
+  qlnorm(p = df,meanlog = x,sdlog = x,lower.tail = x,log.p = x)
+
+  
 #qlogis
   qlogis(x = ,location = ,scale = ,lower.tail = ,log.p = )  
-  qlogis(p = ,location = ,scale = ,lower.tail = ,log.p = )
+  qlogis(p = ,location = ,scale = ,lower.tail = ,log.p = )  
+  qlogis( p = x,location = ,scale = ,lower.tail = ,log.p = )
+  qlogis( p = x,location = x,scale = ,lower.tail = ,log.p = )
+  qlogis( p = x,location = x,scale = x,lower.tail = ,log.p = )
+  qlogis( p = x,location = x,scale = x,lower.tail = x,log.p = )
+  qlogis( p = x,location = x,scale = x,lower.tail = x,log.p = x)
+  qlogis( p = "x",location = x,scale = x,lower.tail = x,log.p = x)
+  qlogis( p = df,location = x,scale = x,lower.tail = x,log.p = x)
+  
 #qnbinom
   qnbinom(x = ,size = ,prob = ,lower.tail = ,log.p = )
   qnbinom(p = ,size = ,prob = ,mu = ,lower.tail = ,log.p = )
+  qnbinom(p = x ,size = ,prob = ,lower.tail = ,log.p = )
+  qnbinom(p = x ,size = x,prob = ,lower.tail = ,log.p = )
+  qnbinom(p = x ,size = x,prob = x,lower.tail = ,log.p = )
+  qnbinom(p = x ,size = x,prob = x,lower.tail = x,log.p = )
+  qnbinom(p = x ,size = x,prob = x,lower.tail = x,log.p = x)
+  qnbinom(p = "x" ,size = x,prob = x,lower.tail = x,log.p = x)
+  qnbinom(p = df ,size = x,prob = x,lower.tail = x,log.p = x)
+
 #qnorm
   qnorm(x = ,mean = ,sd = ,lower.tail = ,log.p = )
   qnorm(p = ,mean = ,sd = ,lower.tail = ,log.p = )
+  qnorm(p = x,mean = ,sd = ,lower.tail = ,log.p = )
+  qnorm(p = x,mean = x,sd = ,lower.tail = ,log.p = )
+  qnorm(p = x,mean = x,sd = x,lower.tail = ,log.p = )
+  qnorm(p = x,mean = x,sd = x,lower.tail = x,log.p = )
+  qnorm(p = x,mean = x,sd = x,lower.tail = x,log.p = x)
+  qnorm(p = "x",mean = x,sd = x,lower.tail = x,log.p = x)
+  qnorm(p = df,mean = x,sd = x,lower.tail = x,log.p = x)
 #qpois
   qpois(x = ,lambda = ,lower.tail = ,log.p = )
   qpois(p = ,lambda = ,lower.tail = ,log.p = )
@@ -10897,7 +11678,6 @@ pairwise.wilcox.test(x = ,g = ,p.adjust.method = ,paired = )
   quasi(link = ,variance = )
   quasi(link = x,variance = )
   quasi(link = x,variance = x)
-
   quasi(link = "x",variance = )
   quasi(link = df,variance = )
 
@@ -10913,8 +11693,6 @@ pairwise.wilcox.test(x = ,g = ,p.adjust.method = ,paired = )
   quasipoisson(link = x)
   quasipoisson(link = "x")
     quasipoisson(link = df)
-
-
   
 #qunif
   qunif(x = ,min = ,max = ,lower.tail = ,log.p = )
@@ -11796,3 +12574,5 @@ xtabs(formula = ,data = ,subset = ,na.action = "x",addNA = ,drop.unused.levels =
 xtabs(formula = ,data = ,subset = "x",na.action = ,addNA = ,drop.unused.levels = )
 xtabs(formula = ,data = "x",subset = ,na.action = ,addNA = ,drop.unused.levels = )
 xtabs(formula = "x",data = ,subset = ,na.action = ,addNA = ,drop.unused.levels = )
+
+
