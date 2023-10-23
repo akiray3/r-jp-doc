@@ -12154,149 +12154,371 @@ summary.default(object = "df",digits = "df",quantile.type = "df")
 #Summary.difftime
 Summary.difftime(object = ,...)
 Summary.difftime(na.rm = )
+Summary.difftime(na.rm = x)
+Summary.difftime(na.rm = df)
+Summary.difftime(na.rm = "df")
+
 #summary.factor
 summary.factor(object = ,...)
 summary.factor(object = ,maxsum = )
+summary.factor(object = x,maxsum = )
+summary.factor(object = x,maxsum = x)
+summary.factor(object = x,maxsum = df)
+summary.factor(object = x,maxsum = "df")
+summary.factor(object = df,maxsum = "df")
+summary.factor(object = "df",maxsum = "df")
 #Summary.factor
 Summary.factor(object = ,...)
 Summary.factor(na.rm = )
+Summary.factor(na.rm = x)
+Summary.factor(na.rm = df)
+Summary.factor(na.rm = "df")
+
 #summary.matrix
 summary.matrix(object = ,...)
 summary.matrix(object = )
+summary.matrix(object = x)
+summary.matrix(object = df)
+summary.matrix(object = "df")
 #Summary.numeric_version
 Summary.numeric_version(object = ,...)
 Summary.numeric_version(na.rm = )
+Summary.numeric_version(na.rm = x)
+Summary.numeric_version(na.rm = df)
+Summary.numeric_version(na.rm = "df")
 #Summary.ordered
 Summary.ordered(object = ,...)
 Summary.ordered(na.rm = )
+Summary.ordered(na.rm = x)
+Summary.ordered(na.rm = df)
+Summary.ordered(na.rm = "df")
 #summary.POSIXct
 summary.POSIXct(object = ,...)
 Summary.POSIXct(na.rm = )
+Summary.POSIXct(na.rm = x)
+Summary.POSIXct(na.rm = df)
+Summary.POSIXct(na.rm = "df")
 #Summary.POSIXct
 Summary.POSIXct(object = ,...)
 Summary.POSIXct(na.rm = )
+Summary.POSIXct(na.rm = x)
+Summary.POSIXct(na.rm = df)
+Summary.POSIXct(na.rm = "df")
 #summary.POSIXlt
 summary.POSIXlt(object = ,...)
 summary.POSIXlt(object = ,digits = )
+summary.POSIXlt(object = x,digits = )
+summary.POSIXlt(object = x,digits = x)
+summary.POSIXlt(object = x,digits = df)
+summary.POSIXlt(object = x,digits = "df")
+summary.POSIXlt(object = df,digits = "df")
+summary.POSIXlt(object = "df",digits = "df")
+
 #Summary.POSIXlt
 Summary.POSIXlt(object = ,...)
 Summary.POSIXlt(na.rm = )
+Summary.POSIXlt(na.rm = x)
+Summary.POSIXlt(na.rm = df)
+Summary.POSIXlt(na.rm = "df")
+
 #summary.proc_time
 summary.proc_time(object = ,...)
 summary.proc_time(object = )
+summary.proc_time(object = x)
+summary.proc_time(object = df)
+summary.proc_time(object = "df")
 
 #summary.srcfile
 summary.srcfile(object = ,...)
 summary.srcfile(object = )
+summary.srcfile(object = x)
+summary.srcfile(object = df)
+summary.srcfile(object = "df")  
 
 #summary.srcref
 summary.srcref(object = ,...)
 summary.srcref(object = ,useSource = )
+summary.srcref(object = x,useSource = )
+summary.srcref(object = x,useSource = x)
+summary.srcref(object = x,useSource = df)
+summary.srcref(object = x,useSource = "df")
+summary.srcref(object = df,useSource = "df")
+summary.srcref(object = "df",useSource = "df")
 #summary.table
 summary.table(object = ,...)
 summary.table(object = )
+summary.table(object = x)
+summary.table(object = df)
+summary.table(object = "df")
 
 #summary.warnings
 summary.warnings(object = ,...)
 summary.warnings(object = )
+summary.warnings(object = x)
+summary.warnings(object = df)
+summary.warnings(object = "df")
 
 #suppressMessages
 suppressMessages(expr = )
 suppressMessages(expr = ,classes = )
+suppressMessages(expr = x,classes = )
+suppressMessages(expr = x,classes = x)
+suppressMessages(expr = x,classes = df)
+suppressMessages(expr = x,classes = "df")
+suppressMessages(expr = df,classes = "df")
+suppressMessages(expr = "df",classes = "df")
+
 #suppressPackageStartupMessages
 suppressPackageStartupMessages(expr = )
-suppressPackageStartupMessages(expr = )
+suppressPackageStartupMessages(expr = x)
+suppressPackageStartupMessages(expr = df)
+suppressPackageStartupMessages(expr = "df")
+
 #suppressWarnings
 suppressWarnings(expr = )
 suppressWarnings(expr = ,classes = )
+suppressWarnings(expr = x,classes = )
+suppressWarnings(expr = x,classes = x)
+suppressWarnings(expr = x,classes = df)
+suppressWarnings(expr = x,classes = "df")
+suppressWarnings(expr = df,classes = "df")
+suppressWarnings(expr = "df",classes = "df")
 #suspendInterrupts
 suspendInterrupts()
 suspendInterrupts(expr = )
+suspendInterrupts(expr = x)
+suspendInterrupts(expr = df)
+suspendInterrupts(expr = "df")
 #svd
 svd(x = ,nu = ,nv = ,LINPACK = ,...)
 svd(x = ,nu = ,nv = ,LINPACK = )
+svd(x = x,nu = ,nv = ,LINPACK = )
+svd(x = x,nu = x,nv = ,LINPACK = )
+svd(x = x,nu = x,nv = x,LINPACK = )
+svd(x = x,nu = x,nv = x,LINPACK = x)
+svd(x = x,nu = x,nv = x,LINPACK = df)
+svd(x = x,nu = x,nv = x,LINPACK = "df")
+svd(x = x,nu = x,nv = df,LINPACK = "df")
+svd(x = x,nu = x,nv = "df",LINPACK = "df")
+svd(x = x,nu = df,nv = "df",LINPACK = "df")
+svd(x = x,nu = "df",nv = "df",LINPACK = "df")
+svd(x = df,nu = "df",nv = "df",LINPACK = "df")
+svd(x = "df",nu = "df",nv = "df",LINPACK = "df")
 #sweep
 sweep(x = ,MARGIN = ,STATS = ,FUN = ,...)
 sweep(x = ,MARGIN = ,STATS = ,FUN = ,check.margin = )
+sweep(x = x,MARGIN = ,STATS = ,FUN = ,check.margin = )
+sweep(x = x,MARGIN = x,STATS = ,FUN = ,check.margin = )
+sweep(x = x,MARGIN = x,STATS = x,FUN = ,check.margin = )
+sweep(x = x,MARGIN = x,STATS = x,FUN = x,check.margin = )
+sweep(x = x,MARGIN = x,STATS = x,FUN = x,check.margin = x)
+sweep(x = x,MARGIN = x,STATS = x,FUN = x,check.margin = df)
+sweep(x = x,MARGIN = x,STATS = x,FUN = x,check.margin = "df")
+sweep(x = x,MARGIN = x,STATS = x,FUN = df,check.margin = "df")
+sweep(x = x,MARGIN = x,STATS = x,FUN = "df",check.margin = "df")
+sweep(x = x,MARGIN = x,STATS = df,FUN = "df",check.margin = "df")
+sweep(x = x,MARGIN = x,STATS = "df",FUN = "df",check.margin = "df")
+sweep(x = x,MARGIN = df,STATS = "df",FUN = "df",check.margin = "df")
+sweep(x = x,MARGIN = "df",STATS = "df",FUN = "df",check.margin = "df")
+sweep(x = df,MARGIN = "df",STATS = "df",FUN = "df",check.margin = "df")
+sweep(x = "df",MARGIN = "df",STATS = "df",FUN = "df",check.margin = "df")
 
 #switch
 switch(expr = ,...)
 switch(EXPR = )
+switch(EXPR = x)
+switch(EXPR = df)
+switch(EXPR = "df")
 #sys.call
 sys.call(which = )
-sys.call(which = )
+sys.call(which = x)
+sys.call(which = df)
+sys.call(which = "df")
+
 #sys.calls
 sys.calls()
-sys.calls()
+sys.calls(x)
+sys.calls(df)
+sys.calls("df")
+
 
 #Sys.chmod
 Sys.chmod(file = ,mode = ,use_umask = )
+Sys.chmod(file = x,mode = ,use_umask = )
+Sys.chmod(file = x,mode = x,use_umask = )
+Sys.chmod(file = x,mode = x,use_umask = x)
+Sys.chmod(file = x,mode = x,use_umask = df)
+Sys.chmod(file = x,mode = x,use_umask = "df")
+Sys.chmod(file = x,mode = df,use_umask = "df")
+Sys.chmod(file = x,mode = "df",use_umask = "df")
+Sys.chmod(file = df,mode = "df",use_umask = "df")
+Sys.chmod(file = "df",mode = "df",use_umask = "df")
+
+
 #Sys.Date
 Sys.Date()
-Sys.Date()
+Sys.Date(x)
+Sys.Date(df)
+Sys.Date("df")
+
 #sys.frame
 sys.frame(which = )
-sys.frame(which = )
+sys.frame(which = x)
+sys.frame(which = df)
+sys.frame(which = "df")
 #sys.frames
 sys.frames()
-sys.frames()
+sys.frames(x)
+sys.frames(df)
+sys.frames("df")
+
 #sys.function
 sys.function(which = )
-sys.function(which = )
+sys.function(which = x)
+sys.function(which = df)
+sys.function(which = "df")
 #Sys.getenv
 Sys.getenv(x = )
 Sys.getenv()
+Sys.getenv(x)
+Sys.getenv(df)
+Sys.getenv("df")
 #Sys.getlocale
 Sys.getlocale(category = )
-Sys.getlocale(category = )
+Sys.getlocale(category = x)
+Sys.getlocale(category = df)
+Sys.getlocale(category = "df")
 #Sys.getpid
 Sys.getpid()
-Sys.getpid()
+Sys.getpid(x)
+Sys.getpid(df)
+Sys.getpid("df")
+
 #Sys.glob
 Sys.glob(pattern = ,recursive = ,full.names = )
 Sys.glob(paths = ,dirmark = )
+Sys.glob(paths = x,dirmark = )
+Sys.glob(paths = x,dirmark = x)
+Sys.glob(paths = x,dirmark = df)
+Sys.glob(paths = x,dirmark = "df")
+Sys.glob(paths = df,dirmark = "df")
+Sys.glob(paths = "df",dirmark = "df")
+
 #Sys.info
 Sys.info()
-Sys.info()
+Sys.info(x)
+Sys.info(df)
+Sys.info("df")
+
 #sys.load.image
 sys.load.image(file = )
 sys.load.image(name = ,quiet = )
+sys.load.image(name = x,quiet = )
+sys.load.image(name = x,quiet = x)
+sys.load.image(name = x,quiet = df)
+sys.load.image(name = x,quiet = "df")
+sys.load.image(name = df,quiet = "df")
+sys.load.image(name = "df",quiet = "df")
+
 #Sys.localeconv
 Sys.localeconv()
-Sys.localeconv()
+Sys.localeconv(x) 
+Sys.localeconv(df)
+Sys.localeconv("df")
+
 #sys.nframe
 sys.nframe()
-sys.nframe()
+sys.nframe(x)
+sys.nframe(df)
+sys.nframe("df")
+
 #sys.on.exit
 sys.on.exit(expr = ,add = )
 sys.on.exit()
+sys.on.exit(x)
+sys.on.exit(df)
+sys.on.exit("df")
+sys.on.exit(expr = x,add = )
+sys.on.exit(expr = x,add = x)
+sys.on.exit(expr = x,add = df)
+sys.on.exit(expr = x,add = "df")
+sys.on.exit(expr = df,add = "df")
+sys.on.exit(expr = "df",add = "df")
 #sys.parent
 sys.parent(which = )
 sys.parent(n = )
+sys.parent(n = x)
+sys.parent(n = df)
+sys.parent(n = "df")
+sys.parent(which = x)
+sys.parent(which = df)
+sys.parent(which = "df")
+
 #sys.parents
 sys.parents()
-sys.parents()
+sys.parents(x)
+sys.parents(df)
+sys.parents("df")
+
 #Sys.readlink
 Sys.readlink(path = )
 Sys.readlink(paths = )
+Sys.readlink(paths = x)
+Sys.readlink(paths = df)
+Sys.readlink(paths = "df")
 #sys.save.image
 sys.save.image(file = )
 sys.save.image(name = )
+sys.save.image(name = x)
+sys.save.image(name = df)
+sys.save.image(name = "df")
 #Sys.setenv
 Sys.setenv(...)
 Sys.setenv()
+Sys.setenv(x)
+Sys.setenv(df)
+Sys.setenv("df")
+
 #Sys.setFileTime
 Sys.setFileTime(path = ,times = )
 Sys.setFileTime(path = ,time = )
+Sys.setFileTime(path = x,times = )
+Sys.setFileTime(path = x,time = )
+Sys.setFileTime(path = x,times = x)
+Sys.setFileTime(path = x,times = df)
+Sys.setFileTime(path = x,times = "df")
+  Sys.setFileTime(path = x,time = x)
+Sys.setFileTime(path = x,time = df)
+  Sys.setFileTime(path = x,time = "df")
+Sys.setFileTime(path = df,times = x)
+Sys.setFileTime(path = df,times = df)
+
 #Sys.setlocale
 Sys.setlocale(category = ,locale = )
-Sys.setlocale(category = ,locale = )
+Sys.setlocale(category = x,locale = )
+Sys.setlocale(category = x,locale = x)
+Sys.setlocale(category = x,locale = df)
+Sys.setlocale(category = x,locale = "df")
+Sys.setlocale(category = df,locale = "df")
+Sys.setlocale(category = "df",locale = "df")
+
 #Sys.sleep
 Sys.sleep(secs = )
 Sys.sleep(time = )
+Sys.sleep(secs = x)
+Sys.sleep(secs = df)  
+Sys.sleep(secs = "df")
+
 #sys.source
 sys.source(file = ,envir = ,...)
 sys.source(file = ,envir = ,chdir = ,keep.source = ,keep.parse.data = ,toplevel.env = )
+sys.source(file = x,envir = ,chdir = ,keep.source = ,keep.parse.data = ,toplevel.env = )
+sys.source(file = x,envir = x,chdir = ,keep.source = ,keep.parse.data = ,toplevel.env = )
+sys.source(file = x,envir = x,chdir = x,keep.source = ,keep.parse.data = ,toplevel.env = )
+sys.source(file = x,envir = x,chdir = x,keep.source = x,keep.parse.data = ,toplevel.env = )
+sys.source(file = x,envir = x,chdir = x,keep.source = x,keep.parse.data = x,toplevel.env = )
+sys.source(file = x,envir = x,chdir = x,keep.source = x,keep.parse.data = x,toplevel.env = x)
+
 #sys.status
 sys.status()
 sys.status()
