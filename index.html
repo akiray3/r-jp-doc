@@ -2,6 +2,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>home</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+  />
   <link rel="stylesheet" href="style.css" type="text/css" />
   <link
     rel="stylesheet"
@@ -17,7 +21,20 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
   />
+  <link rel="icon" href="www/bookmark-simple.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap"
+    rel="stylesheet"
+  />
 </head>
+<header>
+  <h1 class="page-title">R-jp-doc</h1>
+  <p class="page-desc">
+    R の関数ヘルプを対話的 GUI 操作で閲覧できるようにする Web アプリです
+  </p>
+</header>
 <body>
   <!--ローディング-->
   <div id="loading">
@@ -41,7 +58,7 @@
     </form>
   </div>
   <!--コンテンツ本体-->
-  <div style="width: 100%">
+  <div class="contents" style="width: 100%">
     <div class="sec_inner">
       <div id="base_sec_inner">
         <h1 class="packname">base</h1>
@@ -107,7 +124,22 @@
       </div>
     </div>
   </div>
-
+  <footer>
+    <div class="fotter-title">r-jp-doc</div>
+    <div>
+      <p class="fotter-menu-title"></p>
+      <ul class="footer-nav">
+        <li><a href="/r-jp-doc/infopage/base.html">base</a></li>
+        <li><a href="/r-jp-doc/infopage/graphics.html">graphics</a></li>
+        <li><a href="/r-jp-doc/infopage/psych.html">psych</a></li>
+        <li><a href="/r-jp-doc/infopage/stats.html">stats</a></li>
+      </ul>
+    </div>
+    <div class="fotter-menu-title">
+      <p>search</p>
+      <p>git-hub</p>
+    </div>
+  </footer>
   <script>
     const magnifyingGlass = document.querySelector("#magnifying-glass-duotone");
     const dark = window.matchMedia("(prefers-color-scheme:dark)");
