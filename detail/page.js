@@ -404,6 +404,8 @@ fetch(errorFilePath)
     document
       .getElementById("errorCopy")
       .addEventListener("input", function (event) {
+        const completeErrorList = document.getElementById("autoCompleteError");
+        completeErrorList.innerHTML = "";
         const text = event.target.value;
         if (text === "") {
           if (document.querySelector(".option")) {
@@ -415,26 +417,37 @@ fetch(errorFilePath)
           }
         } else {
           const resultError = getCompleteError(text);
-          displayMatchError(resultError);
+          resultError.forEach(function (item) {
+            displayMatchError(item.errorEN, item.errorJP);
+          });
+          console.log(resultError);
         }
       });
 
     function getCompleteError(input) {
-      const ErrorList = jsondata.map((item) => item.error);
-      const Error = ErrorList.filter(function (option) {
+      const ErrorList = jsondata.map((item) => item.errorEN);
+      const filterErrorList = ErrorList.filter(function (option) {
         return option.toLowerCase().includes(input.toLowerCase());
       });
-      return Error;
-      console.log(Error);
-    }
-    function displayMatchError(result) {
-      const completeErrorList = document.getElementById("autoCompleteError");
-      completeErrorList.innerHTML = "";
-      result.forEach(function (item) {
-        const option = document.createElement("li");
-        option.className = "option";
-        option.textContent = item;
-        completeErrorList.appendChild(option);
+
+      const ErrorlistIncludeJP = jsondata.filter(function (item) {
+        return item.errorEN.toLowerCase().includes(input.toLowerCase());
       });
+      return ErrorlistIncludeJP;
+    }
+
+    function displayMatchError(result, resultJP) {
+      const completeErrorList = document.getElementById("autoCompleteError");
+      console.log(result);
+      console.log(resultJP);
+      const option = document.createElement("li");
+      option.className = "option";
+      option.textContent = result;
+      completeErrorList.appendChild(option);
+
+      const optionJp = document.createElement("li");
+      optionJp.className = "optionJP";
+      optionJp.textContent = resultJP;
+      option.appendChild(optionJp);
     }
   });
