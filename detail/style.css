@@ -142,7 +142,7 @@ body {
 @media screen and (max-width: 420px) {
   .arg-hover-horizon {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     width: fit-content;
   }
 }
@@ -177,7 +177,7 @@ body {
 @media screen and (max-width: 420px) {
   .argcol {
     display: flex;
-    flex-wrap: nowrap;
+   flex-direction: column;
     margin-left: 0%;
   }
 }
@@ -195,7 +195,7 @@ body {
     width: fit-content;
   }
   .funcName {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
     font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "sans-serif";
   }
 }
