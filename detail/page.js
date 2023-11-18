@@ -420,7 +420,6 @@ fetch(errorFilePath)
           resultError.forEach(function (item) {
             displayMatchError(item.errorEN, item.errorJP);
           });
-          console.log(resultError);
         }
       });
 
@@ -438,8 +437,6 @@ fetch(errorFilePath)
 
     function displayMatchError(result, resultJP) {
       const completeErrorList = document.getElementById("autoCompleteError");
-      console.log(result);
-      console.log(resultJP);
       const option = document.createElement("li");
       option.className = "option";
       option.textContent = result;
