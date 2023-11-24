@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
     //関数名
     const funcframe = document.querySelector(".funcFrame");
     const funcname = document.querySelector(".funcName");
+    const funcnameStart = document.querySelector(".funcstart");
+    funcnameStart.classList.add(keyword);
+    if (keyword === "-" || "-.Date") {
+      funcnameStart.classList.add("hidden");
+    }
 
     //引数ブロック
     const argblock = document.querySelector(".argblock");
@@ -78,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const funcnametxt = document.createTextNode(keyword);
         const funcstart = document.createElement("text");
         funcstart.className = "FuncstartTxt";
+        funcstart.classList.add(keyword);
         const funcstarttxt = document.createTextNode("(");
         funcstart.style.display = "flex";
         funcstart.style.marginRight = "10px";
@@ -85,8 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
         funcstart.appendChild(funcstarttxt);
         argcol.appendChild(funcstart);
       } else if (WindowSize > 395) {
-        const funcnametxt = document.createTextNode(`${keyword}(`);
+        const funcnametxt = document.createTextNode(`${keyword}`);
+        const funcstart = document.createTextNode("(");
         funcname.appendChild(funcnametxt);
+        funcnameStart.appendChild(funcstart);
       }
       arg.forEach((element, index) => {
         const txt = document.createElement("text");
@@ -99,6 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const LastArgText = document.createTextNode(")");
         argLast.appendChild(LastArgText);
         argLast.classList.add("funclast");
+        if (keyword === "-" || "-.Date") {
+          argLast.classList.add("hidden");
+        }
         const elementArg = LastArg ? `${element.code}` : `${element.code},`;
         const txtnode = document.createTextNode(elementArg);
         txt.appendChild(txtnode);
@@ -111,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ///hover
         const hovinfo = document.createElement("div");
         hovinfo.classList.add("hover");
-        hovinfo.style.display = "none";
+        hovinfo.classList.add("hidden");
         hovinfo.style.backgroundColor = "#00000000";
         hovinfo.style.flexGrow = "1";
 
@@ -122,7 +133,8 @@ document.addEventListener("DOMContentLoaded", function () {
         //ホバー有効無効の判定
         //ホバー有効
         txt.addEventListener("mouseover", function () {
-          hovinfo.style.display = "block";
+          hovinfo.classList.remove("hidden");
+          hovinfo.classList.add("visible");
           if (document.querySelector(".funcimage")) {
             const image = document.querySelector(".funcimage");
             image.style.display = "none";
@@ -130,7 +142,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
         txt.addEventListener("mouseout", function () {
-          hovinfo.style.display = "none";
+          hovinfo.classList.remove("visible");
+          hovinfo.classList.add("hidden");
           if (document.querySelector(".funcimage")) {
             const image = document.querySelector(".funcimage");
             image.style.display = "block";
@@ -143,8 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         txt.addEventListener("touchstart", function () {
           if (hoverjudge()) {
-            hovinfo.style.display = "block";
-
+            hovinfo.classList.add("visible");
             if (document.querySelector(".funcimage")) {
               const image = document.querySelector(".funcimage");
               image.style.display = "none";
@@ -153,13 +165,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       });
-
       funcframe.appendChild(funcname);
-
-      //hover size
-      const heightblock = argblock.clientHeight;
-      const hovinfo = document.querySelectorAll(".hoverFrame");
-      hovinfo.style.height = `${heightblock + 20}px`;
+      funcframe.appendChild(funcnameStart);
 
       if (arg["arguments1"]) {
         const alltxt = document.querySelectorAll(".txt");

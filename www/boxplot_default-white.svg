@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.07 202.17">
-  <defs>
-    <style>
-      .cls-1 {
-        stroke: #fff;
-        stroke-miterlimit: 10;
-        stroke-width: 13px;
-      }
-    </style>
-  </defs>
-  <g id="_レイヤー_1-2" data-name="レイヤー 1">
-    <text/>
-    <rect class="cls-1" x="9.57" y="39.1" width="82" height="112.79"/>
-    <line class="cls-1" x1="50.57" y1="151.89" x2="50.57" y2="195.67"/>
-    <line class="cls-1" x1="50.57" y1="39.1" x2="50.57" y2="7.46"/>
-    <line class="cls-1" x1="4.03" y1="6.5" x2="97.1" y2="6.5"/>
-    <line class="cls-1" x1="4.03" y1="195.67" x2="97.1" y2="195.67"/>
-    <line class="cls-1" x1="9.57" y1="105.44" x2="91.57" y2="105.44"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_レイヤー_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 243.3 204.3" style="enable-background:new 0 0 243.3 204.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#FFFFFF;stroke-width:7;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:7;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+</style>
+<rect x="83.8" y="40.3" class="st0" width="78.9" height="108.5"/>
+<line class="st1" x1="123.2" y1="148.8" x2="123.2" y2="190.9"/>
+<line class="st1" x1="123.2" y1="40.3" x2="123.2" y2="9.8"/>
+<line class="st1" x1="78.5" y1="8.9" x2="168" y2="8.9"/>
+<line class="st1" x1="78.5" y1="190.9" x2="168" y2="190.9"/>
+<line class="st2" x1="83.8" y1="104.1" x2="162.7" y2="104.1"/>
 </svg>

@@ -1,25 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.56 198.93">
-  <defs>
-    <style>
-      .cls-1 {
-        stroke-width: 9px;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #000;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        fill: none;
-        stroke-width: 13px;
-      }
-    </style>
-  </defs>
-  <g id="_レイヤー_1-2" data-name="レイヤー 1">
-    <path class="cls-1" d="m55.77,17.03l-11.47-11.47c-1.4-1.4-3.68-1.4-5.08,0h0S7.55,37.21,7.55,37.21c-.68.67-1.05,1.59-1.05,2.54v11.47c0,1.99,1.61,3.59,3.59,3.59h11.47c.95,0,1.87-.38,2.54-1.05l31.66-31.66c1.4-1.4,1.4-3.68,0-5.08,0,0,0,0,0,0ZM21.93,51.59c-.1.1-.23.15-.36.15h-11.47c-.28,0-.51-.23-.51-.51v-11.47c0-.14.06-.27.15-.36l22.95-22.96,12.2,12.2-22.95,22.95Zm31.66-31.66l-6.52,6.52-12.2-12.2,6.52-6.53c.2-.2.53-.2.73,0,0,0,0,0,0,0l11.47,11.47c.2.2.2.53,0,.73,0,0,0,0,0,0Z"/>
-    <rect class="cls-2" x="40.47" y="52.22" width="145.6" height="140.2"/>
-    <line class="cls-2" x1="6.5" y1="52.22" x2="6.5" y2="192.43"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_レイヤー_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 243.3 204.3" style="enable-background:new 0 0 243.3 204.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{stroke:#000000;stroke-width:9;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:13;stroke-miterlimit:10;}
+</style>
+<rect x="63.4" y="8.1" class="st0" width="6.7" height="3.5"/>
+<g>
+	<path class="st1" d="M99.1,18.3l-9.9-9.9c-1.2-1.2-3.2-1.2-4.4,0c0,0,0,0,0,0L57.5,35.7c-0.6,0.6-0.9,1.4-0.9,2.2v9.9
+		c0,1.7,1.4,3.1,3.1,3.1h9.9c0.8,0,1.6-0.3,2.2-0.9l27.4-27.4C100.4,21.4,100.4,19.5,99.1,18.3C99.1,18.3,99.1,18.3,99.1,18.3z
+		 M69.9,48.1c-0.1,0.1-0.2,0.1-0.3,0.1h-9.9c-0.2,0-0.4-0.2-0.4-0.4v-9.9c0-0.1,0-0.2,0.1-0.3l19.8-19.8l10.5,10.5L69.9,48.1z
+		 M97.3,20.8l-5.6,5.6L81.1,15.9l5.6-5.6c0.2-0.2,0.5-0.2,0.6,0c0,0,0,0,0,0l9.9,9.9C97.4,20.3,97.4,20.6,97.3,20.8
+		C97.3,20.8,97.3,20.8,97.3,20.8z"/>
+</g>
+<rect x="85.9" y="48.7" class="st2" width="125.9" height="121.2"/>
+<line class="st2" x1="56.5" y1="48.7" x2="56.5" y2="169.9"/>
 </svg>
