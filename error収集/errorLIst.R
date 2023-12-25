@@ -80,3 +80,22 @@ ef5 <- readr::read_csv(file = paste0("/Users/aizawaharuka/Documents/GitHub/r-jp-
 edList <- left_join(df5,ef5,by = "rowname")
 edList <- edList %>% rename(errorEN = error.x) %>% rename(errorJP = error.y)
 jsonlite::write_json(edList,path = paste0("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/error収集/errorlist",number,".json"))
+
+
+setwd("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/error収集/")
+ef1 <- read_csv(file = "ErrorEN.csv")
+ef2 <- read_csv(file = "ErrorEN2.csv")
+ef3 <- read_csv(file = "ErrorEN3.csv")
+ef4 <- read_csv(file = "ErrorEN4.csv")
+ef5 <- read_csv(file = "ErrorEN5.csv")
+ef6 <- read_csv(file = "ErrorEN6.csv")
+ef7 <- read_csv(file = "ErrorEN7.csv")
+
+Allef <- bind_rows(ef1,ef2) %>% 
+  bind_rows(ef3) %>% 
+  bind_rows(ef4 ) %>% 
+  bind_rows(ef5) %>% 
+  bind_rows(ef6) %>% 
+  bind_rows(ef7)
+
+jsonlite::write_json(Allef,path = paste0("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/errorlist.json"))
