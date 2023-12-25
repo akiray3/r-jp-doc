@@ -83,13 +83,13 @@ jsonlite::write_json(edList,path = paste0("/Users/aizawaharuka/Documents/GitHub/
 
 
 setwd("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/error収集/")
-ef1 <- read_csv(file = "ErrorEN.csv")
-ef2 <- read_csv(file = "ErrorEN2.csv")
-ef3 <- read_csv(file = "ErrorEN3.csv")
-ef4 <- read_csv(file = "ErrorEN4.csv")
-ef5 <- read_csv(file = "ErrorEN5.csv")
-ef6 <- read_csv(file = "ErrorEN6.csv")
-ef7 <- read_csv(file = "ErrorEN7.csv")
+ef1 <- jsonlite::read_json("errorList.json")
+ef2 <- jsonlite::read_json("errorlist2.json")
+ef3 <- jsonlite::read_json("errorlist3.json")
+ef4 <- jsonlite::read_json("errorlist4.json")
+ef5 <- jsonlite::read_json("errorlist5.json")
+ef6 <- jsonlite::read_json("errorlist6.json")
+ef7 <- jsonlite::read_json("errorlist7.json")
 
 Allef <- bind_rows(ef1,ef2) %>% 
   bind_rows(ef3) %>% 
