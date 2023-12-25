@@ -23,6 +23,9 @@
     defer
   ></script>
   <script src="page.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/email.min.js"></script>
+  
+</script>
 </head>
 <body>
 <!--ローディング-->
@@ -123,5 +126,29 @@
   </div>
   </div>
 </div>
+<form id="form">
+  <div class="fieldTitle">検索で出てこないエラーを教えてください</div>
+  <div class="field">
+    <label for="from_name">エラーをコピペしてください</label>
+    <input type="text" name="from_name" id="from_name">
+  </div>
+  <div class="field">
+    <label for="to_name">エラーが出たコードを貼ってください</label>
+    <input type="text" name="to_name" id="to_name">
+  </div>
+  <div class="field">
+    <label for="message">その他</label>
+    <input type="text" name="message" id="message">
+  </div>
   
+
+  <input type="submit" id="button" value="送信" >
+</form>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('MJqTn57QGiXQ2v0ji')
+</script>  
 </body>

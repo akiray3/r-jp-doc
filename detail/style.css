@@ -378,7 +378,7 @@ body {
   border: none;
   border-radius: 9px;
   cursor: pointer;
-  display: block; 
+  display: block;
 }
 .tab.Hide {
   display: none;
@@ -481,4 +481,38 @@ body {
     font-size: var(--font-size-sm);
     font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "sans-serif";
   }
+}
+
+/*===Email====*/
+.fieldTitle {
+  font-size: var(--font-size-base);
+  font-family: "Hiragino Maru Gothic ProN", "YuGoshic", "sans-serif";
+  margin-bottom: 2%;
+}
+.field {
+  margin-bottom: 10px;
+  margin: 2%;
+}
+
+.field label {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: var(--font-size-sm);
+  background-color: #0a0e06;
+  color: #fff;
+  border: none;
+  margin-left: 1%;
 }
