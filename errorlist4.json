@@ -1,0 +1,872 @@
+[
+  {
+    "rowname": "ErrorMessage",
+    "errorEN": "object '.Generic' not found",
+    "errorJP": "オブジェクト '.Generic' がありません"
+  },
+  { "rowname": "ErrorType", "errorEN": "error", "errorJP": "error" },
+  {
+    "rowname": "ErrorMessage2",
+    "errorEN": "'...' used in an incorrect context",
+    "errorJP": "'...' が不適切な文脈で使われました"
+  },
+  {
+    "rowname": "ErrorMessage8",
+    "errorEN": "argument \"object\" is missing, with no default",
+    "errorJP": "引数 \"object\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage9",
+    "errorEN": "'origin' must be supplied",
+    "errorJP": "'origin' を指定しなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage13",
+    "errorEN": "do not know how to convert 'object' to class “POSIXct”",
+    "errorJP": "'object' からクラス “POSIXct” へ変換は定義されていません"
+  },
+  {
+    "rowname": "ErrorMessage14",
+    "errorEN": "character string is not in a standard unambiguous format",
+    "errorJP": "文字列は標準的な曖昧さのない書式にはなっていません"
+  },
+  {
+    "rowname": "ErrorMessage22",
+    "errorEN": "undefined columns selected",
+    "errorJP": "未定義の列が選ばれました"
+  },
+  {
+    "rowname": "ErrorMessage25",
+    "errorEN": "$ operator is invalid for atomic vectors",
+    "errorJP": "$ operator is invalid for atomic vectors"
+  },
+  {
+    "rowname": "ErrorMessage26",
+    "errorEN": "invalid 'path' argument",
+    "errorJP": "'path' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage32",
+    "errorEN": "'object' must inherit from class “table”",
+    "errorJP": "'object' はクラス “table” を継承しなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage38",
+    "errorEN": "argument \"expr\" is missing, with no default",
+    "errorJP": "引数 \"expr\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage46",
+    "errorEN": "argument \"x\" is missing, with no default",
+    "errorJP": "引数 \"x\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage47",
+    "errorEN": "infinite or missing values in 'x'",
+    "errorJP": "'x' に無限値か欠測値があります"
+  },
+  {
+    "rowname": "ErrorMessage50",
+    "errorEN": "the LINPACK argument has been defunct since R 3.1.0",
+    "errorJP": "the LINPACK argument has been defunct since R 3.1.0"
+  },
+  {
+    "rowname": "ErrorMessage61",
+    "errorEN": "argument \"MARGIN\" is missing, with no default",
+    "errorJP": "引数 \"MARGIN\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage62",
+    "errorEN": "argument \"STATS\" is missing, with no default",
+    "errorJP": "引数 \"STATS\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage63",
+    "errorEN": "STATS is longer than the extent of 'dim(x)[MARGIN]'",
+    "errorJP": "STATS は 'dim(x)[MARGIN]' の大きさより長いです"
+  },
+  { "rowname": "ErrorType63", "errorEN": "warning", "errorJP": "warning" },
+  {
+    "rowname": "ErrorMessage64",
+    "errorEN": "object 'x' of mode 'function' was not found",
+    "errorJP": "変数 'x' （モード 'function'）は見つかりません"
+  },
+  {
+    "rowname": "ErrorMessage68",
+    "errorEN": "argument is not interpretable as logical",
+    "errorJP": "引数が論理変数として解釈することができません"
+  },
+  {
+    "rowname": "ErrorMessage73",
+    "errorEN": "'x' must have named dimnames",
+    "errorJP": "'x' must have named dimnames"
+  },
+  {
+    "rowname": "ErrorMessage76",
+    "errorEN": "supplied argument name 'expr' does not match 'EXPR'",
+    "errorJP": "使われた引数名 'expr' が 'EXPR' と一致しません"
+  },
+  {
+    "rowname": "ErrorMessage77",
+    "errorEN": "argument is missing, with no default",
+    "errorJP": "引数がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage78",
+    "errorEN": "EXPR must be a length 1 vector",
+    "errorJP": "EXPR は長さ 1 のベクトルでなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage80",
+    "errorEN": "'switch' with no alternatives",
+    "errorJP": "'switch' with no alternatives"
+  },
+  {
+    "rowname": "ErrorMessage81",
+    "errorEN": "invalid 'which' argument",
+    "errorJP": "'which' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage82",
+    "errorEN": "NAs introduced by coercion",
+    "errorJP": "強制変換により NA が生成されました"
+  },
+  {
+    "rowname": "ErrorMessage83",
+    "errorEN": "unused argument (x)",
+    "errorJP": "使われていない引数 (x)"
+  },
+  {
+    "rowname": "ErrorMessage84",
+    "errorEN": "unused argument (df)",
+    "errorJP": "使われていない引数 (df)"
+  },
+  {
+    "rowname": "ErrorMessage85",
+    "errorEN": "unused argument (\"df\")",
+    "errorJP": "使われていない引数 (\"df\")"
+  },
+  {
+    "rowname": "ErrorMessage86",
+    "errorEN": "unused argument (alist(file = ))",
+    "errorJP": "使われていない引数 (alist(file = ))"
+  },
+  {
+    "rowname": "ErrorMessage87",
+    "errorEN": "unused argument (file = x)",
+    "errorJP": "使われていない引数 (file = x)"
+  },
+  {
+    "rowname": "ErrorMessage94",
+    "errorEN": "unused argument (file = df)",
+    "errorJP": "使われていない引数 (file = df)"
+  },
+  {
+    "rowname": "ErrorMessage95",
+    "errorEN": "unused argument (file = \"df\")",
+    "errorJP": "使われていない引数 (file = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage104",
+    "errorEN": "invalid 'which' value",
+    "errorJP": "'which' の値が不正です"
+  },
+  {
+    "rowname": "ErrorMessage106",
+    "errorEN": "the condition has length > 1",
+    "errorJP": "the condition has length > 1"
+  },
+  {
+    "rowname": "ErrorMessage108",
+    "errorEN": "invalid 'category' argument",
+    "errorJP": "無効な 'category' 引数です"
+  },
+  {
+    "rowname": "ErrorMessage112",
+    "errorEN": "unused arguments (alist(pattern = , recursive = , full.names = ))",
+    "errorJP": "使われていない引数 (alist(pattern = , recursive = , full.names = ))"
+  },
+  {
+    "rowname": "ErrorMessage113",
+    "errorEN": "argument \"paths\" is missing, with no default",
+    "errorJP": "引数 \"paths\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage119",
+    "errorEN": "invalid 'dirmark' argument",
+    "errorJP": "'dirmark' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage124",
+    "errorEN": "argument \"name\" is missing, with no default",
+    "errorJP": "引数 \"name\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage125",
+    "errorEN": "invalid 'file' argument",
+    "errorJP": "'file' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage130",
+    "errorEN": "empty (zero-byte) input file",
+    "errorJP": "空の (0 バイトの) 入力ファイルです"
+  },
+  {
+    "rowname": "ErrorMessage137",
+    "errorEN": "unused arguments (alist(expr = , add = ))",
+    "errorJP": "使われていない引数 (alist(expr = , add = ))"
+  },
+  {
+    "rowname": "ErrorMessage141",
+    "errorEN": "unused arguments (alist(expr = x, add = ))",
+    "errorJP": "使われていない引数 (alist(expr = x, add = ))"
+  },
+  {
+    "rowname": "ErrorMessage142",
+    "errorEN": "unused arguments (expr = x, add = x)",
+    "errorJP": "使われていない引数 (expr = x, add = x)"
+  },
+  {
+    "rowname": "ErrorMessage143",
+    "errorEN": "unused arguments (expr = x, add = df)",
+    "errorJP": "使われていない引数 (expr = x, add = df)"
+  },
+  {
+    "rowname": "ErrorMessage144",
+    "errorEN": "unused arguments (expr = x, add = \"df\")",
+    "errorJP": "使われていない引数 (expr = x, add = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage145",
+    "errorEN": "unused arguments (expr = df, add = \"df\")",
+    "errorJP": "使われていない引数 (expr = df, add = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage146",
+    "errorEN": "unused arguments (expr = \"df\", add = \"df\")",
+    "errorJP": "使われていない引数 (expr = \"df\", add = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage147",
+    "errorEN": "unused argument (alist(which = ))",
+    "errorJP": "使われていない引数 (alist(which = ))"
+  },
+  {
+    "rowname": "ErrorMessage148",
+    "errorEN": "invalid 'n' argument",
+    "errorJP": "'n' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage150",
+    "errorEN": "unused argument (which = x)",
+    "errorJP": "使われていない引数 (which = x)"
+  },
+  {
+    "rowname": "ErrorMessage151",
+    "errorEN": "unused argument (which = df)",
+    "errorJP": "使われていない引数 (which = df)"
+  },
+  {
+    "rowname": "ErrorMessage152",
+    "errorEN": "unused argument (which = \"df\")",
+    "errorJP": "使われていない引数 (which = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage158",
+    "errorEN": "invalid 'paths' argument",
+    "errorJP": "'paths' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage162",
+    "errorEN": "'file' must be non-empty string",
+    "errorJP": "'file' は空でない文字列でなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage165",
+    "errorEN": "all arguments must be named",
+    "errorJP": "全ての引数は名前を持たなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage169",
+    "errorEN": "unused argument (alist(times = ))",
+    "errorJP": "使われていない引数 (alist(times = ))"
+  },
+  {
+    "rowname": "ErrorMessage170",
+    "errorEN": "argument \"path\" is missing, with no default",
+    "errorJP": "引数 \"path\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage173",
+    "errorEN": "unused argument (times = x)",
+    "errorJP": "使われていない引数 (times = x)"
+  },
+  {
+    "rowname": "ErrorMessage174",
+    "errorEN": "unused argument (times = df)",
+    "errorJP": "使われていない引数 (times = df)"
+  },
+  {
+    "rowname": "ErrorMessage175",
+    "errorEN": "unused argument (times = \"df\")",
+    "errorJP": "使われていない引数 (times = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage187",
+    "errorEN": "unused argument (alist(secs = ))",
+    "errorJP": "使われていない引数 (alist(secs = ))"
+  },
+  {
+    "rowname": "ErrorMessage188",
+    "errorEN": "argument \"time\" is missing, with no default",
+    "errorJP": "引数 \"time\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage189",
+    "errorEN": "unused argument (secs = x)",
+    "errorJP": "使われていない引数 (secs = x)"
+  },
+  {
+    "rowname": "ErrorMessage190",
+    "errorEN": "unused argument (secs = df)",
+    "errorJP": "使われていない引数 (secs = df)"
+  },
+  {
+    "rowname": "ErrorMessage191",
+    "errorEN": "unused argument (secs = \"df\")",
+    "errorJP": "使われていない引数 (secs = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage193",
+    "errorEN": "argument \"file\" is missing, with no default",
+    "errorJP": "引数 \"file\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage194",
+    "errorEN": "'-1' is not an existing file'0' is not an existing file'1' is not an existing file'-Inf' is not an existing file'NaN' is not an existing file'Inf' is not an existing file",
+    "errorJP": "'-1' は既存のファイルではありません  '0' は既存のファイルではありません  '1' は既存のファイルではありません  '-Inf' は既存のファイルではありません  'NaN' は既存のファイルではありません  'Inf' は既存のファイルではありません"
+  },
+  {
+    "rowname": "ErrorMessage208",
+    "errorEN": "'1:10' is not an existing file'11:20' is not an existing file",
+    "errorJP": "'c(\"ErrorMessage\", \"ErrorType\", \"ErrorMessage1\", \"ErrorType1\", \"ErrorMessage2\", \"ErrorType2\", \"ErrorMessage3\", \"ErrorType3\", \"ErrorMessage4\", \"ErrorType4\", \"ErrorMessage5\", \"ErrorType5\", \"ErrorMessage6\", \"ErrorType6\", \"ErrorMessage7\", \"ErrorType7\", \"ErrorMessage8\", \"ErrorType8\", \"ErrorMessage9\", \"ErrorType9\", \"ErrorMessage10\", \"ErrorType10\", \"ErrorMessage11\", \"ErrorType11\", \"ErrorMessage12\", \"ErrorType12\", \"ErrorMessage13\", \"ErrorType13\", \"ErrorMessage14\", \"ErrorType14\", \"ErrorMessage15\", \"ErrorType15\", \n\"ErrorMessage16\", \"ErrorType16\", \"ErrorMessage17\", \"ErrorType17\", \"ErrorMessage18\", \"ErrorType18\", \"ErrorMessage19\", \"ErrorType19\", \"ErrorMessage20\", \"ErrorType20\", \"ErrorMessage21\", \"ErrorType21\", \"user\", \"system\", \"elapsed\", \"ErrorMessage22\", \"ErrorType22\", \"ErrorMessage23\", \"ErrorType23\", \"ErrorMessage24\", \"ErrorType24\", \"ErrorMessage25\", \"ErrorType25\", \"ErrorMessage26\", \"ErrorType26\", \"ErrorMessage27\", \"ErrorType27\", \"ErrorMessage28\", \"ErrorType28\", \"ErrorMessage29\", \"ErrorType29\", \"1\", \"2\", \n\"3\", \"4\", \"5\", \"6\", \"11\", \"21\", \"31\", \"41\", \"51\", \"61\", \"12\", \"22\", \"32\", \"42\", \"52\", \"62\", \"13\", \"23\", \"33\", \"43\", \"53\", \"63\", \"x1\", \"x2\", \"x3\", \"x4\", \"x5\", \"x6\", \"x7\", \"x8\", \"x9\", \"x10\", \"y1\", \"y2\", \"y3\", \"y4\", \"y5\", \"y6\", \"y7\", \"y8\", \"y9\", \"y10\", \"ErrorMessage30\", \"ErrorType30\", \"ErrorMessage31\", \"ErrorType31\", \"ErrorMessage32\", \"ErrorType32\", \"ErrorMessage33\", \"ErrorType33\", \"ErrorMessage34\", \"ErrorType34\", \"ErrorMessage35\", \"ErrorType35\", \"ErrorMessage36\", \"ErrorType36\", \"ErrorMessage37\", \"ErrorType37\", \n\"ErrorMessage38\", \"ErrorType38\", \"ErrorMessage39\", \"ErrorType39\", \"14\", \"24\", \"34\", \"44\", \"54\", \"64\", \"15\", \"25\", \"35\", \"45\", \"55\", \"65\", \"16\", \"26\", \"36\", \"46\", \"56\", \"66\", \"17\", \"27\", \"37\", \"47\", \"57\", \"67\", \"ErrorMessage40\", \"ErrorType40\", \"18\", \"28\", \"38\", \"48\", \"58\", \"68\", \"ErrorMessage41\", \"ErrorType41\", \"ErrorMessage42\", \"ErrorType42\", \"19\", \"29\", \"39\", \"49\", \"59\", \"69\", \"110\", \"210\", \"310\", \"410\", \"510\", \"610\", \"111\", \"211\", \"311\", \"411\", \"511\", \"611\", \"112\", \"212\", \"312\", \"412\", \"512\", \"612\", \n\"ErrorMessage43\", \"ErrorType43\", \"ErrorMessage44\", \"ErrorType44\", \"113\", \"213\", \"313\", \"413\", \"513\", \"613\", \"ErrorMessage45\", \"ErrorType45\", \"ErrorMessage46\", \"ErrorType46\", \"ErrorMessage47\", \"ErrorType47\", \"ErrorMessage48\", \"ErrorType48\", \"ErrorMessage49\", \"ErrorType49\", \"ErrorMessage50\", \"ErrorType50\", \"ErrorMessage51\", \"ErrorType51\", \"ErrorMessage52\", \"ErrorType52\", \"ErrorMessage53\", \"ErrorType53\", \"ErrorMessage54\", \"ErrorType54\", \"ErrorMessage55\", \"ErrorType55\", \"ErrorMessage56\", \"ErrorType56\", \n\"ErrorMessage57\", \"ErrorType57\", \"ErrorMessage58\", \"ErrorType58\", \"ErrorMessage59\", \"ErrorType59\", \"ErrorMessage60\", \"ErrorType60\", \"ErrorMessage61\", \"ErrorType61\", \"ErrorMessage62\", \"ErrorType62\", \"ErrorMessage63\", \"ErrorType63\", \"ErrorMessage64\", \"ErrorType64\", \"ErrorMessage65\", \"ErrorType65\", \"ErrorMessage66\", \"ErrorType66\", \"ErrorMessage67\", \"ErrorType67\", \"ErrorMessage68\", \"ErrorType68\", \"ErrorMessage69\", \"ErrorType69\", \"ErrorMessage70\", \"ErrorType70\", \"ErrorMessage71\", \"ErrorType71\", \"ErrorMessage72\", \n\"ErrorType72\", \"ErrorMessage73\", \"ErrorType73\", \"ErrorMessage74\", \"ErrorType74\", \"ErrorMessage75\", \"ErrorType75\", \"ErrorMessage76\", \"ErrorType76\", \"ErrorMessage77\", \"ErrorType77\", \"ErrorMessage78\", \"ErrorType78\", \"ErrorMessage79\", \"ErrorType79\", \"ErrorMessage80\", \"ErrorType80\", \"ErrorMessage81\", \"ErrorType81\", \"ErrorMessage82\", \"ErrorType82\", \"ErrorMessage83\", \"ErrorType83\", \"ErrorMessage84\", \"ErrorType84\", \"ErrorMessage85\", \"ErrorType85\", \"ErrorMessage86\", \"ErrorType86\", \"ErrorMessage87\", \"ErrorType87\", \n\"ErrorMessage88\", \"ErrorType88\", \"ErrorMessage89\", \"ErrorType89\", \"ErrorMessage90\", \"ErrorType90\", \"ErrorMessage91\", \"ErrorType91\", \"ErrorMessage92\", \"ErrorType92\", \"ErrorMessage93\", \"ErrorType93\", \"ErrorMessage94\", \"ErrorType94\", \"ErrorMessage95\", \"ErrorType95\", \"114\", \"ErrorMessage96\", \"ErrorType96\", \"ErrorMessage97\", \"ErrorType97\", \"ErrorMessage98\", \"ErrorType98\", \"ErrorMessage99\", \"ErrorType99\", \"ErrorMessage100\", \"ErrorType100\", \"ErrorMessage101\", \"ErrorType101\", \"ErrorMessage102\", \"ErrorType102\", \n\"ErrorMessage103\", \"ErrorType103\", \"ErrorMessage104\", \"ErrorType104\", \"ErrorMessage105\", \"ErrorType105\", \"-1\", \"0\", \"115\", \"-Inf\", \"NaN\", \"Inf\", \"1:10\", \"11:20\", \"116\", \"ErrorMessage106\", \"ErrorType106\", \"ErrorMessage107\", \"ErrorType107\", \"ErrorMessage108\", \"ErrorType108\", \"ErrorMessage109\", \"ErrorType109\", \"ErrorMessage110\", \"ErrorType110\", \"ErrorMessage111\", \"ErrorType111\", \"ErrorMessage112\", \"ErrorType112\", \"ErrorMessage113\", \"ErrorType113\", \"ErrorMessage114\", \"ErrorType114\", \"ErrorMessage115\", \n\"ErrorType115\", \"ErrorMessage116\", \"ErrorType116\", \"ErrorMessage117\", \"ErrorType117\", \"ErrorMessage118\", \"ErrorType118\", \"ErrorMessage119\", \"ErrorType119\", \"ErrorMessage120\", \"ErrorType120\", \"ErrorMessage121\", \"ErrorType121\", \"ErrorMessage122\", \"ErrorType122\", \"ErrorMessage123\", \"ErrorType123\", \"ErrorMessage124\", \"ErrorType124\", \"ErrorMessage125\", \"ErrorType125\", \"ErrorMessage126\", \"ErrorType126\", \"ErrorMessage127\", \"ErrorType127\", \"ErrorMessage128\", \"ErrorType128\", \"ErrorMessage129\", \"ErrorType129\", \n\"ErrorMessage130\", \"ErrorType130\", \"ErrorMessage131\", \"ErrorType131\", \"ErrorMessage132\", \"ErrorType132\", \"ErrorMessage133\", \"ErrorType133\", \"ErrorMessage134\", \"ErrorType134\", \"ErrorMessage135\", \"ErrorType135\", \"ErrorMessage136\", \"ErrorType136\", \"ErrorMessage137\", \"ErrorType137\", \"ErrorMessage138\", \"ErrorType138\", \"ErrorMessage139\", \"ErrorType139\", \"ErrorMessage140\", \"ErrorType140\", \"ErrorMessage141\", \"ErrorType141\", \"ErrorMessage142\", \"ErrorType142\", \"ErrorMessage143\", \"ErrorType143\", \"ErrorMessage144\", \n\"ErrorType144\", \"ErrorMessage145\", \"ErrorType145\", \"ErrorMessage146\", \"ErrorType146\", \"ErrorMessage147\", \"ErrorType147\", \"ErrorMessage148\", \"ErrorType148\", \"ErrorMessage149\", \"ErrorType149\", \"ErrorMessage150\", \"ErrorType150\", \"ErrorMessage151\", \"ErrorType151\", \"ErrorMessage152\", \"ErrorType152\", \"ErrorMessage153\", \"ErrorType153\", \"ErrorMessage154\", \"ErrorType154\", \"ErrorMessage155\", \"ErrorType155\", \"ErrorMessage156\", \"ErrorType156\", \"ErrorMessage157\", \"ErrorType157\", \"ErrorMessage158\", \"ErrorType158\", \n\"ErrorMessage159\", \"ErrorType159\", \"ErrorMessage160\", \"ErrorType160\", \"ErrorMessage161\", \"ErrorType161\", \"ErrorMessage162\", \"ErrorType162\", \"ErrorMessage163\", \"ErrorType163\", \"ErrorMessage164\", \"ErrorType164\", \"ErrorMessage165\", \"ErrorType165\", \"ErrorMessage166\", \"ErrorType166\", \"ErrorMessage167\", \"ErrorType167\", \"ErrorMessage168\", \"ErrorType168\", \"ErrorMessage169\", \"ErrorType169\", \"ErrorMessage170\", \"ErrorType170\", \"ErrorMessage171\", \"ErrorType171\", \"ErrorMessage172\", \"ErrorType172\", \"ErrorMessage173\", \n\"ErrorType173\", \"ErrorMessage174\", \"ErrorType174\", \"ErrorMessage175\", \"ErrorType175\", \"ErrorMessage176\", \"ErrorType176\", \"ErrorMessage177\", \"ErrorType177\", \"ErrorMessage178\", \"ErrorType178\", \"ErrorMessage179\", \"ErrorType179\", \"ErrorMessage180\", \"ErrorType180\", \"ErrorMessage181\", \"ErrorType181\", \"ErrorMessage182\", \"ErrorType182\", \"ErrorMessage183\", \"ErrorType183\", \"ErrorMessage184\", \"ErrorType184\", \"ErrorMessage185\", \"ErrorType185\", \"ErrorMessage186\", \"ErrorType186\", \"ErrorMessage187\", \"ErrorType187\", \n\"ErrorMessage188\", \"ErrorType188\", \"ErrorMessage189\", \"ErrorType189\", \"ErrorMessage190\", \"ErrorType190\", \"ErrorMessage191\", \"ErrorType191\", \"ErrorMessage192\", \"ErrorType192\", \"ErrorMessage193\", \"ErrorType193\", \"ErrorMessage194\", \"ErrorType194\", \"ErrorMessage195\", \"ErrorType195\", \"ErrorMessage196\", \"ErrorType196\", \"ErrorMessage197\", \"ErrorType197\", \"ErrorMessage198\", \"ErrorType198\", \"ErrorMessage199\", \"ErrorType199\", \"ErrorMessage200\", \"ErrorType200\", \"ErrorMessage201\", \"ErrorType201\", \"ErrorMessage202\", \n\"ErrorType202\", \"ErrorMessage203\", \"ErrorType203\", \"ErrorMessage204\", \"ErrorType204\", \"ErrorMessage205\", \"ErrorType205\", \"ErrorMessage206\", \"ErrorType206\", \"ErrorMessage207\", \"ErrorType207\", \"ErrorMessage208\", \"ErrorType208\", \"ErrorMessage209\", \"ErrorType209\", \"ErrorMessage210\", \"ErrorType210\", \"ErrorMessage211\", \"ErrorType211\", \"ErrorMessage212\", \"ErrorType212\", \"ErrorMessage213\", \"ErrorType213\", \"ErrorMessage214\", \"ErrorType214\", \"ErrorMessage215\", \"ErrorType215\", \"ErrorMessage216\", \"ErrorType216\", \n\"ErrorMessage217\", \"ErrorType217\", \"ErrorMessage218\","
+  },
+  {
+    "rowname": "ErrorMessage209",
+    "errorEN": "missing value where TRUE/FALSE needed",
+    "errorJP": "TRUE/FALSE が必要なところが欠損値です"
+  },
+  { "rowname": "ErrorMessage218", "errorEN": "invalid argument type" },
+  {
+    "rowname": "ErrorMessage221",
+    "errorEN": "'x' cannot be coerced to class \"octmode\"",
+    "errorJP": "'x' は \"octmode\" クラスに強制変換できません"
+  },
+  {
+    "rowname": "ErrorMessage223",
+    "errorEN": "unused arguments (alist(all = , path = ))",
+    "errorJP": "使われていない引数 (alist(all = , path = ))"
+  },
+  {
+    "rowname": "ErrorMessage224",
+    "errorEN": "argument \"names\" is missing, with no default",
+    "errorJP": "引数 \"names\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage227",
+    "errorEN": "argument \"command\" is missing, with no default",
+    "errorJP": "引数 \"command\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage228",
+    "errorEN": "non-empty character argument expected",
+    "errorJP": "空でない文字引数が期待されています"
+  },
+  {
+    "rowname": "ErrorMessage229",
+    "errorEN": "'intern' must be TRUE or FALSE",
+    "errorJP": "'intern' は TRUE か FALSE でなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage234",
+    "errorEN": "arguments 'show.output.on.console', 'minimized' and 'invisible' are for Windows only\n",
+    "errorJP": "引数 'show.output.on.console', 'minimized' そして 'invisible' は Windows 専用です \n"
+  },
+  { "rowname": "ErrorType234", "errorEN": "message", "errorJP": "message" },
+  {
+    "rowname": "ErrorMessage260",
+    "errorEN": "unused argument (value = x)",
+    "errorJP": "使われていない引数 (value = x)"
+  },
+  {
+    "rowname": "ErrorMessage262",
+    "errorEN": "argument \"con\" is missing, with no default",
+    "errorJP": "引数 \"con\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage263",
+    "errorEN": "'con' is not a textConnection",
+    "errorJP": "'con' is not a textConnection"
+  },
+  {
+    "rowname": "ErrorMessage270",
+    "errorEN": "'length(x) = 6 > 1' in coercion to 'logical(1)'",
+    "errorJP": "'length(x) = 6 > 1' in coercion to 'logical(1)'"
+  },
+  {
+    "rowname": "ErrorMessage271",
+    "errorEN": "'length(x) = 20 > 1' in coercion to 'logical(1)'",
+    "errorJP": "'length(x) = 5460 > 1' in coercion to 'logical(1)'"
+  },
+  {
+    "rowname": "ErrorMessage273",
+    "errorEN": "argument \"what\" is missing, with no default",
+    "errorJP": "引数 \"what\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage274",
+    "errorEN": "no function ‘-1’ found",
+    "errorJP": "関数 ‘-1’ が見付かりません"
+  },
+  {
+    "rowname": "ErrorMessage280",
+    "errorEN": "NAs introduced by coercion to integer range",
+    "errorJP": "NAs introduced by coercion to integer range"
+  },
+  {
+    "rowname": "ErrorMessage285",
+    "errorEN": "no item called \"df\" on the search list",
+    "errorJP": "検索リストに \"df\" という項目はありません"
+  },
+  {
+    "rowname": "ErrorMessage297",
+    "errorEN": "length(max.lines) <= 1 is not TRUE",
+    "errorJP": "length(max.lines) <= 1 は TRUE ではありません"
+  },
+  {
+    "rowname": "ErrorMessage299",
+    "errorEN": "argument 1 is empty",
+    "errorJP": "引数 1 が空です"
+  },
+  {
+    "rowname": "ErrorMessage300",
+    "errorEN": "Value for 'tracingState' must be TRUE or FALSE",
+    "errorJP": "'tracingState' の値は TRUE または FALSE でなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage303",
+    "errorEN": "argument \"_data\" is missing, with no default",
+    "errorJP": "引数 \"_data\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage306",
+    "errorEN": "numeric 'envir' arg not of length one",
+    "errorJP": "数値の 'envir' 引数の長さが 1 ではありません"
+  },
+  {
+    "rowname": "ErrorMessage307",
+    "errorEN": "invalid 'envir' argument of type 'character'",
+    "errorJP": "'envir' 引数 (型 'character') が不正です"
+  },
+  {
+    "rowname": "ErrorMessage311",
+    "errorEN": "non-numeric argument to mathematical function",
+    "errorJP": "non-numeric-alike variable(s) in data frame: rowname, ."
+  },
+  {
+    "rowname": "ErrorMessage314",
+    "errorEN": "'arg' must be NULL or a character vector"
+  },
+  {
+    "rowname": "ErrorMessage319",
+    "errorEN": "'arg' should be one of “both”, “left”, “right”"
+  },
+  {
+    "rowname": "ErrorMessage328",
+    "errorEN": "'arg' should be one of “secs”, “mins”, “hours”, “days”, “months”, “years”"
+  },
+  {
+    "rowname": "ErrorMessage339",
+    "errorEN": "no applicable method for 'truncate' applied to an object of class \"name\""
+  },
+  {
+    "rowname": "ErrorMessage341",
+    "errorEN": "no applicable method for 'truncate' applied to an object of class \"c('double', 'numeric')\"",
+    "errorJP": "'truncate' をクラス \"name\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage343",
+    "errorEN": "no applicable method for 'truncate' applied to an object of class \"data.frame\"",
+    "errorJP": "'truncate' をクラス \"c('double', 'numeric')\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage345",
+    "errorEN": "no applicable method for 'truncate' applied to an object of class \"character\"",
+    "errorJP": "'truncate' をクラス \"data.frame\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  { "rowname": "ErrorMessage348", "errorEN": "invalid connection" },
+  {
+    "rowname": "ErrorMessage354",
+    "errorEN": "argument \"r\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage359",
+    "errorEN": "argument \"fun\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage361",
+    "errorEN": "argument must be a function",
+    "errorJP": "引数 \"fun\" がありませんし、省略時既定値もありません"
+  },
+  { "rowname": "ErrorMessage362", "errorEN": "invalid first argument" },
+  {
+    "rowname": "ErrorMessage366",
+    "errorEN": "no generic function found for ‘df’"
+  },
+  {
+    "rowname": "ErrorMessage368",
+    "errorEN": "argument \"y\" is missing, with no default",
+    "errorJP": "‘df’ に対する総称的関数は見付かりません"
+  },
+  {
+    "rowname": "ErrorMessage369",
+    "errorEN": "\u001b[38;5;255m`x` and `y` are not compatible.\n`y` must be a data frame.\u001b[39m"
+  },
+  {
+    "rowname": "ErrorMessage372",
+    "errorEN": "'list' object cannot be coerced to type 'double'"
+  },
+  {
+    "rowname": "ErrorMessage374",
+    "errorEN": "argument 'incomparables != FALSE' is not used (yet)",
+    "errorJP": "'list' object cannot be coerced to type 'double'"
+  },
+  {
+    "rowname": "ErrorMessage377",
+    "errorEN": "MARGIN = 1 is invalid for dim ="
+  },
+  { "rowname": "ErrorMessage391", "errorEN": "incorrect number of dimensions" },
+  { "rowname": "ErrorMessage402", "errorEN": "'nmax' must be positive" },
+  {
+    "rowname": "ErrorMessage404",
+    "errorEN": "'fromLast' must be TRUE or FALSE",
+    "errorJP": "'nmax' は正でなければなりません"
+  },
+  {
+    "rowname": "ErrorMessage439",
+    "errorEN": "no applicable method for 'units' applied to an object of class \"name\""
+  },
+  {
+    "rowname": "ErrorMessage440",
+    "errorEN": "no applicable method for 'units' applied to an object of class \"c('double', 'numeric')\""
+  },
+  {
+    "rowname": "ErrorMessage441",
+    "errorEN": "no applicable method for 'units' applied to an object of class \"data.frame\"",
+    "errorJP": "'units' をクラス \"name\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage442",
+    "errorEN": "no applicable method for 'units' applied to an object of class \"character\"",
+    "errorJP": "'units' をクラス \"c('double', 'numeric')\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage444",
+    "errorEN": "no applicable method for 'units<-' applied to an object of class \"name\"",
+    "errorJP": "'units' をクラス \"character\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage445",
+    "errorEN": "no applicable method for 'units<-' applied to an object of class \"NULL\""
+  },
+  {
+    "rowname": "ErrorMessage446",
+    "errorEN": "no applicable method for 'units<-' applied to an object of class \"c('double', 'numeric')\"",
+    "errorJP": "'units<-' をクラス \"name\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage447",
+    "errorEN": "no applicable method for 'units<-' applied to an object of class \"data.frame\"",
+    "errorJP": "'units<-' をクラス \"NULL\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage448",
+    "errorEN": "no applicable method for 'units<-' applied to an object of class \"character\"",
+    "errorJP": "'units<-' をクラス \"c('double', 'numeric')\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage456",
+    "errorEN": "unused arguments (alist(xx = , units = , cl = ))"
+  },
+  {
+    "rowname": "ErrorMessage457",
+    "errorEN": "unused arguments (alist(xx = x, units = , cl = ))"
+  },
+  {
+    "rowname": "ErrorMessage458",
+    "errorEN": "unused arguments (alist(xx = x, units = x, cl = ))",
+    "errorJP": "使われていない引数 (alist(xx = , units = , cl = ))"
+  },
+  {
+    "rowname": "ErrorMessage459",
+    "errorEN": "unused arguments (xx = x, units = x, cl = x)",
+    "errorJP": "使われていない引数 (alist(xx = x, units = , cl = ))"
+  },
+  {
+    "rowname": "ErrorMessage460",
+    "errorEN": "unused arguments (xx = x, units = x, cl = df)",
+    "errorJP": "使われていない引数 (alist(xx = x, units = x, cl = ))"
+  },
+  {
+    "rowname": "ErrorMessage461",
+    "errorEN": "unused arguments (xx = x, units = x, cl = \"df\")",
+    "errorJP": "使われていない引数 (xx = x, units = x, cl = x)"
+  },
+  {
+    "rowname": "ErrorMessage462",
+    "errorEN": "unused arguments (xx = x, units = df, cl = \"df\")",
+    "errorJP": "使われていない引数 (xx = x, units = x, cl = df)"
+  },
+  {
+    "rowname": "ErrorMessage463",
+    "errorEN": "unused arguments (xx = x, units = \"df\", cl = \"df\")",
+    "errorJP": "使われていない引数 (xx = x, units = x, cl = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage464",
+    "errorEN": "unused arguments (xx = df, units = \"df\", cl = \"df\")",
+    "errorJP": "使われていない引数 (xx = x, units = df, cl = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage465",
+    "errorEN": "unused arguments (xx = \"df\", units = \"df\", cl = \"df\")",
+    "errorJP": "使われていない引数 (xx = x, units = \"df\", cl = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage466",
+    "errorEN": "'unix.time' is defunct.\nUse 'system.time' instead.\nSee help(\"Defunct\")",
+    "errorJP": "使われていない引数 (xx = df, units = \"df\", cl = \"df\")"
+  },
+  { "rowname": "ErrorMessage472", "errorEN": "invalid 'expand' argument" },
+  {
+    "rowname": "ErrorMessage474",
+    "errorEN": "invalid 'force' argument",
+    "errorJP": "'expand' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage476",
+    "errorEN": "invalid 'recursive' argument",
+    "errorJP": "'force' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage481",
+    "errorEN": "unused argument (alist(text = ))"
+  },
+  {
+    "rowname": "ErrorMessage482",
+    "errorEN": "argument \"description\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage483",
+    "errorEN": "invalid 'description' argument",
+    "errorJP": "使われていない引数 (alist(text = ))"
+  },
+  {
+    "rowname": "ErrorMessage492",
+    "errorEN": "'arg' should be one of “default”, “internal”, “libcurl”, “wininet”"
+  },
+  {
+    "rowname": "ErrorMessage501",
+    "errorEN": "there must be a 'generic' argument"
+  },
+  {
+    "rowname": "ErrorMessage502",
+    "errorEN": "'generic' argument must be a character string"
+  },
+  {
+    "rowname": "ErrorMessage507",
+    "errorEN": "no applicable method for 'df' applied to an object of class \"character\""
+  },
+  {
+    "rowname": "ErrorMessage509",
+    "errorEN": "argument must be a character vector of length 1",
+    "errorJP": "'df' をクラス \"character\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  { "rowname": "ErrorMessage512", "errorEN": "invalid 'x' argument" },
+  {
+    "rowname": "ErrorMessage518",
+    "errorEN": "argument \"FUN\" is missing, with no default"
+  },
+  { "rowname": "ErrorMessage540", "errorEN": "invalid 'mode' argument" },
+  { "rowname": "ErrorMessage541", "errorEN": "invalid 'length' argument" },
+  { "rowname": "ErrorMessage546", "errorEN": "unused argument (alist(f = ))" },
+  { "rowname": "ErrorMessage547", "errorEN": "unused argument (f = x)" },
+  { "rowname": "ErrorMessage556", "errorEN": "unused argument (f = df)" },
+  { "rowname": "ErrorMessage557", "errorEN": "unused argument (f = \"df\")" },
+  {
+    "rowname": "ErrorMessage558",
+    "errorEN": "could not find function \"version\"",
+    "errorJP": "使われていない引数 (f = df)"
+  },
+  {
+    "rowname": "ErrorMessage560",
+    "errorJP": "関数 \"version\" を見つけることができませんでした"
+  },
+  {
+    "rowname": "ErrorMessage573",
+    "errorEN": "argument \"message\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage575",
+    "errorEN": "attempt to set invalid 'class' attribute",
+    "errorJP": "引数 \"message\" がありませんし、省略時既定値もありません"
+  },
+  {
+    "rowname": "ErrorMessage577",
+    "errorEN": "no applicable method for 'weekdays' applied to an object of class \"name\"",
+    "errorJP": "不正な 'class' 属性を設定しようとしました"
+  },
+  {
+    "rowname": "ErrorMessage578",
+    "errorEN": "no applicable method for 'weekdays' applied to an object of class \"c('double', 'numeric')\""
+  },
+  {
+    "rowname": "ErrorMessage582",
+    "errorEN": "no applicable method for 'weekdays' applied to an object of class \"data.frame\""
+  },
+  {
+    "rowname": "ErrorMessage583",
+    "errorEN": "no applicable method for 'weekdays' applied to an object of class \"character\""
+  },
+  {
+    "rowname": "ErrorMessage585",
+    "errorEN": "invalid 'trim' argument",
+    "errorJP": "'weekdays' をクラス \"character\" のオブジェクトに適用できるようなメソッドがありません"
+  },
+  {
+    "rowname": "ErrorMessage587",
+    "errorEN": "'list' object cannot be coerced to type 'logical'",
+    "errorJP": "'trim' 引数が不正です"
+  },
+  {
+    "rowname": "ErrorMessage599",
+    "errorEN": "argument to 'which' is not logical"
+  },
+  {
+    "rowname": "ErrorMessage616",
+    "errorEN": "<text>:1:12: unexpected '='\n1: while(test =\n               ^"
+  },
+  {
+    "rowname": "ErrorMessage617",
+    "errorEN": "<text>:1:7: unexpected ')'\n1: while()\n          ^"
+  },
+  {
+    "rowname": "ErrorMessage618",
+    "errorEN": "<text>:2:0: unexpected end of input\n1: while(x)\n   ^",
+    "errorJP": "<text>:1:12:  予想外の '=' です \n1: while(test =\n               ^"
+  },
+  {
+    "rowname": "ErrorMessage619",
+    "errorEN": "<text>:2:0: unexpected end of input\n1: while(df)\n   ^",
+    "errorJP": "<text>:1:7:  予想外の ')' です \n1: while()\n          ^"
+  },
+  {
+    "rowname": "ErrorMessage620",
+    "errorEN": "<text>:2:0: unexpected end of input\n1: while(\"df\")\n   ^",
+    "errorJP": "<text>:2:0:  想定外の入力の終端です \n1: while(x)\n   ^"
+  },
+  {
+    "rowname": "ErrorMessage628",
+    "errorEN": "argument \"data\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage641",
+    "errorEN": "argument \"exprs\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage671",
+    "errorEN": "no applicable method for 'within' applied to an object of class \"name\""
+  },
+  {
+    "rowname": "ErrorMessage672",
+    "errorEN": "no applicable method for 'within' applied to an object of class \"c('double', 'numeric')\""
+  },
+  {
+    "rowname": "ErrorMessage676",
+    "errorEN": "no applicable method for 'within' applied to an object of class \"character\""
+  },
+  {
+    "rowname": "ErrorMessage697",
+    "errorEN": "more elements supplied than there are to replace"
+  },
+  {
+    "rowname": "ErrorMessage701",
+    "errorEN": "cannot xtfrm data frames",
+    "errorJP": "使われていない引数 (alist(df = ))"
+  },
+  {
+    "rowname": "ErrorMessage718",
+    "errorEN": "'list' object cannot be coerced to type 'integer'"
+  },
+  { "rowname": "ErrorMessage721", "errorEN": "wrong class" },
+  {
+    "rowname": "ErrorMessage745",
+    "errorEN": "invalid 'type' (list) of argument"
+  },
+  {
+    "rowname": "ErrorMessage746",
+    "errorEN": "non-numeric argument to binary operator"
+  },
+  {
+    "rowname": "ErrorMessage749",
+    "errorEN": "plot.new has not been called yet"
+  },
+  { "rowname": "ErrorMessage754", "errorEN": "'a' is overridden by 'reg'" },
+  {
+    "rowname": "ErrorMessage770",
+    "errorEN": "one of 'x1' and 'y1' must be given"
+  },
+  {
+    "rowname": "ErrorMessage775",
+    "errorEN": "'length', 'angle', or 'code' greater than length 1; values after the first are ignored"
+  },
+  {
+    "rowname": "ErrorMessage798",
+    "errorEN": "'x' must be a 2-d contingency table",
+    "errorJP": "'list' object cannot be coerced to type 'integer'"
+  },
+  {
+    "rowname": "ErrorMessage814",
+    "errorEN": "incorrect 'col': must be length 2"
+  },
+  {
+    "rowname": "ErrorMessage817",
+    "errorEN": "argument \"side\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage864",
+    "errorEN": "do not know how to convert 'if (has.at) at else x' to class “Date”"
+  },
+  {
+    "rowname": "ErrorMessage881",
+    "errorEN": "do not know how to convert 'if (has.at) at else x' to class “POSIXct”"
+  },
+  {
+    "rowname": "ErrorMessage903",
+    "errorEN": "argument \"height\" is missing, with no default"
+  },
+  { "rowname": "ErrorMessage904", "errorEN": "need finite 'ylim' values" },
+  {
+    "rowname": "ErrorMessage905",
+    "errorEN": "'height' must be a vector or a matrix"
+  },
+  { "rowname": "ErrorMessage910", "errorEN": "need finite 'xlim' values" },
+  {
+    "rowname": "ErrorMessage923",
+    "errorEN": "Outliers (-Inf, Inf) in boxplot 1 are not drawn"
+  },
+  {
+    "rowname": "ErrorMessage936",
+    "errorEN": "'names' attribute [6] must be the same length as the vector [1]"
+  }
+]

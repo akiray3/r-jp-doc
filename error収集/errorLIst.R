@@ -81,21 +81,5 @@ edList <- left_join(df5,ef5,by = "rowname")
 edList <- edList %>% rename(errorEN = error.x) %>% rename(errorJP = error.y)
 jsonlite::write_json(edList,path = paste0("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/error収集/errorlist",number,".json"))
 
-
-setwd("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/error収集/")
-ef1 <- jsonlite::read_json("errorList.json")
-ef2 <- jsonlite::read_json("errorlist2.json")
-ef3 <- jsonlite::read_json("errorlist3.json")
-ef4 <- jsonlite::read_json("errorlist4.json")
-ef5 <- jsonlite::read_json("errorlist5.json")
-ef6 <- jsonlite::read_json("errorlist6.json")
-ef7 <- jsonlite::read_json("errorlist7.json")
-
-Allef <- bind_rows(ef1,ef2) %>% 
-  bind_rows(ef3) %>% 
-  bind_rows(ef4 ) %>% 
-  bind_rows(ef5) %>% 
-  bind_rows(ef6) %>% 
-  bind_rows(ef7)
-
-jsonlite::write_json(Allef,path = paste0("/Users/aizawaharuka/Documents/GitHub/r-jp-doc/errorlist.json"))
+#まとめて一つにするとサイズが大きいために読み込めないらしい
+#別々で読み込んで使用する

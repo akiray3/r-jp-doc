@@ -1,0 +1,1261 @@
+[
+  {
+    "rowname": "ErrorMessage",
+    "errorEN": "NAs introduced by coercion",
+    "errorJP": "NAs introduced by coercion"
+  },
+  { "rowname": "ErrorType", "errorEN": "warning", "errorJP": "warning" },
+  {
+    "rowname": "ErrorMessage3",
+    "errorEN": "argument \"qr\" is missing, with no default",
+    "errorJP": "argument \"qr\" is missing, with no default"
+  },
+  { "rowname": "ErrorType3", "errorEN": "error", "errorJP": "error" },
+  {
+    "rowname": "ErrorMessage5",
+    "errorEN": "argument is not a QR decomposition",
+    "errorJP": "argument is not a QR decomposition"
+  },
+  {
+    "rowname": "ErrorMessage13",
+    "errorEN": "no applicable method for 'quarters' applied to an object of class \"name\"",
+    "errorJP": "no applicable method for 'quarters' applied to an object of class \"name\""
+  },
+  {
+    "rowname": "ErrorMessage14",
+    "errorEN": "no applicable method for 'quarters' applied to an object of class \"c('double', 'numeric')\"",
+    "errorJP": "no applicable method for 'quarters' applied to an object of class \"c('double', 'numeric')\""
+  },
+  {
+    "rowname": "ErrorMessage18",
+    "errorEN": "no applicable method for 'quarters' applied to an object of class \"data.frame\"",
+    "errorJP": "no applicable method for 'quarters' applied to an object of class \"data.frame\""
+  },
+  {
+    "rowname": "ErrorMessage19",
+    "errorEN": "no applicable method for 'quarters' applied to an object of class \"character\"",
+    "errorJP": "no applicable method for 'quarters' applied to an object of class \"character\""
+  },
+  {
+    "rowname": "ErrorMessage20",
+    "errorEN": "argument \"x\" is missing, with no default",
+    "errorJP": "argument \"x\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage22",
+    "errorEN": "'origin' must be supplied",
+    "errorJP": "'origin' must be supplied"
+  },
+  {
+    "rowname": "ErrorMessage23",
+    "errorEN": "do not know how to convert 'x' to class “POSIXlt”",
+    "errorJP": "do not know how to convert 'x' to class “POSIXlt”"
+  },
+  {
+    "rowname": "ErrorMessage24",
+    "errorEN": "character string is not in a standard unambiguous format",
+    "errorJP": "character string is not in a standard unambiguous format"
+  },
+  {
+    "rowname": "ErrorMessage30",
+    "errorEN": "one of \"yes\", \"no\", \"ask\" or \"default\" expected.",
+    "errorJP": "one of \"yes\", \"no\", \"ask\" or \"default\" expected."
+  },
+  {
+    "rowname": "ErrorMessage38",
+    "errorEN": "unrecognized value of 'save'",
+    "errorJP": "unrecognized value of 'save'"
+  },
+  {
+    "rowname": "ErrorMessage41",
+    "errorEN": "invalid version specification ‘-1’, ‘0’, ‘1’, ‘-Inf’, ‘NaN’, ‘Inf’",
+    "errorJP": "invalid version specification ‘-1’, ‘0’, ‘1’, ‘-Inf’, ‘NaN’, ‘Inf’"
+  },
+  {
+    "rowname": "ErrorMessage42",
+    "errorEN": "'length(x) = 6 > 1' in coercion to 'logical(1)'",
+    "errorJP": "'length(x) = 6 > 1' in coercion to 'logical(1)'"
+  },
+  {
+    "rowname": "ErrorMessage43",
+    "errorEN": "invalid 'y' type in 'x && y'",
+    "errorJP": "invalid 'y' type in 'x && y'"
+  },
+  {
+    "rowname": "ErrorMessage47",
+    "errorEN": "EXPR must be a length 1 vector",
+    "errorJP": "EXPR must be a length 1 vector"
+  },
+  {
+    "rowname": "ErrorMessage49",
+    "errorEN": "could not find function \"R.version\"",
+    "errorJP": "could not find function \"R.version\""
+  },
+  {
+    "rowname": "ErrorMessage50",
+    "errorEN": "unused argument (x)",
+    "errorJP": "unused argument (x)"
+  },
+  {
+    "rowname": "ErrorMessage51",
+    "errorEN": "unused argument (df)",
+    "errorJP": "unused argument (df)"
+  },
+  {
+    "rowname": "ErrorMessage52",
+    "errorEN": "unused argument (\"df\")",
+    "errorJP": "unused argument (\"df\")"
+  },
+  {
+    "rowname": "ErrorMessage53",
+    "errorEN": "could not find function \"R.version.string\"",
+    "errorJP": "could not find function \"R.version.string\""
+  },
+  {
+    "rowname": "ErrorMessage54",
+    "errorEN": "'...' used in an incorrect context",
+    "errorJP": "'...' used in an incorrect context"
+  },
+  {
+    "rowname": "ErrorMessage55",
+    "errorEN": "argument 1 is empty",
+    "errorJP": "argument 1 is empty"
+  },
+  {
+    "rowname": "ErrorMessage56",
+    "errorEN": "no non-missing arguments to min; returning Inf",
+    "errorJP": "no non-missing arguments to min; returning Inf"
+  },
+  {
+    "rowname": "ErrorMessage61",
+    "errorEN": "the condition has length > 1",
+    "errorJP": "the condition has length > 1"
+  },
+  {
+    "rowname": "ErrorMessage63",
+    "errorEN": "argument is not interpretable as logical",
+    "errorJP": "argument is not interpretable as logical"
+  },
+  {
+    "rowname": "ErrorMessage68",
+    "errorEN": "length(na.last) == 1L is not TRUE",
+    "errorJP": "length(na.last) == 1L is not TRUE"
+  },
+  {
+    "rowname": "ErrorMessage73",
+    "errorEN": "'arg' should be one of “average”, “first”, “last”, “random”, “max”, “min”",
+    "errorJP": "'arg' should be one of “average”, “first”, “last”, “random”, “max”, “min”"
+  },
+  {
+    "rowname": "ErrorMessage77",
+    "errorEN": "argument \"object\" is missing, with no default",
+    "errorJP": "argument \"object\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage78",
+    "errorEN": "argument \"f\" is missing, with no default",
+    "errorJP": "argument \"f\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage79",
+    "errorEN": "'object' must be a list or expression",
+    "errorJP": "'object' must be a list or expression"
+  },
+  {
+    "rowname": "ErrorMessage82",
+    "errorEN": "'arg' must be NULL or a character vector",
+    "errorJP": "'arg' must be NULL or a character vector"
+  },
+  {
+    "rowname": "ErrorMessage84",
+    "errorEN": "'arg' should be one of “unlist”, “replace”, “list”",
+    "errorJP": "'arg' should be one of “unlist”, “replace”, “list”"
+  },
+  {
+    "rowname": "ErrorMessage93",
+    "errorEN": "invalid 'length' argument",
+    "errorJP": "invalid 'length' argument"
+  },
+  {
+    "rowname": "ErrorMessage96",
+    "errorEN": "unused arguments (alist(con = , blocking = , encoding = , text = , raw = , local = ))",
+    "errorJP": "unused arguments (alist(con = , blocking = , encoding = , text = , raw = , local = ))"
+  },
+  {
+    "rowname": "ErrorMessage98",
+    "errorEN": "invalid 'raw' argument",
+    "errorJP": "invalid 'raw' argument"
+  },
+  {
+    "rowname": "ErrorMessage99",
+    "errorEN": "invalid 'open' argument",
+    "errorJP": "invalid 'open' argument"
+  },
+  {
+    "rowname": "ErrorMessage102",
+    "errorEN": "unused argument (alist(blocking = ))",
+    "errorJP": "unused argument (alist(blocking = ))"
+  },
+  {
+    "rowname": "ErrorMessage107",
+    "errorEN": "unused arguments (alist(blocking = , encoding = ))",
+    "errorJP": "unused arguments (alist(blocking = , encoding = ))"
+  },
+  {
+    "rowname": "ErrorMessage112",
+    "errorEN": "unused arguments (alist(blocking = , encoding = , text = ))",
+    "errorJP": "unused arguments (alist(blocking = , encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage117",
+    "errorEN": "argument \"con\" is missing, with no default",
+    "errorJP": "argument \"con\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage118",
+    "errorEN": "'con' is not a rawConnection",
+    "errorJP": "'con' is not a rawConnection"
+  },
+  {
+    "rowname": "ErrorMessage121",
+    "errorEN": "unused argument (alist(con = ))",
+    "errorJP": "unused argument (alist(con = ))"
+  },
+  {
+    "rowname": "ErrorMessage123",
+    "errorEN": "argument \"n\" is missing, with no default",
+    "errorJP": "argument \"n\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage124",
+    "errorEN": "argument 'x' must be a raw vector",
+    "errorJP": "argument 'x' must be a raw vector"
+  },
+  {
+    "rowname": "ErrorMessage145",
+    "errorEN": "is.matrix(x) is not TRUE",
+    "errorJP": "is.matrix(x) is not TRUE"
+  },
+  {
+    "rowname": "ErrorMessage151",
+    "errorEN": "'arg' should be one of “O”, “I”, “1”",
+    "errorJP": "'arg' should be one of “O”, “I”, “1”"
+  },
+  {
+    "rowname": "ErrorMessage156",
+    "errorEN": "supplied argument name 'x' does not match 'z'",
+    "errorJP": "supplied argument name 'x' does not match 'z'"
+  },
+  {
+    "rowname": "ErrorMessage159",
+    "errorEN": "unused arguments (alist(sub = , encoding = ))",
+    "errorJP": "unused arguments (alist(sub = , encoding = ))"
+  },
+  {
+    "rowname": "ErrorMessage160",
+    "errorEN": "argument \"file\" is missing, with no default",
+    "errorJP": "argument \"file\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage161",
+    "errorEN": "'file' must be a character string or connection",
+    "errorJP": "'file' must be a character string or connection"
+  },
+  {
+    "rowname": "ErrorMessage172",
+    "errorEN": "invalid argument type",
+    "errorJP": "invalid argument type"
+  },
+  {
+    "rowname": "ErrorMessage174",
+    "errorEN": "argument \"what\" is missing, with no default",
+    "errorJP": "argument \"what\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage175",
+    "errorEN": "invalid connection",
+    "errorJP": "invalid connection"
+  },
+  {
+    "rowname": "ErrorMessage181",
+    "errorEN": "invalid 'endian' argument",
+    "errorJP": "invalid 'endian' argument"
+  },
+  {
+    "rowname": "ErrorMessage197",
+    "errorEN": "unused argument (alist(encoding = ))",
+    "errorJP": "unused argument (alist(encoding = ))"
+  },
+  {
+    "rowname": "ErrorMessage199",
+    "errorEN": "argument \"nchars\" is missing, with no default",
+    "errorJP": "argument \"nchars\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage200",
+    "errorEN": "NAs introduced by coercion to integer range",
+    "errorJP": "NAs introduced by coercion to integer range"
+  },
+  {
+    "rowname": "ErrorMessage204",
+    "errorEN": "'list' object cannot be coerced to type 'integer'",
+    "errorJP": "'list' object cannot be coerced to type 'integer'"
+  },
+  {
+    "rowname": "ErrorMessage209",
+    "errorEN": "'con' is not a connection",
+    "errorJP": "'con' is not a connection"
+  },
+  {
+    "rowname": "ErrorMessage229",
+    "errorEN": "bad 'file' argument",
+    "errorJP": "bad 'file' argument"
+  },
+  {
+    "rowname": "ErrorMessage234",
+    "errorEN": "error reading from connection",
+    "errorJP": "error reading from connection"
+  },
+  {
+    "rowname": "ErrorMessage235",
+    "errorEN": "unused argument (alist(file = ))",
+    "errorJP": "unused argument (alist(file = ))"
+  },
+  {
+    "rowname": "ErrorMessage236",
+    "errorEN": "argument \"path\" is missing, with no default",
+    "errorJP": "argument \"path\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage237",
+    "errorEN": "unused argument (file = x)",
+    "errorJP": "unused argument (file = x)"
+  },
+  {
+    "rowname": "ErrorMessage238",
+    "errorEN": "unused argument (file = df)",
+    "errorJP": "unused argument (file = df)"
+  },
+  {
+    "rowname": "ErrorMessage239",
+    "errorEN": "unused argument (file = \"df\")",
+    "errorJP": "unused argument (file = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage241",
+    "errorEN": "'Recall' called from outside a closure",
+    "errorJP": "'Recall' called from outside a closure"
+  },
+  {
+    "rowname": "ErrorMessage247",
+    "errorEN": "object 'x' of mode 'function' was not found",
+    "errorJP": "object 'x' of mode 'function' was not found"
+  },
+  {
+    "rowname": "ErrorMessage266",
+    "errorEN": "unused arguments (alist(x = , weak = ))",
+    "errorJP": "unused arguments (alist(x = , weak = ))"
+  },
+  {
+    "rowname": "ErrorMessage267",
+    "errorEN": "argument \"e\" is missing, with no default",
+    "errorJP": "argument \"e\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage269",
+    "errorEN": "first argument must be environment or external pointer",
+    "errorJP": "first argument must be environment or external pointer"
+  },
+  {
+    "rowname": "ErrorMessage277",
+    "errorEN": "argument \"text\" is missing, with no default",
+    "errorJP": "argument \"text\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage279",
+    "errorEN": "argument 'pattern' has length > 1 and only the first element will be used",
+    "errorJP": "argument 'pattern' has length > 1 and only the first element will be used"
+  },
+  {
+    "rowname": "ErrorMessage293",
+    "errorEN": "'length(x) = 20 > 1' in coercion to 'logical(1)'",
+    "errorJP": "'length(x) = 20 > 1' in coercion to 'logical(1)'"
+  },
+  {
+    "rowname": "ErrorMessage307",
+    "errorEN": "argument 'ignore.case = TRUE' will be ignored",
+    "errorJP": "argument 'ignore.case = TRUE' will be ignored"
+  },
+  {
+    "rowname": "ErrorMessage325",
+    "errorEN": "unused argument (alist(generic = ))",
+    "errorJP": "unused argument (alist(generic = ))"
+  },
+  {
+    "rowname": "ErrorMessage326",
+    "errorEN": "argument \"genname\" is missing, with no default",
+    "errorJP": "argument \"genname\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage342",
+    "errorEN": "invalid 'envir' argument",
+    "errorJP": "invalid 'envir' argument"
+  },
+  {
+    "rowname": "ErrorMessage343",
+    "errorEN": "unused arguments (alist(generic = , classes = , methods = ))",
+    "errorJP": "unused arguments (alist(generic = , classes = , methods = ))"
+  },
+  {
+    "rowname": "ErrorMessage344",
+    "errorEN": "argument \"info\" is missing, with no default",
+    "errorJP": "argument \"info\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage345",
+    "errorEN": "incorrect number of dimensions",
+    "errorJP": "incorrect number of dimensions"
+  },
+  {
+    "rowname": "ErrorMessage352",
+    "errorEN": "undefined columns selected",
+    "errorJP": "undefined columns selected"
+  },
+  {
+    "rowname": "ErrorMessage355",
+    "errorEN": "argument \"m\" is missing, with no default",
+    "errorJP": "argument \"m\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage360",
+    "errorEN": "‘x’ and ‘m’ must have the same length",
+    "errorJP": "‘x’ and ‘m’ must have the same length"
+  },
+  {
+    "rowname": "ErrorMessage373",
+    "errorEN": "object '-1' not found",
+    "errorJP": "object '-1' not found"
+  },
+  {
+    "rowname": "ErrorMessage383",
+    "errorEN": "invalid first argument",
+    "errorJP": "invalid first argument"
+  },
+  {
+    "rowname": "ErrorMessage385",
+    "errorEN": "argument is missing, with no default",
+    "errorJP": "argument is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage388",
+    "errorEN": "argument \"length.out\" is missing, with no default",
+    "errorJP": "argument \"length.out\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage389",
+    "errorEN": "invalid 'length.out' value",
+    "errorJP": "invalid 'length.out' value"
+  },
+  {
+    "rowname": "ErrorMessage394",
+    "errorEN": "object not specified",
+    "errorJP": "object not specified"
+  },
+  {
+    "rowname": "ErrorMessage397",
+    "errorEN": "generic function not specified",
+    "errorJP": "generic function not specified"
+  },
+  {
+    "rowname": "ErrorMessage408",
+    "errorEN": "argument \"times\" is missing, with no default",
+    "errorJP": "argument \"times\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage409",
+    "errorEN": "invalid 'times' value",
+    "errorJP": "invalid 'times' value"
+  },
+  {
+    "rowname": "ErrorMessage425",
+    "errorEN": "<text>:2:0: unexpected end of input\n1: repeat\n   ^",
+    "errorJP": "<text>:2:0: unexpected end of input\n1: repeat\n   ^"
+  },
+  {
+    "rowname": "ErrorMessage426",
+    "errorEN": "argument \"values\" is missing, with no default",
+    "errorJP": "argument \"values\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage429",
+    "errorEN": "only 0's may be mixed with negative subscripts",
+    "errorJP": "only 0's may be mixed with negative subscripts"
+  },
+  {
+    "rowname": "ErrorMessage432",
+    "errorEN": "invalid subscript type 'list'",
+    "errorJP": "invalid subscript type 'list'"
+  },
+  {
+    "rowname": "ErrorMessage443",
+    "errorEN": "Loading required package: \n",
+    "errorJP": "Loading required package: \n"
+  },
+  { "rowname": "ErrorType443", "errorEN": "message", "errorJP": "message" },
+  {
+    "rowname": "ErrorMessage444",
+    "errorEN": "Loading required package: abind\n",
+    "errorJP": "Loading required package: abind\n"
+  },
+  {
+    "rowname": "ErrorMessage457",
+    "errorEN": "argument \"package\" is missing, with no default",
+    "errorJP": "argument \"package\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage458",
+    "errorEN": "Loading required namespace: abind\n",
+    "errorJP": "Loading required namespace: abind\n"
+  },
+  {
+    "rowname": "ErrorMessage459",
+    "errorEN": "unused argument (alist(restart = ))",
+    "errorJP": "unused argument (alist(restart = ))"
+  },
+  {
+    "rowname": "ErrorMessage460",
+    "errorEN": "argument \"r\" is missing, with no default",
+    "errorJP": "argument \"r\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage461",
+    "errorEN": "$ operator is invalid for atomic vectors",
+    "errorJP": "$ operator is invalid for atomic vectors"
+  },
+  {
+    "rowname": "ErrorMessage466",
+    "errorEN": "argument is not a function",
+    "errorJP": "argument is not a function"
+  },
+  {
+    "rowname": "ErrorMessage470",
+    "errorEN": "argument 2 is empty",
+    "errorJP": "argument 2 is empty"
+  },
+  {
+    "rowname": "ErrorMessage471",
+    "errorEN": "invalid 'previous' argument",
+    "errorJP": "invalid 'previous' argument"
+  },
+  {
+    "rowname": "ErrorMessage474",
+    "errorEN": "unused argument (alist(expr = ))",
+    "errorJP": "unused argument (alist(expr = ))"
+  },
+  {
+    "rowname": "ErrorMessage475",
+    "errorEN": "unused argument (alist(x = ))",
+    "errorJP": "unused argument (alist(x = ))"
+  },
+  {
+    "rowname": "ErrorMessage493",
+    "errorEN": "'kind' must be a character string of length 1 (RNG to be used).",
+    "errorJP": "'kind' must be a character string of length 1 (RNG to be used)."
+  },
+  {
+    "rowname": "ErrorMessage502",
+    "errorEN": "'df' is not a valid abbreviation of an RNG",
+    "errorJP": "'df' is not a valid abbreviation of an RNG"
+  },
+  {
+    "rowname": "ErrorMessage503",
+    "errorEN": "argument \"vstr\" is missing, with no default",
+    "errorJP": "argument \"vstr\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage505",
+    "errorEN": "malformed version string",
+    "errorJP": "malformed version string"
+  },
+  {
+    "rowname": "ErrorMessage508",
+    "errorEN": "non-numeric argument to mathematical function",
+    "errorJP": "non-numeric argument to mathematical function"
+  },
+  {
+    "rowname": "ErrorMessage518",
+    "errorEN": "unused argument (alist(digits = ))",
+    "errorJP": "unused argument (alist(digits = ))"
+  },
+  {
+    "rowname": "ErrorMessage523",
+    "errorEN": "'arg' should be one of “secs”, “mins”, “hours”, “days”, “months”, “years”",
+    "errorJP": "'arg' should be one of “secs”, “mins”, “hours”, “days”, “months”, “years”"
+  },
+  {
+    "rowname": "ErrorMessage526",
+    "errorEN": "unused argument (alist(tz = ))",
+    "errorJP": "unused argument (alist(tz = ))"
+  },
+  {
+    "rowname": "ErrorMessage529",
+    "errorEN": "a matrix-like object is required as argument to 'row'",
+    "errorJP": "a matrix-like object is required as argument to 'row'"
+  },
+  {
+    "rowname": "ErrorMessage540",
+    "errorEN": "argument \"value\" is missing, with no default",
+    "errorJP": "argument \"value\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage556",
+    "errorEN": "'x' must be an array of at least two dimensions",
+    "errorJP": "'x' must be an array of at least two dimensions"
+  },
+  {
+    "rowname": "ErrorMessage563",
+    "errorEN": "invalid 'dims'",
+    "errorJP": "invalid 'dims'"
+  },
+  {
+    "rowname": "ErrorMessage582",
+    "errorEN": "argument \"group\" is missing, with no default",
+    "errorJP": "argument \"group\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage583",
+    "errorEN": "missing values for 'group'",
+    "errorJP": "missing values for 'group'"
+  },
+  {
+    "rowname": "ErrorMessage587",
+    "errorEN": "incorrect length for 'group'",
+    "errorJP": "incorrect length for 'group'"
+  },
+  {
+    "rowname": "ErrorMessage593",
+    "errorEN": "'x' must be numeric",
+    "errorJP": "'x' must be numeric"
+  },
+  {
+    "rowname": "ErrorMessage605",
+    "errorEN": "not a data frame",
+    "errorJP": "not a data frame"
+  },
+  {
+    "rowname": "ErrorMessage639",
+    "errorEN": "invalid 'size' argument",
+    "errorJP": "invalid 'size' argument"
+  },
+  {
+    "rowname": "ErrorMessage646",
+    "errorEN": "invalid 'replace' argument",
+    "errorJP": "invalid 'replace' argument"
+  },
+  {
+    "rowname": "ErrorMessage650",
+    "errorEN": "length(n) == 1L is not TRUE",
+    "errorJP": "length(n) == 1L is not TRUE"
+  },
+  {
+    "rowname": "ErrorMessage656",
+    "errorEN": "either specify 'nmax' or 'n', but not both.",
+    "errorJP": "either specify 'nmax' or 'n', but not both."
+  },
+  {
+    "rowname": "ErrorMessage682",
+    "errorEN": "unused argument (alist(which = ))",
+    "errorJP": "unused argument (alist(which = ))"
+  },
+  {
+    "rowname": "ErrorMessage686",
+    "errorEN": "no applicable method for 'seek' applied to an object of class \"name\"",
+    "errorJP": "no applicable method for 'seek' applied to an object of class \"name\""
+  },
+  {
+    "rowname": "ErrorMessage687",
+    "errorEN": "no applicable method for 'seek' applied to an object of class \"c('double', 'numeric')\"",
+    "errorJP": "no applicable method for 'seek' applied to an object of class \"c('double', 'numeric')\""
+  },
+  {
+    "rowname": "ErrorMessage704",
+    "errorEN": "'origin' must be one of 'start', 'current' or 'end'",
+    "errorJP": "'origin' must be one of 'start', 'current' or 'end'"
+  },
+  {
+    "rowname": "ErrorMessage710",
+    "errorEN": "'from' must be of length 1",
+    "errorJP": "'from' must be of length 1"
+  },
+  {
+    "rowname": "ErrorMessage713",
+    "errorEN": "first element used of 'length.out' argument",
+    "errorJP": "first element used of 'length.out' argument"
+  },
+  {
+    "rowname": "ErrorMessage720",
+    "errorEN": "'from' must be specified",
+    "errorJP": "'from' must be specified"
+  },
+  {
+    "rowname": "ErrorMessage722",
+    "errorEN": "'from' must be a \"Date\" object",
+    "errorJP": "'from' must be a \"Date\" object"
+  },
+  {
+    "rowname": "ErrorMessage753",
+    "errorEN": "argument 3 is empty",
+    "errorJP": "argument 3 is empty"
+  },
+  {
+    "rowname": "ErrorMessage754",
+    "errorEN": "argument 4 is empty",
+    "errorJP": "argument 4 is empty"
+  },
+  {
+    "rowname": "ErrorMessage755",
+    "errorEN": "argument 5 is empty",
+    "errorJP": "argument 5 is empty"
+  },
+  {
+    "rowname": "ErrorMessage756",
+    "errorEN": "too many arguments",
+    "errorJP": "too many arguments"
+  },
+  {
+    "rowname": "ErrorMessage767",
+    "errorEN": "'from' must be a \"POSIXt\" object",
+    "errorJP": "'from' must be a \"POSIXt\" object"
+  },
+  {
+    "rowname": "ErrorMessage780",
+    "errorEN": "argument \"nvec\" is missing, with no default",
+    "errorJP": "argument \"nvec\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage795",
+    "errorEN": "argument \"connection\" is missing, with no default",
+    "errorJP": "argument \"connection\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage798",
+    "errorEN": "'connection' must be a connection",
+    "errorJP": "'connection' must be a connection"
+  },
+  {
+    "rowname": "ErrorMessage813",
+    "errorEN": "unused arguments (alist(host = , backlog = , blocking = , timeout = , reuse = , encoding = , text = ))",
+    "errorJP": "unused arguments (alist(host = , backlog = , blocking = , timeout = , reuse = , encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage814",
+    "errorEN": "argument \"port\" is missing, with no default",
+    "errorJP": "argument \"port\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage815",
+    "errorEN": "invalid 'port' argument",
+    "errorJP": "invalid 'port' argument"
+  },
+  {
+    "rowname": "ErrorMessage819",
+    "errorEN": "unused arguments (alist(host = x, backlog = , blocking = , timeout = , reuse = , encoding = , text = ))",
+    "errorJP": "unused arguments (alist(host = x, backlog = , blocking = , timeout = , reuse = , encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage820",
+    "errorEN": "unused arguments (alist(host = x, backlog = x, blocking = , timeout = , reuse = , encoding = , text = ))",
+    "errorJP": "unused arguments (alist(host = x, backlog = x, blocking = , timeout = , reuse = , encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage821",
+    "errorEN": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = , reuse = , encoding = , text = ))",
+    "errorJP": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = , reuse = , encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage822",
+    "errorEN": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = x, reuse = , encoding = , text = ))",
+    "errorJP": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = x, reuse = , encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage823",
+    "errorEN": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = , text = ))",
+    "errorJP": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage824",
+    "errorEN": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = x, text = ))",
+    "errorJP": "unused arguments (alist(host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = x, text = ))"
+  },
+  {
+    "rowname": "ErrorMessage825",
+    "errorEN": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = x, text = x)",
+    "errorJP": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = x, text = x)"
+  },
+  {
+    "rowname": "ErrorMessage826",
+    "errorEN": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = x, text = df)",
+    "errorJP": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = x, text = df)"
+  },
+  {
+    "rowname": "ErrorMessage827",
+    "errorEN": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = df, text = df)",
+    "errorJP": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = df, text = df)"
+  },
+  {
+    "rowname": "ErrorMessage828",
+    "errorEN": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = x, encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage829",
+    "errorEN": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = df, encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = x, backlog = x, blocking = x, timeout = x, reuse = df, encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage830",
+    "errorEN": "unused arguments (host = x, backlog = x, blocking = x, timeout = df, reuse = df, encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = x, backlog = x, blocking = x, timeout = df, reuse = df, encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage831",
+    "errorEN": "unused arguments (host = x, backlog = x, blocking = df, timeout = df, reuse = df, encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = x, backlog = x, blocking = df, timeout = df, reuse = df, encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage832",
+    "errorEN": "unused arguments (host = x, backlog = df, blocking = df, timeout = df, reuse = df, encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = x, backlog = df, blocking = df, timeout = df, reuse = df, encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage833",
+    "errorEN": "unused arguments (host = x, backlog = \"df\", blocking = \"df\", timeout = \"df\", reuse = \"df\", encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = x, backlog = \"df\", blocking = \"df\", timeout = \"df\", reuse = \"df\", encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage834",
+    "errorEN": "unused arguments (host = df, backlog = \"df\", blocking = \"df\", timeout = \"df\", reuse = \"df\", encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = df, backlog = \"df\", blocking = \"df\", timeout = \"df\", reuse = \"df\", encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage835",
+    "errorEN": "unused arguments (host = \"df\", backlog = \"df\", blocking = \"df\", timeout = \"df\", reuse = \"df\", encoding = \"df\", text = \"df\")",
+    "errorJP": "unused arguments (host = \"df\", backlog = \"df\", blocking = \"df\", timeout = \"df\", reuse = \"df\", encoding = \"df\", text = \"df\")"
+  },
+  {
+    "rowname": "ErrorMessage838",
+    "errorEN": "argument \"seed\" is missing, with no default",
+    "errorJP": "argument \"seed\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage852",
+    "errorEN": "argument \"y\" is missing, with no default",
+    "errorJP": "argument \"y\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage853",
+    "errorEN": "\u001b[38;5;255m`x` and `y` are not compatible.\n`y` must be a data frame.\u001b[39m",
+    "errorJP": "\u001b[38;5;255m`x` and `y` are not compatible.\n`y` must be a data frame.\u001b[39m"
+  },
+  {
+    "rowname": "ErrorMessage857",
+    "errorEN": "unused arguments (alist(which = , fun = , package = , lib.loc = ))",
+    "errorJP": "unused arguments (alist(which = , fun = , package = , lib.loc = ))"
+  },
+  {
+    "rowname": "ErrorMessage858",
+    "errorEN": "argument \"hookName\" is missing, with no default",
+    "errorJP": "argument \"hookName\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage863",
+    "errorEN": "'arg' should be one of “append”, “prepend”, “replace”",
+    "errorJP": "'arg' should be one of “append”, “prepend”, “replace”"
+  },
+  {
+    "rowname": "ErrorMessage868",
+    "errorEN": "unused arguments (alist(info = , field = , value = ))",
+    "errorJP": "unused arguments (alist(info = , field = , value = ))"
+  },
+  {
+    "rowname": "ErrorMessage869",
+    "errorEN": "argument \"ns\" is missing, with no default",
+    "errorJP": "argument \"ns\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage870",
+    "errorEN": "not a namespace",
+    "errorJP": "not a namespace"
+  },
+  {
+    "rowname": "ErrorMessage878",
+    "errorEN": "there is no package called ‘df’",
+    "errorJP": "there is no package called ‘df’"
+  },
+  {
+    "rowname": "ErrorMessage883",
+    "errorEN": "argument \"dir\" is missing, with no default",
+    "errorJP": "argument \"dir\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage884",
+    "errorEN": "character argument expected",
+    "errorJP": "character argument expected"
+  },
+  {
+    "rowname": "ErrorMessage886",
+    "errorEN": "cannot change working directory",
+    "errorJP": "cannot change working directory"
+  },
+  {
+    "rowname": "ErrorMessage893",
+    "errorEN": "argument \"string\" is missing, with no default",
+    "errorJP": "argument \"string\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage896",
+    "errorEN": "'arg' should be one of “sh”, “csh”, “cmd”, “cmd2”",
+    "errorJP": "'arg' should be one of “sh”, “csh”, “cmd”, “cmd2”"
+  },
+  {
+    "rowname": "ErrorMessage901",
+    "errorEN": "argument \"cond\" is missing, with no default",
+    "errorJP": "argument \"cond\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage907",
+    "errorEN": "argument \"message\" is missing, with no default",
+    "errorJP": "argument \"message\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage922",
+    "errorEN": "NaNs produced",
+    "errorJP": "NaNs produced"
+  },
+  {
+    "rowname": "ErrorMessage930",
+    "errorEN": "no sink to remove",
+    "errorJP": "no sink to remove"
+  },
+  {
+    "rowname": "ErrorMessage931",
+    "errorEN": "'file' must be NULL, a connection or a character string",
+    "errorJP": "'file' must be NULL, a connection or a character string"
+  },
+  {
+    "rowname": "ErrorMessage938",
+    "errorEN": "'arg' should be one of “output”, “message”",
+    "errorJP": "'arg' should be one of “output”, “message”"
+  },
+  {
+    "rowname": "ErrorMessage949",
+    "errorEN": "unused argument (alist(drop = ))",
+    "errorJP": "unused argument (alist(drop = ))"
+  },
+  {
+    "rowname": "ErrorMessage951",
+    "errorEN": "argument \"MARGIN\" is missing, with no default",
+    "errorJP": "argument \"MARGIN\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage952",
+    "errorEN": "incorrect value for 'MARGIN'",
+    "errorJP": "incorrect value for 'MARGIN'"
+  },
+  {
+    "rowname": "ErrorMessage954",
+    "errorEN": "'x' must have named dimnames",
+    "errorJP": "'x' must have named dimnames"
+  },
+  {
+    "rowname": "ErrorMessage957",
+    "errorEN": "unused arguments (alist(con = , server = , text = ))",
+    "errorJP": "unused arguments (alist(con = , server = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage958",
+    "errorEN": "argument \"socket\" is missing, with no default",
+    "errorJP": "argument \"socket\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage959",
+    "errorEN": "'socket' is not a servsockconn",
+    "errorJP": "'socket' is not a servsockconn"
+  },
+  {
+    "rowname": "ErrorMessage975",
+    "errorEN": "unused argument (alist(text = ))",
+    "errorJP": "unused argument (alist(text = ))"
+  },
+  {
+    "rowname": "ErrorMessage978",
+    "errorEN": "invalid 'host' argument",
+    "errorJP": "invalid 'host' argument"
+  },
+  {
+    "rowname": "ErrorMessage1002",
+    "errorEN": "unused arguments (alist(con = , blocking = , encoding = , text = ))",
+    "errorJP": "unused arguments (alist(con = , blocking = , encoding = , text = ))"
+  },
+  {
+    "rowname": "ErrorMessage1003",
+    "errorEN": "argument \"socklist\" is missing, with no default",
+    "errorJP": "argument \"socklist\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1004",
+    "errorEN": "not a list of sockets",
+    "errorJP": "not a list of sockets"
+  },
+  {
+    "rowname": "ErrorMessage1011",
+    "errorEN": "bad write indicators",
+    "errorJP": "bad write indicators"
+  },
+  {
+    "rowname": "ErrorMessage1015",
+    "errorEN": "invalid 'socket' argument",
+    "errorJP": "invalid 'socket' argument"
+  },
+  {
+    "rowname": "ErrorMessage1022",
+    "errorEN": "argument \"a\" is missing, with no default",
+    "errorJP": "argument \"a\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1023",
+    "errorEN": "'a' (6 x 1) must be square",
+    "errorJP": "'a' (6 x 1) must be square"
+  },
+  {
+    "rowname": "ErrorMessage1027",
+    "errorEN": "'a' (10 x 2) must be square",
+    "errorJP": "'a' (10 x 2) must be square"
+  },
+  {
+    "rowname": "ErrorMessage1028",
+    "errorEN": "'a' must be a numeric matrix",
+    "errorJP": "'a' must be a numeric matrix"
+  },
+  {
+    "rowname": "ErrorMessage1034",
+    "errorEN": "the LINPACK argument has been defunct since R 3.1.0",
+    "errorJP": "the LINPACK argument has been defunct since R 3.1.0"
+  },
+  {
+    "rowname": "ErrorMessage1044",
+    "errorEN": "this is the \"qr\" method for the generic function solve()",
+    "errorJP": "this is the \"qr\" method for the generic function solve()"
+  },
+  {
+    "rowname": "ErrorMessage1052",
+    "errorEN": "'decreasing' must be a length-1 logical vector.\nDid you intend to set 'partial'?",
+    "errorJP": "'decreasing' must be a length-1 logical vector.\nDid you intend to set 'partial'?"
+  },
+  {
+    "rowname": "ErrorMessage1061",
+    "errorEN": "'list' object cannot be coerced to type 'logical'",
+    "errorJP": "'list' object cannot be coerced to type 'logical'"
+  },
+  {
+    "rowname": "ErrorMessage1062",
+    "errorEN": "'decreasing' elements must be TRUE or FALSE",
+    "errorJP": "'decreasing' elements must be TRUE or FALSE"
+  },
+  {
+    "rowname": "ErrorMessage1063",
+    "errorEN": "cannot xtfrm data frames",
+    "errorJP": "cannot xtfrm data frames"
+  },
+  {
+    "rowname": "ErrorMessage1064",
+    "errorEN": "'decreasing' must be TRUE or FALSE",
+    "errorJP": "'decreasing' must be TRUE or FALSE"
+  },
+  {
+    "rowname": "ErrorMessage1067",
+    "errorEN": "non-finite 'partial'",
+    "errorJP": "non-finite 'partial'"
+  },
+  {
+    "rowname": "ErrorMessage1074",
+    "errorEN": "'arg' should be one of “auto”, “shell”, “quick”, “radix”",
+    "errorJP": "'arg' should be one of “auto”, “shell”, “quick”, “radix”"
+  },
+  {
+    "rowname": "ErrorMessage1086",
+    "errorEN": "argument 'partial != NULL' is not used (yet)",
+    "errorJP": "argument 'partial != NULL' is not used (yet)"
+  },
+  {
+    "rowname": "ErrorMessage1106",
+    "errorEN": "do not know how to convert 'x' to class “POSIXct”",
+    "errorJP": "do not know how to convert 'x' to class “POSIXct”"
+  },
+  {
+    "rowname": "ErrorMessage1111",
+    "errorEN": "'local' must be TRUE, FALSE or an environment",
+    "errorJP": "'local' must be TRUE, FALSE or an environment"
+  },
+  {
+    "rowname": "ErrorMessage1140",
+    "errorEN": "data length is not a multiple of split variable",
+    "errorJP": "data length is not a multiple of split variable"
+  },
+  {
+    "rowname": "ErrorMessage1161",
+    "errorEN": "'list' object cannot be coerced to type 'double'",
+    "errorJP": "'list' object cannot be coerced to type 'double'"
+  },
+  {
+    "rowname": "ErrorMessage1179",
+    "errorEN": "argument \"fmt\" is missing, with no default",
+    "errorJP": "argument \"fmt\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1180",
+    "errorEN": "'fmt' is not a character vector",
+    "errorJP": "'fmt' is not a character vector"
+  },
+  {
+    "rowname": "ErrorMessage1187",
+    "errorEN": "argument \"filename\" is missing, with no default",
+    "errorJP": "argument \"filename\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1189",
+    "errorEN": "is.character(filename) is not TRUE",
+    "errorJP": "is.character(filename) is not TRUE"
+  },
+  {
+    "rowname": "ErrorMessage1212",
+    "errorEN": "unused arguments (alist(file = , wholeSrcref = ))",
+    "errorJP": "unused arguments (alist(file = , wholeSrcref = ))"
+  },
+  {
+    "rowname": "ErrorMessage1213",
+    "errorEN": "argument \"srcfile\" is missing, with no default",
+    "errorJP": "argument \"srcfile\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1214",
+    "errorEN": "inherits(srcfile, \"srcfile\") is not TRUE",
+    "errorJP": "inherits(srcfile, \"srcfile\") is not TRUE"
+  },
+  {
+    "rowname": "ErrorMessage1223",
+    "errorEN": "argument to 'standardGeneric' must be a non-empty character string",
+    "errorJP": "argument to 'standardGeneric' must be a non-empty character string"
+  },
+  {
+    "rowname": "ErrorMessage1227",
+    "errorEN": "expected a generic function or a primitive for dispatch, got an object of class \"character\"",
+    "errorJP": "expected a generic function or a primitive for dispatch, got an object of class \"character\""
+  },
+  {
+    "rowname": "ErrorMessage1228",
+    "errorEN": "unused argument (alist(ignore.case = ))",
+    "errorJP": "unused argument (alist(ignore.case = ))"
+  },
+  {
+    "rowname": "ErrorMessage1230",
+    "errorEN": "argument \"prefix\" is missing, with no default",
+    "errorJP": "argument \"prefix\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1231",
+    "errorEN": "non-character object(s)",
+    "errorJP": "non-character object(s)"
+  },
+  { "rowname": "ErrorMessage1245" },
+  {
+    "rowname": "ErrorMessage1253",
+    "errorEN": "x are not all TRUE",
+    "errorJP": "x are not all TRUE"
+  },
+  {
+    "rowname": "ErrorMessage1254",
+    "errorEN": "Only one of 'exprs', 'exprObject' or expressions, not more",
+    "errorJP": "Only one of 'exprs', 'exprObject' or expressions, not more"
+  },
+  {
+    "rowname": "ErrorMessage1264",
+    "errorEN": "0 arguments passed to 'storage.mode<-' which requires 2",
+    "errorJP": "0 arguments passed to 'storage.mode<-' which requires 2"
+  },
+  {
+    "rowname": "ErrorMessage1265",
+    "errorEN": "1 argument passed to 'storage.mode<-' which requires 2",
+    "errorJP": "1 argument passed to 'storage.mode<-' which requires 2"
+  },
+  {
+    "rowname": "ErrorMessage1270",
+    "errorEN": "argument must be character",
+    "errorJP": "argument must be character"
+  },
+  {
+    "rowname": "ErrorMessage1273",
+    "errorEN": "argument \"s\" is missing, with no default",
+    "errorJP": "argument \"s\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1288",
+    "errorEN": "unused argument (alist(usetz = ))",
+    "errorJP": "unused argument (alist(usetz = ))"
+  },
+  {
+    "rowname": "ErrorMessage1290",
+    "errorEN": "argument \"format\" is missing, with no default",
+    "errorJP": "argument \"format\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1291",
+    "errorEN": "invalid 'format' argument",
+    "errorJP": "invalid 'format' argument"
+  },
+  {
+    "rowname": "ErrorMessage1296",
+    "errorEN": "unused argument (alist(str = ))",
+    "errorJP": "unused argument (alist(str = ))"
+  },
+  {
+    "rowname": "ErrorMessage1305",
+    "errorEN": "argument \"split\" is missing, with no default",
+    "errorJP": "argument \"split\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1306",
+    "errorEN": "non-character argument",
+    "errorJP": "non-character argument"
+  },
+  {
+    "rowname": "ErrorMessage1308",
+    "errorEN": "argument 'perl = TRUE' will be ignored",
+    "errorJP": "argument 'perl = TRUE' will be ignored"
+  },
+  {
+    "rowname": "ErrorMessage1319",
+    "errorEN": "unused argument (alist(strict = ))",
+    "errorJP": "unused argument (alist(strict = ))"
+  },
+  {
+    "rowname": "ErrorMessage1328",
+    "errorEN": "argument \"width\" is missing, with no default",
+    "errorJP": "argument \"width\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1335",
+    "errorEN": "argument \".Data\" is missing, with no default",
+    "errorJP": "argument \".Data\" is missing, with no default"
+  },
+  {
+    "rowname": "ErrorMessage1336",
+    "errorEN": "unused arguments (alist(str = , strict = ))",
+    "errorJP": "unused arguments (alist(str = , strict = ))"
+  },
+  {
+    "rowname": "ErrorMessage1338",
+    "errorEN": "missing value where TRUE/FALSE needed",
+    "errorJP": "missing value where TRUE/FALSE needed"
+  }
+]

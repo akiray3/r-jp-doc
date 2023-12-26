@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const returnfuncpage = document.querySelector(".rturnfunc");
     const returnhref = document.getElementById("funcListBack");
     const packname = jsondata.filter((item) => item.func === keyword);
-    console.log(keyword);
     returnhref.href = `/r-jp-doc/infopage/${packname[0].pack}.html`;
     returnhref.textContent = `${packname[0].pack}一覧へ`;
     const content = document.querySelector(".block");
@@ -339,7 +338,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentURL = window.location.search;
     const urlParams = new URLSearchParams(currentURL);
     const keyword = urlParams.get("keyword");
-    console.log(keyword);
 
     //Mobile
     const DesContent = document.querySelector("#Description_contents");
@@ -357,7 +355,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     load.onload = function () {
       const jsondata = JSON.parse(load.responseText);
-      console.log(keyword);
       const findfunc = jsondata.find((obj) => obj.func === keyword);
       if (findfunc.Description) {
         const Descriptiontxt = document.createTextNode(findfunc.Description);
@@ -404,57 +401,70 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //error検索
-const errorFilePath = "../errorlist.json";
-fetch(errorFilePath)
-  .then((response) => response.json())
-  .then((jsondata) => {
-    document
-      .getElementById("errorCopy")
-      .addEventListener("input", function (event) {
-        const completeErrorList = document.getElementById("autoCompleteError");
-        completeErrorList.innerHTML = "";
-        const text = event.target.value;
-        if (text === "") {
-          if (document.querySelector(".option")) {
-            const completeErrorList = document.querySelectorAll(".option");
-            completeErrorList.forEach(function (item) {
-              const completeList = document.getElementById("autoCompleteError");
-              completeList.removeChild(item);
+
+function ResearchError(path) {
+  fetch(path)
+    .then((response) => response.json())
+    .then((jsondata) => {
+      document
+        .getElementById("errorCopy")
+        .addEventListener("input", function (event) {
+          const completeErrorList =
+            document.getElementById("autoCompleteError");
+          completeErrorList.innerHTML = "";
+          const text = event.target.value;
+          if (text === "") {
+            if (document.querySelector(".option")) {
+              const completeErrorList = document.querySelectorAll(".option");
+              completeErrorList.forEach(function (item) {
+                const completeList =
+                  document.getElementById("autoCompleteError");
+                completeList.removeChild(item);
+              });
+            }
+          } else {
+            const resultError = getCompleteError(text);
+            resultError.forEach(function (item) {
+              displayMatchError(item.errorEN, item.errorJP);
             });
           }
-        } else {
-          const resultError = getCompleteError(text);
-          resultError.forEach(function (item) {
-            displayMatchError(item.errorEN, item.errorJP);
-          });
-        }
-      });
-    console.log(jsondata);
-    function getCompleteError(input) {
-      const ErrorList = jsondata.map((item) => item.errorEN);
-      const filterErrorList = ErrorList.filter(function (option) {
-        return option.toLowerCase().includes(input.toLowerCase());
-      });
+        });
+      function getCompleteError(input) {
+        const ErrorlistIncludeJP = jsondata.filter(function (item) {
+          return item.errorEN.toLowerCase().includes(input.toLowerCase());
+        });
+        return ErrorlistIncludeJP;
+      }
 
-      const ErrorlistIncludeJP = jsondata.filter(function (item) {
-        return item.errorEN.toLowerCase().includes(input.toLowerCase());
-      });
-      return ErrorlistIncludeJP;
-    }
+      function displayMatchError(result, resultJP) {
+        const completeErrorList = document.getElementById("autoCompleteError");
+        const option = document.createElement("li");
+        option.className = "option";
+        option.textContent = result;
+        completeErrorList.appendChild(option);
 
-    function displayMatchError(result, resultJP) {
-      const completeErrorList = document.getElementById("autoCompleteError");
-      const option = document.createElement("li");
-      option.className = "option";
-      option.textContent = result;
-      completeErrorList.appendChild(option);
+        const optionJp = document.createElement("li");
+        optionJp.className = "optionJP";
+        optionJp.textContent = resultJP;
+        option.appendChild(optionJp);
+      }
+    });
+}
+const errorFilePath = "../errorlist.json";
+const errorFilePath2 = "../errorlist2.json";
+const errorFilePath3 = "../errorlist3.json";
+const errorFilePath4 = "../errorlist4.json";
+const errorFilePath5 = "../errorlist5.json";
+const errorFilePath6 = "../errorlist6.json";
+const errorFilePath7 = "../errorlist7.json";
 
-      const optionJp = document.createElement("li");
-      optionJp.className = "optionJP";
-      optionJp.textContent = resultJP;
-      option.appendChild(optionJp);
-    }
-  });
+ResearchError(errorFilePath);
+ResearchError(errorFilePath2);
+ResearchError(errorFilePath3);
+ResearchError(errorFilePath4);
+ResearchError(errorFilePath5);
+ResearchError(errorFilePath6);
+ResearchError(errorFilePath7);
 
 const btn = document.getElementById("button");
 
